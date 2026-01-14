@@ -1,0 +1,240 @@
+{
+  "nav": {
+    "problem": "Problem",
+    "solution": "Rozwiązanie",
+    "features": "Funkcje",
+    "customers": "Klienci",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "headline": "ERP stworzony dla branży metalowej.",
+    "subheadline": "Produkcja, kalkulacja kosztów i planowanie zaprojektowane dla wytwarzania na zamówienie.",
+    "intro": "System zaprojektowany specjalnie dla firm obróbki metali. Wspiera rzeczywiste procesy produkcyjne, a nie obejścia zorientowane na księgowość. Skupia się na warsztatach, produkcji na zamówienie i zgodności z przepisami.",
+    "primaryCta": "Skontaktuj się z nami",
+    "secondaryCta": "Sprawdź czy to pasuje",
+    "watchDemo": "Zobacz jak to działa"
+  },
+  "problem": {
+    "title": "Dlaczego standardowe systemy ERP zawodzą firmy metalowe",
+    "intro": "Większość systemów ERP jest zaprojektowana wokół księgowości, a nie produkcji. W rezultacie firmy metalowe często polegają na arkuszach kalkulacyjnych i procesach manualnych do zarządzania zleceniami i wykonaniem na hali produkcyjnej.",
+    "items": [
+      "Niedokładna kalkulacja kosztów zleceń",
+      "Nieprawidłowe śledzenie zapasów metali",
+      "Słaba widoczność operacji na hali produkcyjnej",
+      "Brak optymalizacji cięcia dla blach",
+      "Planowanie produkcji zarządzane poza systemem ERP",
+      "Zmienne stawki podatkowe produktów nie są obsługiwane automatycznie"
+    ],
+    "conclusion": "Te problemy zwiększają ryzyko niezgodności, obniżają wydajność i pogarszają jakość obsługi."
+  },
+  "whoFor": {
+    "title": "Dla kogo przeznaczony jest ten system",
+    "intro": "Ten ERP jest przeznaczony dla firm obróbki metali z:",
+    "criteria": [
+      "Potrzebą dokładnej kalkulacji kosztów zleceń i śledzenia materiałów",
+      "Wymogami zarządzania zapasami metali i blach",
+      "Potrzebami optymalizacji cięcia dla lasera, plazmy lub strumieniem wodnym",
+      "Obowiązkami zgodności z e-fakturowaniem UE",
+      "Wymogami integracji z europejskimi systemami księgowymi",
+      "Potrzebą zgodności z RODO i ochroną danych UE"
+    ],
+    "typical": "Typowi użytkownicy to:",
+    "users": [
+      "Warsztaty produkcyjne",
+      "Producenci kontraktowi",
+      "Zakłady produkujące części na zamówienie lub w małych seriach",
+      "Warsztaty obróbki blach"
+    ],
+    "notFor": "Ten system nie jest przeznaczony dla:",
+    "excluded": [
+      "Przedsiębiorstw czysto dystrybucyjnych",
+      "Produkcji procesowej",
+      "Wysoce standaryzowanej produkcji masowej"
+    ]
+  },
+  "manufacturing": {
+    "title": "Projektowanie zorientowane na produkcję",
+    "intro": "System jest zbudowany wokół rzeczywistych koncepcji produkcyjnych używanych w obróbce metali i stale dostosowuje się do złożonych i rozwijających się europejskich wymogów zgodności.",
+    "features": [
+      {
+        "name": "Śledzenie przepływu pracy",
+        "desc": "Śledź każde zlecenie od oferty do dostawy z pełną widocznością przepływu pracy i szczegółami na poziomie operacji",
+        "icon": "cog"
+      },
+      {
+        "name": "Planowanie produkcji",
+        "desc": "Zarządzaj zdolnościami produkcyjnymi i planuj operacje efektywnie na całej hali produkcyjnej",
+        "icon": "factory"
+      },
+      {
+        "name": "Planowanie materiałowe",
+        "desc": "Dokładny MRP wsparty śledzeniem surowców, widocznością zapasów blach i automatycznym zarządzaniem magazynem",
+        "icon": "format-list-checks"
+      },
+      {
+        "name": "Optymalizacja cięcia",
+        "desc": "Wbudowane algorytmy układania minimalizują odpady i maksymalizują wykorzystanie blach dla cięcia laserowego, plazmowego i wodnego",
+        "icon": "content-cut"
+      },
+      {
+        "name": "Raportowanie produkcji w czasie rzeczywistym",
+        "desc": "Interfejs zoptymalizowany pod panele dotykowe do śledzenia zleceń i raportowania przez operatorów maszyn w czasie rzeczywistym",
+        "icon": "tablet"
+      },
+      {
+        "name": "Kalkulacja kosztów na poziomie zleceń",
+        "desc": "Dokładne obliczanie kosztów na zlecenie ze śledzeniem materiałów, robocizny, kosztów ogólnych i braków",
+        "icon": "calculator"
+      },
+      {
+        "name": "E-fakturowanie Peppol",
+        "desc": "Generowanie faktur elektronicznych zgodnych z UE według standardu Peppol BIS Billing 3.0",
+        "icon": "file-document-outline"
+      },
+      {
+        "name": "VAT i zgodność",
+        "desc": "Lokalna obsługa VAT ze zwolnieniami i integracją z krajowymi systemami księgowymi",
+        "icon": "shield-check"
+      },
+      {
+        "name": "Zarządzanie dostawcami",
+        "desc": "Śledzenie dostawców, zamówień zakupu, kosztów materiałów i harmonogramów dostaw",
+        "icon": "truck"
+      },
+      {
+        "name": "Open Source",
+        "desc": "Zbudowany na technologiach open source bez uzależnienia od dostawcy, zapewniając pełną przenośność danych i niezależność systemu",
+        "icon": "code"
+      },
+      {
+        "name": "Europejska ochrona danych",
+        "desc": "Obsługa danych zgodna z RODO z pełną suwerennością danych dla operacji europejskich",
+        "icon": "puzzle"
+      },
+      {
+        "name": "Analizy napędzane AI",
+        "desc": "Wglądy napędzane AI do identyfikacji wąskich gardeł produkcyjnych i poprawy dokładności kalkulacji zleceń",
+        "icon": "brain"
+      }
+    ],
+    "outro": "Dane produkcyjne płyną od oferty do wysyłki. Rzeczywistość operacyjna jest odzwierciedlona w planowaniu i kalkulacji kosztów."
+  },
+  "workflow": {
+    "title": "Od oferty do wysyłki",
+    "intro": "System łączy kluczowe kroki produkcyjne w jeden przepływ pracy:",
+    "steps": [
+      {
+        "name": "Wycena i oszacowanie",
+        "desc": "Dokładne obliczanie kosztów z materiałami, robocizną, czasem maszyn i optymalizacją cięcia"
+      },
+      {
+        "name": "Planowanie produkcji",
+        "desc": "Planowanie operacji w centrach roboczych ze sprawdzaniem dostępności zapasów i optymalizacją cięcia"
+      },
+      {
+        "name": "Wykonanie na hali produkcyjnej",
+        "desc": "Interfejs panelu dotykowego do śledzenia zleceń, rejestracji czasu i kontroli jakości"
+      },
+      {
+        "name": "Fakturowanie i zgodność",
+        "desc": "Generowanie e-faktur zgodnych z Peppol i listów przewozowych z prawidłowymi stawkami VAT"
+      },
+      {
+        "name": "Wysyłka i dostawa",
+        "desc": "Pakowanie, rozchód pozycji zestawionych i wysyłka zleceń do klientów"
+      },
+      {
+        "name": "Analityka",
+        "desc": "Śledzenie kosztów rzeczywistych vs. szacowanych z pełną przejrzystością i rozliczaniem braków"
+      }
+    ],
+    "conclusion": "Celem jest spójność i możliwość śledzenia przez cały cykl życia zlecenia."
+  },
+  "caseStudy": {
+    "title": "Używany w rzeczywistych środowiskach produkcyjnych",
+    "company": "Skarda Nams SIA",
+    "industry": "Obróbka metali i części na zamówienie",
+    "region": "Europa Wschodnia",
+    "employees": "20 pracowników, 2 maszyny CNC",
+    "challenge": "Wyzwanie",
+    "challengeText": "Skarda Nams miała problemy z dokładną wyceną przy użyciu różnych typów metali, aktualizacją zapasów na żywo, możliwościami rozchodu metali, planowaniem produkcji, zgodnym fakturowaniem, niedokładną kalkulacją kosztów i śledzeniem papierowym.",
+    "solution": "Rozwiązanie",
+    "solutionText": "Wdrożono Kenzap Factory ze zintegrowanymi modułami wyceny, trasowania produkcji i wykonania na hali produkcyjnej. Operatorzy maszyn zaadoptowali interfejs panelu dotykowego w ciągu dwóch tygodni od wdrożenia. E-fakturowanie Peppol zostało skonfigurowane aby spełnić wymogi zgodności UE. Integracja z oprogramowaniem księgowym Moneo dla uproszczonego raportowania podatkowego.",
+    "results": "Rezultaty",
+    "resultItems": [
+      "Redukcja czasu wyceny dzięki automatycznej kalkulacji materiałów",
+      "Poprawa dokładności kalkulacji kosztów zleceń",
+      "Pełna widoczność operacji na hali produkcyjnej i etapów wytwarzania",
+      "Osiągnięto zgodność z e-fakturowaniem Peppol, z integracją z oprogramowaniem księgowym BMD",
+      "Redukcja odpadów materiałowych dzięki optymalizacji cięcia",
+      "Szybsze planowanie produkcji z kontrolą zapasów w czasie rzeczywistym",
+      "Zachowana zgodność z RODO i rezydencja danych UE podczas wszystkich operacji"
+    ],
+    "quote": "Mamy system, który działa tak jak nasza hala produkcyjna. Operatorzy natychmiast zaadoptowali interfejs, a nasza kalkulacja kosztów zleceń jest teraz wiarygodna. Stawki podatkowe są obsługiwane automatycznie na podstawie typu produktu, co oszczędza nam czas i problemy podczas fakturowania.",
+    "quoteAuthor": "Kierownik Klienta, Skarda Nams SIA",
+    "watchCase": "Zobacz studium przypadku"
+  },
+  "implementation": {
+    "title": "Podejście do wdrożenia",
+    "intro": "Wdrożenia następują według standardowej struktury zaprojektowanej aby zminimalizować zakłócenia.",
+    "principles": [
+      "Konfiguracja sprzętu i instalacja oprogramowania na systemach fabrycznych",
+      "Konfiguracja katalogu produktów i bazy danych zapasów metali",
+      "Przypisanie ról użytkowników i definicja odpowiedzialności",
+      "Dostosowanie szablonów dokumentów (listy przewozowe, faktury, raporty)",
+      "Kompleksowe szkolenie dla operatorów i zespołów zarządzających",
+      "Integracja systemu i synchronizacja raportowania finansowego"
+    ],
+    "timeline": "Typowy harmonogram:",
+    "phases": [
+      "Analiza i konfiguracja: 2-3 tygodnie",
+      "Migracja danych i testowanie: 2-3 tygodnie",
+      "Szkolenie i uruchomienie: 1-2 tygodnie",
+      "Wsparcie po uruchomieniu: ciągłe"
+    ],
+    "outro": "Wdrożenie może być realizowane przez konsultantów z doświadczeniem w produkcji i ERP lub bezpośrednio przez inżyniera Kenzap."
+  },
+  "deployment": {
+    "title": "Opcje wdrożenia",
+    "intro": "System wspiera wiele modeli wdrożenia aby dopasować się do potrzeb operacyjnych, regulacyjnych i suwerenności danych.",
+    "options": [
+      {
+        "name": "Chmura zarządzana przez dostawcę",
+        "desc": "W pełni zarządzany hosting w europejskich centrach danych z automatycznymi aktualizacjami, kopiami zapasowymi i łatkami bezpieczeństwa. Idealne dla firm skupionych na operacjach.",
+        "icon": "cloud-check"
+      },
+      {
+        "name": "Chmura zarządzana przez klienta",
+        "desc": "Wdrożenie na własnej infrastrukturze chmurowej (AWS, Azure, GCP) z pełną kontrolą nad konfiguracją i dostępem. Odpowiednie dla organizacji z możliwościami IT.",
+        "icon": "cloud-cog"
+      },
+      {
+        "name": "Wdrożenie własne",
+        "desc": "Instalacja lokalna dla maksymalnej suwerenności danych i kontroli. Wymagane w niektórych regulowanych branżach lub wysoce wrażliwych operacjach.",
+        "icon": "server"
+      }
+    ],
+    "outro": "Wszystkie opcje wdrożenia używają tego samego oprogramowania, podążają tą samą ścieżką aktualizacji i zachowują parzystość funkcji. Dane pozostają w jurysdykcjach europejskich dla zgodności z RODO."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "intro": "Jeśli chcesz zrozumieć czy ten system pasuje do Twojej operacji, skontaktuj się z nami w celu wstępnej rozmowy. Pracujemy w języku angielskim i innych językach europejskich.",
+    "namePlaceholder": "Twoje imię",
+    "emailPlaceholder": "Adres email",
+    "companyPlaceholder": "Nazwa firmy",
+    "messagePlaceholder": "Opowiedz nam o swojej konfiguracji produkcyjnej: liczba maszyn, typowe rozmiary zleceń, obecne systemy...",
+    "submit": "Wyślij wiadomość",
+    "sending": "Wysyłanie...",
+    "success": "Wiadomość została wysłana pomyślnie. Skontaktujemy się z Tobą w ciągu 1-2 dni roboczych.",
+    "error": "Nie udało się wysłać wiadomości. Napisz do nas bezpośrednio na support@kenzap.com",
+    "or": "lub",
+    "linkedin": "Połącz się na LinkedIn",
+    "email": "Napisz do nas bezpośrednio"
+  },
+  "footer": {
+    "tagline": "Oprogramowanie dla operacji produkcyjnych",
+    "company": "© 2026 Kenzap. Wszystkie prawa zastrzeżone.",
+    "note": "Informacje o produkcie mogą ulec zmianie. Dostępność może różnić się w zależności od regionu.",
+    "languages": "Języki"
+  }
+}

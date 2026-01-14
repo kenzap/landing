@@ -1,0 +1,60 @@
+---
+const { translations } = Astro.props;
+const t = translations;
+---
+
+<section id="workflow" class="section-padding bg-gray-50">
+  <div class="container-width">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h2 class="text-4xl font-bold mb-6">{t.workflow.title}</h2>
+      <p class="text-lg text-gray-700">
+        {t.workflow.intro}
+      </p>
+    </div>
+    
+    <div class="max-w-6xl mx-auto">
+      <div class="relative">
+      <!-- Vertical timeline line - hidden on mobile -->
+      <div class="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary via-primary to-primary/30 hidden md:block"></div>
+      
+      <div class="space-y-12">
+        {t.workflow.steps.map((step: any, index: number) => (
+        <div class="relative flex items-start">
+          <!-- Timeline dot - hidden on mobile -->
+          <div class="flex-shrink-0 relative z-10 hidden md:block">
+          <div class="w-16 h-16 rounded-full bg-primary text-white flex items-center justify-center font-bold text-xl shadow-lg border-4 border-white">
+            {index + 1}
+          </div>
+          </div>
+          
+          <!-- Content card -->
+          <div class="md:ml-8 flex-1">
+            <div class="bg-white p-8 rounded-xl shadow-lg border border-gray-100 relative">
+              <!-- Arrow pointing to timeline - hidden on mobile -->
+              <div class="absolute left-0 top-8 w-0 h-0 border-t-8 border-b-8 border-r-8 border-t-transparent border-b-transparent border-r-white transform -translate-x-2 hidden md:block"></div>
+              <div class="flex items-start justify-between mb-4">
+                <h3 class="text-2xl font-bold text-gray-900">
+                  {step.name}
+                </h3>
+                <span class="text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full whitespace-nowrap">
+                  Step {index + 1}
+                </span>
+              </div>
+              <p class="text-gray-600 text-lg leading-relaxed">
+                {step.desc}
+              </p>
+            </div>
+          </div>
+        </div>
+        ))}
+      </div>
+      </div>
+    </div>
+    
+    <div class="mt-12 text-center">
+      <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+        {t.workflow.conclusion}
+      </p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,38 @@
+---
+import { Icon } from 'astro-icon/components';
+const { translations } = Astro.props;
+const t = translations;
+---
+
+<section id="deployment" class="section-padding bg-white">
+  <div class="container-width">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-bold mb-6">{t.deployment.title}</h2>
+        <p class="text-lg text-gray-700 mb-12">{t.deployment.intro}</p>
+      </div>
+      
+      <div class="grid md:grid-cols-3 gap-6 mb-8">
+        {t.deployment.options.map((option: any) => (
+          <div class="bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow">
+        <div class="flex items-center mb-3">
+          <div class="w-8 h-8 mr-3 flex-shrink-0">
+            <Icon name={`mdi:${option.icon}`} class="w-8 h-8 mr-3 text-blue-600" />
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900">
+            {option.name}
+          </h3>
+        </div>
+        <p class="text-gray-600 leading-relaxed">
+          {option.desc}
+        </p>
+          </div>
+        ))}
+      </div>
+      
+      <p class="text-gray-700 leading-relaxed">
+        {t.deployment.outro}
+      </p>
+    </div>
+  </div>
+</section>

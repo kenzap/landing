@@ -1,0 +1,240 @@
+{
+  "nav": {
+    "problem": "Problemă",
+    "solution": "Soluție",
+    "features": "Funcționalități",
+    "customers": "Clienți",
+    "contact": "Contact"
+  },
+  "hero": {
+    "headline": "ERP construit pentru fabricarea metalelor.",
+    "subheadline": "Producție, calculare costuri și planificare pentru fabricația pe comenzi.",
+    "intro": "Acest sistem este conceput special pentru fabricanții de produse metalice. Susține fluxurile de producție reale, nu soluții de compromis bazate pe contabilitate. Focusul este pe atelierele cu comenzi specifice, producția pe comandă și conformitatea.",
+    "primaryCta": "Contactează-ne",
+    "secondaryCta": "Vezi dacă se potrivește",
+    "watchDemo": "Vezi cum funcționează"
+  },
+  "problem": {
+    "title": "De ce sistemele ERP generice eșuează pentru fabricanții metalelor",
+    "intro": "Majoritatea sistemelor ERP sunt concepute în jurul contabilității, nu al producției. Ca rezultat, fabricanții de produse metalice se bazează adesea pe foi de calcul și procese manuale pentru gestionarea comenzilor și executarea la nivelul atelierului.",
+    "items": [
+      "Calcularea inexactă a costurilor pe comandă",
+      "Inventarul de metale nu este urmărit corespunzător",
+      "Vizibilitate slabă asupra operațiunilor din atelier",
+      "Lipsa optimizării tăierii pentru tablele metalice",
+      "Planificarea producției gestionată în afara sistemului ERP",
+      "Cotele de TVA variabile pe produse nu sunt gestionate automat"
+    ],
+    "conclusion": "Aceste probleme cresc riscul de neconformitate, reduc eficiența și degradează calitatea serviciilor."
+  },
+  "whoFor": {
+    "title": "Pentru cine este conceput acest sistem",
+    "intro": "Acest ERP este conceput pentru companiile de fabricare metale cu:",
+    "criteria": [
+      "Necesitatea calculării precise a costurilor pe comandă și urmărirea materialelor",
+      "Cerințe pentru gestionarea stocului de metal și inventarul de table",
+      "Nevoi de optimizare a tăierii pentru laser, plasmă sau jet de apă",
+      "Obligații de conformitate pentru facturarea electronică UE",
+      "Cerințe de integrare cu sistemele contabile europene",
+      "Nevoi de conformitate GDPR și protecția datelor UE"
+    ],
+    "typical": "Utilizatorii tipici includ:",
+    "users": [
+      "Ateliere cu comenzi specifice",
+      "Fabricanți pe contract",
+      "Fabricanți care produc piese personalizate sau în loturi mici",
+      "Ateliere de prelucrare table metalice"
+    ],
+    "notFor": "Acest sistem nu este conceput pentru:",
+    "excluded": [
+      "Afaceri de distribuție pură",
+      "Fabricația de proces",
+      "Producția de masă foarte standardizată"
+    ]
+  },
+  "manufacturing": {
+    "title": "Proiectare cu producția în prim-plan",
+    "intro": "Sistemul este construit în jurul conceptelor de fabricație reale folosite în prelucrarea metalelor și se adaptează continuu la cerințele complexe și în evoluție de conformitate europeană.",
+    "features": [
+      {
+        "name": "Urmărirea Fluxurilor",
+        "desc": "Urmărește fiecare comandă de la ofertă la livrare cu vizibilitate completă asupra fluxului și detalii la nivel de operațiune",
+        "icon": "cog"
+      },
+      {
+        "name": "Planificarea Producției",
+        "desc": "Gestionează capacitatea de producție și programează operațiunile eficient în întregul atelier",
+        "icon": "factory"
+      },
+      {
+        "name": "Planificarea Materialelor",
+        "desc": "MRP precis alimentat de urmărirea materiilor prime, vizibilitatea inventarului de table metalice și gestionarea automată a stocului",
+        "icon": "format-list-checks"
+      },
+      {
+        "name": "Optimizarea Tăierii",
+        "desc": "Algoritmi de imbricare încorporați care minimizează deșeurile și maximizează utilizarea tablelor pentru tăierea cu laser, plasmă și jet de apă",
+        "icon": "content-cut"
+      },
+      {
+        "name": "Raportarea Producției în Timp Real",
+        "desc": "Interfață optimizată pentru panouri tactile pentru urmărirea comenzilor în timp real și raportarea de către operatorii de mașini",
+        "icon": "tablet"
+      },
+      {
+        "name": "Calcularea Costurilor pe Comandă",
+        "desc": "Calculul precis al costurilor pe comandă cu urmărirea materialelor, forței de muncă, costurilor generale și deșeurilor",
+        "icon": "calculator"
+      },
+      {
+        "name": "Facturarea Electronică Peppol",
+        "desc": "Generează facturi electronice conforme UE conform standardului Peppol BIS Billing 3.0",
+        "icon": "file-document-outline"
+      },
+      {
+        "name": "TVA și Conformitate",
+        "desc": "Gestionarea TVA conformă local cu scutiri și integrare cu sistemele contabile naționale",
+        "icon": "shield-check"
+      },
+      {
+        "name": "Gestionarea Furnizorilor",
+        "desc": "Urmărește furnizorii, comenzile de achiziție, costurile materialelor și programele de livrare",
+        "icon": "truck"
+      },
+      {
+        "name": "Open Source",
+        "desc": "Construit pe tehnologii open source fără dependență de furnizor, asigurând portabilitatea completă a datelor și independența sistemului",
+        "icon": "code"
+      },
+      {
+        "name": "Protecția Datelor Europene",
+        "desc": "Gestionarea datelor conformă GDPR cu suveranitate completă a datelor pentru operațiunile europene",
+        "icon": "puzzle"
+      },
+      {
+        "name": "Perspicacități Bazate pe AI",
+        "desc": "Perspicacități alimentate de AI pentru identificarea blocajelor de producție și îmbunătățirea preciziei calculării costurilor",
+        "icon": "brain"
+      }
+    ],
+    "outro": "Datele de producție circulă de la ofertă la expediere. Realitatea operațională se reflectă în planificare și calcularea costurilor."
+  },
+  "workflow": {
+    "title": "De la ofertă la expediere",
+    "intro": "Sistemul conectează etapele cheie de producție într-un singur flux de lucru:",
+    "steps": [
+      {
+        "name": "Ofertare și Estimare",
+        "desc": "Calculează costurile cu precizie cu materiale, forță de muncă, timp mașină și optimizarea tăierii"
+      },
+      {
+        "name": "Planificarea Producției",
+        "desc": "Programează operațiunile în centrele de lucru cu verificări ale disponibilității inventarului și optimizarea tăierii"
+      },
+      {
+        "name": "Executarea la Nivelul Atelierului",
+        "desc": "Interfață cu panou tactil pentru urmărirea comenzilor, înregistrarea timpului și controlul calității"
+      },
+      {
+        "name": "Facturare și Conformitate",
+        "desc": "Generează facturi electronice conforme Peppol și avize cu cotele TVA corecte"
+      },
+      {
+        "name": "Expediere și Livrare",
+        "desc": "Ambalează, deduce articolele grupate și expediază comenzile către clienți"
+      },
+      {
+        "name": "Analize",
+        "desc": "Urmărește costurile reale față de cele estimate cu transparență completă și contabilizarea deșeurilor"
+      }
+    ],
+    "conclusion": "Obiectivul este consistența și trasabilitatea pe întregul ciclu de viață al comenzii."
+  },
+  "caseStudy": {
+    "title": "Utilizat în medii de producție reale",
+    "company": "Skarda Nams SIA",
+    "industry": "Fabricarea Metalelor și Piese Personalizate",
+    "region": "Europa de Est",
+    "employees": "20 angajați, 2 mașini CNC",
+    "challenge": "Provocarea",
+    "challengeText": "Skarda Nams se confrunta cu ofertarea precisă folosind diverse tipuri de metale, actualizări de inventar în timp real, capacități de deducere a metalului, planificarea producției, facturarea conformă, calcularea inexactă a costurilor și urmărirea pe hârtie.",
+    "solution": "Soluția",
+    "solutionText": "A implementat Kenzap Factory cu module integrate de ofertare, rutare de producție și execuție la nivelul atelierului. Operatorii de mașini au adoptat interfața cu panou tactil în două săptămâni de la implementare. Facturarea electronică Peppol a fost configurată pentru a îndeplini cerințele de conformitate UE. Integrare cu software-ul contabil Moneo pentru raportarea simplificată a taxelor.",
+    "results": "Rezultatele",
+    "resultItems": [
+      "Reducerea timpului de ofertare prin calculul automat al materialelor",
+      "Îmbunătățirea preciziei calculării costurilor pe comandă",
+      "Vizibilitate completă asupra operațiunilor din atelier și etapelor de fabricație",
+      "Conformitatea facturării electronice Peppol realizată, cu integrare la software-ul contabil BMD",
+      "Reducerea deșeurilor de material prin optimizarea tăierii",
+      "Planificare mai rapidă a producției cu verificări de inventar în timp real",
+      "Conformitatea GDPR și rezidența datelor UE menținută pe parcursul operațiunilor"
+    ],
+    "quote": "Avem un sistem care funcționează în felul în care funcționează atelierul nostru. Operatorii s-au adaptat imediat la interfață, iar calcularea costurilor pe comenzi este acum de încredere. Cotele de taxă sunt gestionate automat pe baza tipului de produs, ceea ce ne economisește timp și dureri de cap în timpul facturării.",
+    "quoteAuthor": "Manager Client, Skarda Nams SIA",
+    "watchCase": "Vizualizează studiul de caz"
+  },
+  "implementation": {
+    "title": "Abordarea implementării",
+    "intro": "Implementarea urmează o structură standard concepută pentru a minimiza perturbările.",
+    "principles": [
+      "Configurarea hardware-ului și instalarea software-ului pe sistemele din fabrică",
+      "Configurarea catalogului de produse și a bazei de date de inventar metal",
+      "Atribuirea rolurilor utilizatorilor și definirea responsabilităților",
+      "Personalizarea șabloanelor de documente (avize, facturi, rapoarte)",
+      "Formare cuprinzătoare pentru operatori și echipele de management",
+      "Integrarea sistemului și sincronizarea raportării financiare"
+    ],
+    "timeline": "Cronologie tipică:",
+    "phases": [
+      "Descoperire și configurare: 2-3 săptămâni",
+      "Migrarea datelor și testare: 2-3 săptămâni",
+      "Formare și lansare: 1-2 săptămâni",
+      "Suport post-lansare: în curs"
+    ],
+    "outro": "Implementarea poate fi livrată de consultanți cu experiență în fabricație și ERP sau direct de un inginer Kenzap."
+  },
+  "deployment": {
+    "title": "Opțiuni de implementare",
+    "intro": "Sistemul susține mai multe modele de implementare pentru a se potrivi nevoilor operaționale, de reglementare și suveranității datelor.",
+    "options": [
+      {
+        "name": "Cloud gestionat de furnizor",
+        "desc": "Găzduire complet gestionată în centre de date europene cu actualizări automate, backup-uri și patch-uri de securitate. Ideal pentru companiile concentrate pe operațiuni.",
+        "icon": "cloud-check"
+      },
+      {
+        "name": "Cloud gestionat de client",
+        "desc": "Implementare pe propria infrastructură cloud (AWS, Azure, GCP) cu control complet asupra configurației și accesului. Potrivit pentru organizațiile capabile din punct de vedere IT.",
+        "icon": "cloud-cog"
+      },
+      {
+        "name": "Implementare auto-găzduită",
+        "desc": "Instalare în propria locație pentru suveranitatea și controlul maxim al datelor. Necesară pentru unele industrii reglementate sau operațiuni foarte sensibile.",
+        "icon": "server"
+      }
+    ],
+    "outro": "Toate opțiunile de implementare folosesc același software, urmează aceeași cale de upgrade și mențin paritatea funcționalităților. Datele rămân în jurisdicțiile europene pentru conformitatea GDPR."
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "Dacă vrei să înțelegi dacă acest sistem se potrivește operațiunii tale, contactează-ne pentru o discuție inițială. Lucrăm în română, engleză și alte limbi europene.",
+    "namePlaceholder": "Numele tău",
+    "emailPlaceholder": "Adresa de email",
+    "companyPlaceholder": "Numele companiei",
+    "messagePlaceholder": "Spune-ne despre configurația ta de producție: numărul de mașini, dimensiuni tipice ale comenzilor, sistemele actuale...",
+    "submit": "Trimite mesajul",
+    "sending": "Se trimite...",
+    "success": "Mesaj trimis cu succes. Te vom contacta în 1-2 zile lucrătoare.",
+    "error": "Eșec la trimiterea mesajului. Te rugăm să ne scrii direct la support@kenzap.com",
+    "or": "sau",
+    "linkedin": "Conectează-te pe LinkedIn",
+    "email": "Scrie-ne direct"
+  },
+  "footer": {
+    "tagline": "Software pentru operațiuni de fabricație",
+    "company": "© 2026 Kenzap. Toate drepturile rezervate.",
+    "note": "Informațiile despre produs se pot schimba. Disponibilitatea poate varia în funcție de regiune.",
+    "languages": "Limbi"
+  }
+}

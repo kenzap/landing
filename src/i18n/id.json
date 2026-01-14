@@ -1,0 +1,240 @@
+{
+  "nav": {
+    "problem": "Masalah",
+    "solution": "Solusi",
+    "features": "Fitur",
+    "customers": "Pelanggan",
+    "contact": "Kontak"
+  },
+  "hero": {
+    "headline": "ERP yang dibangun untuk fabrikasi logam.",
+    "subheadline": "Produksi, perhitungan biaya, dan perencanaan yang dirancang untuk manufaktur berbasis pesanan.",
+    "intro": "Sistem ini dirancang khusus untuk fabrikator logam. Mendukung alur kerja produksi yang sesungguhnya, bukan solusi sementara berbasis akuntansi. Fokus pada job shop, produksi berdasarkan pesanan, dan kepatuhan regulasi.",
+    "primaryCta": "Hubungi kami",
+    "secondaryCta": "Lihat kesesuaian",
+    "watchDemo": "Lihat cara kerjanya"
+  },
+  "problem": {
+    "title": "Mengapa sistem ERP umum gagal untuk fabrikator logam",
+    "intro": "Kebanyakan sistem ERP dirancang berdasarkan akuntansi, bukan produksi. Akibatnya, fabrikator logam sering mengandalkan spreadsheet dan proses manual untuk mengelola pekerjaan dan pelaksanaan shop floor.",
+    "items": [
+      "Perhitungan biaya pekerjaan yang tidak akurat",
+      "Inventori logam tidak dilacak dengan benar",
+      "Visibilitas operasi shop floor yang buruk",
+      "Kurangnya optimasi pemotongan untuk sheet metal",
+      "Perencanaan produksi dikelola di luar sistem ERP",
+      "Tarif pajak produk yang bervariasi tidak ditangani secara otomatis"
+    ],
+    "conclusion": "Masalah-masalah ini meningkatkan risiko kepatuhan, mengurangi efisiensi, dan menurunkan kualitas layanan."
+  },
+  "whoFor": {
+    "title": "Untuk siapa sistem ini dirancang",
+    "intro": "ERP ini dirancang untuk perusahaan fabrikasi logam dengan:",
+    "criteria": [
+      "Kebutuhan perhitungan biaya pekerjaan dan pelacakan material yang akurat",
+      "Kebutuhan manajemen stok logam dan inventori sheet",
+      "Kebutuhan optimasi pemotongan untuk laser, plasma, atau waterjet",
+      "Kewajiban kepatuhan e-invoicing EU",
+      "Kebutuhan integrasi sistem akuntansi Eropa",
+      "Kebutuhan kepatuhan GDPR dan perlindungan data EU"
+    ],
+    "typical": "Pengguna tipikal meliputi:",
+    "users": [
+      "Job shop",
+      "Manufaktur kontrak",
+      "Fabrikator yang memproduksi suku cadang kustom atau batch kecil",
+      "Workshop sheet metal"
+    ],
+    "notFor": "Sistem ini tidak dirancang untuk:",
+    "excluded": [
+      "Bisnis distribusi murni",
+      "Manufaktur proses",
+      "Produksi massal yang sangat terstandarisasi"
+    ]
+  },
+  "manufacturing": {
+    "title": "Desain yang mengutamakan manufaktur",
+    "intro": "Sistem dibangun berdasarkan konsep manufaktur nyata yang digunakan dalam fabrikasi logam, dan terus beradaptasi dengan persyaratan kepatuhan Eropa yang kompleks dan berkembang.",
+    "features": [
+      {
+        "name": "Pelacakan Alur Kerja",
+        "desc": "Lacak setiap pekerjaan dari penawaran hingga pengiriman dengan visibilitas alur kerja lengkap dan detail tingkat operasi",
+        "icon": "cog"
+      },
+      {
+        "name": "Perencanaan Produksi",
+        "desc": "Kelola kapasitas produksi dan jadwalkan operasi secara efisien di seluruh shop floor Anda",
+        "icon": "factory"
+      },
+      {
+        "name": "Perencanaan Material",
+        "desc": "MRP yang akurat didukung pelacakan bahan mentah, visibilitas inventori sheet metal, dan manajemen stok otomatis",
+        "icon": "format-list-checks"
+      },
+      {
+        "name": "Optimasi Pemotongan",
+        "desc": "Algoritma nesting terintegrasi meminimalkan limbah dan memaksimalkan utilisasi sheet untuk pemotongan laser, plasma, dan waterjet",
+        "icon": "content-cut"
+      },
+      {
+        "name": "Pelaporan Produksi Real-Time",
+        "desc": "Antarmuka yang dioptimalkan untuk panel sentuh untuk pelacakan dan pelaporan pekerjaan real-time oleh operator mesin",
+        "icon": "tablet"
+      },
+      {
+        "name": "Perhitungan Biaya Berbasis Pekerjaan",
+        "desc": "Kalkulasi biaya akurat per pekerjaan dengan pelacakan material, tenaga kerja, overhead, dan scrap",
+        "icon": "calculator"
+      },
+      {
+        "name": "E-Invoicing Peppol",
+        "desc": "Hasilkan faktur elektronik yang patuh EU mengikuti standar Peppol BIS Billing 3.0",
+        "icon": "file-document-outline"
+      },
+      {
+        "name": "PPN & Kepatuhan",
+        "desc": "Penanganan PPN yang patuh lokal dengan pengecualian dan integrasi sistem akuntansi nasional",
+        "icon": "shield-check"
+      },
+      {
+        "name": "Manajemen Pemasok",
+        "desc": "Lacak pemasok, pesanan pembelian, biaya material, dan jadwal pengiriman",
+        "icon": "truck"
+      },
+      {
+        "name": "Open Source",
+        "desc": "Dibangun dengan teknologi open source tanpa vendor lock-in, memastikan portabilitas data penuh dan independensi sistem",
+        "icon": "code"
+      },
+      {
+        "name": "Perlindungan Data Eropa",
+        "desc": "Penanganan data yang patuh GDPR dengan kedaulatan data penuh untuk operasi Eropa",
+        "icon": "puzzle"
+      },
+      {
+        "name": "Wawasan Berbasis AI",
+        "desc": "Wawasan bertenaga AI untuk mengidentifikasi bottleneck produksi dan meningkatkan akurasi perhitungan biaya pekerjaan",
+        "icon": "brain"
+      }
+    ],
+    "outro": "Data produksi mengalir dari penawaran hingga pengiriman. Realitas operasional tercermin dalam perencanaan dan perhitungan biaya."
+  },
+  "workflow": {
+    "title": "Dari penawaran hingga pengiriman",
+    "intro": "Sistem menghubungkan langkah-langkah produksi utama dalam satu alur kerja:",
+    "steps": [
+      {
+        "name": "Penawaran & Estimasi",
+        "desc": "Hitung biaya secara akurat dengan material, tenaga kerja, waktu mesin, dan optimasi pemotongan"
+      },
+      {
+        "name": "Perencanaan Produksi",
+        "desc": "Jadwalkan operasi di seluruh work center dengan pemeriksaan ketersediaan inventori dan optimasi pemotongan"
+      },
+      {
+        "name": "Pelaksanaan Shop Floor",
+        "desc": "Antarmuka panel sentuh untuk pelacakan pekerjaan, pencatatan waktu, dan kontrol kualitas"
+      },
+      {
+        "name": "Faktur & Kepatuhan",
+        "desc": "Hasilkan e-faktur dan surat jalan yang patuh Peppol dengan tarif PPN yang benar"
+      },
+      {
+        "name": "Pengiriman & Penyerahan",
+        "desc": "Kemas, hapus item bundel, dan kirim pekerjaan ke pelanggan"
+      },
+      {
+        "name": "Analitik",
+        "desc": "Lacak biaya aktual vs estimasi dengan transparansi lengkap dan akuntansi scrap"
+      }
+    ],
+    "conclusion": "Tujuannya adalah konsistensi dan keterlacakan di seluruh siklus hidup pekerjaan."
+  },
+  "caseStudy": {
+    "title": "Digunakan dalam lingkungan produksi nyata",
+    "company": "Skarda Nams SIA",
+    "industry": "Fabrikasi Logam & Suku Cadang Kustom",
+    "region": "Eropa Timur",
+    "employees": "20 karyawan, 2 mesin CNC",
+    "challenge": "Tantangan",
+    "challengeText": "Skarda Nams kesulitan dengan penawaran yang akurat menggunakan berbagai jenis logam, pembaruan inventori langsung, kemampuan write-off logam, perencanaan produksi, faktur yang patuh, perhitungan biaya yang tidak akurat dan pelacakan berbasis kertas.",
+    "solution": "Solusi",
+    "solutionText": "Mengimplementasikan Kenzap Factory dengan modul penawaran, routing produksi, dan pelaksanaan shop floor yang terintegrasi. Operator mesin mengadopsi antarmuka panel sentuh dalam dua minggu setelah deployment. E-invoicing Peppol dikonfigurasi untuk memenuhi persyaratan kepatuhan EU. Integrasi dengan software akuntansi Moneo untuk pelaporan pajak yang disederhanakan.",
+    "results": "Hasil",
+    "resultItems": [
+      "Pengurangan waktu penawaran melalui kalkulasi material otomatis",
+      "Peningkatan akurasi perhitungan biaya pekerjaan",
+      "Visibilitas lengkap ke operasi shop floor dan tahapan manufaktur",
+      "Kepatuhan e-invoicing Peppol tercapai, dengan integrasi ke software akuntansi BMD",
+      "Pengurangan limbah material melalui optimasi pemotongan",
+      "Perencanaan produksi lebih cepat dengan pemeriksaan inventori real-time",
+      "Kepatuhan GDPR dan residensi data EU dipelihara sepanjang operasi"
+    ],
+    "quote": "Kami memiliki sistem yang bekerja sesuai cara shop floor kami bekerja. Para operator langsung beradaptasi dengan antarmukanya, dan perhitungan biaya pekerjaan kami sekarang dapat diandalkan. Tarif pajak ditangani secara otomatis berdasarkan jenis produk, yang menghemat waktu dan mengurangi masalah selama faktur.",
+    "quoteAuthor": "Manajer Klien, Skarda Nams SIA",
+    "watchCase": "Lihat studi kasus"
+  },
+  "implementation": {
+    "title": "Pendekatan implementasi",
+    "intro": "Implementasi mengikuti struktur standar yang dirancang untuk meminimalkan gangguan.",
+    "principles": [
+      "Setup hardware dan instalasi software pada sistem pabrik",
+      "Konfigurasi katalog produk dan database inventori logam",
+      "Penugasan peran pengguna dan definisi tanggung jawab",
+      "Kustomisasi template dokumen (surat jalan, faktur, laporan)",
+      "Pelatihan komprehensif untuk operator dan tim manajemen",
+      "Integrasi sistem dan sinkronisasi pelaporan keuangan"
+    ],
+    "timeline": "Timeline tipikal:",
+    "phases": [
+      "Penemuan & konfigurasi: 2-3 minggu",
+      "Migrasi data & pengujian: 2-3 minggu",
+      "Pelatihan & go-live: 1-2 minggu",
+      "Dukungan pasca-peluncuran: berkelanjutan"
+    ],
+    "outro": "Implementasi dapat diserahkan oleh konsultan dengan latar belakang manufaktur dan ERP atau oleh engineer Kenzap secara langsung."
+  },
+  "deployment": {
+    "title": "Opsi deployment",
+    "intro": "Sistem mendukung berbagai model deployment untuk menyesuaikan kebutuhan operasional, regulasi, dan kedaulatan data.",
+    "options": [
+      {
+        "name": "Cloud yang dikelola vendor",
+        "desc": "Hosting yang sepenuhnya dikelola di pusat data Eropa dengan pembaruan otomatis, backup, dan patch keamanan. Ideal untuk perusahaan yang fokus pada operasi.",
+        "icon": "cloud-check"
+      },
+      {
+        "name": "Cloud yang dikelola pelanggan",
+        "desc": "Deploy pada infrastruktur cloud Anda sendiri (AWS, Azure, GCP) dengan kontrol penuh atas konfigurasi dan akses. Cocok untuk organisasi yang memiliki kemampuan IT.",
+        "icon": "cloud-cog"
+      },
+      {
+        "name": "Deployment self-hosted",
+        "desc": "Instalasi on-premises untuk kedaulatan data maksimum dan kontrol. Diperlukan untuk beberapa industri yang diregulasi atau operasi yang sangat sensitif.",
+        "icon": "server"
+      }
+    ],
+    "outro": "Semua opsi deployment menggunakan software yang sama, mengikuti jalur upgrade yang sama, dan mempertahankan paritas fitur. Data tetap berada di yurisdiksi Eropa untuk kepatuhan GDPR."
+  },
+  "contact": {
+    "title": "Kontak",
+    "intro": "Jika Anda ingin memahami apakah sistem ini cocok untuk operasi Anda, hubungi kami untuk diskusi awal. Kami bekerja dalam bahasa Inggris dan bahasa Eropa lainnya.",
+    "namePlaceholder": "Nama Anda",
+    "emailPlaceholder": "Alamat email",
+    "companyPlaceholder": "Nama perusahaan",
+    "messagePlaceholder": "Ceritakan tentang setup produksi Anda: jumlah mesin, ukuran pekerjaan tipikal, sistem saat ini...",
+    "submit": "Kirim pesan",
+    "sending": "Mengirim...",
+    "success": "Pesan berhasil dikirim. Kami akan menghubungi Anda dalam 1-2 hari kerja.",
+    "error": "Gagal mengirim pesan. Silakan email kami langsung di support@kenzap.com",
+    "or": "atau",
+    "linkedin": "Terhubung di LinkedIn",
+    "email": "Email kami langsung"
+  },
+  "footer": {
+    "tagline": "Software untuk operasi manufaktur",
+    "company": "© 2026 Kenzap. Semua hak dilindungi.",
+    "note": "Informasi produk dapat berubah. Ketersediaan dapat bervariasi berdasarkan wilayah.",
+    "languages": "Bahasa"
+  }
+}

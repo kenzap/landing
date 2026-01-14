@@ -1,0 +1,48 @@
+---
+const { translations } = Astro.props;
+const t = translations;
+---
+
+<section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
+  <div class="container-width">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <h1 class="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+          {t.hero.headline}
+        </h1>
+        <p class="text-xl text-gray-600 mb-6">
+          {t.hero.subheadline}
+        </p>
+        <p class="text-gray-700 mb-8 leading-relaxed">
+          {t.hero.intro}
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a 
+            href="#contact"
+            class="px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors text-center"
+          >
+            {t.hero.primaryCta}
+          </a>
+          <a 
+            href="#who-for"
+            class="px-6 py-3 border border-gray-300 rounded-lg hover:border-primary hover:text-primary transition-colors text-center"
+          >
+            {t.hero.secondaryCta}
+          </a>
+        </div>
+      </div>
+      
+      <!-- YouTube Video Embed -->
+      <div class="relative aspect-video bg-gray-900 rounded-lg overflow-hidden shadow-2xl">
+        <iframe 
+          src="https://www.youtube.com/embed/8XA-XP6yOuc"
+          title="Sheet metal estimating software overview"
+          class="absolute inset-0 w-full h-full"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </div>
+  </div>
+</section>

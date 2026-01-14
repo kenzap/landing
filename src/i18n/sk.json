@@ -1,0 +1,240 @@
+{
+  "nav": {
+    "problem": "Problém",
+    "solution": "Riešenie",
+    "features": "Funkcie",
+    "customers": "Zákazníci",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "headline": "ERP systém vytvorený pre kovoobrábanie.",
+    "subheadline": "Výroba, kalkulácie a plánovanie navrhnuté pre zákazkové výrobné podniky.",
+    "intro": "Tento systém je navrhnutý špeciálne pre kovoobrábačské firmy. Podporuje reálne výrobné procesy, nie účtovné náhradné riešenia. Zameraný na zákazkové dielne, výrobu na objednávku a dodržiavanie predpisov.",
+    "primaryCta": "Kontaktujte nás",
+    "secondaryCta": "Zistite, či vám vyhovuje",
+    "watchDemo": "Pozrite si ako funguje"
+  },
+  "problem": {
+    "title": "Prečo univerzálne ERP systémy zlyhávajú u kovoobrábačov",
+    "intro": "Väčšina ERP systémov je navrhnutá okolo účtovníctva, nie výroby. V dôsledku toho sa kovoobrábači často spoliehajú na tabuľky a manuálne procesy pri riadení zákaziek a výrobných operácií.",
+    "items": [
+      "Nepresné kalkulácie zákaziek",
+      "Nesprávne sledovanie skladových zásob kovov",
+      "Slabá kontrola nad výrobnými operáciami",
+      "Chýba optimalizácia rezania plechu",
+      "Plánovanie výroby sa riadi mimo ERP systému",
+      "Premenlivé daňové sadzby produktov nie sú spracované automaticky"
+    ],
+    "conclusion": "Tieto problémy zvyšujú riziko nedodržania predpisov, znižujú efektivitu a zhoršujú kvalitu služieb."
+  },
+  "whoFor": {
+    "title": "Pre koho je tento systém navrhnutý",
+    "intro": "Tento ERP je navrhnutý pre kovoobrábačské spoločnosti s:",
+    "criteria": [
+      "Potrebou presných kalkulácií zákaziek a sledovania materiálov",
+      "Požiadavkami na riadenie skladov kovov a plechov",
+      "Potrebami optimalizácie rezania pre laser, plazmu alebo vodný lúč",
+      "Povinnosťami súladu s EU e-fakturáciou",
+      "Požiadavkami na integráciu s európskymi účtovnými systémami",
+      "Potrebami súladu s GDPR a ochranou údajov EÚ"
+    ],
+    "typical": "Typickí používatelia zahŕňajú:",
+    "users": [
+      "Zákazkové dielne",
+      "Subdodávateľské výroby",
+      "Výrobcovia na mieru alebo malých sérií",
+      "Plechárske dielne"
+    ],
+    "notFor": "Tento systém nie je navrhnutý pre:",
+    "excluded": [
+      "Čisto distribučné podniky",
+      "Procesné výroby",
+      "Vysoko štandardizovanú sériovú výrobu"
+    ]
+  },
+  "manufacturing": {
+    "title": "Dizajn orientovaný na výrobu",
+    "intro": "Systém je postavený na skutočných výrobných konceptoch používaných v kovoobrábaní a neustále sa prispôsobuje komplexným a vyvíjajúcim sa európskym požiadavkám na súlad s predpismi.",
+    "features": [
+      {
+        "name": "Sledovanie pracovných tokov",
+        "desc": "Sledujte každú zákazku od cennej ponuky po dodávku s úplným prehľadom a detailmi na úrovni operácií",
+        "icon": "cog"
+      },
+      {
+        "name": "Plánovanie výroby",
+        "desc": "Riadenie výrobných kapacít a efektívne plánovanie operácií v celej dielni",
+        "icon": "factory"
+      },
+      {
+        "name": "Plánovanie materiálov",
+        "desc": "Presný MRP založený na sledovaní surovín, prehľade skladových zásob plechov a automatizovanom riadení skladu",
+        "icon": "format-list-checks"
+      },
+      {
+        "name": "Optimalizácia rezania",
+        "desc": "Vstavané algoritmy pre rozmiestňovanie minimalizujú odpad a maximalizujú využitie plechov pre laser, plazmu a vodný lúč",
+        "icon": "content-cut"
+      },
+      {
+        "name": "Výrobné hlásenia v reálnom čase",
+        "desc": "Rozhranie optimalizované pre dotykové panely na sledovanie zákaziek a hlásenie obsluhy strojov v reálnom čase",
+        "icon": "tablet"
+      },
+      {
+        "name": "Kalkulácie na základe zákaziek",
+        "desc": "Presný výpočet nákladov na zákazku so sledovaním materiálu, práce, réžie a odpadu",
+        "icon": "calculator"
+      },
+      {
+        "name": "Peppol e-fakturácia",
+        "desc": "Generovanie elektronických faktúr v súlade s EÚ podľa štandardu Peppol BIS Billing 3.0",
+        "icon": "file-document-outline"
+      },
+      {
+        "name": "DPH a súlad s predpismi",
+        "desc": "Lokálne kompatibilné spracovanie DPH s výnimkami a integráciou národných účtovných systémov",
+        "icon": "shield-check"
+      },
+      {
+        "name": "Riadenie dodávateľov",
+        "desc": "Sledovanie dodávateľov, nákupných objednávok, nákladov na materiály a harmonogramov dodávok",
+        "icon": "truck"
+      },
+      {
+        "name": "Open Source",
+        "desc": "Postavený na open source technológiách bez závislosti od dodávateľa, zaručujúci úplnú prenosnosť údajov a nezávislosť systému",
+        "icon": "code"
+      },
+      {
+        "name": "Európska ochrana údajov",
+        "desc": "GDPR kompatibilné spracovanie údajov s úplnou suverenitou údajov pre európske operácie",
+        "icon": "puzzle"
+      },
+      {
+        "name": "AI-riadené poznatky",
+        "desc": "AI poznatky na identifikáciu výrobných úzkych miest a zlepšenie presnosti kalkulácií zákaziek",
+        "icon": "brain"
+      }
+    ],
+    "outro": "Výrobné údaje prúdia od cenovej ponuky po expedíciu. Operačná realita sa odráža v plánovaní a kalkuláciách."
+  },
+  "workflow": {
+    "title": "Od cenovej ponuky po expedíciu",
+    "intro": "Systém spája kľúčové výrobné kroky v jednom pracovnom toku:",
+    "steps": [
+      {
+        "name": "Cenová ponuka a odhad",
+        "desc": "Presný výpočet nákladov s materiálom, prácou, strojovým časom a optimalizáciou rezania"
+      },
+      {
+        "name": "Plánovanie výroby",
+        "desc": "Plánovanie operácií v pracovných centrách s kontrolou dostupnosti zásob a optimalizáciou rezania"
+      },
+      {
+        "name": "Výrobné operácie",
+        "desc": "Dotykové rozhranie pre sledovanie zákaziek, zaznamenávanie času a kontrolu kvality"
+      },
+      {
+        "name": "Fakturácia a súlad s predpismi",
+        "desc": "Generovanie Peppol kompatibilných e-faktúr a sprievodiek so správnymi DPH sadzbami"
+      },
+      {
+        "name": "Expedícia a dodávka",
+        "desc": "Balenie, odpisovanie súborov položiek a expedícia zákaziek zákazníkom"
+      },
+      {
+        "name": "Analytiky",
+        "desc": "Sledovanie skutočných vs. odhadovaných nákladov s úplnou transparentnosťou a účtovaním odpadu"
+      }
+    ],
+    "conclusion": "Cieľom je konzistentnosť a sledovateľnosť počas celého životného cyklu zákazky."
+  },
+  "caseStudy": {
+    "title": "Používa sa v skutočných výrobných prostrediach",
+    "company": "Skarda Nams SIA",
+    "industry": "Kovoobrábanie a výroba na mieru",
+    "region": "Východná Európa",
+    "employees": "20 zamestnancov, 2 CNC stroje",
+    "challenge": "Výzva",
+    "challengeText": "Skarda Nams mala problémy s presným ocenením pri použití rôznych typov kovov, aktualizáciou zásob v reálnom čase, možnosťami odpisovania kovov, plánovaním výroby, kompatibilnou fakturáciou, nepresnými kalkuláciami a papierovým sledovaním.",
+    "solution": "Riešenie",
+    "solutionText": "Implementácia Kenzap Factory s integrovanými modulmi pre cenovú ponuku, výrobné smerovanie a výrobné operácie. Obsluha strojov si osvojila dotykové rozhranie do dvoch týždňov od nasadenia. Peppol e-fakturácia bola nakonfigurovaná tak, aby spĺňala požiadavky EÚ na súlad s predpismi. Integrácia s účtovným softvérom Moneo pre zjednodušené daňové hlásenie.",
+    "results": "Výsledky",
+    "resultItems": [
+      "Skrátenie času na oceňovanie prostredníctvom automatizovaného výpočtu materiálov",
+      "Zlepšenie presnosti kalkulácií zákaziek",
+      "Úplný prehľad o výrobných operáciách a výrobných fázach",
+      "Dosiahnutý súlad s Peppol e-fakturáciou s integráciou do účtovného softvéru BMD",
+      "Zníženie odpadu materiálu prostredníctvom optimalizácie rezania",
+      "Rýchlejšie plánovanie výroby s kontrolami zásob v reálnom čase",
+      "GDPR súlad a rezidencia údajov EÚ udržiavaná počas celých operácií"
+    ],
+    "quote": "Máme systém, ktorý funguje tak, ako funguje naša dielňa. Obsluha sa prispôsobila rozhraniu okamžite a naše kalkulácie zákaziek sú teraz spoľahlivé. Daňové sadzby sa spracovávajú automaticky na základe typu produktu, čo nám šetrí čas a starosti pri fakturácii.",
+    "quoteAuthor": "Manažér klienta, Skarda Nams SIA",
+    "watchCase": "Pozrite si prípadovú štúdiu"
+  },
+  "implementation": {
+    "title": "Prístup k implementácii",
+    "intro": "Implementácia nasleduje štandardnú štruktúru navrhnutú na minimalizáciu narušenia.",
+    "principles": [
+      "Nastavenie hardvéru a inštalácia softvéru na firemné systémy",
+      "Konfigurácia katalógu produktov a databázy skladových zásob kovov",
+      "Priradenie používateľských rolí a definícia zodpovedností",
+      "Prispôsobenie šablón dokumentov (sprievodky, faktúry, hlásenia)",
+      "Komplexné školenie pre obsluhu a riadiace tímy",
+      "Integrácia systému a synchronizácia finančného výkazníctva"
+    ],
+    "timeline": "Typický časový harmonogram:",
+    "phases": [
+      "Objavovanie a konfigurácia: 2-3 týždne",
+      "Migrácia údajov a testovanie: 2-3 týždne",
+      "Školenie a spustenie: 1-2 týždne",
+      "Podpora po spustení: priebežne"
+    ],
+    "outro": "Implementáciu môžu vykonať konzultanti s výrobným a ERP pozadím alebo priamo inžinier Kenzap."
+  },
+  "deployment": {
+    "title": "Možnosti nasadenia",
+    "intro": "Systém podporuje viacero modelov nasadenia tak, aby vyhovovali prevádzkových, regulačným a suverenita údajov potrebám.",
+    "options": [
+      {
+        "name": "Cloud riadený dodávateľom",
+        "desc": "Plne spravovaný hosting v európskych dátových centrách s automatickými aktualizáciami, zálohami a bezpečnostnými záplatami. Ideálne pre spoločnosti zamerané na prevádzku.",
+        "icon": "cloud-check"
+      },
+      {
+        "name": "Cloud riadený zákazníkom",
+        "desc": "Nasadenie na vlastnej cloudovej infraštruktúre (AWS, Azure, GCP) s plnou kontrolou nad konfiguráciou a prístupom. Vhodné pre IT-schopné organizácie.",
+        "icon": "cloud-cog"
+      },
+      {
+        "name": "Vlastné nasadenie",
+        "desc": "On-premises inštalácia pre maximálnu suverenitu údajov a kontrolu. Požadované pre niektoré regulované odvetvia alebo vysoko citlivé operácie.",
+        "icon": "server"
+      }
+    ],
+    "outro": "Všetky možnosti nasadenia používajú rovnaký softvér, nasledujú rovnakú cestu upgradu a udržiavajú rovnaké funkcie. Údaje zostávajú v európskych jurisdikciách pre GDPR súlad."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "intro": "Ak chcete pochopiť, či tento systém vyhovuje vašej prevádzke, kontaktujte nás na úvodnú diskusiu. Pracujeme v angličtine a ďalších európskych jazykoch.",
+    "namePlaceholder": "Vaše meno",
+    "emailPlaceholder": "E-mailová adresa",
+    "companyPlaceholder": "Názov spoločnosti",
+    "messagePlaceholder": "Povedzte nám o vašom výrobnom nastavení: počet strojov, typické veľkosti zákaziek, súčasné systémy...",
+    "submit": "Odoslať správu",
+    "sending": "Odosiela sa...",
+    "success": "Správa úspešne odoslaná. Kontaktujeme vás do 1-2 pracovných dní.",
+    "error": "Nepodarilo sa odoslať správu. Napíšte nám prosím priamo na support@kenzap.com",
+    "or": "alebo",
+    "linkedin": "Spojte sa na LinkedIn",
+    "email": "Napíšte nám priamo"
+  },
+  "footer": {
+    "tagline": "Softvér pre výrobné operácie",
+    "company": "© 2026 Kenzap. Všetky práva vyhradené.",
+    "note": "Informácie o produkte sa môžu zmeniť. Dostupnosť sa môže líšiť podľa regiónu.",
+    "languages": "Jazyky"
+  }
+}

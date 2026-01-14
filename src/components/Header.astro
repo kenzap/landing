@@ -1,0 +1,102 @@
+---
+const { lang = 'en', translations } = Astro.props;
+const t = translations;
+---
+
+<header id="header" class="fixed top-0 left-0 right-0 px-4 sm:px-6 lg:px-8 bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
+  <div class="container-width">
+    <div class="flex items-center justify-between h-16">
+      <div class="flex items-center space-x-3">
+        <img src="https://cdn.kenzap.com/logo.svg" alt="Kenzap" class="h-8" />
+        <span class="text-xl font-semibold hidden">Factory</span>
+      </div>
+      
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="#problem" class="text-sm hover:text-primary transition-colors">{t.nav.problem}</a>
+        <a href="#manufacturing" class="text-sm hover:text-primary transition-colors">{t.nav.features}</a>
+        <a href="#case-study" class="text-sm hover:text-primary transition-colors">{t.nav.customers}</a>
+        <a href="#contact" class="text-sm hover:text-primary transition-colors">{t.nav.contact}</a>
+      </nav>
+
+      <div class="flex items-center space-x-4">
+        <!-- Language Switcher -->
+        <div class="relative">
+          <select 
+            id="lang-switcher"
+            class="appearance-none bg-transparent border border-gray-300 rounded px-3 py-1 pr-8 text-sm cursor-pointer hover:border-primary transition-colors"
+          >
+            <option value="/" selected={lang === 'en'}>🇺🇸 English</option>
+            <option value="/es" selected={lang === 'es'}>🇪🇸 Español</option>
+            <option value="/fr" selected={lang === 'fr'}>🇫🇷 Français</option>
+            <option value="/de" selected={lang === 'de'}>🇩🇪 Deutsch</option>
+            <option value="/it" selected={lang === 'it'}>🇮🇹 Italiano</option>
+            <option value="/pt" selected={lang === 'pt'}>🇵🇹 Português</option>
+            <option value="/nl" selected={lang === 'nl'}>🇳🇱 Nederlands</option>
+            <option value="/sv" selected={lang === 'sv'}>🇸🇪 Svenska</option>
+            <option value="/da" selected={lang === 'da'}>🇩🇰 Dansk</option>
+            <option value="/fi" selected={lang === 'fi'}>🇫🇮 Suomi</option>
+            <option value="/pl" selected={lang === 'pl'}>🇵🇱 Polski</option>
+            <option value="/cs" selected={lang === 'cs'}>🇨🇿 Čeština</option>
+            <option value="/sk" selected={lang === 'sk'}>🇸🇰 Slovenčina</option>
+            <option value="/hu" selected={lang === 'hu'}>🇭🇺 Magyar</option>
+            <option value="/ro" selected={lang === 'ro'}>🇷🇴 Română</option>
+            <option value="/bg" selected={lang === 'bg'}>🇧🇬 Български</option>
+            <option value="/hr" selected={lang === 'hr'}>🇭🇷 Hrvatski</option>
+            <option value="/sl" selected={lang === 'sl'}>🇸🇮 Slovenščina</option>
+            <option value="/et" selected={lang === 'et'}>🇪🇪 Eesti</option>
+            <option value="/lv" selected={lang === 'lv'}>🇱🇻 Latviešu</option>
+            <option value="/lt" selected={lang === 'lt'}>🇱🇹 Lietuvių</option>
+            <option value="/el" selected={lang === 'el'}>🇬🇷 Ελληνικά</option>
+            <option value="/id" selected={lang === 'id'}>🇮🇩 Bahasa Indonesia</option>
+          </select>
+          <svg class="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 pointer-events-none text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+          </svg>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button 
+          id="mobile-menu-btn"
+          class="md:hidden p-2"
+          aria-label="Toggle menu"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 py-4 space-y-3">
+      <a href="#problem" class="block px-4 py-2 hover:bg-gray-50">{t.nav.problem}</a>
+      <a href="#manufacturing" class="block px-4 py-2 hover:bg-gray-50">{t.nav.features}</a>
+      <a href="#case-study" class="block px-4 py-2 hover:bg-gray-50">{t.nav.customers}</a>
+      <a href="#contact" class="block px-4 py-2 hover:bg-gray-50">{t.nav.contact}</a>
+    </div>
+  </div>
+</header>
+
+<script>
+  // Mobile menu toggle
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  
+  mobileMenuBtn?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+  });
+
+  // Close mobile menu when clicking a link
+  mobileMenu?.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu?.classList.add('hidden');
+    });
+  });
+
+  // Language switcher
+  const langSwitcher = document.getElementById('lang-switcher') as HTMLSelectElement;
+  langSwitcher?.addEventListener('change', (e) => {
+    window.location.href = (e.target as HTMLSelectElement).value;
+  });
+</script>

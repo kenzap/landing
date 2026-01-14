@@ -1,0 +1,38 @@
+---
+import { Icon } from 'astro-icon/components';
+const { translations } = Astro.props;
+const t = translations;
+---
+
+<section id="manufacturing" class="section-padding bg-white">
+  <div class="container-width">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h2 class="text-4xl font-bold mb-6">{t.manufacturing.title}</h2>
+      <p class="text-lg text-gray-700">
+        {t.manufacturing.intro}
+      </p>
+    </div>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {t.manufacturing.features.map((feature: any) => (
+      <div class="bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow">
+        <div class="flex items-center mb-3">
+          <Icon name={`mdi:${feature.icon}`} class="w-8 h-8 mr-3 text-blue-600" />
+          <h3 class="text-xl font-semibold text-gray-900">
+            {feature.name}
+          </h3>
+        </div>
+        <p class="text-gray-600 leading-relaxed">
+        {feature.desc}
+        </p>
+      </div>
+      ))}
+    </div>
+    
+    <div class="mt-12 text-center">
+      <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+        {t.manufacturing.outro}
+      </p>
+    </div>
+  </div>
+</section>

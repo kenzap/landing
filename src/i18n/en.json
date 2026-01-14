@@ -1,0 +1,231 @@
+{
+  "nav": {
+    "problem": "Problem",
+    "solution": "Solution",
+    "features": "Features",
+    "customers": "Customers",
+    "contact": "Contact"
+  },
+  "hero": {
+    "headline": "ERP built for metal fabrication.",
+    "subheadline": "Production, costing, and planning designed for job-based manufacturing.",
+    "intro": "This system is designed specifically for metal fabricators. It supports real production workflows, not accounting-driven workarounds. The focus is on job shops, make-to-order production, and compliance.",
+    "primaryCta": "Contact us",
+    "secondaryCta": "See if this fits",
+    "watchDemo": "Watch how it works"
+  },
+  "problem": {
+    "title": "Why generic ERP systems fail metal fabricators",
+    "intro": "Most ERP systems are designed around accounting, not production. As a result, metal fabricators often rely on spreadsheets and manual processes to manage jobs and shop-floor execution.",
+    "items": [
+      "Inaccurate job costing",
+      "Metal inventory not tracked properly",
+      "Poor visibility into shop-floor operations",
+      "Lack of cutting optimization for sheet metal",
+      "Production planning managed outside the ERP",
+      "Variable product tax rates not handled automatically"
+    ],
+    "conclusion": "These problems increase compliance risk, reduce efficiency, and degrade quality of service."
+  },
+  "whoFor": {
+    "title": "Who this system is designed for",
+    "intro": "This ERP is designed for metal fabrication companies with:",
+    "criteria": [
+      "A need for accurate job costing and material tracking",
+      "Metal stock and sheet inventory management requirements",
+      "Cutting optimization needs for laser, plasma, or waterjet",
+      "EU e-invoicing compliance obligations",
+      "European accounting system integration requirements",
+      "GDPR and EU data protection compliance needs"
+    ],
+    "typical": "Typical users include:",
+    "users": ["Job shops", "Contract manufacturers", "Fabricators producing custom or small-batch parts", "Sheet metal workshops"],
+    "notFor": "This system is not designed for:",
+    "excluded": ["Pure distribution businesses", "Process manufacturing", "Highly standardized mass production"]
+  },
+  "manufacturing": {
+    "title": "Manufacturing-first design",
+    "intro": "The system is built around real manufacturing concepts used in metal fabrication, and it continuously adapts to complex and evolving European compliance requirements.",
+    "features": [
+      {
+        "name": "Workflow Tracking",
+        "desc": "Track every job from quote to delivery with complete workflow visibility and operation-level detail",
+        "icon": "cog"
+      },
+      {
+        "name": "Production Planning",
+        "desc": "Manage production capacity and schedule operations efficiently across your shop floor",
+        "icon": "factory"
+      },
+      {
+        "name": "Material Planning",
+        "desc": "Accurate MRP powered by raw material tracking, sheet metal inventory visibility, and automated stock management",
+        "icon": "format-list-checks"
+      },
+      {
+        "name": "Cutting Optimization",
+        "desc": "Built-in nesting algorithms minimize waste and maximize sheet utilization for laser, plasma, and waterjet cutting",
+        "icon": "content-cut"
+      },
+      {
+        "name": "Real-Time Production Reporting",
+        "desc": "Touch-panel-optimized interface for real-time job tracking and reporting by machine operators",
+        "icon": "tablet"
+      },
+      {
+        "name": "Job-Based Costing",
+        "desc": "Accurate cost calculation per job with material, labor, overhead, and scrap tracking",
+        "icon": "calculator"
+      },
+      {
+        "name": "Peppol E-Invoicing",
+        "desc": "Generate EU-compliant electronic invoices following Peppol BIS Billing 3.0 standard",
+        "icon": "file-document-outline"
+      },
+      {
+        "name": "VAT & Compliance",
+        "desc": "Locally compliant VAT handling with exemptions and national accounting system integration",
+        "icon": "shield-check"
+      },
+      {
+        "name": "Supplier Management",
+        "desc": "Track suppliers, purchase orders, material costs, and delivery schedules",
+        "icon": "truck"
+      },
+      {
+        "name": "Open Source",
+        "desc": "Built on open source technologies with no vendor lock-in, ensuring full data portability and system independence",
+        "icon": "code"
+      },
+      {
+        "name": "European Data Protection",
+        "desc": "GDPR-compliant data handling with full data sovereignty for European operations",
+        "icon": "puzzle"
+      },
+      {
+        "name": "AI-Driven Insights",
+        "desc": "AI-powered insights to identify production bottlenecks and improve job costing accuracy",
+        "icon": "brain"
+      }
+    ],
+    "outro": "Production data flows from quotation to dispatch. Operational reality is reflected in planning and costing."
+  },
+  "workflow": {
+    "title": "From quote to dispatch",
+    "intro": "The system connects key production steps in a single workflow:",
+    "steps": [
+      {
+        "name": "Quotation & Estimation",
+        "desc": "Calculate costs accurately with material, labor, machine time, and cutting optimization"
+      },
+      {
+        "name": "Production Planning",
+        "desc": "Schedule operations across work centers with inventory availability checks and cutting optimization"
+      },
+      {
+        "name": "Shop-Floor Execution",
+        "desc": "Touch-panel interface for job tracking, time recording, and quality control"
+      },
+      {
+        "name": "Invoicing & Compliance",
+        "desc": "Generate Peppol-compliant e-invoices and waybills with correct VAT rates"
+      },
+      {
+        "name": "Dispatch & Delivery",
+        "desc": "Pack, write off bundled items, and dispatch jobs to customers"
+      },
+      {
+        "name": "Analytics",
+        "desc": "Track actual vs. estimated costs with complete transparency and scrap accounting"
+      }
+    ],
+    "conclusion": "The goal is consistency and traceability across the entire job lifecycle."
+  },
+  "caseStudy": {
+    "title": "Used in real production environments",
+    "company": "Skarda Nams SIA",
+    "industry": "Metal Fabrication & Custom Parts",
+    "region": "Eastern Europe",
+    "employees": "20 employees, 2 CNC machines",
+    "challenge": "Challenge",
+    "challengeText": "Skarda Nams struggled with accurate quoting using various metal types, live inventory updates, metal write-off capabilities, production planning, compliant invoicing, inaccurate costing and paper-based tracking.",
+    "solution": "Solution",
+    "solutionText": "Implemented Kenzap Factory with integrated quotation, production routing, and shop-floor execution modules. Machine operators adopted the touch-panel interface within two weeks of deployment. Peppol e-invoicing was configured to meet EU compliance requirements. Integration with Moneo accounting software for simplified tax reporting.",
+    "results": "Results",
+    "resultItems": [
+      "Reduction in quoting time through automated material calculation",
+      "Improvement in job costing accuracy",
+      "Complete visibility into shop-floor operations and manufacturing stages",
+      "Peppol e-invoicing compliance achieved, with integration to BMD accounting software",
+      "Material waste reduction through cutting optimization",
+      "Faster production planning with real-time inventory checks",
+      "GDPR compliance and EU data residency maintained throughout operations"
+    ],
+    "quote": "We have a system that works the way our shop floor works. The operators adapted to the interface immediately, and our job costing is now reliable. Tax rates are handled automatically based on product type, which saves us time and headaches during invoicing.",
+    "quoteAuthor": "Client Manager, Skarda Nams SIA",
+    "watchCase": "Watch case study"
+  },
+  "implementation": {
+    "title": "Implementation approach",
+    "intro": "Implementation follow a standard structure designed to minimize disruption.",
+    "principles": [
+      "Hardware setup and software installation on factory systems",
+      "Product catalog and metal inventory database configuration",
+      "User role assignment and responsibility definition",
+      "Document template customization (waybills, invoices, reports)",
+      "Comprehensive training for operators and management teams",
+      "System integration and financial reporting synchronization"
+    ],
+    "timeline": "Typical timeline:",
+    "phases": [
+      "Discovery & configuration: 2-3 weeks",
+      "Data migration & testing: 2-3 weeks",
+      "Training & go-live: 1-2 weeks",
+      "Post-launch support: ongoing"
+    ],
+    "outro": "Implementation can be delivered by consultants with manufacturing and ERP backgrounds or by Kenzap engineer directly."
+  },
+  "deployment": {
+    "title": "Deployment options",
+    "intro": "The system supports multiple deployment models to match operational, regulatory, and data sovereignty needs.",
+    "options": [
+      {
+        "name": "Vendor-managed cloud",
+        "desc": "Fully managed hosting in European data centers with automatic updates, backups, and security patches. Ideal for companies focused on operations.",
+        "icon": "cloud-check"
+      },
+      {
+        "name": "Customer-managed cloud",
+        "desc": "Deploy on your own cloud infrastructure (AWS, Azure, GCP) with full control over configuration and access. Suitable for IT-capable organizations.",
+        "icon": "cloud-cog"
+      },
+      {
+        "name": "Self-hosted deployment",
+        "desc": "On-premises installation for maximum data sovereignty and control. Required for some regulated industries or highly sensitive operations.",
+        "icon": "server"
+      }
+    ],
+    "outro": "All deployment options use the same software, follow the same upgrade path, and maintain feature parity. Data remains in European jurisdictions for GDPR compliance."
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "If you want to understand whether this system fits your operation, contact us for an initial discussion. We work in English and other European languages.",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "Email address",
+    "companyPlaceholder": "Company name",
+    "messagePlaceholder": "Tell us about your production setup: number of machines, typical job sizes, current systems...",
+    "submit": "Send message",
+    "sending": "Sending...",
+    "success": "Message sent successfully. We will contact you within 1-2 business days.",
+    "error": "Failed to send message. Please email us directly at support@kenzap.com",
+    "or": "or",
+    "linkedin": "Connect on LinkedIn",
+    "email": "Email us directly"
+  },
+  "footer": {
+    "tagline": "Software for manufacturing operations",
+    "company": "© 2026 Kenzap. All rights reserved.",
+    "note": "Product information may change. Availability may vary by region.",
+    "languages": "Languages"
+  }
+}

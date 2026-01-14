@@ -1,0 +1,40 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  lang?: string;
+}
+
+const { title, lang = 'en' } = Astro.props;
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="ERP built for metal fabrication. Production, costing, and planning designed for job-based manufacturing." />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+
+    <!-- Inline critical CSS for above-the-fold content -->
+    <style is:inline>
+      /* Critical CSS - customize based on your above-the-fold content */
+      *{box-sizing:border-box;margin:0;padding:0}
+      body{font-family:system-ui,-apple-system,sans-serif;line-height:1.5;color:#111827}
+      .fixed{position:fixed}
+      .top-0{top:0}
+      .left-0{left:0}
+      .right-0{right:0}
+      .z-50{z-index:50}
+      .bg-white{background-color:#fff}
+      .border-b{border-bottom-width:1px}
+      .border-gray-200{border-color:#e5e7eb}
+    </style>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

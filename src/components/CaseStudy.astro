@@ -1,0 +1,67 @@
+---
+const { translations } = Astro.props;
+const t = translations;
+---
+
+<section id="case-study" class="section-padding bg-white">
+  <div class="container-width">
+    <h2 class="text-4xl font-bold mb-12 text-center">{t.caseStudy.title}</h2>
+    
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <!-- Video Placeholder -->
+      <div class="relative aspect-video bg-gray-900 rounded-lg overflow-hidden shadow-xl">
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="text-center">
+            <div class="inline-flex items-center justify-center w-16 h-16 bg-white/10 backdrop-blur-sm rounded-full mb-4">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </div>
+            <p class="text-white text-sm">{t.caseStudy.watchCase}</p>
+          </div>
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-br from-primary/30 to-primary/10"></div>
+      </div>
+      
+      <!-- Case Study Content -->
+      <div>
+        <div class="mb-6">
+          <h3 class="text-2xl font-bold text-gray-900 mb-2">{t.caseStudy.company}</h3>
+          <p class="text-gray-600">{t.caseStudy.industry}</p>
+          <p class="text-sm text-gray-500">{t.caseStudy.region} • {t.caseStudy.employees}</p>
+        </div>
+        
+        <div class="space-y-6">
+          <div>
+            <h4 class="text-lg font-semibold text-gray-900 mb-2">{t.caseStudy.challenge}</h4>
+            <p class="text-gray-700 leading-relaxed">{t.caseStudy.challengeText}</p>
+          </div>
+          
+          <div>
+            <h4 class="text-lg font-semibold text-gray-900 mb-2">{t.caseStudy.solution}</h4>
+            <p class="text-gray-700 leading-relaxed">{t.caseStudy.solutionText}</p>
+          </div>
+          
+          <div>
+            <h4 class="text-lg font-semibold text-gray-900 mb-3">{t.caseStudy.results}</h4>
+            <div class="space-y-3">
+              {t.caseStudy.resultItems.map((result: string) => (
+                <div class="flex items-start space-x-3">
+                  <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <p class="text-gray-700">{result}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          
+          <div class="border-l-4 border-primary bg-gray-50 p-4 mt-6">
+            <p class="text-gray-700 italic mb-2">"{t.caseStudy.quote}"</p>
+            <p class="text-sm text-gray-600">— {t.caseStudy.quoteAuthor}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

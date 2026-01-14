@@ -1,0 +1,240 @@
+{
+  "nav": {
+    "problem": "Problem",
+    "solution": "Lösung",
+    "features": "Funktionen",
+    "customers": "Kunden",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "headline": "ERP speziell für die Metallverarbeitung.",
+    "subheadline": "Produktion, Kalkulation und Planung für auftragsbezogene Fertigung.",
+    "intro": "Dieses System wurde speziell für Metallverarbeiter entwickelt. Es unterstützt reale Produktionsabläufe, nicht bilanzorientierte Workarounds. Der Fokus liegt auf Lohnfertigung, Einzelfertigung und Compliance.",
+    "primaryCta": "Kontakt aufnehmen",
+    "secondaryCta": "Passende Lösung prüfen",
+    "watchDemo": "Funktionsweise ansehen"
+  },
+  "problem": {
+    "title": "Warum Standard-ERP-Systeme bei Metallverarbeitern versagen",
+    "intro": "Die meisten ERP-Systeme sind auf die Buchhaltung ausgerichtet, nicht auf die Produktion. Daher sind Metallverarbeiter oft auf Tabellenkalkulation und manuelle Prozesse für die Auftragsabwicklung und Shopfloor-Steuerung angewiesen.",
+    "items": [
+      "Ungenaue Auftragskalkulation",
+      "Metallbestände werden nicht ordnungsgemäß erfasst",
+      "Mangelnde Transparenz der Shopfloor-Abläufe",
+      "Fehlende Verschnittoptimierung für Blechbearbeitung",
+      "Produktionsplanung außerhalb des ERP-Systems",
+      "Variable Steuersätze werden nicht automatisch verarbeitet"
+    ],
+    "conclusion": "Diese Probleme erhöhen das Compliance-Risiko, reduzieren die Effizienz und verschlechtern die Servicequalität."
+  },
+  "whoFor": {
+    "title": "Für wen dieses System entwickelt wurde",
+    "intro": "Diese ERP-Lösung richtet sich an Metallverarbeitungsunternehmen mit:",
+    "criteria": [
+      "Bedarf an präziser Auftragskalkulation und Materialverfolgung",
+      "Anforderungen an Metallbestands- und Blechlagerverwaltung",
+      "Verschnittoptimierung für Laser-, Plasma- oder Wasserstrahlschneiden",
+      "EU-E-Rechnungs-Compliance-Verpflichtungen",
+      "Integrationsbedarf mit europäischen Buchhaltungssystemen",
+      "DSGVO- und EU-Datenschutz-Compliance-Anforderungen"
+    ],
+    "typical": "Typische Anwender sind:",
+    "users": [
+      "Lohnfertigungsbetriebe",
+      "Auftragsfertiger",
+      "Metallverarbeiter für Einzel- oder Kleinserienfertigung",
+      "Blechbearbeitungswerkstätten"
+    ],
+    "notFor": "Dieses System ist nicht geeignet für:",
+    "excluded": [
+      "Reine Handelsunternehmen",
+      "Verfahrenstechnik",
+      "Hochstandardisierte Massenfertigung"
+    ]
+  },
+  "manufacturing": {
+    "title": "Fertigungsorientierte Konzeption",
+    "intro": "Das System basiert auf realen Fertigungskonzepten der Metallverarbeitung und passt sich kontinuierlich an komplexe und sich entwickelnde europäische Compliance-Anforderungen an.",
+    "features": [
+      {
+        "name": "Workflow-Verfolgung",
+        "desc": "Verfolgen Sie jeden Auftrag vom Angebot bis zur Lieferung mit vollständiger Workflow-Transparenz und arbeitsplatzbezogenen Details",
+        "icon": "cog"
+      },
+      {
+        "name": "Produktionsplanung",
+        "desc": "Verwalten Sie Produktionskapazitäten und planen Sie Arbeitsgänge effizient über Ihren Shopfloor hinweg",
+        "icon": "factory"
+      },
+      {
+        "name": "Materialplanung",
+        "desc": "Präzise MRP durch Rohstoffverfolgung, Blechbestandstransparenz und automatisierte Lagerverwaltung",
+        "icon": "format-list-checks"
+      },
+      {
+        "name": "Verschnittoptimierung",
+        "desc": "Integrierte Schachtelalgorithmen minimieren Abfall und maximieren Blechausnutzung für Laser-, Plasma- und Wasserstrahlschneiden",
+        "icon": "content-cut"
+      },
+      {
+        "name": "Echtzeit-Produktionserfassung",
+        "desc": "Touch-Panel-optimierte Oberfläche für Echtzeit-Auftragsverfolgung und Meldungen durch Maschinenbediener",
+        "icon": "tablet"
+      },
+      {
+        "name": "Auftragsbezogene Kalkulation",
+        "desc": "Präzise Kostenberechnung pro Auftrag mit Material-, Lohn-, Gemeinkosten- und Ausschussverfolgung",
+        "icon": "calculator"
+      },
+      {
+        "name": "Peppol-E-Rechnung",
+        "desc": "Erstellen Sie EU-konforme elektronische Rechnungen nach Peppol BIS Billing 3.0 Standard",
+        "icon": "file-document-outline"
+      },
+      {
+        "name": "MwSt. & Compliance",
+        "desc": "Lokal konforme MwSt.-Behandlung mit Befreiungen und Integration nationaler Buchhaltungssysteme",
+        "icon": "shield-check"
+      },
+      {
+        "name": "Lieferantenverwaltung",
+        "desc": "Verfolgen Sie Lieferanten, Bestellungen, Materialkosten und Liefertermine",
+        "icon": "truck"
+      },
+      {
+        "name": "Open Source",
+        "desc": "Basierend auf Open-Source-Technologien ohne Vendor-Lock-in, für vollständige Datenportabilität und Systemunabhängigkeit",
+        "icon": "code"
+      },
+      {
+        "name": "Europäischer Datenschutz",
+        "desc": "DSGVO-konforme Datenverarbeitung mit vollständiger Datensouveränität für europäische Betriebe",
+        "icon": "puzzle"
+      },
+      {
+        "name": "KI-gestützte Erkenntnisse",
+        "desc": "KI-basierte Insights zur Identifikation von Produktionsengpässen und Verbesserung der Kalkulationsgenauigkeit",
+        "icon": "brain"
+      }
+    ],
+    "outro": "Produktionsdaten fließen von der Angebotserstellung bis zum Versand. Die operative Realität spiegelt sich in Planung und Kalkulation wider."
+  },
+  "workflow": {
+    "title": "Vom Angebot bis zum Versand",
+    "intro": "Das System verbindet zentrale Produktionsschritte in einem durchgängigen Workflow:",
+    "steps": [
+      {
+        "name": "Angebotserstellung & Kalkulation",
+        "desc": "Präzise Kostenberechnung mit Material, Lohn, Maschinenzeit und Verschnittoptimierung"
+      },
+      {
+        "name": "Produktionsplanung",
+        "desc": "Arbeitsgangsplanung über Arbeitsplätze hinweg mit Bestandsprüfung und Verschnittoptimierung"
+      },
+      {
+        "name": "Shopfloor-Ausführung",
+        "desc": "Touch-Panel-Oberfläche für Auftragsverfolgung, Zeiterfassung und Qualitätskontrolle"
+      },
+      {
+        "name": "Rechnungsstellung & Compliance",
+        "desc": "Erstellen Sie Peppol-konforme E-Rechnungen und Lieferscheine mit korrekten MwSt.-Sätzen"
+      },
+      {
+        "name": "Versand & Lieferung",
+        "desc": "Verpackung, Abbuchung gebündelter Artikel und Versand an Kunden"
+      },
+      {
+        "name": "Auswertungen",
+        "desc": "Soll-Ist-Kostenvergleich mit vollständiger Transparenz und Ausschussbuchhaltung"
+      }
+    ],
+    "conclusion": "Ziel ist Konsistenz und Nachverfolgbarkeit über den gesamten Auftragslebenszyklus."
+  },
+  "caseStudy": {
+    "title": "Bewährt in realen Produktionsumgebungen",
+    "company": "Skarda Nams SIA",
+    "industry": "Metallverarbeitung & Sonderteile",
+    "region": "Osteuropa",
+    "employees": "20 Mitarbeiter, 2 CNC-Maschinen",
+    "challenge": "Herausforderung",
+    "challengeText": "Skarda Nams hatte Schwierigkeiten mit präziser Angebotserstellung bei verschiedenen Metallarten, Live-Bestandsaktualisierungen, Metallabschreibungsfunktionen, Produktionsplanung, konformer Rechnungsstellung, ungenauer Kalkulation und papierbasierter Verfolgung.",
+    "solution": "Lösung",
+    "solutionText": "Implementierung von Kenzap Factory mit integrierten Modulen für Angebotserstellung, Produktionsrouting und Shopfloor-Ausführung. Maschinenbediener haben die Touch-Panel-Oberfläche innerhalb von zwei Wochen nach der Einführung übernommen. Peppol-E-Rechnung wurde für EU-Compliance-Anforderungen konfiguriert. Integration mit Moneo-Buchhaltungssoftware für vereinfachte Steuerberichterstattung.",
+    "results": "Ergebnisse",
+    "resultItems": [
+      "Reduzierung der Angebotserstellungszeit durch automatisierte Materialberechnung",
+      "Verbesserung der Auftragskalkulation-Genauigkeit",
+      "Vollständige Transparenz der Shopfloor-Abläufe und Fertigungsstufen",
+      "Peppol-E-Rechnungs-Compliance erreicht, mit Integration zu BMD-Buchhaltungssoftware",
+      "Materialabfall-Reduzierung durch Verschnittoptimierung",
+      "Schnellere Produktionsplanung mit Echtzeit-Bestandsprüfungen",
+      "DSGVO-Compliance und EU-Datenresidenz während des gesamten Betriebs aufrechterhalten"
+    ],
+    "quote": "Wir haben ein System, das so funktioniert, wie unser Shopfloor arbeitet. Die Bediener haben sich sofort an die Oberfläche gewöhnt, und unsere Auftragskalkulation ist nun zuverlässig. Steuersätze werden automatisch je nach Produkttyp behandelt, was uns Zeit und Kopfschmerzen bei der Rechnungsstellung spart.",
+    "quoteAuthor": "Kundenmanager, Skarda Nams SIA",
+    "watchCase": "Fallstudie ansehen"
+  },
+  "implementation": {
+    "title": "Implementierungsansatz",
+    "intro": "Die Implementierung folgt einer standardisierten Struktur zur Minimierung von Betriebsstörungen.",
+    "principles": [
+      "Hardware-Setup und Software-Installation auf Betriebssystemen",
+      "Produktkatalog- und Metallbestandsdatenbank-Konfiguration",
+      "Benutzervergabe und Verantwortlichkeitsdefinition",
+      "Dokumentvorlagen-Anpassung (Lieferscheine, Rechnungen, Berichte)",
+      "Umfassende Schulung für Bediener und Führungsteams",
+      "Systemintegration und Finanzberichterstattungs-Synchronisation"
+    ],
+    "timeline": "Typischer Zeitplan:",
+    "phases": [
+      "Analyse & Konfiguration: 2-3 Wochen",
+      "Datenmigration & Test: 2-3 Wochen",
+      "Schulung & Go-Live: 1-2 Wochen",
+      "Support nach Go-Live: laufend"
+    ],
+    "outro": "Die Implementierung kann durch Berater mit Fertigungs- und ERP-Hintergrund oder direkt durch Kenzap-Ingenieure erfolgen."
+  },
+  "deployment": {
+    "title": "Deployment-Optionen",
+    "intro": "Das System unterstützt verschiedene Deployment-Modelle entsprechend betrieblichen, regulatorischen und Datensouveränitäts-Anforderungen.",
+    "options": [
+      {
+        "name": "Anbieter-verwaltete Cloud",
+        "desc": "Vollständig verwaltetes Hosting in europäischen Rechenzentren mit automatischen Updates, Backups und Sicherheits-Patches. Ideal für operativ fokussierte Unternehmen.",
+        "icon": "cloud-check"
+      },
+      {
+        "name": "Kunden-verwaltete Cloud",
+        "desc": "Deployment auf Ihrer eigenen Cloud-Infrastruktur (AWS, Azure, GCP) mit vollständiger Kontrolle über Konfiguration und Zugriff. Geeignet für IT-kompetente Organisationen.",
+        "icon": "cloud-cog"
+      },
+      {
+        "name": "Selbst-gehostetes Deployment",
+        "desc": "On-Premises-Installation für maximale Datensouveränität und Kontrolle. Erforderlich für bestimmte regulierte Branchen oder hochsensible Betriebe.",
+        "icon": "server"
+      }
+    ],
+    "outro": "Alle Deployment-Optionen nutzen dieselbe Software, folgen demselben Upgrade-Pfad und bieten Funktionsparität. Daten verbleiben in europäischen Jurisdiktionen für DSGVO-Compliance."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "intro": "Wenn Sie verstehen möchten, ob dieses System zu Ihrem Betrieb passt, kontaktieren Sie uns für ein erstes Gespräch. Wir arbeiten auf Deutsch, Englisch und anderen europäischen Sprachen.",
+    "namePlaceholder": "Ihr Name",
+    "emailPlaceholder": "E-Mail-Adresse",
+    "companyPlaceholder": "Firmenname",
+    "messagePlaceholder": "Erzählen Sie uns von Ihrem Produktions-Setup: Anzahl Maschinen, typische Auftragsgrößen, aktuelle Systeme...",
+    "submit": "Nachricht senden",
+    "sending": "Wird gesendet...",
+    "success": "Nachricht erfolgreich gesendet. Wir kontaktieren Sie innerhalb von 1-2 Werktagen.",
+    "error": "Nachricht konnte nicht gesendet werden. Bitte schreiben Sie uns direkt an support@kenzap.com",
+    "or": "oder",
+    "linkedin": "Auf LinkedIn vernetzen",
+    "email": "Direkt per E-Mail kontaktieren"
+  },
+  "footer": {
+    "tagline": "Software für Fertigungsabläufe",
+    "company": "© 2026 Kenzap. Alle Rechte vorbehalten.",
+    "note": "Produktinformationen können sich ändern. Verfügbarkeit kann je nach Region variieren.",
+    "languages": "Sprachen"
+  }
+}

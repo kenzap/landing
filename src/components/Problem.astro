@@ -1,0 +1,31 @@
+---
+const { translations } = Astro.props;
+const t = translations;
+---
+
+<section id="problem" class="section-padding bg-white">
+  <div class="container-width">
+    <div class="max-w-4xl mx-auto">
+      
+      <h2 class="text-4xl font-bold mb-6">{t.problem.title}</h2>
+      <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+        {t.problem.intro}
+      </p>
+      
+      <div class="space-y-4 mb-8">
+        {t.problem.items.map((item: string) => (
+          <div class="flex items-center space-x-3">
+            <svg class="w-6 h-6 text-red-500 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+            <p class="text-gray-700">{item}</p>
+          </div>
+        ))}
+      </div>
+      
+      <p class="text-lg text-gray-900 font-medium">
+        {t.problem.conclusion}
+      </p>
+    </div>
+  </div>
+</section>

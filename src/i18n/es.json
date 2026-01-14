@@ -1,0 +1,240 @@
+{
+  "nav": {
+    "problem": "Problema",
+    "solution": "Solución",
+    "features": "Características",
+    "customers": "Clientes",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "headline": "ERP diseñado para fabricación metálica.",
+    "subheadline": "Producción, costes y planificación diseñados para manufactura por pedidos.",
+    "intro": "Este sistema está diseñado específicamente para fabricantes de metal. Soporta flujos de trabajo de producción reales, no soluciones alternativas basadas en contabilidad. Se enfoca en talleres por pedidos, producción bajo demanda y cumplimiento normativo.",
+    "primaryCta": "Contáctanos",
+    "secondaryCta": "Ver si encaja",
+    "watchDemo": "Ver cómo funciona"
+  },
+  "problem": {
+    "title": "Por qué los sistemas ERP genéricos fallan a los fabricantes de metal",
+    "intro": "La mayoría de sistemas ERP están diseñados en torno a la contabilidad, no a la producción. Como resultado, los fabricantes de metal a menudo dependen de hojas de cálculo y procesos manuales para gestionar trabajos y la ejecución en planta.",
+    "items": [
+      "Cálculo de costes por trabajo inexacto",
+      "Inventario de metal no rastreado correctamente",
+      "Pobre visibilidad de las operaciones en planta",
+      "Falta de optimización de corte para chapa metálica",
+      "Planificación de producción gestionada fuera del ERP",
+      "Tipos de IVA variables no manejados automáticamente"
+    ],
+    "conclusion": "Estos problemas incrementan el riesgo de cumplimiento, reducen la eficiencia y degradan la calidad del servicio."
+  },
+  "whoFor": {
+    "title": "Para quién está diseñado este sistema",
+    "intro": "Este ERP está diseñado para empresas de fabricación metálica con:",
+    "criteria": [
+      "Necesidad de cálculo preciso de costes por trabajo y seguimiento de materiales",
+      "Requisitos de gestión de inventario de stock metálico y chapas",
+      "Necesidades de optimización de corte para láser, plasma o chorro de agua",
+      "Obligaciones de cumplimiento de facturación electrónica UE",
+      "Requisitos de integración con sistemas contables europeos",
+      "Necesidades de cumplimiento RGPD y protección de datos UE"
+    ],
+    "typical": "Los usuarios típicos incluyen:",
+    "users": [
+      "Talleres por pedidos",
+      "Fabricantes por contrato",
+      "Fabricantes que producen piezas personalizadas o en lotes pequeños",
+      "Talleres de chapa metálica"
+    ],
+    "notFor": "Este sistema no está diseñado para:",
+    "excluded": [
+      "Empresas de distribución pura",
+      "Manufactura por procesos",
+      "Producción en masa altamente estandarizada"
+    ]
+  },
+  "manufacturing": {
+    "title": "Diseño centrado en la manufactura",
+    "intro": "El sistema está construido en torno a conceptos reales de manufactura utilizados en fabricación metálica, y se adapta continuamente a los requisitos complejos y cambiantes de cumplimiento europeo.",
+    "features": [
+      {
+        "name": "Seguimiento de Flujos de Trabajo",
+        "desc": "Rastrea cada trabajo desde la cotización hasta la entrega con visibilidad completa del flujo de trabajo y detalle a nivel de operación",
+        "icon": "cog"
+      },
+      {
+        "name": "Planificación de Producción",
+        "desc": "Gestiona la capacidad de producción y programa operaciones de manera eficiente en toda tu planta",
+        "icon": "factory"
+      },
+      {
+        "name": "Planificación de Materiales",
+        "desc": "MRP preciso impulsado por seguimiento de materias primas, visibilidad del inventario de chapa metálica y gestión automatizada de stock",
+        "icon": "format-list-checks"
+      },
+      {
+        "name": "Optimización de Corte",
+        "desc": "Algoritmos de anidamiento integrados minimizan el desperdicio y maximizan la utilización de chapa para corte láser, plasma y chorro de agua",
+        "icon": "content-cut"
+      },
+      {
+        "name": "Reportes de Producción en Tiempo Real",
+        "desc": "Interfaz optimizada para panel táctil para seguimiento y reporte de trabajos en tiempo real por operadores de máquina",
+        "icon": "tablet"
+      },
+      {
+        "name": "Costeo por Trabajo",
+        "desc": "Cálculo preciso de costes por trabajo con seguimiento de material, mano de obra, gastos generales y desecho",
+        "icon": "calculator"
+      },
+      {
+        "name": "Facturación Electrónica Peppol",
+        "desc": "Genera facturas electrónicas conformes a la UE siguiendo el estándar Peppol BIS Billing 3.0",
+        "icon": "file-document-outline"
+      },
+      {
+        "name": "IVA y Cumplimiento",
+        "desc": "Manejo de IVA conforme a normativas locales con exenciones e integración con sistemas contables nacionales",
+        "icon": "shield-check"
+      },
+      {
+        "name": "Gestión de Proveedores",
+        "desc": "Rastrea proveedores, órdenes de compra, costes de materiales y horarios de entrega",
+        "icon": "truck"
+      },
+      {
+        "name": "Código Abierto",
+        "desc": "Construido con tecnologías de código abierto sin dependencia del proveedor, asegurando portabilidad completa de datos e independencia del sistema",
+        "icon": "code"
+      },
+      {
+        "name": "Protección de Datos Europea",
+        "desc": "Manejo de datos conforme al RGPD con soberanía completa de datos para operaciones europeas",
+        "icon": "puzzle"
+      },
+      {
+        "name": "Insights Impulsados por IA",
+        "desc": "Insights potenciados por IA para identificar cuellos de botella en producción y mejorar la precisión del costeo por trabajo",
+        "icon": "brain"
+      }
+    ],
+    "outro": "Los datos de producción fluyen desde la cotización hasta el despacho. La realidad operacional se refleja en la planificación y el costeo."
+  },
+  "workflow": {
+    "title": "Desde la cotización hasta el despacho",
+    "intro": "El sistema conecta los pasos clave de producción en un flujo de trabajo único:",
+    "steps": [
+      {
+        "name": "Cotización y Estimación",
+        "desc": "Calcula costes con precisión con material, mano de obra, tiempo de máquina y optimización de corte"
+      },
+      {
+        "name": "Planificación de Producción",
+        "desc": "Programa operaciones en centros de trabajo con verificaciones de disponibilidad de inventario y optimización de corte"
+      },
+      {
+        "name": "Ejecución en Planta",
+        "desc": "Interfaz de panel táctil para seguimiento de trabajos, registro de tiempo y control de calidad"
+      },
+      {
+        "name": "Facturación y Cumplimiento",
+        "desc": "Genera facturas electrónicas conformes a Peppol y albaranes con tipos de IVA correctos"
+      },
+      {
+        "name": "Despacho y Entrega",
+        "desc": "Empaca, da de baja artículos agrupados y despacha trabajos a clientes"
+      },
+      {
+        "name": "Analítica",
+        "desc": "Rastrea costes reales vs. estimados con transparencia completa y contabilidad de desecho"
+      }
+    ],
+    "conclusion": "El objetivo es consistencia y trazabilidad a través de todo el ciclo de vida del trabajo."
+  },
+  "caseStudy": {
+    "title": "Utilizado en entornos de producción reales",
+    "company": "Skarda Nams SIA",
+    "industry": "Fabricación Metálica y Piezas Personalizadas",
+    "region": "Europa del Este",
+    "employees": "20 empleados, 2 máquinas CNC",
+    "challenge": "Desafío",
+    "challengeText": "Skarda Nams tenía dificultades con cotizaciones precisas usando varios tipos de metal, actualizaciones de inventario en vivo, capacidades de baja de metal, planificación de producción, facturación conforme, costeo inexacto y seguimiento en papel.",
+    "solution": "Solución",
+    "solutionText": "Implementó Kenzap Factory con módulos integrados de cotización, enrutamiento de producción y ejecución en planta. Los operadores de máquina adoptaron la interfaz de panel táctil en dos semanas de despliegue. Se configuró la facturación electrónica Peppol para cumplir requisitos de la UE. Integración con software contable Moneo para reportes tributarios simplificados.",
+    "results": "Resultados",
+    "resultItems": [
+      "Reducción en tiempo de cotización mediante cálculo automatizado de materiales",
+      "Mejora en precisión de costeo por trabajo",
+      "Visibilidad completa de operaciones en planta y etapas de manufactura",
+      "Cumplimiento de facturación electrónica Peppol logrado, con integración a software contable BMD",
+      "Reducción de desperdicio de material mediante optimización de corte",
+      "Planificación de producción más rápida con verificaciones de inventario en tiempo real",
+      "Cumplimiento RGPD y residencia de datos UE mantenida en todas las operaciones"
+    ],
+    "quote": "Tenemos un sistema que funciona como funciona nuestra planta. Los operadores se adaptaron a la interfaz inmediatamente, y nuestro costeo por trabajo ahora es confiable. Los tipos de impuestos se manejan automáticamente según el tipo de producto, lo que nos ahorra tiempo y dolores de cabeza durante la facturación.",
+    "quoteAuthor": "Gerente de Cliente, Skarda Nams SIA",
+    "watchCase": "Ver caso de estudio"
+  },
+  "implementation": {
+    "title": "Enfoque de implementación",
+    "intro": "La implementación sigue una estructura estándar diseñada para minimizar la interrupción.",
+    "principles": [
+      "Configuración de hardware e instalación de software en sistemas de fábrica",
+      "Configuración de catálogo de productos y base de datos de inventario de metal",
+      "Asignación de roles de usuario y definición de responsabilidades",
+      "Personalización de plantillas de documentos (albaranes, facturas, reportes)",
+      "Capacitación integral para operadores y equipos de gestión",
+      "Integración de sistemas y sincronización de reportes financieros"
+    ],
+    "timeline": "Cronograma típico:",
+    "phases": [
+      "Descubrimiento y configuración: 2-3 semanas",
+      "Migración de datos y pruebas: 2-3 semanas",
+      "Capacitación y puesta en marcha: 1-2 semanas",
+      "Soporte post-lanzamiento: continuo"
+    ],
+    "outro": "La implementación puede ser entregada por consultores con antecedentes en manufactura y ERP o por un ingeniero de Kenzap directamente."
+  },
+  "deployment": {
+    "title": "Opciones de despliegue",
+    "intro": "El sistema soporta múltiples modelos de despliegue para coincidir con necesidades operacionales, regulatorias y de soberanía de datos.",
+    "options": [
+      {
+        "name": "Nube gestionada por proveedor",
+        "desc": "Alojamiento completamente gestionado en centros de datos europeos con actualizaciones automáticas, respaldos y parches de seguridad. Ideal para empresas enfocadas en operaciones.",
+        "icon": "cloud-check"
+      },
+      {
+        "name": "Nube gestionada por cliente",
+        "desc": "Despliega en tu propia infraestructura de nube (AWS, Azure, GCP) con control completo sobre configuración y acceso. Adecuado para organizaciones con capacidad IT.",
+        "icon": "cloud-cog"
+      },
+      {
+        "name": "Despliegue auto-alojado",
+        "desc": "Instalación en premisas para máxima soberanía de datos y control. Requerido para algunas industrias reguladas u operaciones altamente sensibles.",
+        "icon": "server"
+      }
+    ],
+    "outro": "Todas las opciones de despliegue usan el mismo software, siguen la misma ruta de actualización y mantienen paridad de características. Los datos permanecen en jurisdicciones europeas para cumplimiento RGPD."
+  },
+  "contact": {
+    "title": "Contacto",
+    "intro": "Si quieres entender si este sistema se ajusta a tu operación, contáctanos para una discusión inicial. Trabajamos en inglés y otros idiomas europeos.",
+    "namePlaceholder": "Tu nombre",
+    "emailPlaceholder": "Dirección de email",
+    "companyPlaceholder": "Nombre de la empresa",
+    "messagePlaceholder": "Cuéntanos sobre tu configuración de producción: número de máquinas, tamaños típicos de trabajo, sistemas actuales...",
+    "submit": "Enviar mensaje",
+    "sending": "Enviando...",
+    "success": "Mensaje enviado exitosamente. Te contactaremos en 1-2 días laborables.",
+    "error": "Falló el envío del mensaje. Por favor envíanos un email directamente a support@kenzap.com",
+    "or": "o",
+    "linkedin": "Conectar en LinkedIn",
+    "email": "Escríbenos directamente"
+  },
+  "footer": {
+    "tagline": "Software para operaciones de manufactura",
+    "company": "© 2026 Kenzap. Todos los derechos reservados.",
+    "note": "La información del producto puede cambiar. La disponibilidad puede variar por región.",
+    "languages": "Idiomas"
+  }
+}

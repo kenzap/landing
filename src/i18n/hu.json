@@ -1,0 +1,240 @@
+{
+  "nav": {
+    "problem": "Probléma",
+    "solution": "Megoldás",
+    "features": "Funkciók",
+    "customers": "Ügyfelek",
+    "contact": "Kapcsolat"
+  },
+  "hero": {
+    "headline": "ERP rendszer fémfeldolgozó üzemeknek.",
+    "subheadline": "Gyártás, költségszámítás és tervezés egyedi megrendelések feldolgozására optimalizálva.",
+    "intro": "Ez a rendszer kifejezetten fémfeldolgozó üzemek számára készült. Valós gyártási munkafolyamatokat támogat, nem számviteli megkerülő megoldásokat. A fókusz a job shop üzemeken, egyedi gyártáson és megfelelőségen van.",
+    "primaryCta": "Kapcsolat",
+    "secondaryCta": "Megfelelőség ellenőrzése",
+    "watchDemo": "Működés megtekintése"
+  },
+  "problem": {
+    "title": "Miért nem megfelelőek az általános ERP rendszerek a fémfeldolgozó üzemeknek",
+    "intro": "A legtöbb ERP rendszer a számvitel köré épül, nem a gyártás köré. Ennek eredményeként a fémfeldolgozó üzemek gyakran táblázatkezelőkre és manuális folyamatokra támaszkodnak a munkák és a műhelyirányítás kezeléséhez.",
+    "items": [
+      "Pontatlan munkaköltsé-számítás",
+      "Fémkészletek nem megfelelő nyomon követése",
+      "Gyenge átláthatóság a műhelyműveletekben",
+      "Vágásoptimalizálás hiánya lemezmunkáknál",
+      "Gyártástervezés az ERP rendszeren kívül",
+      "Változó termék-áfakulcsok automatikus kezelésének hiánya"
+    ],
+    "conclusion": "Ezek a problémák növelik a megfelelőségi kockázatot, csökkentik a hatékonyságot és rontják a szolgáltatás minőségét."
+  },
+  "whoFor": {
+    "title": "Kiknek készült ez a rendszer",
+    "intro": "Ez az ERP olyan fémfeldolgozó vállalatok számára készült, amelyeknek van:",
+    "criteria": [
+      "Pontos munkaköltsé-számítás és anyagkövetés igénye",
+      "Fémkészlet és lemezraktár kezelési követelményei",
+      "Vágásoptimalizálási igényei lézer-, plazma- vagy vízsugaras vágáshoz",
+      "EU e-számlázási megfelelőségi kötelezettségei",
+      "Európai számviteli rendszer integrációs követelményei",
+      "GDPR és EU adatvédelmi megfelelőségi igényei"
+    ],
+    "typical": "Jellemző felhasználók:",
+    "users": [
+      "Job shop üzemek",
+      "Bérmunkázók",
+      "Egyedi vagy kissorozatú alkatrészeket gyártó fémfeldolgozók",
+      "Lemezmegmunkáló műhelyek"
+    ],
+    "notFor": "Ez a rendszer nem készült az alábbi területekre:",
+    "excluded": [
+      "Tisztán kereskedelmi vállalkozások",
+      "Folyamatgyártás",
+      "Erősen szabványosított tömeggyártás"
+    ]
+  },
+  "manufacturing": {
+    "title": "Gyártásorientált tervezés",
+    "intro": "A rendszer a fémfeldolgozásban használt valós gyártási fogalmakra épül, és folyamatosan alkalmazkodik a komplex és változó európai megfelelőségi követelményekhez.",
+    "features": [
+      {
+        "name": "Munkafolyamat-követés",
+        "desc": "Minden munka nyomon követése az árajánlattól a kiszállításig teljes munkafolyamat-átláthatósággal és műveletszintű részletességgel",
+        "icon": "cog"
+      },
+      {
+        "name": "Gyártástervezés",
+        "desc": "Gyártókapacitás kezelése és műveletek hatékony ütemezése a műhelyben",
+        "icon": "factory"
+      },
+      {
+        "name": "Anyagtervezés",
+        "desc": "Pontos MRP alapanyag-követéssel, lemezraktár átláthatóságával és automatizált készletkezeléssel",
+        "icon": "format-list-checks"
+      },
+      {
+        "name": "Vágásoptimalizálás",
+        "desc": "Beépített darabolási algoritmusok minimalizálják a hulladékot és maximalizálják a lemezfelhasználást lézer-, plazma- és vízsugaras vágásnál",
+        "icon": "content-cut"
+      },
+      {
+        "name": "Valós idejű gyártásjelentés",
+        "desc": "Érintőképernyőre optimalizált felület valós idejű munkanyilvántartáshoz és jelentésekhez a gépkezelők számára",
+        "icon": "tablet"
+      },
+      {
+        "name": "Munkaalapú költségszámítás",
+        "desc": "Pontos költségszámítás munkánként anyag-, munkaerő-, rezsi- és selejtkövetessel",
+        "icon": "calculator"
+      },
+      {
+        "name": "Peppol e-számlázás",
+        "desc": "EU-megfelelő elektronikus számlák generálása Peppol BIS Billing 3.0 szabvány szerint",
+        "icon": "file-document-outline"
+      },
+      {
+        "name": "ÁFA és megfelelőség",
+        "desc": "Helyileg megfelelő ÁFA-kezelés mentességekkel és nemzeti számviteli rendszer integrációval",
+        "icon": "shield-check"
+      },
+      {
+        "name": "Beszállítókezelés",
+        "desc": "Beszállítók, beszerzési rendelések, anyagköltségek és szállítási ütemezések követése",
+        "icon": "truck"
+      },
+      {
+        "name": "Nyílt forráskód",
+        "desc": "Nyílt forráskódú technológiákra épül beszállító-függőség nélkül, biztosítva a teljes adathordozhatóságot és rendszerfüggetlenséget",
+        "icon": "code"
+      },
+      {
+        "name": "Európai adatvédelem",
+        "desc": "GDPR-megfelelő adatkezelés teljes adatszuverenitással európai működéshez",
+        "icon": "puzzle"
+      },
+      {
+        "name": "AI-alapú elemzések",
+        "desc": "Mesterséges intelligencia által vezérelt elemzések a gyártási szűk keresztmetszetek azonosításához és a munkaköltsé-számítás pontosságának javításához",
+        "icon": "brain"
+      }
+    ],
+    "outro": "A gyártási adatok az árajánlattól a kiszállításig áramolnak. A működési valóság tükröződik a tervezésben és költségszámításban."
+  },
+  "workflow": {
+    "title": "Árajánlattól a kiszállításig",
+    "intro": "A rendszer egy munkafolyamatban köti össze a fő gyártási lépéseket:",
+    "steps": [
+      {
+        "name": "Árajánlat és becslés",
+        "desc": "Költségek pontos számítása anyag-, munkaerő-, gépidő- és vágásoptimalizálással"
+      },
+      {
+        "name": "Gyártástervezés",
+        "desc": "Műveletek ütemezése munkahelyeken készletellátottság ellenőrzéssel és vágásoptimalizálással"
+      },
+      {
+        "name": "Műhelyirányítás",
+        "desc": "Érintőképernyős felület munkanyilvántartáshoz, időrögzítéshez és minőségellenőrzéshez"
+      },
+      {
+        "name": "Számlázás és megfelelőség",
+        "desc": "Peppol-megfelelő e-számlák és fuvarlevek generálása helyes ÁFA-kulcsokkal"
+      },
+      {
+        "name": "Kiszállítás és szállítás",
+        "desc": "Csomagolás, csomagolt tételek kiadása és munkák kiszállítása ügyfeleknek"
+      },
+      {
+        "name": "Elemzések",
+        "desc": "Tényleges vs. becsült költségek követése teljes átláthatósággal és selejtelszámolással"
+      }
+    ],
+    "conclusion": "A cél a következetesség és nyomonkövethetőség a teljes munka-életcikluson keresztül."
+  },
+  "caseStudy": {
+    "title": "Valós gyártási környezetekben alkalmazva",
+    "company": "Skarda Nams SIA",
+    "industry": "Fémfeldolgozás és egyedi alkatrészek",
+    "region": "Kelet-Európa",
+    "employees": "20 munkatárs, 2 CNC gép",
+    "challenge": "Kihívás",
+    "challengeText": "A Skarda Nams nehézségekkel küzdött a különféle fémtípusokkal való pontos árazás, élő készletfrissítések, fém-leírási képességek, gyártástervezés, megfelelő számlázás, pontatlan költségszámítás és papíralapú követés terén.",
+    "solution": "Megoldás",
+    "solutionText": "A Kenzap Factory bevezetése integrált árajánlat-, gyártásútvonal- és műhelyirányítási modulokkal. A gépkezelők két héten belül elsajátították az érintőképernyős felületet. A Peppol e-számlázást az EU megfelelőségi követelményeknek megfelelően konfigurálták. Integráció a Moneo számviteli szoftverrel az egyszerűsített adóbevalláshoz.",
+    "results": "Eredmények",
+    "resultItems": [
+      "Árajánlatkészítési idő csökkentése automatizált anyagszámítással",
+      "Munkaköltsé-számítás pontosságának javulása",
+      "Teljes átláthatóság a műhelyműveletekben és gyártási fázisokban",
+      "Peppol e-számlázási megfelelőség elérése, BMD számviteli szoftver integrációval",
+      "Anyaghulladék csökkentése vágásoptimalizálással",
+      "Gyorsabb gyártástervezés valós idejű készletellenőrzéssel",
+      "GDPR megfelelőség és EU adatrezidencia fenntartása a teljes működés során"
+    ],
+    "quote": "Van egy rendszerünk, ami úgy működik, ahogy a műhelyünk dolgozik. A kezelők azonnal alkalmazkodtak a felülethez, és a munkaköltsé-számításunk most megbízható. Az adókulcsokat automatikusan kezeli terméktípus alapján, ami időt és fejfájást spórol meg a számlázás során.",
+    "quoteAuthor": "Ügyfélmenedzser, Skarda Nams SIA",
+    "watchCase": "Esettanulmány megtekintése"
+  },
+  "implementation": {
+    "title": "Megvalósítási módszer",
+    "intro": "A megvalósítás szabványos struktúrát követ, amely minimálisra csökkenti a működési zavarokat.",
+    "principles": [
+      "Hardver beállítás és szoftvertelepítés az üzemi rendszereken",
+      "Termékkatalógus és fémkészlet adatbázis konfigurációja",
+      "Felhasználói szerepek kijelölése és felelősségek meghatározása",
+      "Dokumentumsablonok testreszabása (fuvarlevek, számlák, jelentések)",
+      "Átfogó képzés kezelők és vezetői csapatok számára",
+      "Rendszerintegráció és pénzügyi jelentési szinkronizáció"
+    ],
+    "timeline": "Jellemző ütemterv:",
+    "phases": [
+      "Felmérés és konfiguráció: 2-3 hét",
+      "Adatmigráció és tesztelés: 2-3 hét",
+      "Képzés és élesítés: 1-2 hét",
+      "Élesítés utáni támogatás: folyamatos"
+    ],
+    "outro": "A megvalósítást gyártási és ERP háttérrel rendelkező tanácsadók vagy közvetlenül Kenzap mérnök végezheti."
+  },
+  "deployment": {
+    "title": "Telepítési lehetőségek",
+    "intro": "A rendszer több telepítési modellt támogat a működési, szabályozási és adatszuverenitási igényeknek megfelelően.",
+    "options": [
+      {
+        "name": "Szolgáltató által kezelt felhő",
+        "desc": "Teljesen menedzselt hosztolás európai adatközpontokban automatikus frissítésekkel, biztonsági mentésekkel és biztonsági javításokkal. Ideális a működésre összpontosító vállalatok számára.",
+        "icon": "cloud-check"
+      },
+      {
+        "name": "Ügyfél által kezelt felhő",
+        "desc": "Telepítés saját felhőinfrastruktúrán (AWS, Azure, GCP) a konfiguráció és hozzáférés teljes kontrolljával. Alkalmas IT-képes szervezetek számára.",
+        "icon": "cloud-cog"
+      },
+      {
+        "name": "Saját telepítés",
+        "desc": "Helyszíni telepítés a maximális adatszuverenitás és kontroll érdekében. Szükséges egyes szabályozott iparágakban vagy rendkívül érzékeny műveletekhez.",
+        "icon": "server"
+      }
+    ],
+    "outro": "Minden telepítési lehetőség ugyanazt a szoftvert használja, ugyanazt a frissítési útvonalat követi és fenntartja a funkcionális paritást. Az adatok európai joghatóságokban maradnak a GDPR megfelelőség érdekében."
+  },
+  "contact": {
+    "title": "Kapcsolat",
+    "intro": "Ha meg szeretné érteni, hogy ez a rendszer megfelelő-e az Ön működéséhez, vegye fel velünk a kapcsolatot egy előzetes megbeszéléshez. Angolul és más európai nyelveken dolgozunk.",
+    "namePlaceholder": "Az Ön neve",
+    "emailPlaceholder": "E-mail cím",
+    "companyPlaceholder": "Vállalat neve",
+    "messagePlaceholder": "Mondja el gyártási beállításait: gépek száma, jellemző munkaméretek, jelenlegi rendszerek...",
+    "submit": "Üzenet küldése",
+    "sending": "Küldés...",
+    "success": "Üzenet sikeresen elküldve. 1-2 munkanapon belül felvesszük Önnel a kapcsolatot.",
+    "error": "Üzenet küldése sikertelen. Kérjük, írjon nekünk közvetlenül a support@kenzap.com címre",
+    "or": "vagy",
+    "linkedin": "Kapcsolat LinkedIn-en",
+    "email": "Közvetlen e-mail"
+  },
+  "footer": {
+    "tagline": "Szoftver gyártási műveletekhez",
+    "company": "© 2026 Kenzap. Minden jog fenntartva.",
+    "note": "A termékinformációk változhatnak. Az elérhetőség régiónként eltérhet.",
+    "languages": "Nyelvek"
+  }
+}

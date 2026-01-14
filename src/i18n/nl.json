@@ -1,0 +1,240 @@
+{
+  "nav": {
+    "problem": "Probleem",
+    "solution": "Oplossing",
+    "features": "Functionaliteiten",
+    "customers": "Klanten",
+    "contact": "Contact"
+  },
+  "hero": {
+    "headline": "ERP speciaal ontwikkeld voor metaalbewerking.",
+    "subheadline": "Productie, kostenberekening en planning ontworpen voor opdracht-gebaseerde fabricage.",
+    "intro": "Dit systeem is specifiek ontworpen voor metaalbewerkingsbedrijven. Het ondersteunt werkelijke productieprocessen, geen boekhoudkundige omwegen. De focus ligt op opdrachtwerkplaatsen, op-maat-productie en compliance.",
+    "primaryCta": "Neem contact op",
+    "secondaryCta": "Bekijk of dit past",
+    "watchDemo": "Bekijk hoe het werkt"
+  },
+  "problem": {
+    "title": "Waarom generieke ERP-systemen falen bij metaalbewerkers",
+    "intro": "De meeste ERP-systemen zijn ontworpen vanuit boekhoudkundig perspectief, niet vanuit productie. Hierdoor vertrouwen metaalbewerkers vaak op spreadsheets en handmatige processen voor taakbeheer en werkvloeruitvoering.",
+    "items": [
+      "Onnauwkeurige taakkostenberekening",
+      "Metaalvoorraden worden niet correct bijgehouden",
+      "Beperkt inzicht in werkvloeractiviteiten",
+      "Gebrek aan snij-optimalisatie voor plaatmateriaal",
+      "Productieplanning buiten het ERP-systeem",
+      "Variabele productbelastingtarieven niet automatisch afgehandeld"
+    ],
+    "conclusion": "Deze problemen verhogen compliance-risico's, verminderen efficiëntie en verslechteren de servicekwaliteit."
+  },
+  "whoFor": {
+    "title": "Voor wie dit systeem is ontworpen",
+    "intro": "Dit ERP is ontwikkeld voor metaalbewerkingsbedrijven met:",
+    "criteria": [
+      "Behoefte aan nauwkeurige taakkostenberekening en materiaaltracking",
+      "Vereisten voor beheer van metaalvoorraad en plaatmateriaal",
+      "Snij-optimalisatiebehoeften voor laser, plasma of waterstraal",
+      "EU e-facturering compliance-verplichtingen",
+      "Integratievereisten met Europese boekhoudsystemen",
+      "AVG en EU gegevensbescherming compliance-behoeften"
+    ],
+    "typical": "Typische gebruikers zijn:",
+    "users": [
+      "Loonwerkplaatsen",
+      "Contractfabrikanten",
+      "Bewerkers die maatwerk of kleine series produceren",
+      "Plaatbewerkingswerkplaatsen"
+    ],
+    "notFor": "Dit systeem is niet ontworpen voor:",
+    "excluded": [
+      "Pure distributiebedrijven",
+      "Procesindustrie",
+      "Sterk gestandaardiseerde massaproductie"
+    ]
+  },
+  "manufacturing": {
+    "title": "Productie-gedreven ontwerp",
+    "intro": "Het systeem is gebouwd rond echte productieconcepten die gebruikt worden in metaalbewerking, en past zich continu aan aan complexe en evoluerende Europese compliance-vereisten.",
+    "features": [
+      {
+        "name": "Workflow Tracking",
+        "desc": "Volg elke opdracht van offerte tot levering met complete workflow-zichtbaarheid en operatie-niveau detail",
+        "icon": "cog"
+      },
+      {
+        "name": "Productieplanning",
+        "desc": "Beheer productiecapaciteit en plan operaties efficiënt over uw werkvloer",
+        "icon": "factory"
+      },
+      {
+        "name": "Materiaalplanning",
+        "desc": "Nauwkeurige MRP aangedreven door grondstoftracking, plaatmateriaal voorraadinzicht en geautomatiseerd voorraadbeheer",
+        "icon": "format-list-checks"
+      },
+      {
+        "name": "Snij-optimalisatie",
+        "desc": "Ingebouwde nestingalgoritmes minimaliseren verspilling en maximaliseren plaatbenutting voor laser, plasma en waterstraal snijden",
+        "icon": "content-cut"
+      },
+      {
+        "name": "Real-time Productierapportage",
+        "desc": "Touchpanel-geoptimaliseerde interface voor real-time taaktracking en rapportage door machineoperators",
+        "icon": "tablet"
+      },
+      {
+        "name": "Opdracht-gebaseerde Kostenberekening",
+        "desc": "Nauwkeurige kostenberekening per opdracht met materiaal-, arbeids-, overhead- en uitvaltracking",
+        "icon": "calculator"
+      },
+      {
+        "name": "Peppol E-facturering",
+        "desc": "Genereer EU-conforme elektronische facturen volgens Peppol BIS Billing 3.0 standaard",
+        "icon": "file-document-outline"
+      },
+      {
+        "name": "BTW & Compliance",
+        "desc": "Lokaal conforme BTW-afhandeling met vrijstellingen en integratie met nationale boekhoudsystemen",
+        "icon": "shield-check"
+      },
+      {
+        "name": "Leveranciersbeheer",
+        "desc": "Volg leveranciers, inkooporders, materiaalkosten en leveringsschema's",
+        "icon": "truck"
+      },
+      {
+        "name": "Open Source",
+        "desc": "Gebouwd op open source technologieën zonder vendor lock-in, wat volledige gegevensportabiliteit en systeemonafhankelijkheid garandeert",
+        "icon": "code"
+      },
+      {
+        "name": "Europese Gegevensbescherming",
+        "desc": "AVG-conforme gegevensverwerking met volledige gegevenssoevereiniteit voor Europese activiteiten",
+        "icon": "puzzle"
+      },
+      {
+        "name": "AI-gedreven Inzichten",
+        "desc": "AI-aangedreven inzichten om productieknelpunten te identificeren en nauwkeurigheid van taakkostenberekening te verbeteren",
+        "icon": "brain"
+      }
+    ],
+    "outro": "Productiegegevens stromen van offerte tot verzending. Operationele werkelijkheid wordt weerspiegeld in planning en kostenberekening."
+  },
+  "workflow": {
+    "title": "Van offerte tot verzending",
+    "intro": "Het systeem verbindt belangrijke productiestappen in één workflow:",
+    "steps": [
+      {
+        "name": "Offreren & Calculatie",
+        "desc": "Bereken kosten nauwkeurig met materiaal, arbeid, machinetijd en snij-optimalisatie"
+      },
+      {
+        "name": "Productieplanning",
+        "desc": "Plan operaties over werkplekken met voorraad beschikbaarheidscontroles en snij-optimalisatie"
+      },
+      {
+        "name": "Werkvloeruitvoering",
+        "desc": "Touchpanel interface voor taaktracking, tijdregistratie en kwaliteitscontrole"
+      },
+      {
+        "name": "Facturering & Compliance",
+        "desc": "Genereer Peppol-conforme e-facturen en vrachtbrieven met juiste BTW-tarieven"
+      },
+      {
+        "name": "Verzending & Levering",
+        "desc": "Verpak, boek gebundelde items af en verzend opdrachten naar klanten"
+      },
+      {
+        "name": "Analytics",
+        "desc": "Volg werkelijke versus geschatte kosten met volledige transparantie en uitvalboekhouding"
+      }
+    ],
+    "conclusion": "Het doel is consistentie en traceerbaarheid gedurende de gehele opdracht-levenscyclus."
+  },
+  "caseStudy": {
+    "title": "Gebruikt in echte productieomgevingen",
+    "company": "Skarda Nams SIA",
+    "industry": "Metaalbewerking & Maatwerk Onderdelen",
+    "region": "Oost-Europa",
+    "employees": "20 medewerkers, 2 CNC-machines",
+    "challenge": "Uitdaging",
+    "challengeText": "Skarda Nams worstelde met nauwkeurige offrering bij verschillende metaaltypes, live voorraad updates, metaal afschrijfmogelijkheden, productieplanning, conforme facturering, onnauwkeurige kostenberekening en papier-gebaseerde tracking.",
+    "solution": "Oplossing",
+    "solutionText": "Implementatie van Kenzap Factory met geïntegreerde offrering, productierouting en werkvloeruitvoering modules. Machineoperators namen de touchpanel interface binnen twee weken na implementatie over. Peppol e-facturering werd geconfigureerd om te voldoen aan EU compliance-vereisten. Integratie met Moneo boekhoudingsoftware voor vereenvoudigde belastingrapportage.",
+    "results": "Resultaten",
+    "resultItems": [
+      "Vermindering in offreertijd door geautomatiseerde materiaalberekening",
+      "Verbetering in nauwkeurigheid taakkostenberekening",
+      "Complete zichtbaarheid in werkvloeractiviteiten en fabricagestadia",
+      "Peppol e-facturering compliance behaald, met integratie naar BMD boekhoudsoftware",
+      "Materiaalverspilling vermindering door snij-optimalisatie",
+      "Snellere productieplanning met real-time voorraadcontroles",
+      "AVG compliance en EU data-residency behouden gedurende alle operaties"
+    ],
+    "quote": "We hebben een systeem dat werkt zoals onze werkvloer werkt. De operators pasten zich direct aan de interface aan, en onze taakkostenberekening is nu betrouwbaar. Belastingtarieven worden automatisch afgehandeld op basis van producttype, wat ons tijd en hoofdpijn bespaart tijdens facturering.",
+    "quoteAuthor": "Klantmanager, Skarda Nams SIA",
+    "watchCase": "Bekijk case study"
+  },
+  "implementation": {
+    "title": "Implementatiebenadering",
+    "intro": "Implementatie volgt een standaard structuur ontworpen om verstoring te minimaliseren.",
+    "principles": [
+      "Hardware setup en software installatie op fabriekssystemen",
+      "Productcatalogus en metaalvoorraad database configuratie",
+      "Gebruikersrol toewijzing en verantwoordelijkheidsdefinitie",
+      "Document template aanpassing (vrachtbrieven, facturen, rapporten)",
+      "Uitgebreide training voor operators en managementteams",
+      "Systeemintegratie en financiële rapportage synchronisatie"
+    ],
+    "timeline": "Typische tijdlijn:",
+    "phases": [
+      "Ontdekking & configuratie: 2-3 weken",
+      "Data migratie & testen: 2-3 weken",
+      "Training & go-live: 1-2 weken",
+      "Post-launch ondersteuning: doorlopend"
+    ],
+    "outro": "Implementatie kan geleverd worden door consultants met productie- en ERP-achtergrond of door een Kenzap engineer direct."
+  },
+  "deployment": {
+    "title": "Implementatieopties",
+    "intro": "Het systeem ondersteunt meerdere implementatiemodellen om te voldoen aan operationele, regelgevings- en gegevenssoevereiniteitsbehoeften.",
+    "options": [
+      {
+        "name": "Leverancier-beheerde cloud",
+        "desc": "Volledig beheerde hosting in Europese datacenters met automatische updates, back-ups en beveiligingspatches. Ideaal voor bedrijven gefocust op operaties.",
+        "icon": "cloud-check"
+      },
+      {
+        "name": "Klant-beheerde cloud",
+        "desc": "Implementeer op uw eigen cloud-infrastructuur (AWS, Azure, GCP) met volledige controle over configuratie en toegang. Geschikt voor IT-capabele organisaties.",
+        "icon": "cloud-cog"
+      },
+      {
+        "name": "Self-hosted implementatie",
+        "desc": "On-premises installatie voor maximale gegevenssoevereiniteit en controle. Vereist voor sommige gereguleerde industrieën of zeer gevoelige operaties.",
+        "icon": "server"
+      }
+    ],
+    "outro": "Alle implementatieopties gebruiken dezelfde software, volgen hetzelfde upgrade-pad en behouden functie-pariteit. Gegevens blijven in Europese jurisdicties voor AVG compliance."
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "Als u wilt begrijpen of dit systeem past bij uw operatie, neem contact met ons op voor een eerste gesprek. We werken in het Nederlands, Engels en andere Europese talen.",
+    "namePlaceholder": "Uw naam",
+    "emailPlaceholder": "E-mailadres",
+    "companyPlaceholder": "Bedrijfsnaam",
+    "messagePlaceholder": "Vertel ons over uw productie-opstelling: aantal machines, typische opdrachtgroottes, huidige systemen...",
+    "submit": "Verstuur bericht",
+    "sending": "Versturen...",
+    "success": "Bericht succesvol verzonden. We nemen binnen 1-2 werkdagen contact met u op.",
+    "error": "Verzenden bericht mislukt. Mail ons direct op support@kenzap.com",
+    "or": "of",
+    "linkedin": "Verbind op LinkedIn",
+    "email": "Mail ons direct"
+  },
+  "footer": {
+    "tagline": "Software voor productieoperaties",
+    "company": "© 2026 Kenzap. Alle rechten voorbehouden.",
+    "note": "Productinformatie kan wijzigen. Beschikbaarheid kan variëren per regio.",
+    "languages": "Talen"
+  }
+}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /*
+Disallow: /admin/*
+Sitemap: https://kenzap.com/sitemap.xml

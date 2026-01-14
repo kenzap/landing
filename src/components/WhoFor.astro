@@ -1,0 +1,50 @@
+---
+const { translations } = Astro.props;
+const t = translations;
+---
+
+<section id="who-for" class="section-padding bg-gray-50">
+  <div class="container-width">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl font-bold mb-6">{t.whoFor.title}</h2>
+      
+      <p class="text-lg text-gray-700 mb-6">{t.whoFor.intro}</p>
+      
+      <div class="grid md:grid-cols-2 gap-4 mb-8">
+        {t.whoFor.criteria.map((item: string) => (
+          <div class="flex items-start space-x-3 bg-white p-4 rounded-lg">
+            <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <p class="text-gray-700">{item}</p>
+          </div>
+        ))}
+      </div>
+      
+      <div class="mb-8">
+        <p class="text-lg font-medium text-gray-900 mb-4">{t.whoFor.typical}</p>
+        <div class="flex flex-wrap gap-3">
+          {t.whoFor.users.map((user: string) => (
+            <span class="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm">
+              {user}
+            </span>
+          ))}
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-200 pt-8">
+        <p class="text-lg font-medium text-gray-900 mb-4">{t.whoFor.notFor}</p>
+        <div class="space-y-2">
+          {t.whoFor.excluded.map((item: string) => (
+            <div class="flex items-center space-x-3 text-gray-600">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 12H6"></path>
+              </svg>
+              <p>{item}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

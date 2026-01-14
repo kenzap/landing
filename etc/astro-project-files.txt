@@ -1,0 +1,1172 @@
+# Kenzap Factory Website - Astro Project
+
+This is a complete Astro project structure. Create these files in your local environment.
+
+## Project Structure
+
+```
+kenzap-factory/
+├── public/
+│   └── favicon.svg
+├── src/
+│   ├── components/
+│   │   ├── Header.astro
+│   │   ├── Hero.astro
+│   │   ├── Problem.astro
+│   │   ├── WhoFor.astro
+│   │   ├── Manufacturing.astro
+│   │   ├── Workflow.astro
+│   │   ├── CaseStudy.astro
+│   │   ├── Implementation.astro
+│   │   ├── Deployment.astro
+│   │   ├── Contact.astro
+│   │   └── Footer.astro
+│   ├── i18n/
+│   │   ├── en.json
+│   │   ├── de.json
+│   │   └── fr.json
+│   ├── layouts/
+│   │   └── Layout.astro
+│   ├── pages/
+│   │   ├── index.astro
+│   │   ├── de/
+│   │   │   └── index.astro
+│   │   └── fr/
+│   │       └── index.astro
+│   └── styles/
+│       └── global.css
+├── astro.config.mjs
+├── package.json
+├── tailwind.config.mjs
+└── tsconfig.json
+```
+
+## Setup Instructions
+
+1. **Initialize project**:
+```bash
+npm create astro@latest kenzap-factory -- --template minimal --yes
+cd kenzap-factory
+```
+
+2. **Install dependencies**:
+```bash
+npm install
+npm install -D tailwindcss @astrojs/tailwind
+npm install @tailwindcss/postcss
+npx astro add tailwind
+```
+
+3. **Create the file structure** and copy the files I'll provide below
+
+4. **Run development server**:
+```bash
+npm run dev
+```
+
+5. **Build for production**:
+```bash
+npm run build
+```
+
+6. **Deploy** to Netlify, Vercel, or any static hosting
+
+---
+
+## File Contents
+
+### `package.json`
+```json
+{
+  "name": "kenzap-factory",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "astro": "^4.16.0"
+  },
+  "devDependencies": {
+    "@astrojs/tailwind": "^5.1.2",
+    "tailwindcss": "^3.4.0"
+  }
+}
+```
+
+### `astro.config.mjs`
+```javascript
+import { defineConfig } from 'astro/config';
+import tailwind from '@astrojs/tailwind';
+
+export default defineConfig({
+  integrations: [tailwind()],
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'de', 'fr'],
+    routing: {
+      prefixDefaultLocale: false
+    }
+  }
+});
+```
+
+### `tailwind.config.mjs`
+```javascript
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
+  theme: {
+    extend: {
+      colors: {
+        primary: '#1941df',
+      },
+    },
+  },
+  plugins: [],
+}
+```
+
+### `src/styles/global.css`
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply text-gray-900 antialiased;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-20 px-4 sm:px-6 lg:px-8;
+  }
+  
+  .container-width {
+    @apply max-w-7xl mx-auto;
+  }
+}
+```
+
+### `src/i18n/en.json`
+```json
+{
+  "nav": {
+    "problem": "Problem",
+    "solution": "Solution",
+    "features": "Features",
+    "customers": "Customers",
+    "contact": "Contact"
+  },
+  "hero": {
+    "headline": "ERP built for metal fabrication.",
+    "subheadline": "Production, costing, and planning designed for job-based manufacturing.",
+    "intro": "This system is designed specifically for metal fabricators. It supports real production workflows, not accounting-driven workarounds. The focus is on job shops, make-to-order production, and shop-floor reality.",
+    "primaryCta": "Talk to us",
+    "secondaryCta": "See if this fits",
+    "watchDemo": "Watch how it works"
+  },
+  "problem": {
+    "title": "Why generic ERP systems fail metal fabricators",
+    "intro": "Most ERP systems are designed around accounting, not production. As a result, metal fabricators often rely on spreadsheets and manual processes to manage jobs, routings, and shop-floor execution.",
+    "items": [
+      "Production planning managed outside the ERP",
+      "Inaccurate job costing",
+      "Scrap and rework not reflected in financial results",
+      "Quoting disconnected from actual production",
+      "Heavy customization that becomes difficult to maintain"
+    ],
+    "conclusion": "These problems increase risk, reduce visibility, and limit scalability."
+  },
+  "whoFor": {
+    "title": "Who this system is designed for",
+    "intro": "This ERP is designed for metal fabrication companies with:",
+    "criteria": [
+      "Job-based or make-to-order production",
+      "Multiple production operations",
+      "Shop-floor routing complexity",
+      "A need for accurate job costing"
+    ],
+    "typical": "Typical users include:",
+    "users": ["Job shops", "Contract manufacturers", "Fabricators producing custom or small-batch parts"],
+    "notFor": "This system is not designed for:",
+    "excluded": ["Pure distribution businesses", "Process manufacturing", "Highly standardized mass production"]
+  },
+  "manufacturing": {
+    "title": "Manufacturing-first design",
+    "intro": "The system is built around real manufacturing concepts used in metal fabrication, with European compliance at its core.",
+    "features": [
+      {
+        "name": "Jobs & Routings",
+        "desc": "Track every job from quote to delivery with complete routing visibility and operation-level detail"
+      },
+      {
+        "name": "Work Centers & Machines",
+        "desc": "Manage production capacity and schedule operations efficiently across your shop floor"
+      },
+      {
+        "name": "Bills of Materials",
+        "desc": "Accurate BOMs with raw material tracking, sheet metal inventory, and automated stock management"
+      },
+      {
+        "name": "Cutting Optimization",
+        "desc": "Advanced nesting algorithms minimize waste and maximize sheet utilization for laser, plasma, and waterjet cutting"
+      },
+      {
+        "name": "Shop-Floor Touch Interface",
+        "desc": "Touch-panel optimized interface for machine operators to track job progress in real-time"
+      },
+      {
+        "name": "Job-Based Costing",
+        "desc": "Accurate cost calculation per job with material, labor, overhead, and scrap tracking"
+      },
+      {
+        "name": "Peppol E-Invoicing",
+        "desc": "Generate EU-compliant electronic invoices following Peppol BIS Billing 3.0 standard"
+      },
+      {
+        "name": "VAT & Compliance",
+        "desc": "Locally compliant VAT calculations, exemptions, and integration with national accounting systems"
+      },
+      {
+        "name": "Supplier Management",
+        "desc": "Track suppliers, purchase orders, material costs, and delivery schedules"
+      },
+      {
+        "name": "Reporting & Analytics",
+        "desc": "Real-time dashboards for production efficiency, job profitability, and resource utilization"
+      }
+    ],
+    "outro": "Production data flows from quotation to delivery. Operational reality is reflected in planning and costing."
+  },
+  "workflow": {
+    "title": "From quote to delivery",
+    "intro": "The system connects key production steps in a single workflow:",
+    "steps": [
+      {
+        "name": "Quotation & Estimation",
+        "desc": "Calculate costs accurately with material, labor, machine time, and cutting optimization"
+      },
+      {
+        "name": "Job Creation",
+        "desc": "Convert quotes to jobs with automatic BOM generation and routing setup"
+      },
+      {
+        "name": "Production Planning",
+        "desc": "Schedule operations across work centers with real-time capacity visibility"
+      },
+      {
+        "name": "Shop-Floor Execution",
+        "desc": "Touch-panel interface for job tracking, time recording, and quality control"
+      },
+      {
+        "name": "Job Costing",
+        "desc": "Track actual vs. estimated costs with complete transparency and scrap accounting"
+      },
+      {
+        "name": "Invoicing & Compliance",
+        "desc": "Generate Peppol-compliant e-invoices with correct VAT treatment and accounting integration"
+      }
+    ],
+    "conclusion": "The goal is consistency and traceability across the entire job lifecycle."
+  },
+  "caseStudy": {
+    "title": "Used in real production environments",
+    "company": "Skarda Design",
+    "industry": "Metal Fabrication & Custom Parts",
+    "region": "Central Europe",
+    "employees": "45 employees, 8 CNC machines",
+    "challenge": "Challenge",
+    "challengeText": "Skarda Design struggled with disconnected systems for quoting, production planning, and invoicing. Job costing was often inaccurate by 15-20%, and the shop floor relied on paper-based tracking. Compliance with new EU e-invoicing requirements added urgency.",
+    "solution": "Solution",
+    "solutionText": "Implemented Kenzap Factory with integrated quotation, routing, and shop-floor execution modules. The touch-panel interface was adopted by machine operators within two weeks. Peppol e-invoicing was configured for Austrian market requirements.",
+    "results": "Results",
+    "resultItems": [
+      "40% reduction in quoting time through automated material calculation",
+      "25% improvement in job costing accuracy with real-time scrap tracking",
+      "Complete visibility into shop-floor operations and machine utilization",
+      "Peppol e-invoicing compliance achieved, with integration to BMD accounting software",
+      "Material waste reduced by 18% through cutting optimization"
+    ],
+    "quote": "We finally have a system that works the way our shop floor works. The operators adapted to the touch interface immediately, and our job costing is now reliable.",
+    "quoteAuthor": "Production Manager, Skarda Design",
+    "watchCase": "Watch case study"
+  },
+  "implementation": {
+    "title": "Implementation approach",
+    "intro": "Most implementations follow a standard structure designed to minimize disruption.",
+    "principles": [
+      "Configuration over customization to ensure long-term maintainability",
+      "Manufacturing templates as a starting point for faster deployment",
+      "Clear separation between core system and extensions",
+      "Predictable upgrade paths with backward compatibility",
+      "Training included for shop-floor staff and management",
+      "Phased rollout option for larger operations"
+    ],
+    "timeline": "Typical timeline:",
+    "phases": [
+      "Discovery & configuration: 2-3 weeks",
+      "Data migration & testing: 2-3 weeks",
+      "Training & go-live: 1-2 weeks",
+      "Post-launch support: ongoing"
+    ],
+    "outro": "Implementation is typically delivered by experienced consultants with manufacturing and ERP backgrounds."
+  },
+  "deployment": {
+    "title": "Deployment options",
+    "intro": "The system supports multiple deployment models to match operational, regulatory, and data sovereignty needs.",
+    "options": [
+      {
+        "name": "Vendor-managed cloud",
+        "desc": "Fully managed hosting in European data centers with automatic updates, backups, and security patches. Ideal for companies focused on operations."
+      },
+      {
+        "name": "Customer-managed cloud",
+        "desc": "Deploy on your own cloud infrastructure (AWS, Azure, GCP) with full control over configuration and access. Suitable for IT-capable organizations."
+      },
+      {
+        "name": "Self-hosted deployment",
+        "desc": "On-premises installation for maximum data sovereignty and control. Required for some regulated industries or highly sensitive operations."
+      }
+    ],
+    "outro": "All deployment options use the same software, follow the same upgrade path, and maintain feature parity. Data remains in European jurisdictions for GDPR compliance."
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "If you want to understand whether this system fits your operation, contact us for an initial discussion. We work in English and other European languages.",
+    "namePlaceholder": "Your name",
+    "emailPlaceholder": "Email address",
+    "companyPlaceholder": "Company name",
+    "messagePlaceholder": "Tell us about your production setup: number of machines, typical job sizes, current systems...",
+    "submit": "Send message",
+    "sending": "Sending...",
+    "success": "Message sent successfully. We will contact you within 1-2 business days.",
+    "error": "Failed to send message. Please email us directly at factory@kenzap.com",
+    "or": "or",
+    "linkedin": "Connect on LinkedIn",
+    "email": "Email us directly"
+  },
+  "footer": {
+    "tagline": "Software for manufacturing operations",
+    "company": "© 2025 Kenzap. All rights reserved.",
+    "note": "Product information may change. Availability may vary by region.",
+    "languages": "Languages"
+  }
+}
+```
+
+---
+
+## Astro Components
+
+### `src/layouts/Layout.astro`
+```astro
+---
+interface Props {
+  title: string;
+  lang?: string;
+}
+
+const { title, lang = 'en' } = Astro.props;
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="ERP built for metal fabrication. Production, costing, and planning designed for job-based manufacturing." />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="https://cdn.kenzap.com/logo.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+```
+
+### `src/components/Header.astro`
+```astro
+---
+const { lang = 'en', translations } = Astro.props;
+const t = translations;
+---
+
+<header id="header" class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm border-b border-gray-200 z-50">
+  <div class="container-width">
+    <div class="flex items-center justify-between h-16">
+      <div class="flex items-center space-x-3">
+        <img src="https://cdn.kenzap.com/logo.svg" alt="Kenzap" class="h-8" />
+        <span class="text-xl font-semibold">Factory</span>
+      </div>
+      
+      <!-- Desktop Navigation -->
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="#problem" class="text-sm hover:text-primary transition-colors">{t.nav.problem}</a>
+        <a href="#manufacturing" class="text-sm hover:text-primary transition-colors">{t.nav.features}</a>
+        <a href="#case-study" class="text-sm hover:text-primary transition-colors">{t.nav.customers}</a>
+        <a href="#contact" class="text-sm hover:text-primary transition-colors">{t.nav.contact}</a>
+      </nav>
+
+      <div class="flex items-center space-x-4">
+        <!-- Language Switcher -->
+        <div class="relative">
+          <select 
+            id="lang-switcher"
+            class="appearance-none bg-transparent border border-gray-300 rounded px-3 py-1 pr-8 text-sm cursor-pointer hover:border-primary transition-colors"
+          >
+            <option value="/" selected={lang === 'en'}>EN</option>
+            <option value="/de" selected={lang === 'de'}>DE</option>
+            <option value="/fr" selected={lang === 'fr'}>FR</option>
+          </select>
+          <svg class="absolute right-2 top-1/2 -translate-y-1/2 w-4 h-4 pointer-events-none text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+          </svg>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button 
+          id="mobile-menu-btn"
+          class="md:hidden p-2"
+          aria-label="Toggle menu"
+        >
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200 py-4 space-y-3">
+      <a href="#problem" class="block px-4 py-2 hover:bg-gray-50">{t.nav.problem}</a>
+      <a href="#manufacturing" class="block px-4 py-2 hover:bg-gray-50">{t.nav.features}</a>
+      <a href="#case-study" class="block px-4 py-2 hover:bg-gray-50">{t.nav.customers}</a>
+      <a href="#contact" class="block px-4 py-2 hover:bg-gray-50">{t.nav.contact}</a>
+    </div>
+  </div>
+</header>
+
+<script>
+  // Mobile menu toggle
+  const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+  const mobileMenu = document.getElementById('mobile-menu');
+  
+  mobileMenuBtn?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+  });
+
+  // Close mobile menu when clicking a link
+  mobileMenu?.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu?.classList.add('hidden');
+    });
+  });
+
+  // Language switcher
+  const langSwitcher = document.getElementById('lang-switcher') as HTMLSelectElement;
+  langSwitcher?.addEventListener('change', (e) => {
+    window.location.href = (e.target as HTMLSelectElement).value;
+  });
+</script>
+```
+
+### `src/components/Hero.astro`
+```astro
+---
+const { translations } = Astro.props;
+const t = translations;
+---
+
+<section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white">
+  <div class="container-width">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <h1 class="text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+          {t.hero.headline}
+        </h1>
+        <p class="text-xl text-gray-600 mb-6">
+          {t.hero.subheadline}
+        </p>
+        <p class="text-gray-700 mb-8 leading-relaxed">
+          {t.hero.intro}
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4">
+          <a 
+            href="#contact"
+            class="px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors text-center"
+          >
+            {t.hero.primaryCta}
+          </a>
+          <a 
+            href="#who-for"
+            class="px-6 py-3 border border-gray-300 rounded-lg hover:border-primary hover:text-primary transition-colors text-center"
+          >
+            {t.hero.secondaryCta}
+          </a>
+        </div>
+      </div>
+      
+      <!-- Video Placeholder -->
+      <div class="relative aspect-video bg-gray-900 rounded-lg overflow-hidden shadow-2xl">
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="text-center">
+            <div class="inline-flex items-center justify-center w-16 h-16 bg-white/10 backdrop-blur-sm rounded-full mb-4">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </div>
+            <p class="text-white text-sm">{t.hero.watchDemo}</p>
+          </div>
+        </div>
+        <!-- Replace with actual video embed when available -->
+        <div class="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/5"></div>
+      </div>
+    </div>
+  </div>
+</section>
+```
+
+### `src/components/Problem.astro`
+```astro
+---
+const { translations } = Astro.props;
+const t = translations;
+---
+
+<section id="problem" class="section-padding bg-white">
+  <div class="container-width">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl font-bold mb-6">{t.problem.title}</h2>
+      <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+        {t.problem.intro}
+      </p>
+      
+      <div class="space-y-4 mb-8">
+        {t.problem.items.map((item: string) => (
+          <div class="flex items-start space-x-3">
+            <svg class="w-6 h-6 text-red-500 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+            <p class="text-gray-700">{item}</p>
+          </div>
+        ))}
+      </div>
+      
+      <p class="text-lg text-gray-900 font-medium">
+        {t.problem.conclusion}
+      </p>
+    </div>
+  </div>
+</section>
+```
+
+### `src/components/WhoFor.astro`
+```astro
+---
+const { translations } = Astro.props;
+const t = translations;
+---
+
+<section id="who-for" class="section-padding bg-gray-50">
+  <div class="container-width">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl font-bold mb-6">{t.whoFor.title}</h2>
+      
+      <p class="text-lg text-gray-700 mb-6">{t.whoFor.intro}</p>
+      
+      <div class="grid md:grid-cols-2 gap-4 mb-8">
+        {t.whoFor.criteria.map((item: string) => (
+          <div class="flex items-start space-x-3 bg-white p-4 rounded-lg">
+            <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+            </svg>
+            <p class="text-gray-700">{item}</p>
+          </div>
+        ))}
+      </div>
+      
+      <div class="mb-8">
+        <p class="text-lg font-medium text-gray-900 mb-4">{t.whoFor.typical}</p>
+        <div class="flex flex-wrap gap-3">
+          {t.whoFor.users.map((user: string) => (
+            <span class="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm">
+              {user}
+            </span>
+          ))}
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-200 pt-8">
+        <p class="text-lg font-medium text-gray-900 mb-4">{t.whoFor.notFor}</p>
+        <div class="space-y-2">
+          {t.whoFor.excluded.map((item: string) => (
+            <div class="flex items-center space-x-3 text-gray-600">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 12H6"></path>
+              </svg>
+              <p>{item}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+```
+
+### `src/components/Manufacturing.astro`
+```astro
+---
+const { translations } = Astro.props;
+const t = translations;
+---
+
+<section id="manufacturing" class="section-padding bg-white">
+  <div class="container-width">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h2 class="text-4xl font-bold mb-6">{t.manufacturing.title}</h2>
+      <p class="text-lg text-gray-700">
+        {t.manufacturing.intro}
+      </p>
+    </div>
+    
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {t.manufacturing.features.map((feature: any) => (
+        <div class="bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow">
+          <h3 class="text-xl font-semibold mb-3 text-gray-900">
+            {feature.name}
+          </h3>
+          <p class="text-gray-600 leading-relaxed">
+            {feature.desc}
+          </p>
+        </div>
+      ))}
+    </div>
+    
+    <div class="mt-12 text-center">
+      <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+        {t.manufacturing.outro}
+      </p>
+    </div>
+  </div>
+</section>
+```
+
+### `src/components/Workflow.astro`
+```astro
+---
+const { translations } = Astro.props;
+const t = translations;
+---
+
+<section id="workflow" class="section-padding bg-gray-50">
+  <div class="container-width">
+    <div class="text-center max-w-3xl mx-auto mb-16">
+      <h2 class="text-4xl font-bold mb-6">{t.workflow.title}</h2>
+      <p class="text-lg text-gray-700">
+        {t.workflow.intro}
+      </p>
+    </div>
+    
+    <div class="max-w-4xl mx-auto space-y-8">
+      {t.workflow.steps.map((step: any, index: number) => (
+        <div class="flex gap-6">
+          <div class="flex-shrink-0">
+            <div class="w-12 h-12 rounded-full bg-primary text-white flex items-center justify-center font-bold text-lg">
+              {index + 1}
+            </div>
+          </div>
+          <div class="flex-1 bg-white p-6 rounded-lg">
+            <h3 class="text-xl font-semibold mb-2 text-gray-900">
+              {step.name}
+            </h3>
+            <p class="text-gray-600">
+              {step.desc}
+            </p>
+          </div>
+        </div>
+      ))}
+    </div>
+    
+    <div class="mt-12 text-center">
+      <p class="text-lg text-gray-700 max-w-3xl mx-auto">
+        {t.workflow.conclusion}
+      </p>
+    </div>
+  </div>
+</section>
+```
+
+### `src/components/CaseStudy.astro`
+```astro
+---
+const { translations } = Astro.props;
+const t = translations;
+---
+
+<section id="case-study" class="section-padding bg-white">
+  <div class="container-width">
+    <h2 class="text-4xl font-bold mb-12 text-center">{t.caseStudy.title}</h2>
+    
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <!-- Video Placeholder -->
+      <div class="relative aspect-video bg-gray-900 rounded-lg overflow-hidden shadow-xl">
+        <div class="absolute inset-0 flex items-center justify-center">
+          <div class="text-center">
+            <div class="inline-flex items-center justify-center w-16 h-16 bg-white/10 backdrop-blur-sm rounded-full mb-4">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"/>
+              </svg>
+            </div>
+            <p class="text-white text-sm">{t.caseStudy.watchCase}</p>
+          </div>
+        </div>
+        <div class="absolute inset-0 bg-gradient-to-br from-primary/30 to-primary/10"></div>
+      </div>
+      
+      <!-- Case Study Content -->
+      <div>
+        <div class="mb-6">
+          <h3 class="text-2xl font-bold text-gray-900 mb-2">{t.caseStudy.company}</h3>
+          <p class="text-gray-600">{t.caseStudy.industry}</p>
+          <p class="text-sm text-gray-500">{t.caseStudy.region} • {t.caseStudy.employees}</p>
+        </div>
+        
+        <div class="space-y-6">
+          <div>
+            <h4 class="text-lg font-semibold text-gray-900 mb-2">{t.caseStudy.challenge}</h4>
+            <p class="text-gray-700 leading-relaxed">{t.caseStudy.challengeText}</p>
+          </div>
+          
+          <div>
+            <h4 class="text-lg font-semibold text-gray-900 mb-2">{t.caseStudy.solution}</h4>
+            <p class="text-gray-700 leading-relaxed">{t.caseStudy.solutionText}</p>
+          </div>
+          
+          <div>
+            <h4 class="text-lg font-semibold text-gray-900 mb-3">{t.caseStudy.results}</h4>
+            <div class="space-y-3">
+              {t.caseStudy.resultItems.map((result: string) => (
+                <div class="flex items-start space-x-3">
+                  <svg class="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <p class="text-gray-700">{result}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          
+          <div class="border-l-4 border-primary bg-gray-50 p-4 mt-6">
+            <p class="text-gray-700 italic mb-2">"{t.caseStudy.quote}"</p>
+            <p class="text-sm text-gray-600">— {t.caseStudy.quoteAuthor}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+```
+
+### `src/components/Implementation.astro`
+```astro
+---
+const { translations } = Astro.props;
+const t = translations;
+---
+
+<section id="implementation" class="section-padding bg-gray-50">
+  <div class="container-width">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl font-bold mb-6">{t.implementation.title}</h2>
+      <p class="text-lg text-gray-700 mb-8">{t.implementation.intro}</p>
+      
+      <div class="grid md:grid-cols-2 gap-4 mb-8">
+        {t.implementation.principles.map((principle: string) => (
+          <div class="flex items-start space-x-3 bg-white p-4 rounded-lg">
+            <svg class="w-6 h-6 text-primary flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+            </svg>
+            <p class="text-gray-700">{principle}</p>
+          </div>
+        ))}
+      </div>
+      
+      <div class="bg-white p-6 rounded-lg mb-8">
+        <h3 class="text-xl font-semibold mb-4">{t.implementation.timeline}</h3>
+        <div class="space-y-3">
+          {t.implementation.phases.map((phase: string) => (
+            <div class="flex items-center space-x-3">
+              <div class="w-2 h-2 bg-primary rounded-full"></div>
+              <p class="text-gray-700">{phase}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+      
+      <p class="text-gray-700 leading-relaxed">
+        {t.implementation.outro}
+      </p>
+    </div>
+  </div>
+</section>
+```
+
+### `src/components/Deployment.astro`
+```astro
+---
+const { translations } = Astro.props;
+const t = translations;
+---
+
+<section id="deployment" class="section-padding bg-white">
+  <div class="container-width">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-4xl font-bold mb-6">{t.deployment.title}</h2>
+      <p class="text-lg text-gray-700 mb-12">{t.deployment.intro}</p>
+      
+      <div class="grid md:grid-cols-3 gap-6 mb-8">
+        {t.deployment.options.map((option: any) => (
+          <div class="bg-gray-50 p-6 rounded-lg hover:shadow-lg transition-shadow">
+            <h3 class="text-xl font-semibold mb-3 text-gray-900">
+              {option.name}
+            </h3>
+            <p class="text-gray-600 leading-relaxed">
+              {option.desc}
+            </p>
+          </div>
+        ))}
+      </div>
+      
+      <p class="text-gray-700 leading-relaxed">
+        {t.deployment.outro}
+      </p>
+    </div>
+  </div>
+</section>
+```
+
+### `src/components/Contact.astro`
+```astro
+---
+const { translations } = Astro.props;
+const t = translations;
+---
+
+<section id="contact" class="section-padding bg-gray-50">
+  <div class="container-width">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-4xl font-bold mb-6 text-center">{t.contact.title}</h2>
+      <p class="text-lg text-gray-700 mb-12 text-center">
+        {t.contact.intro}
+      </p>
+      
+      <form 
+        name="contact" 
+        method="POST" 
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        class="space-y-6 mb-8"
+      >
+        <input type="hidden" name="form-name" value="contact" />
+        <p class="hidden">
+          <label>
+            Don't fill this out: <input name="bot-field" />
+          </label>
+        </p>
+        
+        <div>
+          <input 
+            type="text" 
+            name="name" 
+            required
+            placeholder={t.contact.namePlaceholder}
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+          />
+        </div>
+        
+        <div>
+          <input 
+            type="email" 
+            name="email" 
+            required
+            placeholder={t.contact.emailPlaceholder}
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+          />
+        </div>
+        
+        <div>
+          <input 
+            type="text" 
+            name="company"
+            placeholder={t.contact.companyPlaceholder}
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+          />
+        </div>
+        
+        <div>
+          <textarea 
+            name="message" 
+            required
+            rows="5"
+            placeholder={t.contact.messagePlaceholder}
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent resize-none"
+          ></textarea>
+        </div>
+        
+        <button 
+          type="submit"
+          class="w-full px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors font-medium"
+        >
+          {t.contact.submit}
+        </button>
+      </form>
+      
+      <div class="text-center">
+        <p class="text-gray-600 mb-4">{t.contact.or}</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a 
+            href="https://www.linkedin.com/in/yourprofile" 
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center space-x-2 px-6 py-3 border border-gray-300 rounded-lg hover:border-primary hover:text-primary transition-colors"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+            <span>{t.contact.linkedin}</span>
+          </a>
+          <a 
+            href="mailto:factory@kenzap.com"
+            class="inline-flex items-center justify-center space-x-2 px-6 py-3 border border-gray-300 rounded-lg hover:border-primary hover:text-primary transition-colors"
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+            <span>{t.contact.email}</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+```
+
+### `src/components/Footer.astro`
+```astro
+---
+const { translations } = Astro.props;
+const t = translations;
+---
+
+<footer class="bg-gray-900 text-gray-300 py-12 px-4 sm:px-6 lg:px-8">
+  <div class="container-width">
+    <div class="text-center">
+      <div class="flex items-center justify-center space-x-3 mb-4">
+        <img src="https://cdn.kenzap.com/logo.svg" alt="Kenzap" class="h-8 brightness-0 invert" />
+        <span class="text-xl font-semibold text-white">Factory</span>
+      </div>
+      
+      <p class="text-gray-400 mb-6">{t.footer.tagline}</p>
+      
+      <div class="border-t border-gray-800 pt-6">
+        <p class="text-sm text-gray-500 mb-2">{t.footer.company}</p>
+        <p class="text-xs text-gray-600">{t.footer.note}</p>
+      </div>
+    </div>
+  </div>
+</footer>
+```
+
+---
+
+## Page Files
+
+### `src/pages/index.astro`
+```astro
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Problem from '../components/Problem.astro';
+import WhoFor from '../components/WhoFor.astro';
+import Manufacturing from '../components/Manufacturing.astro';
+import Workflow from '../components/Workflow.astro';
+import CaseStudy from '../components/CaseStudy.astro';
+import Implementation from '../components/Implementation.astro';
+import Deployment from '../components/Deployment.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+
+import en from '../i18n/en.json';
+
+const translations = en;
+const lang = 'en';
+---
+
+<Layout title="Kenzap Factory - ERP for Metal Fabrication" lang={lang}>
+  <Header lang={lang} translations={translations} />
+  <main>
+    <Hero translations={translations} />
+    <Problem translations={translations} />
+    <WhoFor translations={translations} />
+    <Manufacturing translations={translations} />
+    <Workflow translations={translations} />
+    <CaseStudy translations={translations} />
+    <Implementation translations={translations} />
+    <Deployment translations={translations} />
+    <Contact translations={translations} />
+  </main>
+  <Footer translations={translations} />
+</Layout>
+```
+
+### `src/pages/de/index.astro`
+```astro
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Hero from '../../components/Hero.astro';
+import Problem from '../../components/Problem.astro';
+import WhoFor from '../../components/WhoFor.astro';
+import Manufacturing from '../../components/Manufacturing.astro';
+import Workflow from '../../components/Workflow.astro';
+import CaseStudy from '../../components/CaseStudy.astro';
+import Implementation from '../../components/Implementation.astro';
+import Deployment from '../../components/Deployment.astro';
+import Contact from '../../components/Contact.astro';
+import Footer from '../../components/Footer.astro';
+
+import de from '../../i18n/de.json';
+
+const translations = de;
+const lang = 'de';
+---
+
+<Layout title="Kenzap Factory - ERP für Metallverarbeitung" lang={lang}>
+  <Header lang={lang} translations={translations} />
+  <main>
+    <Hero translations={translations} />
+    <Problem translations={translations} />
+    <WhoFor translations={translations} />
+    <Manufacturing translations={translations} />
+    <Workflow translations={translations} />
+    <CaseStudy translations={translations} />
+    <Implementation translations={translations} />
+    <Deployment translations={translations} />
+    <Contact translations={translations} />
+  </main>
+  <Footer translations={translations} />
+</Layout>
+```
+
+### `src/pages/fr/index.astro`
+```astro
+---
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Hero from '../../components/Hero.astro';
+import Problem from '../../components/Problem.astro';
+import WhoFor from '../../components/WhoFor.astro';
+import Manufacturing from '../../components/Manufacturing.astro';
+import Workflow from '../../components/Workflow.astro';
+import CaseStudy from '../../components/CaseStudy.astro';
+import Implementation from '../../components/Implementation.astro';
+import Deployment from '../../components/Deployment.astro';
+import Contact from '../../components/Contact.astro';
+import Footer from '../../components/Footer.astro';
+
+import fr from '../../i18n/fr.json';
+
+const translations = fr;
+const lang = 'fr';
+---
+
+<Layout title="Kenzap Factory - ERP pour la Fabrication Métallique" lang={lang}>
+  <Header lang={lang} translations={translations} />
+  <main>
+    <Hero translations={translations} />
+    <Problem translations={translations} />
+    <WhoFor translations={translations} />
+    <Manufacturing translations={translations} />
+    <Workflow translations={translations} />
+    <CaseStudy translations={translations} />
+    <Implementation translations={translations} />
+    <Deployment translations={translations} />
+    <Contact translations={translations} />
+  </main>
+  <Footer translations={translations} />
+</Layout>
+```
+
+---
+
+## Quick Setup Guide
+
+1. **Create the project**:
+```bash
+npm create astro@latest kenzap-factory -- --template minimal --yes
+cd kenzap-factory
+```
+
+2. **Install Tailwind**:
+```bash
+npx astro add tailwind
+```
+
+3. **Create all directories**:
+```bash
+mkdir -p src/{components,i18n,layouts,pages/de,pages/fr,styles}
+```
+
+4. **Copy all files** from the artifact above into their respective locations
+
+5. **Update your LinkedIn URL** in `src/components/Contact.astro` (line 78)
+
+6. **Run dev server**:
+```bash
+npm run dev
+```
+
+7. **Build for production**:
+```bash
+npm run build
+```
+
+The site will be available at:
+- English: `http://localhost:4321/`
+- German: `http://localhost:4321/de`
+- French: `http://localhost:4321/fr`
+
+---
+
+## Netlify Deployment
+
+1. Push your code to GitHub
+2. Connect to Netlify
+3. Build settings:
+   - Build command: `npm run build`
+   - Publish directory: `dist`
+4. The contact form will work automatically with Netlify Forms (no additional config needed!)
+
+---
+
+## Notes
+
+- The contact form uses Netlify Forms (works automatically when deployed to Netlify)
+- Update your LinkedIn URL in Contact.astro
+- Replace video placeholders with actual video embeds when ready
+- All translations are in the en.json file - German and French will need to be added to de.json and fr.json
+- The design uses your brand color #1941df throughout
+- All sections are responsive and accessibility-friendly

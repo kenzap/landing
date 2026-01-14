@@ -1,0 +1,240 @@
+{
+  "nav": {
+    "problem": "Problème",
+    "solution": "Solution",
+    "features": "Fonctionnalités",
+    "customers": "Clients",
+    "contact": "Contact"
+  },
+  "hero": {
+    "headline": "ERP conçu pour la métallurgie.",
+    "subheadline": "Production, calcul des coûts et planification adaptés à la fabrication à la commande.",
+    "intro": "Ce système est spécialement conçu pour les métalliers. Il accompagne les vrais flux de production, pas des contournements comptables. L'accent est mis sur les ateliers de fabrication, la production à la commande et la conformité réglementaire.",
+    "primaryCta": "Nous contacter",
+    "secondaryCta": "Vérifier l'adéquation",
+    "watchDemo": "Voir le fonctionnement"
+  },
+  "problem": {
+    "title": "Pourquoi les ERP génériques ne conviennent pas aux métalliers",
+    "intro": "La plupart des systèmes ERP sont conçus autour de la comptabilité, pas de la production. En conséquence, les métalliers s'appuient souvent sur des feuilles de calcul et des processus manuels pour gérer les commandes et l'exécution en atelier.",
+    "items": [
+      "Calcul des coûts de fabrication inexact",
+      "Stocks métalliques mal suivis",
+      "Faible visibilité sur les opérations d'atelier",
+      "Absence d'optimisation de découpe pour la tôlerie",
+      "Planification de production gérée en dehors de l'ERP",
+      "Taux de TVA variables non gérés automatiquement"
+    ],
+    "conclusion": "Ces problèmes augmentent les risques de conformité, réduisent l'efficacité et dégradent la qualité de service."
+  },
+  "whoFor": {
+    "title": "Pour qui ce système est conçu",
+    "intro": "Cet ERP est destiné aux entreprises de métallurgie ayant :",
+    "criteria": [
+      "Besoin d'un calcul précis des coûts et suivi matières",
+      "Exigences de gestion des stocks métalliques et tôles",
+      "Besoins d'optimisation découpe laser, plasma ou jet d'eau",
+      "Obligations de conformité e-facturation UE",
+      "Exigences d'intégration aux systèmes comptables européens",
+      "Besoins de conformité RGPD et protection des données UE"
+    ],
+    "typical": "Utilisateurs types :",
+    "users": [
+      "Ateliers de fabrication",
+      "Sous-traitants industriels",
+      "Métalliers produisant des pièces sur mesure ou petites séries",
+      "Ateliers de tôlerie"
+    ],
+    "notFor": "Ce système n'est pas conçu pour :",
+    "excluded": [
+      "Pure activité de distribution",
+      "Industries de process",
+      "Production de masse hautement standardisée"
+    ]
+  },
+  "manufacturing": {
+    "title": "Conception axée production",
+    "intro": "Le système s'appuie sur de vrais concepts industriels utilisés en métallurgie, et s'adapte en continu aux exigences de conformité européennes complexes et évolutives.",
+    "features": [
+      {
+        "name": "Suivi des Flux",
+        "desc": "Suivez chaque commande du devis à la livraison avec une visibilité complète des flux et détails par opération",
+        "icon": "cog"
+      },
+      {
+        "name": "Planification Production",
+        "desc": "Gérez la capacité de production et planifiez efficacement les opérations dans votre atelier",
+        "icon": "factory"
+      },
+      {
+        "name": "Planification Matières",
+        "desc": "MRP précis alimenté par le suivi des matières premières, visibilité stock tôles et gestion automatisée des approvisionnements",
+        "icon": "format-list-checks"
+      },
+      {
+        "name": "Optimisation Découpe",
+        "desc": "Algorithmes d'imbrication intégrés minimisant les chutes et maximisant l'utilisation tôles pour découpe laser, plasma et jet d'eau",
+        "icon": "content-cut"
+      },
+      {
+        "name": "Suivi Production Temps Réel",
+        "desc": "Interface optimisée écran tactile pour suivi commandes et reporting temps réel par les opérateurs machines",
+        "icon": "tablet"
+      },
+      {
+        "name": "Calcul Coûts par Affaire",
+        "desc": "Calcul précis des coûts par commande avec suivi matières, main-d'œuvre, frais généraux et rebuts",
+        "icon": "calculator"
+      },
+      {
+        "name": "E-Facturation Peppol",
+        "desc": "Génération de factures électroniques conformes UE suivant le standard Peppol BIS Billing 3.0",
+        "icon": "file-document-outline"
+      },
+      {
+        "name": "TVA & Conformité",
+        "desc": "Gestion TVA conforme localement avec exonérations et intégration systèmes comptables nationaux",
+        "icon": "shield-check"
+      },
+      {
+        "name": "Gestion Fournisseurs",
+        "desc": "Suivi fournisseurs, commandes d'achat, coûts matières et planning livraisons",
+        "icon": "truck"
+      },
+      {
+        "name": "Open Source",
+        "desc": "Basé sur technologies open source sans verrouillage éditeur, garantissant portabilité complète données et indépendance système",
+        "icon": "code"
+      },
+      {
+        "name": "Protection Données Européennes",
+        "desc": "Gestion données conforme RGPD avec souveraineté totale pour opérations européennes",
+        "icon": "puzzle"
+      },
+      {
+        "name": "Analyses Pilotées par IA",
+        "desc": "Analyses alimentées par IA pour identifier les goulots de production et améliorer la précision du calcul des coûts",
+        "icon": "brain"
+      }
+    ],
+    "outro": "Les données de production circulent du devis à l'expédition. La réalité opérationnelle se reflète dans la planification et les coûts."
+  },
+  "workflow": {
+    "title": "Du devis à l'expédition",
+    "intro": "Le système connecte les étapes clés de production dans un flux unique :",
+    "steps": [
+      {
+        "name": "Devis & Estimation",
+        "desc": "Calculez précisément les coûts avec matières, main-d'œuvre, temps machine et optimisation découpe"
+      },
+      {
+        "name": "Planification Production",
+        "desc": "Planifiez les opérations par centres de charge avec vérification disponibilité stock et optimisation découpe"
+      },
+      {
+        "name": "Exécution Atelier",
+        "desc": "Interface tactile pour suivi commandes, saisie temps et contrôle qualité"
+      },
+      {
+        "name": "Facturation & Conformité",
+        "desc": "Génération factures électroniques Peppol et bons de livraison avec taux TVA corrects"
+      },
+      {
+        "name": "Expédition & Livraison",
+        "desc": "Conditionnement, sortie articles groupés et expédition commandes clients"
+      },
+      {
+        "name": "Analyses",
+        "desc": "Suivi coûts réels vs estimés avec transparence complète et comptabilisation rebuts"
+      }
+    ],
+    "conclusion": "L'objectif est la cohérence et traçabilité sur tout le cycle de vie des commandes."
+  },
+  "caseStudy": {
+    "title": "Utilisé en environnements de production réels",
+    "company": "Skarda Nams SIA",
+    "industry": "Métallurgie & Pièces Sur Mesure",
+    "region": "Europe de l'Est",
+    "employees": "20 employés, 2 machines CNC",
+    "challenge": "Défi",
+    "challengeText": "Skarda Nams rencontrait des difficultés avec les devis précis utilisant divers types de métaux, mises à jour stock en temps réel, capacités de sortie métaux, planification production, facturation conforme, calculs coûts inexacts et suivi papier.",
+    "solution": "Solution",
+    "solutionText": "Mise en œuvre Kenzap Factory avec modules intégrés devis, routage production et exécution atelier. Les opérateurs machines ont adopté l'interface tactile sous deux semaines de déploiement. E-facturation Peppol configurée pour répondre aux exigences de conformité UE. Intégration avec logiciel comptable Moneo pour déclarations fiscales simplifiées.",
+    "results": "Résultats",
+    "resultItems": [
+      "Réduction temps devis grâce au calcul matières automatisé",
+      "Amélioration précision calcul coûts commandes",
+      "Visibilité complète opérations atelier et étapes de fabrication",
+      "Conformité e-facturation Peppol atteinte, avec intégration logiciel comptable BMD",
+      "Réduction gaspillage matières par optimisation découpe",
+      "Planification production plus rapide avec vérifications stock temps réel",
+      "Conformité RGPD et résidence données UE maintenues dans toutes les opérations"
+    ],
+    "quote": "Nous avons un système qui fonctionne comme notre atelier fonctionne. Les opérateurs se sont adaptés à l'interface immédiatement, et notre calcul des coûts de fabrication est maintenant fiable. Les taux de taxe sont gérés automatiquement selon le type de produit, ce qui nous fait gagner du temps et évite les tracas lors de la facturation.",
+    "quoteAuthor": "Responsable Client, Skarda Nams SIA",
+    "watchCase": "Voir l'étude de cas"
+  },
+  "implementation": {
+    "title": "Approche de mise en œuvre",
+    "intro": "La mise en œuvre suit une structure standard conçue pour minimiser les perturbations.",
+    "principles": [
+      "Configuration matériel et installation logiciel sur systèmes d'usine",
+      "Configuration catalogue produits et base données stocks métalliques",
+      "Attribution rôles utilisateurs et définition responsabilités",
+      "Personnalisation modèles documents (bons de livraison, factures, rapports)",
+      "Formation complète équipes opérateurs et encadrement",
+      "Intégration système et synchronisation reporting financier"
+    ],
+    "timeline": "Planning type :",
+    "phases": [
+      "Analyse & configuration : 2-3 semaines",
+      "Migration données & tests : 2-3 semaines",
+      "Formation & mise en service : 1-2 semaines",
+      "Support post-lancement : continu"
+    ],
+    "outro": "La mise en œuvre peut être assurée par des consultants expérimentés en manufacturing et ERP ou directement par un ingénieur Kenzap."
+  },
+  "deployment": {
+    "title": "Options de déploiement",
+    "intro": "Le système supporte plusieurs modèles de déploiement pour s'adapter aux besoins opérationnels, réglementaires et de souveraineté des données.",
+    "options": [
+      {
+        "name": "Cloud géré éditeur",
+        "desc": "Hébergement entièrement géré dans centres de données européens avec mises à jour, sauvegardes et correctifs sécurité automatiques. Idéal pour entreprises centrées sur l'exploitation.",
+        "icon": "cloud-check"
+      },
+      {
+        "name": "Cloud géré client",
+        "desc": "Déploiement sur votre propre infrastructure cloud (AWS, Azure, GCP) avec contrôle total sur configuration et accès. Adapté aux organisations IT compétentes.",
+        "icon": "cloud-cog"
+      },
+      {
+        "name": "Déploiement auto-hébergé",
+        "desc": "Installation sur site pour souveraineté et contrôle données maximums. Requis pour certaines industries réglementées ou opérations hautement sensibles.",
+        "icon": "server"
+      }
+    ],
+    "outro": "Toutes options déploiement utilisent même logiciel, suivent même chemin mise à niveau et maintiennent parité fonctionnelles. Données restent en juridictions européennes pour conformité RGPD."
+  },
+  "contact": {
+    "title": "Contact",
+    "intro": "Si vous souhaitez comprendre si ce système convient à votre exploitation, contactez-nous pour un premier échange. Nous travaillons en français et autres langues européennes.",
+    "namePlaceholder": "Votre nom",
+    "emailPlaceholder": "Adresse email",
+    "companyPlaceholder": "Nom de l'entreprise",
+    "messagePlaceholder": "Parlez-nous de votre configuration de production : nombre de machines, tailles de commandes types, systèmes actuels...",
+    "submit": "Envoyer le message",
+    "sending": "Envoi en cours...",
+    "success": "Message envoyé avec succès. Nous vous contacterons sous 1-2 jours ouvrés.",
+    "error": "Échec envoi message. Merci de nous écrire directement à support@kenzap.com",
+    "or": "ou",
+    "linkedin": "Se connecter sur LinkedIn",
+    "email": "Nous écrire directement"
+  },
+  "footer": {
+    "tagline": "Logiciel pour opérations industrielles",
+    "company": "© 2026 Kenzap. Tous droits réservés.",
+    "note": "Les informations produit peuvent changer. Disponibilité peut varier selon région.",
+    "languages": "Langues"
+  }
+}

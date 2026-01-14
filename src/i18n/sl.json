@@ -1,0 +1,240 @@
+{
+  "nav": {
+    "problem": "Problem",
+    "solution": "Rešitev",
+    "features": "Funkcionalnosti",
+    "customers": "Stranke",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "headline": "ERP sistem za kovinsko predelavo.",
+    "subheadline": "Proizvodnja, kalkulacije in načrtovanje, zasnovano za projektno izdelavo.",
+    "intro": "Ta sistem je zasnovan posebej za kovinske predelovalce. Podpira dejanske proizvodne procese, ne računovodsko usmerjenih obhodov. Osredotočen je na projektno delo, izdelavo po naročilu in skladnost predpisov.",
+    "primaryCta": "Kontaktirajte nas",
+    "secondaryCta": "Preverite, ali ustreza",
+    "watchDemo": "Poglejte, kako deluje"
+  },
+  "problem": {
+    "title": "Zakaj splošni ERP sistemi ne ustrezajo kovinskim predelovalcem",
+    "intro": "Večina ERP sistemov je zasnovanih okoli računovodstva, ne proizvodnje. Posledično se kovinski predelovalci pogosto zanašajo na preglednice in ročne procese za upravljanje projektov in izvajanje v delavnici.",
+    "items": [
+      "Netočne projektne kalkulacije",
+      "Nepravilno sledenje kovinskim zalogam",
+      "Slaba preglednost nad delovanjem delavnice",
+      "Pomanjkanje optimizacije rezanja za pločevino",
+      "Načrtovanje proizvodnje izven ERP sistema",
+      "Spremenljive davčne stopnje izdelkov niso avtomatsko obravnavane"
+    ],
+    "conclusion": "Ti problemi povečujejo tveganje neskladnosti, zmanjšujejo učinkovitost in slabšajo kakovost storitev."
+  },
+  "whoFor": {
+    "title": "Za koga je ta sistem namenjen",
+    "intro": "Ta ERP je zasnovan za podjetja za kovinsko predelavo z:",
+    "criteria": [
+      "Potrebo po natančnih projektnih kalkulacijah in sledenju materiala",
+      "Zahtevami po upravljanju kovinskih zalog in inventarja pločevine",
+      "Potrebami po optimizaciji rezanja za laser, plazmo ali vodometno rezanje",
+      "Obveznostmi skladnosti EU e-fakturiranja",
+      "Zahtevami integracije z evropskimi računovodskimi sistemi",
+      "Potrebami skladnosti GDPR in EU varstva podatkov"
+    ],
+    "typical": "Tipični uporabniki vključujejo:",
+    "users": [
+      "Projektne delavnice",
+      "Pogodbene proizvajalce",
+      "Predelovalce, ki izdelujejo naročniške ali majhno-serijske dele",
+      "Pločevinarske delavnice"
+    ],
+    "notFor": "Ta sistem ni namenjen za:",
+    "excluded": [
+      "Čista distribucijska podjetja",
+      "Procesno proizvodnjo",
+      "Visoko standardizirano množično proizvodnjo"
+    ]
+  },
+  "manufacturing": {
+    "title": "Proizvodnja na prvem mestu",
+    "intro": "Sistem je zgrajen okoli dejanskih proizvodnih konceptov, uporabljenih v kovinski predelavi, in se nenehno prilagaja zapletenim in razvijajočim se evropskim zahtevam skladnosti.",
+    "features": [
+      {
+        "name": "Sledenje poteka dela",
+        "desc": "Sledite vsakemu projektu od ponudbe do dostave s popolno preglednostjo poteka dela in podrobnostmi na ravni operacij",
+        "icon": "cog"
+      },
+      {
+        "name": "Načrtovanje proizvodnje",
+        "desc": "Upravljajte proizvodno zmogljivost in učinkovito načrtujte operacije po vaši delavnici",
+        "icon": "factory"
+      },
+      {
+        "name": "Načrtovanje materialov",
+        "desc": "Natančno MRP, podprto s sledenjem surovih materialov, preglednostjo zalog pločevine in avtomatiziranim upravljanjem zalog",
+        "icon": "format-list-checks"
+      },
+      {
+        "name": "Optimizacija rezanja",
+        "desc": "Vgrajeni algoritmi gnezdenja minimizirajo odpadke in maksimizirajo izkoriščenost pločevine za lasersko, plazemsko in vodometno rezanje",
+        "icon": "content-cut"
+      },
+      {
+        "name": "Poročanje proizvodnje v realnem času",
+        "desc": "Za dotikalna zaslona optimiziran vmesnik za sledenje projektov v realnem času in poročanje operaterjev strojev",
+        "icon": "tablet"
+      },
+      {
+        "name": "Projektno kalkuliranje",
+        "desc": "Natančen izračun stroškov po projektih s sledenjem materiala, dela, režijskih stroškov in odpadkov",
+        "icon": "calculator"
+      },
+      {
+        "name": "Peppol e-fakturiranje",
+        "desc": "Generirajte z EU skladne elektronske račune po Peppol BIS Billing 3.0 standardu",
+        "icon": "file-document-outline"
+      },
+      {
+        "name": "DDV in skladnost",
+        "desc": "Lokalno skladno obravnavanje DDV z izjemami in integracijo nacionalnih računovodskih sistemov",
+        "icon": "shield-check"
+      },
+      {
+        "name": "Upravljanje dobaviteljev",
+        "desc": "Sledite dobaviteljem, nabavnim naročilom, stroškom materialov in rokom dostave",
+        "icon": "truck"
+      },
+      {
+        "name": "Odprtokodnost",
+        "desc": "Zgrajen na odprtokodnih tehnologijah brez vezave na prodajalca, kar zagotavlja popolno prenosljivost podatkov in neodvisnost sistema",
+        "icon": "code"
+      },
+      {
+        "name": "Evropsko varstvo podatkov",
+        "desc": "Z GDPR skladno rokovanje s podatki s popolno suverenostjo podatkov za evropske operacije",
+        "icon": "puzzle"
+      },
+      {
+        "name": "Z umetno inteligenco podprti vpogledi",
+        "desc": "Z UI podprti vpogledi za prepoznavanje proizvodnih ozkih grl in izboljšanje natančnosti projektnih kalkulacij",
+        "icon": "brain"
+      }
+    ],
+    "outro": "Proizvodni podatki tečejo od ponudbe do odpreme. Operativna resničnost se odraža v načrtovanju in kalkuliranju."
+  },
+  "workflow": {
+    "title": "Od ponudbe do odpreme",
+    "intro": "Sistem povezuje ključne proizvodne korake v enotnem poteku dela:",
+    "steps": [
+      {
+        "name": "Ponudbe in ocene",
+        "desc": "Natančno izračunajte stroške z materialom, delom, strojnim časom in optimizacijo rezanja"
+      },
+      {
+        "name": "Načrtovanje proizvodnje",
+        "desc": "Načrtujte operacije po delovnih centrih s preverjanjem razpoložljivosti zalog in optimizacijo rezanja"
+      },
+      {
+        "name": "Izvajanje v delavnici",
+        "desc": "Vmesnik za dotikalne zaslone za sledenje projektov, beleženje časa in nadzor kakovosti"
+      },
+      {
+        "name": "Fakturiranje in skladnost",
+        "desc": "Generirajte s Peppol skladne e-račune in tovorni listi s pravilnimi DDV stopnjami"
+      },
+      {
+        "name": "Odpošiljanje in dostava",
+        "desc": "Pakirajte, odpišite paketne izdelke in odpošljite projekte strankam"
+      },
+      {
+        "name": "Analitika",
+        "desc": "Sledite dejanskim nasproti ocenjenim stroškom s popolno preglednostjo in računovodstvom odpadkov"
+      }
+    ],
+    "conclusion": "Cilj je dosledno delovanje in sledljivost skozi celoten življenjski cikel projekta."
+  },
+  "caseStudy": {
+    "title": "Uporablja se v dejanskih proizvodnih okoljih",
+    "company": "Skarda Nams SIA",
+    "industry": "Kovinska predelava in izdelava po meri",
+    "region": "Vzhodna Evropa",
+    "employees": "20 zaposlenih, 2 CNC stroja",
+    "challenge": "Izziv",
+    "challengeText": "Skarda Nams se je spopadala z natančnim ponujanjem pri uporabi različnih vrst kovin, posodobitvami zalog v živo, zmožnostmi odpisa kovin, načrtovanjem proizvodnje, skladnim fakturiranjem, netočnim kalkuliranjem in sledenjem na papirju.",
+    "solution": "Rešitev",
+    "solutionText": "Implementacija Kenzap Factory z integriranimi moduli za ponudbe, proizvodno usmerjanje in izvajanje v delavnici. Operaterji strojev so se vmesniku za dotikalne zaslone prilagodili v dveh tednih po uvedbi. Peppol e-fakturiranje je bilo konfigurirano za izpolnjevanje zahtev EU skladnosti. Integracija z računovodsko programsko opremo Moneo za poenostavljeno davčno poročanje.",
+    "results": "Rezultati",
+    "resultItems": [
+      "Zmanjšanje časa ponujanja s pomočjo avtomatiziranega izračuna materiala",
+      "Izboljšanje natančnosti projektnih kalkulacij",
+      "Popolna preglednost nad delovanjem delavnice in proizvodnimi fazami",
+      "Dosežena skladnost Peppol e-fakturiranja z integracijo v računovodsko programsko opremo BMD",
+      "Zmanjšanje materialnih odpadkov s pomočjo optimizacije rezanja",
+      "Hitrejše načrtovanje proizvodnje s preverjanjem zalog v realnem času",
+      "Ohranjana skladnost GDPR in EU rezidentnost podatkov skozi vse operacije"
+    ],
+    "quote": "Imamo sistem, ki deluje tako, kot deluje naša delavnica. Operaterji so se vmesniku prilagodili takoj, in naše projektne kalkulacije so zdaj zanesljive. Davčne stopnje se obravnavajo avtomatsko glede na vrsto izdelka, kar nam prihrani čas in glavobole pri fakturiranju.",
+    "quoteAuthor": "Vodja strank, Skarda Nams SIA",
+    "watchCase": "Poglejte študijo primera"
+  },
+  "implementation": {
+    "title": "Pristop k implementaciji",
+    "intro": "Implementacija sledi standardni strukturi, zasnovani za minimalne motnje.",
+    "principles": [
+      "Nastavitev strojne opreme in namestitev programske opreme na tovarniške sisteme",
+      "Konfiguracija kataloga izdelkov in baze podatkov kovinskih zalog",
+      "Dodelitev uporabniških vlog in opredelitev odgovornosti",
+      "Prilagoditev predlog dokumentov (tovorni listi, računi, poročila)",
+      "Celovito usposabljanje za operaterje in vodstvene ekipe",
+      "Integracija sistemov in sinhronizacija finančnega poročanja"
+    ],
+    "timeline": "Tipičen časovni okvir:",
+    "phases": [
+      "Odkrivanje in konfiguracija: 2-3 tedni",
+      "Migracija podatkov in testiranje: 2-3 tedni",
+      "Usposabljanje in zagon: 1-2 tedna",
+      "Podpora po zagonu: tekoče"
+    ],
+    "outro": "Implementacijo lahko izvedejo svetovalci z izkušnjami v proizvodnji in ERP sistemih ali neposredno inženir Kenzap."
+  },
+  "deployment": {
+    "title": "Možnosti namestitve",
+    "intro": "Sistem podpira več modelov namestitve za ujemanje s potrebami delovanja, regulatornimi zahtevami in suverenostjo podatkov.",
+    "options": [
+      {
+        "name": "Oblak, upravljan s strani ponudnika",
+        "desc": "Popolnoma upravljano gostovanje v evropskih podatkovnih centrih z avtomatskimi posodobitvami, varnostnimi kopijami in varnostnimi popravki. Idealno za podjetja, osredotočena na delovanje.",
+        "icon": "cloud-check"
+      },
+      {
+        "name": "Oblak, upravljan s strani stranke",
+        "desc": "Namestitev na lastno infrastrukturo v oblaku (AWS, Azure, GCP) s popolnim nadzorom nad konfiguracijo in dostopom. Primerno za IT-zmožne organizacije.",
+        "icon": "cloud-cog"
+      },
+      {
+        "name": "Lastna namestitev",
+        "desc": "Namestitev na lastnih strežnikih za največ suverenosti podatkov in nadzora. Potrebna za nekatere regulirane industrije ali zelo občutljive operacije.",
+        "icon": "server"
+      }
+    ],
+    "outro": "Vse možnosti namestitve uporabljajo isto programsko opremo, sledijo isti poti nadgradnje in ohranjajo enakost funkcionalnosti. Podatki ostanejo v evropskih jurisdikcijah za skladnost GDPR."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "intro": "Če želite razumeti, ali ta sistem ustreza vašemu delovanju, nas kontaktirajte za začetni pogovor. Delamo v angleščini in drugih evropskih jezikih.",
+    "namePlaceholder": "Vaše ime",
+    "emailPlaceholder": "E-poštni naslov",
+    "companyPlaceholder": "Ime podjetja",
+    "messagePlaceholder": "Povejte nam o vaši proizvodnji: število strojev, tipične velikosti projektov, trenutni sistemi...",
+    "submit": "Pošljite sporočilo",
+    "sending": "Pošiljanje...",
+    "success": "Sporočilo uspešno poslano. Kontaktirali vas bomo v 1-2 delovnih dneh.",
+    "error": "Pošiljanje sporočila neuspešno. Prosimo, nam pišite neposredno na support@kenzap.com",
+    "or": "ali",
+    "linkedin": "Povežite se na LinkedIn",
+    "email": "Pišite nam neposredno"
+  },
+  "footer": {
+    "tagline": "Programska oprema za proizvodne operacije",
+    "company": "© 2026 Kenzap. Vse pravice pridržane.",
+    "note": "Informacije o izdelku se lahko spremenijo. Razpoložljivost se lahko razlikuje po regijah.",
+    "languages": "Jeziki"
+  }
+}

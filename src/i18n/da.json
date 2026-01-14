@@ -1,0 +1,240 @@
+{
+  "nav": {
+    "problem": "Problem",
+    "solution": "Løsning",
+    "features": "Funktioner",
+    "customers": "Kunder",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "headline": "ERP bygget til metalbearbejdning.",
+    "subheadline": "Produktion, omkostningsberegning og planlægning designet til opgavebaseret fremstilling.",
+    "intro": "Dette system er designet specifikt til metalbearbejdningsvirksomheder. Det understøtter reelle produktionsworkflows, ikke regnskabsdrevne omveje. Fokus er på job-shops, bestillingsproduktion og compliance.",
+    "primaryCta": "Kontakt os",
+    "secondaryCta": "Se om dette passer",
+    "watchDemo": "Se hvordan det virker"
+  },
+  "problem": {
+    "title": "Hvorfor generiske ERP-systemer fejler for metalbearbejdningsvirksomheder",
+    "intro": "De fleste ERP-systemer er designet omkring regnskab, ikke produktion. Som resultat er metalbearbejdningsvirksomheder ofte afhængige af regneark og manuelle processer til at håndtere opgaver og shopfloor-udførelse.",
+    "items": [
+      "Unøjagtig opgaveomkostningsberegning",
+      "Metallager ikke sporet korrekt",
+      "Dårlig synlighed i shopfloor-operationer",
+      "Mangel på skæreoptimering for plademetaller",
+      "Produktionsplanlægning håndteret uden for ERP'en",
+      "Variable produktmomsrater ikke håndteret automatisk"
+    ],
+    "conclusion": "Disse problemer øger compliance-risiko, reducerer effektivitet og forringer servicekvaliteten."
+  },
+  "whoFor": {
+    "title": "Hvem dette system er designet til",
+    "intro": "Dette ERP er designet til metalbearbejdningsvirksomheder med:",
+    "criteria": [
+      "Behov for præcis opgaveomkostningsberegning og materialesporing",
+      "Krav til håndtering af metallager og pladeinventar",
+      "Skæreoptimeringsbehov til laser, plasma eller vandjet",
+      "EU e-fakturering compliance-forpligtelser",
+      "Krav til integration af europæiske regnskabssystemer",
+      "GDPR og EU databeskyttelse compliance-behov"
+    ],
+    "typical": "Typiske brugere inkluderer:",
+    "users": [
+      "Job-shops",
+      "Kontraktproducenter",
+      "Bearbejdningsvirksomheder der producerer kundetilpassede eller små-batch dele",
+      "Plademetal værksteder"
+    ],
+    "notFor": "Dette system er ikke designet til:",
+    "excluded": [
+      "Rene distributionsvirksomheder",
+      "Procesfremstilling",
+      "Højt standardiseret masseproduktion"
+    ]
+  },
+  "manufacturing": {
+    "title": "Fremstilling-først design",
+    "intro": "Systemet er bygget omkring ægte fremstillingskoncepter anvendt i metalbearbejdning, og det tilpasser sig kontinuerligt til komplekse og udviklende europæiske compliance-krav.",
+    "features": [
+      {
+        "name": "Workflow Sporing",
+        "desc": "Spor hver opgave fra tilbud til levering med komplet workflow-synlighed og operation-niveau detaljer",
+        "icon": "cog"
+      },
+      {
+        "name": "Produktionsplanlægning",
+        "desc": "Håndter produktionskapacitet og planlæg operationer effektivt på tværs af din shopfloor",
+        "icon": "factory"
+      },
+      {
+        "name": "Materialeplanlægning",
+        "desc": "Præcis MRP drevet af råmaterialesporing, plademetal inventar-synlighed og automatiseret lagerhåndtering",
+        "icon": "format-list-checks"
+      },
+      {
+        "name": "Skæreoptimering",
+        "desc": "Indbyggede nesting-algoritmer minimerer spild og maksimerer pladeudnyttelse til laser, plasma og vandjet-skæring",
+        "icon": "content-cut"
+      },
+      {
+        "name": "Realtids Produktionsrapportering",
+        "desc": "Touch-panel-optimeret interface til realtids opgavesporing og rapportering af maskinoperatører",
+        "icon": "tablet"
+      },
+      {
+        "name": "Opgavebaseret Omkostningsberegning",
+        "desc": "Præcis omkostningsberegning per opgave med materiale-, arbejdskraft-, overhead- og spildsporing",
+        "icon": "calculator"
+      },
+      {
+        "name": "Peppol E-fakturering",
+        "desc": "Generer EU-compliant elektroniske fakturaer efter Peppol BIS Billing 3.0 standarden",
+        "icon": "file-document-outline"
+      },
+      {
+        "name": "Moms & Compliance",
+        "desc": "Lokalt compliant momshåndtering med fritagelser og integration af nationale regnskabssystemer",
+        "icon": "shield-check"
+      },
+      {
+        "name": "Leverandørhåndtering",
+        "desc": "Spor leverandører, indkøbsordrer, materialeomkostninger og leveringsplaner",
+        "icon": "truck"
+      },
+      {
+        "name": "Open Source",
+        "desc": "Bygget på open source teknologier uden leverandør-binding, hvilket sikrer fuld dataportabilitet og systemuafhængighed",
+        "icon": "code"
+      },
+      {
+        "name": "Europæisk Databeskyttelse",
+        "desc": "GDPR-compliant datahåndtering med fuld datasuverænitet for europæiske operationer",
+        "icon": "puzzle"
+      },
+      {
+        "name": "AI-Drevne Indsigter",
+        "desc": "AI-drevne indsigter til at identificere produktionsflaskehalse og forbedre opgaveomkostningsberegningens præcision",
+        "icon": "brain"
+      }
+    ],
+    "outro": "Produktionsdata flyder fra tilbud til forsendelse. Operationel virkelighed afspejles i planlægning og omkostningsberegning."
+  },
+  "workflow": {
+    "title": "Fra tilbud til forsendelse",
+    "intro": "Systemet forbinder nøgle-produktionstrin i ét workflow:",
+    "steps": [
+      {
+        "name": "Tilbud & Estimering",
+        "desc": "Beregn omkostninger præcist med materiale, arbejdskraft, maskintid og skæreoptimering"
+      },
+      {
+        "name": "Produktionsplanlægning",
+        "desc": "Planlæg operationer på tværs af arbejdscentre med lagertilgængelighedstjek og skæreoptimering"
+      },
+      {
+        "name": "Shopfloor-Udførelse",
+        "desc": "Touch-panel interface til opgavesporing, tidsregistrering og kvalitetskontrol"
+      },
+      {
+        "name": "Fakturering & Compliance",
+        "desc": "Generer Peppol-compliant e-fakturaer og fragtbreve med korrekte momsrater"
+      },
+      {
+        "name": "Forsendelse & Levering",
+        "desc": "Pak, afskriv bundlede varer og send opgaver til kunder"
+      },
+      {
+        "name": "Analyse",
+        "desc": "Spor faktiske vs. estimerede omkostninger med komplet gennemsigtighed og spildregnskab"
+      }
+    ],
+    "conclusion": "Målet er konsistens og sporbarhed gennem hele opgavens livscyklus."
+  },
+  "caseStudy": {
+    "title": "Anvendt i reelle produktionsmiljøer",
+    "company": "Skarda Nams SIA",
+    "industry": "Metalbearbejdning & Specialdele",
+    "region": "Østeuropa",
+    "employees": "20 medarbejdere, 2 CNC-maskiner",
+    "challenge": "Udfordring",
+    "challengeText": "Skarda Nams havde problemer med præcise tilbud ved brug af forskellige metaltyper, live lager-opdateringer, metal-afskrivningsmuligheder, produktionsplanlægning, compliant fakturering, unøjagtig omkostningsberegning og papirbaseret sporing.",
+    "solution": "Løsning",
+    "solutionText": "Implementerede Kenzap Factory med integrerede tilbuds-, produktionsrute- og shopfloor-udførelsesmoduler. Maskinoperatører adopterede touch-panel interfacet inden for to uger efter implementering. Peppol e-fakturering blev konfigureret til at opfylde EU compliance-krav. Integration med Moneo regnskabssoftware for forenklet skatterapportering.",
+    "results": "Resultater",
+    "resultItems": [
+      "Reduktion i tilbudstid gennem automatiseret materialeberegning",
+      "Forbedring i opgaveomkostningsberegningens præcision",
+      "Komplet synlighed i shopfloor-operationer og fremstillingstrin",
+      "Peppol e-fakturering compliance opnået, med integration til BMD regnskabssoftware",
+      "Materialespild-reduktion gennem skæreoptimering",
+      "Hurtigere produktionsplanlægning med realtids lagertjek",
+      "GDPR compliance og EU dataresidency opretholdt gennem alle operationer"
+    ],
+    "quote": "Vi har et system der fungerer som vores shopfloor fungerer. Operatørerne tilpassede sig interfacet med det samme, og vores opgaveomkostningsberegning er nu pålidelig. Momsrater håndteres automatisk baseret på produkttype, hvilket sparer os tid og hovedpine under fakturering.",
+    "quoteAuthor": "Kundemanager, Skarda Nams SIA",
+    "watchCase": "Se casestudie"
+  },
+  "implementation": {
+    "title": "Implementeringstilgang",
+    "intro": "Implementering følger en standardstruktur designet til at minimere forstyrrelser.",
+    "principles": [
+      "Hardware-opsætning og software-installation på fabrikssystemer",
+      "Produktkatalog og metallager database-konfiguration",
+      "Brugertildelinger og ansvarsdefinition",
+      "Dokument skabelon-tilpasning (fragtbreve, fakturaer, rapporter)",
+      "Omfattende træning for operatører og ledelsesteams",
+      "Systemintegration og finansiel rapportering synkronisering"
+    ],
+    "timeline": "Typisk tidslinje:",
+    "phases": [
+      "Opdagelse & konfiguration: 2-3 uger",
+      "Datamigrering & test: 2-3 uger",
+      "Træning & go-live: 1-2 uger",
+      "Post-launch support: løbende"
+    ],
+    "outro": "Implementering kan leveres af konsulenter med fremstillings- og ERP-baggrund eller direkte af Kenzap ingeniør."
+  },
+  "deployment": {
+    "title": "Deploymentmuligheder",
+    "intro": "Systemet understøtter multiple deployment-modeller til at matche operationelle, regulatoriske og datasuverænitetsbehov.",
+    "options": [
+      {
+        "name": "Leverandør-administreret cloud",
+        "desc": "Fuldt administreret hosting i europæiske datacentre med automatiske opdateringer, backups og sikkerhedspatches. Ideelt til virksomheder fokuseret på operationer.",
+        "icon": "cloud-check"
+      },
+      {
+        "name": "Kunde-administreret cloud",
+        "desc": "Deploy på din egen cloud-infrastruktur (AWS, Azure, GCP) med fuld kontrol over konfiguration og adgang. Velegnet til IT-kompetente organisationer.",
+        "icon": "cloud-cog"
+      },
+      {
+        "name": "Selv-hostet deployment",
+        "desc": "On-premises installation for maksimal datasuverænitet og kontrol. Krævet for nogle regulerede industrier eller højt sensitive operationer.",
+        "icon": "server"
+      }
+    ],
+    "outro": "Alle deployment-muligheder bruger samme software, følger samme opgraderingssti og opretholder funktionsparitet. Data forbliver i europæiske jurisdiktioner for GDPR compliance."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "intro": "Hvis du vil forstå om dette system passer til din operation, kontakt os for en indledende diskussion. Vi arbejder på engelsk og andre europæiske sprog.",
+    "namePlaceholder": "Dit navn",
+    "emailPlaceholder": "Email-adresse",
+    "companyPlaceholder": "Virksomhedsnavn",
+    "messagePlaceholder": "Fortæl os om dit produktionssetup: antal maskiner, typiske opgavestørrelser, nuværende systemer...",
+    "submit": "Send besked",
+    "sending": "Sender...",
+    "success": "Besked sendt succesfuldt. Vi kontakter dig inden for 1-2 arbejdsdage.",
+    "error": "Fejlede at sende besked. Venligst email os direkte på support@kenzap.com",
+    "or": "eller",
+    "linkedin": "Forbind på LinkedIn",
+    "email": "Email os direkte"
+  },
+  "footer": {
+    "tagline": "Software til fremstillingsoperationer",
+    "company": "© 2026 Kenzap. Alle rettigheder forbeholdt.",
+    "note": "Produktinformation kan ændre sig. Tilgængelighed kan variere efter region.",
+    "languages": "Sprog"
+  }
+}

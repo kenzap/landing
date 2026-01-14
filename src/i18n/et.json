@@ -1,0 +1,240 @@
+{
+  "nav": {
+    "problem": "Probleem",
+    "solution": "Lahendus",
+    "features": "Funktsioonid",
+    "customers": "Kliendid",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "headline": "ERP metallitöötlejatele.",
+    "subheadline": "Tootmine, kuluarvestus ja planeerimine tellimuspõhise tootmise jaoks.",
+    "intro": "See süsteem on spetsiaalselt loodud metallitöötlejatele. See toetab reaalseid tootmisprotsesse, mitte raamatupidamisel põhinevaid lahendusi. Fookus on tööstusettevõtetel, tellimusepõhisel tootmisel ja vastavusnõuetel.",
+    "primaryCta": "Võta ühendust",
+    "secondaryCta": "Vaata, kas sobib",
+    "watchDemo": "Vaata, kuidas töötab"
+  },
+  "problem": {
+    "title": "Miks üldised ERP süsteemid ei sobi metallitöötlejatele",
+    "intro": "Enamik ERP süsteeme on loodud raamatupidamise, mitte tootmise ümber. Seetõttu tuginevad metallitöötlejad sageli tabelitele ja käsitsi protsessidele tööde ja tööstuse juhtimiseks.",
+    "items": [
+      "Ebatäpne tööde kuluarvestus",
+      "Metalli laovarude ebapiisav jälgimine",
+      "Puudulik ülevaade tööstuse tegevusest",
+      "Puudub lehmetalli lõikamise optimeerimine",
+      "Tootmise planeerimine toimub väljaspool ERP-d",
+      "Muutuvaid tootekäibemakse ei käsitleta automaatselt"
+    ],
+    "conclusion": "Need probleemid suurendavad vastavusriski, vähendavad tõhusust ja halvendavad teenuse kvaliteeti."
+  },
+  "whoFor": {
+    "title": "Kellele see süsteem on mõeldud",
+    "intro": "See ERP on mõeldud metallitöötlusettevõtetele, kellel on:",
+    "criteria": [
+      "Vajadus täpse tööde kuluarvestuse ja materjalide jälgimise järele",
+      "Metallivarude ja lehmetalli laovarude haldamise nõuded",
+      "Lõikamise optimeerimise vajadused laserile, plasmaile või veejõuga lõikamisele",
+      "EL e-arvete kooskõla kohustused",
+      "Euroopa raamatupidamissüsteemide integratsiooni nõuded",
+      "GDPR ja EL andmekaitsenõuetele vastavuse vajadus"
+    ],
+    "typical": "Tüüpilised kasutajad:",
+    "users": [
+      "Tööstused",
+      "Lepingulised tootjad",
+      "Kohandatud või väikeseeria osade tootjad",
+      "Lehmetalli töökojad"
+    ],
+    "notFor": "See süsteem ei ole mõeldud:",
+    "excluded": [
+      "Puhtale jaotusärikale",
+      "Protsessitootmisele",
+      "Kõrgelt standardiseeritud masstootmisele"
+    ]
+  },
+  "manufacturing": {
+    "title": "Tootmiskeskne disain",
+    "intro": "Süsteem on ehitatud metallitöötluses kasutatavate reaalsete tootmiskontseptsioonide ümber ja kohandub pidevalt keerukatele ja arenevatele Euroopa vastavusnõuetele.",
+    "features": [
+      {
+        "name": "Töövoogude jälgimine",
+        "desc": "Jälgi iga tööd pakkumisest kättetoimetamiseni täieliku töövoo nähtavuse ja operatsiooni taseme detailidega",
+        "icon": "cog"
+      },
+      {
+        "name": "Tootmise planeerimine",
+        "desc": "Halda tootmisvõimsust ja planeeri operatsioone tõhusalt kogu tööstuses",
+        "icon": "factory"
+      },
+      {
+        "name": "Materjalide planeerimine",
+        "desc": "Täpne MRP, mida toetab toormaterjali jälgimine, lehmetalli laovarude nähtavus ja automaatne laovarude haldamine",
+        "icon": "format-list-checks"
+      },
+      {
+        "name": "Lõikamise optimeerimine",
+        "desc": "Sisseehitatud pesastamise algoritmid vähendavad jääke ja maksimeerivad lehtede kasutamist laseri, plasma ja veejõuga lõikamisel",
+        "icon": "content-cut"
+      },
+      {
+        "name": "Reaalajas tootmisaruandlus",
+        "desc": "Puutepaneelile optimeeritud liides reaalajas tööde jälgimiseks ja aruandluseks masina operaatorite poolt",
+        "icon": "tablet"
+      },
+      {
+        "name": "Tööpõhine kuluarvestus",
+        "desc": "Täpne kuluarvutus töö kohta materjali-, tööjõu-, üldkulude ja jääkide jälgimisega",
+        "icon": "calculator"
+      },
+      {
+        "name": "Peppol e-arveldus",
+        "desc": "Loo EL-i nõuetele vastavaid elektroonilist arveid Peppol BIS Billing 3.0 standardi järgi",
+        "icon": "file-document-outline"
+      },
+      {
+        "name": "KM ja vastavus",
+        "desc": "Kohaldub KM käsitlus eranditega ja riikliku raamatupidamissüsteemi integratsioon",
+        "icon": "shield-check"
+      },
+      {
+        "name": "Tarnijate haldamine",
+        "desc": "Jälgi tarnijaid, ostutellimusi, materjalikulu ja tarneaegu",
+        "icon": "truck"
+      },
+      {
+        "name": "Avatud lähtekood",
+        "desc": "Ehitatud avatud lähtekoodiga tehnoloogiatele ilma müüja lukustuseta, tagades täieliku andmete ülekantavuse ja süsteemi sõltumatuse",
+        "icon": "code"
+      },
+      {
+        "name": "Euroopa andmekaitse",
+        "desc": "GDPR-ile vastav andmekäitlus täieliku andmesuveräänsusega Euroopa operatsioonide jaoks",
+        "icon": "puzzle"
+      },
+      {
+        "name": "AI-põhised ülevaated",
+        "desc": "AI-toetatud ülevaated tootmise kitsaskohtade tuvastamiseks ja tööde kuluarvestuse täpsuse parandamiseks",
+        "icon": "brain"
+      }
+    ],
+    "outro": "Tootmisandmed voolavad pakkumisest saatmiseni. Operatiivne reaalsus kajastub planeerimises ja kuluarvestuses."
+  },
+  "workflow": {
+    "title": "Pakkumisest saatmiseni",
+    "intro": "Süsteem ühendab põhilised tootmisetapid ühtseks töövoogs:",
+    "steps": [
+      {
+        "name": "Pakkumine ja hindamine",
+        "desc": "Arvuta kulud täpselt materjalide, tööjõu, masina aja ja lõikamise optimeerimisega"
+      },
+      {
+        "name": "Tootmise planeerimine",
+        "desc": "Planeeri operatsioone töötsentritevaheliselt laovarude kontrolli ja lõikamise optimeerimisega"
+      },
+      {
+        "name": "Tööstuse täitmine",
+        "desc": "Puutepaneeli liides tööde jälgimiseks, aja registreerimiseks ja kvaliteedikontrolliks"
+      },
+      {
+        "name": "Arveldamine ja vastavus",
+        "desc": "Loo Peppol-ile vastavaid e-arveid ja saatelehti õigete KM määradega"
+      },
+      {
+        "name": "Saatmine ja kohaletoimetamine",
+        "desc": "Pakenda, kirjuta maha kogumkaupade kaubad ja saada tööd klientidele"
+      },
+      {
+        "name": "Analüütika",
+        "desc": "Jälgi tegelike vs hinnanguliste kulude suhet täieliku läbipaistvuse ja jääkide arvestusega"
+      }
+    ],
+    "conclusion": "Eesmärk on järjepidevus ja jälgitavus kogu töö elutsükli vältel."
+  },
+  "caseStudy": {
+    "title": "Kasutusel reaalsetes tootmiskeskkondades",
+    "company": "Skarda Nams SIA",
+    "industry": "Metallitöötlus ja kohandatud osad",
+    "region": "Ida-Euroopa",
+    "employees": "20 töötajat, 2 CNC masinat",
+    "challenge": "Väljakutse",
+    "challengeText": "Skarda Nams seisis silmitsi raskustega täpse pakkumisega erinevate metallitüüpide kasutamisel, reaalajas laovarude uuendustega, metalli mahakandmise võimalustega, tootmise planeerimisega, vastavusnõuetele vastava arveldamisega, ebatäpse kuluarvestuse ja paberipõhise jälgimisega.",
+    "solution": "Lahendus",
+    "solutionText": "Rakendati Kenzap Factory integreeritud pakkumis-, tootmismarsruudi- ja tööstuse täitmise moodulitega. Masina operaatorid võtsid puutepaneeli liidese kasutusele kahe nädala jooksul pärast kasutuselevõttu. Peppol e-arveldus konfigureeriti EL vastavusnõuete täitmiseks. Integratsioon Moneo raamatupidamistarkvaraga lihtsustatud maksuaruandluse jaoks.",
+    "results": "Tulemused",
+    "resultItems": [
+      "Pakkumise aja vähenemine automaatse materjalide arvutuse kaudu",
+      "Tööde kuluarvestuse täpsuse paranemine",
+      "Täielik ülevaade tööstuse operatsioonidest ja tootmisetappidest",
+      "Peppol e-arvelduse vastavus saavutatud, integratsiooniga BMD raamatupidamistarkvaraga",
+      "Materjali jääkide vähendamine lõikamise optimeerimise kaudu",
+      "Kiirem tootmise planeerimine reaalajas laovarude kontrolliga",
+      "GDPR vastavus ja EL andmete residentsus säilitatud kogu operatsioonide vältel"
+    ],
+    "quote": "Meil on süsteem, mis töötab nii, nagu meie tööstus töötab. Operaatorid kohanesid liidesega kohe ja meie tööde kuluarvestus on nüüd usaldusväärne. Maksu määrasid käsitletakse automaatselt tootetüübi alusel, mis säästab meile aega ja peavalu arvete koostamisel.",
+    "quoteAuthor": "Klientide juht, Skarda Nams SIA",
+    "watchCase": "Vaata juhtumiuuringut"
+  },
+  "implementation": {
+    "title": "Rakendamise lähenemine",
+    "intro": "Rakendamine järgib standardset struktuuri, mis on mõeldud häirete minimeerimiseks.",
+    "principles": [
+      "Riistvara seadistamine ja tarkvara paigaldamine tehase süsteemidesse",
+      "Tootekataloog ja metallivarude andmebaasi konfigureerimine",
+      "Kasutajate rollide määramine ja vastutuse defineerimine",
+      "Dokumendimallide kohandamine (saatelehed, arved, aruanded)",
+      "Põhjalik koolitus operaatoritele ja juhtimismeeskonnale",
+      "Süsteemi integratsioon ja finantsaruandluse sünkroniseerimine"
+    ],
+    "timeline": "Tüüpiline ajakava:",
+    "phases": [
+      "Avastamine ja konfigureerimine: 2-3 nädalat",
+      "Andmete migratsioon ja testimine: 2-3 nädalat",
+      "Koolitus ja käivitamine: 1-2 nädalat",
+      "Pärast käivitamist tugi: jätkuv"
+    ],
+    "outro": "Rakendamist saavad teha konsultandid, kellel on tootmis- ja ERP taust, või otse Kenzapi insener."
+  },
+  "deployment": {
+    "title": "Kasutuselevõtu võimalused",
+    "intro": "Süsteem toetab mitut kasutuselevõtu mudelit operatiivsete, regulatiivsete ja andmesuveräänsuse vajaduste kohandamiseks.",
+    "options": [
+      {
+        "name": "Müüja hallatav pilv",
+        "desc": "Täielikult hallatav majutus Euroopa andmekeskustes automaatsete uuenduste, varunduste ja turvalaigukritega. Ideaalne ettevõtetele, kes keskenduvad operatsioonidele.",
+        "icon": "cloud-check"
+      },
+      {
+        "name": "Kliendi hallatav pilv",
+        "desc": "Kasutuselevõtt enda pilve-infrastruktuuris (AWS, Azure, GCP) täieliku kontrolliga konfiguratsiooni ja juurdepääsu üle. Sobib IT-võimekale organisatsioonidele.",
+        "icon": "cloud-cog"
+      },
+      {
+        "name": "Isemajutatud kasutuselevõtt",
+        "desc": "Ettevõttesisene paigaldus maksimaalse andmesuveräänsuse ja kontrolli jaoks. Nõutud mõnedes reguleeritud tööstusharudes või väga tundlikes operatsioonides.",
+        "icon": "server"
+      }
+    ],
+    "outro": "Kõik kasutuselevõtu võimalused kasutavad sama tarkvara, järgivad sama uuendamise teed ja säilitavad funktsioonide võrdsuse. Andmed jäävad Euroopa jurisdiktsioonidesse GDPR vastavuse jaoks."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "intro": "Kui soovid mõista, kas see süsteem sobib sinu operatsioonile, võta meiega ühendust algse arutelu jaoks. Töötame inglise keeles ja teistes Euroopa keeltes.",
+    "namePlaceholder": "Sinu nimi",
+    "emailPlaceholder": "E-posti aadress",
+    "companyPlaceholder": "Ettevõtte nimi",
+    "messagePlaceholder": "Räägi meile oma tootmise seadistusest: masinate arv, tüüpilised töö suurused, praegused süsteemid...",
+    "submit": "Saada sõnum",
+    "sending": "Saadab...",
+    "success": "Sõnum edukalt saadetud. Võtame teiega ühendust 1-2 tööpäeva jooksul.",
+    "error": "Sõnumi saatmine ebaõnnestus. Palun kirjutage meile otse aadressil support@kenzap.com",
+    "or": "või",
+    "linkedin": "Ühenda LinkedInis",
+    "email": "Kirjuta meile otse"
+  },
+  "footer": {
+    "tagline": "Tarkvara tootmisoperatsioonidele",
+    "company": "© 2026 Kenzap. Kõik õigused kaitstud.",
+    "note": "Toote informatsioon võib muutuda. Kättesaadavus võib piirkonniti erineda.",
+    "languages": "Keeled"
+  }
+}

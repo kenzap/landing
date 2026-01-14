@@ -1,0 +1,240 @@
+{
+  "nav": {
+    "problem": "Problem",
+    "solution": "Lösning",
+    "features": "Funktioner",
+    "customers": "Kunder",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "headline": "ERP byggd för metallfabrikation.",
+    "subheadline": "Produktion, kostnadskalkylering och planering designad för orderbaserad tillverkning.",
+    "intro": "Detta system är specifikt designat för metallfabrikatörer. Det stödjer verkliga produktionsarbetsflöden, inte redovisningsdrivna lösningar. Fokus ligger på jobbverkstäder, tillverkningsorder och regelefterlevnad.",
+    "primaryCta": "Prata med oss",
+    "secondaryCta": "Se om detta passar",
+    "watchDemo": "Se hur det fungerar"
+  },
+  "problem": {
+    "title": "Varför generiska ERP-system misslyckas för metallfabrikatörer",
+    "intro": "De flesta ERP-system är designade kring redovisning, inte produktion. Som resultat förlitar sig metallfabrikatörer ofta på kalkylblad och manuella processer för att hantera jobb och verkstadsgolvsutförande.",
+    "items": [
+      "Felaktig jobbkostnadskalkylering",
+      "Metallager spåras inte korrekt",
+      "Dålig insyn i verkstadsgolvsoperationer",
+      "Brist på skäroptimering för plåt",
+      "Produktionsplanering hanteras utanför ERP:n",
+      "Variabla produktskattesatser hanteras inte automatiskt"
+    ],
+    "conclusion": "Dessa problem ökar regelefterlevnadsrisken, minskar effektiviteten och försämrar servicekvaliteten."
+  },
+  "whoFor": {
+    "title": "Vem detta system är designat för",
+    "intro": "Detta ERP är designat för metallfabrikationsföretag med:",
+    "criteria": [
+      "Ett behov av noggrann jobbkostnadskalkylering och materialspårning",
+      "Hantering av metallager och plåtlager",
+      "Skäroptimeringsbehov för laser, plasma eller vattenskärning",
+      "EU e-faktureringsefterlevnadskrav",
+      "Europeiska redovisningssystemintegrationskrav",
+      "GDPR och EU dataskyddsefterlevnadsbehov"
+    ],
+    "typical": "Typiska användare inkluderar:",
+    "users": [
+      "Jobbverkstäder",
+      "Kontraktstillverkare",
+      "Fabrikatörer som producerar anpassade eller småseriedelar",
+      "Plåtverkstäder"
+    ],
+    "notFor": "Detta system är inte designat för:",
+    "excluded": [
+      "Rena distributionsverksamheter",
+      "Processtillverkning",
+      "Högt standardiserad massproduktion"
+    ]
+  },
+  "manufacturing": {
+    "title": "Tillverkningscentrerad design",
+    "intro": "Systemet är byggt kring verkliga tillverkningskoncept som används inom metallfabrikation, och det anpassar sig kontinuerligt till komplexa och utvecklande europeiska efterlevnadskrav.",
+    "features": [
+      {
+        "name": "Arbetsflödesspårning",
+        "desc": "Spåra varje jobb från offert till leverans med fullständig arbetsflödesöverblick och operationsnivådetaljer",
+        "icon": "cog"
+      },
+      {
+        "name": "Produktionsplanering",
+        "desc": "Hantera produktionskapacitet och schemalägg operationer effektivt över ditt verkstadsgolv",
+        "icon": "factory"
+      },
+      {
+        "name": "Materialplanering",
+        "desc": "Noggrann MRP driven av råmaterialspårning, plåtlageröverblick och automatiserad lagerhantering",
+        "icon": "format-list-checks"
+      },
+      {
+        "name": "Skäroptimering",
+        "desc": "Inbyggda nästlingsalgoritmer minimerar avfall och maximerar plåtutnyttjande för laser-, plasma- och vattenskärning",
+        "icon": "content-cut"
+      },
+      {
+        "name": "Realtidsproduktionsrapportering",
+        "desc": "Pekpaneloptimerat gränssnitt för realtidsjobbspårning och rapportering av maskinoperatörer",
+        "icon": "tablet"
+      },
+      {
+        "name": "Jobbbaserad kostnadskalkylering",
+        "desc": "Noggrann kostnadsberäkning per jobb med material-, arbets-, overhead- och spillspårning",
+        "icon": "calculator"
+      },
+      {
+        "name": "Peppol E-fakturering",
+        "desc": "Generera EU-kompatibla elektroniska fakturor enligt Peppol BIS Billing 3.0-standard",
+        "icon": "file-document-outline"
+      },
+      {
+        "name": "Moms & Efterlevnad",
+        "desc": "Lokalt kompatibel momshantering med undantag och nationell redovisningssystemintegration",
+        "icon": "shield-check"
+      },
+      {
+        "name": "Leverantörshantering",
+        "desc": "Spåra leverantörer, inköpsorder, materialkostnader och leveransscheman",
+        "icon": "truck"
+      },
+      {
+        "name": "Rapportering & Analys",
+        "desc": "Realtidsdashboards för produktionseffektivitet, jobblönsamhet och resursutnyttjande",
+        "icon": "chart-bar"
+      },
+      {
+        "name": "Europeiskt dataskydd",
+        "desc": "GDPR-kompatibel datahantering med full datasuveränitet för europeiska verksamheter",
+        "icon": "puzzle"
+      },
+      {
+        "name": "AI-drivna insikter",
+        "desc": "AI-drivna insikter för att identifiera produktionsflaskhalsar och förbättra jobbkostnadskalkyleringens noggrannhet",
+        "icon": "brain"
+      }
+    ],
+    "outro": "Produktionsdata flödar från offerering till utskick. Operativ verklighet återspeglas i planering och kostnadskalkylering."
+  },
+  "workflow": {
+    "title": "Från offert till utskick",
+    "intro": "Systemet kopplar samman viktiga produktionssteg i ett enda arbetsflöde:",
+    "steps": [
+      {
+        "name": "Offerering & Uppskattning",
+        "desc": "Beräkna kostnader noggrant med material, arbete, maskintid och skäroptimering"
+      },
+      {
+        "name": "Produktionsplanering",
+        "desc": "Schemalägg operationer över arbetscenter med lagertillgänglighetskontroller och skäroptimering"
+      },
+      {
+        "name": "Verkstadsgolvsutförande",
+        "desc": "Pekpanelgränssnitt för jobbspårning, tidregistrering och kvalitetskontroll"
+      },
+      {
+        "name": "Fakturering & Efterlevnad",
+        "desc": "Generera Peppol-kompatibla e-fakturor och fraktsedlar med korrekta momssatser"
+      },
+      {
+        "name": "Utskick & Leverans",
+        "desc": "Packa, skriv av buntade artiklar och skicka jobb till kunder"
+      },
+      {
+        "name": "Analys",
+        "desc": "Spåra verkliga vs. uppskattade kostnader med fullständig transparens och spillredovisning"
+      }
+    ],
+    "conclusion": "Målet är konsistens och spårbarhet genom hela jobblivscykeln."
+  },
+  "caseStudy": {
+    "title": "Används i verkliga produktionsmiljöer",
+    "company": "Skarda Nams SIA",
+    "industry": "Metallfabrikation & Anpassade delar",
+    "region": "Östeuropa",
+    "employees": "20 anställda, 2 CNC-maskiner",
+    "challenge": "Utmaning",
+    "challengeText": "Skarda Nams kämpade med noggrann offerering med olika metalltyper, liverinventeringsuppdateringar, metallavskrivningsmöjligheter, produktionsplanering, efterlevnadsfakturering, felaktig kostnadskalkylering och pappersbaserad spårning.",
+    "solution": "Lösning",
+    "solutionText": "Implementerade Kenzap Factory med integrerade modul för offerering, produktionsruttning och verkstadsgolvsutförande. Maskinoperatörer anpassade sig till pekpanelgränssnittet inom två veckor efter utplacering. Peppol e-fakturering konfigurerades för att möta EU-efterlevnadskrav. Integration med Moneo-redovisningsprogramvara för förenklad skatterapportering.",
+    "results": "Resultat",
+    "resultItems": [
+      "Minskning av offerttid genom automatiserad materialberäkning",
+      "Förbättring av jobbkostnadskalkyleringens noggrannhet",
+      "Fullständig insyn i verkstadsgolvsoperationer och tillverkningsstadier",
+      "Peppol e-faktureringsefterlevnad uppnådd, med integration till BMD-redovisningsprogramvara",
+      "Materialavfallsminskning genom skäroptimering",
+      "Snabbare produktionsplanering med realtidslagerkontroller",
+      "GDPR-efterlevnad och EU-datahemsändning upprätthållen genom hela verksamheten"
+    ],
+    "quote": "Vi har ett system som fungerar på det sätt som vårt verkstadsgolv fungerar. Operatörerna anpassade sig till gränssnittet omedelbart, och vår jobbkostnadskalkylering är nu tillförlitlig. Skattesatser hanteras automatiskt baserat på produkttyp, vilket sparar oss tid och huvudvärk under fakturering.",
+    "quoteAuthor": "Klientchef, Skarda Nams SIA",
+    "watchCase": "Se fallstudie"
+  },
+  "implementation": {
+    "title": "Implementeringsmetod",
+    "intro": "Implementeringen följer en standardstruktur designad för att minimera störningar.",
+    "principles": [
+      "Hårdvaruinstallation och programvaruinstallation på fabrikssystem",
+      "Produktkatalog och metalllagerdatabaskonfiguration",
+      "Användarrolltilldelning och ansvarsdefinition",
+      "Dokumentmallanpassning (fraktsedlar, fakturor, rapporter)",
+      "Omfattande utbildning för operatörer och ledningsgrupper",
+      "Systemintegration och finansiell rapporteringssynkronisering"
+    ],
+    "timeline": "Typisk tidslinje:",
+    "phases": [
+      "Upptäckt & konfiguration: 2-3 veckor",
+      "Datamigrering & testning: 2-3 veckor",
+      "Utbildning & driftsättning: 1-2 veckor",
+      "Support efter lansering: pågående"
+    ],
+    "outro": "Implementering kan levereras av konsulter med tillverknings- och ERP-bakgrund eller av Kenzap-ingenjör direkt."
+  },
+  "deployment": {
+    "title": "Utplaceringsalternativ",
+    "intro": "Systemet stödjer flera utplaceringsmodeller för att matcha operativa, regulatoriska och datasuveränitetsbehov.",
+    "options": [
+      {
+        "name": "Leverantörshantererat moln",
+        "desc": "Helt hanterad hosting i europeiska datacenter med automatiska uppdateringar, säkerhetskopior och säkerhetspatchar. Idealiskt för företag som fokuserar på verksamhet.",
+        "icon": "cloud-check"
+      },
+      {
+        "name": "Kundhanterat moln",
+        "desc": "Utplacera på din egen molninfrastruktur (AWS, Azure, GCP) med full kontroll över konfiguration och åtkomst. Lämpligt för IT-kapabla organisationer.",
+        "icon": "cloud-cog"
+      },
+      {
+        "name": "Egenvärd utplacering",
+        "desc": "Lokali installation för maximal datasuveränitet och kontroll. Krävs för vissa reglerade industrier eller mycket känsliga verksamheter.",
+        "icon": "server"
+      }
+    ],
+    "outro": "Alla utplaceringsalternativ använder samma programvara, följer samma uppgraderingsväg och upprätthåller funktionsparitet. Data förblir inom europeiska jurisdiktioner för GDPR-efterlevnad."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "intro": "Om du vill förstå om detta system passar din verksamhet, kontakta oss för en första diskussion. Vi arbetar på engelska och andra europeiska språk.",
+    "namePlaceholder": "Ditt namn",
+    "emailPlaceholder": "E-postadress",
+    "companyPlaceholder": "Företagsnamn",
+    "messagePlaceholder": "Berätta om din produktionssättning: antal maskiner, typiska jobbstorlekar, nuvarande system...",
+    "submit": "Skicka meddelande",
+    "sending": "Skickar...",
+    "success": "Meddelande skickat framgångsrikt. Vi kommer att kontakta dig inom 1-2 arbetsdagar.",
+    "error": "Misslyckades med att skicka meddelande. Vänligen e-posta oss direkt på support@kenzap.com",
+    "or": "eller",
+    "linkedin": "Anslut på LinkedIn",
+    "email": "E-posta oss direkt"
+  },
+  "footer": {
+    "tagline": "Programvara för tillverkningsverksamhet",
+    "company": "© 2026 Kenzap. Alla rättigheter förbehållna.",
+    "note": "Produktinformation kan ändras. Tillgänglighet kan variera efter region.",
+    "languages": "Språk"
+  }
+}

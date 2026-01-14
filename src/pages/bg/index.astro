@@ -1,0 +1,35 @@
+---
+import CaseStudy from '../../components/CaseStudy.astro';
+import Contact from '../../components/Contact.astro';
+import Deployment from '../../components/Deployment.astro';
+import Footer from '../../components/Footer.astro';
+import Header from '../../components/Header.astro';
+import Hero from '../../components/Hero.astro';
+import Implementation from '../../components/Implementation.astro';
+import Manufacturing from '../../components/Manufacturing.astro';
+import Problem from '../../components/Problem.astro';
+import WhoFor from '../../components/WhoFor.astro';
+import Workflow from '../../components/Workflow.astro';
+import Layout from '../../layouts/Layout.astro';
+
+import bg from '../../i18n/bg.json';
+
+const translations = bg;
+const lang = 'bg';
+---
+
+<Layout title="Kenzap Factory – ERP за метална обработка" lang={lang}>
+  <Header lang={lang} translations={translations} />
+  <main>
+    <Hero translations={translations} />
+    <Problem translations={translations} />
+    <WhoFor translations={translations} />
+    <Manufacturing translations={translations} />
+    <Workflow translations={translations} />
+    <CaseStudy translations={translations} />
+    <Implementation translations={translations} />
+    <Deployment translations={translations} />
+    <Contact translations={translations} />
+  </main>
+  <Footer translations={translations} />
+</Layout>

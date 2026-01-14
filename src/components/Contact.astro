@@ -1,0 +1,103 @@
+---
+const { translations } = Astro.props;
+const t = translations;
+---
+
+<section id="contact" class="section-padding bg-gray-50">
+  <div class="container-width">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-4xl font-bold mb-6 text-center">{t.contact.title}</h2>
+      <p class="text-lg text-gray-700 mb-12 text-center">
+        {t.contact.intro}
+      </p>
+      
+      <form 
+        name="contact" 
+        method="POST" 
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        action="/thank-you"
+        class="space-y-6 mb-8"
+      >
+        <input type="hidden" name="form-name" value="contact" />
+        <p class="hidden">
+          <label>
+            Don't fill this out: <input name="bot-field" />
+          </label>
+        </p>
+        
+        <div>
+          <input 
+            type="text" 
+            name="name" 
+            required
+            placeholder={t.contact.namePlaceholder}
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+          />
+        </div>
+        
+        <div>
+          <input 
+            type="email" 
+            name="email" 
+            required
+            placeholder={t.contact.emailPlaceholder}
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+          />
+        </div>
+        
+        <div>
+          <input 
+            type="text" 
+            name="company"
+            placeholder={t.contact.companyPlaceholder}
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+          />
+        </div>
+        
+        <div>
+          <textarea 
+            name="message" 
+            required
+            rows="5"
+            placeholder={t.contact.messagePlaceholder}
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent resize-none"
+          ></textarea>
+        </div>
+        
+        <button 
+          type="submit"
+          class="w-full px-6 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors font-medium"
+        >
+          {t.contact.submit}
+        </button>
+      </form>
+      
+      <div class="text-center">
+        <p class="text-gray-600 mb-4">{t.contact.or}</p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a 
+            href="https://www.linkedin.com/in/pavel-lukasenko/" 
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center space-x-2 px-6 py-3 border border-gray-300 rounded-lg hover:border-primary hover:text-primary transition-colors"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+            <span>{t.contact.linkedin}</span>
+          </a>
+          <a 
+            href="mailto:support@kenzap.com"
+            class="inline-flex items-center justify-center space-x-2 px-6 py-3 border border-gray-300 rounded-lg hover:border-primary hover:text-primary transition-colors"
+          >
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+            <span>{t.contact.email}</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,240 @@
+{
+  "nav": {
+    "problem": "Problēma",
+    "solution": "Risinājums",
+    "features": "Iespējas",
+    "customers": "Klienti",
+    "contact": "Kontakti"
+  },
+  "hero": {
+    "headline": "ERP sistēma metāla apstrādei.",
+    "subheadline": "Ražošana, izmaksu aprēķins un plānošana pasūtījumu izpildei.",
+    "intro": "Šī sistēma ir īpaši izstrādāta metāla apstrādes uzņēmumiem. Tā atbalsta reālus ražošanas procesus, nevis grāmatvedības risinājumus. Fokuss ir uz pasūtījumu ražošanu, mazos sēriju ražošanu un atbilstību prasībām.",
+    "primaryCta": "Sazināties ar mums",
+    "secondaryCta": "Pārbaudīt piemērotību",
+    "watchDemo": "Skatīt demonstrāciju"
+  },
+  "problem": {
+    "title": "Kāpēc universālās ERP sistēmas neder metāla apstrādes uzņēmumiem",
+    "intro": "Lielākā daļa ERP sistēmu ir veidotas ar fokusu uz grāmatvedību, nevis ražošanu. Rezultātā metāla apstrādes uzņēmumi bieži paļaujas uz Excel tabulām un manuāliem procesiem darbu un ražošanas vadībai.",
+    "items": [
+      "Neprecīzs darbu izmaksu aprēķins",
+      "Metāla krājumi netiek pareizi uzskaitīti",
+      "Slikta redzamība ražošanas procesā",
+      "Trūkst loksnes metāla griešanas optimizācijas",
+      "Ražošanas plānošana notiek ārpus ERP sistēmas",
+      "Mainīgie PVN tarifi netiek apstrādāti automātiski"
+    ],
+    "conclusion": "Šīs problēmas palielina atbilstības risku, samazina efektivitāti un pasliktina pakalpojumu kvalitāti."
+  },
+  "whoFor": {
+    "title": "Kam paredzēta šī sistēma",
+    "intro": "Šī ERP sistēma ir izstrādāta metāla apstrādes uzņēmumiem ar:",
+    "criteria": [
+      "Vajadzību pēc precīza darbu izmaksu aprēķina un materiālu uzskaites",
+      "Metāla noliktavas un loksnes krājumu pārvaldības prasībām",
+      "Griešanas optimizācijas vajadzībām lāzera, plazmas vai ūdens strūklas griešanai",
+      "ES e-rēķinu atbilstības prasībām",
+      "Eiropas grāmatvedības sistēmu integrācijas prasībām",
+      "VDAR un ES datu aizsardzības prasību ievērošanas vajadzībām"
+    ],
+    "typical": "Tipiskie lietotāji ietver:",
+    "users": [
+      "Pasūtījumu darbnīcas",
+      "Līgumražotājus",
+      "Apstrādātājus, kas ražo pielāgotās vai mazās sērijas daļas",
+      "Loksnes metāla darbnīcas"
+    ],
+    "notFor": "Šī sistēma nav paredzēta:",
+    "excluded": [
+      "Tīri distribūcijas uzņēmumiem",
+      "Procesu ražošanai",
+      "Augstas standartizācijas masveida ražošanai"
+    ]
+  },
+  "manufacturing": {
+    "title": "Ražošanas orientēts dizains",
+    "intro": "Sistēma ir veidota ap reāliem ražošanas konceptiem, kas tiek izmantoti metāla apstrādē, un tā pastāvīgi pielāgojas sarežģītajām un main­īgajām Eiropas atbilstības prasībām.",
+    "features": [
+      {
+        "name": "Darba procesu izsekošana",
+        "desc": "Izsekojiet katru darbu no piedāvājuma līdz piegādei ar pilnu procesu redzamību un operāciju līmeņa detalizāciju",
+        "icon": "cog"
+      },
+      {
+        "name": "Ražošanas plānošana",
+        "desc": "Pārvaldiet ražošanas jaudu un efektīvi plānojiet operācijas visā ražotnē",
+        "icon": "factory"
+      },
+      {
+        "name": "Materiālu plānošana",
+        "desc": "Precīzs MRP ar izejmateriālu izsekošanu, loksnes metāla krājumu redzamību un automātisku noliktavas pārvaldību",
+        "icon": "format-list-checks"
+      },
+      {
+        "name": "Griešanas optimizācija",
+        "desc": "Iebūvēti ligzdošanas algoritmi minimizē atkritumus un maksimizē loksnes izmantošanu lāzera, plazmas un ūdens strūklas griešanā",
+        "icon": "content-cut"
+      },
+      {
+        "name": "Reāllaika ražošanas atskaites",
+        "desc": "Skārienekrānam optimizēts interfeiss reāllaika darbu izsekošanai un atskaitēm iekārtu operatoriem",
+        "icon": "tablet"
+      },
+      {
+        "name": "Darbu izmaksu aprēķins",
+        "desc": "Precīzs izmaksu aprēķins katram darbam ar materiālu, darba spēka, izmaksu un brāķa izsekošanu",
+        "icon": "calculator"
+      },
+      {
+        "name": "Peppol e-rēķini",
+        "desc": "Ģenerējiet ES prasībām atbilstošus elektroniskos rēķinus pēc Peppol BIS Billing 3.0 standarta",
+        "icon": "file-document-outline"
+      },
+      {
+        "name": "PVN un atbilstība",
+        "desc": "Lokāli atbilstoša PVN apstrāde ar izņēmumiem un nacionālo grāmatvedības sistēmu integrāciju",
+        "icon": "shield-check"
+      },
+      {
+        "name": "Piegādātāju pārvaldība",
+        "desc": "Izsekojiet piegādātājus, pirkšanas pasūtījumus, materiālu izmaksas un piegādes grafikus",
+        "icon": "truck"
+      },
+      {
+        "name": "Atvērtais kods",
+        "desc": "Veidots uz atvērtā koda tehnoloģijām bez piesaistes konkrētam piegādātājam, nodrošinot pilnu datu pārnesamību un sistēmas neatkarību",
+        "icon": "code"
+      },
+      {
+        "name": "Eiropas datu aizsardzība",
+        "desc": "VDAR atbilstoša datu apstrāde ar pilnu datu suverenitāti Eiropas darbībām",
+        "icon": "puzzle"
+      },
+      {
+        "name": "MI balstīti ieskati",
+        "desc": "Mākslīgā intelekta ieskati ražošanas šaurvietu identificēšanai un darbu izmaksu aprēķina precizitātes uzlabošanai",
+        "icon": "brain"
+      }
+    ],
+    "outro": "Ražošanas dati plūst no piedāvājuma līdz nosūtīšanai. Operacionālā realitāte tiek atspoguļota plānošanā un izmaksu aprēķinā."
+  },
+  "workflow": {
+    "title": "No piedāvājuma līdz nosūtīšanai",
+    "intro": "Sistēma savieno galvenos ražošanas soļus vienā darba procesā:",
+    "steps": [
+      {
+        "name": "Piedāvājumi un novērtējumi",
+        "desc": "Precīzi aprēķiniet izmaksas ar materiāliem, darba spēku, iekārtu laiku un griešanas optimizāciju"
+      },
+      {
+        "name": "Ražošanas plānošana",
+        "desc": "Plānojiet operācijas darba centros ar krājumu pieejamības pārbaudēm un griešanas optimizāciju"
+      },
+      {
+        "name": "Ražošanas izpilde",
+        "desc": "Skārienekrāna interfeiss darbu izsekošanai, laika uzskai­tei un kvalitātes kontrolei"
+      },
+      {
+        "name": "Rēķinu izrakstīšana un atbilstība",
+        "desc": "Ģenerējiet Peppol atbilstošus e-rēķinus un pavadzīmes ar pareiziem PVN tarifiem"
+      },
+      {
+        "name": "Nosūtīšana un piegāde",
+        "desc": "Iesaiņojiet, norakstiet komplektus un nosūtiet darbus klientiem"
+      },
+      {
+        "name": "Analītika",
+        "desc": "Izsekojiet faktiskās pret plānotajām izmaksām ar pilnu caurskatāmību un brāķa uzskaiti"
+      }
+    ],
+    "conclusion": "Mērķis ir konsekvence un izsekojamība visā darba dzīves ciklā."
+  },
+  "caseStudy": {
+    "title": "Izmantots reālā ražošanas vidē",
+    "company": "SIA Skarda Nams",
+    "industry": "Metāla apstrāde un pielāgotās detaļas",
+    "region": "Austrumeiropa",
+    "employees": "20 darbinieki, 2 CNC iekārtas",
+    "challenge": "Izaicinājums",
+    "challengeText": "SIA Skarda Nams saskārās ar precīzu piedāvājumu sagatavošanu, izmantojot dažādus metālu veidus, tiešsaistes krājumu atjaunošanu, metāla norakstīšanas iespējām, ražošanas plānošanu, atbilstošu rēķinu izrakstīšanu, neprecīzu izmaksu aprēķinu un papīra dokumentāciju.",
+    "solution": "Risinājums",
+    "solutionText": "Ieviests Kenzap Factory ar integrētiem piedāvājumu, ražošanas maršrutu un ražošanas izpildes moduļiem. Iekārtu operatori apguva skārienekrāna saskarni divu nedēļu laikā pēc ieviešanas. Peppol e-rēķinu izrakstīšana tika konfigurēta ES atbilstības prasībām. Integrācija ar Moneo grāmatvedības programmatūru vienkāršotai nodokļu atskaitēm.",
+    "results": "Rezultāti",
+    "resultItems": [
+      "Piedāvājumu sagatavošanas laika samazināšana ar automātisku materiālu aprēķinu",
+      "Darbu izmaksu aprēķina precizitātes uzlabošana",
+      "Pilnīga redzamība ražošanas operācijās un ražošanas posmos",
+      "Peppol e-rēķinu atbilstība panākta ar BMD grāmatvedības integrāciju",
+      "Materiālu atkritumu samazināšana ar griešanas optimizāciju",
+      "Ātrāka ražošanas plānošana ar reāllaika krājumu pārbaudēm",
+      "VDAR atbilstība un ES datu rezidence uzturēta visās operācijās"
+    ],
+    "quote": "Mums ir sistēma, kas darbojas tāpat kā mūsu ražotne. Operatori nekavējoties pielāgojās saskarnei, un mūsu darbu izmaksu aprēķins tagad ir uzticams. Nodokļu tarifi tiek apstrādāti automātiski atkarībā no produkta veida, kas ietaupa laiku un problēmas rēķinu izrakstīšanas laikā.",
+    "quoteAuthor": "Klientu vadītājs, SIA Skarda Nams",
+    "watchCase": "Skatīt gadījuma izpēti"
+  },
+  "implementation": {
+    "title": "Ieviešanas pieeja",
+    "intro": "Ieviešana notiek pēc standarta struktūras, kas paredzēta minimālu darbības traucējumu radīšanai.",
+    "principles": [
+      "Aparatūras uzstādīšana un programmatūras instalēšana rūpnīcas sistēmās",
+      "Produktu kataloga un metāla krājumu datubāzes konfigurēšana",
+      "Lietotāju lomu piešķiršana un atbildības definēšana",
+      "Dokumentu veidņu pielāgošana (pavadzīmes, rēķini, atskaites)",
+      "Visaptveroša apmācība operatoriem un vadības komandām",
+      "Sistēmu integrācija un finanšu atskaišu sinhronizācija"
+    ],
+    "timeline": "Tipiskais laika grafiks:",
+    "phases": [
+      "Izpēte un konfigurēšana: 2-3 nedēļas",
+      "Datu migrācija un testēšana: 2-3 nedēļas",
+      "Apmācība un palaišana: 1-2 nedēļas",
+      "Atbalsts pēc palaišanas: pastāvīgi"
+    ],
+    "outro": "Ieviešanu var veikt konsultanti ar ražošanas un ERP pieredzi vai tieši Kenzap inženieris."
+  },
+  "deployment": {
+    "title": "Izvietošanas varianti",
+    "intro": "Sistēma atbalsta vairākus izvietošanas modeļus atbilstoši operacionālajām, regulatīvajām un datu suverenitātes vajadzībām.",
+    "options": [
+      {
+        "name": "Piegādātāja pārvaldīts mākonis",
+        "desc": "Pilnībā pārvaldīts hostings Eiropas datu centros ar automātiskiem atjauninājumiem, dublējumiem un drošības labojumiem. Ideāls uzņēmumiem, kas fokusējas uz darbību.",
+        "icon": "cloud-check"
+      },
+      {
+        "name": "Klienta pārvaldīts mākonis",
+        "desc": "Izvietošana jūsu mākoņa infrastruktūrā (AWS, Azure, GCP) ar pilnu kontroli pār konfigurāciju un piekļuvi. Piemērots IT spējīgām organizācijām.",
+        "icon": "cloud-cog"
+      },
+      {
+        "name": "Lokālais izvietojums",
+        "desc": "Lokāla instalēšana maksimālai datu suverenitātei un kontrolei. Nepieciešams dažās regulētās nozarēs vai augstas sensitīvitātes operācijām.",
+        "icon": "server"
+      }
+    ],
+    "outro": "Visi izvietošanas varianti izmanto to pašu programmatūru, seko tam pašam atjaunināšanas ceļam un uztur funkciju līdzvērtību. Dati paliek Eiropas jurisdikcijās VDAR atbilstībai."
+  },
+  "contact": {
+    "title": "Kontakti",
+    "intro": "Ja vēlaties saprast, vai šī sistēma atbilst jūsu darbībai, sazinieties ar mums sākotnējām sarunām. Mēs strādājam angļu valodā un citās Eiropas valodās.",
+    "namePlaceholder": "Jūsu vārds",
+    "emailPlaceholder": "E-pasta adrese",
+    "companyPlaceholder": "Uzņēmuma nosaukums",
+    "messagePlaceholder": "Pastāstiet par savu ražošanas uzstādījumu: iekārtu skaits, tipiskie darbu apjomi, pašreizējās sistēmas...",
+    "submit": "Sūtīt ziņojumu",
+    "sending": "Sūta...",
+    "success": "Ziņojums veiksmīgi nosūtīts. Mēs ar jums sazināsimies 1-2 darba dienu laikā.",
+    "error": "Neizdevās nosūtīt ziņojumu. Lūdzu, rakstiet mums tieši uz support@kenzap.com",
+    "or": "vai",
+    "linkedin": "Sazināties LinkedIn",
+    "email": "Rakstīt tieši"
+  },
+  "footer": {
+    "tagline": "Programmatūra ražošanas operācijām",
+    "company": "© 2026 Kenzap. Visas tiesības aizsargātas.",
+    "note": "Produkta informācija var mainīties. Pieejamība var atšķirties atkarībā no reģiona.",
+    "languages": "Valodas"
+  }
+}

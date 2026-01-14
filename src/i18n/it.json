@@ -1,0 +1,240 @@
+{
+  "nav": {
+    "problem": "Problema",
+    "solution": "Soluzione",
+    "features": "Funzionalità",
+    "customers": "Clienti",
+    "contact": "Contatti"
+  },
+  "hero": {
+    "headline": "ERP progettato per la carpenteria metallica.",
+    "subheadline": "Produzione, calcolo costi e pianificazione pensati per la produzione su commessa.",
+    "intro": "Questo sistema è progettato specificamente per i carpentieri metallici. Supporta i flussi produttivi reali, non soluzioni alternative basate sulla contabilità. Il focus è sui job shop, produzione su commessa e conformità normativa.",
+    "primaryCta": "Contattaci",
+    "secondaryCta": "Verifica la compatibilità",
+    "watchDemo": "Guarda come funziona"
+  },
+  "problem": {
+    "title": "Perché i sistemi ERP generici non funzionano per i carpentieri metallici",
+    "intro": "La maggior parte dei sistemi ERP è progettata intorno alla contabilità, non alla produzione. Di conseguenza, i carpentieri metallici spesso si affidano a fogli di calcolo e processi manuali per gestire le commesse e l'esecuzione in officina.",
+    "items": [
+      "Calcolo costi commesse impreciso",
+      "Inventario metalli non tracciato correttamente",
+      "Scarsa visibilità sulle operazioni di officina",
+      "Mancanza di ottimizzazione taglio per lamiere",
+      "Pianificazione produttiva gestita fuori dall'ERP",
+      "Aliquote IVA variabili non gestite automaticamente"
+    ],
+    "conclusion": "Questi problemi aumentano il rischio di non conformità, riducono l'efficienza e compromettono la qualità del servizio."
+  },
+  "whoFor": {
+    "title": "Per chi è progettato questo sistema",
+    "intro": "Questo ERP è progettato per aziende di carpenteria metallica con:",
+    "criteria": [
+      "Necessità di calcolo preciso dei costi per commessa e tracciamento materiali",
+      "Requisiti di gestione inventario stock metallici e lamiere",
+      "Esigenze di ottimizzazione taglio per laser, plasma o getto d'acqua",
+      "Obblighi di conformità fatturazione elettronica UE",
+      "Requisiti di integrazione con sistemi contabili europei",
+      "Necessità di conformità GDPR e protezione dati UE"
+    ],
+    "typical": "Gli utilizzatori tipici includono:",
+    "users": [
+      "Job shop",
+      "Terzisti",
+      "Carpentieri che producono parti su misura o piccoli lotti",
+      "Officine di lamiera"
+    ],
+    "notFor": "Questo sistema non è progettato per:",
+    "excluded": [
+      "Attività di pura distribuzione",
+      "Produzione di processo",
+      "Produzione di massa altamente standardizzata"
+    ]
+  },
+  "manufacturing": {
+    "title": "Progettazione incentrata sulla produzione",
+    "intro": "Il sistema è costruito intorno ai concetti reali di produzione utilizzati nella carpenteria metallica e si adatta continuamente ai requisiti di conformità europei complessi e in evoluzione.",
+    "features": [
+      {
+        "name": "Tracciamento Flusso di Lavoro",
+        "desc": "Traccia ogni commessa dal preventivo alla consegna con completa visibilità del flusso di lavoro e dettagli a livello operativo",
+        "icon": "cog"
+      },
+      {
+        "name": "Pianificazione Produttiva",
+        "desc": "Gestisci la capacità produttiva e programma le operazioni in modo efficiente nella tua officina",
+        "icon": "factory"
+      },
+      {
+        "name": "Pianificazione Materiali",
+        "desc": "MRP accurato alimentato da tracciamento materie prime, visibilità inventario lamiere e gestione automatica scorte",
+        "icon": "format-list-checks"
+      },
+      {
+        "name": "Ottimizzazione Taglio",
+        "desc": "Algoritmi di nesting integrati minimizzano gli sprechi e massimizzano l'utilizzo lamiere per taglio laser, plasma e getto d'acqua",
+        "icon": "content-cut"
+      },
+      {
+        "name": "Reportistica Produttiva in Tempo Reale",
+        "desc": "Interfaccia ottimizzata per pannelli touch per tracciamento commesse e reportistica in tempo reale da parte degli operatori macchina",
+        "icon": "tablet"
+      },
+      {
+        "name": "Calcolo Costi per Commessa",
+        "desc": "Calcolo accurato dei costi per commessa con tracciamento materiali, manodopera, costi generali e scarti",
+        "icon": "calculator"
+      },
+      {
+        "name": "Fatturazione Elettronica Peppol",
+        "desc": "Genera fatture elettroniche conformi UE seguendo lo standard Peppol BIS Billing 3.0",
+        "icon": "file-document-outline"
+      },
+      {
+        "name": "IVA e Conformità",
+        "desc": "Gestione IVA localmente conforme con esenzioni e integrazione sistemi contabili nazionali",
+        "icon": "shield-check"
+      },
+      {
+        "name": "Gestione Fornitori",
+        "desc": "Traccia fornitori, ordini di acquisto, costi materiali e programmi di consegna",
+        "icon": "truck"
+      },
+      {
+        "name": "Open Source",
+        "desc": "Costruito su tecnologie open source senza vendor lock-in, garantendo completa portabilità dati e indipendenza sistema",
+        "icon": "code"
+      },
+      {
+        "name": "Protezione Dati Europea",
+        "desc": "Gestione dati conforme GDPR con piena sovranità dei dati per le operazioni europee",
+        "icon": "puzzle"
+      },
+      {
+        "name": "Insights Basati su IA",
+        "desc": "Insights basati su IA per identificare colli di bottiglia produttivi e migliorare la precisione del calcolo costi commesse",
+        "icon": "brain"
+      }
+    ],
+    "outro": "I dati di produzione fluiscono dal preventivo alla spedizione. La realtà operativa si riflette nella pianificazione e nel calcolo costi."
+  },
+  "workflow": {
+    "title": "Dal preventivo alla spedizione",
+    "intro": "Il sistema collega i passaggi produttivi chiave in un unico flusso di lavoro:",
+    "steps": [
+      {
+        "name": "Preventivazione e Stima",
+        "desc": "Calcola i costi accuratamente con materiali, manodopera, tempo macchina e ottimizzazione taglio"
+      },
+      {
+        "name": "Pianificazione Produttiva",
+        "desc": "Programma le operazioni sui centri di lavoro con controlli disponibilità inventario e ottimizzazione taglio"
+      },
+      {
+        "name": "Esecuzione in Officina",
+        "desc": "Interfaccia touch-panel per tracciamento commesse, registrazione tempi e controllo qualità"
+      },
+      {
+        "name": "Fatturazione e Conformità",
+        "desc": "Genera fatture elettroniche conformi Peppol e documenti di trasporto con aliquote IVA corrette"
+      },
+      {
+        "name": "Spedizione e Consegna",
+        "desc": "Imballa, scarica articoli raggruppati e spedisci commesse ai clienti"
+      },
+      {
+        "name": "Analytics",
+        "desc": "Traccia costi effettivi vs stimati con completa trasparenza e contabilizzazione scarti"
+      }
+    ],
+    "conclusion": "L'obiettivo è coerenza e tracciabilità attraverso l'intero ciclo di vita della commessa."
+  },
+  "caseStudy": {
+    "title": "Utilizzato in ambienti produttivi reali",
+    "company": "Skarda Nams SIA",
+    "industry": "Carpenteria Metallica e Parti su Misura",
+    "region": "Europa Orientale",
+    "employees": "20 dipendenti, 2 macchine CNC",
+    "challenge": "Sfida",
+    "challengeText": "Skarda Nams aveva difficoltà con preventivazione accurata utilizzando vari tipi di metallo, aggiornamenti inventario in tempo reale, capacità di scarico metalli, pianificazione produttiva, fatturazione conforme, calcolo costi impreciso e tracciamento cartaceo.",
+    "solution": "Soluzione",
+    "solutionText": "Implementato Kenzap Factory con moduli integrati di preventivazione, instradamento produzione ed esecuzione officina. Gli operatori macchina hanno adottato l'interfaccia touch-panel entro due settimane dalla distribuzione. Fatturazione elettronica Peppol configurata per soddisfare i requisiti di conformità UE. Integrazione con software contabile Moneo per reportistica fiscale semplificata.",
+    "results": "Risultati",
+    "resultItems": [
+      "Riduzione tempo preventivazione attraverso calcolo automatico materiali",
+      "Miglioramento precisione calcolo costi commesse",
+      "Completa visibilità su operazioni officina e fasi produttive",
+      "Conformità fatturazione elettronica Peppol raggiunta, con integrazione al software contabile BMD",
+      "Riduzione sprechi materiali attraverso ottimizzazione taglio",
+      "Pianificazione produttiva più veloce con controlli inventario in tempo reale",
+      "Conformità GDPR e residenza dati UE mantenuta durante tutte le operazioni"
+    ],
+    "quote": "Abbiamo un sistema che funziona come funziona la nostra officina. Gli operatori si sono adattati immediatamente all'interfaccia e il nostro calcolo costi commesse ora è affidabile. Le aliquote fiscali sono gestite automaticamente in base al tipo di prodotto, il che ci fa risparmiare tempo e grattacapi durante la fatturazione.",
+    "quoteAuthor": "Client Manager, Skarda Nams SIA",
+    "watchCase": "Guarda il caso studio"
+  },
+  "implementation": {
+    "title": "Approccio implementazione",
+    "intro": "L'implementazione segue una struttura standard progettata per minimizzare le interruzioni.",
+    "principles": [
+      "Configurazione hardware e installazione software sui sistemi di fabbrica",
+      "Configurazione catalogo prodotti e database inventario metalli",
+      "Assegnazione ruoli utente e definizione responsabilità",
+      "Personalizzazione modelli documenti (documenti trasporto, fatture, report)",
+      "Formazione completa per operatori e team dirigenziali",
+      "Integrazione sistema e sincronizzazione reportistica finanziaria"
+    ],
+    "timeline": "Tempistica tipica:",
+    "phases": [
+      "Discovery e configurazione: 2-3 settimane",
+      "Migrazione dati e test: 2-3 settimane",
+      "Formazione e go-live: 1-2 settimane",
+      "Supporto post-lancio: continuo"
+    ],
+    "outro": "L'implementazione può essere fornita da consulenti con background produttivo ed ERP o direttamente da ingegnere Kenzap."
+  },
+  "deployment": {
+    "title": "Opzioni di distribuzione",
+    "intro": "Il sistema supporta più modelli di distribuzione per soddisfare le esigenze operative, normative e di sovranità dei dati.",
+    "options": [
+      {
+        "name": "Cloud gestito dal fornitore",
+        "desc": "Hosting completamente gestito in data center europei con aggiornamenti automatici, backup e patch di sicurezza. Ideale per aziende focalizzate sulle operazioni.",
+        "icon": "cloud-check"
+      },
+      {
+        "name": "Cloud gestito dal cliente",
+        "desc": "Distribuzione sulla tua infrastruttura cloud (AWS, Azure, GCP) con pieno controllo su configurazione e accesso. Adatto per organizzazioni IT-capaci.",
+        "icon": "cloud-cog"
+      },
+      {
+        "name": "Distribuzione self-hosted",
+        "desc": "Installazione on-premises per massima sovranità dati e controllo. Richiesto per alcuni settori regolamentati o operazioni altamente sensibili.",
+        "icon": "server"
+      }
+    ],
+    "outro": "Tutte le opzioni di distribuzione utilizzano lo stesso software, seguono lo stesso percorso di aggiornamento e mantengono parità di funzionalità. I dati rimangono in giurisdizioni europee per conformità GDPR."
+  },
+  "contact": {
+    "title": "Contatti",
+    "intro": "Se vuoi capire se questo sistema si adatta alla tua operazione, contattaci per una discussione iniziale. Lavoriamo in inglese e altre lingue europee.",
+    "namePlaceholder": "Il tuo nome",
+    "emailPlaceholder": "Indirizzo email",
+    "companyPlaceholder": "Nome azienda",
+    "messagePlaceholder": "Raccontaci della tua configurazione produttiva: numero di macchine, dimensioni tipiche commesse, sistemi attuali...",
+    "submit": "Invia messaggio",
+    "sending": "Invio in corso...",
+    "success": "Messaggio inviato con successo. Ti contatteremo entro 1-2 giorni lavorativi.",
+    "error": "Invio messaggio fallito. Ti preghiamo di inviarci un'email direttamente a support@kenzap.com",
+    "or": "oppure",
+    "linkedin": "Connettiti su LinkedIn",
+    "email": "Scrivici direttamente"
+  },
+  "footer": {
+    "tagline": "Software per le operazioni produttive",
+    "company": "© 2026 Kenzap. Tutti i diritti riservati.",
+    "note": "Le informazioni sui prodotti possono cambiare. La disponibilità può variare per regione.",
+    "languages": "Lingue"
+  }
+}

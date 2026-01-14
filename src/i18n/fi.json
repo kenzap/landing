@@ -1,0 +1,240 @@
+{
+  "nav": {
+    "problem": "Ongelma",
+    "solution": "Ratkaisu",
+    "features": "Ominaisuudet",
+    "customers": "Asiakkaat",
+    "contact": "Yhteystiedot"
+  },
+  "hero": {
+    "headline": "ERP-järjestelmä metallivalmistukseen.",
+    "subheadline": "Tuotanto, kustannuslaskenta ja suunnittelu työtilauspohjaiseen valmistukseen.",
+    "intro": "Tämä järjestelmä on suunniteltu erityisesti metallivalmistajille. Se tukee todellisia tuotantotyönkulkuja, ei kirjanpitoratkaisuja. Keskitytään työpajamaiseen toimintaan, tilausvalmistukseen ja säädöstenmukaisuuteen.",
+    "primaryCta": "Ota yhteyttä",
+    "secondaryCta": "Tarkista sopivuus",
+    "watchDemo": "Katso miten toimii"
+  },
+  "problem": {
+    "title": "Miksi yleiset ERP-järjestelmät eivät sovi metallivalmistajille",
+    "intro": "Useimmat ERP-järjestelmät on suunniteltu kirjanpidon, ei tuotannon ympärille. Tämän seurauksena metallivalmistajat turvautuvat usein taulukkolaskentaan ja manuaalisiin prosesseihin töiden ja tuotannon hallintaan.",
+    "items": [
+      "Epätarkka työtilausten kustannuslaskenta",
+      "Metallilajittelu ei ole kunnolla seurattu",
+      "Heikko näkyvyys tuotantotilojen toimintaan",
+      "Puuttuvat levymetallin leikkuuoptimoinnit",
+      "Tuotannonsuunnittelu hoidetaan ERP:n ulkopuolella",
+      "Vaihtelevat tuotteiden verokannat eivät ole automaattisia"
+    ],
+    "conclusion": "Nämä ongelmat lisäävät säädöstenvastaisen toiminnan riskiä, vähentävät tehokkuutta ja heikentävät palvelun laatua."
+  },
+  "whoFor": {
+    "title": "Kenelle tämä järjestelmä on suunniteltu",
+    "intro": "Tämä ERP on suunniteltu metallivalmistusyrityksille, joilla on:",
+    "criteria": [
+      "Tarve tarkalle työtilausten kustannuslaskennalle ja materiaalien seurannalle",
+      "Metallivarastojen ja levyjen varastonhallinnan vaatimukset",
+      "Leikkuuoptimoinnin tarve laser-, plasma- tai vesileikkaukselle",
+      "EU:n sähköisen laskutuksen säädöstenvaatimukset",
+      "Eurooppalaisten kirjanpitojärjestelmien integrointivaatimukset",
+      "GDPR:n ja EU:n tietosuojan mukaisuuden tarpeet"
+    ],
+    "typical": "Tyypillisiä käyttäjiä ovat:",
+    "users": [
+      "Työpajat",
+      "Sopimusvalmistajat",
+      "Mukautettuja tai pieneriä osia valmistavat yritykset",
+      "Levymetallikoneet"
+    ],
+    "notFor": "Tämä järjestelmä ei ole suunniteltu:",
+    "excluded": [
+      "Puhtaille jakeluyrityksille",
+      "Prosessiteollisuudelle",
+      "Korkeasti standardoidulle massatuotannolle"
+    ]
+  },
+  "manufacturing": {
+    "title": "Valmistuskeskeinen suunnittelu",
+    "intro": "Järjestelmä on rakennettu metallivalmistuksessa käytettävien todellisten valmistuskonseptien ympärille, ja se mukautuu jatkuvasti monimutkaisiin ja kehittyviin eurooppalaisiin säädösvaatimuksiin.",
+    "features": [
+      {
+        "name": "Työnkulun seuranta",
+        "desc": "Seuraa jokaista työtä tarjouksesta toimitukseen täydellä työnkulkunäkyvyydellä ja operaatiotason yksityiskohdilla",
+        "icon": "cog"
+      },
+      {
+        "name": "Tuotannonsuunnittelu",
+        "desc": "Hallitse tuotantokapasiteettia ja ajoita operaatiot tehokkaasti koko tuotantotilojen alueella",
+        "icon": "factory"
+      },
+      {
+        "name": "Materiaalisuunnittelu",
+        "desc": "Tarkka MRP-järjestelmä, jota tehostaa raaka-aineiden seuranta, levymetallin varastonäkyvyys ja automaattinen varastonhallinta",
+        "icon": "format-list-checks"
+      },
+      {
+        "name": "Leikkuuoptimointi",
+        "desc": "Sisäänrakennetut sijoitusalgoritmit minimoivat hukan ja maksimoivat levyjen hyödyntämisen laser-, plasma- ja vesileikkauksessa",
+        "icon": "content-cut"
+      },
+      {
+        "name": "Reaaliaikainen tuotantoraportointi",
+        "desc": "Kosketusnäyttöön optimoitu käyttöliittymä reaaliaikaiseen työtilausten seurantaan ja raportointiin koneoperaattoreille",
+        "icon": "tablet"
+      },
+      {
+        "name": "Työtilauspohjainen kustannuslaskenta",
+        "desc": "Tarkka kustannuslaskenta per työtilaus materiaalin, työvoiman, yleiskustannusten ja hukan seurannalla",
+        "icon": "calculator"
+      },
+      {
+        "name": "Peppol-sähköinen laskutus",
+        "desc": "Luo EU:n säädösten mukaisia sähköisiä laskuja Peppol BIS Billing 3.0 -standardin mukaisesti",
+        "icon": "file-document-outline"
+      },
+      {
+        "name": "ALV ja säädöstenmukaisuus",
+        "desc": "Paikallisesti säädösten mukainen ALV-käsittely poikkeuksilla ja kansallisten kirjanpitojärjestelmien integraatiolla",
+        "icon": "shield-check"
+      },
+      {
+        "name": "Toimittajahallinta",
+        "desc": "Seuraa toimittajia, ostotilauksia, materiaalikustannuksia ja toimitusaikatauluja",
+        "icon": "truck"
+      },
+      {
+        "name": "Avoin lähdekoodi",
+        "desc": "Rakennettu avoimen lähdekoodin teknologioille ilman toimittajariippuvuutta, takaen täyden tietojen siirrettävyyden ja järjestelmäriippumattomuuden",
+        "icon": "code"
+      },
+      {
+        "name": "Eurooppalainen tietosuoja",
+        "desc": "GDPR:n mukainen tietojenkäsittely täydellä tietojen hallinnalla eurooppalaiselle toiminnalle",
+        "icon": "puzzle"
+      },
+      {
+        "name": "AI-ohjatut näkemykset",
+        "desc": "AI-pohjaiset näkemykset tuotantopullonkaulojen tunnistamiseksi ja työtilausten kustannuslaskennan tarkkuuden parantamiseksi",
+        "icon": "brain"
+      }
+    ],
+    "outro": "Tuotantodata virtaa tarjouksesta lähetykseen. Operatiivinen todellisuus näkyy suunnittelussa ja kustannuslaskennassa."
+  },
+  "workflow": {
+    "title": "Tarjouksesta lähetykseen",
+    "intro": "Järjestelmä yhdistää keskeiset tuotantovaiheet yhtenäiseen työnkulkuun:",
+    "steps": [
+      {
+        "name": "Tarjous ja arviointi",
+        "desc": "Laske kustannukset tarkasti materiaalin, työvoiman, koneajan ja leikkuuoptimoinnin kanssa"
+      },
+      {
+        "name": "Tuotannonsuunnittelu",
+        "desc": "Ajoita operaatiot työkeskuksissa varaston saatavuustarkistusten ja leikkuuoptimoinnin kanssa"
+      },
+      {
+        "name": "Tuotantotilan toteutus",
+        "desc": "Kosketusnäyttökäyttöliittymä työtilausten seurantaan, ajan kirjaamiseen ja laadunvalvontaan"
+      },
+      {
+        "name": "Laskutus ja säädöstenmukaisuus",
+        "desc": "Luo Peppol-yhteensopivia sähköisiä laskuja ja rahtikirjoja oikeilla ALV-kannoilla"
+      },
+      {
+        "name": "Lähetys ja toimitus",
+        "desc": "Pakkaa, kirjaa pois nipuitetut tuotteet ja lähetä työt asiakkaille"
+      },
+      {
+        "name": "Analytiikka",
+        "desc": "Seuraa toteutuneita vs. arvioituja kustannuksia täydellä läpinäkyvyydellä ja hukkakirjanpidolla"
+      }
+    ],
+    "conclusion": "Tavoitteena on johdonmukaisuus ja jäljitettävyys koko työtilauksen elinkaaren ajan."
+  },
+  "caseStudy": {
+    "title": "Käytössä todellisissa tuotantoympäristöissä",
+    "company": "Skarda Nams SIA",
+    "industry": "Metallivalmistus ja erikoisosat",
+    "region": "Itä-Eurooppa",
+    "employees": "20 työntekijää, 2 CNC-konetta",
+    "challenge": "Haaste",
+    "challengeText": "Skarda Nams kamppaili tarkan tarjouslaskennan kanssa eri metallityyppejä käyttäen, reaaliaikaisten varastopäivitysten, metallien poiskirjausmahdollisuuksien, tuotannonsuunnittelun, säädösten mukaisen laskutuksen, epätarkan kustannuslaskennan ja paperipohjaisien seurantamenetelmien kanssa.",
+    "solution": "Ratkaisu",
+    "solutionText": "Otti käyttöön Kenzap Factoryn integroiduilla tarjouslaskenta-, tuotantoreititys- ja tuotantotilan toteutusmoduuleilla. Koneoperaattorit omaksuivat kosketusnäyttökäyttöliittymän kahden viikon kuluessa käyttöönotosta. Peppol-sähköinen laskutus konfiguroitiin EU:n säädösvaatimusten mukaisesti. Integroitiin Moneo-kirjanpito-ohjelmiston kanssa yksinkertaista verotuksen raportointia varten.",
+    "results": "Tulokset",
+    "resultItems": [
+      "Tarjousajan väheneminen automaattisen materiaalilaskennan kautta",
+      "Työtilausten kustannuslaskennan tarkkuuden parantuminen",
+      "Täydellinen näkyvyys tuotantotilan operaatioihin ja valmistusvaiheisiin",
+      "Peppol-sähköisen laskutuksen säädöstenmukaisuus saavutettu integraatiolla BMD-kirjanpito-ohjelmistoon",
+      "Materiaalihukan vähentäminen leikkuuoptimoinnin kautta",
+      "Nopeampi tuotannonsuunnittelu reaaliaikaisilla varastotarkistuksilla",
+      "GDPR:n mukaisuus ja EU:n tietojen säilytys ylläpidetty koko toiminnan ajan"
+    ],
+    "quote": "Meillä on järjestelmä, joka toimii samalla tavalla kuin tuotantotilamme toimii. Operaattorit mukautuivat käyttöliittymään välittömästi, ja työtilausten kustannuslaskentamme on nyt luotettava. Verokannat käsitellään automaattisesti tuotetyypin perusteella, mikä säästää aikaa ja vaivaa laskutuksen aikana.",
+    "quoteAuthor": "Asiakaspäällikkö, Skarda Nams SIA",
+    "watchCase": "Katso tapaustutkimus"
+  },
+  "implementation": {
+    "title": "Käyttöönottotapa",
+    "intro": "Käyttöönotto noudattaa standardirakennetta, joka on suunniteltu minimoimaan häiriöitä.",
+    "principles": [
+      "Laitteistoasennus ja ohjelmistoasennus tehdasjärjestelmiin",
+      "Tuoteluettelon ja metallien varastotietokannan konfigurointi",
+      "Käyttäjäroolien määrittäminen ja vastuiden määrittely",
+      "Asiakirjamallien räätälöinti (rahtikirjat, laskut, raportit)",
+      "Kattava koulutus operaattoreille ja johtoryhmille",
+      "Järjestelmäintegraatio ja talousraportoinnin synkronisaatio"
+    ],
+    "timeline": "Tyypillinen aikataulu:",
+    "phases": [
+      "Kartoitus ja konfigurointi: 2-3 viikkoa",
+      "Tietojen siirto ja testaus: 2-3 viikkoa",
+      "Koulutus ja käyttöönotto: 1-2 viikkoa",
+      "Käynnistyksen jälkeinen tuki: jatkuva"
+    ],
+    "outro": "Käyttöönotto voidaan toimittaa valmistus- ja ERP-taustaisilla konsulteilla tai suoraan Kenzap-insinöörillä."
+  },
+  "deployment": {
+    "title": "Käyttöönottovaihtoehdot",
+    "intro": "Järjestelmä tukee useita käyttöönottomalleja operatiivisten, sääntelyllisten ja tietojen hallinnallisten tarpeiden mukaisesti.",
+    "options": [
+      {
+        "name": "Toimittajan hallinnoima pilvi",
+        "desc": "Täysin hallinnoitu hosting eurooppalaisissa datakeskuksissa automaattisilla päivityksillä, varmuuskopioilla ja tietoturvapäivityksillä. Ihanteellinen toimintaan keskittyville yrityksille.",
+        "icon": "cloud-check"
+      },
+      {
+        "name": "Asiakkaan hallinnoima pilvi",
+        "desc": "Käyttöönotto omaan pilvi-infrastruktuuriin (AWS, Azure, GCP) täydellä hallinnalla konfiguraatiosta ja pääsystä. Sopii IT-kyvykkäille organisaatioille.",
+        "icon": "cloud-cog"
+      },
+      {
+        "name": "Oma isännöinti",
+        "desc": "Omien tilojen asennus maksimaalista tietojen hallintaa ja kontrollia varten. Vaaditaan joissain säännellyissä teollisuudenaloissa tai erittäin arkaluonteisissa operaatioissa.",
+        "icon": "server"
+      }
+    ],
+    "outro": "Kaikki käyttöönottovaihtoehdot käyttävät samaa ohjelmistoa, noudattavat samaa päivityspolkua ja ylläpitävät ominaisuuksien pariteettiä. Tiedot pysyvät Euroopan lainkäyttöalueilla GDPR:n mukaisuutta varten."
+  },
+  "contact": {
+    "title": "Yhteystiedot",
+    "intro": "Jos haluat ymmärtää, sopiiko tämä järjestelmä toimintaanne, ota meihin yhteyttä alustavaa keskustelua varten. Työskentelemme englanniksi ja muilla eurooppalaisilla kielillä.",
+    "namePlaceholder": "Nimesi",
+    "emailPlaceholder": "Sähköpostiosoite",
+    "companyPlaceholder": "Yrityksen nimi",
+    "messagePlaceholder": "Kerro meille tuotantoasetuuksestasi: koneiden määrä, tyypilliset työtilausten koot, nykyiset järjestelmät...",
+    "submit": "Lähetä viesti",
+    "sending": "Lähetetään...",
+    "success": "Viesti lähetetty onnistuneesti. Otamme yhteyttä 1-2 arkipäivän kuluessa.",
+    "error": "Viestin lähettäminen epäonnistui. Lähetä meille suoraan sähköpostia osoitteeseen support@kenzap.com",
+    "or": "tai",
+    "linkedin": "Yhdistä LinkedInissä",
+    "email": "Lähetä meille suoraan sähköpostia"
+  },
+  "footer": {
+    "tagline": "Ohjelmistoja valmistusoperaatioihin",
+    "company": "© 2026 Kenzap. Kaikki oikeudet pidätetään.",
+    "note": "Tuotetiedot voivat muuttua. Saatavuus voi vaihdella alueittain.",
+    "languages": "Kielet"
+  }
+}
