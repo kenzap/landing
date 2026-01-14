@@ -4,6 +4,10 @@
 # generated types
 .astro/
 
+.vscode/
+
+etc/
+
 # dependencies
 node_modules/
 
@@ -23,3 +27,4 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+etc/translate.js
