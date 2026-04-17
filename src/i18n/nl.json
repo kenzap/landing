@@ -1,240 +1,406 @@
 {
-  "nav": {
-    "problem": "Probleem",
-    "solution": "Oplossing",
-    "features": "Functionaliteiten",
-    "customers": "Klanten",
-    "contact": "Contact"
+  "factoryHomepage": {
+    "meta": {
+      "title": "Kenzap Factory — Productiemanagement voor Metaalbewerkers",
+      "description": "Productie-, kostprijsberekening- en compliancesoftware speciaal ontwikkeld voor metaalbewerkers. Jobshops, lasersnijden, Peppol e-facturering. EU-klaar."
+    },
+    "nav": {
+      "problem": "Probleem",
+      "features": "Functies",
+      "caseStudy": "Case study",
+      "nesting": "Nesting app",
+      "nestingHref": "/nesting",
+      "cta": "Neem contact op →"
+    },
+    "hero": {
+      "eyebrow": "Fabrieksmanagementsoftware",
+      "headlineTop": "Gemaakt voor",
+      "strikeWord": "accountants.",
+      "headlineAccent": "metaalbewerkers.",
+      "subheadline": "Productiemanagement ontwikkeld voor opdracht-gebaseerde metaalbewerking — niet aangepast van generieke boekhoudsoftware.",
+      "primaryCta": "Boek een demo →",
+      "secondaryCta": "Bekijk echte resultaten ↓",
+      "interfaceLabel": "Kenzap Factory interface",
+      "stats": [
+        {
+          "value": "~30%",
+          "label": "Sneller offreren"
+        },
+        {
+          "value": "2 wkn",
+          "label": "Operator-onboarding"
+        },
+        {
+          "value": "e-fact",
+          "label": "Compliance klaar"
+        }
+      ]
+    },
+    "problem": {
+      "label": "Het probleem",
+      "title": "Generieke software was gebouwd voor\naccountants, niet metaalbewerkers.",
+      "quote": "\"We hebben nu een systeem dat werkt zoals onze werkplaats werkt. De operators pasten zich direct aan, en onze kostprijsberekening is nu betrouwbaar.\"",
+      "quoteAuthor": "— KLANTMANAGER, SKARDA NAMS SIA · LETLAND",
+      "items": [
+        {
+          "title": "Kostprijsberekening is giswerk.",
+          "description": "Materiaaltypes, snijtijd, uitval — de meeste ERP-systemen kunnen dit niet modelleren. Je ontdekt pas dat je geld verloor nadat de opdracht is verzonden."
+        },
+        {
+          "title": "Plaatmateriaal-voorraad wordt niet gevolgd.",
+          "description": "Je weet hoeveel onderdelen je hebt, niet hoeveel volledige en gedeeltelijke platen — dus bestel je teveel of kom je tekort."
+        },
+        {
+          "title": "Productieplanning leeft in spreadsheets.",
+          "description": "Planning, capaciteitscontroles en snijoptimalisatie gebeuren buiten het systeem, in bestanden die niemand anders kan zien."
+        },
+        {
+          "title": "Compliance is handmatig.",
+          "description": "Peppol e-facturering, variabele BTW-tarieven, GDPR — afgehandeld met workarounds, niet door het systeem."
+        },
+        {
+          "title": "De werkplaats is onzichtbaar.",
+          "description": "Managers komen te laat achter vertragingen en kwaliteitsproblemen, omdat operators geen systeem hebben om in te rapporteren."
+        }
+      ]
+    },
+    "workflow": {
+      "label": "Hoe het werkt",
+      "title": "Van offerte tot verzending,\nin één verbonden workflow",
+      "steps": [
+        {
+          "title": "Offerte & calculatie",
+          "description": "Bereken opdrachtkosten accuraat — materiaal, arbeid, machinetijd, snijoptimalisatie — voordat je je vastlegt op een prijs."
+        },
+        {
+          "title": "Productieplanning",
+          "description": "Plan bewerkingen over werkplekken met live voorraadcontroles en ingebouwde nesting-optimalisatie."
+        },
+        {
+          "title": "Werkplaats-uitvoering",
+          "description": "Aanraakscherm-interface voor operators. Opdrachtvolging, tijdregistratie en kwaliteitscontrole bij de machine."
+        },
+        {
+          "title": "Facturering & compliance",
+          "description": "Peppol-conforme e-facturen en vrachtbrieven automatisch gegenereerd met juiste BTW-tarieven per producttype."
+        },
+        {
+          "title": "Verzending & levering",
+          "description": "Pak opdrachten, boek gebundelde items af, en verzend met volledige documentatie. Voorraad wordt automatisch bijgewerkt."
+        },
+        {
+          "title": "Analytics",
+          "description": "Werkelijke vs. geschatte kostenvergelijking per opdracht. Volledige uitvalboekhouding en zicht op productieknelpunten."
+        }
+      ]
+    },
+    "features": {
+      "label": "Kernfuncties",
+      "title": "Alles wat een metaalbewerker\nnodig heeft in één systeem",
+      "items": [
+        {
+          "tag": "Productie",
+          "title": "Workflow-tracking",
+          "description": "Volg elke opdracht van offerte tot levering met bewerkingsniveau-detail. Weet precies waar elke opdracht is, real-time."
+        },
+        {
+          "tag": "Voorraad",
+          "title": "Plaatmateriaal MRP",
+          "description": "Volg voorraad per plaat, niet alleen onderdeeltelling. Volledige en gedeeltelijke platen, meerdere metaaltypes, geautomatiseerde herbestel-triggers."
+        },
+        {
+          "tag": "Snijden",
+          "title": "Ingebouwde nesting",
+          "description": "Nesting-algoritmes minimaliseren materiaalverspilling voor laser, plasma en waterstraal — direct verbonden met kostprijsberekening zodat uitval automatisch wordt gevolgd.",
+          "accent": true
+        },
+        {
+          "tag": "Kostprijs",
+          "title": "Opdracht-gebaseerde kostprijsberekening",
+          "description": "Nauwkeurige kosten per opdracht: materiaal, arbeid, overhead en uitval. Vergelijk geschat vs. werkelijk bij elke opdracht die je verzendt."
+        },
+        {
+          "tag": "Compliance",
+          "title": "Peppol e-facturering",
+          "description": "EU-conforme elektronische facturering via Peppol BIS Billing 3.0. BTW-tarieven automatisch afgehandeld per producttype en klantregio."
+        },
+        {
+          "tag": "Werkplaats",
+          "title": "Aanraakscherm-interface",
+          "description": "Ontworpen voor operators bij de machine. Opdrachtvolging, tijdregistratie, kwaliteitscontrole — binnen twee weken ingevoerd bij Skarda Nams."
+        },
+        {
+          "tag": "Leveranciers",
+          "title": "Leveranciersbeheer",
+          "description": "Inkooporders, materiaalkosten en leveringsschema's gevolgd in hetzelfde systeem als productie."
+        },
+        {
+          "tag": "AI",
+          "title": "AI-gedreven inzichten",
+          "description": "Identificeer productieknelpunten en verbeter kostprijsberekeningsnauwkeurigheid met AI-analyse van je echte productiedata."
+        },
+        {
+          "tag": "Data",
+          "title": "Open source & GDPR",
+          "description": "Geen vendor lock-in. Volledige dataportabiliteit. GDPR-conform met EU-dataresidentie. Implementeer op je eigen infrastructuur indien nodig."
+        }
+      ]
+    },
+    "caseStudy": {
+      "label": "Echte resultaten",
+      "title": "In productie gebruikt\nbij Skarda Nams SIA",
+      "meta": "METAALBEWERKING · LETLAND · 20 WERKNEMERS · 2 CNC-MACHINES",
+      "challengeLabel": "Uitdaging",
+      "challengeText": "Skarda Nams offerde handmatig over meerdere metaaltypes, beheerde voorraad op papier, en kon geen conforme facturen produceren zonder workarounds. Kostprijsberekening was onnauwkeurig. Werkplaatszicht was nul.",
+      "solutionLabel": "Oplossing",
+      "solutionText": "Implementatie van Kenzap Factory met geïntegreerde offerte-, productierouting- en werkplaatsuitvoering-modules. Peppol e-facturering geconfigureerd voor EU-compliance. Geïntegreerd met Moneo boekhoudsoftware.",
+      "quote": "\"De operators pasten zich direct aan de interface aan, en onze kostprijsberekening is nu betrouwbaar. Belastingtarieven worden automatisch afgehandeld — dat alleen al bespaart ons elke maand veel tijd.\"",
+      "quoteAuthor": "— KLANTMANAGER, SKARDA NAMS SIA",
+      "results": [
+        {
+          "value": "~30%",
+          "label": "Reductie in offertetijd"
+        },
+        {
+          "value": "2 wkn",
+          "label": "Operator-onboardingtijd"
+        },
+        {
+          "value": "100%",
+          "label": "Factureringscompliance behaald"
+        },
+        {
+          "value": "100%",
+          "label": "Calculatienauwkeurigheid behaald"
+        },
+        {
+          "value": "Volledig zicht",
+          "label": "Op werkplaatsactiviteiten en productiefasen — vanaf dag één",
+          "fullWidth": true
+        }
+      ]
+    },
+    "deployment": {
+      "label": "Implementatie",
+      "title": "Draait waar jouw\nbedrijf het vereist",
+      "options": [
+        {
+          "title": "Leverancier-beheerde cloud",
+          "description": "Volledig beheerde hosting met automatische updates, backups en beveiligingspatches. Het beste voor teams die zich richten op bedrijfsvoering, niet IT."
+        },
+        {
+          "title": "Klant-beheerde cloud",
+          "description": "Implementeer op je eigen AWS-, Azure- of GCP-infrastructuur. Volledige controle over configuratie, toegang en data. geschikt voor IT-capabele organisaties."
+        },
+        {
+          "title": "Zelf-gehost on-premises",
+          "description": "On-premises installatie voor maximale datasoevereiniteit. Vereist voor sommige gereguleerde industrieën. Volledige functionaliteit gelijk aan cloudopties."
+        }
+      ]
+    },
+    "timeline": {
+      "label": "Typische implementatietijdlijn",
+      "phases": [
+        {
+          "phase": "Fase 1",
+          "duration": "2–3 wkn",
+          "label": "Discovery & configuratie"
+        },
+        {
+          "phase": "Fase 2",
+          "duration": "2–3 wkn",
+          "label": "Datamigratie & testen"
+        },
+        {
+          "phase": "Fase 3",
+          "duration": "1–2 wkn",
+          "label": "Training & go-live"
+        },
+        {
+          "phase": "Fase 4",
+          "duration": "Doorlopend",
+          "label": "Post-launch support"
+        }
+      ]
+    },
+    "nesting": {
+      "label": "Ook van Kenzap",
+      "title": "Begin met nesting.\nVerbind de rest wanneer je er klaar voor bent.",
+      "description": "Kenzap Nesting is een gratis standalone desktop-app voor DXF-gebaseerde plaatnesting. Native op Windows en macOS. Geen abonnement, geen cloud, geen registratie. Wanneer je bedrijf groeit, verbindt Kenzap Factory alles.",
+      "primaryCta": "Ontdek Kenzap Nesting →",
+      "href": "/nesting",
+      "cardLabel": "Kenzap Nesting — gratis download",
+      "cardTitle": "Pak meer. Verspil minder. Snij sneller.",
+      "cardDescription": "Sleep DXF-onderdelen, stel aantallen in, draai de nesting-engine, exporteer snijklare platen. Live preview terwijl het algoritme draait.",
+      "platforms": [
+        "Windows",
+        "macOS"
+      ]
+    },
+    "contact": {
+      "label": "Neem contact op",
+      "title": "Bekijk of Kenzap Factory\npast bij jouw bedrijf",
+      "description": "We reageren binnen één werkdag. Geen verkoopproces — gewoon een direct gesprek over of dit past bij jouw bedrijf.",
+      "linkedinLabel": "LinkedIn",
+      "linkedinHref": "https://www.linkedin.com/in/pavel-lukasenko/",
+      "emailLabel": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com"
+    },
+    "footer": {
+      "nestingLabel": "Nesting app",
+      "nestingHref": "/nesting",
+      "emailLabel": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com",
+      "company": "© 2026 Kenzap Pte Ltd"
+    }
   },
-  "hero": {
-    "headline": "ERP speciaal ontwikkeld voor metaalbewerking.",
-    "subheadline": "Productie, kostenberekening en planning ontworpen voor opdracht-gebaseerde fabricage.",
-    "intro": "Dit systeem is specifiek ontworpen voor metaalbewerkingsbedrijven. Het ondersteunt werkelijke productieprocessen, geen boekhoudkundige omwegen. De focus ligt op opdrachtwerkplaatsen, op-maat-productie en compliance.",
-    "primaryCta": "Neem contact op",
-    "secondaryCta": "Bekijk of dit past",
-    "watchDemo": "Bekijk hoe het werkt"
-  },
-  "problem": {
-    "title": "Waarom generieke ERP-systemen falen bij metaalbewerkers",
-    "intro": "De meeste ERP-systemen zijn ontworpen vanuit boekhoudkundig perspectief, niet vanuit productie. Hierdoor vertrouwen metaalbewerkers vaak op spreadsheets en handmatige processen voor taakbeheer en werkvloeruitvoering.",
-    "items": [
-      "Onnauwkeurige taakkostenberekening",
-      "Metaalvoorraden worden niet correct bijgehouden",
-      "Beperkt inzicht in werkvloeractiviteiten",
-      "Gebrek aan snij-optimalisatie voor plaatmateriaal",
-      "Productieplanning buiten het ERP-systeem",
-      "Variabele productbelastingtarieven niet automatisch afgehandeld"
-    ],
-    "conclusion": "Deze problemen verhogen compliance-risico's, verminderen efficiëntie en verslechteren de servicekwaliteit."
-  },
-  "whoFor": {
-    "title": "Voor wie dit systeem is ontworpen",
-    "intro": "Dit ERP is ontwikkeld voor metaalbewerkingsbedrijven met:",
-    "criteria": [
-      "Behoefte aan nauwkeurige taakkostenberekening en materiaaltracking",
-      "Vereisten voor beheer van metaalvoorraad en plaatmateriaal",
-      "Snij-optimalisatiebehoeften voor laser, plasma of waterstraal",
-      "EU e-facturering compliance-verplichtingen",
-      "Integratievereisten met Europese boekhoudsystemen",
-      "AVG en EU gegevensbescherming compliance-behoeften"
-    ],
-    "typical": "Typische gebruikers zijn:",
-    "users": [
-      "Loonwerkplaatsen",
-      "Contractfabrikanten",
-      "Bewerkers die maatwerk of kleine series produceren",
-      "Plaatbewerkingswerkplaatsen"
-    ],
-    "notFor": "Dit systeem is niet ontworpen voor:",
-    "excluded": [
-      "Pure distributiebedrijven",
-      "Procesindustrie",
-      "Sterk gestandaardiseerde massaproductie"
-    ]
-  },
-  "manufacturing": {
-    "title": "Productie-gedreven ontwerp",
-    "intro": "Het systeem is gebouwd rond echte productieconcepten die gebruikt worden in metaalbewerking, en past zich continu aan aan complexe en evoluerende Europese compliance-vereisten.",
-    "features": [
-      {
-        "name": "Workflow Tracking",
-        "desc": "Volg elke opdracht van offerte tot levering met complete workflow-zichtbaarheid en operatie-niveau detail",
-        "icon": "cog"
+  "nestingHomepage": {
+    "meta": {
+      "title": "Kenzap Nesting — DXF Plaatnesting voor Metaalbewerkers",
+      "description": "Gratis native DXF plaatnesting-software voor metaalbewerkers. Importeer DXF-onderdelen, optimaliseer platen, preview live en exporteer snijklare lay-outs."
+    },
+    "nav": {
+      "workflow": "Hoe het werkt",
+      "features": "Functies",
+      "factory": "Factory ERP",
+      "factoryMobile": "Factory",
+      "cta": "Gratis downloaden →",
+      "ctaHref": "https://github.com/kenzap/nesting-app"
+    },
+    "hero": {
+      "eyebrow": "DXF nesting-software",
+      "headlineLine1": "Pak meer.",
+      "headlineLine2Prefix": "Verspil ",
+      "headlineLine2Accent": "minder",
+      "headlineLine3": "Snij sneller.",
+      "subheadline": "Een native desktop nesting-app voor metaalbewerkers. Sleep je DXF-onderdelen, stel aantallen in, draai de engine — krijg een volledig gevulde plaat klaar om te snijden.",
+      "primaryCta": "↓ Gratis downloaden",
+      "primaryCtaHref": "https://github.com/kenzap/nesting-app/releases",
+      "secondaryCta": "Zie het in productie →",
+      "secondaryCtaHref": "/#case-study",
+      "badges": {
+        "windows": "Windows x64",
+        "mac": "macOS Apple Silicon",
+        "openSource": "Open source"
       },
-      {
-        "name": "Productieplanning",
-        "desc": "Beheer productiecapaciteit en plan operaties efficiënt over uw werkvloer",
-        "icon": "factory"
-      },
-      {
-        "name": "Materiaalplanning",
-        "desc": "Nauwkeurige MRP aangedreven door grondstoftracking, plaatmateriaal voorraadinzicht en geautomatiseerd voorraadbeheer",
-        "icon": "format-list-checks"
-      },
-      {
-        "name": "Snij-optimalisatie",
-        "desc": "Ingebouwde nestingalgoritmes minimaliseren verspilling en maximaliseren plaatbenutting voor laser, plasma en waterstraal snijden",
-        "icon": "content-cut"
-      },
-      {
-        "name": "Real-time Productierapportage",
-        "desc": "Touchpanel-geoptimaliseerde interface voor real-time taaktracking en rapportage door machineoperators",
-        "icon": "tablet"
-      },
-      {
-        "name": "Opdracht-gebaseerde Kostenberekening",
-        "desc": "Nauwkeurige kostenberekening per opdracht met materiaal-, arbeids-, overhead- en uitvaltracking",
-        "icon": "calculator"
-      },
-      {
-        "name": "Peppol E-facturering",
-        "desc": "Genereer EU-conforme elektronische facturen volgens Peppol BIS Billing 3.0 standaard",
-        "icon": "file-document-outline"
-      },
-      {
-        "name": "BTW & Compliance",
-        "desc": "Lokaal conforme BTW-afhandeling met vrijstellingen en integratie met nationale boekhoudsystemen",
-        "icon": "shield-check"
-      },
-      {
-        "name": "Leveranciersbeheer",
-        "desc": "Volg leveranciers, inkooporders, materiaalkosten en leveringsschema's",
-        "icon": "truck"
-      },
-      {
-        "name": "Open Source",
-        "desc": "Gebouwd op open source technologieën zonder vendor lock-in, wat volledige gegevensportabiliteit en systeemonafhankelijkheid garandeert",
-        "icon": "code"
-      },
-      {
-        "name": "Europese Gegevensbescherming",
-        "desc": "AVG-conforme gegevensverwerking met volledige gegevenssoevereiniteit voor Europese activiteiten",
-        "icon": "puzzle"
-      },
-      {
-        "name": "AI-gedreven Inzichten",
-        "desc": "AI-aangedreven inzichten om productieknelpunten te identificeren en nauwkeurigheid van taakkostenberekening te verbeteren",
-        "icon": "brain"
+      "previewLabel": "Live nesting-preview"
+    },
+    "workflow": {
+      "label": "Hoe het werkt",
+      "titleLine1": "Van DXF tot snijklaar",
+      "titleLine2": "in zes stappen",
+      "steps": [
+        {
+          "title": "Voeg DXF-onderdelen toe",
+          "description": "Sleep en drop één of meer DXF-bestanden. De engine detecteert automatisch alle nestbare vormen, inclusief multi-vorm bestanden."
+        },
+        {
+          "title": "Controleer geometrie",
+          "description": "Stel aantallen per onderdeel in. Controleer interne snedes, graveergeometrie en laagindelingen per vorm voordat je draait."
+        },
+        {
+          "title": "Configureer de plaat",
+          "description": "Stel plaatafmetingen, strip-gedrag, afstanden, rotatiestap, plaatmarge en graveerstijl in."
+        },
+        {
+          "title": "Draai de engine",
+          "description": "Klik RUN. Een native binary behandelt plaatsing — geen cloud upload, geen wachten. Resultaten stromen live terug."
+        },
+        {
+          "title": "Preview live",
+          "description": "Kijk hoe platen vullen terwijl het algoritme werkt. Zie benutting-statistieken en plaaantallen real-time updaten."
+        },
+        {
+          "title": "Exporteer naar DXF",
+          "description": "Exporteer definitieve platen met alle originele laagstructuur, geometriereconstruktie en graveergeometrie behouden."
+        }
+      ]
+    },
+    "features": {
+      "label": "Kernfuncties",
+      "titleLine1": "Alles wat je snijbedrijf",
+      "titleLine2": "werkelijk nodig heeft",
+      "cards": {
+        "performance": {
+          "tag": "Native prestatie",
+          "title": "Geen cloud. Geen browser. Gewoon snel.",
+          "description": "De nesting-engine draait als native binary op je machine. Grote DXF-bestanden verwerkt in seconden, niet minuten. Werkt volledig offline — geen abonnement, geen upload, geen latentie."
+        },
+        "dxf": {
+          "tag": "DXF-precisie",
+          "title": "Volledige geometrie-ondersteuning",
+          "description": "Lijnen, bogen, cirkels, polylijnen, ellipsen en splines allemaal ondersteund. Interne snijgeometrie en graveerlagen worden apart behouden door export.",
+          "chips": [
+            "Lijnen",
+            "Bogen",
+            "Cirkels",
+            "Polylijnen",
+            "Ellipsen",
+            "Splines"
+          ]
+        },
+        "engraving": {
+          "tag": "Graveren",
+          "title": "Twee graveerstijlen ingebouwd",
+          "description": "Eenvoudige modus voor single-line letters op dunne materialen. Gestreepte modus voor omlijnd letters met gevulde contouren. Geconfigureerd per opdracht, behouden in DXF-export."
+        },
+        "sheet": {
+          "tag": "Plaat-intelligentie",
+          "title": "Plaatgrootte-optimalisatie",
+          "description": "De engine vindt het minimale aantal platen nodig voor je opdracht. Configureer plaatmarge, onderdeelafstand, oriëntatiestap en strip-uitlijning onafhankelijk."
+        },
+        "workflow": {
+          "tag": "Workflow",
+          "title": "Live preview terwijl het algoritme draait",
+          "description": "Je wacht niet tot de engine klaar is voordat je resultaten ziet. Platen vullen real-time terwijl plaatsingen worden bevestigd. Verander aantallen of instellingen en draai opnieuw in seconden.",
+          "chips": [
+            "Multi-vorm DXF-detectie",
+            "Per-vorm aantal-controle",
+            "Laag-bewuste preview",
+            "Polygoon JSON-export"
+          ]
+        }
       }
-    ],
-    "outro": "Productiegegevens stromen van offerte tot verzending. Operationele werkelijkheid wordt weerspiegeld in planning en kostenberekening."
-  },
-  "workflow": {
-    "title": "Van offerte tot verzending",
-    "intro": "Het systeem verbindt belangrijke productiestappen in één workflow:",
-    "steps": [
-      {
-        "name": "Offreren & Calculatie",
-        "desc": "Bereken kosten nauwkeurig met materiaal, arbeid, machinetijd en snij-optimalisatie"
+    },
+    "bridge": {
+      "label": "Onderdeel van een groter geheel",
+      "title": "Verbind nesting met je hele bedrijf",
+      "copy": "Kenzap Nesting werkt vandaag als standalone desktop-tool. Wanneer je er klaar voor bent, verbindt Kenzap Factory je nesting-output direct met kostprijsberekening, productieplanning en voorraad — zodat uitval vanaf dag één wordt gevolgd en geoffreerd.",
+      "cta": "Bekijk Kenzap Factory ERP →",
+      "standaloneLabel": "STANDALONE",
+      "standaloneTitle": "Kenzap Nesting",
+      "standaloneText": "DXF in → geoptimaliseerde plaat uit. Gratis, open source, native desktop.",
+      "connectsTo": "verbindt met",
+      "platformLabel": "VOLLEDIG PLATFORM",
+      "platformTitle": "Kenzap Factory",
+      "platformText": "Offreren, kostprijsberekening, werkplaats-tracking, e-facturering. EU-klare ERP."
+    },
+    "download": {
+      "label": "Begin vandaag",
+      "title": "Gratis. Native. Open source.",
+      "sub": "Download de build voor jouw platform. Geen registratie, geen licentiesleutel, geen cloud-afhankelijkheid. Werkt vanaf dag één.",
+      "windows": {
+        "href": "https://github.com/kenzap/nesting-app/releases",
+        "os": "Windows",
+        "label": "Download x64",
+        "note": ".exe installer"
       },
-      {
-        "name": "Productieplanning",
-        "desc": "Plan operaties over werkplekken met voorraad beschikbaarheidscontroles en snij-optimalisatie"
+      "mac": {
+        "href": "https://github.com/kenzap/nesting-app/releases",
+        "os": "macOS",
+        "label": "Apple Silicon",
+        "note": ".dmg — M1-M5"
       },
-      {
-        "name": "Werkvloeruitvoering",
-        "desc": "Touchpanel interface voor taaktracking, tijdregistratie en kwaliteitscontrole"
-      },
-      {
-        "name": "Facturering & Compliance",
-        "desc": "Genereer Peppol-conforme e-facturen en vrachtbrieven met juiste BTW-tarieven"
-      },
-      {
-        "name": "Verzending & Levering",
-        "desc": "Verpak, boek gebundelde items af en verzend opdrachten naar klanten"
-      },
-      {
-        "name": "Analytics",
-        "desc": "Volg werkelijke versus geschatte kosten met volledige transparantie en uitvalboekhouding"
-      }
-    ],
-    "conclusion": "Het doel is consistentie en traceerbaarheid gedurende de gehele opdracht-levenscyclus."
-  },
-  "caseStudy": {
-    "title": "Gebruikt in echte productieomgevingen",
-    "company": "Skarda Nams SIA",
-    "industry": "Metaalbewerking & Maatwerk Onderdelen",
-    "region": "Oost-Europa",
-    "employees": "20 medewerkers, 2 CNC-machines",
-    "challenge": "Uitdaging",
-    "challengeText": "Skarda Nams worstelde met nauwkeurige offrering bij verschillende metaaltypes, live voorraad updates, metaal afschrijfmogelijkheden, productieplanning, conforme facturering, onnauwkeurige kostenberekening en papier-gebaseerde tracking.",
-    "solution": "Oplossing",
-    "solutionText": "Implementatie van Kenzap Factory met geïntegreerde offrering, productierouting en werkvloeruitvoering modules. Machineoperators namen de touchpanel interface binnen twee weken na implementatie over. Peppol e-facturering werd geconfigureerd om te voldoen aan EU compliance-vereisten. Integratie met Moneo boekhoudingsoftware voor vereenvoudigde belastingrapportage.",
-    "results": "Resultaten",
-    "resultItems": [
-      "Vermindering in offreertijd door geautomatiseerde materiaalberekening",
-      "Verbetering in nauwkeurigheid taakkostenberekening",
-      "Complete zichtbaarheid in werkvloeractiviteiten en fabricagestadia",
-      "Peppol e-facturering compliance behaald, met integratie naar BMD boekhoudsoftware",
-      "Materiaalverspilling vermindering door snij-optimalisatie",
-      "Snellere productieplanning met real-time voorraadcontroles",
-      "AVG compliance en EU data-residency behouden gedurende alle operaties"
-    ],
-    "quote": "We hebben een systeem dat werkt zoals onze werkvloer werkt. De operators pasten zich direct aan de interface aan, en onze taakkostenberekening is nu betrouwbaar. Belastingtarieven worden automatisch afgehandeld op basis van producttype, wat ons tijd en hoofdpijn bespaart tijdens facturering.",
-    "quoteAuthor": "Klantmanager, Skarda Nams SIA",
-    "watchCase": "Bekijk case study"
-  },
-  "implementation": {
-    "title": "Implementatiebenadering",
-    "intro": "Implementatie volgt een standaard structuur ontworpen om verstoring te minimaliseren.",
-    "principles": [
-      "Hardware setup en software installatie op fabriekssystemen",
-      "Productcatalogus en metaalvoorraad database configuratie",
-      "Gebruikersrol toewijzing en verantwoordelijkheidsdefinitie",
-      "Document template aanpassing (vrachtbrieven, facturen, rapporten)",
-      "Uitgebreide training voor operators en managementteams",
-      "Systeemintegratie en financiële rapportage synchronisatie"
-    ],
-    "timeline": "Typische tijdlijn:",
-    "phases": [
-      "Ontdekking & configuratie: 2-3 weken",
-      "Data migratie & testen: 2-3 weken",
-      "Training & go-live: 1-2 weken",
-      "Post-launch ondersteuning: doorlopend"
-    ],
-    "outro": "Implementatie kan geleverd worden door consultants met productie- en ERP-achtergrond of door een Kenzap engineer direct."
-  },
-  "deployment": {
-    "title": "Implementatieopties",
-    "intro": "Het systeem ondersteunt meerdere implementatiemodellen om te voldoen aan operationele, regelgevings- en gegevenssoevereiniteitsbehoeften.",
-    "options": [
-      {
-        "name": "Leverancier-beheerde cloud",
-        "desc": "Volledig beheerde hosting in Europese datacenters met automatische updates, back-ups en beveiligingspatches. Ideaal voor bedrijven gefocust op operaties.",
-        "icon": "cloud-check"
-      },
-      {
-        "name": "Klant-beheerde cloud",
-        "desc": "Implementeer op uw eigen cloud-infrastructuur (AWS, Azure, GCP) met volledige controle over configuratie en toegang. Geschikt voor IT-capabele organisaties.",
-        "icon": "cloud-cog"
-      },
-      {
-        "name": "Self-hosted implementatie",
-        "desc": "On-premises installatie voor maximale gegevenssoevereiniteit en controle. Vereist voor sommige gereguleerde industrieën of zeer gevoelige operaties.",
-        "icon": "server"
-      }
-    ],
-    "outro": "Alle implementatieopties gebruiken dezelfde software, volgen hetzelfde upgrade-pad en behouden functie-pariteit. Gegevens blijven in Europese jurisdicties voor AVG compliance."
-  },
-  "contact": {
-    "title": "Contact",
-    "intro": "Als u wilt begrijpen of dit systeem past bij uw operatie, neem contact met ons op voor een eerste gesprek. We werken in het Nederlands, Engels en andere Europese talen.",
-    "namePlaceholder": "Uw naam",
-    "emailPlaceholder": "E-mailadres",
-    "companyPlaceholder": "Bedrijfsnaam",
-    "messagePlaceholder": "Vertel ons over uw productie-opstelling: aantal machines, typische opdrachtgroottes, huidige systemen...",
-    "submit": "Verstuur bericht",
-    "sending": "Versturen...",
-    "success": "Bericht succesvol verzonden. We nemen binnen 1-2 werkdagen contact met u op.",
-    "error": "Verzenden bericht mislukt. Mail ons direct op support@kenzap.com",
-    "or": "of",
-    "linkedin": "Verbind op LinkedIn",
-    "email": "Mail ons direct"
-  },
-  "footer": {
-    "tagline": "Software voor productieoperaties",
-    "company": "© 2026 Kenzap. Alle rechten voorbehouden.",
-    "note": "Productinformatie kan wijzigen. Beschikbaarheid kan variëren per regio.",
-    "languages": "Talen"
+      "openSourcePrefix": "Broncode en build-instructies op",
+      "openSourceHref": "https://github.com/kenzap/nesting-app",
+      "openSourceLink": "GitHub",
+      "openSourceLicense": "Apache-2.0 licentie"
+    },
+    "footer": {
+      "factory": "Factory",
+      "email": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com",
+      "company": "© 2026 Kenzap Pte Ltd"
+    }
   }
 }

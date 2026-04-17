@@ -1,240 +1,406 @@
 {
-  "nav": {
-    "problem": "Problème",
-    "solution": "Solution",
-    "features": "Fonctionnalités",
-    "customers": "Clients",
-    "contact": "Contact"
+  "factoryHomepage": {
+    "meta": {
+      "title": "Kenzap Factory — Gestion de Production pour la Métallurgie",
+      "description": "Logiciel de production, calcul des coûts et conformité conçu spécifiquement pour la métallurgie. Ateliers, découpe laser, facturation électronique Peppol. Prêt pour l'UE."
+    },
+    "nav": {
+      "problem": "Problématique",
+      "features": "Fonctionnalités",
+      "caseStudy": "Étude de cas",
+      "nesting": "Application d'imbrication",
+      "nestingHref": "/nesting",
+      "cta": "Nous contacter →"
+    },
+    "hero": {
+      "eyebrow": "Logiciel de gestion d'usine",
+      "headlineTop": "Conçu pour les",
+      "strikeWord": "comptables.",
+      "headlineAccent": "métallurgistes.",
+      "subheadline": "Gestion de production conçue pour la métallurgie à la commande — pas adaptée d'un logiciel comptable générique.",
+      "primaryCta": "Réserver une démo →",
+      "secondaryCta": "Voir les résultats ↓",
+      "interfaceLabel": "Interface Kenzap Factory",
+      "stats": [
+        {
+          "value": "~30%",
+          "label": "Devis plus rapides"
+        },
+        {
+          "value": "2 sem",
+          "label": "Formation opérateurs"
+        },
+        {
+          "value": "fact-e",
+          "label": "Conformité acquise"
+        }
+      ]
+    },
+    "problem": {
+      "label": "La problématique",
+      "title": "Les logiciels génériques ont été conçus pour\nles comptables, pas les métallurgistes.",
+      "quote": "\"Nous avons un système qui fonctionne comme notre atelier. Les opérateurs se sont adaptés immédiatement, et notre calcul des coûts est maintenant fiable.\"",
+      "quoteAuthor": "— RESPONSABLE CLIENT, SKARDA NAMS SIA · LETTONIE",
+      "items": [
+        {
+          "title": "Le calcul des coûts relève de la devinette.",
+          "description": "Types de matériaux, temps de découpe, chutes — la plupart des ERP ne peuvent pas les modéliser. Vous découvrez que vous avez perdu de l'argent après expédition."
+        },
+        {
+          "title": "L'inventaire de tôlerie n'est pas suivi.",
+          "description": "Vous savez combien de pièces vous avez, pas combien de tôles pleines et partielles — alors vous sur-commandez ou êtes en rupture."
+        },
+        {
+          "title": "La planification de production vit dans les tableurs.",
+          "description": "Ordonnancement, vérifications de capacité et optimisation de découpe se font hors système, dans des fichiers que personne d'autre ne peut voir."
+        },
+        {
+          "title": "La conformité est manuelle.",
+          "description": "Facturation électronique Peppol, taux de TVA variables, RGPD — gérés par des solutions de contournement, pas par le système."
+        },
+        {
+          "title": "L'atelier est invisible.",
+          "description": "Les responsables découvrent les retards et problèmes qualité trop tard, car les opérateurs n'ont aucun système pour les signaler."
+        }
+      ]
+    },
+    "workflow": {
+      "label": "Comment ça marche",
+      "title": "Du devis à l'expédition,\ndans un flux connecté",
+      "steps": [
+        {
+          "title": "Devis et estimation",
+          "description": "Calculez précisément les coûts — matière, main-d'œuvre, temps machine, optimisation découpe — avant de vous engager sur un prix."
+        },
+        {
+          "title": "Planification de production",
+          "description": "Planifiez les opérations sur les centres de travail avec vérifications d'inventaire en temps réel et optimisation d'imbrication intégrée."
+        },
+        {
+          "title": "Exécution atelier",
+          "description": "Interface tactile pour les opérateurs. Suivi des commandes, enregistrement des temps et contrôle qualité à la machine."
+        },
+        {
+          "title": "Facturation et conformité",
+          "description": "Factures électroniques et bons de livraison conformes Peppol générés automatiquement avec les taux de TVA corrects par type de produit."
+        },
+        {
+          "title": "Expédition et livraison",
+          "description": "Conditionnez les commandes, soldez les articles groupés et expédiez avec documentation complète. Inventaire mis à jour automatiquement."
+        },
+        {
+          "title": "Analytique",
+          "description": "Comparaison coûts réels vs estimés par commande. Comptabilité complète des chutes et visibilité des goulets de production."
+        }
+      ]
+    },
+    "features": {
+      "label": "Capacités principales",
+      "title": "Tout ce dont un métallurgiste\na besoin en un système",
+      "items": [
+        {
+          "tag": "Production",
+          "title": "Suivi des flux",
+          "description": "Suivez chaque commande du devis à la livraison avec détail par opération. Sachez exactement où est chaque commande, en temps réel."
+        },
+        {
+          "tag": "Inventaire",
+          "title": "MRP tôlerie",
+          "description": "Suivez le stock par tôle, pas seulement par nombre de pièces. Tôles pleines et partielles, types métaux multiples, déclencheurs de réapprovisionnement automatiques."
+        },
+        {
+          "tag": "Découpe",
+          "title": "Imbrication intégrée",
+          "description": "Les algorithmes d'imbrication minimisent les chutes matière pour laser, plasma et jet d'eau — connectés directement au calcul des coûts pour un suivi automatique des chutes.",
+          "accent": true
+        },
+        {
+          "tag": "Coûts",
+          "title": "Calcul par commande",
+          "description": "Coût précis par commande : matière, main-d'œuvre, frais généraux et chutes. Comparez estimé vs réel sur chaque commande expédiée."
+        },
+        {
+          "tag": "Conformité",
+          "title": "Facturation électronique Peppol",
+          "description": "Facturation électronique conforme UE via Peppol BIS Billing 3.0. Taux de TVA gérés automatiquement par type de produit et région client."
+        },
+        {
+          "tag": "Atelier",
+          "title": "Interface tactile",
+          "description": "Conçue pour les opérateurs à la machine. Suivi commandes, enregistrement temps, contrôle qualité — adoptée en deux semaines chez Skarda Nams."
+        },
+        {
+          "tag": "Fournisseurs",
+          "title": "Gestion fournisseurs",
+          "description": "Commandes d'achat, coûts matières et plannings de livraison suivis dans le même système que la production."
+        },
+        {
+          "tag": "IA",
+          "title": "Analyses pilotées par IA",
+          "description": "Identifiez les goulets de production et améliorez la précision du calcul des coûts grâce à l'analyse IA de vos données de production réelles."
+        },
+        {
+          "tag": "Données",
+          "title": "Open source et RGPD",
+          "description": "Aucun verrouillage fournisseur. Portabilité complète des données. Conforme RGPD avec résidence des données UE. Déployez sur votre propre infrastructure si nécessaire."
+        }
+      ]
+    },
+    "caseStudy": {
+      "label": "Résultats concrets",
+      "title": "Utilisé en production\nchez Skarda Nams SIA",
+      "meta": "MÉTALLURGIE · LETTONIE · 20 EMPLOYÉS · 2 MACHINES CNC",
+      "challengeLabel": "Défi",
+      "challengeText": "Skarda Nams établissait les devis manuellement sur plusieurs types de métaux, gérait l'inventaire sur papier et ne pouvait produire des factures conformes sans solutions de contournement. Le calcul des coûts était imprécis. Visibilité atelier nulle.",
+      "solutionLabel": "Solution",
+      "solutionText": "Implémentation de Kenzap Factory avec modules intégrés de devis, routage production et exécution atelier. Facturation électronique Peppol configurée pour la conformité UE. Intégré au logiciel comptable Moneo.",
+      "quote": "\"Les opérateurs se sont adaptés à l'interface immédiatement, et notre calcul des coûts est maintenant fiable. Les taux de taxe sont gérés automatiquement — cela seul nous fait gagner beaucoup de temps chaque mois.\"",
+      "quoteAuthor": "— RESPONSABLE CLIENT, SKARDA NAMS SIA",
+      "results": [
+        {
+          "value": "~30%",
+          "label": "Réduction temps de devis"
+        },
+        {
+          "value": "2 sem",
+          "label": "Temps de formation opérateurs"
+        },
+        {
+          "value": "100%",
+          "label": "Conformité facturation atteinte"
+        },
+        {
+          "value": "100%",
+          "label": "Précision d'estimation atteinte"
+        },
+        {
+          "value": "Visibilité totale",
+          "label": "Sur les opérations atelier et étapes de fabrication — dès le premier jour",
+          "fullWidth": true
+        }
+      ]
+    },
+    "deployment": {
+      "label": "Déploiement",
+      "title": "Fonctionne là où votre\nopération l'exige",
+      "options": [
+        {
+          "title": "Cloud géré par le fournisseur",
+          "description": "Hébergement entièrement géré avec mises à jour, sauvegardes et correctifs de sécurité automatiques. Idéal pour les équipes axées sur les opérations, pas l'IT."
+        },
+        {
+          "title": "Cloud géré par le client",
+          "description": "Déployez sur votre propre infrastructure AWS, Azure ou GCP. Contrôle total de la configuration, l'accès et les données. Adapté aux organisations IT compétentes."
+        },
+        {
+          "title": "Auto-hébergé sur site",
+          "description": "Installation sur site pour une souveraineté maximale des données. Requis pour certaines industries réglementées. Parité fonctionnelle complète avec les options cloud."
+        }
+      ]
+    },
+    "timeline": {
+      "label": "Planning d'implémentation type",
+      "phases": [
+        {
+          "phase": "Phase 1",
+          "duration": "2-3 sem",
+          "label": "Découverte et configuration"
+        },
+        {
+          "phase": "Phase 2",
+          "duration": "2-3 sem",
+          "label": "Migration données et tests"
+        },
+        {
+          "phase": "Phase 3",
+          "duration": "1-2 sem",
+          "label": "Formation et mise en service"
+        },
+        {
+          "phase": "Phase 4",
+          "duration": "Continu",
+          "label": "Support post-lancement"
+        }
+      ]
+    },
+    "nesting": {
+      "label": "Également de Kenzap",
+      "title": "Commencez par l'imbrication.\nConnectez le reste quand vous êtes prêt.",
+      "description": "Kenzap Nesting est une application desktop gratuite et autonome pour l'imbrication de tôles DXF. Native sur Windows et macOS. Pas d'abonnement, pas de cloud, pas d'inscription. Quand votre opération grandit, Kenzap Factory connecte tout.",
+      "primaryCta": "Explorer Kenzap Nesting →",
+      "href": "/nesting",
+      "cardLabel": "Kenzap Nesting — téléchargement gratuit",
+      "cardTitle": "Optimisez l'espace. Réduisez les chutes. Découpez plus vite.",
+      "cardDescription": "Importez les pièces DXF, définissez les quantités, lancez le moteur d'imbrication, exportez les tôles prêtes à découper. Aperçu en temps réel pendant l'exécution de l'algorithme.",
+      "platforms": [
+        "Windows",
+        "macOS"
+      ]
+    },
+    "contact": {
+      "label": "Nous contacter",
+      "title": "Voyez si Kenzap Factory\nconvient à votre opération",
+      "description": "Nous répondons sous un jour ouvrable. Pas de processus de vente — juste une conversation directe pour savoir si cela convient à votre opération.",
+      "linkedinLabel": "LinkedIn",
+      "linkedinHref": "https://www.linkedin.com/in/pavel-lukasenko/",
+      "emailLabel": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com"
+    },
+    "footer": {
+      "nestingLabel": "Application d'imbrication",
+      "nestingHref": "/nesting",
+      "emailLabel": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com",
+      "company": "© 2026 Kenzap Pte Ltd"
+    }
   },
-  "hero": {
-    "headline": "ERP conçu pour la métallurgie.",
-    "subheadline": "Production, calcul des coûts et planification adaptés à la fabrication à la commande.",
-    "intro": "Ce système est spécialement conçu pour les métalliers. Il accompagne les vrais flux de production, pas des contournements comptables. L'accent est mis sur les ateliers de fabrication, la production à la commande et la conformité réglementaire.",
-    "primaryCta": "Nous contacter",
-    "secondaryCta": "Vérifier l'adéquation",
-    "watchDemo": "Voir le fonctionnement"
-  },
-  "problem": {
-    "title": "Pourquoi les ERP génériques ne conviennent pas aux métalliers",
-    "intro": "La plupart des systèmes ERP sont conçus autour de la comptabilité, pas de la production. En conséquence, les métalliers s'appuient souvent sur des feuilles de calcul et des processus manuels pour gérer les commandes et l'exécution en atelier.",
-    "items": [
-      "Calcul des coûts de fabrication inexact",
-      "Stocks métalliques mal suivis",
-      "Faible visibilité sur les opérations d'atelier",
-      "Absence d'optimisation de découpe pour la tôlerie",
-      "Planification de production gérée en dehors de l'ERP",
-      "Taux de TVA variables non gérés automatiquement"
-    ],
-    "conclusion": "Ces problèmes augmentent les risques de conformité, réduisent l'efficacité et dégradent la qualité de service."
-  },
-  "whoFor": {
-    "title": "Pour qui ce système est conçu",
-    "intro": "Cet ERP est destiné aux entreprises de métallurgie ayant :",
-    "criteria": [
-      "Besoin d'un calcul précis des coûts et suivi matières",
-      "Exigences de gestion des stocks métalliques et tôles",
-      "Besoins d'optimisation découpe laser, plasma ou jet d'eau",
-      "Obligations de conformité e-facturation UE",
-      "Exigences d'intégration aux systèmes comptables européens",
-      "Besoins de conformité RGPD et protection des données UE"
-    ],
-    "typical": "Utilisateurs types :",
-    "users": [
-      "Ateliers de fabrication",
-      "Sous-traitants industriels",
-      "Métalliers produisant des pièces sur mesure ou petites séries",
-      "Ateliers de tôlerie"
-    ],
-    "notFor": "Ce système n'est pas conçu pour :",
-    "excluded": [
-      "Pure activité de distribution",
-      "Industries de process",
-      "Production de masse hautement standardisée"
-    ]
-  },
-  "manufacturing": {
-    "title": "Conception axée production",
-    "intro": "Le système s'appuie sur de vrais concepts industriels utilisés en métallurgie, et s'adapte en continu aux exigences de conformité européennes complexes et évolutives.",
-    "features": [
-      {
-        "name": "Suivi des Flux",
-        "desc": "Suivez chaque commande du devis à la livraison avec une visibilité complète des flux et détails par opération",
-        "icon": "cog"
+  "nestingHomepage": {
+    "meta": {
+      "title": "Kenzap Nesting — Imbrication de Tôles DXF pour la Métallurgie",
+      "description": "Logiciel gratuit d'imbrication de tôles DXF pour la métallurgie. Importez les pièces DXF, optimisez les tôles, prévisualisez en temps réel et exportez les dispositions prêtes à découper."
+    },
+    "nav": {
+      "workflow": "Comment ça marche",
+      "features": "Fonctionnalités",
+      "factory": "ERP Factory",
+      "factoryMobile": "Factory",
+      "cta": "Télécharger gratuit →",
+      "ctaHref": "https://github.com/kenzap/nesting-app"
+    },
+    "hero": {
+      "eyebrow": "Logiciel d'imbrication DXF",
+      "headlineLine1": "Optimisez l'espace.",
+      "headlineLine2Prefix": "Réduisez les ",
+      "headlineLine2Accent": "chutes",
+      "headlineLine3": "Découpez plus vite.",
+      "subheadline": "Une application desktop native d'imbrication pour la métallurgie. Importez vos pièces DXF, définissez les quantités, lancez le moteur — obtenez une tôle entièrement optimisée prête à découper.",
+      "primaryCta": "↓ Télécharger gratuit",
+      "primaryCtaHref": "https://github.com/kenzap/nesting-app/releases",
+      "secondaryCta": "Voir en production →",
+      "secondaryCtaHref": "/#case-study",
+      "badges": {
+        "windows": "Windows x64",
+        "mac": "macOS Apple Silicon",
+        "openSource": "Open source"
       },
-      {
-        "name": "Planification Production",
-        "desc": "Gérez la capacité de production et planifiez efficacement les opérations dans votre atelier",
-        "icon": "factory"
-      },
-      {
-        "name": "Planification Matières",
-        "desc": "MRP précis alimenté par le suivi des matières premières, visibilité stock tôles et gestion automatisée des approvisionnements",
-        "icon": "format-list-checks"
-      },
-      {
-        "name": "Optimisation Découpe",
-        "desc": "Algorithmes d'imbrication intégrés minimisant les chutes et maximisant l'utilisation tôles pour découpe laser, plasma et jet d'eau",
-        "icon": "content-cut"
-      },
-      {
-        "name": "Suivi Production Temps Réel",
-        "desc": "Interface optimisée écran tactile pour suivi commandes et reporting temps réel par les opérateurs machines",
-        "icon": "tablet"
-      },
-      {
-        "name": "Calcul Coûts par Affaire",
-        "desc": "Calcul précis des coûts par commande avec suivi matières, main-d'œuvre, frais généraux et rebuts",
-        "icon": "calculator"
-      },
-      {
-        "name": "E-Facturation Peppol",
-        "desc": "Génération de factures électroniques conformes UE suivant le standard Peppol BIS Billing 3.0",
-        "icon": "file-document-outline"
-      },
-      {
-        "name": "TVA & Conformité",
-        "desc": "Gestion TVA conforme localement avec exonérations et intégration systèmes comptables nationaux",
-        "icon": "shield-check"
-      },
-      {
-        "name": "Gestion Fournisseurs",
-        "desc": "Suivi fournisseurs, commandes d'achat, coûts matières et planning livraisons",
-        "icon": "truck"
-      },
-      {
-        "name": "Open Source",
-        "desc": "Basé sur technologies open source sans verrouillage éditeur, garantissant portabilité complète données et indépendance système",
-        "icon": "code"
-      },
-      {
-        "name": "Protection Données Européennes",
-        "desc": "Gestion données conforme RGPD avec souveraineté totale pour opérations européennes",
-        "icon": "puzzle"
-      },
-      {
-        "name": "Analyses Pilotées par IA",
-        "desc": "Analyses alimentées par IA pour identifier les goulots de production et améliorer la précision du calcul des coûts",
-        "icon": "brain"
+      "previewLabel": "Aperçu imbrication temps réel"
+    },
+    "workflow": {
+      "label": "Comment ça marche",
+      "titleLine1": "Du DXF au prêt à découper",
+      "titleLine2": "en six étapes",
+      "steps": [
+        {
+          "title": "Ajoutez les pièces DXF",
+          "description": "Glissez-déposez un ou plusieurs fichiers DXF. Le moteur détecte automatiquement toutes les formes imbricables, y compris les fichiers multi-formes."
+        },
+        {
+          "title": "Examinez la géométrie",
+          "description": "Définissez les quantités par pièce. Examinez les découpes internes, géométrie de gravure et affectations de calques par forme avant l'exécution."
+        },
+        {
+          "title": "Configurez la tôle",
+          "description": "Définissez les dimensions de plaque, comportement de bande, espacement, pas de rotation, marge de tôle et style de gravure."
+        },
+        {
+          "title": "Lancez le moteur",
+          "description": "Cliquez sur LANCER. Un binaire natif gère le placement — pas d'upload cloud, pas d'attente. Les résultats arrivent en temps réel."
+        },
+        {
+          "title": "Prévisualisez en temps réel",
+          "description": "Regardez les tôles se remplir pendant que l'algorithme travaille. Voyez les statistiques d'utilisation et le nombre de tôles se mettre à jour en temps réel."
+        },
+        {
+          "title": "Exportez en DXF",
+          "description": "Exportez les tôles finales avec toute la structure de calques originale, reconstruction géométrique et géométrie de gravure préservée."
+        }
+      ]
+    },
+    "features": {
+      "label": "Capacités principales",
+      "titleLine1": "Tout ce dont votre opération",
+      "titleLine2": "de découpe a vraiment besoin",
+      "cards": {
+        "performance": {
+          "tag": "Performance native",
+          "title": "Pas de cloud. Pas de navigateur. Juste rapide.",
+          "description": "Le moteur d'imbrication fonctionne comme un binaire natif sur votre machine. Les gros fichiers DXF sont traités en secondes, pas en minutes. Fonctionne entièrement hors ligne — pas d'abonnement, pas d'upload, pas de latence."
+        },
+        "dxf": {
+          "tag": "Fidélité DXF",
+          "title": "Support géométrie complet",
+          "description": "Lignes, arcs, cercles, polylignes, ellipses et splines tous supportés. La géométrie de découpe interne et les calques de gravure sont préservés séparément à l'export.",
+          "chips": [
+            "Lignes",
+            "Arcs",
+            "Cercles",
+            "Polylignes",
+            "Ellipses",
+            "Splines"
+          ]
+        },
+        "engraving": {
+          "tag": "Gravure",
+          "title": "Deux styles de gravure intégrés",
+          "description": "Mode simple pour lettrage simple ligne sur matériaux fins. Mode contour pour lettrage avec contours remplis. Configuré par travail, préservé dans l'export DXF."
+        },
+        "sheet": {
+          "tag": "Intelligence tôle",
+          "title": "Optimisation taille plaque",
+          "description": "Le moteur trouve le nombre minimum de plaques nécessaire pour votre travail. Configurez marge tôle, espacement pièces, pas d'orientation et alignement bande indépendamment."
+        },
+        "workflow": {
+          "tag": "Flux de travail",
+          "title": "Aperçu temps réel pendant l'exécution de l'algorithme",
+          "description": "Vous n'attendez pas que le moteur finisse avant de voir les résultats. Les tôles se remplissent en temps réel au fur et à mesure que les placements sont confirmés. Changez quantités ou paramètres et relancez en secondes.",
+          "chips": [
+            "Détection DXF multi-formes",
+            "Contrôle quantité par forme",
+            "Aperçu par calque",
+            "Export JSON polygone"
+          ]
+        }
       }
-    ],
-    "outro": "Les données de production circulent du devis à l'expédition. La réalité opérationnelle se reflète dans la planification et les coûts."
-  },
-  "workflow": {
-    "title": "Du devis à l'expédition",
-    "intro": "Le système connecte les étapes clés de production dans un flux unique :",
-    "steps": [
-      {
-        "name": "Devis & Estimation",
-        "desc": "Calculez précisément les coûts avec matières, main-d'œuvre, temps machine et optimisation découpe"
+    },
+    "bridge": {
+      "label": "Partie d'un ensemble plus vaste",
+      "title": "Connectez l'imbrication à toute votre opération",
+      "copy": "Kenzap Nesting fonctionne aujourd'hui comme un outil desktop autonome. Quand vous êtes prêt, Kenzap Factory connecte votre sortie d'imbrication directement au calcul des coûts, planification production et inventaire — pour que les chutes soient suivies et devisées dès le premier jour.",
+      "cta": "Voir l'ERP Kenzap Factory →",
+      "standaloneLabel": "AUTONOME",
+      "standaloneTitle": "Kenzap Nesting",
+      "standaloneText": "DXF en entrée → tôle optimisée en sortie. Gratuit, open source, desktop natif.",
+      "connectsTo": "se connecte à",
+      "platformLabel": "PLATEFORME COMPLÈTE",
+      "platformTitle": "Kenzap Factory",
+      "platformText": "Devis, calcul coûts, suivi atelier, facturation électronique. ERP prêt pour l'UE."
+    },
+    "download": {
+      "label": "Commencez aujourd'hui",
+      "title": "Gratuit. Natif. Open source.",
+      "sub": "Téléchargez la version pour votre plateforme. Pas d'inscription, pas de clé de licence, pas de dépendance cloud. Fonctionne dès le premier jour.",
+      "windows": {
+        "href": "https://github.com/kenzap/nesting-app/releases",
+        "os": "Windows",
+        "label": "Télécharger x64",
+        "note": "Installateur .exe"
       },
-      {
-        "name": "Planification Production",
-        "desc": "Planifiez les opérations par centres de charge avec vérification disponibilité stock et optimisation découpe"
+      "mac": {
+        "href": "https://github.com/kenzap/nesting-app/releases",
+        "os": "macOS",
+        "label": "Apple Silicon",
+        "note": ".dmg — M1-M5"
       },
-      {
-        "name": "Exécution Atelier",
-        "desc": "Interface tactile pour suivi commandes, saisie temps et contrôle qualité"
-      },
-      {
-        "name": "Facturation & Conformité",
-        "desc": "Génération factures électroniques Peppol et bons de livraison avec taux TVA corrects"
-      },
-      {
-        "name": "Expédition & Livraison",
-        "desc": "Conditionnement, sortie articles groupés et expédition commandes clients"
-      },
-      {
-        "name": "Analyses",
-        "desc": "Suivi coûts réels vs estimés avec transparence complète et comptabilisation rebuts"
-      }
-    ],
-    "conclusion": "L'objectif est la cohérence et traçabilité sur tout le cycle de vie des commandes."
-  },
-  "caseStudy": {
-    "title": "Utilisé en environnements de production réels",
-    "company": "Skarda Nams SIA",
-    "industry": "Métallurgie & Pièces Sur Mesure",
-    "region": "Europe de l'Est",
-    "employees": "20 employés, 2 machines CNC",
-    "challenge": "Défi",
-    "challengeText": "Skarda Nams rencontrait des difficultés avec les devis précis utilisant divers types de métaux, mises à jour stock en temps réel, capacités de sortie métaux, planification production, facturation conforme, calculs coûts inexacts et suivi papier.",
-    "solution": "Solution",
-    "solutionText": "Mise en œuvre Kenzap Factory avec modules intégrés devis, routage production et exécution atelier. Les opérateurs machines ont adopté l'interface tactile sous deux semaines de déploiement. E-facturation Peppol configurée pour répondre aux exigences de conformité UE. Intégration avec logiciel comptable Moneo pour déclarations fiscales simplifiées.",
-    "results": "Résultats",
-    "resultItems": [
-      "Réduction temps devis grâce au calcul matières automatisé",
-      "Amélioration précision calcul coûts commandes",
-      "Visibilité complète opérations atelier et étapes de fabrication",
-      "Conformité e-facturation Peppol atteinte, avec intégration logiciel comptable BMD",
-      "Réduction gaspillage matières par optimisation découpe",
-      "Planification production plus rapide avec vérifications stock temps réel",
-      "Conformité RGPD et résidence données UE maintenues dans toutes les opérations"
-    ],
-    "quote": "Nous avons un système qui fonctionne comme notre atelier fonctionne. Les opérateurs se sont adaptés à l'interface immédiatement, et notre calcul des coûts de fabrication est maintenant fiable. Les taux de taxe sont gérés automatiquement selon le type de produit, ce qui nous fait gagner du temps et évite les tracas lors de la facturation.",
-    "quoteAuthor": "Responsable Client, Skarda Nams SIA",
-    "watchCase": "Voir l'étude de cas"
-  },
-  "implementation": {
-    "title": "Approche de mise en œuvre",
-    "intro": "La mise en œuvre suit une structure standard conçue pour minimiser les perturbations.",
-    "principles": [
-      "Configuration matériel et installation logiciel sur systèmes d'usine",
-      "Configuration catalogue produits et base données stocks métalliques",
-      "Attribution rôles utilisateurs et définition responsabilités",
-      "Personnalisation modèles documents (bons de livraison, factures, rapports)",
-      "Formation complète équipes opérateurs et encadrement",
-      "Intégration système et synchronisation reporting financier"
-    ],
-    "timeline": "Planning type :",
-    "phases": [
-      "Analyse & configuration : 2-3 semaines",
-      "Migration données & tests : 2-3 semaines",
-      "Formation & mise en service : 1-2 semaines",
-      "Support post-lancement : continu"
-    ],
-    "outro": "La mise en œuvre peut être assurée par des consultants expérimentés en manufacturing et ERP ou directement par un ingénieur Kenzap."
-  },
-  "deployment": {
-    "title": "Options de déploiement",
-    "intro": "Le système supporte plusieurs modèles de déploiement pour s'adapter aux besoins opérationnels, réglementaires et de souveraineté des données.",
-    "options": [
-      {
-        "name": "Cloud géré éditeur",
-        "desc": "Hébergement entièrement géré dans centres de données européens avec mises à jour, sauvegardes et correctifs sécurité automatiques. Idéal pour entreprises centrées sur l'exploitation.",
-        "icon": "cloud-check"
-      },
-      {
-        "name": "Cloud géré client",
-        "desc": "Déploiement sur votre propre infrastructure cloud (AWS, Azure, GCP) avec contrôle total sur configuration et accès. Adapté aux organisations IT compétentes.",
-        "icon": "cloud-cog"
-      },
-      {
-        "name": "Déploiement auto-hébergé",
-        "desc": "Installation sur site pour souveraineté et contrôle données maximums. Requis pour certaines industries réglementées ou opérations hautement sensibles.",
-        "icon": "server"
-      }
-    ],
-    "outro": "Toutes options déploiement utilisent même logiciel, suivent même chemin mise à niveau et maintiennent parité fonctionnelles. Données restent en juridictions européennes pour conformité RGPD."
-  },
-  "contact": {
-    "title": "Contact",
-    "intro": "Si vous souhaitez comprendre si ce système convient à votre exploitation, contactez-nous pour un premier échange. Nous travaillons en français et autres langues européennes.",
-    "namePlaceholder": "Votre nom",
-    "emailPlaceholder": "Adresse email",
-    "companyPlaceholder": "Nom de l'entreprise",
-    "messagePlaceholder": "Parlez-nous de votre configuration de production : nombre de machines, tailles de commandes types, systèmes actuels...",
-    "submit": "Envoyer le message",
-    "sending": "Envoi en cours...",
-    "success": "Message envoyé avec succès. Nous vous contacterons sous 1-2 jours ouvrés.",
-    "error": "Échec envoi message. Merci de nous écrire directement à support@kenzap.com",
-    "or": "ou",
-    "linkedin": "Se connecter sur LinkedIn",
-    "email": "Nous écrire directement"
-  },
-  "footer": {
-    "tagline": "Logiciel pour opérations industrielles",
-    "company": "© 2026 Kenzap. Tous droits réservés.",
-    "note": "Les informations produit peuvent changer. Disponibilité peut varier selon région.",
-    "languages": "Langues"
+      "openSourcePrefix": "Code source et instructions de compilation sur",
+      "openSourceHref": "https://github.com/kenzap/nesting-app",
+      "openSourceLink": "GitHub",
+      "openSourceLicense": "Licence Apache-2.0"
+    },
+    "footer": {
+      "factory": "Factory",
+      "email": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com",
+      "company": "© 2026 Kenzap Pte Ltd"
+    }
   }
 }

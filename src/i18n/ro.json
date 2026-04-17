@@ -1,240 +1,406 @@
 {
-  "nav": {
-    "problem": "Problemă",
-    "solution": "Soluție",
-    "features": "Funcționalități",
-    "customers": "Clienți",
-    "contact": "Contact"
+  "factoryHomepage": {
+    "meta": {
+      "title": "Kenzap Factory — Managementul Producției pentru Fabricanții de Construcții Metalice",
+      "description": "Software pentru producție, calculul costurilor și conformitate, construit special pentru fabricanții de construcții metalice. Ateliere de lucru, tăiere laser, facturare electronică Peppol. Pregătit pentru UE."
+    },
+    "nav": {
+      "problem": "Problema",
+      "features": "Funcționalități",
+      "caseStudy": "Studiu de caz",
+      "nesting": "Aplicația de imbricare",
+      "nestingHref": "/nesting",
+      "cta": "Contactați-ne →"
+    },
+    "hero": {
+      "eyebrow": "Software de management uzină",
+      "headlineTop": "Construit pentru",
+      "strikeWord": "contabili.",
+      "headlineAccent": "fabricanți.",
+      "subheadline": "Management de producție construit pentru fabricarea de construcții metalice pe bază de comenzi — nu adaptat din software contabil generic.",
+      "primaryCta": "Programați o demonstrație →",
+      "secondaryCta": "Vedeți rezultatele reale ↓",
+      "interfaceLabel": "Interfața Kenzap Factory",
+      "stats": [
+        {
+          "value": "~30%",
+          "label": "Ofertare mai rapidă"
+        },
+        {
+          "value": "2 săpt",
+          "label": "Instruire operatori"
+        },
+        {
+          "value": "fact-e",
+          "label": "Pregătit pentru conformitate"
+        }
+      ]
+    },
+    "problem": {
+      "label": "Problema",
+      "title": "Software-ul generic a fost construit pentru\ncontabili, nu pentru fabricanți.",
+      "quote": "\"Avem un sistem care funcționează așa cum funcționează atelierul nostru. Operatorii s-au adaptat imediat, iar calculul costurilor pe comandă este acum de încredere.\"",
+      "quoteAuthor": "— MANAGER CLIENT, SKARDA NAMS SIA · LETONIA",
+      "items": [
+        {
+          "title": "Calculul costurilor pe comandă este aproximativ.",
+          "description": "Tipuri de materiale, timp de tăiere, deșeuri — majoritatea ERP-urilor nu pot să le modeleze. Afli că ai pierdut bani după ce comanda a fost livrată."
+        },
+        {
+          "title": "Stocul de tablă nu este urmărit.",
+          "description": "Știi câte piese ai, nu câte foi complete și parțiale — așa că comanzi în exces sau rămâi fără."
+        },
+        {
+          "title": "Planificarea producției se face în foi de calcul.",
+          "description": "Programarea, verificarea capacităților și optimizarea tăierii se întâmplă în afara sistemului, în fișiere pe care nimeni altcineva nu le poate vedea."
+        },
+        {
+          "title": "Conformitatea este manuală.",
+          "description": "Facturarea electronică Peppol, rate TVA variabile, GDPR — gestionate prin soluții temporare, nu de sistem."
+        },
+        {
+          "title": "Atelierul este invizibil.",
+          "description": "Managerii află despre întârzieri și probleme de calitate prea târziu, pentru că operatorii nu au un sistem în care să raporteze."
+        }
+      ]
+    },
+    "workflow": {
+      "label": "Cum funcționează",
+      "title": "De la ofertă la expediere,\nîntr-un flux de lucru conectat",
+      "steps": [
+        {
+          "title": "Ofertare și estimare",
+          "description": "Calculați costurile comenzii cu precizie — material, muncă, timp mașină, optimizare tăiere — înainte să vă angajați la un preț."
+        },
+        {
+          "title": "Planificare producție",
+          "description": "Programați operațiunile în centrele de lucru cu verificări live ale stocului și optimizarea imbricării integrată."
+        },
+        {
+          "title": "Execuție în atelier",
+          "description": "Interfață cu panou tactil pentru operatori. Urmărirea comenzilor, înregistrarea timpului și controlul calității la mașină."
+        },
+        {
+          "title": "Facturare și conformitate",
+          "description": "Facturi electronice și avize conforme Peppol generate automat cu ratele TVA corecte pe tip de produs."
+        },
+        {
+          "title": "Expediere și livrare",
+          "description": "Împachetați comenzile, scădeți articolele grupate și expediați cu documentația completă. Stocul se actualizează automat."
+        },
+        {
+          "title": "Analize",
+          "description": "Compararea costului real vs. estimat per comandă. Contabilitatea completă a deșeurilor și vizibilitatea blocajelor în producție."
+        }
+      ]
+    },
+    "features": {
+      "label": "Capabilități principale",
+      "title": "Tot ce are nevoie un fabricant\nde construcții metalice într-un singur sistem",
+      "items": [
+        {
+          "tag": "Producție",
+          "title": "Urmărirea fluxului de lucru",
+          "description": "Urmăriți fiecare comandă de la ofertă la livrare cu detalii la nivel de operațiune. Știți exact unde se află fiecare comandă, în timp real."
+        },
+        {
+          "tag": "Stoc",
+          "title": "MRP pentru tablă",
+          "description": "Urmăriți stocul pe foi, nu doar numărul de piese. Foi complete și parțiale, mai multe tipuri de metal, declanșatori automate de recomandare."
+        },
+        {
+          "tag": "Tăiere",
+          "title": "Imbricare integrată",
+          "description": "Algoritmii de imbricare minimizează risipa de material pentru laser, plasmă și waterjet — conectați direct la calculul costurilor astfel încât deșeurile să fie urmărite automat.",
+          "accent": true
+        },
+        {
+          "tag": "Costuri",
+          "title": "Calculul costurilor pe comandă",
+          "description": "Cost precis pe comandă: material, muncă, cheltuieli generale și deșeuri. Comparați estimatul vs. realul pentru fiecare comandă expediată."
+        },
+        {
+          "tag": "Conformitate",
+          "title": "Facturare electronică Peppol",
+          "description": "Facturare electronică conformă UE prin Peppol BIS Billing 3.0. Ratele TVA sunt gestionate automat după tipul produsului și regiunea clientului."
+        },
+        {
+          "tag": "Atelier",
+          "title": "Interfață cu panou tactil",
+          "description": "Proiectată pentru operatorii de la mașină. Urmărirea comenzilor, înregistrarea timpului, controlul calității — adoptată în două săptămâni la Skarda Nams."
+        },
+        {
+          "tag": "Furnizori",
+          "title": "Managementul furnizorilor",
+          "description": "Comenzi de achiziție, costurile materialelor și programele de livrare urmărite în același sistem cu producția."
+        },
+        {
+          "tag": "AI",
+          "title": "Perspective bazate pe AI",
+          "description": "Identificați blocajele în producție și îmbunătățiți precizia calculului costurilor cu analiza bazată pe AI a datelor reale de producție."
+        },
+        {
+          "tag": "Date",
+          "title": "Open source și GDPR",
+          "description": "Fără blocaj de furnizor. Portabilitate completă a datelor. Conform GDPR cu rezidența datelor în UE. Implementați pe propria infrastructură dacă este necesar."
+        }
+      ]
+    },
+    "caseStudy": {
+      "label": "Rezultate reale",
+      "title": "Folosit în producție\nla Skarda Nams SIA",
+      "meta": "FABRICARE CONSTRUCȚII METALICE · LETONIA · 20 ANGAJAȚI · 2 MAȘINI CNC",
+      "challengeLabel": "Provocarea",
+      "challengeText": "Skarda Nams făcea oferte manual pentru mai multe tipuri de metal, gestiona stocul pe hârtie și nu putea produce facturi conforme fără soluții temporare. Calculul costurilor pe comandă era imprecis. Vizibilitatea în atelier era zero.",
+      "solutionLabel": "Soluția",
+      "solutionText": "A implementat Kenzap Factory cu module integrate de ofertare, rutare producție și execuție în atelier. Facturarea electronică Peppol configurată pentru conformitatea UE. Integrat cu software-ul contabil Moneo.",
+      "quote": "\"Operatorii s-au adaptat la interfață imediat, iar calculul costurilor pe comandă este acum de încredere. Ratele de taxe sunt gestionate automat — doar asta ne economisește timp semnificativ în fiecare lună.\"",
+      "quoteAuthor": "— MANAGER CLIENT, SKARDA NAMS SIA",
+      "results": [
+        {
+          "value": "~30%",
+          "label": "Reducerea timpului de ofertare"
+        },
+        {
+          "value": "2 săpt",
+          "label": "Timp de instruire operatori"
+        },
+        {
+          "value": "100%",
+          "label": "Conformitate facturare realizată"
+        },
+        {
+          "value": "100%",
+          "label": "Precizie estimare realizată"
+        },
+        {
+          "value": "Vizibilitate completă",
+          "label": "În operațiunile din atelier și etapele de fabricație — din prima zi",
+          "fullWidth": true
+        }
+      ]
+    },
+    "deployment": {
+      "label": "Implementare",
+      "title": "Funcționează acolo unde\noperațiunea dvs. necesită",
+      "options": [
+        {
+          "title": "Cloud gestionat de furnizor",
+          "description": "Hosting complet gestionat cu actualizări automate, backup-uri și patch-uri de securitate. Ideal pentru echipele focusate pe operațiuni, nu pe IT."
+        },
+        {
+          "title": "Cloud gestionat de client",
+          "description": "Implementați pe propria infrastructură AWS, Azure sau GCP. Control complet asupra configurației, accesului și datelor. Potrivit pentru organizații capabile din punct de vedere IT."
+        },
+        {
+          "title": "Auto-găzduit pe premise",
+          "description": "Instalare pe premise pentru suveranitate maximă a datelor. Necesar pentru unele industrii reglementate. Paritate completă de funcții cu opțiunile cloud."
+        }
+      ]
+    },
+    "timeline": {
+      "label": "Cronologie tipică de implementare",
+      "phases": [
+        {
+          "phase": "Faza 1",
+          "duration": "2–3 săpt",
+          "label": "Descoperire și configurare"
+        },
+        {
+          "phase": "Faza 2",
+          "duration": "2–3 săpt",
+          "label": "Migrare date și testare"
+        },
+        {
+          "phase": "Faza 3",
+          "duration": "1–2 săpt",
+          "label": "Instruire și punere în funcțiune"
+        },
+        {
+          "phase": "Faza 4",
+          "duration": "Continuu",
+          "label": "Suport post-lansare"
+        }
+      ]
+    },
+    "nesting": {
+      "label": "De asemenea de la Kenzap",
+      "title": "Începeți cu imbricarea.\nConectați restul când sunteți gata.",
+      "description": "Kenzap Nesting este o aplicație desktop independentă gratuită pentru imbricarea foilor bazată pe DXF. Nativă pe Windows și macOS. Fără abonament, fără cloud, fără înregistrare. Când operațiunea dvs. crește, Kenzap Factory conectează totul.",
+      "primaryCta": "Explorați Kenzap Nesting →",
+      "href": "/nesting",
+      "cardLabel": "Kenzap Nesting — descărcare gratuită",
+      "cardTitle": "Împachetați mai mult. Risipă mai puțin. Tăiați mai repede.",
+      "cardDescription": "Adăugați piese DXF, setați cantitățile, rulați motorul de imbricare, exportați foi gata de tăiat. Previzualizare live în timp ce algoritmul rulează.",
+      "platforms": [
+        "Windows",
+        "macOS"
+      ]
+    },
+    "contact": {
+      "label": "Luați legătura",
+      "title": "Vedeți dacă Kenzap Factory\nse potrivește operațiunii dvs.",
+      "description": "Răspundem în termen de o zi lucrătoare. Fără proces de vânzări — doar o conversație directă despre dacă se potrivește operațiunii dvs.",
+      "linkedinLabel": "LinkedIn",
+      "linkedinHref": "https://www.linkedin.com/in/pavel-lukasenko/",
+      "emailLabel": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com"
+    },
+    "footer": {
+      "nestingLabel": "Aplicația de imbricare",
+      "nestingHref": "/nesting",
+      "emailLabel": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com",
+      "company": "© 2026 Kenzap Pte Ltd"
+    }
   },
-  "hero": {
-    "headline": "ERP construit pentru fabricarea metalelor.",
-    "subheadline": "Producție, calculare costuri și planificare pentru fabricația pe comenzi.",
-    "intro": "Acest sistem este conceput special pentru fabricanții de produse metalice. Susține fluxurile de producție reale, nu soluții de compromis bazate pe contabilitate. Focusul este pe atelierele cu comenzi specifice, producția pe comandă și conformitatea.",
-    "primaryCta": "Contactează-ne",
-    "secondaryCta": "Vezi dacă se potrivește",
-    "watchDemo": "Vezi cum funcționează"
-  },
-  "problem": {
-    "title": "De ce sistemele ERP generice eșuează pentru fabricanții metalelor",
-    "intro": "Majoritatea sistemelor ERP sunt concepute în jurul contabilității, nu al producției. Ca rezultat, fabricanții de produse metalice se bazează adesea pe foi de calcul și procese manuale pentru gestionarea comenzilor și executarea la nivelul atelierului.",
-    "items": [
-      "Calcularea inexactă a costurilor pe comandă",
-      "Inventarul de metale nu este urmărit corespunzător",
-      "Vizibilitate slabă asupra operațiunilor din atelier",
-      "Lipsa optimizării tăierii pentru tablele metalice",
-      "Planificarea producției gestionată în afara sistemului ERP",
-      "Cotele de TVA variabile pe produse nu sunt gestionate automat"
-    ],
-    "conclusion": "Aceste probleme cresc riscul de neconformitate, reduc eficiența și degradează calitatea serviciilor."
-  },
-  "whoFor": {
-    "title": "Pentru cine este conceput acest sistem",
-    "intro": "Acest ERP este conceput pentru companiile de fabricare metale cu:",
-    "criteria": [
-      "Necesitatea calculării precise a costurilor pe comandă și urmărirea materialelor",
-      "Cerințe pentru gestionarea stocului de metal și inventarul de table",
-      "Nevoi de optimizare a tăierii pentru laser, plasmă sau jet de apă",
-      "Obligații de conformitate pentru facturarea electronică UE",
-      "Cerințe de integrare cu sistemele contabile europene",
-      "Nevoi de conformitate GDPR și protecția datelor UE"
-    ],
-    "typical": "Utilizatorii tipici includ:",
-    "users": [
-      "Ateliere cu comenzi specifice",
-      "Fabricanți pe contract",
-      "Fabricanți care produc piese personalizate sau în loturi mici",
-      "Ateliere de prelucrare table metalice"
-    ],
-    "notFor": "Acest sistem nu este conceput pentru:",
-    "excluded": [
-      "Afaceri de distribuție pură",
-      "Fabricația de proces",
-      "Producția de masă foarte standardizată"
-    ]
-  },
-  "manufacturing": {
-    "title": "Proiectare cu producția în prim-plan",
-    "intro": "Sistemul este construit în jurul conceptelor de fabricație reale folosite în prelucrarea metalelor și se adaptează continuu la cerințele complexe și în evoluție de conformitate europeană.",
-    "features": [
-      {
-        "name": "Urmărirea Fluxurilor",
-        "desc": "Urmărește fiecare comandă de la ofertă la livrare cu vizibilitate completă asupra fluxului și detalii la nivel de operațiune",
-        "icon": "cog"
+  "nestingHomepage": {
+    "meta": {
+      "title": "Kenzap Nesting — Imbricare Foi DXF pentru Fabricanții de Construcții Metalice",
+      "description": "Software gratuit nativ de imbricare foi DXF pentru fabricanții de construcții metalice. Importați piese DXF, optimizați foi, previzualizați live și exportați layout-uri gata de tăiat."
+    },
+    "nav": {
+      "workflow": "Cum funcționează",
+      "features": "Funcționalități",
+      "factory": "Factory ERP",
+      "factoryMobile": "Factory",
+      "cta": "Descărcați gratuit →",
+      "ctaHref": "https://github.com/kenzap/nesting-app"
+    },
+    "hero": {
+      "eyebrow": "Software de imbricare DXF",
+      "headlineLine1": "Împachetați mai mult.",
+      "headlineLine2Prefix": "Risipă ",
+      "headlineLine2Accent": "mai puțin",
+      "headlineLine3": "Tăiați mai repede.",
+      "subheadline": "O aplicație desktop nativă de imbricare pentru fabricanții de construcții metalice. Adăugați piesele DXF, setați cantitățile, rulați motorul — obțineți o foaie complet împachetată gata de tăiat.",
+      "primaryCta": "↓ Descărcați gratuit",
+      "primaryCtaHref": "https://github.com/kenzap/nesting-app/releases",
+      "secondaryCta": "Vedeți în producție →",
+      "secondaryCtaHref": "/#case-study",
+      "badges": {
+        "windows": "Windows x64",
+        "mac": "macOS Apple Silicon",
+        "openSource": "Open source"
       },
-      {
-        "name": "Planificarea Producției",
-        "desc": "Gestionează capacitatea de producție și programează operațiunile eficient în întregul atelier",
-        "icon": "factory"
-      },
-      {
-        "name": "Planificarea Materialelor",
-        "desc": "MRP precis alimentat de urmărirea materiilor prime, vizibilitatea inventarului de table metalice și gestionarea automată a stocului",
-        "icon": "format-list-checks"
-      },
-      {
-        "name": "Optimizarea Tăierii",
-        "desc": "Algoritmi de imbricare încorporați care minimizează deșeurile și maximizează utilizarea tablelor pentru tăierea cu laser, plasmă și jet de apă",
-        "icon": "content-cut"
-      },
-      {
-        "name": "Raportarea Producției în Timp Real",
-        "desc": "Interfață optimizată pentru panouri tactile pentru urmărirea comenzilor în timp real și raportarea de către operatorii de mașini",
-        "icon": "tablet"
-      },
-      {
-        "name": "Calcularea Costurilor pe Comandă",
-        "desc": "Calculul precis al costurilor pe comandă cu urmărirea materialelor, forței de muncă, costurilor generale și deșeurilor",
-        "icon": "calculator"
-      },
-      {
-        "name": "Facturarea Electronică Peppol",
-        "desc": "Generează facturi electronice conforme UE conform standardului Peppol BIS Billing 3.0",
-        "icon": "file-document-outline"
-      },
-      {
-        "name": "TVA și Conformitate",
-        "desc": "Gestionarea TVA conformă local cu scutiri și integrare cu sistemele contabile naționale",
-        "icon": "shield-check"
-      },
-      {
-        "name": "Gestionarea Furnizorilor",
-        "desc": "Urmărește furnizorii, comenzile de achiziție, costurile materialelor și programele de livrare",
-        "icon": "truck"
-      },
-      {
-        "name": "Open Source",
-        "desc": "Construit pe tehnologii open source fără dependență de furnizor, asigurând portabilitatea completă a datelor și independența sistemului",
-        "icon": "code"
-      },
-      {
-        "name": "Protecția Datelor Europene",
-        "desc": "Gestionarea datelor conformă GDPR cu suveranitate completă a datelor pentru operațiunile europene",
-        "icon": "puzzle"
-      },
-      {
-        "name": "Perspicacități Bazate pe AI",
-        "desc": "Perspicacități alimentate de AI pentru identificarea blocajelor de producție și îmbunătățirea preciziei calculării costurilor",
-        "icon": "brain"
+      "previewLabel": "Previzualizare imbricare live"
+    },
+    "workflow": {
+      "label": "Cum funcționează",
+      "titleLine1": "De la DXF la gata de tăiat",
+      "titleLine2": "în șase pași",
+      "steps": [
+        {
+          "title": "Adăugați piese DXF",
+          "description": "Trageți și plasați unul sau mai multe fișiere DXF. Motorul detectează automat toate formele care pot fi imbricate, inclusiv fișiere cu mai multe forme."
+        },
+        {
+          "title": "Revizuiți geometria",
+          "description": "Setați cantitățile per piesă. Revizuiți tăieturile interne, geometria gravurii și atribuirile de layere per formă înainte de a rula."
+        },
+        {
+          "title": "Configurați foaia",
+          "description": "Setați dimensiunile plăcii, comportamentul benzii, spațierea, pasul de rotație, marginea foii și stilul gravurii."
+        },
+        {
+          "title": "Rulați motorul",
+          "description": "Apăsați RUN. Un binar nativ gestionează plasarea — fără încărcare în cloud, fără așteptare. Rezultatele se întorc live."
+        },
+        {
+          "title": "Previzualizați live",
+          "description": "Urmăriți foile cum se populează pe măsură ce algoritmul lucrează. Vedeți statisticile de utilizare și numărul de foi actualizat în timp real."
+        },
+        {
+          "title": "Exportați în DXF",
+          "description": "Exportați foile finale cu toată structura originală de layere, reconstrucția geometriei și geometria gravurii păstrată."
+        }
+      ]
+    },
+    "features": {
+      "label": "Capabilități principale",
+      "titleLine1": "Tot ce operațiunea dvs. de tăiere",
+      "titleLine2": "are nevoie cu adevărat",
+      "cards": {
+        "performance": {
+          "tag": "Performanță nativă",
+          "title": "Fără cloud. Fără browser. Doar rapiditate.",
+          "description": "Motorul de imbricare rulează ca un binar nativ pe mașina dvs. Fișierele DXF mari se procesează în secunde, nu minute. Funcționează complet offline — fără abonament, fără încărcare, fără latență."
+        },
+        "dxf": {
+          "tag": "Fidelitate DXF",
+          "title": "Suport complet pentru geometrie",
+          "description": "Linii, arce, cercuri, polyline-uri, elipse și spline-uri toate suportate. Geometria tăieturilor interne și layerele de gravură sunt păstrate separat prin export.",
+          "chips": [
+            "Linii",
+            "Arce",
+            "Cercuri",
+            "Polyline-uri",
+            "Elipse",
+            "Spline-uri"
+          ]
+        },
+        "engraving": {
+          "tag": "Gravură",
+          "title": "Două stiluri de gravură integrate",
+          "description": "Modul simplu pentru litere cu o singură linie pe materiale subțiri. Modul conturit pentru litere conturate cu contururi umplute. Configurat per job, păstrat în exportul DXF."
+        },
+        "sheet": {
+          "tag": "Inteligența foii",
+          "title": "Optimizarea dimensiunii plăcii",
+          "description": "Motorul găsește numărul minim de plăci necesar pentru job. Configurați marginea foii, spațierea pieselor, pasul de orientare și alinierea benzii independent."
+        },
+        "workflow": {
+          "tag": "Flux de lucru",
+          "title": "Previzualizare live în timp ce algoritmul rulează",
+          "description": "Nu așteptați ca motorul să termine înainte să vedeți rezultatele. Foile se populează în timp real pe măsură ce plasările sunt confirmate. Schimbați cantitățile sau setările și rerulați în secunde.",
+          "chips": [
+            "Detectare DXF multi-formă",
+            "Control cantitate per formă",
+            "Previzualizare conștientă de layer",
+            "Export poligon JSON"
+          ]
+        }
       }
-    ],
-    "outro": "Datele de producție circulă de la ofertă la expediere. Realitatea operațională se reflectă în planificare și calcularea costurilor."
-  },
-  "workflow": {
-    "title": "De la ofertă la expediere",
-    "intro": "Sistemul conectează etapele cheie de producție într-un singur flux de lucru:",
-    "steps": [
-      {
-        "name": "Ofertare și Estimare",
-        "desc": "Calculează costurile cu precizie cu materiale, forță de muncă, timp mașină și optimizarea tăierii"
+    },
+    "bridge": {
+      "label": "Parte dintr-o imagine mai mare",
+      "title": "Conectați imbricarea la întreaga operațiune",
+      "copy": "Kenzap Nesting funcționează ca un instrument desktop independent astăzi. Când sunteți gata, Kenzap Factory conectează output-ul imbricării direct la calculul costurilor, planificarea producției și stoc — astfel încât deșeurile să fie urmărite și cotate din prima zi.",
+      "cta": "Vedeți Kenzap Factory ERP →",
+      "standaloneLabel": "INDEPENDENT",
+      "standaloneTitle": "Kenzap Nesting",
+      "standaloneText": "DXF intrare → foaie optimizată ieșire. Gratuit, open source, desktop nativ.",
+      "connectsTo": "se conectează la",
+      "platformLabel": "PLATFORMĂ COMPLETĂ",
+      "platformTitle": "Kenzap Factory",
+      "platformText": "Ofertare, calculul costurilor, urmărire atelier, facturare electronică. ERP pregătit pentru UE."
+    },
+    "download": {
+      "label": "Începeți astăzi",
+      "title": "Gratuit. Nativ. Open source.",
+      "sub": "Descărcați versiunea pentru platforma dvs. Fără înregistrare, fără cheie de licență, fără dependență de cloud. Funcționează din prima zi.",
+      "windows": {
+        "href": "https://github.com/kenzap/nesting-app/releases",
+        "os": "Windows",
+        "label": "Descărcați x64",
+        "note": "instalator .exe"
       },
-      {
-        "name": "Planificarea Producției",
-        "desc": "Programează operațiunile în centrele de lucru cu verificări ale disponibilității inventarului și optimizarea tăierii"
+      "mac": {
+        "href": "https://github.com/kenzap/nesting-app/releases",
+        "os": "macOS",
+        "label": "Apple Silicon",
+        "note": ".dmg — M1-M5"
       },
-      {
-        "name": "Executarea la Nivelul Atelierului",
-        "desc": "Interfață cu panou tactil pentru urmărirea comenzilor, înregistrarea timpului și controlul calității"
-      },
-      {
-        "name": "Facturare și Conformitate",
-        "desc": "Generează facturi electronice conforme Peppol și avize cu cotele TVA corecte"
-      },
-      {
-        "name": "Expediere și Livrare",
-        "desc": "Ambalează, deduce articolele grupate și expediază comenzile către clienți"
-      },
-      {
-        "name": "Analize",
-        "desc": "Urmărește costurile reale față de cele estimate cu transparență completă și contabilizarea deșeurilor"
-      }
-    ],
-    "conclusion": "Obiectivul este consistența și trasabilitatea pe întregul ciclu de viață al comenzii."
-  },
-  "caseStudy": {
-    "title": "Utilizat în medii de producție reale",
-    "company": "Skarda Nams SIA",
-    "industry": "Fabricarea Metalelor și Piese Personalizate",
-    "region": "Europa de Est",
-    "employees": "20 angajați, 2 mașini CNC",
-    "challenge": "Provocarea",
-    "challengeText": "Skarda Nams se confrunta cu ofertarea precisă folosind diverse tipuri de metale, actualizări de inventar în timp real, capacități de deducere a metalului, planificarea producției, facturarea conformă, calcularea inexactă a costurilor și urmărirea pe hârtie.",
-    "solution": "Soluția",
-    "solutionText": "A implementat Kenzap Factory cu module integrate de ofertare, rutare de producție și execuție la nivelul atelierului. Operatorii de mașini au adoptat interfața cu panou tactil în două săptămâni de la implementare. Facturarea electronică Peppol a fost configurată pentru a îndeplini cerințele de conformitate UE. Integrare cu software-ul contabil Moneo pentru raportarea simplificată a taxelor.",
-    "results": "Rezultatele",
-    "resultItems": [
-      "Reducerea timpului de ofertare prin calculul automat al materialelor",
-      "Îmbunătățirea preciziei calculării costurilor pe comandă",
-      "Vizibilitate completă asupra operațiunilor din atelier și etapelor de fabricație",
-      "Conformitatea facturării electronice Peppol realizată, cu integrare la software-ul contabil BMD",
-      "Reducerea deșeurilor de material prin optimizarea tăierii",
-      "Planificare mai rapidă a producției cu verificări de inventar în timp real",
-      "Conformitatea GDPR și rezidența datelor UE menținută pe parcursul operațiunilor"
-    ],
-    "quote": "Avem un sistem care funcționează în felul în care funcționează atelierul nostru. Operatorii s-au adaptat imediat la interfață, iar calcularea costurilor pe comenzi este acum de încredere. Cotele de taxă sunt gestionate automat pe baza tipului de produs, ceea ce ne economisește timp și dureri de cap în timpul facturării.",
-    "quoteAuthor": "Manager Client, Skarda Nams SIA",
-    "watchCase": "Vizualizează studiul de caz"
-  },
-  "implementation": {
-    "title": "Abordarea implementării",
-    "intro": "Implementarea urmează o structură standard concepută pentru a minimiza perturbările.",
-    "principles": [
-      "Configurarea hardware-ului și instalarea software-ului pe sistemele din fabrică",
-      "Configurarea catalogului de produse și a bazei de date de inventar metal",
-      "Atribuirea rolurilor utilizatorilor și definirea responsabilităților",
-      "Personalizarea șabloanelor de documente (avize, facturi, rapoarte)",
-      "Formare cuprinzătoare pentru operatori și echipele de management",
-      "Integrarea sistemului și sincronizarea raportării financiare"
-    ],
-    "timeline": "Cronologie tipică:",
-    "phases": [
-      "Descoperire și configurare: 2-3 săptămâni",
-      "Migrarea datelor și testare: 2-3 săptămâni",
-      "Formare și lansare: 1-2 săptămâni",
-      "Suport post-lansare: în curs"
-    ],
-    "outro": "Implementarea poate fi livrată de consultanți cu experiență în fabricație și ERP sau direct de un inginer Kenzap."
-  },
-  "deployment": {
-    "title": "Opțiuni de implementare",
-    "intro": "Sistemul susține mai multe modele de implementare pentru a se potrivi nevoilor operaționale, de reglementare și suveranității datelor.",
-    "options": [
-      {
-        "name": "Cloud gestionat de furnizor",
-        "desc": "Găzduire complet gestionată în centre de date europene cu actualizări automate, backup-uri și patch-uri de securitate. Ideal pentru companiile concentrate pe operațiuni.",
-        "icon": "cloud-check"
-      },
-      {
-        "name": "Cloud gestionat de client",
-        "desc": "Implementare pe propria infrastructură cloud (AWS, Azure, GCP) cu control complet asupra configurației și accesului. Potrivit pentru organizațiile capabile din punct de vedere IT.",
-        "icon": "cloud-cog"
-      },
-      {
-        "name": "Implementare auto-găzduită",
-        "desc": "Instalare în propria locație pentru suveranitatea și controlul maxim al datelor. Necesară pentru unele industrii reglementate sau operațiuni foarte sensibile.",
-        "icon": "server"
-      }
-    ],
-    "outro": "Toate opțiunile de implementare folosesc același software, urmează aceeași cale de upgrade și mențin paritatea funcționalităților. Datele rămân în jurisdicțiile europene pentru conformitatea GDPR."
-  },
-  "contact": {
-    "title": "Contact",
-    "intro": "Dacă vrei să înțelegi dacă acest sistem se potrivește operațiunii tale, contactează-ne pentru o discuție inițială. Lucrăm în română, engleză și alte limbi europene.",
-    "namePlaceholder": "Numele tău",
-    "emailPlaceholder": "Adresa de email",
-    "companyPlaceholder": "Numele companiei",
-    "messagePlaceholder": "Spune-ne despre configurația ta de producție: numărul de mașini, dimensiuni tipice ale comenzilor, sistemele actuale...",
-    "submit": "Trimite mesajul",
-    "sending": "Se trimite...",
-    "success": "Mesaj trimis cu succes. Te vom contacta în 1-2 zile lucrătoare.",
-    "error": "Eșec la trimiterea mesajului. Te rugăm să ne scrii direct la support@kenzap.com",
-    "or": "sau",
-    "linkedin": "Conectează-te pe LinkedIn",
-    "email": "Scrie-ne direct"
-  },
-  "footer": {
-    "tagline": "Software pentru operațiuni de fabricație",
-    "company": "© 2026 Kenzap. Toate drepturile rezervate.",
-    "note": "Informațiile despre produs se pot schimba. Disponibilitatea poate varia în funcție de regiune.",
-    "languages": "Limbi"
+      "openSourcePrefix": "Codul sursă și instrucțiunile de build pe",
+      "openSourceHref": "https://github.com/kenzap/nesting-app",
+      "openSourceLink": "GitHub",
+      "openSourceLicense": "licență Apache-2.0"
+    },
+    "footer": {
+      "factory": "Factory",
+      "email": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com",
+      "company": "© 2026 Kenzap Pte Ltd"
+    }
   }
 }

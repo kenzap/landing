@@ -1,240 +1,406 @@
 {
-  "nav": {
-    "problem": "Masalah",
-    "solution": "Solusi",
-    "features": "Fitur",
-    "customers": "Pelanggan",
-    "contact": "Kontak"
+  "factoryHomepage": {
+    "meta": {
+      "title": "Kenzap Factory — Manajemen Produksi untuk Fabrikator Logam",
+      "description": "Perangkat lunak produksi, kalkulasi biaya, dan kepatuhan yang dibuat khusus untuk fabrikator logam. Job shop, pemotongan laser, e-invoicing Peppol. Siap untuk UE."
+    },
+    "nav": {
+      "problem": "Masalah",
+      "features": "Fitur",
+      "caseStudy": "Studi kasus",
+      "nesting": "Aplikasi nesting",
+      "nestingHref": "/nesting",
+      "cta": "Hubungi kami →"
+    },
+    "hero": {
+      "eyebrow": "Perangkat lunak manajemen pabrik",
+      "headlineTop": "Dibuat untuk",
+      "strikeWord": "akuntan.",
+      "headlineAccent": "fabrikator.",
+      "subheadline": "Manajemen produksi yang dibuat khusus untuk fabrikasi logam berbasis job — bukan adaptasi dari perangkat lunak akuntansi generik.",
+      "primaryCta": "Jadwalkan demo →",
+      "secondaryCta": "Lihat hasil nyata ↓",
+      "interfaceLabel": "Interface Kenzap Factory",
+      "stats": [
+        {
+          "value": "~30%",
+          "label": "Penawaran lebih cepat"
+        },
+        {
+          "value": "2 mgg",
+          "label": "Onboarding operator"
+        },
+        {
+          "value": "e-inv",
+          "label": "Siap kepatuhan"
+        }
+      ]
+    },
+    "problem": {
+      "label": "Masalahnya",
+      "title": "Perangkat lunak generik dibuat untuk\nakuntan, bukan fabrikator.",
+      "quote": "\"Kami memiliki sistem yang bekerja sesuai cara lantai produksi kami beroperasi. Operator langsung beradaptasi, dan kalkulasi biaya job kami kini dapat diandalkan.\"",
+      "quoteAuthor": "— MANAJER KLIEN, SKARDA NAMS SIA · LATVIA",
+      "items": [
+        {
+          "title": "Kalkulasi biaya job hanya perkiraan.",
+          "description": "Jenis material, waktu potong, limbah — sebagian besar ERP tidak bisa memodelkannya. Anda baru tahu merugi setelah job dikirim."
+        },
+        {
+          "title": "Inventori pelat logam tidak terlacak.",
+          "description": "Anda tahu berapa banyak part yang dimiliki, bukan berapa lembar utuh dan parsial — jadi Anda over-order atau kekurangan stok."
+        },
+        {
+          "title": "Perencanaan produksi masih di spreadsheet.",
+          "description": "Penjadwalan, pengecekan kapasitas dan optimasi pemotongan terjadi di luar sistem, dalam file yang tidak bisa dilihat orang lain."
+        },
+        {
+          "title": "Kepatuhan dilakukan manual.",
+          "description": "E-invoicing Peppol, tarif PPN variabel, GDPR — ditangani dengan solusi sementara, bukan oleh sistem."
+        },
+        {
+          "title": "Lantai produksi tidak terlihat.",
+          "description": "Manajer mengetahui keterlambatan dan masalah kualitas terlalu terlambat, karena operator tidak memiliki sistem untuk melaporkan."
+        }
+      ]
+    },
+    "workflow": {
+      "label": "Cara kerja",
+      "title": "Dari penawaran hingga pengiriman,\ndalam satu alur kerja terhubung",
+      "steps": [
+        {
+          "title": "Penawaran & estimasi",
+          "description": "Hitung biaya job secara akurat — material, tenaga kerja, waktu mesin, optimasi pemotongan — sebelum Anda komit pada harga."
+        },
+        {
+          "title": "Perencanaan produksi",
+          "description": "Jadwalkan operasi di seluruh pusat kerja dengan pengecekan inventori real-time dan optimasi nesting yang terintegrasi."
+        },
+        {
+          "title": "Eksekusi lantai produksi",
+          "description": "Interface panel sentuh untuk operator. Pelacakan job, pencatatan waktu, dan kontrol kualitas di mesin."
+        },
+        {
+          "title": "Invoicing & kepatuhan",
+          "description": "E-invoice dan surat jalan yang sesuai Peppol dibuat otomatis dengan tarif PPN yang tepat per jenis produk."
+        },
+        {
+          "title": "Pengiriman & penyampaian",
+          "description": "Kemas job, catat item bundel, dan kirim dengan dokumentasi lengkap. Inventori terupdate otomatis."
+        },
+        {
+          "title": "Analitik",
+          "description": "Perbandingan biaya aktual vs estimasi per job. Akuntansi limbah lengkap dan visibilitas bottleneck produksi."
+        }
+      ]
+    },
+    "features": {
+      "label": "Kapabilitas inti",
+      "title": "Semua yang dibutuhkan fabrikator logam\ndalam satu sistem",
+      "items": [
+        {
+          "tag": "Produksi",
+          "title": "Pelacakan alur kerja",
+          "description": "Lacak setiap job dari penawaran hingga pengiriman dengan detail level operasi. Ketahui persis dimana setiap job berada, secara real-time."
+        },
+        {
+          "tag": "Inventori",
+          "title": "MRP pelat logam",
+          "description": "Lacak stok per lembar, bukan hanya jumlah part. Lembar utuh dan parsial, beragam jenis logam, pemicu reorder otomatis."
+        },
+        {
+          "tag": "Pemotongan",
+          "title": "Nesting terintegrasi",
+          "description": "Algoritma nesting meminimalkan limbah material untuk laser, plasma, dan waterjet — terhubung langsung ke kalkulasi biaya job sehingga limbah terlacak otomatis.",
+          "accent": true
+        },
+        {
+          "tag": "Kalkulasi",
+          "title": "Kalkulasi biaya berbasis job",
+          "description": "Biaya akurat per job: material, tenaga kerja, overhead, dan limbah. Bandingkan estimasi vs aktual pada setiap job yang dikirim."
+        },
+        {
+          "tag": "Kepatuhan",
+          "title": "E-invoicing Peppol",
+          "description": "Invoice elektronik sesuai UE melalui Peppol BIS Billing 3.0. Tarif PPN ditangani otomatis berdasarkan jenis produk dan wilayah pelanggan."
+        },
+        {
+          "tag": "Lantai produksi",
+          "title": "Interface panel sentuh",
+          "description": "Dirancang untuk operator di mesin. Pelacakan job, pencatatan waktu, kontrol kualitas — diadopsi dalam dua minggu di Skarda Nams."
+        },
+        {
+          "tag": "Pemasok",
+          "title": "Manajemen pemasok",
+          "description": "Purchase order, biaya material, dan jadwal pengiriman dilacak dalam sistem yang sama dengan produksi."
+        },
+        {
+          "tag": "AI",
+          "title": "Insight berbasis AI",
+          "description": "Identifikasi bottleneck produksi dan tingkatkan akurasi kalkulasi biaya job dengan analisis bertenaga AI dari data produksi nyata Anda."
+        },
+        {
+          "tag": "Data",
+          "title": "Open source & GDPR",
+          "description": "Tidak ada vendor lock-in. Portabilitas data penuh. Sesuai GDPR dengan residensi data UE. Deploy di infrastruktur sendiri jika diperlukan."
+        }
+      ]
+    },
+    "caseStudy": {
+      "label": "Hasil nyata",
+      "title": "Digunakan dalam produksi\ndi Skarda Nams SIA",
+      "meta": "FABRIKASI LOGAM · LATVIA · 20 KARYAWAN · 2 MESIN CNC",
+      "challengeLabel": "Tantangan",
+      "challengeText": "Skarda Nams membuat penawaran manual untuk berbagai jenis logam, menjalankan inventori di kertas, dan tidak bisa menghasilkan invoice yang sesuai tanpa solusi sementara. Kalkulasi biaya job tidak akurat. Visibilitas lantai produksi nol.",
+      "solutionLabel": "Solusi",
+      "solutionText": "Implementasi Kenzap Factory dengan modul penawaran, routing produksi, dan eksekusi lantai produksi terintegrasi. E-invoicing Peppol dikonfigurasi untuk kepatuhan UE. Terintegrasi dengan perangkat lunak akuntansi Moneo.",
+      "quote": "\"Operator langsung beradaptasi dengan interface, dan kalkulasi biaya job kami kini dapat diandalkan. Tarif pajak ditangani otomatis — itu saja menghemat waktu kami yang signifikan setiap bulan.\"",
+      "quoteAuthor": "— MANAJER KLIEN, SKARDA NAMS SIA",
+      "results": [
+        {
+          "value": "~30%",
+          "label": "Pengurangan waktu penawaran"
+        },
+        {
+          "value": "2 mgg",
+          "label": "Waktu onboarding operator"
+        },
+        {
+          "value": "100%",
+          "label": "Kepatuhan invoicing tercapai"
+        },
+        {
+          "value": "100%",
+          "label": "Akurasi estimasi tercapai"
+        },
+        {
+          "value": "Visibilitas penuh",
+          "label": "Ke operasi lantai produksi dan tahapan manufaktur — sejak hari pertama",
+          "fullWidth": true
+        }
+      ]
+    },
+    "deployment": {
+      "label": "Deployment",
+      "title": "Berjalan dimana operasi Anda\nmemerlukan",
+      "options": [
+        {
+          "title": "Cloud terkelola vendor",
+          "description": "Hosting yang dikelola penuh dengan update, backup, dan patch keamanan otomatis. Terbaik untuk tim yang fokus pada operasi, bukan IT."
+        },
+        {
+          "title": "Cloud terkelola pelanggan",
+          "description": "Deploy di infrastruktur AWS, Azure, atau GCP sendiri. Kontrol penuh atas konfigurasi, akses, dan data. Cocok untuk organisasi yang capable secara IT."
+        },
+        {
+          "title": "Self-hosted on-premises",
+          "description": "Instalasi on-premises untuk kedaulatan data maksimum. Diperlukan untuk beberapa industri teregulasi. Paritas fitur penuh dengan opsi cloud."
+        }
+      ]
+    },
+    "timeline": {
+      "label": "Timeline implementasi tipikal",
+      "phases": [
+        {
+          "phase": "Fase 1",
+          "duration": "2–3 mgg",
+          "label": "Discovery & konfigurasi"
+        },
+        {
+          "phase": "Fase 2",
+          "duration": "2–3 mgg",
+          "label": "Migrasi data & testing"
+        },
+        {
+          "phase": "Fase 3",
+          "duration": "1–2 mgg",
+          "label": "Pelatihan & go-live"
+        },
+        {
+          "phase": "Fase 4",
+          "duration": "Berkelanjutan",
+          "label": "Dukungan pasca-peluncuran"
+        }
+      ]
+    },
+    "nesting": {
+      "label": "Juga dari Kenzap",
+      "title": "Mulai dengan nesting.\nHubungkan sisanya saat Anda siap.",
+      "description": "Kenzap Nesting adalah aplikasi desktop standalone gratis untuk nesting sheet berbasis DXF. Native di Windows dan macOS. Tanpa langganan, tanpa cloud, tanpa signup. Ketika operasi Anda berkembang, Kenzap Factory menghubungkan semuanya.",
+      "primaryCta": "Jelajahi Kenzap Nesting →",
+      "href": "/nesting",
+      "cardLabel": "Kenzap Nesting — download gratis",
+      "cardTitle": "Kemas lebih banyak. Limbah lebih sedikit. Potong lebih cepat.",
+      "cardDescription": "Drop part DXF, atur kuantitas, jalankan engine nesting, ekspor sheet siap potong. Preview langsung saat algoritma berjalan.",
+      "platforms": [
+        "Windows",
+        "macOS"
+      ]
+    },
+    "contact": {
+      "label": "Hubungi kami",
+      "title": "Lihat apakah Kenzap Factory\ncocok untuk operasi Anda",
+      "description": "Kami merespons dalam satu hari kerja. Tanpa proses sales — hanya percakapan langsung tentang apakah ini cocok untuk operasi Anda.",
+      "linkedinLabel": "LinkedIn",
+      "linkedinHref": "https://www.linkedin.com/in/pavel-lukasenko/",
+      "emailLabel": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com"
+    },
+    "footer": {
+      "nestingLabel": "Aplikasi nesting",
+      "nestingHref": "/nesting",
+      "emailLabel": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com",
+      "company": "© 2026 Kenzap Pte Ltd"
+    }
   },
-  "hero": {
-    "headline": "ERP yang dibangun untuk fabrikasi logam.",
-    "subheadline": "Produksi, perhitungan biaya, dan perencanaan yang dirancang untuk manufaktur berbasis pesanan.",
-    "intro": "Sistem ini dirancang khusus untuk fabrikator logam. Mendukung alur kerja produksi yang sesungguhnya, bukan solusi sementara berbasis akuntansi. Fokus pada job shop, produksi berdasarkan pesanan, dan kepatuhan regulasi.",
-    "primaryCta": "Hubungi kami",
-    "secondaryCta": "Lihat kesesuaian",
-    "watchDemo": "Lihat cara kerjanya"
-  },
-  "problem": {
-    "title": "Mengapa sistem ERP umum gagal untuk fabrikator logam",
-    "intro": "Kebanyakan sistem ERP dirancang berdasarkan akuntansi, bukan produksi. Akibatnya, fabrikator logam sering mengandalkan spreadsheet dan proses manual untuk mengelola pekerjaan dan pelaksanaan shop floor.",
-    "items": [
-      "Perhitungan biaya pekerjaan yang tidak akurat",
-      "Inventori logam tidak dilacak dengan benar",
-      "Visibilitas operasi shop floor yang buruk",
-      "Kurangnya optimasi pemotongan untuk sheet metal",
-      "Perencanaan produksi dikelola di luar sistem ERP",
-      "Tarif pajak produk yang bervariasi tidak ditangani secara otomatis"
-    ],
-    "conclusion": "Masalah-masalah ini meningkatkan risiko kepatuhan, mengurangi efisiensi, dan menurunkan kualitas layanan."
-  },
-  "whoFor": {
-    "title": "Untuk siapa sistem ini dirancang",
-    "intro": "ERP ini dirancang untuk perusahaan fabrikasi logam dengan:",
-    "criteria": [
-      "Kebutuhan perhitungan biaya pekerjaan dan pelacakan material yang akurat",
-      "Kebutuhan manajemen stok logam dan inventori sheet",
-      "Kebutuhan optimasi pemotongan untuk laser, plasma, atau waterjet",
-      "Kewajiban kepatuhan e-invoicing EU",
-      "Kebutuhan integrasi sistem akuntansi Eropa",
-      "Kebutuhan kepatuhan GDPR dan perlindungan data EU"
-    ],
-    "typical": "Pengguna tipikal meliputi:",
-    "users": [
-      "Job shop",
-      "Manufaktur kontrak",
-      "Fabrikator yang memproduksi suku cadang kustom atau batch kecil",
-      "Workshop sheet metal"
-    ],
-    "notFor": "Sistem ini tidak dirancang untuk:",
-    "excluded": [
-      "Bisnis distribusi murni",
-      "Manufaktur proses",
-      "Produksi massal yang sangat terstandarisasi"
-    ]
-  },
-  "manufacturing": {
-    "title": "Desain yang mengutamakan manufaktur",
-    "intro": "Sistem dibangun berdasarkan konsep manufaktur nyata yang digunakan dalam fabrikasi logam, dan terus beradaptasi dengan persyaratan kepatuhan Eropa yang kompleks dan berkembang.",
-    "features": [
-      {
-        "name": "Pelacakan Alur Kerja",
-        "desc": "Lacak setiap pekerjaan dari penawaran hingga pengiriman dengan visibilitas alur kerja lengkap dan detail tingkat operasi",
-        "icon": "cog"
+  "nestingHomepage": {
+    "meta": {
+      "title": "Kenzap Nesting — Nesting Sheet DXF untuk Fabrikator Logam",
+      "description": "Perangkat lunak nesting sheet DXF native gratis untuk fabrikator logam. Impor part DXF, optimasi sheet, preview langsung, dan ekspor layout siap potong."
+    },
+    "nav": {
+      "workflow": "Cara kerja",
+      "features": "Fitur",
+      "factory": "Factory ERP",
+      "factoryMobile": "Factory",
+      "cta": "Download gratis →",
+      "ctaHref": "https://github.com/kenzap/nesting-app"
+    },
+    "hero": {
+      "eyebrow": "Perangkat lunak nesting DXF",
+      "headlineLine1": "Kemas lebih banyak.",
+      "headlineLine2Prefix": "Limbah ",
+      "headlineLine2Accent": "lebih sedikit.",
+      "headlineLine3": "Potong lebih cepat.",
+      "subheadline": "Aplikasi nesting desktop native untuk fabrikator logam. Drop part DXF Anda, atur kuantitas, jalankan engine — dapatkan sheet yang dikemas penuh siap untuk dipotong.",
+      "primaryCta": "↓ Download gratis",
+      "primaryCtaHref": "https://github.com/kenzap/nesting-app/releases",
+      "secondaryCta": "Lihat di produksi →",
+      "secondaryCtaHref": "/#case-study",
+      "badges": {
+        "windows": "Windows x64",
+        "mac": "macOS Apple Silicon",
+        "openSource": "Open source"
       },
-      {
-        "name": "Perencanaan Produksi",
-        "desc": "Kelola kapasitas produksi dan jadwalkan operasi secara efisien di seluruh shop floor Anda",
-        "icon": "factory"
-      },
-      {
-        "name": "Perencanaan Material",
-        "desc": "MRP yang akurat didukung pelacakan bahan mentah, visibilitas inventori sheet metal, dan manajemen stok otomatis",
-        "icon": "format-list-checks"
-      },
-      {
-        "name": "Optimasi Pemotongan",
-        "desc": "Algoritma nesting terintegrasi meminimalkan limbah dan memaksimalkan utilisasi sheet untuk pemotongan laser, plasma, dan waterjet",
-        "icon": "content-cut"
-      },
-      {
-        "name": "Pelaporan Produksi Real-Time",
-        "desc": "Antarmuka yang dioptimalkan untuk panel sentuh untuk pelacakan dan pelaporan pekerjaan real-time oleh operator mesin",
-        "icon": "tablet"
-      },
-      {
-        "name": "Perhitungan Biaya Berbasis Pekerjaan",
-        "desc": "Kalkulasi biaya akurat per pekerjaan dengan pelacakan material, tenaga kerja, overhead, dan scrap",
-        "icon": "calculator"
-      },
-      {
-        "name": "E-Invoicing Peppol",
-        "desc": "Hasilkan faktur elektronik yang patuh EU mengikuti standar Peppol BIS Billing 3.0",
-        "icon": "file-document-outline"
-      },
-      {
-        "name": "PPN & Kepatuhan",
-        "desc": "Penanganan PPN yang patuh lokal dengan pengecualian dan integrasi sistem akuntansi nasional",
-        "icon": "shield-check"
-      },
-      {
-        "name": "Manajemen Pemasok",
-        "desc": "Lacak pemasok, pesanan pembelian, biaya material, dan jadwal pengiriman",
-        "icon": "truck"
-      },
-      {
-        "name": "Open Source",
-        "desc": "Dibangun dengan teknologi open source tanpa vendor lock-in, memastikan portabilitas data penuh dan independensi sistem",
-        "icon": "code"
-      },
-      {
-        "name": "Perlindungan Data Eropa",
-        "desc": "Penanganan data yang patuh GDPR dengan kedaulatan data penuh untuk operasi Eropa",
-        "icon": "puzzle"
-      },
-      {
-        "name": "Wawasan Berbasis AI",
-        "desc": "Wawasan bertenaga AI untuk mengidentifikasi bottleneck produksi dan meningkatkan akurasi perhitungan biaya pekerjaan",
-        "icon": "brain"
+      "previewLabel": "Preview nesting langsung"
+    },
+    "workflow": {
+      "label": "Cara kerja",
+      "titleLine1": "Dari DXF ke siap potong",
+      "titleLine2": "dalam enam langkah",
+      "steps": [
+        {
+          "title": "Tambah part DXF",
+          "description": "Drag dan drop satu atau lebih file DXF. Engine mendeteksi semua bentuk yang bisa di-nest otomatis, termasuk file multi-shape."
+        },
+        {
+          "title": "Review geometri",
+          "description": "Atur kuantitas per part. Review potongan internal, geometri engraving, dan penugasan layer per shape sebelum menjalankan."
+        },
+        {
+          "title": "Konfigurasi sheet",
+          "description": "Atur dimensi pelat, perilaku strip, spasi, langkah rotasi, margin sheet, dan gaya engraving."
+        },
+        {
+          "title": "Jalankan engine",
+          "description": "Klik RUN. Binary native menangani penempatan — tanpa upload cloud, tanpa menunggu. Hasil streaming kembali secara langsung."
+        },
+        {
+          "title": "Preview langsung",
+          "description": "Saksikan sheet terisi saat algoritma bekerja. Lihat statistik utilisasi dan jumlah sheet terupdate secara real-time."
+        },
+        {
+          "title": "Ekspor ke DXF",
+          "description": "Ekspor sheet final dengan semua struktur layer asli, rekonstruksi geometri, dan geometri engraving yang dipertahankan."
+        }
+      ]
+    },
+    "features": {
+      "label": "Kapabilitas inti",
+      "titleLine1": "Semua yang operasi pemotongan",
+      "titleLine2": "Anda benar-benar butuhkan",
+      "cards": {
+        "performance": {
+          "tag": "Performa native",
+          "title": "Tanpa cloud. Tanpa browser. Hanya cepat.",
+          "description": "Engine nesting berjalan sebagai binary native di mesin Anda. File DXF besar diproses dalam detik, bukan menit. Bekerja sepenuhnya offline — tanpa langganan, tanpa upload, tanpa latency."
+        },
+        "dxf": {
+          "tag": "Fidelitas DXF",
+          "title": "Dukungan geometri penuh",
+          "description": "Lines, arcs, circles, polylines, ellipses, dan splines semua didukung. Geometri potongan internal dan layer engraving dipertahankan secara terpisah melalui ekspor.",
+          "chips": [
+            "Lines",
+            "Arcs",
+            "Circles",
+            "Polylines",
+            "Ellipses",
+            "Splines"
+          ]
+        },
+        "engraving": {
+          "tag": "Engraving",
+          "title": "Dua gaya engraving terintegrasi",
+          "description": "Mode sederhana untuk lettering single-line pada material tipis. Mode stroked untuk lettering outlined dengan kontur terisi. Dikonfigurasi per job, dipertahankan dalam ekspor DXF."
+        },
+        "sheet": {
+          "tag": "Kecerdasan sheet",
+          "title": "Optimasi ukuran pelat",
+          "description": "Engine menemukan jumlah pelat minimum yang diperlukan untuk job Anda. Konfigurasi margin sheet, spasi part, langkah orientasi, dan alignment strip secara independen."
+        },
+        "workflow": {
+          "tag": "Alur kerja",
+          "title": "Preview langsung saat algoritma berjalan",
+          "description": "Anda tidak menunggu engine selesai sebelum melihat hasil. Sheet terisi secara real-time saat penempatan dikonfirmasi. Ubah kuantitas atau pengaturan dan jalankan ulang dalam detik.",
+          "chips": [
+            "Deteksi DXF multi-shape",
+            "Kontrol kuantitas per-shape",
+            "Preview layer-aware",
+            "Ekspor JSON polygon"
+          ]
+        }
       }
-    ],
-    "outro": "Data produksi mengalir dari penawaran hingga pengiriman. Realitas operasional tercermin dalam perencanaan dan perhitungan biaya."
-  },
-  "workflow": {
-    "title": "Dari penawaran hingga pengiriman",
-    "intro": "Sistem menghubungkan langkah-langkah produksi utama dalam satu alur kerja:",
-    "steps": [
-      {
-        "name": "Penawaran & Estimasi",
-        "desc": "Hitung biaya secara akurat dengan material, tenaga kerja, waktu mesin, dan optimasi pemotongan"
+    },
+    "bridge": {
+      "label": "Bagian dari gambaran yang lebih besar",
+      "title": "Hubungkan nesting ke seluruh operasi Anda",
+      "copy": "Kenzap Nesting bekerja sebagai tool desktop standalone hari ini. Ketika Anda siap, Kenzap Factory menghubungkan output nesting Anda langsung ke kalkulasi biaya job, perencanaan produksi, dan inventori — sehingga limbah terlacak dan dikutip sejak hari pertama.",
+      "cta": "Lihat Kenzap Factory ERP →",
+      "standaloneLabel": "STANDALONE",
+      "standaloneTitle": "Kenzap Nesting",
+      "standaloneText": "DXF masuk → sheet teroptimasi keluar. Gratis, open source, desktop native.",
+      "connectsTo": "terhubung ke",
+      "platformLabel": "PLATFORM PENUH",
+      "platformTitle": "Kenzap Factory",
+      "platformText": "Penawaran, kalkulasi biaya job, pelacakan lantai produksi, e-invoicing. ERP siap-UE."
+    },
+    "download": {
+      "label": "Mulai hari ini",
+      "title": "Gratis. Native. Open source.",
+      "sub": "Download build untuk platform Anda. Tanpa signup, tanpa lisensi key, tanpa ketergantungan cloud. Bekerja sejak hari pertama.",
+      "windows": {
+        "href": "https://github.com/kenzap/nesting-app/releases",
+        "os": "Windows",
+        "label": "Download x64",
+        "note": "installer .exe"
       },
-      {
-        "name": "Perencanaan Produksi",
-        "desc": "Jadwalkan operasi di seluruh work center dengan pemeriksaan ketersediaan inventori dan optimasi pemotongan"
+      "mac": {
+        "href": "https://github.com/kenzap/nesting-app/releases",
+        "os": "macOS",
+        "label": "Apple Silicon",
+        "note": ".dmg — M1-M5"
       },
-      {
-        "name": "Pelaksanaan Shop Floor",
-        "desc": "Antarmuka panel sentuh untuk pelacakan pekerjaan, pencatatan waktu, dan kontrol kualitas"
-      },
-      {
-        "name": "Faktur & Kepatuhan",
-        "desc": "Hasilkan e-faktur dan surat jalan yang patuh Peppol dengan tarif PPN yang benar"
-      },
-      {
-        "name": "Pengiriman & Penyerahan",
-        "desc": "Kemas, hapus item bundel, dan kirim pekerjaan ke pelanggan"
-      },
-      {
-        "name": "Analitik",
-        "desc": "Lacak biaya aktual vs estimasi dengan transparansi lengkap dan akuntansi scrap"
-      }
-    ],
-    "conclusion": "Tujuannya adalah konsistensi dan keterlacakan di seluruh siklus hidup pekerjaan."
-  },
-  "caseStudy": {
-    "title": "Digunakan dalam lingkungan produksi nyata",
-    "company": "Skarda Nams SIA",
-    "industry": "Fabrikasi Logam & Suku Cadang Kustom",
-    "region": "Eropa Timur",
-    "employees": "20 karyawan, 2 mesin CNC",
-    "challenge": "Tantangan",
-    "challengeText": "Skarda Nams kesulitan dengan penawaran yang akurat menggunakan berbagai jenis logam, pembaruan inventori langsung, kemampuan write-off logam, perencanaan produksi, faktur yang patuh, perhitungan biaya yang tidak akurat dan pelacakan berbasis kertas.",
-    "solution": "Solusi",
-    "solutionText": "Mengimplementasikan Kenzap Factory dengan modul penawaran, routing produksi, dan pelaksanaan shop floor yang terintegrasi. Operator mesin mengadopsi antarmuka panel sentuh dalam dua minggu setelah deployment. E-invoicing Peppol dikonfigurasi untuk memenuhi persyaratan kepatuhan EU. Integrasi dengan software akuntansi Moneo untuk pelaporan pajak yang disederhanakan.",
-    "results": "Hasil",
-    "resultItems": [
-      "Pengurangan waktu penawaran melalui kalkulasi material otomatis",
-      "Peningkatan akurasi perhitungan biaya pekerjaan",
-      "Visibilitas lengkap ke operasi shop floor dan tahapan manufaktur",
-      "Kepatuhan e-invoicing Peppol tercapai, dengan integrasi ke software akuntansi BMD",
-      "Pengurangan limbah material melalui optimasi pemotongan",
-      "Perencanaan produksi lebih cepat dengan pemeriksaan inventori real-time",
-      "Kepatuhan GDPR dan residensi data EU dipelihara sepanjang operasi"
-    ],
-    "quote": "Kami memiliki sistem yang bekerja sesuai cara shop floor kami bekerja. Para operator langsung beradaptasi dengan antarmukanya, dan perhitungan biaya pekerjaan kami sekarang dapat diandalkan. Tarif pajak ditangani secara otomatis berdasarkan jenis produk, yang menghemat waktu dan mengurangi masalah selama faktur.",
-    "quoteAuthor": "Manajer Klien, Skarda Nams SIA",
-    "watchCase": "Lihat studi kasus"
-  },
-  "implementation": {
-    "title": "Pendekatan implementasi",
-    "intro": "Implementasi mengikuti struktur standar yang dirancang untuk meminimalkan gangguan.",
-    "principles": [
-      "Setup hardware dan instalasi software pada sistem pabrik",
-      "Konfigurasi katalog produk dan database inventori logam",
-      "Penugasan peran pengguna dan definisi tanggung jawab",
-      "Kustomisasi template dokumen (surat jalan, faktur, laporan)",
-      "Pelatihan komprehensif untuk operator dan tim manajemen",
-      "Integrasi sistem dan sinkronisasi pelaporan keuangan"
-    ],
-    "timeline": "Timeline tipikal:",
-    "phases": [
-      "Penemuan & konfigurasi: 2-3 minggu",
-      "Migrasi data & pengujian: 2-3 minggu",
-      "Pelatihan & go-live: 1-2 minggu",
-      "Dukungan pasca-peluncuran: berkelanjutan"
-    ],
-    "outro": "Implementasi dapat diserahkan oleh konsultan dengan latar belakang manufaktur dan ERP atau oleh engineer Kenzap secara langsung."
-  },
-  "deployment": {
-    "title": "Opsi deployment",
-    "intro": "Sistem mendukung berbagai model deployment untuk menyesuaikan kebutuhan operasional, regulasi, dan kedaulatan data.",
-    "options": [
-      {
-        "name": "Cloud yang dikelola vendor",
-        "desc": "Hosting yang sepenuhnya dikelola di pusat data Eropa dengan pembaruan otomatis, backup, dan patch keamanan. Ideal untuk perusahaan yang fokus pada operasi.",
-        "icon": "cloud-check"
-      },
-      {
-        "name": "Cloud yang dikelola pelanggan",
-        "desc": "Deploy pada infrastruktur cloud Anda sendiri (AWS, Azure, GCP) dengan kontrol penuh atas konfigurasi dan akses. Cocok untuk organisasi yang memiliki kemampuan IT.",
-        "icon": "cloud-cog"
-      },
-      {
-        "name": "Deployment self-hosted",
-        "desc": "Instalasi on-premises untuk kedaulatan data maksimum dan kontrol. Diperlukan untuk beberapa industri yang diregulasi atau operasi yang sangat sensitif.",
-        "icon": "server"
-      }
-    ],
-    "outro": "Semua opsi deployment menggunakan software yang sama, mengikuti jalur upgrade yang sama, dan mempertahankan paritas fitur. Data tetap berada di yurisdiksi Eropa untuk kepatuhan GDPR."
-  },
-  "contact": {
-    "title": "Kontak",
-    "intro": "Jika Anda ingin memahami apakah sistem ini cocok untuk operasi Anda, hubungi kami untuk diskusi awal. Kami bekerja dalam bahasa Inggris dan bahasa Eropa lainnya.",
-    "namePlaceholder": "Nama Anda",
-    "emailPlaceholder": "Alamat email",
-    "companyPlaceholder": "Nama perusahaan",
-    "messagePlaceholder": "Ceritakan tentang setup produksi Anda: jumlah mesin, ukuran pekerjaan tipikal, sistem saat ini...",
-    "submit": "Kirim pesan",
-    "sending": "Mengirim...",
-    "success": "Pesan berhasil dikirim. Kami akan menghubungi Anda dalam 1-2 hari kerja.",
-    "error": "Gagal mengirim pesan. Silakan email kami langsung di support@kenzap.com",
-    "or": "atau",
-    "linkedin": "Terhubung di LinkedIn",
-    "email": "Email kami langsung"
-  },
-  "footer": {
-    "tagline": "Software untuk operasi manufaktur",
-    "company": "© 2026 Kenzap. Semua hak dilindungi.",
-    "note": "Informasi produk dapat berubah. Ketersediaan dapat bervariasi berdasarkan wilayah.",
-    "languages": "Bahasa"
+      "openSourcePrefix": "Source code dan instruksi build di",
+      "openSourceHref": "https://github.com/kenzap/nesting-app",
+      "openSourceLink": "GitHub",
+      "openSourceLicense": "Lisensi Apache-2.0"
+    },
+    "footer": {
+      "factory": "Factory",
+      "email": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com",
+      "company": "© 2026 Kenzap Pte Ltd"
+    }
   }
 }

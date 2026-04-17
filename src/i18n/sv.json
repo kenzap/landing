@@ -1,240 +1,406 @@
 {
-  "nav": {
-    "problem": "Problem",
-    "solution": "Lösning",
-    "features": "Funktioner",
-    "customers": "Kunder",
-    "contact": "Kontakt"
+  "factoryHomepage": {
+    "meta": {
+      "title": "Kenzap Factory — Produktionsstyrning för Metallbearbetare",
+      "description": "Produktions-, kalkylerings- och regelefterlevnadsprogram byggt specifikt för metallbearbetare. Jobbverkstäder, laserskärning, Peppol e-fakturering. EU-redo."
+    },
+    "nav": {
+      "problem": "Problem",
+      "features": "Funktioner",
+      "caseStudy": "Fallstudie",
+      "nesting": "Nesting-app",
+      "nestingHref": "/nesting",
+      "cta": "Kontakta oss →"
+    },
+    "hero": {
+      "eyebrow": "Fabriksstyrningsprogram",
+      "headlineTop": "Byggt för",
+      "strikeWord": "ekonomer.",
+      "headlineAccent": "metallbearbetare.",
+      "subheadline": "Produktionsstyrning byggt för jobbbaserad metallbearbetning — inte anpassat från generisk ekonomiprogramvara.",
+      "primaryCta": "Boka demo →",
+      "secondaryCta": "Se verkliga resultat ↓",
+      "interfaceLabel": "Kenzap Factory-gränssnitt",
+      "stats": [
+        {
+          "value": "~30%",
+          "label": "Snabbare offertarbete"
+        },
+        {
+          "value": "2 v",
+          "label": "Operatörsutbildning"
+        },
+        {
+          "value": "e-fakt",
+          "label": "Regelefterlevnad redo"
+        }
+      ]
+    },
+    "problem": {
+      "label": "Problemet",
+      "title": "Generisk programvara byggdes för\nekonomer, inte metallbearbetare.",
+      "quote": "\"Vi har ett system som fungerar som vårt verkstadsgolv fungerar. Operatörerna anpassade sig omedelbart, och vår jobbkalkylering är nu pålitlig.\"",
+      "quoteAuthor": "— KUNDANSVARIG, SKARDA NAMS SIA · LETTLAND",
+      "items": [
+        {
+          "title": "Jobbkalkylering är gissningar.",
+          "description": "Materialtyper, skärtid, spill — de flesta ERP-system kan inte modellera det. Du får reda på att du förlorade pengar efter att jobbet skickats."
+        },
+        {
+          "title": "Plåtlager är ospårat.",
+          "description": "Du vet hur många delar du har, inte hur många hela och partiella plåtar — så du överbeställer eller får brist."
+        },
+        {
+          "title": "Produktionsplanering sker i kalkylblad.",
+          "description": "Schemaläggning, kapacitetskontroller och skäroptimering sker utanför systemet, i filer ingen annan kan se."
+        },
+        {
+          "title": "Regelefterlevnad är manuell.",
+          "description": "Peppol e-fakturering, rörliga momsatser, GDPR — hanteras med provisoriska lösningar, inte systemet."
+        },
+        {
+          "title": "Verkstadsgolvet är osynligt.",
+          "description": "Chefer får reda på förseningar och kvalitetsproblem för sent, eftersom operatörerna inte har något system att rapportera till."
+        }
+      ]
+    },
+    "workflow": {
+      "label": "Så fungerar det",
+      "title": "Från offert till leverans,\ni ett sammankopplat arbetsflöde",
+      "steps": [
+        {
+          "title": "Offertgivning & kalkylering",
+          "description": "Beräkna jobbkostnader korrekt — material, arbetskraft, maskintid, skäroptimering — innan du förbinder dig till ett pris."
+        },
+        {
+          "title": "Produktionsplanering",
+          "description": "Schemalägg operationer över arbetsstationer med direkta lagerkontroller och nestingoptimering inbyggt."
+        },
+        {
+          "title": "Verkstadsgolvskörning",
+          "description": "Pekskärmsgränssnitt för operatörer. Jobbspårning, tidsregistrering och kvalitetskontroll vid maskinen."
+        },
+        {
+          "title": "Fakturering & regelefterlevnad",
+          "description": "Peppol-kompatibla e-fakturor och fraktsedlar genereras automatiskt med korrekta momsatser per produkttyp."
+        },
+        {
+          "title": "Leverans & utskick",
+          "description": "Packa jobb, avskriv buntade artiklar och skicka med fullständig dokumentation. Lager uppdateras automatiskt."
+        },
+        {
+          "title": "Analys",
+          "description": "Faktisk mot beräknad kostnadsjämförelse per jobb. Fullständig spillredovisning och synlighet av produktionsflaskhalsar."
+        }
+      ]
+    },
+    "features": {
+      "label": "Kärnfunktioner",
+      "title": "Allt en metallbearbetare\nbehöver i ett system",
+      "items": [
+        {
+          "tag": "Produktion",
+          "title": "Arbetsflödesspårning",
+          "description": "Spåra varje jobb från offert till leverans med operationsnivådetaljer. Vet exakt var varje jobb befinner sig, i realtid."
+        },
+        {
+          "tag": "Lager",
+          "title": "Plåt-MRP",
+          "description": "Spåra lager per plåt, inte bara antal delar. Hela och partiella plåtar, flera metalltyper, automatiska ombeställningsutlösare."
+        },
+        {
+          "tag": "Skärning",
+          "title": "Inbyggd nesting",
+          "description": "Nesting-algoritmer minimerar materialspill för laser, plasma och vattenskärning — kopplade direkt till jobbkalkylering så spill spåras automatiskt.",
+          "accent": true
+        },
+        {
+          "tag": "Kalkylering",
+          "title": "Jobbbaserad kalkylering",
+          "description": "Exakt kostnad per jobb: material, arbetskraft, omkostnader och spill. Jämför beräknat mot faktiskt på varje jobb du skickar."
+        },
+        {
+          "tag": "Regelefterlevnad",
+          "title": "Peppol e-fakturering",
+          "description": "EU-kompatibel elektronisk fakturering via Peppol BIS Billing 3.0. Momsatser hanteras automatiskt efter produkttyp och kundregion."
+        },
+        {
+          "tag": "Verkstadsgolv",
+          "title": "Pekskärmsgränssnitt",
+          "description": "Designat för operatörer vid maskinen. Jobbspårning, tidsregistrering, kvalitetskontroll — implementerat inom två veckor på Skarda Nams."
+        },
+        {
+          "tag": "Leverantörer",
+          "title": "Leverantörshantering",
+          "description": "Inköpsorder, materialkostnader och leveransscheman spårade i samma system som produktionen."
+        },
+        {
+          "tag": "AI",
+          "title": "AI-drivna insikter",
+          "description": "Identifiera produktionsflaskhalsar och förbättra jobbkalkyleringsnoggranhet med AI-driven analys av din verkliga produktionsdata."
+        },
+        {
+          "tag": "Data",
+          "title": "Öppen källkod & GDPR",
+          "description": "Ingen leverantörsinlåsning. Full dataportabilitet. GDPR-kompatibel med EU-datalagring. Installera på din egen infrastruktur vid behov."
+        }
+      ]
+    },
+    "caseStudy": {
+      "label": "Verkliga resultat",
+      "title": "Används i produktion\nhös Skarda Nams SIA",
+      "meta": "METALLBEARBETNING · LETTLAND · 20 ANSTÄLLDA · 2 CNC-MASKINER",
+      "challengeLabel": "Utmaning",
+      "challengeText": "Skarda Nams offererade manuellt över flera metalltyper, körde lager på papper och kunde inte producera kompatibla fakturor utan provisoriska lösningar. Jobbkalkylering var oprecis. Verkstadsgolvssyn var noll.",
+      "solutionLabel": "Lösning",
+      "solutionText": "Implementerade Kenzap Factory med integrerade offererings-, produktionsrouting- och verkstadsgolvskörningsmoduler. Peppol e-fakturering konfigurerad för EU-efterlevnad. Integrerad med Moneo bokföringsprogram.",
+      "quote": "\"Operatörerna anpassade sig till gränssnittet omedelbart, och vår jobbkalkylering är nu pålitlig. Skattesatser hanteras automatiskt — bara det sparar oss betydande tid varje månad.\"",
+      "quoteAuthor": "— KUNDANSVARIG, SKARDA NAMS SIA",
+      "results": [
+        {
+          "value": "~30%",
+          "label": "Minskning av offerttid"
+        },
+        {
+          "value": "2 v",
+          "label": "Operatörsutbildningstid"
+        },
+        {
+          "value": "100%",
+          "label": "Faktureringsefterlevnad uppnådd"
+        },
+        {
+          "value": "100%",
+          "label": "Kalkyleringsnoggranhet uppnådd"
+        },
+        {
+          "value": "Full synlighet",
+          "label": "I verkstadsgolvsoperationer och tillverkningssteg — från dag ett",
+          "fullWidth": true
+        }
+      ]
+    },
+    "deployment": {
+      "label": "Driftsättning",
+      "title": "Körs där din\nverksamhet kräver",
+      "options": [
+        {
+          "title": "Leverantörshanterat moln",
+          "description": "Fullständigt hanterad hosting med automatiska uppdateringar, säkerhetskopior och säkerhetsuppdateringar. Bäst för team fokuserade på drift, inte IT."
+        },
+        {
+          "title": "Kundhanterat moln",
+          "description": "Installera på din egen AWS-, Azure- eller GCP-infrastruktur. Full kontroll över konfiguration, åtkomst och data. Lämpligt för IT-kapabla organisationer."
+        },
+        {
+          "title": "Egen hosting lokalt",
+          "description": "Lokal installation för maximal datasäkerhet. Krävs för vissa reglerade industrier. Full funktionsparitet med molnalternativ."
+        }
+      ]
+    },
+    "timeline": {
+      "label": "Typisk implementeringstidslinje",
+      "phases": [
+        {
+          "phase": "Fas 1",
+          "duration": "2–3 v",
+          "label": "Kartläggning & konfiguration"
+        },
+        {
+          "phase": "Fas 2",
+          "duration": "2–3 v",
+          "label": "Datamigrering & testning"
+        },
+        {
+          "phase": "Fas 3",
+          "duration": "1–2 v",
+          "label": "Utbildning & driftsättning"
+        },
+        {
+          "phase": "Fas 4",
+          "duration": "Pågående",
+          "label": "Support efter lansering"
+        }
+      ]
+    },
+    "nesting": {
+      "label": "Även från Kenzap",
+      "title": "Börja med nesting.\nAnslut resten när du är redo.",
+      "description": "Kenzap Nesting är en kostnadsfri fristående skrivbordsapp för DXF-baserad plåtnesting. Inbyggt på Windows och macOS. Ingen prenumeration, inget moln, ingen registrering. När din verksamhet växer kopplar Kenzap Factory ihop allt.",
+      "primaryCta": "Utforska Kenzap Nesting →",
+      "href": "/nesting",
+      "cardLabel": "Kenzap Nesting — kostnadsfri nedladdning",
+      "cardTitle": "Packa mer. Slösa mindre. Skär snabbare.",
+      "cardDescription": "Släpp DXF-delar, ange kvantiteter, kör nesting-motorn, exportera skärklara plåtar. Direktförhandsvisning medan algoritmen körs.",
+      "platforms": [
+        "Windows",
+        "macOS"
+      ]
+    },
+    "contact": {
+      "label": "Hör av dig",
+      "title": "Se om Kenzap Factory\npassar din verksamhet",
+      "description": "Vi svarar inom en arbetsdag. Ingen säljprocess — bara en direkt diskussion om huruvida detta passar din verksamhet.",
+      "linkedinLabel": "LinkedIn",
+      "linkedinHref": "https://www.linkedin.com/in/pavel-lukasenko/",
+      "emailLabel": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com"
+    },
+    "footer": {
+      "nestingLabel": "Nesting-app",
+      "nestingHref": "/nesting",
+      "emailLabel": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com",
+      "company": "© 2026 Kenzap Pte Ltd"
+    }
   },
-  "hero": {
-    "headline": "ERP byggd för metallfabrikation.",
-    "subheadline": "Produktion, kostnadskalkylering och planering designad för orderbaserad tillverkning.",
-    "intro": "Detta system är specifikt designat för metallfabrikatörer. Det stödjer verkliga produktionsarbetsflöden, inte redovisningsdrivna lösningar. Fokus ligger på jobbverkstäder, tillverkningsorder och regelefterlevnad.",
-    "primaryCta": "Prata med oss",
-    "secondaryCta": "Se om detta passar",
-    "watchDemo": "Se hur det fungerar"
-  },
-  "problem": {
-    "title": "Varför generiska ERP-system misslyckas för metallfabrikatörer",
-    "intro": "De flesta ERP-system är designade kring redovisning, inte produktion. Som resultat förlitar sig metallfabrikatörer ofta på kalkylblad och manuella processer för att hantera jobb och verkstadsgolvsutförande.",
-    "items": [
-      "Felaktig jobbkostnadskalkylering",
-      "Metallager spåras inte korrekt",
-      "Dålig insyn i verkstadsgolvsoperationer",
-      "Brist på skäroptimering för plåt",
-      "Produktionsplanering hanteras utanför ERP:n",
-      "Variabla produktskattesatser hanteras inte automatiskt"
-    ],
-    "conclusion": "Dessa problem ökar regelefterlevnadsrisken, minskar effektiviteten och försämrar servicekvaliteten."
-  },
-  "whoFor": {
-    "title": "Vem detta system är designat för",
-    "intro": "Detta ERP är designat för metallfabrikationsföretag med:",
-    "criteria": [
-      "Ett behov av noggrann jobbkostnadskalkylering och materialspårning",
-      "Hantering av metallager och plåtlager",
-      "Skäroptimeringsbehov för laser, plasma eller vattenskärning",
-      "EU e-faktureringsefterlevnadskrav",
-      "Europeiska redovisningssystemintegrationskrav",
-      "GDPR och EU dataskyddsefterlevnadsbehov"
-    ],
-    "typical": "Typiska användare inkluderar:",
-    "users": [
-      "Jobbverkstäder",
-      "Kontraktstillverkare",
-      "Fabrikatörer som producerar anpassade eller småseriedelar",
-      "Plåtverkstäder"
-    ],
-    "notFor": "Detta system är inte designat för:",
-    "excluded": [
-      "Rena distributionsverksamheter",
-      "Processtillverkning",
-      "Högt standardiserad massproduktion"
-    ]
-  },
-  "manufacturing": {
-    "title": "Tillverkningscentrerad design",
-    "intro": "Systemet är byggt kring verkliga tillverkningskoncept som används inom metallfabrikation, och det anpassar sig kontinuerligt till komplexa och utvecklande europeiska efterlevnadskrav.",
-    "features": [
-      {
-        "name": "Arbetsflödesspårning",
-        "desc": "Spåra varje jobb från offert till leverans med fullständig arbetsflödesöverblick och operationsnivådetaljer",
-        "icon": "cog"
+  "nestingHomepage": {
+    "meta": {
+      "title": "Kenzap Nesting — DXF-plåtnesting för Metallbearbetare",
+      "description": "Kostnadsfri inbyggd DXF-plåtnestingprogramvara för metallbearbetare. Importera DXF-delar, optimera plåtar, förhandsgranska direkt och exportera skärklara layouter."
+    },
+    "nav": {
+      "workflow": "Så fungerar det",
+      "features": "Funktioner",
+      "factory": "Factory ERP",
+      "factoryMobile": "Factory",
+      "cta": "Ladda ner gratis →",
+      "ctaHref": "https://github.com/kenzap/nesting-app"
+    },
+    "hero": {
+      "eyebrow": "DXF nesting-programvara",
+      "headlineLine1": "Packa mer.",
+      "headlineLine2Prefix": "Slösa ",
+      "headlineLine2Accent": "mindre",
+      "headlineLine3": "Skär snabbare.",
+      "subheadline": "En inbyggd skrivbords-nesting-app för metallbearbetare. Släpp dina DXF-delar, ange kvantiteter, kör motorn — få en fullpackad plåt redo att skära.",
+      "primaryCta": "↓ Ladda ner gratis",
+      "primaryCtaHref": "https://github.com/kenzap/nesting-app/releases",
+      "secondaryCta": "Se det i produktion →",
+      "secondaryCtaHref": "/#case-study",
+      "badges": {
+        "windows": "Windows x64",
+        "mac": "macOS Apple Silicon",
+        "openSource": "Öppen källkod"
       },
-      {
-        "name": "Produktionsplanering",
-        "desc": "Hantera produktionskapacitet och schemalägg operationer effektivt över ditt verkstadsgolv",
-        "icon": "factory"
-      },
-      {
-        "name": "Materialplanering",
-        "desc": "Noggrann MRP driven av råmaterialspårning, plåtlageröverblick och automatiserad lagerhantering",
-        "icon": "format-list-checks"
-      },
-      {
-        "name": "Skäroptimering",
-        "desc": "Inbyggda nästlingsalgoritmer minimerar avfall och maximerar plåtutnyttjande för laser-, plasma- och vattenskärning",
-        "icon": "content-cut"
-      },
-      {
-        "name": "Realtidsproduktionsrapportering",
-        "desc": "Pekpaneloptimerat gränssnitt för realtidsjobbspårning och rapportering av maskinoperatörer",
-        "icon": "tablet"
-      },
-      {
-        "name": "Jobbbaserad kostnadskalkylering",
-        "desc": "Noggrann kostnadsberäkning per jobb med material-, arbets-, overhead- och spillspårning",
-        "icon": "calculator"
-      },
-      {
-        "name": "Peppol E-fakturering",
-        "desc": "Generera EU-kompatibla elektroniska fakturor enligt Peppol BIS Billing 3.0-standard",
-        "icon": "file-document-outline"
-      },
-      {
-        "name": "Moms & Efterlevnad",
-        "desc": "Lokalt kompatibel momshantering med undantag och nationell redovisningssystemintegration",
-        "icon": "shield-check"
-      },
-      {
-        "name": "Leverantörshantering",
-        "desc": "Spåra leverantörer, inköpsorder, materialkostnader och leveransscheman",
-        "icon": "truck"
-      },
-      {
-        "name": "Rapportering & Analys",
-        "desc": "Realtidsdashboards för produktionseffektivitet, jobblönsamhet och resursutnyttjande",
-        "icon": "chart-bar"
-      },
-      {
-        "name": "Europeiskt dataskydd",
-        "desc": "GDPR-kompatibel datahantering med full datasuveränitet för europeiska verksamheter",
-        "icon": "puzzle"
-      },
-      {
-        "name": "AI-drivna insikter",
-        "desc": "AI-drivna insikter för att identifiera produktionsflaskhalsar och förbättra jobbkostnadskalkyleringens noggrannhet",
-        "icon": "brain"
+      "previewLabel": "Direktnesting-förhandsvisning"
+    },
+    "workflow": {
+      "label": "Så fungerar det",
+      "titleLine1": "Från DXF till skärklar",
+      "titleLine2": "på sex steg",
+      "steps": [
+        {
+          "title": "Lägg till DXF-delar",
+          "description": "Dra och släpp en eller flera DXF-filer. Motorn upptäcker alla nestbara former automatiskt, inklusive filer med flera former."
+        },
+        {
+          "title": "Granska geometri",
+          "description": "Ange kvantiteter per del. Granska interna skärningar, gravyrgeometri och lagertilldelningar per form innan körning."
+        },
+        {
+          "title": "Konfigurera plåten",
+          "description": "Ange plåtdimensioner, stripbeteende, avstånd, rotationssteg, plåtmarginal och gravyrstil."
+        },
+        {
+          "title": "Kör motorn",
+          "description": "Klicka KÖR. En inbyggd binär hanterar placering — ingen molnuppladdning, inget väntetid. Resultat strömmas tillbaka direkt."
+        },
+        {
+          "title": "Förhandsgranska direkt",
+          "description": "Se plåtar fyllas medan algoritmen arbetar. Se utnyttjandestatistik och plåtantal uppdateras i realtid."
+        },
+        {
+          "title": "Exportera till DXF",
+          "description": "Exportera slutgiltiga plåtar med all ursprunglig lagerstruktur, geometrirekonstruktion och gravyrgeometri bevarad."
+        }
+      ]
+    },
+    "features": {
+      "label": "Kärnfunktioner",
+      "titleLine1": "Allt din skärverksamhet",
+      "titleLine2": "faktiskt behöver",
+      "cards": {
+        "performance": {
+          "tag": "Inbyggd prestanda",
+          "title": "Inget moln. Ingen webbläsare. Bara snabbt.",
+          "description": "Nesting-motorn körs som en inbyggd binär på din maskin. Stora DXF-filer bearbetas på sekunder, inte minuter. Fungerar helt offline — ingen prenumeration, ingen uppladdning, ingen latens."
+        },
+        "dxf": {
+          "tag": "DXF-kvalitet",
+          "title": "Fullständigt geometristöd",
+          "description": "Linjer, bågar, cirklar, polylinjer, ellipser och splines stöds alla. Intern skärgeometri och gravyrlager bevaras separat genom export.",
+          "chips": [
+            "Linjer",
+            "Bågar",
+            "Cirklar",
+            "Polylinjer",
+            "Ellipser",
+            "Splines"
+          ]
+        },
+        "engraving": {
+          "tag": "Gravyr",
+          "title": "Två gravyrstilar inbyggda",
+          "description": "Enkelt läge för enlinjestextning på tunna material. Stroke-läge för konturtext med fyllda konturer. Konfigureras per jobb, bevaras i DXF-export."
+        },
+        "sheet": {
+          "tag": "Plåtintelligens",
+          "title": "Plåtstorleksoptimering",
+          "description": "Motorn hittar det minsta plåtantalet som behövs för ditt jobb. Konfigurera plåtmarginal, delavstånd, orienteringssteg och stripjustering oberoende."
+        },
+        "workflow": {
+          "tag": "Arbetsflöde",
+          "title": "Direktförhandsvisning medan algoritmen körs",
+          "description": "Du väntar inte på att motorn ska bli klar innan du ser resultat. Plåtar fylls i realtid när placeringar bekräftas. Ändra kvantiteter eller inställningar och kör om på sekunder.",
+          "chips": [
+            "DXF-detektering av flera former",
+            "Kvantitetskontroll per form",
+            "Lagermedveten förhandsvisning",
+            "Polygon JSON-export"
+          ]
+        }
       }
-    ],
-    "outro": "Produktionsdata flödar från offerering till utskick. Operativ verklighet återspeglas i planering och kostnadskalkylering."
-  },
-  "workflow": {
-    "title": "Från offert till utskick",
-    "intro": "Systemet kopplar samman viktiga produktionssteg i ett enda arbetsflöde:",
-    "steps": [
-      {
-        "name": "Offerering & Uppskattning",
-        "desc": "Beräkna kostnader noggrant med material, arbete, maskintid och skäroptimering"
+    },
+    "bridge": {
+      "label": "Del av en större bild",
+      "title": "Koppla nesting till hela din verksamhet",
+      "copy": "Kenzap Nesting fungerar som ett fristående skrivbordsverktyg idag. När du är redo kopplar Kenzap Factory din nesting-output direkt till jobbkalkylering, produktionsplanering och lager — så spill spåras och offereras från dag ett.",
+      "cta": "Se Kenzap Factory ERP →",
+      "standaloneLabel": "FRISTÅENDE",
+      "standaloneTitle": "Kenzap Nesting",
+      "standaloneText": "DXF in → optimerad plåt ut. Gratis, öppen källkod, inbyggt skrivbord.",
+      "connectsTo": "ansluter till",
+      "platformLabel": "FULL PLATTFORM",
+      "platformTitle": "Kenzap Factory",
+      "platformText": "Offerering, jobbkalkylering, verkstadsgolvsspårning, e-fakturering. EU-redo ERP."
+    },
+    "download": {
+      "label": "Kom igång idag",
+      "title": "Gratis. Inbyggt. Öppen källkod.",
+      "sub": "Ladda ner versionen för din plattform. Ingen registrering, ingen licensnyckel, inget molnberoende. Fungerar från dag ett.",
+      "windows": {
+        "href": "https://github.com/kenzap/nesting-app/releases",
+        "os": "Windows",
+        "label": "Ladda ner x64",
+        "note": ".exe installer"
       },
-      {
-        "name": "Produktionsplanering",
-        "desc": "Schemalägg operationer över arbetscenter med lagertillgänglighetskontroller och skäroptimering"
+      "mac": {
+        "href": "https://github.com/kenzap/nesting-app/releases",
+        "os": "macOS",
+        "label": "Apple Silicon",
+        "note": ".dmg — M1-M5"
       },
-      {
-        "name": "Verkstadsgolvsutförande",
-        "desc": "Pekpanelgränssnitt för jobbspårning, tidregistrering och kvalitetskontroll"
-      },
-      {
-        "name": "Fakturering & Efterlevnad",
-        "desc": "Generera Peppol-kompatibla e-fakturor och fraktsedlar med korrekta momssatser"
-      },
-      {
-        "name": "Utskick & Leverans",
-        "desc": "Packa, skriv av buntade artiklar och skicka jobb till kunder"
-      },
-      {
-        "name": "Analys",
-        "desc": "Spåra verkliga vs. uppskattade kostnader med fullständig transparens och spillredovisning"
-      }
-    ],
-    "conclusion": "Målet är konsistens och spårbarhet genom hela jobblivscykeln."
-  },
-  "caseStudy": {
-    "title": "Används i verkliga produktionsmiljöer",
-    "company": "Skarda Nams SIA",
-    "industry": "Metallfabrikation & Anpassade delar",
-    "region": "Östeuropa",
-    "employees": "20 anställda, 2 CNC-maskiner",
-    "challenge": "Utmaning",
-    "challengeText": "Skarda Nams kämpade med noggrann offerering med olika metalltyper, liverinventeringsuppdateringar, metallavskrivningsmöjligheter, produktionsplanering, efterlevnadsfakturering, felaktig kostnadskalkylering och pappersbaserad spårning.",
-    "solution": "Lösning",
-    "solutionText": "Implementerade Kenzap Factory med integrerade modul för offerering, produktionsruttning och verkstadsgolvsutförande. Maskinoperatörer anpassade sig till pekpanelgränssnittet inom två veckor efter utplacering. Peppol e-fakturering konfigurerades för att möta EU-efterlevnadskrav. Integration med Moneo-redovisningsprogramvara för förenklad skatterapportering.",
-    "results": "Resultat",
-    "resultItems": [
-      "Minskning av offerttid genom automatiserad materialberäkning",
-      "Förbättring av jobbkostnadskalkyleringens noggrannhet",
-      "Fullständig insyn i verkstadsgolvsoperationer och tillverkningsstadier",
-      "Peppol e-faktureringsefterlevnad uppnådd, med integration till BMD-redovisningsprogramvara",
-      "Materialavfallsminskning genom skäroptimering",
-      "Snabbare produktionsplanering med realtidslagerkontroller",
-      "GDPR-efterlevnad och EU-datahemsändning upprätthållen genom hela verksamheten"
-    ],
-    "quote": "Vi har ett system som fungerar på det sätt som vårt verkstadsgolv fungerar. Operatörerna anpassade sig till gränssnittet omedelbart, och vår jobbkostnadskalkylering är nu tillförlitlig. Skattesatser hanteras automatiskt baserat på produkttyp, vilket sparar oss tid och huvudvärk under fakturering.",
-    "quoteAuthor": "Klientchef, Skarda Nams SIA",
-    "watchCase": "Se fallstudie"
-  },
-  "implementation": {
-    "title": "Implementeringsmetod",
-    "intro": "Implementeringen följer en standardstruktur designad för att minimera störningar.",
-    "principles": [
-      "Hårdvaruinstallation och programvaruinstallation på fabrikssystem",
-      "Produktkatalog och metalllagerdatabaskonfiguration",
-      "Användarrolltilldelning och ansvarsdefinition",
-      "Dokumentmallanpassning (fraktsedlar, fakturor, rapporter)",
-      "Omfattande utbildning för operatörer och ledningsgrupper",
-      "Systemintegration och finansiell rapporteringssynkronisering"
-    ],
-    "timeline": "Typisk tidslinje:",
-    "phases": [
-      "Upptäckt & konfiguration: 2-3 veckor",
-      "Datamigrering & testning: 2-3 veckor",
-      "Utbildning & driftsättning: 1-2 veckor",
-      "Support efter lansering: pågående"
-    ],
-    "outro": "Implementering kan levereras av konsulter med tillverknings- och ERP-bakgrund eller av Kenzap-ingenjör direkt."
-  },
-  "deployment": {
-    "title": "Utplaceringsalternativ",
-    "intro": "Systemet stödjer flera utplaceringsmodeller för att matcha operativa, regulatoriska och datasuveränitetsbehov.",
-    "options": [
-      {
-        "name": "Leverantörshantererat moln",
-        "desc": "Helt hanterad hosting i europeiska datacenter med automatiska uppdateringar, säkerhetskopior och säkerhetspatchar. Idealiskt för företag som fokuserar på verksamhet.",
-        "icon": "cloud-check"
-      },
-      {
-        "name": "Kundhanterat moln",
-        "desc": "Utplacera på din egen molninfrastruktur (AWS, Azure, GCP) med full kontroll över konfiguration och åtkomst. Lämpligt för IT-kapabla organisationer.",
-        "icon": "cloud-cog"
-      },
-      {
-        "name": "Egenvärd utplacering",
-        "desc": "Lokali installation för maximal datasuveränitet och kontroll. Krävs för vissa reglerade industrier eller mycket känsliga verksamheter.",
-        "icon": "server"
-      }
-    ],
-    "outro": "Alla utplaceringsalternativ använder samma programvara, följer samma uppgraderingsväg och upprätthåller funktionsparitet. Data förblir inom europeiska jurisdiktioner för GDPR-efterlevnad."
-  },
-  "contact": {
-    "title": "Kontakt",
-    "intro": "Om du vill förstå om detta system passar din verksamhet, kontakta oss för en första diskussion. Vi arbetar på engelska och andra europeiska språk.",
-    "namePlaceholder": "Ditt namn",
-    "emailPlaceholder": "E-postadress",
-    "companyPlaceholder": "Företagsnamn",
-    "messagePlaceholder": "Berätta om din produktionssättning: antal maskiner, typiska jobbstorlekar, nuvarande system...",
-    "submit": "Skicka meddelande",
-    "sending": "Skickar...",
-    "success": "Meddelande skickat framgångsrikt. Vi kommer att kontakta dig inom 1-2 arbetsdagar.",
-    "error": "Misslyckades med att skicka meddelande. Vänligen e-posta oss direkt på support@kenzap.com",
-    "or": "eller",
-    "linkedin": "Anslut på LinkedIn",
-    "email": "E-posta oss direkt"
-  },
-  "footer": {
-    "tagline": "Programvara för tillverkningsverksamhet",
-    "company": "© 2026 Kenzap. Alla rättigheter förbehållna.",
-    "note": "Produktinformation kan ändras. Tillgänglighet kan variera efter region.",
-    "languages": "Språk"
+      "openSourcePrefix": "Källkod och bygginstruktioner på",
+      "openSourceHref": "https://github.com/kenzap/nesting-app",
+      "openSourceLink": "GitHub",
+      "openSourceLicense": "Apache-2.0 licens"
+    },
+    "footer": {
+      "factory": "Factory",
+      "email": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com",
+      "company": "© 2026 Kenzap Pte Ltd"
+    }
   }
 }

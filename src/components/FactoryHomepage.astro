@@ -1,0 +1,1463 @@
+---
+const { translations, locales = [], localeGroups = [], lang = 'en' } = Astro.props;
+const t = translations;
+const localeLabel = lang === 'es' ? 'Idioma' : 'Language';
+const currentLocale = locales.find((locale) => locale.lang === lang);
+const homeHref = currentLocale?.factoryHref ?? (lang === 'es' ? '/es' : '/');
+const languageGroups = localeGroups.map((group) => ({
+  label: group.label,
+  items: group.items.map((locale) => ({
+    ...locale,
+    active: locale.lang === lang,
+  })),
+}));
+
+const mobileLanguages = languageGroups.flatMap((group) => group.items);
+
+const featureIcons = [
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="m9 12 2 2 4-4"/></svg>',
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="10" y1="14" x2="14" y2="14"/></svg>',
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><rect x="7" y="7" width="4" height="5" rx="1"/><rect x="13" y="7" width="4" height="3" rx="1"/><rect x="13" y="12" width="4" height="4" rx="1"/><rect x="7" y="14" width="4" height="3" rx="1"/></svg>',
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="2" x2="12" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>',
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="13" y2="17"/></svg>',
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>',
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>',
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>',
+  '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>',
+];
+
+const deploymentIcons = [
+  '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 15a4 4 0 0 0 4 4h9a5 5 0 1 0-.1-9.999 5.002 5.002 0 0 0-9.78 2.096A4.001 4.001 0 0 0 3 15Z"/></svg>',
+  '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>',
+  '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>',
+];
+
+const contactIcons = {
+  linkedin:
+    '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>',
+  email:
+    '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>',
+};
+
+const platformIcons = {
+  Windows:
+    '<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M3 5.5L11 4.3V11.5H3V5.5ZM12 4.15L21 2.8V11.5H12V4.15ZM3 12.5H11V19.7L3 18.5V12.5ZM12 12.5H21V21.2L12 19.85V12.5Z"/></svg>',
+  macOS:
+    '<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 11.3c-.03-2.54 2.08-3.77 2.17-3.83-1.18-1.73-3.02-1.97-3.68-2-1.57-.16-3.07.93-3.86.93-.8 0-2.03-.91-3.34-.88-1.71.02-3.3 1-4.18 2.53-1.79 3.1-.46 7.69 1.28 10.21.85 1.23 1.86 2.61 3.19 2.56 1.28-.05 1.77-.83 3.32-.83 1.55 0 1.99.83 3.34.8 1.38-.02 2.25-1.25 3.09-2.49.98-1.42 1.38-2.8 1.4-2.87-.03-.01-2.7-1.04-2.73-4.13zM14.44 3.67c.71-.86 1.18-2.06 1.05-3.25-1.01.04-2.24.68-2.96 1.52-.65.75-1.22 1.95-1.07 3.1 1.13.09 2.27-.57 2.98-1.37z"/></svg>',
+};
+
+const footerIcons = {
+  linkedin:
+    '<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>',
+  github:
+    '<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>',
+  youtube:
+    '<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#f6f7fc"/></svg>',
+};
+---
+
+<main class="factory-homepage">
+  <nav class="site-nav">
+    <a href={homeHref} class="nav-logo" aria-label="Kenzap Factory">
+      <svg width="72" height="22" viewBox="0 0 107 33" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path fill="currentColor" fill-rule="nonzero" d="M-0.476,32.2 L-0.476,0.2 L4.68974586,0.2 L4.68974586,13.6857143 L11.2643315,0.2 L16.4300773,0.2 L10.2781436,11.9485714 L16.524,32.2 L11.1234475,32.2 L6.7560442,17.9371429 L4.68974586,22.0057143 L4.68974586,32.2 L-0.476,32.2 Z M18.524,32.2 L18.524,0.2 L32.524,0.2 L32.524,4.77142857 L23.6573333,4.77142857 L23.6573333,13.2285714 L30.704,13.2285714 L30.704,17.8 L23.6573333,17.8 L23.6573333,27.6285714 L32.524,27.6285714 L32.524,32.2 L18.524,32.2 Z M35.524,32.2 L35.524,0.2 L41.924,0.2 L46.8863188,19.3542857 L46.9790725,19.3542857 L46.9790725,0.2 L51.524,0.2 L51.524,32.2 L46.2834203,32.2 L40.1616812,8.84 L40.0689275,8.84 L40.0689275,32.2 L35.524,32.2 Z M53.524,32.2 L53.524,27.72 L63.0271056,4.77142857 L53.9898385,4.77142857 L53.9898385,0.2 L68.524,0.2 L68.524,4.68 L59.0208944,27.6285714 L68.524,27.6285714 L68.524,32.2 L53.524,32.2 Z M70.524,32.2 L75.6645836,0.2 L82.3834164,0.2 L87.524,32.2 L82.5637878,32.2 L81.661931,25.8457143 L81.661931,25.9371429 L76.0253263,25.9371429 L75.1234695,32.2 L70.524,32.2 Z M76.524,21.2 L81.524,21.2 L79.0492525,5.2 L78.9482424,5.2 L76.524,21.2 Z M90.524,32.2 L90.524,0.2 L97.9779877,0.2 C103.039337,0.2 105.524,2.98857143 105.524,8.10857143 L105.524,11.2628571 C105.524,16.3828571 103.039337,19.1714286 97.9779877,19.1714286 L95.5853497,19.1714286 L95.5853497,32.2 L90.524,32.2 Z M95.524,14.2 L97.9768302,14.2 C99.6277736,14.2 100.524,13.455814 100.524,11.1302326 L100.524,7.26976744 C100.524,4.94418605 99.6277736,4.2 97.9768302,4.2 L95.524,4.2 L95.524,14.2 Z"/>
+      </svg>
+      <span class="nav-logo-divider"></span>
+      <span class="nav-logo-suffix">Factory</span>
+    </a>
+
+    <div class="nav-links">
+      <a href="#problem">{t.nav.problem}</a>
+      <a href="#features">{t.nav.features}</a>
+      <a href="#case-study">{t.nav.caseStudy}</a>
+      <a href={t.nav.nestingHref}>{t.nav.nesting}</a>
+      <div class="lang-switcher" id="langSwitcher">
+        <button class="lang-btn" type="button" aria-label="Select language" aria-expanded="false">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          <span>{currentLocale?.code ?? lang.toUpperCase()}</span>
+          <svg class="chevron" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="lang-dropdown">
+          {languageGroups.map((group) => (
+            <>
+              <div class="lang-group-label">{group.label}</div>
+              {group.items.map((item) => (
+                <a class:list={['lang-option', item.active && 'active']} href={item.href}>
+                  {item.label}
+                  <span class="lang-code">{item.code}</span>
+                </a>
+              ))}
+            </>
+          ))}
+        </div>
+      </div>
+      <a href="#contact" class="nav-cta">{t.nav.cta}</a>
+    </div>
+
+    <div class="nav-mobile">
+      <button id="hamburger" type="button" aria-label="Open menu">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#problem">{t.nav.problem}</a>
+    <a href="#features">{t.nav.features}</a>
+    <a href="#case-study">{t.nav.caseStudy}</a>
+    <a href={t.nav.nestingHref}>{t.nav.nesting}</a>
+    <a href="#contact" class="mobile-menu-cta">{t.nav.cta}</a>
+
+    <div class="mobile-lang-section">
+      <div class="mobile-lang-label">{localeLabel}</div>
+      <div class="mobile-lang-grid">
+        {mobileLanguages.map((item) => (
+          <a class:list={['mobile-lang-item', item.active && 'active']} href={item.href}>{item.label}</a>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-eyebrow">{t.hero.eyebrow}</div>
+      <h1 class="hero-headline">
+        {t.hero.headlineTop}<br />
+        <span class="strike-word">{t.hero.strikeWord}</span><br />
+        <em>{t.hero.headlineAccent}</em>
+      </h1>
+      <p class="hero-sub">{t.hero.subheadline}</p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">{t.hero.primaryCta}</a>
+        <a href="#case-study" class="btn-secondary">{t.hero.secondaryCta}</a>
+      </div>
+      <div class="hero-stats">
+        {t.hero.stats.map((stat) => (
+          <div>
+            <div class="hero-stat-num"><span>{stat.value}</span></div>
+            <div class="hero-stat-label">{stat.label}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+    <div class="hero-right">
+      <video autoplay loop muted playsinline poster="/favicon.png">
+        <source src="/025.webm" type="video/webm" />
+      </video>
+      <div class="hero-right-overlay"></div>
+      <div class="hero-right-label">{t.hero.interfaceLabel}</div>
+    </div>
+  </section>
+
+  <section class="pain" id="problem">
+    <div class="container">
+      <div class="section-label light">{t.problem.label}</div>
+      <h2 class="section-title light-title">{t.problem.title}</h2>
+      <div class="pain-grid">
+        <div class="pain-list">
+          {t.problem.items.map((item, index) => (
+            <div class="pain-item">
+              <span class="pain-num">{String(index + 1).padStart(2, '0')}</span>
+              <span class="pain-text"><strong>{item.title}</strong> {item.description}</span>
+            </div>
+          ))}
+        </div>
+        <div class="pain-callout">
+          <div class="pain-callout-quote">{t.problem.quote}</div>
+          <div class="pain-callout-attr">{t.problem.quoteAuthor}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="workflow" id="workflow">
+    <div class="container">
+      <div class="section-label">{t.workflow.label}</div>
+      <h2 class="section-title">{t.workflow.title}</h2>
+      <div class="workflow-steps">
+        {t.workflow.steps.map((step, index) => (
+          <div class="step">
+            <div class="step-num">{String(index + 1).padStart(2, '0')}</div>
+            <div class="step-title">{step.title}</div>
+            <div class="step-desc">{step.description}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="features-section" id="features">
+    <div class="container">
+      <div class="section-label">{t.features.label}</div>
+      <h2 class="section-title">{t.features.title}</h2>
+      <div class="features-grid">
+        {t.features.items.map((feature, index) => (
+          <div class:list={['feature-card', feature.accent && 'fc-accent']}>
+            <div class="fc-icon" set:html={featureIcons[index]} />
+            <div class="feature-tag">{feature.tag}</div>
+            <div class="feature-title">{feature.title}</div>
+            <div class="feature-desc">{feature.description}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="case-study" id="case-study">
+    <div class="container">
+      <div class="section-label">{t.caseStudy.label}</div>
+      <h2 class="section-title">{t.caseStudy.title}</h2>
+      <div class="case-study-grid">
+        <div>
+          <div class="cs-meta">{t.caseStudy.meta}</div>
+          <div class="cs-block">
+            <div class="cs-block-label">{t.caseStudy.challengeLabel}</div>
+            <div class="cs-block-text">{t.caseStudy.challengeText}</div>
+          </div>
+          <div class="cs-block">
+            <div class="cs-block-label">{t.caseStudy.solutionLabel}</div>
+            <div class="cs-block-text">{t.caseStudy.solutionText}</div>
+          </div>
+          <div class="cs-quote">
+            <div class="cs-quote-text">{t.caseStudy.quote}</div>
+            <div class="cs-quote-attr">{t.caseStudy.quoteAuthor}</div>
+          </div>
+        </div>
+        <div>
+          <div class="cs-results">
+            {t.caseStudy.results.map((result) => (
+              <div class:list={['cs-result', result.fullWidth && 'full-width']}>
+                <div class="cs-result-num">{result.value}</div>
+                <div class="cs-result-label">{result.label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="deployment" id="deployment">
+    <div class="container">
+      <div class="section-label">{t.deployment.label}</div>
+      <h2 class="section-title">{t.deployment.title}</h2>
+      <div class="deploy-grid">
+        {t.deployment.options.map((option, index) => (
+          <div class="deploy-card">
+            <div class="deploy-icon" set:html={deploymentIcons[index]} />
+            <div class="deploy-title">{option.title}</div>
+            <div class="deploy-desc">{option.description}</div>
+          </div>
+        ))}
+      </div>
+
+      <div class="section-label timeline-label-top">{t.timeline.label}</div>
+      <div class="timeline-row">
+        {t.timeline.phases.map((phase) => (
+          <div class="timeline-cell">
+            <div class="timeline-phase">{phase.phase}</div>
+            <div class="timeline-weeks">{phase.duration}</div>
+            <div class="timeline-label">{phase.label}</div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="nesting-cta">
+    <div class="container nesting-grid">
+      <div>
+        <div class="section-label light">{t.nesting.label}</div>
+        <h2>{t.nesting.title}</h2>
+        <p>{t.nesting.description}</p>
+        <a href={t.nesting.href} class="btn-ghost">{t.nesting.primaryCta}</a>
+      </div>
+      <div class="nesting-cta-card">
+        <div class="nesting-cta-card-label">{t.nesting.cardLabel}</div>
+        <div class="nesting-cta-card-title">{t.nesting.cardTitle}</div>
+        <div class="nesting-cta-card-desc">{t.nesting.cardDescription}</div>
+        <div class="platform-links">
+          {t.nesting.platforms.map((platform) => (
+            <a href={t.nesting.href} class="btn-ghost">
+              <span set:html={platformIcons[platform] ?? ''} />
+              {platform}
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="section-label centered">{t.contact.label}</div>
+      <h2 class="section-title">{t.contact.title}</h2>
+      <p class="contact-sub">{t.contact.description}</p>
+      <div class="contact-methods">
+        <a href={t.contact.linkedinHref} class="contact-btn primary">
+          <span set:html={contactIcons.linkedin} />
+          {t.contact.linkedinLabel}
+        </a>
+        <a href={t.contact.emailHref} class="contact-btn secondary">
+          <span set:html={contactIcons.email} />
+          {t.contact.emailLabel}
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <a href={homeHref} aria-label="Kenzap">
+      <svg width="60" height="18" viewBox="0 0 107 33" xmlns="http://www.w3.org/2000/svg">
+        <path fill="currentColor" fill-rule="nonzero" d="M-0.476,32.2 L-0.476,0.2 L4.68974586,0.2 L4.68974586,13.6857143 L11.2643315,0.2 L16.4300773,0.2 L10.2781436,11.9485714 L16.524,32.2 L11.1234475,32.2 L6.7560442,17.9371429 L4.68974586,22.0057143 L4.68974586,32.2 L-0.476,32.2 Z M18.524,32.2 L18.524,0.2 L32.524,0.2 L32.524,4.77142857 L23.6573333,4.77142857 L23.6573333,13.2285714 L30.704,13.2285714 L30.704,17.8 L23.6573333,17.8 L23.6573333,27.6285714 L32.524,27.6285714 L32.524,32.2 L18.524,32.2 Z M35.524,32.2 L35.524,0.2 L41.924,0.2 L46.8863188,19.3542857 L46.9790725,19.3542857 L46.9790725,0.2 L51.524,0.2 L51.524,32.2 L46.2834203,32.2 L40.1616812,8.84 L40.0689275,8.84 L40.0689275,32.2 L35.524,32.2 Z M53.524,32.2 L53.524,27.72 L63.0271056,4.77142857 L53.9898385,4.77142857 L53.9898385,0.2 L68.524,0.2 L68.524,4.68 L59.0208944,27.6285714 L68.524,27.6285714 L68.524,32.2 L53.524,32.2 Z M70.524,32.2 L75.6645836,0.2 L82.3834164,0.2 L87.524,32.2 L82.5637878,32.2 L81.661931,25.8457143 L81.661931,25.9371429 L76.0253263,25.9371429 L75.1234695,32.2 L70.524,32.2 Z M76.524,21.2 L81.524,21.2 L79.0492525,5.2 L78.9482424,5.2 L76.524,21.2 Z M90.524,32.2 L90.524,0.2 L97.9779877,0.2 C103.039337,0.2 105.524,2.98857143 105.524,8.10857143 L105.524,11.2628571 C105.524,16.3828571 103.039337,19.1714286 97.9779877,19.1714286 L95.5853497,19.1714286 L95.5853497,32.2 L90.524,32.2 Z M95.524,14.2 L97.9768302,14.2 C99.6277736,14.2 100.524,13.455814 100.524,11.1302326 L100.524,7.26976744 C100.524,4.94418605 99.6277736,4.2 97.9768302,4.2 L95.524,4.2 L95.524,14.2 Z"/>
+      </svg>
+    </a>
+    <div class="footer-links">
+      <a href={t.footer.nestingHref}>{t.footer.nestingLabel}</a>
+      <span class="separator">·</span>
+      <a href={t.footer.emailHref}>{t.footer.emailLabel}</a>
+    </div>
+    <div class="footer-meta">
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/company/kenzap" class="footer-social" aria-label="LinkedIn" target="_blank" rel="noopener" set:html={footerIcons.linkedin} />
+        <a href="https://github.com/kenzap/factory/" class="footer-social" aria-label="GitHub" target="_blank" rel="noopener" set:html={footerIcons.github} />
+        <a href="https://www.youtube.com/c/KenzapCloud" class="footer-social" aria-label="YouTube" target="_blank" rel="noopener" set:html={footerIcons.youtube} />
+      </div>
+      <div class="footer-copy">{t.footer.company}</div>
+    </div>
+  </footer>
+</main>
+
+<script>
+  const langSwitcher = document.getElementById('langSwitcher');
+  const langButton = langSwitcher?.querySelector('.lang-btn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const hamburger = document.getElementById('hamburger');
+
+  langButton?.addEventListener('click', () => {
+    const open = langSwitcher?.classList.toggle('open');
+    langButton.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+
+  document.addEventListener('click', (event) => {
+    if (langSwitcher && !langSwitcher.contains(event.target)) {
+      langSwitcher.classList.remove('open');
+      langButton?.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  const closeMobileMenu = () => {
+    mobileMenu?.classList.remove('open');
+    hamburger?.setAttribute('aria-expanded', 'false');
+  };
+
+  hamburger?.addEventListener('click', () => {
+    const open = mobileMenu?.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+
+  mobileMenu?.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      closeMobileMenu();
+    });
+  });
+</script>
+
+<style>
+  :global(body) {
+    background: #f6f7fc;
+    color: #0a0a08;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  .factory-homepage {
+    --black: #0a0a08;
+    --off-white: #f0f2fa;
+    --warm-white: #f6f7fc;
+    --steel-mid: #4a4f5c;
+    --steel-light: #8a9099;
+    --accent: #1941df;
+    --accent-hover: #2d55f5;
+    --grid: #dde1f0;
+    --mono: 'DM Mono', monospace;
+    --display: 'Syne', sans-serif;
+  }
+
+  .container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .site-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 48px;
+    background: rgba(246, 247, 252, 0.9);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--grid);
+  }
+
+  .nav-logo,
+  .nav-links a,
+  .footer-links a,
+  .footer-social {
+    text-decoration: none;
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--black);
+  }
+
+  .nav-logo-divider {
+    width: 1px;
+    height: 18px;
+    background: var(--grid);
+  }
+
+  .nav-logo-suffix,
+  .nav-links a,
+  .nav-cta,
+  .btn-primary,
+  .btn-secondary,
+  .btn-ghost,
+  .lang-btn,
+  .lang-group-label,
+  .lang-option,
+  .section-label,
+  .hero-eyebrow,
+  .hero-stat-label,
+  .pain-num,
+  .step-num,
+  .feature-tag,
+  .cs-meta,
+  .cs-block-label,
+  .cs-quote-attr,
+  .timeline-phase,
+  .nesting-cta-card-label,
+  .contact-btn,
+  .site-footer,
+  .footer-copy,
+  .mobile-menu a,
+  .mobile-lang-label,
+  .mobile-lang-item {
+    font-family: var(--mono);
+  }
+
+  .nav-logo-suffix {
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+    color: var(--steel-mid);
+    letter-spacing: 0.04em;
+  }
+
+  .nav-links a:hover,
+  .footer-links a:hover {
+    color: var(--black);
+  }
+
+  .nav-cta,
+  .btn-primary,
+  .mobile-menu-cta,
+  .contact-btn.primary {
+    color: var(--warm-white) !important;
+    background: var(--black);
+  }
+
+  .nav-cta,
+  .btn-primary,
+  .mobile-menu-cta,
+  .contact-btn,
+  .btn-ghost {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 2px;
+    transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.15s;
+  }
+
+  .nav-cta {
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    line-height: 19.2px;
+  }
+
+  .nav-cta:hover,
+  .btn-primary:hover,
+  .mobile-menu-cta:hover,
+  .contact-btn.primary:hover {
+    background: var(--accent) !important;
+  }
+
+  .lang-switcher {
+    position: relative;
+  }
+
+  .lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 7px 10px;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    color: var(--steel-mid);
+    background: transparent;
+    border: 0.5px solid var(--grid);
+    border-radius: 2px;
+    cursor: pointer;
+  }
+
+  .lang-switcher.open .lang-btn {
+    border-color: var(--accent);
+    color: var(--black);
+  }
+
+  .lang-dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    width: 200px;
+    max-height: 340px;
+    overflow-y: auto;
+    background: var(--warm-white);
+    border: 0.5px solid var(--grid);
+    border-radius: 4px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .lang-switcher.open .lang-dropdown {
+    display: block;
+  }
+
+  .lang-group-label {
+    padding: 10px 14px 4px;
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--steel-light);
+  }
+
+  .lang-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 14px;
+    font-size: 11px;
+    color: var(--steel-mid);
+  }
+
+  .lang-option.active {
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  .lang-code {
+    font-size: 9px;
+    color: var(--steel-light);
+    letter-spacing: 0.08em;
+  }
+
+  .nav-mobile,
+  .mobile-menu {
+    display: none;
+  }
+
+  #hamburger {
+    background: none;
+    border: 0.5px solid var(--grid);
+    border-radius: 2px;
+    padding: 8px;
+    color: var(--steel-mid);
+    cursor: pointer;
+  }
+
+  .hero {
+    min-height: 520px;
+    height: calc(100vh - 80px);
+    max-height: 820px;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+  }
+
+  .hero-left {
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero-eyebrow,
+  .section-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--steel-light);
+  }
+
+  .hero-eyebrow {
+    margin-bottom: 24px;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+  }
+
+  .hero-eyebrow::before {
+    width: 24px;
+  }
+
+  .hero-eyebrow::before {
+    content: '';
+    width: 24px;
+    height: 1px;
+    background: var(--accent);
+  }
+
+  .section-label::before {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background: currentColor;
+  }
+
+  .hero-headline,
+  .section-title,
+  .pain-callout-quote,
+  .step-title,
+  .feature-title,
+  .deploy-title,
+  .timeline-weeks,
+  .nesting-cta h2,
+  .nesting-cta-card-title,
+  .cs-result-num {
+    font-family: var(--display);
+    letter-spacing: -0.02em;
+  }
+
+  .hero-headline {
+    font-size: clamp(38px, 4.5vw, 66px);
+    font-weight: 800;
+    line-height: 0.95;
+    margin-bottom: 28px;
+  }
+
+  .hero-headline em {
+    font-style: normal;
+    color: var(--accent);
+  }
+
+  .strike-word {
+    position: relative;
+    display: inline-block;
+    color: var(--steel-light);
+  }
+
+  .strike-word::after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    right: -2px;
+    top: 52%;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--accent);
+    transform: rotate(-2deg);
+  }
+
+  .hero-sub {
+    max-width: 420px;
+    margin-bottom: 44px;
+    font-size: 17px;
+    color: var(--steel-mid);
+    line-height: 1.65;
+  }
+
+  .hero-actions,
+  .hero-stats,
+  .contact-methods,
+  .footer-meta,
+  .footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .platform-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary,
+  .contact-btn,
+  .btn-ghost {
+    padding: 14px 28px;
+    text-decoration: none;
+  }
+
+  .btn-primary {
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    line-height: 20.8px;
+    transition: background 0.2s, transform 0.15s;
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-1px);
+  }
+
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    padding-bottom: 2px;
+    border-bottom: 1px solid var(--grid);
+    color: var(--steel-mid);
+    text-decoration: none;
+    font-family: var(--mono);
+    font-size: 12px;
+    line-height: 1;
+  }
+
+  .hero-stats {
+    gap: 32px;
+    margin-top: 40px;
+    padding-top: 32px;
+    border-top: 1px solid var(--grid);
+  }
+
+  .hero-stat-num {
+    font-family: var(--display);
+    font-size: 28px;
+    font-weight: 800;
+  }
+
+  .hero-stat-num span {
+    color: var(--accent);
+  }
+
+  .hero-stat-label {
+    margin-top: 2px;
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--steel-light);
+  }
+
+  .hero-right {
+    position: relative;
+    background: var(--black);
+  }
+
+  .hero-right video,
+  .hero-right-overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .hero-right video {
+    object-fit: cover;
+  }
+
+  .hero-right-overlay {
+    background: linear-gradient(to top, rgba(10, 10, 8, 0.7), transparent);
+  }
+
+  .hero-right-label {
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+    z-index: 1;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.35);
+  }
+
+  .pain,
+  .workflow,
+  .features-section,
+  .case-study,
+  .deployment,
+  .contact {
+    padding: 100px 48px;
+  }
+
+  .pain,
+  .nesting-cta {
+    background: var(--black);
+  }
+
+  .pain {
+    color: var(--warm-white);
+  }
+
+  .light,
+  .light-title {
+    color: rgba(255, 255, 255, 0.35);
+  }
+
+  .light-title,
+  .nesting-cta h2 {
+    color: var(--warm-white);
+  }
+
+  .pain .section-title {
+    color: var(--warm-white);
+    max-width: 560px;
+  }
+
+  .section-title {
+    margin-bottom: 16px;
+    font-size: clamp(28px, 3.5vw, 48px);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+  }
+
+  .pain-grid,
+  .case-study-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: start;
+    margin-top: 56px;
+  }
+
+  .nesting-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+  }
+
+  .pain-item {
+    display: flex;
+    gap: 16px;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  }
+
+  .pain-item:first-child {
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+  }
+
+  .pain-num {
+    margin-top: 3px;
+    font-size: 10px;
+    color: var(--accent);
+    letter-spacing: 0.1em;
+  }
+
+  .pain-text {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.75);
+  }
+
+  .pain-text strong {
+    color: var(--warm-white);
+    font-weight: 500;
+  }
+
+  .pain-callout {
+    align-self: center;
+    padding: 36px;
+    border: 1px solid rgba(25, 65, 223, 0.3);
+    border-radius: 4px;
+    background: rgba(25, 65, 223, 0.12);
+  }
+
+  .pain-callout-quote {
+    margin-bottom: 24px;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.35;
+  }
+
+  .pain-callout-attr {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.4);
+    letter-spacing: 0.06em;
+  }
+
+  .workflow,
+  .case-study {
+    background: var(--off-white);
+    border-top: 1px solid var(--grid);
+    border-bottom: 1px solid var(--grid);
+  }
+
+  .workflow-steps,
+  .features-grid,
+  .deploy-grid,
+  .timeline-row,
+  .cs-results {
+    display: grid;
+    gap: 2px;
+    background: var(--grid);
+    border: 1px solid var(--grid);
+  }
+
+  .workflow-steps,
+  .features-grid {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 56px;
+  }
+
+  .step,
+  .feature-card,
+  .deploy-card,
+  .timeline-cell,
+  .cs-result {
+    background: var(--warm-white);
+  }
+
+  .step {
+    padding: 36px 32px;
+  }
+
+  .step-num,
+  .feature-tag,
+  .cs-block-label,
+  .timeline-phase {
+    margin-bottom: 12px;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .step-title,
+  .feature-title,
+  .deploy-title {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .timeline-label,
+  .contact-sub,
+  .nesting-cta p,
+  .nesting-cta-card-desc,
+  .cs-result-label {
+    color: var(--steel-mid);
+  }
+
+  .step-desc {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--steel-mid);
+  }
+
+  .feature-desc {
+    font-size: 14px;
+    line-height: 1.65;
+    color: var(--steel-mid);
+  }
+
+  .cs-block-text {
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--steel-mid);
+  }
+
+  .deploy-desc {
+    font-size: 14px;
+    line-height: 1.65;
+    color: var(--steel-mid);
+  }
+
+  .feature-card {
+    padding: 32px;
+  }
+
+  .fc-icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 18px;
+  }
+
+  .fc-icon :global(svg) {
+    width: 100%;
+    height: 100%;
+    stroke: var(--steel-mid);
+    transition: stroke 0.2s, transform 0.2s;
+  }
+
+  .fc-accent {
+    background: var(--accent);
+  }
+
+  .fc-accent .fc-icon :global(svg) {
+    stroke: rgba(255, 255, 255, 0.9);
+  }
+
+  .fc-accent .feature-tag,
+  .fc-accent .feature-desc {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  .fc-accent .feature-title {
+    color: white;
+  }
+
+  .feature-card:hover .fc-icon :global(svg) {
+    stroke: var(--accent);
+    transform: scale(1.1);
+  }
+
+  .fc-accent:hover .fc-icon :global(svg) {
+    stroke: rgba(255, 255, 255, 0.9);
+  }
+
+  .cs-meta {
+    margin-bottom: 32px;
+    font-size: 11px;
+    color: var(--steel-light);
+    letter-spacing: 0.06em;
+  }
+
+  .cs-block {
+    margin-bottom: 32px;
+  }
+
+  .cs-quote {
+    margin-top: 32px;
+    padding: 28px 32px;
+    border-left: 3px solid var(--accent);
+    background: var(--warm-white);
+  }
+
+  .cs-quote-text {
+    margin-bottom: 14px;
+    font-family: var(--display);
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: -0.01em;
+    color: var(--black);
+  }
+
+  .cs-quote-attr {
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--steel-light);
+    letter-spacing: 0.06em;
+  }
+
+  .cs-results {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cs-result {
+    padding: 24px;
+  }
+
+  .cs-result-num {
+    margin-bottom: 6px;
+    font-size: 32px;
+    font-weight: 800;
+    color: var(--accent);
+    letter-spacing: -0.02em;
+    line-height: 1;
+  }
+
+  .cs-result-label {
+    font-size: 13px;
+    line-height: 1.4;
+    color: var(--steel-mid);
+  }
+
+  .cs-result.full-width {
+    grid-column: span 2;
+  }
+
+  .cs-result.full-width .cs-result-num {
+    font-size: 22px;
+  }
+
+  .deploy-grid {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 56px;
+  }
+
+  .deploy-card {
+    padding: 36px 32px;
+  }
+
+  .deploy-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    background: #e8ecfc;
+    color: var(--accent);
+  }
+
+  .timeline-label-top {
+    margin-top: 56px;
+  }
+
+  .timeline-row {
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 40px;
+  }
+
+  .timeline-cell {
+    padding: 24px 28px;
+  }
+
+  .timeline-weeks {
+    margin-bottom: 4px;
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .nesting-cta h2 {
+    margin-bottom: 16px;
+    font-size: clamp(24px, 3vw, 40px);
+    font-weight: 700;
+    line-height: 1.1;
+  }
+
+  .nesting-cta {
+    padding: 80px 48px;
+  }
+
+  .nesting-cta p {
+    margin-bottom: 28px;
+    font-size: 15px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .nesting-cta-card {
+    padding: 28px 32px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.04);
+  }
+
+  .nesting-cta-card-label {
+    margin-bottom: 12px;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  .nesting-cta-card-title {
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--warm-white);
+  }
+
+  .nesting-cta-card-desc {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.45);
+  }
+
+  .btn-ghost {
+    padding: 10px 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    gap: 8px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+    transition: border-color 0.2s, color 0.2s;
+  }
+
+  .btn-ghost:hover {
+    border-color: rgba(255, 255, 255, 0.5);
+    color: var(--warm-white);
+  }
+
+  .contact-inner {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .centered {
+    justify-content: center;
+  }
+
+  .contact-sub {
+    max-width: 460px;
+    margin: 0 auto 48px;
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  .contact-methods {
+    justify-content: center;
+  }
+
+  .contact-btn.primary,
+  .contact-btn.secondary {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    line-height: 1;
+  }
+
+  .contact-btn.secondary {
+    color: var(--steel-mid);
+    border: 1px solid var(--grid);
+  }
+
+  .contact-btn.secondary:hover {
+    color: var(--black);
+    border-color: var(--black);
+  }
+
+  .site-footer {
+    padding: 40px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--grid);
+    font-size: 11px;
+    color: var(--steel-light);
+  }
+
+  .footer-links,
+  .footer-meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .footer-links a {
+    transition: color 0.2s;
+  }
+
+  .footer-socials {
+    gap: 12px;
+  }
+
+  .separator {
+    opacity: 0.3;
+  }
+
+  .footer-social {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid var(--grid);
+    border-radius: 2px;
+    color: var(--steel-light);
+  }
+
+  .footer-social:hover {
+    border-color: var(--steel-mid);
+    color: var(--black);
+  }
+
+  .contact-btn span,
+  .btn-ghost span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .footer-social :global(svg) {
+    display: block;
+    transition: color 0.2s, fill 0.2s, stroke 0.2s;
+  }
+
+  @media (max-width: 900px) {
+    .site-nav {
+      padding: 16px 24px;
+    }
+
+    .nav-links {
+      display: none;
+    }
+
+    .nav-mobile {
+      display: flex;
+      align-items: center;
+    }
+
+    .mobile-menu {
+      position: fixed;
+      top: 62px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 99;
+      padding: 8px 24px 48px;
+      overflow-y: auto;
+      border-top: 1px solid var(--grid);
+      background: var(--warm-white);
+    }
+
+    .mobile-menu.open {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mobile-menu a {
+      padding: 20px 12px;
+      font-size: 14px;
+      letter-spacing: 0.04em;
+      color: var(--steel-mid);
+      border-bottom: 0.5px solid var(--grid);
+    }
+
+    .mobile-menu-cta {
+      margin-top: 24px;
+      width: fit-content;
+      border-bottom: none !important;
+    }
+
+    .mobile-lang-section {
+      margin-top: 32px;
+      padding-bottom: 32px;
+    }
+
+    .mobile-lang-label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+      font-size: 9px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--steel-light);
+    }
+
+    .mobile-lang-label::before {
+      content: '';
+      width: 16px;
+      height: 1px;
+      background: var(--steel-light);
+    }
+
+    .mobile-lang-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      overflow: hidden;
+      border: 1px solid var(--grid);
+      border-radius: 4px;
+      background: var(--grid);
+    }
+
+    .mobile-lang-item {
+      padding: 14px 18px !important;
+      background: var(--warm-white);
+      border-bottom: none !important;
+      font-size: 12px !important;
+      color: var(--steel-mid);
+    }
+
+    .mobile-lang-item.active {
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .hero,
+    .pain-grid,
+    .case-study-grid,
+    .nesting-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .hero {
+      height: auto;
+      max-height: none;
+    }
+
+    .hero-left,
+    .pain,
+    .workflow,
+    .features-section,
+    .case-study,
+    .deployment,
+    .nesting-cta,
+    .contact {
+      padding: 72px 24px;
+    }
+
+    .hero-left {
+      padding-top: 48px;
+      padding-bottom: 48px;
+    }
+
+    .hero-right {
+      min-height: 260px;
+      height: 56vw;
+      max-height: 400px;
+    }
+
+    .hero-stats {
+      gap: 20px;
+    }
+
+    .workflow-steps,
+    .features-grid,
+    .deploy-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .timeline-row,
+    .cs-results {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .site-footer {
+      padding: 32px 24px;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+    }
+  }
+</style>

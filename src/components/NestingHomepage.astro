@@ -1,0 +1,1195 @@
+---
+const { translations, locales = [], localeGroups = [], lang = 'en' } = Astro.props;
+const t = translations;
+const localeLabel = lang === 'es' ? 'Idioma' : 'Language';
+const currentLocale = locales.find((locale) => locale.lang === lang);
+const homeHref = currentLocale?.nestingHref ?? (lang === 'es' ? '/es/nesting' : '/nesting');
+const factoryHref = currentLocale?.factoryHref ?? (lang === 'es' ? '/es' : '/');
+const languageGroups = localeGroups.map((group) => ({
+  label: group.label,
+  items: group.items.map((locale) => ({
+    ...locale,
+    active: locale.lang === lang,
+  })),
+}));
+
+const mobileLanguages = languageGroups.flatMap((group) => group.items);
+---
+
+<main class="nesting-homepage">
+  <nav class="site-nav">
+    <a href={homeHref} class="nav-logo" aria-label={t.meta.title}>
+      <svg width="72" height="22" viewBox="0 0 107 33" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path fill="currentColor" fill-rule="nonzero" d="M-0.476,32.2 L-0.476,0.2 L4.68974586,0.2 L4.68974586,13.6857143 L11.2643315,0.2 L16.4300773,0.2 L10.2781436,11.9485714 L16.524,32.2 L11.1234475,32.2 L6.7560442,17.9371429 L4.68974586,22.0057143 L4.68974586,32.2 L-0.476,32.2 Z M18.524,32.2 L18.524,0.2 L32.524,0.2 L32.524,4.77142857 L23.6573333,4.77142857 L23.6573333,13.2285714 L30.704,13.2285714 L30.704,17.8 L23.6573333,17.8 L23.6573333,27.6285714 L32.524,27.6285714 L32.524,32.2 L18.524,32.2 Z M35.524,32.2 L35.524,0.2 L41.924,0.2 L46.8863188,19.3542857 L46.9790725,19.3542857 L46.9790725,0.2 L51.524,0.2 L51.524,32.2 L46.2834203,32.2 L40.1616812,8.84 L40.0689275,8.84 L40.0689275,32.2 L35.524,32.2 Z M53.524,32.2 L53.524,27.72 L63.0271056,4.77142857 L53.9898385,4.77142857 L53.9898385,0.2 L68.524,0.2 L68.524,4.68 L59.0208944,27.6285714 L68.524,27.6285714 L68.524,32.2 L53.524,32.2 Z M70.524,32.2 L75.6645836,0.2 L82.3834164,0.2 L87.524,32.2 L82.5637878,32.2 L81.661931,25.8457143 L81.661931,25.9371429 L76.0253263,25.9371429 L75.1234695,32.2 L70.524,32.2 Z M76.524,21.2 L81.524,21.2 L79.0492525,5.2 L78.9482424,5.2 L76.524,21.2 Z M90.524,32.2 L90.524,0.2 L97.9779877,0.2 C103.039337,0.2 105.524,2.98857143 105.524,8.10857143 L105.524,11.2628571 C105.524,16.3828571 103.039337,19.1714286 97.9779877,19.1714286 L95.5853497,19.1714286 L95.5853497,32.2 L90.524,32.2 Z M95.524,14.2 L97.9768302,14.2 C99.6277736,14.2 100.524,13.455814 100.524,11.1302326 L100.524,7.26976744 C100.524,4.94418605 99.6277736,4.2 97.9768302,4.2 L95.524,4.2 L95.524,14.2 Z"/>
+      </svg>
+      <span class="nav-logo-divider"></span>
+      <span class="nav-logo-suffix">Nesting</span>
+    </a>
+
+    <div class="nav-links">
+      <a href="#workflow">{t.nav.workflow}</a>
+      <a href="#features">{t.nav.features}</a>
+      <a href={factoryHref}>{t.nav.factory}</a>
+      <div class="lang-switcher" id="langSwitcher">
+        <button class="lang-btn" type="button" aria-label={localeLabel} aria-expanded="false">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"></circle><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          <span>{currentLocale?.code ?? lang.toUpperCase()}</span>
+          <svg class="chevron" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"></polyline></svg>
+        </button>
+        <div class="lang-dropdown">
+          {languageGroups.map((group) => (
+            <>
+              <div class="lang-group-label">{group.label}</div>
+              {group.items.map((item) => (
+                <a class:list={['lang-option', item.active && 'active']} href={item.href}>
+                  {item.label}
+                  <span class="lang-code">{item.code}</span>
+                </a>
+              ))}
+            </>
+          ))}
+        </div>
+      </div>
+      <a href={t.nav.ctaHref} class="nav-cta">{t.nav.cta}</a>
+    </div>
+
+    <div class="nav-mobile">
+      <button id="hamburger" type="button" aria-label="Open menu" aria-expanded="false">
+        <svg class="menu-open" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#workflow">{t.nav.workflow}</a>
+    <a href="#features">{t.nav.features}</a>
+    <a href={factoryHref}>{t.nav.factoryMobile}</a>
+    <a href={t.nav.ctaHref} class="mobile-menu-cta">{t.nav.cta}</a>
+    <div class="mobile-lang-section">
+      <div class="mobile-lang-label">{localeLabel}</div>
+      <div class="mobile-lang-grid">
+        {mobileLanguages.map((item) => (
+          <a class:list={['mobile-lang-item', item.active && 'active']} href={item.href}>{item.label}</a>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <section class="hero">
+    <div class="hero-left">
+      <div class="hero-eyebrow">{t.hero.eyebrow}</div>
+      <h1 class="hero-headline">{t.hero.headlineLine1}<br />{t.hero.headlineLine2Prefix}<em>{t.hero.headlineLine2Accent}</em>.<br />{t.hero.headlineLine3}</h1>
+      <p class="hero-sub">{t.hero.subheadline}</p>
+      <div class="hero-actions">
+        <a href={t.hero.primaryCtaHref} class="btn-primary">{t.hero.primaryCta}</a>
+        <a href={t.hero.secondaryCtaHref} class="btn-secondary">{t.hero.secondaryCta}</a>
+      </div>
+      <div class="platform-badges">
+        <span class="badge"><span class="badge-icon" set:html={'<svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M3 5.5L11 4.3V11.5H3V5.5ZM12 4.15L21 2.8V11.5H12V4.15ZM3 12.5H11V19.7L3 18.5V12.5ZM12 12.5H21V21.2L12 19.85V12.5Z"/></svg>'}></span>{t.hero.badges.windows}</span>
+        <span class="badge"><span class="badge-icon" set:html={'<svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 11.3c-.03-2.54 2.08-3.77 2.17-3.83-1.18-1.73-3.02-1.97-3.68-2-1.57-.16-3.07.93-3.86.93-.8 0-2.03-.91-3.34-.88-1.71.02-3.3 1-4.18 2.53-1.79 3.1-.46 7.69 1.28 10.21.85 1.23 1.86 2.61 3.19 2.56 1.28-.05 1.77-.83 3.32-.83 1.55 0 1.99.83 3.34.8 1.38-.02 2.25-1.25 3.09-2.49.98-1.42 1.38-2.8 1.4-2.87-.03-.01-2.7-1.04-2.73-4.13zM14.44 3.67c.71-.86 1.18-2.06 1.05-3.25-1.01.04-2.24.68-2.96 1.52-.65.75-1.22 1.95-1.07 3.1 1.13.09 2.27-.57 2.98-1.37z"/></svg>'}></span>{t.hero.badges.mac}</span>
+        <span class="badge">{t.hero.badges.openSource}</span>
+      </div>
+    </div>
+    <div class="hero-right">
+      <video autoplay loop muted playsinline>
+        <source src="/024.webm" type="video/webm" />
+      </video>
+      <div class="hero-right-label">{t.hero.previewLabel}</div>
+    </div>
+  </section>
+
+  <section class="workflow" id="workflow">
+    <div class="workflow-inner">
+      <div class="section-label">{t.workflow.label}</div>
+      <h2 class="section-title">{t.workflow.titleLine1}<br />{t.workflow.titleLine2}</h2>
+      <div class="workflow-steps">
+        {t.workflow.steps.map((step, index) => (
+          <div class="step"><div class="step-num">{String(index + 1).padStart(2, '0')}</div><div class="step-title">{step.title}</div><div class="step-desc">{step.description}</div></div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="features-wrap" id="features">
+    <div class="features">
+      <div class="section-label">{t.features.label}</div>
+      <h2 class="section-title">{t.features.titleLine1}<br />{t.features.titleLine2}</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-tag">{t.features.cards.performance.tag}</div>
+          <div class="feature-title">{t.features.cards.performance.title}</div>
+          <div class="feature-desc">{t.features.cards.performance.description}</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-tag">{t.features.cards.dxf.tag}</div>
+          <div class="feature-title">{t.features.cards.dxf.title}</div>
+          <div class="feature-desc">{t.features.cards.dxf.description}</div>
+          <div class="geo-chips">
+            {t.features.cards.dxf.chips.map((chip) => <span class="geo-chip">{chip}</span>)}
+          </div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-tag">{t.features.cards.engraving.tag}</div>
+          <div class="feature-title">{t.features.cards.engraving.title}</div>
+          <div class="feature-desc">{t.features.cards.engraving.description}</div>
+        </div>
+        <div class="feature-card">
+          <div class="feature-tag">{t.features.cards.sheet.tag}</div>
+          <div class="feature-title">{t.features.cards.sheet.title}</div>
+          <div class="feature-desc">{t.features.cards.sheet.description}</div>
+        </div>
+        <div class="feature-card wide">
+          <div>
+            <div class="feature-tag">{t.features.cards.workflow.tag}</div>
+            <div class="feature-title">{t.features.cards.workflow.title}</div>
+            <div class="feature-desc wide-desc">{t.features.cards.workflow.description}</div>
+            <div class="geo-chips">
+              {t.features.cards.workflow.chips.map((chip) => <span class="geo-chip">{chip}</span>)}
+            </div>
+          </div>
+          <div class="feature-visual">
+            <video autoplay loop muted playsinline>
+              <source src="/024.webm" type="video/webm" />
+            </video>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="erp-bridge">
+    <div class="erp-bridge-inner">
+      <div>
+        <div class="section-label">{t.bridge.label}</div>
+        <h2 class="section-title bridge-title">{t.bridge.title}</h2>
+        <p class="bridge-copy">{t.bridge.copy}</p>
+        <a href={factoryHref} class="btn-secondary">{t.bridge.cta}</a>
+      </div>
+      <div class="bridge-stack">
+        <div class="bridge-card">
+          <div class="bridge-label accent">{t.bridge.standaloneLabel}</div>
+          <div class="bridge-name">{t.bridge.standaloneTitle}</div>
+          <div class="bridge-text">{t.bridge.standaloneText}</div>
+        </div>
+        <div class="bridge-separator">
+          <div class="line"></div>
+          <div class="bridge-helper">{t.bridge.connectsTo}</div>
+          <div class="line"></div>
+        </div>
+        <div class="bridge-card">
+          <div class="bridge-label muted">{t.bridge.platformLabel}</div>
+          <div class="bridge-name">{t.bridge.platformTitle}</div>
+          <div class="bridge-text">{t.bridge.platformText}</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="download-section" id="download">
+    <div class="section-label">{t.download.label}</div>
+    <h2 class="section-title download-title">{t.download.title}</h2>
+    <p class="download-sub">{t.download.sub}</p>
+    <div class="download-buttons">
+      <a href={t.download.windows.href} class="dl-btn">
+        <div>
+          <span class="dl-icon" set:html={'<svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 5.5L11 4.3V11.5H3V5.5Z" fill="#7b9af5"/><path d="M12 4.15L21 2.8V11.5H12V4.15Z" fill="#7b9af5"/><path d="M3 12.5H11V19.7L3 18.5V12.5Z" fill="#7b9af5"/><path d="M12 12.5H21V21.2L12 19.85V12.5Z" fill="#7b9af5"/></svg>'}></span>
+          <div>
+            <span class="dl-os">{t.download.windows.os}</span>
+            <span class="dl-label">{t.download.windows.label}</span>
+            <span class="dl-note">{t.download.windows.note}</span>
+          </div>
+        </div>
+      </a>
+      <a href={t.download.mac.href} class="dl-btn">
+        <div>
+          <span class="dl-icon" set:html={'<svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17.05 11.3c-.03-2.54 2.08-3.77 2.17-3.83-1.18-1.73-3.02-1.97-3.68-2-1.57-.16-3.07.93-3.86.93-.8 0-2.03-.91-3.34-.88-1.71.02-3.3 1-4.18 2.53-1.79 3.1-.46 7.69 1.28 10.21.85 1.23 1.86 2.61 3.19 2.56 1.28-.05 1.77-.83 3.32-.83 1.55 0 1.99.83 3.34.8 1.38-.02 2.25-1.25 3.09-2.49.98-1.42 1.38-2.8 1.4-2.87-.03-.01-2.7-1.04-2.73-4.13z" fill="#7b9af5"/><path d="M14.44 3.67c.71-.86 1.18-2.06 1.05-3.25-1.01.04-2.24.68-2.96 1.52-.65.75-1.22 1.95-1.07 3.1 1.13.09 2.27-.57 2.98-1.37z" fill="#7b9af5"/></svg>'}></span>
+          <div>
+            <span class="dl-os">{t.download.mac.os}</span>
+            <span class="dl-label">{t.download.mac.label}</span>
+            <span class="dl-note">{t.download.mac.note}</span>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="open-source-note">{t.download.openSourcePrefix} <a href={t.download.openSourceHref}>{t.download.openSourceLink}</a> · {t.download.openSourceLicense}</div>
+  </section>
+
+  <footer class="site-footer">
+    <a href={factoryHref} aria-label="Kenzap">
+      <svg width="60" height="18" viewBox="0 0 107 33" xmlns="http://www.w3.org/2000/svg">
+        <path fill="currentColor" fill-rule="nonzero" d="M-0.476,32.2 L-0.476,0.2 L4.68974586,0.2 L4.68974586,13.6857143 L11.2643315,0.2 L16.4300773,0.2 L10.2781436,11.9485714 L16.524,32.2 L11.1234475,32.2 L6.7560442,17.9371429 L4.68974586,22.0057143 L4.68974586,32.2 L-0.476,32.2 Z M18.524,32.2 L18.524,0.2 L32.524,0.2 L32.524,4.77142857 L23.6573333,4.77142857 L23.6573333,13.2285714 L30.704,13.2285714 L30.704,17.8 L23.6573333,17.8 L23.6573333,27.6285714 L32.524,27.6285714 L32.524,32.2 L18.524,32.2 Z M35.524,32.2 L35.524,0.2 L41.924,0.2 L46.8863188,19.3542857 L46.9790725,19.3542857 L46.9790725,0.2 L51.524,0.2 L51.524,32.2 L46.2834203,32.2 L40.1616812,8.84 L40.0689275,8.84 L40.0689275,32.2 L35.524,32.2 Z M53.524,32.2 L53.524,27.72 L63.0271056,4.77142857 L53.9898385,4.77142857 L53.9898385,0.2 L68.524,0.2 L68.524,4.68 L59.0208944,27.6285714 L68.524,27.6285714 L68.524,32.2 L53.524,32.2 Z M70.524,32.2 L75.6645836,0.2 L82.3834164,0.2 L87.524,32.2 L82.5637878,32.2 L81.661931,25.8457143 L81.661931,25.9371429 L76.0253263,25.9371429 L75.1234695,32.2 L70.524,32.2 Z M76.524,21.2 L81.524,21.2 L79.0492525,5.2 L78.9482424,5.2 L76.524,21.2 Z M90.524,32.2 L90.524,0.2 L97.9779877,0.2 C103.039337,0.2 105.524,2.98857143 105.524,8.10857143 L105.524,11.2628571 C105.524,16.3828571 103.039337,19.1714286 97.9779877,19.1714286 L95.5853497,19.1714286 L95.5853497,32.2 L90.524,32.2 Z M95.524,14.2 L97.9768302,14.2 C99.6277736,14.2 100.524,13.455814 100.524,11.1302326 L100.524,7.26976744 C100.524,4.94418605 99.6277736,4.2 97.9768302,4.2 L95.524,4.2 L95.524,14.2 Z"/>
+      </svg>
+    </a>
+    <div class="footer-links">
+      <a href={factoryHref}>{t.footer.factory}</a>
+      <span class="separator">·</span>
+      <a href={t.footer.emailHref}>{t.footer.email}</a>
+    </div>
+    <div class="footer-meta">
+      <div class="footer-socials">
+        <a href="https://www.linkedin.com/company/kenzap" class="footer-social" aria-label="LinkedIn" target="_blank" rel="noopener" set:html={'<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>'} />
+        <a href="https://github.com/kenzap/nesting-app" class="footer-social" aria-label="GitHub" target="_blank" rel="noopener" set:html={'<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>'} />
+        <a href="https://www.youtube.com/c/KenzapCloud" class="footer-social" aria-label="YouTube" target="_blank" rel="noopener" set:html={'<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" fill="#f6f7fc"/></svg>'} />
+      </div>
+      <div class="footer-copy">{t.footer.company}</div>
+    </div>
+  </footer>
+</main>
+
+<script>
+  const langSwitcher = document.getElementById('langSwitcher');
+  const langButton = langSwitcher?.querySelector('.lang-btn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const hamburger = document.getElementById('hamburger');
+
+  langButton?.addEventListener('click', () => {
+    const open = langSwitcher?.classList.toggle('open');
+    langButton.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+
+  document.addEventListener('click', (event) => {
+    if (langSwitcher && !langSwitcher.contains(event.target)) {
+      langSwitcher.classList.remove('open');
+      langButton?.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  const closeMobileMenu = () => {
+    mobileMenu?.classList.remove('open');
+    hamburger?.setAttribute('aria-expanded', 'false');
+    hamburger.innerHTML = '<svg class="menu-open" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>';
+  };
+
+  hamburger?.addEventListener('click', () => {
+    const open = mobileMenu?.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
+    hamburger.innerHTML = open
+      ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>'
+      : '<svg class="menu-open" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>';
+  });
+
+  mobileMenu?.querySelectorAll('a').forEach((link) => {
+    link.addEventListener('click', () => {
+      closeMobileMenu();
+    });
+  });
+</script>
+
+<style>
+  :global(body) {
+    background: #f6f7fc;
+    color: #0a0a08;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+  .nesting-homepage {
+    --black: #0a0a08;
+    --off-white: #f0f2fa;
+    --warm-white: #f6f7fc;
+    --steel-mid: #4a4f5c;
+    --steel-light: #8a9099;
+    --accent: #1941df;
+    --accent-hover: #2d55f5;
+    --accent-pale: #e8ecfc;
+    --grid: #dde1f0;
+    --mono: 'DM Mono', monospace;
+    --display: 'Syne', sans-serif;
+  }
+
+  .site-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 48px;
+    background: rgba(246, 247, 252, 0.88);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--grid);
+  }
+
+  .nav-logo,
+  .nav-links a,
+  .footer-links a,
+  .footer-social {
+    text-decoration: none;
+  }
+
+  .nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--black);
+  }
+
+  .nav-logo-divider {
+    width: 1px;
+    height: 18px;
+    background: var(--grid);
+  }
+
+  .nav-logo-suffix,
+  .nav-links a,
+  .nav-cta,
+  .lang-btn,
+  .lang-group-label,
+  .lang-option,
+  .hero-eyebrow,
+  .section-label,
+  .step-num,
+  .feature-tag,
+  .badge,
+  .dl-os,
+  .dl-note,
+  .open-source-note,
+  .site-footer,
+  .footer-copy,
+  .mobile-menu a,
+  .mobile-lang-label,
+  .mobile-lang-item,
+  .bridge-label,
+  .bridge-helper {
+    font-family: var(--mono);
+  }
+
+  .nav-logo-suffix {
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+  }
+
+  .nav-links a {
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: var(--steel-mid);
+  }
+
+  .nav-links a:hover,
+  .footer-links a:hover {
+    color: var(--black);
+  }
+
+  .nav-cta,
+  .btn-primary,
+  .mobile-menu-cta {
+    color: var(--warm-white) !important;
+    background: var(--black);
+  }
+
+  .nav-cta,
+  .btn-primary,
+  .mobile-menu-cta,
+  .btn-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 2px;
+    transition: background 0.2s, color 0.2s, border-color 0.2s, transform 0.15s;
+  }
+
+  .nav-cta {
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+  }
+
+  .nav-cta:hover,
+  .btn-primary:hover,
+  .mobile-menu-cta:hover {
+    background: var(--accent-hover) !important;
+  }
+
+  .lang-switcher {
+    position: relative;
+  }
+
+  .lang-btn {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 7px 10px;
+    border: 0.5px solid var(--grid);
+    border-radius: 2px;
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    color: var(--steel-mid);
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .lang-switcher.open .lang-btn {
+    border-color: var(--accent);
+    color: var(--black);
+  }
+
+  .lang-dropdown {
+    display: none;
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    width: 200px;
+    max-height: 340px;
+    overflow-y: auto;
+    background: var(--warm-white);
+    border: 0.5px solid var(--grid);
+    border-radius: 4px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  }
+
+  .lang-switcher.open .lang-dropdown {
+    display: block;
+  }
+
+  .lang-group-label {
+    padding: 10px 14px 4px;
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--steel-light);
+  }
+
+  .lang-option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 14px;
+    font-size: 11px;
+    color: var(--steel-mid);
+  }
+
+  .lang-option.active {
+    color: var(--accent);
+    font-weight: 500;
+  }
+
+  .lang-code {
+    font-size: 9px;
+    letter-spacing: 0.08em;
+    color: var(--steel-light);
+  }
+
+  .nav-mobile,
+  .mobile-menu {
+    display: none;
+  }
+
+  #hamburger {
+    background: none;
+    border: 0.5px solid var(--grid);
+    border-radius: 2px;
+    padding: 8px;
+    color: var(--steel-mid);
+    cursor: pointer;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 520px;
+    height: calc(100vh - 80px);
+    max-height: 820px;
+    padding: 0;
+    margin-top: 80px;
+    overflow: hidden;
+  }
+
+  .hero-left {
+    padding: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hero-eyebrow,
+  .section-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--steel-light);
+  }
+
+  .hero-eyebrow {
+    margin-bottom: 24px;
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    color: var(--accent);
+  }
+
+  .hero-eyebrow::before {
+    content: '';
+    width: 24px;
+    height: 1px;
+    background: var(--accent);
+  }
+
+  .section-label::before {
+    content: '';
+    width: 20px;
+    height: 1px;
+    background: currentColor;
+  }
+
+  .hero-headline,
+  .section-title,
+  .step-title,
+  .feature-title,
+  .bridge-name,
+  .dl-label {
+    font-family: var(--display);
+    letter-spacing: -0.02em;
+  }
+
+  .hero-headline {
+    margin-bottom: 28px;
+    font-size: clamp(42px, 5vw, 72px);
+    font-weight: 800;
+    line-height: 0.95;
+  }
+
+  .hero-headline em {
+    font-style: normal;
+    color: var(--accent);
+  }
+
+  .hero-sub {
+    max-width: 420px;
+    margin-bottom: 44px;
+    font-size: 17px;
+    font-weight: 300;
+    color: var(--steel-mid);
+    line-height: 1.65;
+  }
+
+  .hero-actions,
+  .platform-badges,
+  .download-buttons,
+  .footer-meta,
+  .footer-socials {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .btn-primary {
+    padding: 14px 28px;
+    font-family: var(--mono);
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.15s;
+  }
+
+  .btn-primary:hover {
+    background: var(--accent);
+    transform: translateY(-1px);
+  }
+
+  .btn-secondary {
+    gap: 8px;
+    padding-bottom: 2px;
+    border-bottom: 1px solid var(--grid);
+    font-family: var(--mono);
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--steel-mid);
+    transition: color 0.2s, border-color 0.2s;
+  }
+
+  .btn-secondary:hover {
+    color: var(--black);
+    border-color: var(--black);
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 12px;
+    border: 1px solid rgba(25, 65, 223, 0.2);
+    border-radius: 2px;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    background: var(--accent-pale);
+  }
+
+  .badge-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .platform-badges {
+    gap: 12px;
+    margin-top: 32px;
+  }
+
+  .hero-right {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 520px;
+    background: var(--black);
+    overflow: hidden;
+  }
+
+  .hero-right video,
+  .feature-visual video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .hero-right video {
+    position: absolute;
+    inset: 0;
+  }
+
+  .hero-right-label {
+    position: absolute;
+    right: 24px;
+    bottom: 24px;
+    z-index: 2;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  section {
+    padding: 100px 48px;
+  }
+
+  .workflow {
+    background: var(--off-white);
+    border-top: 1px solid var(--grid);
+    border-bottom: 1px solid var(--grid);
+  }
+
+  .workflow-inner,
+  .features {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    margin-bottom: 16px;
+    font-size: clamp(28px, 3.5vw, 48px);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -0.03em;
+  }
+
+  .workflow-steps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+    margin-top: 56px;
+    background: var(--grid);
+    border: 1px solid var(--grid);
+  }
+
+  .step {
+    position: relative;
+    padding: 36px 32px;
+    background: var(--warm-white);
+  }
+
+  .step-num {
+    margin-bottom: 16px;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    color: var(--accent);
+  }
+
+  .step-title {
+    margin-bottom: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--black);
+  }
+
+  .step-desc {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--steel-mid);
+  }
+
+  .feature-desc,
+  .bridge-copy,
+  .bridge-text {
+    font-size: 14px;
+    line-height: 1.65;
+    color: var(--steel-mid);
+  }
+
+  .features-wrap {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    margin-top: 56px;
+    background: var(--grid);
+    border: 1px solid var(--grid);
+  }
+
+  .feature-card {
+    padding: 40px 36px;
+    background: var(--warm-white);
+    transition: background 0.2s;
+  }
+
+  .feature-card:hover {
+    background: var(--off-white);
+  }
+
+  .feature-tag {
+    margin-bottom: 14px;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .feature-title {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .feature-card.wide {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .feature-visual {
+    height: 200px;
+    overflow: hidden;
+    border-radius: 4px;
+    background: var(--black);
+  }
+
+  .wide-desc {
+    margin-bottom: 16px;
+  }
+
+  .geo-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+  }
+
+  .geo-chip {
+    padding: 4px 12px;
+    border: 1px solid var(--grid);
+    border-radius: 2px;
+    font-family: var(--mono);
+    font-size: 11px;
+    color: var(--steel-mid);
+  }
+
+  .erp-bridge {
+    background: var(--off-white);
+    border-top: 1px solid var(--grid);
+    border-bottom: 1px solid var(--grid);
+    padding: 72px 48px;
+  }
+
+  .erp-bridge-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+
+  .bridge-title {
+    font-size: clamp(22px, 3vw, 38px);
+  }
+
+  .bridge-copy {
+    margin-top: 16px;
+    margin-bottom: 28px;
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  .bridge-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .bridge-card {
+    padding: 20px 24px;
+    border: 1px solid var(--grid);
+    border-radius: 2px;
+    background: var(--warm-white);
+  }
+
+  .bridge-label {
+    margin-bottom: 6px;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+  }
+
+  .bridge-label.accent {
+    color: var(--accent);
+  }
+
+  .bridge-label.muted {
+    color: var(--steel-mid);
+  }
+
+  .bridge-name {
+    margin-bottom: 4px;
+    font-size: 15px;
+    font-weight: 600;
+  }
+
+  .bridge-separator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0 12px;
+  }
+
+  .bridge-separator .line {
+    flex: 1;
+    height: 1px;
+    background: var(--grid);
+  }
+
+  .bridge-helper {
+    font-size: 10px;
+    color: var(--steel-light);
+  }
+
+  .download-section {
+    text-align: center;
+    color: var(--warm-white);
+    background: var(--black);
+    padding: 120px 48px;
+  }
+
+  .download-section .section-label {
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  .download-section .section-label::before {
+    background: rgba(255, 255, 255, 0.3);
+  }
+
+  .download-title {
+    color: var(--warm-white);
+  }
+
+  .download-sub {
+    max-width: 460px;
+    margin: 0 auto 48px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.45);
+  }
+
+  .download-buttons {
+    justify-content: center;
+    margin-bottom: 32px;
+  }
+
+  .dl-btn {
+    min-width: 220px;
+    padding: 16px 28px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.06);
+    transition: background 0.2s, border-color 0.2s;
+  }
+
+  .dl-btn > div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .dl-btn:hover {
+    background: rgba(25, 65, 223, 0.15);
+    border-color: rgba(25, 65, 223, 0.5);
+  }
+
+  .dl-os {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.35);
+  }
+
+  .dl-label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--warm-white);
+  }
+
+  .dl-note {
+    display: block;
+    margin-top: 4px;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.25);
+  }
+
+  .open-source-note {
+    font-size: 11px;
+    letter-spacing: 0.06em;
+    color: rgba(255, 255, 255, 0.25);
+  }
+
+  .open-source-note a {
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.45);
+  }
+
+  .site-footer {
+    padding: 40px 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    border-top: 1px solid var(--grid);
+    font-size: 11px;
+    color: var(--steel-light);
+  }
+
+  .site-footer a {
+    color: var(--steel-light);
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 0.2s;
+  }
+
+  .footer-links,
+  .footer-meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .separator {
+    opacity: 0.3;
+  }
+
+  .footer-social {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.5px solid var(--grid);
+    border-radius: 2px;
+    color: var(--steel-light);
+    text-decoration: none;
+    transition: border-color 0.2s, color 0.2s;
+  }
+
+  .footer-social:hover {
+    color: var(--black);
+    border-color: var(--steel-mid);
+  }
+
+  .footer-social :global(svg) {
+    display: block;
+    transition: color 0.2s, fill 0.2s, stroke 0.2s;
+  }
+
+  @media (max-width: 900px) {
+    .hero {
+      grid-template-columns: 1fr;
+      height: auto;
+      max-height: none;
+      margin-top: 80px;
+    }
+
+    .hero-left {
+      padding: 48px 24px;
+    }
+
+    .hero-right {
+      height: 56vw;
+      min-height: 280px;
+      max-height: 420px;
+    }
+
+    .workflow-steps,
+    .features-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .feature-card.wide,
+    .erp-bridge-inner {
+      grid-template-columns: 1fr;
+    }
+
+    .feature-card.wide {
+      grid-column: span 1;
+    }
+
+    .site-nav {
+      padding: 16px 24px;
+    }
+
+    .nav-links {
+      display: none;
+    }
+
+    .nav-mobile {
+      display: flex;
+      align-items: center;
+    }
+
+    section {
+      padding: 72px 24px;
+    }
+
+    .mobile-menu {
+      position: fixed;
+      top: 80px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 99;
+      padding: 8px 24px 48px;
+      overflow-y: auto;
+      border-top: 1px solid var(--grid);
+      background: var(--warm-white);
+    }
+
+    .mobile-menu.open {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mobile-menu a {
+      padding: 20px 0;
+      border-bottom: 0.5px solid var(--grid);
+      font-size: 14px;
+      letter-spacing: 0.04em;
+      color: var(--steel-mid);
+    }
+
+    .mobile-menu-cta {
+      margin-top: 24px;
+      width: fit-content;
+      padding: 14px 24px;
+      border-bottom: none !important;
+      font-family: var(--mono);
+      font-size: 13px;
+      font-weight: 500;
+      text-decoration: none;
+    }
+
+    .mobile-lang-section {
+      margin-top: 32px;
+      padding-bottom: 32px;
+    }
+
+    .mobile-lang-label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+      font-size: 9px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--steel-light);
+    }
+
+    .mobile-lang-label::before {
+      content: '';
+      width: 16px;
+      height: 1px;
+      background: var(--steel-light);
+    }
+
+    .mobile-lang-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      overflow: hidden;
+      border: 1px solid var(--grid);
+      border-radius: 4px;
+      background: var(--grid);
+    }
+
+    .mobile-lang-item {
+      padding: 14px 18px !important;
+      border-bottom: none !important;
+      font-size: 12px !important;
+      color: var(--steel-mid);
+      background: var(--warm-white);
+    }
+
+    .mobile-lang-item.active {
+      color: var(--accent);
+      font-weight: 500;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .site-footer {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 32px 24px;
+      gap: 20px;
+    }
+
+    .footer-links {
+      gap: 12px;
+    }
+
+    .footer-socials {
+      gap: 10px;
+    }
+  }
+</style>

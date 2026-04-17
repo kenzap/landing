@@ -1,240 +1,406 @@
 {
-  "nav": {
-    "problem": "Probleem",
-    "solution": "Lahendus",
-    "features": "Funktsioonid",
-    "customers": "Kliendid",
-    "contact": "Kontakt"
+  "factoryHomepage": {
+    "meta": {
+      "title": "Kenzap Factory — Tootmisjuhtimine metalltöötlejatele",
+      "description": "Tootmis-, kuluarvestus- ja vastavustarkvara, mis on loodud spetsiaalselt metalltöötlejatele. Töökojad, laserilõikus, Peppol e-arveldus. EL-valmis."
+    },
+    "nav": {
+      "problem": "Probleem",
+      "features": "Funktsioonid",
+      "caseStudy": "Kasusjuht",
+      "nesting": "Pesastusrakendus",
+      "nestingHref": "/nesting",
+      "cta": "Võtke meiega ühendust →"
+    },
+    "hero": {
+      "eyebrow": "Tehase juhtimisrakendus",
+      "headlineTop": "Loodud",
+      "strikeWord": "raamatupidajatele.",
+      "headlineAccent": "metalltöötlejatele.",
+      "subheadline": "Tootmisjuhtimine, mis on loodud töödel põhinevatele metalltöötlejatele — mitte kohandatud üldisest raamatupidamistarkvärast.",
+      "primaryCta": "Broneerige demo →",
+      "secondaryCta": "Vaadake tulemusi ↓",
+      "interfaceLabel": "Kenzap Factory kasutajaliides",
+      "stats": [
+        {
+          "value": "~30%",
+          "label": "Kiirem hinnapakkumine"
+        },
+        {
+          "value": "2 nädalat",
+          "label": "Operaatori sisseelamine"
+        },
+        {
+          "value": "e-arveldus",
+          "label": "Vastavusvalmis"
+        }
+      ]
+    },
+    "problem": {
+      "label": "Probleem",
+      "title": "Üldine tarkvara loodi\nraamatupidajatele, mitte metalltöötlejatele.",
+      "quote": "\"Meil on süsteem, mis toimib nii, nagu meie töötsehh toimib. Operaatorid kohanesid kohe ja meie töökulu arvestus on nüüd usaldusväärne.\"",
+      "quoteAuthor": "— KLIENDIHALDUSJUHT, SKARDA NAMS SIA · LÄTI",
+      "items": [
+        {
+          "title": "Töökulu arvestus on arvamismäng.",
+          "description": "Materjalitüübid, lõikeaeg, jäägid — enamik ERP süsteeme ei suuda seda modelleerida. Saate teada, et kaotasite raha pärast töö lähetamist."
+        },
+        {
+          "title": "Metalliplaatide varud on jälgimata.",
+          "description": "Te teate, kui palju osi teil on, mitte kui palju täielikke ja osalisi plaate — seega tellite üle või jääte puudu."
+        },
+        {
+          "title": "Tootmisplaneerimine toimub tabelites.",
+          "description": "Ajastamine, võimsuskontroll ja lõike optimeerimine toimuvad süsteemist väljas, failides, mida keegi teine ei näe."
+        },
+        {
+          "title": "Vastavus on manuaalne.",
+          "description": "Peppol e-arveldus, muutuvad käibemaksumäärad, GDPR — lahendatakse kõrvallahendustega, mitte süsteemiga."
+        },
+        {
+          "title": "Töötsehh on nähtamatu.",
+          "description": "Juhid saavad viivituste ja kvaliteediprobleemide kohta teada liiga hilja, sest operaatoritel pole süsteemi, kuhu raporteerida."
+        }
+      ]
+    },
+    "workflow": {
+      "label": "Kuidas see toimib",
+      "title": "Hinnapakkumisest lähetamiseni,\nühes ühendatud töövoos",
+      "steps": [
+        {
+          "title": "Hinnapakkumine ja hinnang",
+          "description": "Arvutage töökulud täpselt — materjal, tööjõud, masina aeg, lõike optimeerimine — enne hinnale kohustumist."
+        },
+        {
+          "title": "Tootmisplaneerimine",
+          "description": "Ajastage operatsioonid töökeskuste vahel reaalajas varude kontrolli ja pesastuse optimeerimisega."
+        },
+        {
+          "title": "Töötsehhi täitmine",
+          "description": "Puuteekraani liides operaatoritele. Töö jälgimine, aja kirjendamine ja kvaliteedikontroll masina juures."
+        },
+        {
+          "title": "Arveldus ja vastavus",
+          "description": "Peppol-vastavad e-arved ja saatelehed genereeritakse automaatselt õigete käibemaksumääradega tootetüübi järgi."
+        },
+        {
+          "title": "Lähetamine ja kohaletoimetamine",
+          "description": "Pakkige tööd, mahakandke kogumikud ja lähetage täieliku dokumentatsiooniga. Varud uuenevad automaatselt."
+        },
+        {
+          "title": "Analüütika",
+          "description": "Tegeliku ja hinnangulise kulu võrdlus töö kohta. Täielik jääkide arvestus ja tootmiskitsaskohtade nähtavus."
+        }
+      ]
+    },
+    "features": {
+      "label": "Põhivõimekused",
+      "title": "Kõik, mida metalltöötleja\nvajab ühes süsteemis",
+      "items": [
+        {
+          "tag": "Tootmine",
+          "title": "Töövoo jälgimine",
+          "description": "Jälgige iga tööd hinnapakkumisest kättetoimetamiseni operatsioonide tasandi detailidega. Teadke täpselt, kus iga töö on reaalajas."
+        },
+        {
+          "tag": "Varud",
+          "title": "Metalliplaatide MRP",
+          "description": "Jälgige varusid plaatide kaupa, mitte ainult osade arvu. Täielikud ja osalised plaadid, mitu metallitüüpi, automaatsed ümbertellimise päästikud."
+        },
+        {
+          "tag": "Lõikus",
+          "title": "Sisseehitatud pesastus",
+          "description": "Pesastuse algoritmid minimeerivad materjali kadu laser-, plasma- ja veejoa lõike jaoks — ühendatud otse töökulude arvestusega, et jäägid oleksid automaatselt jälgitud.",
+          "accent": true
+        },
+        {
+          "tag": "Kuluarvestus",
+          "title": "Tööpõhine kuluarvestus",
+          "description": "Täpne kulu töö kohta: materjal, tööjõud, üldkulud ja jäägid. Võrrelge hinnangulist ja tegelikku iga saadetava töö puhul."
+        },
+        {
+          "tag": "Vastavus",
+          "title": "Peppol e-arveldus",
+          "description": "EL-vastane elektrooniline arveldus Peppol BIS Billing 3.0 kaudu. Käibemaksumäärad käsitletakse automaatselt tootetüübi ja kliendi piirkonna järgi."
+        },
+        {
+          "tag": "Töötsehh",
+          "title": "Puuteekraani liides",
+          "description": "Loodud operaatoritele masina juures. Töö jälgimine, aja kirjendamine, kvaliteedikontroll — omaks võetud kahe nädalaga Skarda Namsil."
+        },
+        {
+          "tag": "Tarnijad",
+          "title": "Tarnijate haldus",
+          "description": "Ostutellimused, materjalikulud ja tarne graafikud jälgitakse samas süsteemis tootmisega."
+        },
+        {
+          "tag": "AI",
+          "title": "AI-juhitud ülevaated",
+          "description": "Tuvastage tootmise kitsaskohad ja parandage töökulude arvestuse täpsust AI-põhise analüüsiga teie tegelikest tootmisandmetest."
+        },
+        {
+          "tag": "Andmed",
+          "title": "Avatud lähtekood ja GDPR",
+          "description": "Tarnija lukustamist ei ole. Täielik andmete ülekantavus. GDPR-vastav EL-i andmete residentsusega. Vajadusel paigaldage oma infrastruktuurile."
+        }
+      ]
+    },
+    "caseStudy": {
+      "label": "Tegelikud tulemused",
+      "title": "Kasutusel tootmises\nettevõttes Skarda Nams SIA",
+      "meta": "METALLTÖÖTLUS · LÄTI · 20 TÖÖTAJAT · 2 CNC MASINAT",
+      "challengeLabel": "Väljakutse",
+      "challengeText": "Skarda Nams tegi hinnapakkumisi käsitsi mitme metallitüübi korral, pidas varusid paberil ja ei suutnud toota vastavaid arveid ilma kõrvallahendusteta. Töökulude arvestus oli ebatäpne. Töötsehhi nähtavus oli null.",
+      "solutionLabel": "Lahendus",
+      "solutionText": "Rakendati Kenzap Factory integreeritud hinnapakkumise, tootmise marsruutimise ja töötsehhi täitmise moodulitega. Peppol e-arveldus konfigureeriti EL vastavuse jaoks. Integreeriti Moneo raamatupidamistarkväraga.",
+      "quote": "\"Operaatorid kohanesid liidesega kohe ja meie töökulude arvestus on nüüd usaldusväärne. Maksumäärasid käsitletakse automaatselt — see üksi säästab meile märkimisväärset aega igal kuul.\"",
+      "quoteAuthor": "— KLIENDIHALDUSJUHT, SKARDA NAMS SIA",
+      "results": [
+        {
+          "value": "~30%",
+          "label": "Hinnapakkumise aja vähenemine"
+        },
+        {
+          "value": "2 nädalat",
+          "label": "Operaatori sisseelamine"
+        },
+        {
+          "value": "100%",
+          "label": "Arvelduse vastavus saavutatud"
+        },
+        {
+          "value": "100%",
+          "label": "Hinnangu täpsus saavutatud"
+        },
+        {
+          "value": "Täielik nähtavus",
+          "label": "Töötsehhi operatsioonidesse ja tootmisetappidesse — esimesest päevast",
+          "fullWidth": true
+        }
+      ]
+    },
+    "deployment": {
+      "label": "Paigaldus",
+      "title": "Töötab seal, kus teie\ntegevus seda nõuab",
+      "options": [
+        {
+          "title": "Tarnija hallatav pilv",
+          "description": "Täielikult hallatav hosting automaatsete uuenduste, varundamise ja turvapaikadega. Parim tiimidele, kes keskenduvad operatsioonidele, mitte IT-le."
+        },
+        {
+          "title": "Kliendi hallatav pilv",
+          "description": "Paigaldage oma AWS, Azure või GCP infrastruktuurile. Täielik kontroll konfiguratsiooni, juurdepääsu ja andmete üle. Sobib IT-võimekate organisatsioonidele."
+        },
+        {
+          "title": "Oma serverites majutatud",
+          "description": "Kohapealne paigaldus maksimaalse andmete suveräänsuse jaoks. Nõutav mõnedes reguleeritud tööstusharudes. Täielik funktsioonide võrdsus pilvevalmistega."
+        }
+      ]
+    },
+    "timeline": {
+      "label": "Tüüpiline rakendamise ajakava",
+      "phases": [
+        {
+          "phase": "1. etapp",
+          "duration": "2–3 nädalat",
+          "label": "Avastamine ja konfigureerimine"
+        },
+        {
+          "phase": "2. etapp",
+          "duration": "2–3 nädalat",
+          "label": "Andmete migreerimine ja testimine"
+        },
+        {
+          "phase": "3. etapp",
+          "duration": "1–2 nädalat",
+          "label": "Koolitus ja käivitamine"
+        },
+        {
+          "phase": "4. etapp",
+          "duration": "Pidev",
+          "label": "Käivitusjärgne tugi"
+        }
+      ]
+    },
+    "nesting": {
+      "label": "Samuti Kenzapilt",
+      "title": "Alustage pesastusega.\nÜhendage ülejäänud, kui olete valmis.",
+      "description": "Kenzap Nesting on tasuta iseseisev lauarakendus DXF-põhiseks plaadi pesastamiseks. Natiivne Windows ja macOS peal. Tellimust, pilve, registreerumist ei ole. Kui teie tegevus kasvab, ühendab Kenzap Factory kõik.",
+      "primaryCta": "Tutvu Kenzap Nestinguga →",
+      "href": "/nesting",
+      "cardLabel": "Kenzap Nesting — tasuta allalaadimine",
+      "cardTitle": "Pakkige rohkem. Raiskake vähem. Lõigake kiiremini.",
+      "cardDescription": "Lohistage DXF osad, määrake kogused, käivitage pesastuse mootor, eksportige lõikevalmis plaadid. Reaalajas eelvaade algoritmi töötamise ajal.",
+      "platforms": [
+        "Windows",
+        "macOS"
+      ]
+    },
+    "contact": {
+      "label": "Võtke ühendust",
+      "title": "Vaadake, kas Kenzap Factory\nsobib teie tegevusele",
+      "description": "Vastame ühe tööpäeva jooksul. Müügiprotsessi pole — lihtsalt otsene vestlus selle kohta, kas see sobib teie tegevusele.",
+      "linkedinLabel": "LinkedIn",
+      "linkedinHref": "https://www.linkedin.com/in/pavel-lukasenko/",
+      "emailLabel": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com"
+    },
+    "footer": {
+      "nestingLabel": "Pesastusrakendus",
+      "nestingHref": "/nesting",
+      "emailLabel": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com",
+      "company": "© 2026 Kenzap Pte Ltd"
+    }
   },
-  "hero": {
-    "headline": "ERP metallitöötlejatele.",
-    "subheadline": "Tootmine, kuluarvestus ja planeerimine tellimuspõhise tootmise jaoks.",
-    "intro": "See süsteem on spetsiaalselt loodud metallitöötlejatele. See toetab reaalseid tootmisprotsesse, mitte raamatupidamisel põhinevaid lahendusi. Fookus on tööstusettevõtetel, tellimusepõhisel tootmisel ja vastavusnõuetel.",
-    "primaryCta": "Võta ühendust",
-    "secondaryCta": "Vaata, kas sobib",
-    "watchDemo": "Vaata, kuidas töötab"
-  },
-  "problem": {
-    "title": "Miks üldised ERP süsteemid ei sobi metallitöötlejatele",
-    "intro": "Enamik ERP süsteeme on loodud raamatupidamise, mitte tootmise ümber. Seetõttu tuginevad metallitöötlejad sageli tabelitele ja käsitsi protsessidele tööde ja tööstuse juhtimiseks.",
-    "items": [
-      "Ebatäpne tööde kuluarvestus",
-      "Metalli laovarude ebapiisav jälgimine",
-      "Puudulik ülevaade tööstuse tegevusest",
-      "Puudub lehmetalli lõikamise optimeerimine",
-      "Tootmise planeerimine toimub väljaspool ERP-d",
-      "Muutuvaid tootekäibemakse ei käsitleta automaatselt"
-    ],
-    "conclusion": "Need probleemid suurendavad vastavusriski, vähendavad tõhusust ja halvendavad teenuse kvaliteeti."
-  },
-  "whoFor": {
-    "title": "Kellele see süsteem on mõeldud",
-    "intro": "See ERP on mõeldud metallitöötlusettevõtetele, kellel on:",
-    "criteria": [
-      "Vajadus täpse tööde kuluarvestuse ja materjalide jälgimise järele",
-      "Metallivarude ja lehmetalli laovarude haldamise nõuded",
-      "Lõikamise optimeerimise vajadused laserile, plasmaile või veejõuga lõikamisele",
-      "EL e-arvete kooskõla kohustused",
-      "Euroopa raamatupidamissüsteemide integratsiooni nõuded",
-      "GDPR ja EL andmekaitsenõuetele vastavuse vajadus"
-    ],
-    "typical": "Tüüpilised kasutajad:",
-    "users": [
-      "Tööstused",
-      "Lepingulised tootjad",
-      "Kohandatud või väikeseeria osade tootjad",
-      "Lehmetalli töökojad"
-    ],
-    "notFor": "See süsteem ei ole mõeldud:",
-    "excluded": [
-      "Puhtale jaotusärikale",
-      "Protsessitootmisele",
-      "Kõrgelt standardiseeritud masstootmisele"
-    ]
-  },
-  "manufacturing": {
-    "title": "Tootmiskeskne disain",
-    "intro": "Süsteem on ehitatud metallitöötluses kasutatavate reaalsete tootmiskontseptsioonide ümber ja kohandub pidevalt keerukatele ja arenevatele Euroopa vastavusnõuetele.",
-    "features": [
-      {
-        "name": "Töövoogude jälgimine",
-        "desc": "Jälgi iga tööd pakkumisest kättetoimetamiseni täieliku töövoo nähtavuse ja operatsiooni taseme detailidega",
-        "icon": "cog"
+  "nestingHomepage": {
+    "meta": {
+      "title": "Kenzap Nesting — DXF plaadi pesastus metalltöötlejatele",
+      "description": "Tasuta natiivne DXF plaadi pesastuse tarkvara metalltöötlejatele. Importige DXF osad, optimeerige plaadid, eelvaade reaalajas ja eksportige lõikevalmis paigutused."
+    },
+    "nav": {
+      "workflow": "Kuidas toimib",
+      "features": "Funktsioonid",
+      "factory": "Factory ERP",
+      "factoryMobile": "Factory",
+      "cta": "Laadige tasuta alla →",
+      "ctaHref": "https://github.com/kenzap/nesting-app"
+    },
+    "hero": {
+      "eyebrow": "DXF pesastuse tarkvara",
+      "headlineLine1": "Pakkige rohkem.",
+      "headlineLine2Prefix": "Raiskake ",
+      "headlineLine2Accent": "vähem.",
+      "headlineLine3": "Lõigake kiiremini.",
+      "subheadline": "Natiivne lauarakendus metalltöötlejatele. Lohistage DXF osad, määrake kogused, käivitage mootor — saate täielikult pakitud plaadi lõikamiseks valmis.",
+      "primaryCta": "↓ Laadige tasuta alla",
+      "primaryCtaHref": "https://github.com/kenzap/nesting-app/releases",
+      "secondaryCta": "Vaadake seda tootmises →",
+      "secondaryCtaHref": "/#case-study",
+      "badges": {
+        "windows": "Windows x64",
+        "mac": "macOS Apple Silicon",
+        "openSource": "Avatud lähtekood"
       },
-      {
-        "name": "Tootmise planeerimine",
-        "desc": "Halda tootmisvõimsust ja planeeri operatsioone tõhusalt kogu tööstuses",
-        "icon": "factory"
-      },
-      {
-        "name": "Materjalide planeerimine",
-        "desc": "Täpne MRP, mida toetab toormaterjali jälgimine, lehmetalli laovarude nähtavus ja automaatne laovarude haldamine",
-        "icon": "format-list-checks"
-      },
-      {
-        "name": "Lõikamise optimeerimine",
-        "desc": "Sisseehitatud pesastamise algoritmid vähendavad jääke ja maksimeerivad lehtede kasutamist laseri, plasma ja veejõuga lõikamisel",
-        "icon": "content-cut"
-      },
-      {
-        "name": "Reaalajas tootmisaruandlus",
-        "desc": "Puutepaneelile optimeeritud liides reaalajas tööde jälgimiseks ja aruandluseks masina operaatorite poolt",
-        "icon": "tablet"
-      },
-      {
-        "name": "Tööpõhine kuluarvestus",
-        "desc": "Täpne kuluarvutus töö kohta materjali-, tööjõu-, üldkulude ja jääkide jälgimisega",
-        "icon": "calculator"
-      },
-      {
-        "name": "Peppol e-arveldus",
-        "desc": "Loo EL-i nõuetele vastavaid elektroonilist arveid Peppol BIS Billing 3.0 standardi järgi",
-        "icon": "file-document-outline"
-      },
-      {
-        "name": "KM ja vastavus",
-        "desc": "Kohaldub KM käsitlus eranditega ja riikliku raamatupidamissüsteemi integratsioon",
-        "icon": "shield-check"
-      },
-      {
-        "name": "Tarnijate haldamine",
-        "desc": "Jälgi tarnijaid, ostutellimusi, materjalikulu ja tarneaegu",
-        "icon": "truck"
-      },
-      {
-        "name": "Avatud lähtekood",
-        "desc": "Ehitatud avatud lähtekoodiga tehnoloogiatele ilma müüja lukustuseta, tagades täieliku andmete ülekantavuse ja süsteemi sõltumatuse",
-        "icon": "code"
-      },
-      {
-        "name": "Euroopa andmekaitse",
-        "desc": "GDPR-ile vastav andmekäitlus täieliku andmesuveräänsusega Euroopa operatsioonide jaoks",
-        "icon": "puzzle"
-      },
-      {
-        "name": "AI-põhised ülevaated",
-        "desc": "AI-toetatud ülevaated tootmise kitsaskohtade tuvastamiseks ja tööde kuluarvestuse täpsuse parandamiseks",
-        "icon": "brain"
+      "previewLabel": "Reaalajas pesastuse eelvaade"
+    },
+    "workflow": {
+      "label": "Kuidas see toimib",
+      "titleLine1": "DXF-st lõikevalmiks",
+      "titleLine2": "kuues sammus",
+      "steps": [
+        {
+          "title": "Lisage DXF osad",
+          "description": "Lohistage üks või mitu DXF faili. Mootor tuvastab kõik pesastatavad kujud automaatselt, sealhulgas mitme kujuga failid."
+        },
+        {
+          "title": "Vaadake geomeetriat üle",
+          "description": "Määrake kogused osa kohta. Vaadake üle sisemised lõiked, graveerimise geomeetria ja kihti määrangud kuju kohta enne käivitamist."
+        },
+        {
+          "title": "Konfigureerige plaat",
+          "description": "Määrake plaadi mõõtmed, triipide käitumine, vahekaugused, pööramissamm, plaadi veeris ja graveerimise stiil."
+        },
+        {
+          "title": "Käivitage mootor",
+          "description": "Klikkige RUN. Natiivne binaarfail käsitleb paigutust — pilve üleslaadimist ega ootamist pole. Tulemused voolavad reaalajas tagasi."
+        },
+        {
+          "title": "Eelvaade reaalajas",
+          "description": "Vaadake plaatide täitumist algoritmi töötamise ajal. Näge kasutamise statistikat ja plaatide arvu uuenemist reaalajas."
+        },
+        {
+          "title": "Eksportige DXF-i",
+          "description": "Eksportige lõplikud plaadid kogu originaalse kihi struktuuri, geomeetria rekonstruktsiooni ja graveerimise geomeetria säilitamisega."
+        }
+      ]
+    },
+    "features": {
+      "label": "Põhivõimekused",
+      "titleLine1": "Kõik, mida teie lõikamise",
+      "titleLine2": "tegevus tegelikult vajab",
+      "cards": {
+        "performance": {
+          "tag": "Natiivne jõudlus",
+          "title": "Pilve ega brauserit pole. Lihtsalt kiire.",
+          "description": "Pesastuse mootor töötab natiivse binaarfailina teie masinas. Suured DXF failid töödeldakse sekundite, mitte minutitega. Töötab täielikult võrguühenduseta — tellimust, üleslaadimist ega viivitust pole."
+        },
+        "dxf": {
+          "tag": "DXF täpsus",
+          "title": "Täielik geomeetria tugi",
+          "description": "Jooned, kaared, ringid, polüjooned, ellipsid ja splaindid on kõik toetatud. Sisemise lõike geomeetria ja graveerimise kihid säilitatakse eksportimise kaudu eraldi.",
+          "chips": [
+            "Jooned",
+            "Kaared",
+            "Ringid",
+            "Polüjooned",
+            "Ellipsid",
+            "Splaindid"
+          ]
+        },
+        "engraving": {
+          "tag": "Graveerimine",
+          "title": "Kaks graveerimise stiili sisseehitatud",
+          "description": "Lihtne režiim ühejoonelisteks kirjadeks õhukestel materjalidel. Kriipsutatud režiim kontuuriga kirjadeks täidetud kontuuridega. Konfigureeritud töö kohta, säilitatud DXF eksportis."
+        },
+        "sheet": {
+          "tag": "Plaadi intelligentsus",
+          "title": "Plaadi suuruse optimeerimine",
+          "description": "Mootor leiab teie töö jaoks vajaliku minimaalse plaatide arvu. Konfigureerige plaadi veerist, osade vahekaugust, orientatsioonisammu ja triipude joondamist iseseisvalt."
+        },
+        "workflow": {
+          "tag": "Töövoog",
+          "title": "Reaalajas eelvaade algoritmi töötamise ajal",
+          "description": "Te ei oota mootori lõpetamist enne tulemuste nägemist. Plaadid täituvad reaalajas, kui paigutused on kinnitatud. Muutke koguseid või seadeid ja käivitage uuesti sekunditega.",
+          "chips": [
+            "Mitme kuju DXF tuvastamine",
+            "Kuju kohta koguse kontroll",
+            "Kihiteadlik eelvaade",
+            "Polügooni JSON eksport"
+          ]
+        }
       }
-    ],
-    "outro": "Tootmisandmed voolavad pakkumisest saatmiseni. Operatiivne reaalsus kajastub planeerimises ja kuluarvestuses."
-  },
-  "workflow": {
-    "title": "Pakkumisest saatmiseni",
-    "intro": "Süsteem ühendab põhilised tootmisetapid ühtseks töövoogs:",
-    "steps": [
-      {
-        "name": "Pakkumine ja hindamine",
-        "desc": "Arvuta kulud täpselt materjalide, tööjõu, masina aja ja lõikamise optimeerimisega"
+    },
+    "bridge": {
+      "label": "Osa suuremast pildist",
+      "title": "Ühendage pesastus kogu oma tegevusega",
+      "copy": "Kenzap Nesting töötab täna iseseisvalt lauatööriistana. Kui olete valmis, ühendab Kenzap Factory teie pesastuse väljundi otse töökulude arvestuse, tootmisplaneerimise ja varudega — et jäägid oleksid jälgitud ja hinnatud esimesest päevast.",
+      "cta": "Vaadake Kenzap Factory ERP-d →",
+      "standaloneLabel": "ISESEISEV",
+      "standaloneTitle": "Kenzap Nesting",
+      "standaloneText": "DXF sisse → optimeeritud plaat välja. Tasuta, avatud lähtekood, natiivne lauarakendus.",
+      "connectsTo": "ühendub",
+      "platformLabel": "TÄIELIK PLATVORM",
+      "platformTitle": "Kenzap Factory",
+      "platformText": "Hinnapakkumine, töökulude arvestus, töötsehhi jälgimine, e-arveldus. EL-valmis ERP."
+    },
+    "download": {
+      "label": "Alustage täna",
+      "title": "Tasuta. Natiivne. Avatud lähtekood.",
+      "sub": "Laadige alla oma platvormi jaoks. Registreerumist, litsentsi võtit ega pilve sõltuvust pole. Töötab esimesest päevast.",
+      "windows": {
+        "href": "https://github.com/kenzap/nesting-app/releases",
+        "os": "Windows",
+        "label": "Laadige alla x64",
+        "note": ".exe paigaldaja"
       },
-      {
-        "name": "Tootmise planeerimine",
-        "desc": "Planeeri operatsioone töötsentritevaheliselt laovarude kontrolli ja lõikamise optimeerimisega"
+      "mac": {
+        "href": "https://github.com/kenzap/nesting-app/releases",
+        "os": "macOS",
+        "label": "Apple Silicon",
+        "note": ".dmg — M1-M5"
       },
-      {
-        "name": "Tööstuse täitmine",
-        "desc": "Puutepaneeli liides tööde jälgimiseks, aja registreerimiseks ja kvaliteedikontrolliks"
-      },
-      {
-        "name": "Arveldamine ja vastavus",
-        "desc": "Loo Peppol-ile vastavaid e-arveid ja saatelehti õigete KM määradega"
-      },
-      {
-        "name": "Saatmine ja kohaletoimetamine",
-        "desc": "Pakenda, kirjuta maha kogumkaupade kaubad ja saada tööd klientidele"
-      },
-      {
-        "name": "Analüütika",
-        "desc": "Jälgi tegelike vs hinnanguliste kulude suhet täieliku läbipaistvuse ja jääkide arvestusega"
-      }
-    ],
-    "conclusion": "Eesmärk on järjepidevus ja jälgitavus kogu töö elutsükli vältel."
-  },
-  "caseStudy": {
-    "title": "Kasutusel reaalsetes tootmiskeskkondades",
-    "company": "Skarda Nams SIA",
-    "industry": "Metallitöötlus ja kohandatud osad",
-    "region": "Ida-Euroopa",
-    "employees": "20 töötajat, 2 CNC masinat",
-    "challenge": "Väljakutse",
-    "challengeText": "Skarda Nams seisis silmitsi raskustega täpse pakkumisega erinevate metallitüüpide kasutamisel, reaalajas laovarude uuendustega, metalli mahakandmise võimalustega, tootmise planeerimisega, vastavusnõuetele vastava arveldamisega, ebatäpse kuluarvestuse ja paberipõhise jälgimisega.",
-    "solution": "Lahendus",
-    "solutionText": "Rakendati Kenzap Factory integreeritud pakkumis-, tootmismarsruudi- ja tööstuse täitmise moodulitega. Masina operaatorid võtsid puutepaneeli liidese kasutusele kahe nädala jooksul pärast kasutuselevõttu. Peppol e-arveldus konfigureeriti EL vastavusnõuete täitmiseks. Integratsioon Moneo raamatupidamistarkvaraga lihtsustatud maksuaruandluse jaoks.",
-    "results": "Tulemused",
-    "resultItems": [
-      "Pakkumise aja vähenemine automaatse materjalide arvutuse kaudu",
-      "Tööde kuluarvestuse täpsuse paranemine",
-      "Täielik ülevaade tööstuse operatsioonidest ja tootmisetappidest",
-      "Peppol e-arvelduse vastavus saavutatud, integratsiooniga BMD raamatupidamistarkvaraga",
-      "Materjali jääkide vähendamine lõikamise optimeerimise kaudu",
-      "Kiirem tootmise planeerimine reaalajas laovarude kontrolliga",
-      "GDPR vastavus ja EL andmete residentsus säilitatud kogu operatsioonide vältel"
-    ],
-    "quote": "Meil on süsteem, mis töötab nii, nagu meie tööstus töötab. Operaatorid kohanesid liidesega kohe ja meie tööde kuluarvestus on nüüd usaldusväärne. Maksu määrasid käsitletakse automaatselt tootetüübi alusel, mis säästab meile aega ja peavalu arvete koostamisel.",
-    "quoteAuthor": "Klientide juht, Skarda Nams SIA",
-    "watchCase": "Vaata juhtumiuuringut"
-  },
-  "implementation": {
-    "title": "Rakendamise lähenemine",
-    "intro": "Rakendamine järgib standardset struktuuri, mis on mõeldud häirete minimeerimiseks.",
-    "principles": [
-      "Riistvara seadistamine ja tarkvara paigaldamine tehase süsteemidesse",
-      "Tootekataloog ja metallivarude andmebaasi konfigureerimine",
-      "Kasutajate rollide määramine ja vastutuse defineerimine",
-      "Dokumendimallide kohandamine (saatelehed, arved, aruanded)",
-      "Põhjalik koolitus operaatoritele ja juhtimismeeskonnale",
-      "Süsteemi integratsioon ja finantsaruandluse sünkroniseerimine"
-    ],
-    "timeline": "Tüüpiline ajakava:",
-    "phases": [
-      "Avastamine ja konfigureerimine: 2-3 nädalat",
-      "Andmete migratsioon ja testimine: 2-3 nädalat",
-      "Koolitus ja käivitamine: 1-2 nädalat",
-      "Pärast käivitamist tugi: jätkuv"
-    ],
-    "outro": "Rakendamist saavad teha konsultandid, kellel on tootmis- ja ERP taust, või otse Kenzapi insener."
-  },
-  "deployment": {
-    "title": "Kasutuselevõtu võimalused",
-    "intro": "Süsteem toetab mitut kasutuselevõtu mudelit operatiivsete, regulatiivsete ja andmesuveräänsuse vajaduste kohandamiseks.",
-    "options": [
-      {
-        "name": "Müüja hallatav pilv",
-        "desc": "Täielikult hallatav majutus Euroopa andmekeskustes automaatsete uuenduste, varunduste ja turvalaigukritega. Ideaalne ettevõtetele, kes keskenduvad operatsioonidele.",
-        "icon": "cloud-check"
-      },
-      {
-        "name": "Kliendi hallatav pilv",
-        "desc": "Kasutuselevõtt enda pilve-infrastruktuuris (AWS, Azure, GCP) täieliku kontrolliga konfiguratsiooni ja juurdepääsu üle. Sobib IT-võimekale organisatsioonidele.",
-        "icon": "cloud-cog"
-      },
-      {
-        "name": "Isemajutatud kasutuselevõtt",
-        "desc": "Ettevõttesisene paigaldus maksimaalse andmesuveräänsuse ja kontrolli jaoks. Nõutud mõnedes reguleeritud tööstusharudes või väga tundlikes operatsioonides.",
-        "icon": "server"
-      }
-    ],
-    "outro": "Kõik kasutuselevõtu võimalused kasutavad sama tarkvara, järgivad sama uuendamise teed ja säilitavad funktsioonide võrdsuse. Andmed jäävad Euroopa jurisdiktsioonidesse GDPR vastavuse jaoks."
-  },
-  "contact": {
-    "title": "Kontakt",
-    "intro": "Kui soovid mõista, kas see süsteem sobib sinu operatsioonile, võta meiega ühendust algse arutelu jaoks. Töötame inglise keeles ja teistes Euroopa keeltes.",
-    "namePlaceholder": "Sinu nimi",
-    "emailPlaceholder": "E-posti aadress",
-    "companyPlaceholder": "Ettevõtte nimi",
-    "messagePlaceholder": "Räägi meile oma tootmise seadistusest: masinate arv, tüüpilised töö suurused, praegused süsteemid...",
-    "submit": "Saada sõnum",
-    "sending": "Saadab...",
-    "success": "Sõnum edukalt saadetud. Võtame teiega ühendust 1-2 tööpäeva jooksul.",
-    "error": "Sõnumi saatmine ebaõnnestus. Palun kirjutage meile otse aadressil support@kenzap.com",
-    "or": "või",
-    "linkedin": "Ühenda LinkedInis",
-    "email": "Kirjuta meile otse"
-  },
-  "footer": {
-    "tagline": "Tarkvara tootmisoperatsioonidele",
-    "company": "© 2026 Kenzap. Kõik õigused kaitstud.",
-    "note": "Toote informatsioon võib muutuda. Kättesaadavus võib piirkonniti erineda.",
-    "languages": "Keeled"
+      "openSourcePrefix": "Lähtekood ja ehitamise juhised",
+      "openSourceHref": "https://github.com/lenzap/nesting-app",
+      "openSourceLink": "GitHubis",
+      "openSourceLicense": "Apache-2.0 litsents"
+    },
+    "footer": {
+      "factory": "Factory",
+      "email": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com",
+      "company": "© 2026 Kenzap Pte Ltd"
+    }
   }
 }

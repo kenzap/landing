@@ -1,240 +1,406 @@
 {
-  "nav": {
-    "problem": "Problema",
-    "solution": "Soluzione",
-    "features": "Funzionalità",
-    "customers": "Clienti",
-    "contact": "Contatti"
+  "factoryHomepage": {
+    "meta": {
+      "title": "Kenzap Factory — Gestione della Produzione per Carpenterie Metalliche",
+      "description": "Software per produzione, controllo costi e conformità progettato specificamente per carpenterie metalliche. Job shop, taglio laser, fatturazione Peppol. Conforme alle normative UE."
+    },
+    "nav": {
+      "problem": "Problematica",
+      "features": "Funzionalità",
+      "caseStudy": "Caso studio",
+      "nesting": "App nesting",
+      "nestingHref": "/nesting",
+      "cta": "Contattaci →"
+    },
+    "hero": {
+      "eyebrow": "Software gestionale di stabilimento",
+      "headlineTop": "Creato per",
+      "strikeWord": "commercialisti.",
+      "headlineAccent": "carpentieri.",
+      "subheadline": "Gestione della produzione sviluppata per la carpenteria metallica a commessa — non adattata da software contabile generico.",
+      "primaryCta": "Prenota demo →",
+      "secondaryCta": "Vedi i risultati ↓",
+      "interfaceLabel": "Interfaccia Kenzap Factory",
+      "stats": [
+        {
+          "value": "~30%",
+          "label": "Preventivi più rapidi"
+        },
+        {
+          "value": "2 sett",
+          "label": "Formazione operatori"
+        },
+        {
+          "value": "e-inv",
+          "label": "Conformità pronta"
+        }
+      ]
+    },
+    "problem": {
+      "label": "La problematica",
+      "title": "I software generici sono stati creati per\ncommercialisti, non per carpentieri.",
+      "quote": "\"Abbiamo un sistema che funziona come funziona il nostro stabilimento. Gli operatori si sono adattati immediatamente, e ora il nostro calcolo dei costi di commessa è affidabile.\"",
+      "quoteAuthor": "— RESPONSABILE CLIENTI, SKARDA NAMS SIA · LETTONIA",
+      "items": [
+        {
+          "title": "Il calcolo dei costi è ad occhio.",
+          "description": "Tipi di materiale, tempi di taglio, scarti — la maggior parte degli ERP non li può modellare. Scopri di aver perso denaro dopo che la commessa è stata spedita."
+        },
+        {
+          "title": "L'inventario lamiere non è tracciato.",
+          "description": "Sai quanti pezzi hai, non quante lamiere intere e parziali — così ordini in eccesso o rimani senza."
+        },
+        {
+          "title": "La pianificazione produzione vive nei fogli di calcolo.",
+          "description": "Programmazione, controlli di capacità e ottimizzazione del taglio avvengono fuori dal sistema, in file che nessun altro può vedere."
+        },
+        {
+          "title": "La conformità è manuale.",
+          "description": "Fatturazione Peppol, aliquote IVA variabili, GDPR — gestite con soluzioni di fortuna, non dal sistema."
+        },
+        {
+          "title": "Il reparto produzione è invisibile.",
+          "description": "I responsabili scoprono ritardi e problemi di qualità troppo tardi, perché gli operatori non hanno un sistema in cui riportare."
+        }
+      ]
+    },
+    "workflow": {
+      "label": "Come funziona",
+      "title": "Dal preventivo alla spedizione,\nin un unico flusso collegato",
+      "steps": [
+        {
+          "title": "Preventivazione e stima",
+          "description": "Calcola i costi di commessa con precisione — materiale, manodopera, tempo macchina, ottimizzazione taglio — prima di impegnarti su un prezzo."
+        },
+        {
+          "title": "Pianificazione produzione",
+          "description": "Programma le operazioni tra i centri di lavoro con controlli inventario in tempo reale e ottimizzazione nesting integrata."
+        },
+        {
+          "title": "Esecuzione reparto produzione",
+          "description": "Interfaccia touch-panel per operatori. Tracciamento commesse, registrazione tempi e controllo qualità alla macchina."
+        },
+        {
+          "title": "Fatturazione e conformità",
+          "description": "Fatture elettroniche e documenti di trasporto conformi Peppol generati automaticamente con aliquote IVA corrette per tipo prodotto."
+        },
+        {
+          "title": "Spedizione e consegna",
+          "description": "Imballa commesse, scarica articoli raggruppati e spedisci con documentazione completa. L'inventario si aggiorna automaticamente."
+        },
+        {
+          "title": "Analytics",
+          "description": "Confronto costi effettivi vs stimati per commessa. Contabilità completa degli scarti e visibilità dei colli di bottiglia produttivi."
+        }
+      ]
+    },
+    "features": {
+      "label": "Funzionalità principali",
+      "title": "tutto ciò di cui una carpenteria\nmetallica ha bisogno in un sistema",
+      "items": [
+        {
+          "tag": "Produzione",
+          "title": "Tracciamento flusso di lavoro",
+          "description": "Traccia ogni commessa dal preventivo alla consegna con dettaglio a livello operazione. Sappi esattamente dove si trova ogni commessa, in tempo reale."
+        },
+        {
+          "tag": "Inventario",
+          "title": "MRP lamiere",
+          "description": "Traccia lo stock per lamiera, non solo conteggio pezzi. Lamiere intere e parziali, tipi di metallo multipli, trigger di riordino automatico."
+        },
+        {
+          "tag": "Taglio",
+          "title": "Nesting integrato",
+          "description": "Gli algoritmi di nesting minimizzano gli scarti di materiale per laser, plasma e waterjet — collegati direttamente al calcolo costi commessa così lo scarto è tracciato automaticamente.",
+          "accent": true
+        },
+        {
+          "tag": "Costi",
+          "title": "Calcolo costi per commessa",
+          "description": "Costo preciso per commessa: materiale, manodopera, overhead e scarti. Confronta stimato vs effettivo su ogni commessa spedita."
+        },
+        {
+          "tag": "Conformità",
+          "title": "Fatturazione Peppol",
+          "description": "Fatturazione elettronica conforme UE tramite Peppol BIS Billing 3.0. Aliquote IVA gestite automaticamente per tipo prodotto e regione cliente."
+        },
+        {
+          "tag": "Reparto",
+          "title": "Interfaccia touch-panel",
+          "description": "Progettata per operatori alla macchina. Tracciamento commesse, registrazione tempi, controllo qualità — adottata in due settimane da Skarda Nams."
+        },
+        {
+          "tag": "Fornitori",
+          "title": "Gestione fornitori",
+          "description": "Ordini di acquisto, costi materiali e programmi di consegna tracciati nello stesso sistema della produzione."
+        },
+        {
+          "tag": "AI",
+          "title": "Insights guidati da AI",
+          "description": "Identifica i colli di bottiglia produttivi e migliora la precisione del calcolo costi commessa con analisi AI dei tuoi dati di produzione reali."
+        },
+        {
+          "tag": "Dati",
+          "title": "Open source e GDPR",
+          "description": "Nessun vendor lock-in. Piena portabilità dei dati. Conforme GDPR con residenza dati UE. Installazione sulla propria infrastruttura se necessario."
+        }
+      ]
+    },
+    "caseStudy": {
+      "label": "Risultati reali",
+      "title": "Utilizzato in produzione\npresso Skarda Nams SIA",
+      "meta": "CARPENTERIA METALLICA · LETTONIA · 20 DIPENDENTI · 2 MACCHINE CNC",
+      "challengeLabel": "Sfida",
+      "challengeText": "Skarda Nams preventivava manualmente su più tipi di metallo, gestiva l'inventario su carta, e non riusciva a produrre fatture conformi senza soluzioni di fortuna. Il calcolo costi commessa era impreciso. Visibilità reparto produzione zero.",
+      "solutionLabel": "Soluzione",
+      "solutionText": "Implementato Kenzap Factory con moduli integrati per preventivazione, routing di produzione ed esecuzione reparto. Fatturazione Peppol configurata per conformità UE. Integrato con software contabile Moneo.",
+      "quote": "\"Gli operatori si sono adattati all'interfaccia immediatamente, e ora il nostro calcolo costi commessa è affidabile. Le aliquote fiscali sono gestite automaticamente — solo questo ci fa risparmiare tempo significativo ogni mese.\"",
+      "quoteAuthor": "— RESPONSABILE CLIENTI, SKARDA NAMS SIA",
+      "results": [
+        {
+          "value": "~30%",
+          "label": "Riduzione tempi preventivazione"
+        },
+        {
+          "value": "2 sett",
+          "label": "Tempo formazione operatori"
+        },
+        {
+          "value": "100%",
+          "label": "Conformità fatturazione raggiunta"
+        },
+        {
+          "value": "100%",
+          "label": "Precisione preventivazione raggiunta"
+        },
+        {
+          "value": "Visibilità completa",
+          "label": "Nelle operazioni di reparto e fasi di produzione — dal primo giorno",
+          "fullWidth": true
+        }
+      ]
+    },
+    "deployment": {
+      "label": "Distribuzione",
+      "title": "Funziona dove la tua\noperazione lo richiede",
+      "options": [
+        {
+          "title": "Cloud gestito dal fornitore",
+          "description": "Hosting completamente gestito con aggiornamenti, backup e patch di sicurezza automatici. Ideale per team focalizzati sulle operazioni, non sull'IT."
+        },
+        {
+          "title": "Cloud gestito dal cliente",
+          "description": "Distribuzione sulla tua infrastruttura AWS, Azure o GCP. Controllo completo su configurazione, accesso e dati. Adatto per organizzazioni con competenze IT."
+        },
+        {
+          "title": "Self-hosted on-premises",
+          "description": "Installazione in loco per massima sovranità dei dati. Richiesto per alcune industrie regolamentate. Parità completa di funzionalità con opzioni cloud."
+        }
+      ]
+    },
+    "timeline": {
+      "label": "Cronologia implementazione tipica",
+      "phases": [
+        {
+          "phase": "Fase 1",
+          "duration": "2–3 sett",
+          "label": "Discovery e configurazione"
+        },
+        {
+          "phase": "Fase 2",
+          "duration": "2–3 sett",
+          "label": "Migrazione dati e test"
+        },
+        {
+          "phase": "Fase 3",
+          "duration": "1–2 sett",
+          "label": "Formazione e go-live"
+        },
+        {
+          "phase": "Fase 4",
+          "duration": "Continuo",
+          "label": "Supporto post-lancio"
+        }
+      ]
+    },
+    "nesting": {
+      "label": "Anche da Kenzap",
+      "title": "Inizia con il nesting.\nCollega il resto quando sei pronto.",
+      "description": "Kenzap Nesting è un'app desktop gratuita e standalone per il nesting di lamiere basato su DXF. Nativa su Windows e macOS. Nessun abbonamento, nessun cloud, nessuna registrazione. Quando la tua operazione cresce, Kenzap Factory collega tutto.",
+      "primaryCta": "Esplora Kenzap Nesting →",
+      "href": "/nesting",
+      "cardLabel": "Kenzap Nesting — download gratuito",
+      "cardTitle": "Compatta di più. Spreca meno. Taglia più veloce.",
+      "cardDescription": "Trascina parti DXF, imposta quantità, avvia il motore di nesting, esporta lamiere pronte al taglio. Anteprima live mentre l'algoritmo gira.",
+      "platforms": [
+        "Windows",
+        "macOS"
+      ]
+    },
+    "contact": {
+      "label": "Mettiti in contatto",
+      "title": "Vedi se Kenzap Factory\nsi adatta alla tua operazione",
+      "description": "Rispondiamo entro un giorno lavorativo. Nessun processo di vendita — solo una conversazione diretta per capire se questo si adatta alla tua operazione.",
+      "linkedinLabel": "LinkedIn",
+      "linkedinHref": "https://www.linkedin.com/in/pavel-lukasenko/",
+      "emailLabel": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com"
+    },
+    "footer": {
+      "nestingLabel": "App nesting",
+      "nestingHref": "/nesting",
+      "emailLabel": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com",
+      "company": "© 2026 Kenzap Pte Ltd"
+    }
   },
-  "hero": {
-    "headline": "ERP progettato per la carpenteria metallica.",
-    "subheadline": "Produzione, calcolo costi e pianificazione pensati per la produzione su commessa.",
-    "intro": "Questo sistema è progettato specificamente per i carpentieri metallici. Supporta i flussi produttivi reali, non soluzioni alternative basate sulla contabilità. Il focus è sui job shop, produzione su commessa e conformità normativa.",
-    "primaryCta": "Contattaci",
-    "secondaryCta": "Verifica la compatibilità",
-    "watchDemo": "Guarda come funziona"
-  },
-  "problem": {
-    "title": "Perché i sistemi ERP generici non funzionano per i carpentieri metallici",
-    "intro": "La maggior parte dei sistemi ERP è progettata intorno alla contabilità, non alla produzione. Di conseguenza, i carpentieri metallici spesso si affidano a fogli di calcolo e processi manuali per gestire le commesse e l'esecuzione in officina.",
-    "items": [
-      "Calcolo costi commesse impreciso",
-      "Inventario metalli non tracciato correttamente",
-      "Scarsa visibilità sulle operazioni di officina",
-      "Mancanza di ottimizzazione taglio per lamiere",
-      "Pianificazione produttiva gestita fuori dall'ERP",
-      "Aliquote IVA variabili non gestite automaticamente"
-    ],
-    "conclusion": "Questi problemi aumentano il rischio di non conformità, riducono l'efficienza e compromettono la qualità del servizio."
-  },
-  "whoFor": {
-    "title": "Per chi è progettato questo sistema",
-    "intro": "Questo ERP è progettato per aziende di carpenteria metallica con:",
-    "criteria": [
-      "Necessità di calcolo preciso dei costi per commessa e tracciamento materiali",
-      "Requisiti di gestione inventario stock metallici e lamiere",
-      "Esigenze di ottimizzazione taglio per laser, plasma o getto d'acqua",
-      "Obblighi di conformità fatturazione elettronica UE",
-      "Requisiti di integrazione con sistemi contabili europei",
-      "Necessità di conformità GDPR e protezione dati UE"
-    ],
-    "typical": "Gli utilizzatori tipici includono:",
-    "users": [
-      "Job shop",
-      "Terzisti",
-      "Carpentieri che producono parti su misura o piccoli lotti",
-      "Officine di lamiera"
-    ],
-    "notFor": "Questo sistema non è progettato per:",
-    "excluded": [
-      "Attività di pura distribuzione",
-      "Produzione di processo",
-      "Produzione di massa altamente standardizzata"
-    ]
-  },
-  "manufacturing": {
-    "title": "Progettazione incentrata sulla produzione",
-    "intro": "Il sistema è costruito intorno ai concetti reali di produzione utilizzati nella carpenteria metallica e si adatta continuamente ai requisiti di conformità europei complessi e in evoluzione.",
-    "features": [
-      {
-        "name": "Tracciamento Flusso di Lavoro",
-        "desc": "Traccia ogni commessa dal preventivo alla consegna con completa visibilità del flusso di lavoro e dettagli a livello operativo",
-        "icon": "cog"
+  "nestingHomepage": {
+    "meta": {
+      "title": "Kenzap Nesting — Nesting DXF per Carpenterie Metalliche",
+      "description": "Software gratuito e nativo per nesting DXF destinato a carpenterie metalliche. Importa parti DXF, ottimizza lamiere, anteprima live ed esporta layout pronti al taglio."
+    },
+    "nav": {
+      "workflow": "Come funziona",
+      "features": "Funzionalità",
+      "factory": "Factory ERP",
+      "factoryMobile": "Factory",
+      "cta": "Download gratuito →",
+      "ctaHref": "https://github.com/kenzap/nesting-app"
+    },
+    "hero": {
+      "eyebrow": "Software nesting DXF",
+      "headlineLine1": "Compatta di più.",
+      "headlineLine2Prefix": "Spreca ",
+      "headlineLine2Accent": "meno.",
+      "headlineLine3": "Taglia più veloce.",
+      "subheadline": "Un'app desktop nativa per nesting destinata a carpenterie metalliche. Trascina le tue parti DXF, imposta quantità, avvia il motore — ottieni una lamiera completamente compattata pronta al taglio.",
+      "primaryCta": "↓ Download gratuito",
+      "primaryCtaHref": "https://github.com/kenzap/nesting-app/releases",
+      "secondaryCta": "Vedilo in produzione →",
+      "secondaryCtaHref": "/#case-study",
+      "badges": {
+        "windows": "Windows x64",
+        "mac": "macOS Apple Silicon",
+        "openSource": "Open source"
       },
-      {
-        "name": "Pianificazione Produttiva",
-        "desc": "Gestisci la capacità produttiva e programma le operazioni in modo efficiente nella tua officina",
-        "icon": "factory"
-      },
-      {
-        "name": "Pianificazione Materiali",
-        "desc": "MRP accurato alimentato da tracciamento materie prime, visibilità inventario lamiere e gestione automatica scorte",
-        "icon": "format-list-checks"
-      },
-      {
-        "name": "Ottimizzazione Taglio",
-        "desc": "Algoritmi di nesting integrati minimizzano gli sprechi e massimizzano l'utilizzo lamiere per taglio laser, plasma e getto d'acqua",
-        "icon": "content-cut"
-      },
-      {
-        "name": "Reportistica Produttiva in Tempo Reale",
-        "desc": "Interfaccia ottimizzata per pannelli touch per tracciamento commesse e reportistica in tempo reale da parte degli operatori macchina",
-        "icon": "tablet"
-      },
-      {
-        "name": "Calcolo Costi per Commessa",
-        "desc": "Calcolo accurato dei costi per commessa con tracciamento materiali, manodopera, costi generali e scarti",
-        "icon": "calculator"
-      },
-      {
-        "name": "Fatturazione Elettronica Peppol",
-        "desc": "Genera fatture elettroniche conformi UE seguendo lo standard Peppol BIS Billing 3.0",
-        "icon": "file-document-outline"
-      },
-      {
-        "name": "IVA e Conformità",
-        "desc": "Gestione IVA localmente conforme con esenzioni e integrazione sistemi contabili nazionali",
-        "icon": "shield-check"
-      },
-      {
-        "name": "Gestione Fornitori",
-        "desc": "Traccia fornitori, ordini di acquisto, costi materiali e programmi di consegna",
-        "icon": "truck"
-      },
-      {
-        "name": "Open Source",
-        "desc": "Costruito su tecnologie open source senza vendor lock-in, garantendo completa portabilità dati e indipendenza sistema",
-        "icon": "code"
-      },
-      {
-        "name": "Protezione Dati Europea",
-        "desc": "Gestione dati conforme GDPR con piena sovranità dei dati per le operazioni europee",
-        "icon": "puzzle"
-      },
-      {
-        "name": "Insights Basati su IA",
-        "desc": "Insights basati su IA per identificare colli di bottiglia produttivi e migliorare la precisione del calcolo costi commesse",
-        "icon": "brain"
+      "previewLabel": "Anteprima nesting live"
+    },
+    "workflow": {
+      "label": "Come funziona",
+      "titleLine1": "Da DXF a pronto al taglio",
+      "titleLine2": "in sei passaggi",
+      "steps": [
+        {
+          "title": "Aggiungi parti DXF",
+          "description": "Trascina e rilascia uno o più file DXF. Il motore rileva automaticamente tutte le forme nestabili, inclusi file multi-forma."
+        },
+        {
+          "title": "Rivedi geometria",
+          "description": "Imposta quantità per parte. Rivedi tagli interni, geometria incisione e assegnazioni layer per forma prima di avviare."
+        },
+        {
+          "title": "Configura la lamiera",
+          "description": "Imposta dimensioni piastra, comportamento strisce, spaziatura, passo rotazione, margine lamiera e stile incisione."
+        },
+        {
+          "title": "Avvia il motore",
+          "description": "Clicca AVVIA. Un binario nativo gestisce il posizionamento — nessun upload cloud, nessuna attesa. I risultati tornano live."
+        },
+        {
+          "title": "Anteprima live",
+          "description": "Guarda le lamiere popolarsi mentre l'algoritmo lavora. Vedi statistiche di utilizzo e conteggio lamiere aggiornarsi in tempo reale."
+        },
+        {
+          "title": "Esporta in DXF",
+          "description": "Esporta lamiere finali con tutta la struttura layer originale, ricostruzione geometria e geometria incisione preservata."
+        }
+      ]
+    },
+    "features": {
+      "label": "Funzionalità principali",
+      "titleLine1": "Tutto ciò di cui la tua operazione",
+      "titleLine2": "di taglio ha realmente bisogno",
+      "cards": {
+        "performance": {
+          "tag": "Performance native",
+          "title": "Niente cloud. Niente browser. Solo velocità.",
+          "description": "Il motore di nesting gira come binario nativo sulla tua macchina. File DXF grandi processati in secondi, non minuti. Funziona completamente offline — nessun abbonamento, nessun upload, nessuna latenza."
+        },
+        "dxf": {
+          "tag": "Fedeltà DXF",
+          "title": "Supporto completo geometrie",
+          "description": "Linee, archi, cerchi, polilinee, ellissi e spline tutti supportati. Geometria tagli interni e layer incisione preservati separatamente nell'export.",
+          "chips": [
+            "Linee",
+            "Archi",
+            "Cerchi",
+            "Polilinee",
+            "Ellissi",
+            "Spline"
+          ]
+        },
+        "engraving": {
+          "tag": "Incisione",
+          "title": "Due stili incisione integrati",
+          "description": "Modalità semplice per lettere a linea singola su materiali sottili. Modalità contornata per lettere contornate con riempimenti. Configurata per lavoro, preservata nell'export DXF."
+        },
+        "sheet": {
+          "tag": "Intelligenza lamiera",
+          "title": "Ottimizzazione dimensione piastra",
+          "description": "Il motore trova il numero minimo di piastre necessarie per il tuo lavoro. Configura margine lamiera, spaziatura parti, passo orientamento e allineamento strisce indipendentemente."
+        },
+        "workflow": {
+          "tag": "Flusso di lavoro",
+          "title": "Anteprima live mentre l'algoritmo gira",
+          "description": "Non aspetti che il motore finisca prima di vedere i risultati. Le lamiere si popolano in tempo reale mentre i posizionamenti vengono confermati. Cambia quantità o impostazioni e riavvia in secondi.",
+          "chips": [
+            "Rilevamento DXF multi-forma",
+            "Controllo quantità per forma",
+            "Anteprima layer-aware",
+            "Export JSON poligoni"
+          ]
+        }
       }
-    ],
-    "outro": "I dati di produzione fluiscono dal preventivo alla spedizione. La realtà operativa si riflette nella pianificazione e nel calcolo costi."
-  },
-  "workflow": {
-    "title": "Dal preventivo alla spedizione",
-    "intro": "Il sistema collega i passaggi produttivi chiave in un unico flusso di lavoro:",
-    "steps": [
-      {
-        "name": "Preventivazione e Stima",
-        "desc": "Calcola i costi accuratamente con materiali, manodopera, tempo macchina e ottimizzazione taglio"
+    },
+    "bridge": {
+      "label": "Parte di un quadro più ampio",
+      "title": "Collega il nesting a tutta la tua operazione",
+      "copy": "Kenzap Nesting funziona come strumento desktop standalone oggi. Quando sei pronto, Kenzap Factory collega il tuo output nesting direttamente al calcolo costi commessa, pianificazione produzione e inventario — così lo scarto è tracciato e preventivato dal primo giorno.",
+      "cta": "Vedi Kenzap Factory ERP →",
+      "standaloneLabel": "STANDALONE",
+      "standaloneTitle": "Kenzap Nesting",
+      "standaloneText": "DXF in → lamiera ottimizzata out. Gratuito, open source, desktop nativo.",
+      "connectsTo": "si collega a",
+      "platformLabel": "PIATTAFORMA COMPLETA",
+      "platformTitle": "Kenzap Factory",
+      "platformText": "Preventivazione, calcolo costi commessa, tracciamento reparto, e-fatturazione. ERP pronto per UE."
+    },
+    "download": {
+      "label": "Inizia oggi",
+      "title": "Gratuito. Nativo. Open source.",
+      "sub": "Scarica la build per la tua piattaforma. Nessuna registrazione, nessuna chiave licenza, nessuna dipendenza cloud. Funziona dal primo giorno.",
+      "windows": {
+        "href": "https://github.com/kenzap/nesting-app/releases",
+        "os": "Windows",
+        "label": "Download x64",
+        "note": "installer .exe"
       },
-      {
-        "name": "Pianificazione Produttiva",
-        "desc": "Programma le operazioni sui centri di lavoro con controlli disponibilità inventario e ottimizzazione taglio"
+      "mac": {
+        "href": "https://github.com/kenzap/nesting-app/releases",
+        "os": "macOS",
+        "label": "Apple Silicon",
+        "note": ".dmg — M1-M5"
       },
-      {
-        "name": "Esecuzione in Officina",
-        "desc": "Interfaccia touch-panel per tracciamento commesse, registrazione tempi e controllo qualità"
-      },
-      {
-        "name": "Fatturazione e Conformità",
-        "desc": "Genera fatture elettroniche conformi Peppol e documenti di trasporto con aliquote IVA corrette"
-      },
-      {
-        "name": "Spedizione e Consegna",
-        "desc": "Imballa, scarica articoli raggruppati e spedisci commesse ai clienti"
-      },
-      {
-        "name": "Analytics",
-        "desc": "Traccia costi effettivi vs stimati con completa trasparenza e contabilizzazione scarti"
-      }
-    ],
-    "conclusion": "L'obiettivo è coerenza e tracciabilità attraverso l'intero ciclo di vita della commessa."
-  },
-  "caseStudy": {
-    "title": "Utilizzato in ambienti produttivi reali",
-    "company": "Skarda Nams SIA",
-    "industry": "Carpenteria Metallica e Parti su Misura",
-    "region": "Europa Orientale",
-    "employees": "20 dipendenti, 2 macchine CNC",
-    "challenge": "Sfida",
-    "challengeText": "Skarda Nams aveva difficoltà con preventivazione accurata utilizzando vari tipi di metallo, aggiornamenti inventario in tempo reale, capacità di scarico metalli, pianificazione produttiva, fatturazione conforme, calcolo costi impreciso e tracciamento cartaceo.",
-    "solution": "Soluzione",
-    "solutionText": "Implementato Kenzap Factory con moduli integrati di preventivazione, instradamento produzione ed esecuzione officina. Gli operatori macchina hanno adottato l'interfaccia touch-panel entro due settimane dalla distribuzione. Fatturazione elettronica Peppol configurata per soddisfare i requisiti di conformità UE. Integrazione con software contabile Moneo per reportistica fiscale semplificata.",
-    "results": "Risultati",
-    "resultItems": [
-      "Riduzione tempo preventivazione attraverso calcolo automatico materiali",
-      "Miglioramento precisione calcolo costi commesse",
-      "Completa visibilità su operazioni officina e fasi produttive",
-      "Conformità fatturazione elettronica Peppol raggiunta, con integrazione al software contabile BMD",
-      "Riduzione sprechi materiali attraverso ottimizzazione taglio",
-      "Pianificazione produttiva più veloce con controlli inventario in tempo reale",
-      "Conformità GDPR e residenza dati UE mantenuta durante tutte le operazioni"
-    ],
-    "quote": "Abbiamo un sistema che funziona come funziona la nostra officina. Gli operatori si sono adattati immediatamente all'interfaccia e il nostro calcolo costi commesse ora è affidabile. Le aliquote fiscali sono gestite automaticamente in base al tipo di prodotto, il che ci fa risparmiare tempo e grattacapi durante la fatturazione.",
-    "quoteAuthor": "Client Manager, Skarda Nams SIA",
-    "watchCase": "Guarda il caso studio"
-  },
-  "implementation": {
-    "title": "Approccio implementazione",
-    "intro": "L'implementazione segue una struttura standard progettata per minimizzare le interruzioni.",
-    "principles": [
-      "Configurazione hardware e installazione software sui sistemi di fabbrica",
-      "Configurazione catalogo prodotti e database inventario metalli",
-      "Assegnazione ruoli utente e definizione responsabilità",
-      "Personalizzazione modelli documenti (documenti trasporto, fatture, report)",
-      "Formazione completa per operatori e team dirigenziali",
-      "Integrazione sistema e sincronizzazione reportistica finanziaria"
-    ],
-    "timeline": "Tempistica tipica:",
-    "phases": [
-      "Discovery e configurazione: 2-3 settimane",
-      "Migrazione dati e test: 2-3 settimane",
-      "Formazione e go-live: 1-2 settimane",
-      "Supporto post-lancio: continuo"
-    ],
-    "outro": "L'implementazione può essere fornita da consulenti con background produttivo ed ERP o direttamente da ingegnere Kenzap."
-  },
-  "deployment": {
-    "title": "Opzioni di distribuzione",
-    "intro": "Il sistema supporta più modelli di distribuzione per soddisfare le esigenze operative, normative e di sovranità dei dati.",
-    "options": [
-      {
-        "name": "Cloud gestito dal fornitore",
-        "desc": "Hosting completamente gestito in data center europei con aggiornamenti automatici, backup e patch di sicurezza. Ideale per aziende focalizzate sulle operazioni.",
-        "icon": "cloud-check"
-      },
-      {
-        "name": "Cloud gestito dal cliente",
-        "desc": "Distribuzione sulla tua infrastruttura cloud (AWS, Azure, GCP) con pieno controllo su configurazione e accesso. Adatto per organizzazioni IT-capaci.",
-        "icon": "cloud-cog"
-      },
-      {
-        "name": "Distribuzione self-hosted",
-        "desc": "Installazione on-premises per massima sovranità dati e controllo. Richiesto per alcuni settori regolamentati o operazioni altamente sensibili.",
-        "icon": "server"
-      }
-    ],
-    "outro": "Tutte le opzioni di distribuzione utilizzano lo stesso software, seguono lo stesso percorso di aggiornamento e mantengono parità di funzionalità. I dati rimangono in giurisdizioni europee per conformità GDPR."
-  },
-  "contact": {
-    "title": "Contatti",
-    "intro": "Se vuoi capire se questo sistema si adatta alla tua operazione, contattaci per una discussione iniziale. Lavoriamo in inglese e altre lingue europee.",
-    "namePlaceholder": "Il tuo nome",
-    "emailPlaceholder": "Indirizzo email",
-    "companyPlaceholder": "Nome azienda",
-    "messagePlaceholder": "Raccontaci della tua configurazione produttiva: numero di macchine, dimensioni tipiche commesse, sistemi attuali...",
-    "submit": "Invia messaggio",
-    "sending": "Invio in corso...",
-    "success": "Messaggio inviato con successo. Ti contatteremo entro 1-2 giorni lavorativi.",
-    "error": "Invio messaggio fallito. Ti preghiamo di inviarci un'email direttamente a support@kenzap.com",
-    "or": "oppure",
-    "linkedin": "Connettiti su LinkedIn",
-    "email": "Scrivici direttamente"
-  },
-  "footer": {
-    "tagline": "Software per le operazioni produttive",
-    "company": "© 2026 Kenzap. Tutti i diritti riservati.",
-    "note": "Le informazioni sui prodotti possono cambiare. La disponibilità può variare per regione.",
-    "languages": "Lingue"
+      "openSourcePrefix": "Codice sorgente e istruzioni build su",
+      "openSourceHref": "https://github.com/kenzap/nesting-app",
+      "openSourceLink": "GitHub",
+      "openSourceLicense": "Licenza Apache-2.0"
+    },
+    "footer": {
+      "factory": "Factory",
+      "email": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com",
+      "company": "© 2026 Kenzap Pte Ltd"
+    }
   }
 }

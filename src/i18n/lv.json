@@ -1,240 +1,406 @@
 {
-  "nav": {
-    "problem": "Problēma",
-    "solution": "Risinājums",
-    "features": "Iespējas",
-    "customers": "Klienti",
-    "contact": "Kontakti"
+  "factoryHomepage": {
+    "meta": {
+      "title": "Kenzap Factory — Ražošanas pārvaldība metālapstrādes uzņēmumiem",
+      "description": "Ražošanas, izmaksu aprēķināšanas un atbilstības programmatūra, kas izstrādāta īpaši metālapstrādes uzņēmumiem. Pasūtījuma darbnīcas, lāzergriešana, Peppol e-rēķini. Gatava ES prasībām."
+    },
+    "nav": {
+      "problem": "Problēma",
+      "features": "Funkcionalitāte",
+      "caseStudy": "Prakses piemērs",
+      "nesting": "Ligzdošanas app",
+      "nestingHref": "/nesting",
+      "cta": "Sazināties ar mums →"
+    },
+    "hero": {
+      "eyebrow": "Rūpnīcas pārvaldības programmatūra",
+      "headlineTop": "Izveidots",
+      "strikeWord": "grāmatvežiem.",
+      "headlineAccent": "metālapstrādātājiem.",
+      "subheadline": "Ražošanas pārvaldība, kas būvēta pasūtījumu metālapstrādei — ne pielāgota no vispārējās grāmatvedības programmatūras.",
+      "primaryCta": "Pieteikt demo →",
+      "secondaryCta": "Skatīt rezultātus ↓",
+      "interfaceLabel": "Kenzap Factory saskarne",
+      "stats": [
+        {
+          "value": "~30%",
+          "label": "Ātrāka tāmēšana"
+        },
+        {
+          "value": "2 ned.",
+          "label": "Operatoru apmācība"
+        },
+        {
+          "value": "e-rēķ.",
+          "label": "Atbilstība gatava"
+        }
+      ]
+    },
+    "problem": {
+      "label": "Problēma",
+      "title": "Vispārējā programmatūra tika veidota\ngrāmatvežiem, nevis metālapstrādātājiem.",
+      "quote": "\"Mums ir sistēma, kas darbojas tā, kā darbojas mūsu ražošanas cehs. Operatori pielāgojās uzreiz, un mūsu darbu izmaksu aprēķins tagad ir uzticams.\"",
+      "quoteAuthor": "— KLIENTU VADĪTĀJS, SKARDA NAMS SIA · LATVIJA",
+      "items": [
+        {
+          "title": "Darbu izmaksu aprēķins ir minējums.",
+          "description": "Materiālu veidi, griešanas laiks, atkritumi — lielākā daļa ERP sistēmu to nevar modelēt. Jūs uzzināt, ka zaudējāt naudu pēc darba nosūtīšanas."
+        },
+        {
+          "title": "Metāla lokšņu krājumi nav izsekoti.",
+          "description": "Jūs zināt, cik daudz detaļu jums ir, nevis cik pilnas un daļējas lokšnes — tāpēc jūs pārpasūtat vai jums trūkst."
+        },
+        {
+          "title": "Ražošanas plānošana dzīvo izklājlapās.",
+          "description": "Grafiku sastādīšana, jaudas pārbaudes un griešanas optimizācija notiek ārpus sistēmas failos, kurus neviens cits nevar redzēt."
+        },
+        {
+          "title": "Atbilstība ir manuāla.",
+          "description": "Peppol e-rēķini, mainīgie PVN likmes, GDPR — tiek risināti ar apkārtceļiem, nevis sistēmu."
+        },
+        {
+          "title": "Ražošanas cehs ir neredzams.",
+          "description": "Vadītāji par kavējumiem un kvalitātes problēmām uzzina par vēlu, jo operatoriem nav sistēmas ziņošanai."
+        }
+      ]
+    },
+    "workflow": {
+      "label": "Kā tas darbojas",
+      "title": "No tāmes līdz nosūtīšanai,\nvienā saistītā darbplūsmā",
+      "steps": [
+        {
+          "title": "Tāmēšana un novērtēšana",
+          "description": "Precīzi aprēķiniet darbu izmaksas — materiāls, darba samaksa, mašīnu laiks, griešanas optimizācija — pirms apņematies par cenu."
+        },
+        {
+          "title": "Ražošanas plānošana",
+          "description": "Plānojiet operācijas darbcentros ar tiešsaistes krājumu pārbaudēm un iebūvētu ligzdošanas optimizāciju."
+        },
+        {
+          "title": "Ražošanas ceha izpilde",
+          "description": "Skārienpaneļa saskarne operatoriem. Darbu izsekošana, laika reģistrēšana un kvalitātes kontrole pie mašīnas."
+        },
+        {
+          "title": "Rēķinu izrakstīšana un atbilstība",
+          "description": "Peppol standartam atbilstoši e-rēķini un pavadzīmes ģenerētas automātiski ar pareizām PVN likmēm katram produkta veidam."
+        },
+        {
+          "title": "Nosūtīšana un piegāde",
+          "description": "Iepakojiet darbus, norakstiet komplektā iekļautās preces un nosūtiet ar pilnu dokumentāciju. Krājumi atjauninās automātiski."
+        },
+        {
+          "title": "Analītika",
+          "description": "Faktisko pret plānoto izmaksu salīdzinājums katram darbam. Pilnīga atkritumu uzskaite un ražošanas šaurvietu redzamība."
+        }
+      ]
+    },
+    "features": {
+      "label": "Pamata iespējas",
+      "title": "Viss, kas metālapstrādes uzņēmumam\nnepieciešams vienā sistēmā",
+      "items": [
+        {
+          "tag": "Ražošana",
+          "title": "Darbplūsmas izsekošana",
+          "description": "Izsekojiet katru darbu no tāmes līdz piegādei ar detalizāciju operāciju līmenī. Zināt precīzi, kur atrodas katrs darbs reāllaikā."
+        },
+        {
+          "tag": "Krājumi",
+          "title": "Metāla lokšņu MRP",
+          "description": "Izsekojiet krājumus pēc loksnēm, nevis tikai detaļu skaita. Pilnas un daļējas loksnes, vairāki metāla veidi, automatizēti atkārtotas pasūtīšanas signāli."
+        },
+        {
+          "tag": "Griešana",
+          "title": "Iebūvēta ligzdošana",
+          "description": "Ligzdošanas algoritmi minimizē materiālu zudumus lāzera, plazmas un ūdens strūklas griezējiem — tieši savienoti ar darbu izmaksu aprēķinu, lai atkritumi tiktu izsekoti automātiski.",
+          "accent": true
+        },
+        {
+          "tag": "Izmaksas",
+          "title": "Darbu izmaksu aprēķins",
+          "description": "Precīzas izmaksas katram darbam: materiāls, darbs, režijas izmaksas un atkritumi. Salīdziniet plānoto pret faktisko katram nosūtītajam darbam."
+        },
+        {
+          "tag": "Atbilstība",
+          "title": "Peppol e-rēķini",
+          "description": "ES prasībām atbilstoša elektroniskā rēķinu izrakstīšana caur Peppol BIS Billing 3.0. PVN likmes tiek apstrādātas automātiski pēc produkta veida un klienta reģiona."
+        },
+        {
+          "tag": "Ražošanas cehs",
+          "title": "Skārienpaneļa saskarne",
+          "description": "Dizainēta operatoriem pie mašīnas. Darbu izsekošana, laika reģistrēšana, kvalitātes kontrole — pieņemta divu nedēļu laikā Skarda Nams uzņēmumā."
+        },
+        {
+          "tag": "Piegādātāji",
+          "title": "Piegādātāju pārvaldība",
+          "description": "Pirkšanas pasūtījumi, materiālu izmaksas un piegādes grafiki izsekoti tajā pašā sistēmā kā ražošana."
+        },
+        {
+          "tag": "MI",
+          "title": "MI vadīti ieskati",
+          "description": "Identificējiet ražošanas šaurvietas un uzlabojiet darbu izmaksu aprēķina precizitāti ar MI darbinātu jūsu īsteno ražošanas datu analīzi."
+        },
+        {
+          "tag": "Dati",
+          "title": "Atvērtā koda un GDPR",
+          "description": "Nav piegādātāja piesaistes. Pilnīga datu pārnesamība. GDPR atbilstošs ar ES datu uzglabāšanu. Izvietojiet savā infrastruktūrā, ja nepieciešams."
+        }
+      ]
+    },
+    "caseStudy": {
+      "label": "Reāli rezultāti",
+      "title": "Izmantots ražošanā\nSIA Skarda Nams",
+      "meta": "METĀLAPSTRĀDE · LATVIJA · 20 DARBINIEKI · 2 CNC MAŠĪNAS",
+      "challengeLabel": "Izaicinājums",
+      "challengeText": "Skarda Nams tāmēja manuāli vairākos metāla veidos, vadīja krājumus uz papīra un nespēja izstrādāt atbilstošus rēķinus bez apkārtceļiem. Darbu izmaksu aprēķins bija neprecīzs. Ražošanas ceha redzamība bija nulle.",
+      "solutionLabel": "Risinājums",
+      "solutionText": "Ieviesta Kenzap Factory ar integrētiem tāmēšanas, ražošanas maršrutēšanas un ražošanas ceha izpildes moduļiem. Konfigurēti Peppol e-rēķini ES atbilstībai. Integrēts ar Moneo grāmatvedības programmatūru.",
+      "quote": "\"Operatori saskarnei pielāgojās uzreiz, un mūsu darbu izmaksu aprēķins tagad ir uzticams. Nodokļu likmes tiek apstrādātas automātiski — tas vien katru mēnesi mums ietaupa ievērojamu laiku.\"",
+      "quoteAuthor": "— KLIENTU VADĪTĀJS, SIA SKARDA NAMS",
+      "results": [
+        {
+          "value": "~30%",
+          "label": "Tāmēšanas laika samazinājums"
+        },
+        {
+          "value": "2 ned.",
+          "label": "Operatoru apmācības laiks"
+        },
+        {
+          "value": "100%",
+          "label": "Rēķinu izrakstīšanas atbilstība sasniegta"
+        },
+        {
+          "value": "100%",
+          "label": "Novērtēšanas precizitāte sasniegta"
+        },
+        {
+          "value": "Pilnīga redzamība",
+          "label": "Ražošanas ceha operācijās un ražošanas posmos — no pirmās dienas",
+          "fullWidth": true
+        }
+      ]
+    },
+    "deployment": {
+      "label": "Izvietošana",
+      "title": "Darbojas tur, kur jūsu\noperācija to prasa",
+      "options": [
+        {
+          "title": "Piegādātāja pārvaldīts mākonis",
+          "description": "Pilnībā pārvaldīts hostings ar automātiskiem atjauninājumiem, dublējumkopijām un drošības labojumiem. Vislabākais komandām, kas koncentrējas uz operācijām, nevis IT."
+        },
+        {
+          "title": "Klienta pārvaldīts mākonis",
+          "description": "Izvietojiet savā AWS, Azure vai GCP infrastruktūrā. Pilnīga kontrole pār konfigurāciju, piekļuvi un datiem. Piemērots IT spējīgām organizācijām."
+        },
+        {
+          "title": "Pašhosting lokāli",
+          "description": "Lokāla instalācija maksimālai datu suverenitātei. Nepieciešams dažās regulētās nozarēs. Pilnīga funkcionalitātes līdzvērtība ar mākoņa opcijām."
+        }
+      ]
+    },
+    "timeline": {
+      "label": "Tipiskā ieviešanas laika grafika",
+      "phases": [
+        {
+          "phase": "1. posms",
+          "duration": "2–3 ned.",
+          "label": "Izpēte un konfigurācija"
+        },
+        {
+          "phase": "2. posms",
+          "duration": "2–3 ned.",
+          "label": "Datu migrācija un testēšana"
+        },
+        {
+          "phase": "3. posms",
+          "duration": "1–2 ned.",
+          "label": "Apmācība un palaišana"
+        },
+        {
+          "phase": "4. posms",
+          "duration": "Pastāvīgi",
+          "label": "Pēcstartēšanas atbalsts"
+        }
+      ]
+    },
+    "nesting": {
+      "label": "Arī no Kenzap",
+      "title": "Sāciet ar ligzdošanu.\nSavienojiet pārējo, kad būsiet gatavi.",
+      "description": "Kenzap Nesting ir bezmaksas atsevišķa desktop aplikācija DXF lokšņu ligzdošanai. Lokāla Windows un macOS. Nav abonements, nav mākonis, nav reģistrācija. Kad jūsu operācija aug, Kenzap Factory savieno visu.",
+      "primaryCta": "Izpētīt Kenzap Nesting →",
+      "href": "/nesting",
+      "cardLabel": "Kenzap Nesting — bezmaksas lejupielāde",
+      "cardTitle": "Iepakojiet vairāk. Tērējiet mazāk. Grieziet ātrāk.",
+      "cardDescription": "Iemetiet DXF detaļas, iestatiet daudzumus, palaidiet ligzdošanas dzinēju, eksportējiet gatavās griešanai loksnes. Tiešraides priekšskatījums, kamēr algoritms darbojas.",
+      "platforms": [
+        "Windows",
+        "macOS"
+      ]
+    },
+    "contact": {
+      "label": "Sazināties",
+      "title": "Redziet, vai Kenzap Factory\nderēs jūsu operācijai",
+      "description": "Mēs atbildam vienas darba dienas laikā. Nav pārdošanas procesa — tikai tieša saruna par to, vai tas derēs jūsu operācijai.",
+      "linkedinLabel": "LinkedIn",
+      "linkedinHref": "https://www.linkedin.com/in/pavel-lukasenko/",
+      "emailLabel": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com"
+    },
+    "footer": {
+      "nestingLabel": "Ligzdošanas app",
+      "nestingHref": "/nesting",
+      "emailLabel": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com",
+      "company": "© 2026 Kenzap Pte Ltd"
+    }
   },
-  "hero": {
-    "headline": "ERP sistēma metāla apstrādei.",
-    "subheadline": "Ražošana, izmaksu aprēķins un plānošana pasūtījumu izpildei.",
-    "intro": "Šī sistēma ir īpaši izstrādāta metāla apstrādes uzņēmumiem. Tā atbalsta reālus ražošanas procesus, nevis grāmatvedības risinājumus. Fokuss ir uz pasūtījumu ražošanu, mazos sēriju ražošanu un atbilstību prasībām.",
-    "primaryCta": "Sazināties ar mums",
-    "secondaryCta": "Pārbaudīt piemērotību",
-    "watchDemo": "Skatīt demonstrāciju"
-  },
-  "problem": {
-    "title": "Kāpēc universālās ERP sistēmas neder metāla apstrādes uzņēmumiem",
-    "intro": "Lielākā daļa ERP sistēmu ir veidotas ar fokusu uz grāmatvedību, nevis ražošanu. Rezultātā metāla apstrādes uzņēmumi bieži paļaujas uz Excel tabulām un manuāliem procesiem darbu un ražošanas vadībai.",
-    "items": [
-      "Neprecīzs darbu izmaksu aprēķins",
-      "Metāla krājumi netiek pareizi uzskaitīti",
-      "Slikta redzamība ražošanas procesā",
-      "Trūkst loksnes metāla griešanas optimizācijas",
-      "Ražošanas plānošana notiek ārpus ERP sistēmas",
-      "Mainīgie PVN tarifi netiek apstrādāti automātiski"
-    ],
-    "conclusion": "Šīs problēmas palielina atbilstības risku, samazina efektivitāti un pasliktina pakalpojumu kvalitāti."
-  },
-  "whoFor": {
-    "title": "Kam paredzēta šī sistēma",
-    "intro": "Šī ERP sistēma ir izstrādāta metāla apstrādes uzņēmumiem ar:",
-    "criteria": [
-      "Vajadzību pēc precīza darbu izmaksu aprēķina un materiālu uzskaites",
-      "Metāla noliktavas un loksnes krājumu pārvaldības prasībām",
-      "Griešanas optimizācijas vajadzībām lāzera, plazmas vai ūdens strūklas griešanai",
-      "ES e-rēķinu atbilstības prasībām",
-      "Eiropas grāmatvedības sistēmu integrācijas prasībām",
-      "VDAR un ES datu aizsardzības prasību ievērošanas vajadzībām"
-    ],
-    "typical": "Tipiskie lietotāji ietver:",
-    "users": [
-      "Pasūtījumu darbnīcas",
-      "Līgumražotājus",
-      "Apstrādātājus, kas ražo pielāgotās vai mazās sērijas daļas",
-      "Loksnes metāla darbnīcas"
-    ],
-    "notFor": "Šī sistēma nav paredzēta:",
-    "excluded": [
-      "Tīri distribūcijas uzņēmumiem",
-      "Procesu ražošanai",
-      "Augstas standartizācijas masveida ražošanai"
-    ]
-  },
-  "manufacturing": {
-    "title": "Ražošanas orientēts dizains",
-    "intro": "Sistēma ir veidota ap reāliem ražošanas konceptiem, kas tiek izmantoti metāla apstrādē, un tā pastāvīgi pielāgojas sarežģītajām un main­īgajām Eiropas atbilstības prasībām.",
-    "features": [
-      {
-        "name": "Darba procesu izsekošana",
-        "desc": "Izsekojiet katru darbu no piedāvājuma līdz piegādei ar pilnu procesu redzamību un operāciju līmeņa detalizāciju",
-        "icon": "cog"
+  "nestingHomepage": {
+    "meta": {
+      "title": "Kenzap Nesting — DXF lokšņu ligzdošana metālapstrādes uzņēmumiem",
+      "description": "Bezmaksas lokāla DXF lokšņu ligzdošanas programmatūra metālapstrādes uzņēmumiem. Importējiet DXF detaļas, optimizējiet loksnes, priekšskatiet tiešraidē un eksportējiet gatavus griešanai izkārtojumus."
+    },
+    "nav": {
+      "workflow": "Kā tas darbojas",
+      "features": "Funkcionalitāte",
+      "factory": "Factory ERP",
+      "factoryMobile": "Factory",
+      "cta": "Lejupielādēt bezmaksas →",
+      "ctaHref": "https://github.com/kenzap/nesting-app"
+    },
+    "hero": {
+      "eyebrow": "DXF ligzdošanas programmatūra",
+      "headlineLine1": "Iepakojiet vairāk.",
+      "headlineLine2Prefix": "Tērējiet ",
+      "headlineLine2Accent": "mazāk.",
+      "headlineLine3": "Grieziet ātrāk.",
+      "subheadline": "Lokāla desktop ligzdošanas aplikācija metālapstrādes uzņēmumiem. Iemetiet savas DXF detaļas, iestatiet daudzumus, palaidiet dzinēju — saņemiet pilnībā iepakotu loksni, gatavu griešanai.",
+      "primaryCta": "↓ Lejupielādēt bezmaksas",
+      "primaryCtaHref": "https://github.com/kenzap/nesting-app/releases",
+      "secondaryCta": "Redzēt ražošanā →",
+      "secondaryCtaHref": "/#case-study",
+      "badges": {
+        "windows": "Windows x64",
+        "mac": "macOS Apple Silicon",
+        "openSource": "Atvērtais kods"
       },
-      {
-        "name": "Ražošanas plānošana",
-        "desc": "Pārvaldiet ražošanas jaudu un efektīvi plānojiet operācijas visā ražotnē",
-        "icon": "factory"
-      },
-      {
-        "name": "Materiālu plānošana",
-        "desc": "Precīzs MRP ar izejmateriālu izsekošanu, loksnes metāla krājumu redzamību un automātisku noliktavas pārvaldību",
-        "icon": "format-list-checks"
-      },
-      {
-        "name": "Griešanas optimizācija",
-        "desc": "Iebūvēti ligzdošanas algoritmi minimizē atkritumus un maksimizē loksnes izmantošanu lāzera, plazmas un ūdens strūklas griešanā",
-        "icon": "content-cut"
-      },
-      {
-        "name": "Reāllaika ražošanas atskaites",
-        "desc": "Skārienekrānam optimizēts interfeiss reāllaika darbu izsekošanai un atskaitēm iekārtu operatoriem",
-        "icon": "tablet"
-      },
-      {
-        "name": "Darbu izmaksu aprēķins",
-        "desc": "Precīzs izmaksu aprēķins katram darbam ar materiālu, darba spēka, izmaksu un brāķa izsekošanu",
-        "icon": "calculator"
-      },
-      {
-        "name": "Peppol e-rēķini",
-        "desc": "Ģenerējiet ES prasībām atbilstošus elektroniskos rēķinus pēc Peppol BIS Billing 3.0 standarta",
-        "icon": "file-document-outline"
-      },
-      {
-        "name": "PVN un atbilstība",
-        "desc": "Lokāli atbilstoša PVN apstrāde ar izņēmumiem un nacionālo grāmatvedības sistēmu integrāciju",
-        "icon": "shield-check"
-      },
-      {
-        "name": "Piegādātāju pārvaldība",
-        "desc": "Izsekojiet piegādātājus, pirkšanas pasūtījumus, materiālu izmaksas un piegādes grafikus",
-        "icon": "truck"
-      },
-      {
-        "name": "Atvērtais kods",
-        "desc": "Veidots uz atvērtā koda tehnoloģijām bez piesaistes konkrētam piegādātājam, nodrošinot pilnu datu pārnesamību un sistēmas neatkarību",
-        "icon": "code"
-      },
-      {
-        "name": "Eiropas datu aizsardzība",
-        "desc": "VDAR atbilstoša datu apstrāde ar pilnu datu suverenitāti Eiropas darbībām",
-        "icon": "puzzle"
-      },
-      {
-        "name": "MI balstīti ieskati",
-        "desc": "Mākslīgā intelekta ieskati ražošanas šaurvietu identificēšanai un darbu izmaksu aprēķina precizitātes uzlabošanai",
-        "icon": "brain"
+      "previewLabel": "Tiešraides ligzdošanas priekšskatījums"
+    },
+    "workflow": {
+      "label": "Kā tas darbojas",
+      "titleLine1": "No DXF līdz gatavam griešanai",
+      "titleLine2": "sešos soļos",
+      "steps": [
+        {
+          "title": "Pievienojiet DXF detaļas",
+          "description": "Velciet un nometiet vienu vai vairākus DXF failus. Dzinējs automātiski atklāj visas ligzdojamās formas, ieskaitot vairāku formu failus."
+        },
+        {
+          "title": "Pārskatiet ģeometriju",
+          "description": "Iestatiet daudzumus katrai detaļai. Pārskatiet iekšējos griezumus, gravēšanas ģeometriju un slāņu piešķīrumus katrai formai pirms palaišanas."
+        },
+        {
+          "title": "Konfigurējiet loksni",
+          "description": "Iestatiet plāksnes izmērus, joslu uzvedību, atstarpes, rotācijas soli, loksnes apmali un gravēšanas stilu."
+        },
+        {
+          "title": "Palaidiet dzinēju",
+          "description": "Noklikšķiniet PALAIST. Lokāls binārijs apstrādā izvietojumu — nav mākoņa augšupielādes, nav gaidīšanas. Rezultāti atgriežas tiešraidē."
+        },
+        {
+          "title": "Priekšskatiet tiešraidē",
+          "description": "Skatieties, kā loksnes aizpildās algoritma darbības laikā. Redziet izmantošanas statistiku un lokšņu skaita atjauninājumu reāllaikā."
+        },
+        {
+          "title": "Eksportējiet uz DXF",
+          "description": "Eksportējiet galīgās loksnes ar visu sākotnējo slāņu struktūru, ģeometrijas rekonstrukciju un saglabātu gravēšanas ģeometriju."
+        }
+      ]
+    },
+    "features": {
+      "label": "Pamata iespējas",
+      "titleLine1": "Viss, kas jūsu griešanas",
+      "titleLine2": "operācijai faktiski nepieciešams",
+      "cards": {
+        "performance": {
+          "tag": "Lokāla veiktspēja",
+          "title": "Nav mākonis. Nav pārlūks. Tikai ātri.",
+          "description": "Ligzdošanas dzinējs darbojas kā lokāls binārijs jūsu mašīnā. Lieli DXF faili tiek apstrādāti sekundēs, nevis minūtēs. Darbojas pilnībā bezsaistē — nav abonementa, nav augšupielādes, nav latentuma."
+        },
+        "dxf": {
+          "tag": "DXF precizitāte",
+          "title": "Pilns ģeometrijas atbalsts",
+          "description": "Līnijas, loki, riņķi, polilīnijas, elipses un splīni — viss atbalstīts. Iekšējās griešanas ģeometrija un gravēšanas slāņi tiek saglabāti atsevišķi caur eksportu.",
+          "chips": [
+            "Līnijas",
+            "Loki",
+            "Riņķi",
+            "Polilīnijas",
+            "Elipses",
+            "Splīni"
+          ]
+        },
+        "engraving": {
+          "tag": "Gravēšana",
+          "title": "Divi iebūvēti gravēšanas stili",
+          "description": "Vienkāršais režīms vienlīniju burtiem uz tieviem materiāliem. Kontūru režīms kontūru burtiem ar aizpildītiem kontūriem. Konfigurēts katram darbam, saglabāts DXF eksportā."
+        },
+        "sheet": {
+          "tag": "Loksnes inteliģence",
+          "title": "Plāksnes izmēra optimizācija",
+          "description": "Dzinējs atrod minimālo plāksņu skaitu, kas nepieciešams jūsu darbam. Konfigurējiet loksnes apmali, detaļu atstarpes, orientācijas soli un joslu līdzināšanu neatkarīgi."
+        },
+        "workflow": {
+          "tag": "Darbplūsma",
+          "title": "Tiešraides priekšskatījums, kamēr algoritms darbojas",
+          "description": "Jums nav jāgaida, līdz dzinējs beidz, lai redzētu rezultātus. Loksnes aizpildās reāllaikā, kad izvietojumi tiek apstiprināti. Mainiet daudzumus vai iestatījumus un palaidiet atkārtoti sekundēs.",
+          "chips": [
+            "Vairāku formu DXF atklāšana",
+            "Katras formas daudzuma kontrole",
+            "Slāņu apzinīgs priekšskatījums",
+            "Poligonu JSON eksports"
+          ]
+        }
       }
-    ],
-    "outro": "Ražošanas dati plūst no piedāvājuma līdz nosūtīšanai. Operacionālā realitāte tiek atspoguļota plānošanā un izmaksu aprēķinā."
-  },
-  "workflow": {
-    "title": "No piedāvājuma līdz nosūtīšanai",
-    "intro": "Sistēma savieno galvenos ražošanas soļus vienā darba procesā:",
-    "steps": [
-      {
-        "name": "Piedāvājumi un novērtējumi",
-        "desc": "Precīzi aprēķiniet izmaksas ar materiāliem, darba spēku, iekārtu laiku un griešanas optimizāciju"
+    },
+    "bridge": {
+      "label": "Daļa no lielākas bildes",
+      "title": "Savienojiet ligzdošanu ar visu savu operāciju",
+      "copy": "Kenzap Nesting šodien darbojas kā atsevišķs desktop rīks. Kad būsiet gatavi, Kenzap Factory savieno jūsu ligzdošanas rezultātu tieši ar darbu izmaksu aprēķinu, ražošanas plānošanu un krājumiem — lai atkritumi tiktu izsekoti un tāmēti no pirmās dienas.",
+      "cta": "Skatīt Kenzap Factory ERP →",
+      "standaloneLabel": "ATSEVIŠĶS",
+      "standaloneTitle": "Kenzap Nesting",
+      "standaloneText": "DXF iekšā → optimizēta loksne ārā. Bezmaksas, atvērtais kods, lokāls desktop.",
+      "connectsTo": "savienojas ar",
+      "platformLabel": "PILNĀ PLATFORMA",
+      "platformTitle": "Kenzap Factory",
+      "platformText": "Tāmēšana, darbu izmaksu aprēķins, ražošanas ceha izsekošana, e-rēķini. ES gatava ERP."
+    },
+    "download": {
+      "label": "Sāciet šodien",
+      "title": "Bezmaksas. Lokāls. Atvērtais kods.",
+      "sub": "Lejupielādējiet būvējumu savai platformai. Nav reģistrācijas, nav licences atslēgas, nav mākoņa atkarības. Darbojas no pirmās dienas.",
+      "windows": {
+        "href": "https://github.com/kenzap/nesting-app/releases",
+        "os": "Windows",
+        "label": "Lejupielādēt x64",
+        "note": ".exe instalators"
       },
-      {
-        "name": "Ražošanas plānošana",
-        "desc": "Plānojiet operācijas darba centros ar krājumu pieejamības pārbaudēm un griešanas optimizāciju"
+      "mac": {
+        "href": "https://github.com/kenzap/nesting-app/releases",
+        "os": "macOS",
+        "label": "Apple Silicon",
+        "note": ".dmg — M1-M5"
       },
-      {
-        "name": "Ražošanas izpilde",
-        "desc": "Skārienekrāna interfeiss darbu izsekošanai, laika uzskai­tei un kvalitātes kontrolei"
-      },
-      {
-        "name": "Rēķinu izrakstīšana un atbilstība",
-        "desc": "Ģenerējiet Peppol atbilstošus e-rēķinus un pavadzīmes ar pareiziem PVN tarifiem"
-      },
-      {
-        "name": "Nosūtīšana un piegāde",
-        "desc": "Iesaiņojiet, norakstiet komplektus un nosūtiet darbus klientiem"
-      },
-      {
-        "name": "Analītika",
-        "desc": "Izsekojiet faktiskās pret plānotajām izmaksām ar pilnu caurskatāmību un brāķa uzskaiti"
-      }
-    ],
-    "conclusion": "Mērķis ir konsekvence un izsekojamība visā darba dzīves ciklā."
-  },
-  "caseStudy": {
-    "title": "Izmantots reālā ražošanas vidē",
-    "company": "SIA Skarda Nams",
-    "industry": "Metāla apstrāde un pielāgotās detaļas",
-    "region": "Austrumeiropa",
-    "employees": "20 darbinieki, 2 CNC iekārtas",
-    "challenge": "Izaicinājums",
-    "challengeText": "SIA Skarda Nams saskārās ar precīzu piedāvājumu sagatavošanu, izmantojot dažādus metālu veidus, tiešsaistes krājumu atjaunošanu, metāla norakstīšanas iespējām, ražošanas plānošanu, atbilstošu rēķinu izrakstīšanu, neprecīzu izmaksu aprēķinu un papīra dokumentāciju.",
-    "solution": "Risinājums",
-    "solutionText": "Ieviests Kenzap Factory ar integrētiem piedāvājumu, ražošanas maršrutu un ražošanas izpildes moduļiem. Iekārtu operatori apguva skārienekrāna saskarni divu nedēļu laikā pēc ieviešanas. Peppol e-rēķinu izrakstīšana tika konfigurēta ES atbilstības prasībām. Integrācija ar Moneo grāmatvedības programmatūru vienkāršotai nodokļu atskaitēm.",
-    "results": "Rezultāti",
-    "resultItems": [
-      "Piedāvājumu sagatavošanas laika samazināšana ar automātisku materiālu aprēķinu",
-      "Darbu izmaksu aprēķina precizitātes uzlabošana",
-      "Pilnīga redzamība ražošanas operācijās un ražošanas posmos",
-      "Peppol e-rēķinu atbilstība panākta ar BMD grāmatvedības integrāciju",
-      "Materiālu atkritumu samazināšana ar griešanas optimizāciju",
-      "Ātrāka ražošanas plānošana ar reāllaika krājumu pārbaudēm",
-      "VDAR atbilstība un ES datu rezidence uzturēta visās operācijās"
-    ],
-    "quote": "Mums ir sistēma, kas darbojas tāpat kā mūsu ražotne. Operatori nekavējoties pielāgojās saskarnei, un mūsu darbu izmaksu aprēķins tagad ir uzticams. Nodokļu tarifi tiek apstrādāti automātiski atkarībā no produkta veida, kas ietaupa laiku un problēmas rēķinu izrakstīšanas laikā.",
-    "quoteAuthor": "Klientu vadītājs, SIA Skarda Nams",
-    "watchCase": "Skatīt gadījuma izpēti"
-  },
-  "implementation": {
-    "title": "Ieviešanas pieeja",
-    "intro": "Ieviešana notiek pēc standarta struktūras, kas paredzēta minimālu darbības traucējumu radīšanai.",
-    "principles": [
-      "Aparatūras uzstādīšana un programmatūras instalēšana rūpnīcas sistēmās",
-      "Produktu kataloga un metāla krājumu datubāzes konfigurēšana",
-      "Lietotāju lomu piešķiršana un atbildības definēšana",
-      "Dokumentu veidņu pielāgošana (pavadzīmes, rēķini, atskaites)",
-      "Visaptveroša apmācība operatoriem un vadības komandām",
-      "Sistēmu integrācija un finanšu atskaišu sinhronizācija"
-    ],
-    "timeline": "Tipiskais laika grafiks:",
-    "phases": [
-      "Izpēte un konfigurēšana: 2-3 nedēļas",
-      "Datu migrācija un testēšana: 2-3 nedēļas",
-      "Apmācība un palaišana: 1-2 nedēļas",
-      "Atbalsts pēc palaišanas: pastāvīgi"
-    ],
-    "outro": "Ieviešanu var veikt konsultanti ar ražošanas un ERP pieredzi vai tieši Kenzap inženieris."
-  },
-  "deployment": {
-    "title": "Izvietošanas varianti",
-    "intro": "Sistēma atbalsta vairākus izvietošanas modeļus atbilstoši operacionālajām, regulatīvajām un datu suverenitātes vajadzībām.",
-    "options": [
-      {
-        "name": "Piegādātāja pārvaldīts mākonis",
-        "desc": "Pilnībā pārvaldīts hostings Eiropas datu centros ar automātiskiem atjauninājumiem, dublējumiem un drošības labojumiem. Ideāls uzņēmumiem, kas fokusējas uz darbību.",
-        "icon": "cloud-check"
-      },
-      {
-        "name": "Klienta pārvaldīts mākonis",
-        "desc": "Izvietošana jūsu mākoņa infrastruktūrā (AWS, Azure, GCP) ar pilnu kontroli pār konfigurāciju un piekļuvi. Piemērots IT spējīgām organizācijām.",
-        "icon": "cloud-cog"
-      },
-      {
-        "name": "Lokālais izvietojums",
-        "desc": "Lokāla instalēšana maksimālai datu suverenitātei un kontrolei. Nepieciešams dažās regulētās nozarēs vai augstas sensitīvitātes operācijām.",
-        "icon": "server"
-      }
-    ],
-    "outro": "Visi izvietošanas varianti izmanto to pašu programmatūru, seko tam pašam atjaunināšanas ceļam un uztur funkciju līdzvērtību. Dati paliek Eiropas jurisdikcijās VDAR atbilstībai."
-  },
-  "contact": {
-    "title": "Kontakti",
-    "intro": "Ja vēlaties saprast, vai šī sistēma atbilst jūsu darbībai, sazinieties ar mums sākotnējām sarunām. Mēs strādājam angļu valodā un citās Eiropas valodās.",
-    "namePlaceholder": "Jūsu vārds",
-    "emailPlaceholder": "E-pasta adrese",
-    "companyPlaceholder": "Uzņēmuma nosaukums",
-    "messagePlaceholder": "Pastāstiet par savu ražošanas uzstādījumu: iekārtu skaits, tipiskie darbu apjomi, pašreizējās sistēmas...",
-    "submit": "Sūtīt ziņojumu",
-    "sending": "Sūta...",
-    "success": "Ziņojums veiksmīgi nosūtīts. Mēs ar jums sazināsimies 1-2 darba dienu laikā.",
-    "error": "Neizdevās nosūtīt ziņojumu. Lūdzu, rakstiet mums tieši uz support@kenzap.com",
-    "or": "vai",
-    "linkedin": "Sazināties LinkedIn",
-    "email": "Rakstīt tieši"
-  },
-  "footer": {
-    "tagline": "Programmatūra ražošanas operācijām",
-    "company": "© 2026 Kenzap. Visas tiesības aizsargātas.",
-    "note": "Produkta informācija var mainīties. Pieejamība var atšķirties atkarībā no reģiona.",
-    "languages": "Valodas"
+      "openSourcePrefix": "Avota kods un būvēšanas instrukcijas",
+      "openSourceHref": "https://github.com/kenzap/nesting-app",
+      "openSourceLink": "GitHub",
+      "openSourceLicense": "Apache-2.0 licence"
+    },
+    "footer": {
+      "factory": "Factory",
+      "email": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com",
+      "company": "© 2026 Kenzap Pte Ltd"
+    }
   }
 }

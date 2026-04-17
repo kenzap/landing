@@ -1,240 +1,406 @@
 {
-  "nav": {
-    "problem": "Probléma",
-    "solution": "Megoldás",
-    "features": "Funkciók",
-    "customers": "Ügyfelek",
-    "contact": "Kapcsolat"
+  "factoryHomepage": {
+    "meta": {
+      "title": "Kenzap Factory — Gyártásirányítás fémfeldolgozó üzemeknek",
+      "description": "Gyártási, költségszámítási és megfelelőségi szoftver kifejezetten fémfeldolgozó üzemek számára. Egyedi gyártás, lézervágás, Peppol e-számlázás. EU-kompatibilis."
+    },
+    "nav": {
+      "problem": "Probléma",
+      "features": "Funkciók",
+      "caseStudy": "Esettanulmány",
+      "nesting": "Nesting alkalmazás",
+      "nestingHref": "/nesting",
+      "cta": "Kapcsolat →"
+    },
+    "hero": {
+      "eyebrow": "Gyárirányítási szoftver",
+      "headlineTop": "Készült a",
+      "strikeWord": "könyvelőknek.",
+      "headlineAccent": "fémfeldolgozóknak.",
+      "subheadline": "Gyártásirányítás egyedi fémfeldolgozó üzemek számára — nem általános könyvelőszoftverből átalakítva.",
+      "primaryCta": "Bemutató foglalása →",
+      "secondaryCta": "Valós eredmények ↓",
+      "interfaceLabel": "Kenzap Factory felület",
+      "stats": [
+        {
+          "value": "~30%",
+          "label": "Gyorsabb árajánlatkészítés"
+        },
+        {
+          "value": "2 hét",
+          "label": "Kezelői betanítás"
+        },
+        {
+          "value": "e-szla",
+          "label": "Megfelelőségre kész"
+        }
+      ]
+    },
+    "problem": {
+      "label": "A probléma",
+      "title": "Az általános szoftvereket könyvelőknek,\nnem fémfeldolgozóknak készítették.",
+      "quote": "\"Olyan rendszerünk van, amely úgy működik, ahogy a műhelyünk. A kezelők azonnal alkalmazkodtak, és a munkaköltsegszámításunk most megbízható.\"",
+      "quoteAuthor": "— ÜGYFÉLMENEDZSER, SKARDA NAMS SIA · LETTORSZÁG",
+      "items": [
+        {
+          "title": "A munkaköltség-számítás csak találgatás.",
+          "description": "Anyagtípusok, vágási idő, hulladék — a legtöbb ERP nem tudja modellezni. Csak akkor tudja meg, hogy veszteséges volt, miután a munka elkészült."
+        },
+        {
+          "title": "A lemezanyag készlet követhetetlen.",
+          "description": "Tudja, hány alkatrésze van, de nem azt, hogy hány teljes és részleges lemeze — így túlrendel vagy kifogy."
+        },
+        {
+          "title": "A gyártástervezés táblázatokban él.",
+          "description": "Ütemezés, kapacitásellenőrzés és vágásoptimalizálás a rendszeren kívül történik, olyan fájlokban, amelyeket senki más nem lát."
+        },
+        {
+          "title": "A megfelelőség kézi munka.",
+          "description": "Peppol e-számlázás, változó ÁFA-kulcsok, GDPR — megkerülő megoldásokkal kezeli, nem a rendszer."
+        },
+        {
+          "title": "A műhely láthatatlan.",
+          "description": "A vezetők túl későn értesülnek a késésekről és minőségi problémákról, mert a kezelőknek nincs rendszere a jelentéshez."
+        }
+      ]
+    },
+    "workflow": {
+      "label": "Hogyan működik",
+      "title": "Árajánlattól a kiszállításig,\negy összefüggő munkafolyamatban",
+      "steps": [
+        {
+          "title": "Árajánlat & becslés",
+          "description": "Pontosan számítsa ki a munkakölségeket — anyag, munkaerő, gépidő, vágásoptimalizálás — mielőtt árat vállalna."
+        },
+        {
+          "title": "Gyártástervezés",
+          "description": "Ütemezze a műveleteket a munkahelyeken élő készletellenőrzéssel és beépített nesting optimalizálással."
+        },
+        {
+          "title": "Műhelyvégrehajtás",
+          "description": "Érintőpaneles felület kezelőknek. Munkakövetes, időrögzítés és minőség-ellenőrzés a gépeknél."
+        },
+        {
+          "title": "Számlázás & megfelelőség",
+          "description": "Peppol-kompatibilis e-számlák és fuvarlevél automatikus generálása helyes ÁFA-kulcsokkal terméktípusonként."
+        },
+        {
+          "title": "Kiszállítás & szállítás",
+          "description": "Munkák csomagolása, összekapcsolt tételek levonása és kiszállítás teljes dokumentációval. Készlet automatikusan frissül."
+        },
+        {
+          "title": "Elemzések",
+          "description": "Tényleges vs. becsült költségek összehasonlítása munkánként. Teljes hulladék-elszámolás és gyártási szűkkeresztmetszetek láthatósága."
+        }
+      ]
+    },
+    "features": {
+      "label": "Alapvető képességek",
+      "title": "Minden, amire egy fémfeldolgozónak\nszüksége van egy rendszerben",
+      "items": [
+        {
+          "tag": "Gyártás",
+          "title": "Munkafolyamat-követés",
+          "description": "Minden munka követése az árajánlattól a kiszállításig műveletszintű részletességgel. Tudja pontosan, hol tart minden munka, valós időben."
+        },
+        {
+          "tag": "Készlet",
+          "title": "Lemezanyag MRP",
+          "description": "Készletkövetés lemez szerint, nem csak alkatrészszám szerint. Teljes és részleges lemezek, több fémtípus, automatikus újrarendelési jelzések."
+        },
+        {
+          "tag": "Vágás",
+          "title": "Beépített nesting",
+          "description": "A nesting algoritmusok minimalizálják az anyagveszteséget lézer-, plazma- és vízsugárvágáshoz — közvetlenül kapcsolódik a munkaköltség-számításhoz, így a hulladékot automatikusan követi.",
+          "accent": true
+        },
+        {
+          "tag": "Költségszámítás",
+          "title": "Munkaalapú költségszámítás",
+          "description": "Pontos költség munkánként: anyag, munkaerő, általános költségek és hulladék. Összehasonlítja a becsült és tényleges értékeket minden leszállított munkánál."
+        },
+        {
+          "tag": "Megfelelőség",
+          "title": "Peppol e-számlázás",
+          "description": "EU-kompatibilis elektronikus számlázás Peppol BIS Billing 3.0 protokollon keresztül. ÁFA-kulcsok automatikusan kezelve terméktípus és ügyfélrégió szerint."
+        },
+        {
+          "tag": "Műhely",
+          "title": "Érintőpaneles felület",
+          "description": "Gépeknél dolgozó kezelők számára tervezve. Munkakövetes, időrögzítés, minőség-ellenőrzés — a Skarda Nams két héten belül bevezette."
+        },
+        {
+          "tag": "Beszállítók",
+          "title": "Beszállítókezelés",
+          "description": "Beszerzési rendelések, anyagkölségek és szállítási ütemezések ugyanabban a rendszerben követve, mint a gyártás."
+        },
+        {
+          "tag": "AI",
+          "title": "AI-vezérelt elemzések",
+          "description": "Azonosítsa a gyártási szűkkeresztmetszeteket és javítsa a munkaköltség-számítás pontosságát AI-alapú elemzéssel a valós gyártási adataiból."
+        },
+        {
+          "tag": "Adat",
+          "title": "Nyílt forráskódú & GDPR",
+          "description": "Nincs szállítóhoz kötöttség. Teljes adathordozhatóság. GDPR-kompatibilis EU adattárolással. Szükség esetén saját infrastruktúrán telepíthető."
+        }
+      ]
+    },
+    "caseStudy": {
+      "label": "Valós eredmények",
+      "title": "Éles használatban\na Skarda Nams SIA-nál",
+      "meta": "FÉMFELDOLGOZÁS · LETTORSZÁG · 20 ALKALMAZOTT · 2 CNC GÉP",
+      "challengeLabel": "Kihívás",
+      "challengeText": "A Skarda Nams kézi árajánlatot készített több fémtípusra, papíron vezette a készletet, és nem tudott megfelelő számlákat kiállítani megkerülő megoldások nélkül. A munkaköltség-számítás pontatlan volt. A műhely láthatósága nulla.",
+      "solutionLabel": "Megoldás",
+      "solutionText": "Kenzap Factory implementálása integrált árajánlat-készítési, gyártási útvonal-tervezési és műhelyvégrehajtási modulokkal. Peppol e-számlázás konfigurálva EU megfelelőséghez. Integráció Moneo könyvelőszoftverrel.",
+      "quote": "\"A kezelők azonnal alkalmazkodtak a felülethez, és a munkaköltség-számításunk most megbízható. Az adókulcsok automatikusan kezelődnek — ez önmagában jelentős időt takarít meg havonta.\"",
+      "quoteAuthor": "— ÜGYFÉLMENEDZSER, SKARDA NAMS SIA",
+      "results": [
+        {
+          "value": "~30%",
+          "label": "Csökkentés az árajánlatkészítési időben"
+        },
+        {
+          "value": "2 hét",
+          "label": "Kezelői betanítási idő"
+        },
+        {
+          "value": "100%",
+          "label": "Számlázási megfelelőség elérve"
+        },
+        {
+          "value": "100%",
+          "label": "Becslési pontosság elérve"
+        },
+        {
+          "value": "Teljes láthatóság",
+          "label": "A műhely működésébe és gyártási szakaszokba — az első naptól",
+          "fullWidth": true
+        }
+      ]
+    },
+    "deployment": {
+      "label": "Telepítés",
+      "title": "Ott fut, ahol a\nműködése megkívánja",
+      "options": [
+        {
+          "title": "Szállítói felhő",
+          "description": "Teljesen kezelt tárhely automatikus frissítésekkel, biztonsági mentésekkel és biztonsági javításokkal. Ideális a műveletre, nem az IT-ra összpontosító csapatok számára."
+        },
+        {
+          "title": "Ügyfél által kezelt felhő",
+          "description": "Telepítés saját AWS, Azure vagy GCP infrastruktúrán. Teljes kontroll a konfigurálás, hozzáférés és adatok felett. IT-képes szervezetek számára alkalmas."
+        },
+        {
+          "title": "Saját helyszíni tárhely",
+          "description": "Helyszíni telepítés maximális adatszuverenitásért. Egyes szabályozott iparágakban szükséges. Teljes funkcióegyenértékűség a felhőopciókkal."
+        }
+      ]
+    },
+    "timeline": {
+      "label": "Tipikus implementációs ütemterv",
+      "phases": [
+        {
+          "phase": "1. fázis",
+          "duration": "2–3 hét",
+          "label": "Felmérés & konfiguráció"
+        },
+        {
+          "phase": "2. fázis",
+          "duration": "2–3 hét",
+          "label": "Adatmigráció & tesztelés"
+        },
+        {
+          "phase": "3. fázis",
+          "duration": "1–2 hét",
+          "label": "Képzés & élesítés"
+        },
+        {
+          "phase": "4. fázis",
+          "duration": "Folyamatos",
+          "label": "Indulás utáni támogatás"
+        }
+      ]
+    },
+    "nesting": {
+      "label": "Szintén a Kenzap-tól",
+      "title": "Kezdje a nestinggel.\nKösse össze a többit, amikor készen áll.",
+      "description": "A Kenzap Nesting egy ingyenes önálló asztali alkalmazás DXF-alapú lemez nestinghez. Natív Windows és macOS rendszereken. Nincs előfizetés, nincs felhő, nincs regisztráció. Amikor a műveletek növekednek, a Kenzap Factory mindent összeköt.",
+      "primaryCta": "Kenzap Nesting felfedezése →",
+      "href": "/nesting",
+      "cardLabel": "Kenzap Nesting — ingyenes letöltés",
+      "cardTitle": "Csomagoljon többet. Pazaroljon kevesebbet. Vágjon gyorsabban.",
+      "cardDescription": "DXF alkatrészek bedobása, mennyiségek beállítása, nesting motor futtatása, vágásra kész lemezek exportálása. Élő előnézet az algoritmus futásakor.",
+      "platforms": [
+        "Windows",
+        "macOS"
+      ]
+    },
+    "contact": {
+      "label": "Lépjen kapcsolatba",
+      "title": "Nézze meg, hogy a Kenzap Factory\nilleszkedik-e a műveleteihez",
+      "description": "Egy munkanapon belül válaszolunk. Nincs értékesítési folyamat — csak közvetlen beszélgetés arról, hogy ez illeszkedik-e a műveleteihez.",
+      "linkedinLabel": "LinkedIn",
+      "linkedinHref": "https://www.linkedin.com/in/pavel-lukasenko/",
+      "emailLabel": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com"
+    },
+    "footer": {
+      "nestingLabel": "Nesting alkalmazás",
+      "nestingHref": "/nesting",
+      "emailLabel": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com",
+      "company": "© 2026 Kenzap Pte Ltd"
+    }
   },
-  "hero": {
-    "headline": "ERP rendszer fémfeldolgozó üzemeknek.",
-    "subheadline": "Gyártás, költségszámítás és tervezés egyedi megrendelések feldolgozására optimalizálva.",
-    "intro": "Ez a rendszer kifejezetten fémfeldolgozó üzemek számára készült. Valós gyártási munkafolyamatokat támogat, nem számviteli megkerülő megoldásokat. A fókusz a job shop üzemeken, egyedi gyártáson és megfelelőségen van.",
-    "primaryCta": "Kapcsolat",
-    "secondaryCta": "Megfelelőség ellenőrzése",
-    "watchDemo": "Működés megtekintése"
-  },
-  "problem": {
-    "title": "Miért nem megfelelőek az általános ERP rendszerek a fémfeldolgozó üzemeknek",
-    "intro": "A legtöbb ERP rendszer a számvitel köré épül, nem a gyártás köré. Ennek eredményeként a fémfeldolgozó üzemek gyakran táblázatkezelőkre és manuális folyamatokra támaszkodnak a munkák és a műhelyirányítás kezeléséhez.",
-    "items": [
-      "Pontatlan munkaköltsé-számítás",
-      "Fémkészletek nem megfelelő nyomon követése",
-      "Gyenge átláthatóság a műhelyműveletekben",
-      "Vágásoptimalizálás hiánya lemezmunkáknál",
-      "Gyártástervezés az ERP rendszeren kívül",
-      "Változó termék-áfakulcsok automatikus kezelésének hiánya"
-    ],
-    "conclusion": "Ezek a problémák növelik a megfelelőségi kockázatot, csökkentik a hatékonyságot és rontják a szolgáltatás minőségét."
-  },
-  "whoFor": {
-    "title": "Kiknek készült ez a rendszer",
-    "intro": "Ez az ERP olyan fémfeldolgozó vállalatok számára készült, amelyeknek van:",
-    "criteria": [
-      "Pontos munkaköltsé-számítás és anyagkövetés igénye",
-      "Fémkészlet és lemezraktár kezelési követelményei",
-      "Vágásoptimalizálási igényei lézer-, plazma- vagy vízsugaras vágáshoz",
-      "EU e-számlázási megfelelőségi kötelezettségei",
-      "Európai számviteli rendszer integrációs követelményei",
-      "GDPR és EU adatvédelmi megfelelőségi igényei"
-    ],
-    "typical": "Jellemző felhasználók:",
-    "users": [
-      "Job shop üzemek",
-      "Bérmunkázók",
-      "Egyedi vagy kissorozatú alkatrészeket gyártó fémfeldolgozók",
-      "Lemezmegmunkáló műhelyek"
-    ],
-    "notFor": "Ez a rendszer nem készült az alábbi területekre:",
-    "excluded": [
-      "Tisztán kereskedelmi vállalkozások",
-      "Folyamatgyártás",
-      "Erősen szabványosított tömeggyártás"
-    ]
-  },
-  "manufacturing": {
-    "title": "Gyártásorientált tervezés",
-    "intro": "A rendszer a fémfeldolgozásban használt valós gyártási fogalmakra épül, és folyamatosan alkalmazkodik a komplex és változó európai megfelelőségi követelményekhez.",
-    "features": [
-      {
-        "name": "Munkafolyamat-követés",
-        "desc": "Minden munka nyomon követése az árajánlattól a kiszállításig teljes munkafolyamat-átláthatósággal és műveletszintű részletességgel",
-        "icon": "cog"
+  "nestingHomepage": {
+    "meta": {
+      "title": "Kenzap Nesting — DXF lemez nesting fémfeldolgozók számára",
+      "description": "Ingyenes natív DXF lemez nesting szoftver fémfeldolgozók számára. DXF alkatrészek importálása, lemezek optimalizálása, élő előnézet és vágásra kész elrendezések exportálása."
+    },
+    "nav": {
+      "workflow": "Hogyan működik",
+      "features": "Funkciók",
+      "factory": "Factory ERP",
+      "factoryMobile": "Factory",
+      "cta": "Ingyenes letöltés →",
+      "ctaHref": "https://github.com/kenzap/nesting-app"
+    },
+    "hero": {
+      "eyebrow": "DXF nesting szoftver",
+      "headlineLine1": "Csomagoljon többet.",
+      "headlineLine2Prefix": "Pazaroljon ",
+      "headlineLine2Accent": "kevesebbet.",
+      "headlineLine3": "Vágjon gyorsabban.",
+      "subheadline": "Natív asztali nesting alkalmazás fémfeldolgozók számára. Dobja be a DXF alkatrészeket, állítsa be a mennyiségeket, futtassa a motort — kapjon egy teljesen felcsomagolt, vágásra kész lemezt.",
+      "primaryCta": "↓ Ingyenes letöltés",
+      "primaryCtaHref": "https://github.com/kenzap/nesting-app/releases",
+      "secondaryCta": "Nézze meg éles használatban →",
+      "secondaryCtaHref": "/#case-study",
+      "badges": {
+        "windows": "Windows x64",
+        "mac": "macOS Apple Silicon",
+        "openSource": "Nyílt forráskódú"
       },
-      {
-        "name": "Gyártástervezés",
-        "desc": "Gyártókapacitás kezelése és műveletek hatékony ütemezése a műhelyben",
-        "icon": "factory"
-      },
-      {
-        "name": "Anyagtervezés",
-        "desc": "Pontos MRP alapanyag-követéssel, lemezraktár átláthatóságával és automatizált készletkezeléssel",
-        "icon": "format-list-checks"
-      },
-      {
-        "name": "Vágásoptimalizálás",
-        "desc": "Beépített darabolási algoritmusok minimalizálják a hulladékot és maximalizálják a lemezfelhasználást lézer-, plazma- és vízsugaras vágásnál",
-        "icon": "content-cut"
-      },
-      {
-        "name": "Valós idejű gyártásjelentés",
-        "desc": "Érintőképernyőre optimalizált felület valós idejű munkanyilvántartáshoz és jelentésekhez a gépkezelők számára",
-        "icon": "tablet"
-      },
-      {
-        "name": "Munkaalapú költségszámítás",
-        "desc": "Pontos költségszámítás munkánként anyag-, munkaerő-, rezsi- és selejtkövetessel",
-        "icon": "calculator"
-      },
-      {
-        "name": "Peppol e-számlázás",
-        "desc": "EU-megfelelő elektronikus számlák generálása Peppol BIS Billing 3.0 szabvány szerint",
-        "icon": "file-document-outline"
-      },
-      {
-        "name": "ÁFA és megfelelőség",
-        "desc": "Helyileg megfelelő ÁFA-kezelés mentességekkel és nemzeti számviteli rendszer integrációval",
-        "icon": "shield-check"
-      },
-      {
-        "name": "Beszállítókezelés",
-        "desc": "Beszállítók, beszerzési rendelések, anyagköltségek és szállítási ütemezések követése",
-        "icon": "truck"
-      },
-      {
-        "name": "Nyílt forráskód",
-        "desc": "Nyílt forráskódú technológiákra épül beszállító-függőség nélkül, biztosítva a teljes adathordozhatóságot és rendszerfüggetlenséget",
-        "icon": "code"
-      },
-      {
-        "name": "Európai adatvédelem",
-        "desc": "GDPR-megfelelő adatkezelés teljes adatszuverenitással európai működéshez",
-        "icon": "puzzle"
-      },
-      {
-        "name": "AI-alapú elemzések",
-        "desc": "Mesterséges intelligencia által vezérelt elemzések a gyártási szűk keresztmetszetek azonosításához és a munkaköltsé-számítás pontosságának javításához",
-        "icon": "brain"
+      "previewLabel": "Élő nesting előnézet"
+    },
+    "workflow": {
+      "label": "Hogyan működik",
+      "titleLine1": "DXF-ből vágásra kész",
+      "titleLine2": "hat lépésben",
+      "steps": [
+        {
+          "title": "DXF alkatrészek hozzáadása",
+          "description": "Húzzon és dobjon egy vagy több DXF fájlt. A motor automatikusan észleli az összes nestelhető alakzatot, beleértve a több alakzatos fájlokat is."
+        },
+        {
+          "title": "Geometria áttekintése",
+          "description": "Állítsa be a mennyiségeket alkatrészszenként. Tekintse át a belső vágásokat, gravírozási geometriát és réteg-hozzárendeléseket alakzatonként a futtatás előtt."
+        },
+        {
+          "title": "Lemez konfigurálása",
+          "description": "Állítsa be a lemez méreteit, szalag viselkedését, távolságot, forgási lépést, lemez margót és gravírozási stílust."
+        },
+        {
+          "title": "Motor futtatása",
+          "description": "Kattintson a FUTTAT gombra. Egy natív bináris kezeli az elhelyezést — nincs felhő feltöltés, nincs várakozás. Az eredmények élőben érkeznek vissza."
+        },
+        {
+          "title": "Élő előnézet",
+          "description": "Nézze, ahogy a lemezek feltöltődnek az algoritmus munkájával. Lássa a kihasználtság statisztikáit és lemezszámot valós időben frissülni."
+        },
+        {
+          "title": "Exportálás DXF-be",
+          "description": "Exportálja a végső lemezeket az összes eredeti rétegstruktúrával, geometria-rekonstrukcióval és megőrzött gravírozási geometriával."
+        }
+      ]
+    },
+    "features": {
+      "label": "Alapvető képességek",
+      "titleLine1": "Minden, amire a vágóüzemének",
+      "titleLine2": "valóban szüksége van",
+      "cards": {
+        "performance": {
+          "tag": "Natív teljesítmény",
+          "title": "Nincs felhő. Nincs böngésző. Csak gyorsaság.",
+          "description": "A nesting motor natív binárisként fut a gépén. Nagy DXF fájlok másodpercek alatt feldolgozódnak, nem percek alatt. Teljesen offline működik — nincs előfizetés, nincs feltöltés, nincs késleltetés."
+        },
+        "dxf": {
+          "tag": "DXF hűség",
+          "title": "Teljes geometria-támogatás",
+          "description": "Vonalak, ívek, körök, poliívek, ellipszisek és spline-ok mind támogatottak. A belső vágási geometriák és gravírozási rétegek külön megmaradnak az exportáláson keresztül.",
+          "chips": [
+            "Vonalak",
+            "Ívek",
+            "Körök",
+            "Poliívek",
+            "Ellipszisek",
+            "Spline-ok"
+          ]
+        },
+        "engraving": {
+          "tag": "Gravírozás",
+          "title": "Két gravírozási stílus beépítve",
+          "description": "Egyszerű mód egyvonásos betűkhez vékony anyagokon. Körvonalazott mód kontúros betűkhez kitöltött kontúrokkal. Munkánként konfigurálható, DXF exportban megmarad."
+        },
+        "sheet": {
+          "tag": "Lemez intelligencia",
+          "title": "Lemezméret optimalizálás",
+          "description": "A motor megtalálja a munkához szükséges minimális lemezszámot. Konfigurálja a lemez margót, alkatrész távolságot, orientáció lépést és szalag igazítást függetlenül."
+        },
+        "workflow": {
+          "tag": "Munkafolyamat",
+          "title": "Élő előnézet az algoritmus futásakor",
+          "description": "Nem vár arra, hogy a motor befejezze, mielőtt látná az eredményeket. A lemezek valós időben töltődnek fel, ahogy az elhelyezések megerősítésre kerülnek. Változtassa meg a mennyiségeket vagy beállításokat és futtassa újra másodpercek alatt.",
+          "chips": [
+            "Több-alakzatos DXF észlelés",
+            "Alakzatonkénti mennyiségszabályzás",
+            "Réteg-tudatos előnézet",
+            "Poligon JSON export"
+          ]
+        }
       }
-    ],
-    "outro": "A gyártási adatok az árajánlattól a kiszállításig áramolnak. A működési valóság tükröződik a tervezésben és költségszámításban."
-  },
-  "workflow": {
-    "title": "Árajánlattól a kiszállításig",
-    "intro": "A rendszer egy munkafolyamatban köti össze a fő gyártási lépéseket:",
-    "steps": [
-      {
-        "name": "Árajánlat és becslés",
-        "desc": "Költségek pontos számítása anyag-, munkaerő-, gépidő- és vágásoptimalizálással"
+    },
+    "bridge": {
+      "label": "Egy nagyobb kép része",
+      "title": "Kösse össze a nestinget a teljes műveletével",
+      "copy": "A Kenzap Nesting ma önálló asztali eszközként működik. Amikor készen áll, a Kenzap Factory közvetlenül köti össze a nesting kimenetet a munkaköltség-számítással, gyártástervezéssel és készlettel — így a hulladékot nyomon követik és beáraznak az első naptól.",
+      "cta": "Kenzap Factory ERP megtekintése →",
+      "standaloneLabel": "ÖNÁLLÓ",
+      "standaloneTitle": "Kenzap Nesting",
+      "standaloneText": "DXF be → optimalizált lemez ki. Ingyenes, nyílt forráskódú, natív asztali.",
+      "connectsTo": "kapcsolódik",
+      "platformLabel": "TELJES PLATFORM",
+      "platformTitle": "Kenzap Factory",
+      "platformText": "Árajánlat, munkaköltség-számítás, műhelykövetés, e-számlázás. EU-kész ERP."
+    },
+    "download": {
+      "label": "Kezdje el még ma",
+      "title": "Ingyenes. Natív. Nyílt forráskódú.",
+      "sub": "Töltse le a build-et a platformjához. Nincs regisztráció, nincs licenckulcs, nincs felhő függőség. Az első naptól működik.",
+      "windows": {
+        "href": "https://github.com/kenzap/nesting-app/releases",
+        "os": "Windows",
+        "label": "x64 letöltése",
+        "note": ".exe telepítő"
       },
-      {
-        "name": "Gyártástervezés",
-        "desc": "Műveletek ütemezése munkahelyeken készletellátottság ellenőrzéssel és vágásoptimalizálással"
+      "mac": {
+        "href": "https://github.com/kenzap/nesting-app/releases",
+        "os": "macOS",
+        "label": "Apple Silicon",
+        "note": ".dmg — M1-M5"
       },
-      {
-        "name": "Műhelyirányítás",
-        "desc": "Érintőképernyős felület munkanyilvántartáshoz, időrögzítéshez és minőségellenőrzéshez"
-      },
-      {
-        "name": "Számlázás és megfelelőség",
-        "desc": "Peppol-megfelelő e-számlák és fuvarlevek generálása helyes ÁFA-kulcsokkal"
-      },
-      {
-        "name": "Kiszállítás és szállítás",
-        "desc": "Csomagolás, csomagolt tételek kiadása és munkák kiszállítása ügyfeleknek"
-      },
-      {
-        "name": "Elemzések",
-        "desc": "Tényleges vs. becsült költségek követése teljes átláthatósággal és selejtelszámolással"
-      }
-    ],
-    "conclusion": "A cél a következetesség és nyomonkövethetőség a teljes munka-életcikluson keresztül."
-  },
-  "caseStudy": {
-    "title": "Valós gyártási környezetekben alkalmazva",
-    "company": "Skarda Nams SIA",
-    "industry": "Fémfeldolgozás és egyedi alkatrészek",
-    "region": "Kelet-Európa",
-    "employees": "20 munkatárs, 2 CNC gép",
-    "challenge": "Kihívás",
-    "challengeText": "A Skarda Nams nehézségekkel küzdött a különféle fémtípusokkal való pontos árazás, élő készletfrissítések, fém-leírási képességek, gyártástervezés, megfelelő számlázás, pontatlan költségszámítás és papíralapú követés terén.",
-    "solution": "Megoldás",
-    "solutionText": "A Kenzap Factory bevezetése integrált árajánlat-, gyártásútvonal- és műhelyirányítási modulokkal. A gépkezelők két héten belül elsajátították az érintőképernyős felületet. A Peppol e-számlázást az EU megfelelőségi követelményeknek megfelelően konfigurálták. Integráció a Moneo számviteli szoftverrel az egyszerűsített adóbevalláshoz.",
-    "results": "Eredmények",
-    "resultItems": [
-      "Árajánlatkészítési idő csökkentése automatizált anyagszámítással",
-      "Munkaköltsé-számítás pontosságának javulása",
-      "Teljes átláthatóság a műhelyműveletekben és gyártási fázisokban",
-      "Peppol e-számlázási megfelelőség elérése, BMD számviteli szoftver integrációval",
-      "Anyaghulladék csökkentése vágásoptimalizálással",
-      "Gyorsabb gyártástervezés valós idejű készletellenőrzéssel",
-      "GDPR megfelelőség és EU adatrezidencia fenntartása a teljes működés során"
-    ],
-    "quote": "Van egy rendszerünk, ami úgy működik, ahogy a műhelyünk dolgozik. A kezelők azonnal alkalmazkodtak a felülethez, és a munkaköltsé-számításunk most megbízható. Az adókulcsokat automatikusan kezeli terméktípus alapján, ami időt és fejfájást spórol meg a számlázás során.",
-    "quoteAuthor": "Ügyfélmenedzser, Skarda Nams SIA",
-    "watchCase": "Esettanulmány megtekintése"
-  },
-  "implementation": {
-    "title": "Megvalósítási módszer",
-    "intro": "A megvalósítás szabványos struktúrát követ, amely minimálisra csökkenti a működési zavarokat.",
-    "principles": [
-      "Hardver beállítás és szoftvertelepítés az üzemi rendszereken",
-      "Termékkatalógus és fémkészlet adatbázis konfigurációja",
-      "Felhasználói szerepek kijelölése és felelősségek meghatározása",
-      "Dokumentumsablonok testreszabása (fuvarlevek, számlák, jelentések)",
-      "Átfogó képzés kezelők és vezetői csapatok számára",
-      "Rendszerintegráció és pénzügyi jelentési szinkronizáció"
-    ],
-    "timeline": "Jellemző ütemterv:",
-    "phases": [
-      "Felmérés és konfiguráció: 2-3 hét",
-      "Adatmigráció és tesztelés: 2-3 hét",
-      "Képzés és élesítés: 1-2 hét",
-      "Élesítés utáni támogatás: folyamatos"
-    ],
-    "outro": "A megvalósítást gyártási és ERP háttérrel rendelkező tanácsadók vagy közvetlenül Kenzap mérnök végezheti."
-  },
-  "deployment": {
-    "title": "Telepítési lehetőségek",
-    "intro": "A rendszer több telepítési modellt támogat a működési, szabályozási és adatszuverenitási igényeknek megfelelően.",
-    "options": [
-      {
-        "name": "Szolgáltató által kezelt felhő",
-        "desc": "Teljesen menedzselt hosztolás európai adatközpontokban automatikus frissítésekkel, biztonsági mentésekkel és biztonsági javításokkal. Ideális a működésre összpontosító vállalatok számára.",
-        "icon": "cloud-check"
-      },
-      {
-        "name": "Ügyfél által kezelt felhő",
-        "desc": "Telepítés saját felhőinfrastruktúrán (AWS, Azure, GCP) a konfiguráció és hozzáférés teljes kontrolljával. Alkalmas IT-képes szervezetek számára.",
-        "icon": "cloud-cog"
-      },
-      {
-        "name": "Saját telepítés",
-        "desc": "Helyszíni telepítés a maximális adatszuverenitás és kontroll érdekében. Szükséges egyes szabályozott iparágakban vagy rendkívül érzékeny műveletekhez.",
-        "icon": "server"
-      }
-    ],
-    "outro": "Minden telepítési lehetőség ugyanazt a szoftvert használja, ugyanazt a frissítési útvonalat követi és fenntartja a funkcionális paritást. Az adatok európai joghatóságokban maradnak a GDPR megfelelőség érdekében."
-  },
-  "contact": {
-    "title": "Kapcsolat",
-    "intro": "Ha meg szeretné érteni, hogy ez a rendszer megfelelő-e az Ön működéséhez, vegye fel velünk a kapcsolatot egy előzetes megbeszéléshez. Angolul és más európai nyelveken dolgozunk.",
-    "namePlaceholder": "Az Ön neve",
-    "emailPlaceholder": "E-mail cím",
-    "companyPlaceholder": "Vállalat neve",
-    "messagePlaceholder": "Mondja el gyártási beállításait: gépek száma, jellemző munkaméretek, jelenlegi rendszerek...",
-    "submit": "Üzenet küldése",
-    "sending": "Küldés...",
-    "success": "Üzenet sikeresen elküldve. 1-2 munkanapon belül felvesszük Önnel a kapcsolatot.",
-    "error": "Üzenet küldése sikertelen. Kérjük, írjon nekünk közvetlenül a support@kenzap.com címre",
-    "or": "vagy",
-    "linkedin": "Kapcsolat LinkedIn-en",
-    "email": "Közvetlen e-mail"
-  },
-  "footer": {
-    "tagline": "Szoftver gyártási műveletekhez",
-    "company": "© 2026 Kenzap. Minden jog fenntartva.",
-    "note": "A termékinformációk változhatnak. Az elérhetőség régiónként eltérhet.",
-    "languages": "Nyelvek"
+      "openSourcePrefix": "Forráskód és build útmutatások a",
+      "openSourceHref": "https://github.com/kenzap/nesting-app",
+      "openSourceLink": "GitHub-on",
+      "openSourceLicense": "Apache-2.0 licenc"
+    },
+    "footer": {
+      "factory": "Factory",
+      "email": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com",
+      "company": "© 2026 Kenzap Pte Ltd"
+    }
   }
 }

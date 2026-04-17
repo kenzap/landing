@@ -1,240 +1,406 @@
 {
-  "nav": {
-    "problem": "Problém",
-    "solution": "Riešenie",
-    "features": "Funkcie",
-    "customers": "Zákazníci",
-    "contact": "Kontakt"
+  "factoryHomepage": {
+    "meta": {
+      "title": "Kenzap Factory — Riadenie výroby pre spracovateľov kovov",
+      "description": "Softvér pre výrobu, kalkulácie a súlad s predpismi vytvorený špeciálne pre spracovateľov kovov. Kusová výroba, laserové rezanie, Peppol e-fakturácia. Pripravený pre EÚ."
+    },
+    "nav": {
+      "problem": "Problém",
+      "features": "Funkcie",
+      "caseStudy": "Prípadová štúdia",
+      "nesting": "Nesting aplikácia",
+      "nestingHref": "/nesting",
+      "cta": "Kontaktujte nás →"
+    },
+    "hero": {
+      "eyebrow": "Softvér na riadenie výroby",
+      "headlineTop": "Vytvorený pre",
+      "strikeWord": "účtovníkov.",
+      "headlineAccent": "spracovateľov kovov.",
+      "subheadline": "Riadenie výroby vytvorené pre kusovú výrobu kovov — nie adaptované z generického účtovného softvéru.",
+      "primaryCta": "Objednať demo →",
+      "secondaryCta": "Zobraziť výsledky ↓",
+      "interfaceLabel": "Rozhranie Kenzap Factory",
+      "stats": [
+        {
+          "value": "~30%",
+          "label": "Rýchlejšie kalkulácie"
+        },
+        {
+          "value": "2 týž",
+          "label": "Zaučenie operátorov"
+        },
+        {
+          "value": "e-fakt",
+          "label": "Pripravené na súlad"
+        }
+      ]
+    },
+    "problem": {
+      "label": "Problém",
+      "title": "Generický softvér bol vytvorený pre\núčtovníkov, nie pre spracovateľov kovov.",
+      "quote": "\"Máme systém, ktorý funguje tak, ako funguje naša dielňa. Operátori sa prispôsobili okamžite a naša kalkulácia zákaziek je teraz spoľahlivá.\"",
+      "quoteAuthor": "— VEDÚCI PROJEKTU, SKARDA NAMS SIA · LOTYŠSKO",
+      "items": [
+        {
+          "title": "Kalkulácia zákaziek je hádanie.",
+          "description": "Typy materiálov, čas rezania, odpad — väčšina ERP to nevie modelovať. Zistíte, že ste stratili peniaze, až keď sa zákazka odošle."
+        },
+        {
+          "title": "Sklad plechov nie je sledovaný.",
+          "description": "Viete, koľko dielov máte, nie koľko celých a čiastočných plechov — takže si objednáte príliš veľa alebo vám to nestačí."
+        },
+        {
+          "title": "Plánovanie výroby žije v tabuľkách.",
+          "description": "Plánovanie, kontrola kapacít a optimalizácia rezania sa dejú mimo systému, v súboroch, ktoré nikto iný nevidí."
+        },
+        {
+          "title": "Súlad s predpismi je manuálny.",
+          "description": "Peppol e-fakturácia, variabilné sadzby DPH, GDPR — riešené obchádzkami, nie systémom."
+        },
+        {
+          "title": "Dielňa je neviditeľná.",
+          "description": "Manažéri sa dozvedajú o oneskoreniach a problémoch s kvalitou príliš neskoro, lebo operátori nemajú systém na hlásenie."
+        }
+      ]
+    },
+    "workflow": {
+      "label": "Ako to funguje",
+      "title": "Od kalkulácie po expedíciu,\nv jednom prepojennom workflow",
+      "steps": [
+        {
+          "title": "Kalkulácia a odhad",
+          "description": "Presne vypočítajte náklady na zákazku — materiál, práca, strojný čas, optimalizácia rezania — predtým, ako sa zaviažete k cene."
+        },
+        {
+          "title": "Plánovanie výroby",
+          "description": "Naplánujte operácie naprieč pracovnými centrami s kontrolou zásob v reálnom čase a zabudovanou optimalizáciou nestingu."
+        },
+        {
+          "title": "Vykonávanie v dielni",
+          "description": "Dotykové rozhranie pre operátorov. Sledovanie zákaziek, záznam času a kontrola kvality priamo pri stroji."
+        },
+        {
+          "title": "Fakturácia a súlad",
+          "description": "Peppol-kompatibilné e-faktúry a sprievodné doklady generované automaticky so správnymi sadzbami DPH podľa typu produktu."
+        },
+        {
+          "title": "Expedícia a dodanie",
+          "description": "Balenie zákaziek, odpis súborových položiek a expedícia s kompletnou dokumentáciou. Zásoby sa aktualizujú automaticky."
+        },
+        {
+          "title": "Analytika",
+          "description": "Porovnanie skutočných a odhadovaných nákladov na zákazku. Úplné účtovanie odpadu a prehľad výrobných úzkych miest."
+        }
+      ]
+    },
+    "features": {
+      "label": "Kľúčové možnosti",
+      "title": "Všetko, co spracovateľ kovov\npotrebuje v jednom systéme",
+      "items": [
+        {
+          "tag": "Výroba",
+          "title": "Sledovanie workflow",
+          "description": "Sledujte každú zákazku od kalkulácie po dodanie s detailmi na úrovni operácií. Vedzte presne, kde sa každá zákazka nachádza, v reálnom čase."
+        },
+        {
+          "tag": "Zásoby",
+          "title": "MRP pre plechy",
+          "description": "Sledujte zásoby po plechoch, nielen počet dielov. Celé a čiastočné plechy, viaceré typy kovov, automatické spúšťače objednávok."
+        },
+        {
+          "tag": "Rezanie",
+          "title": "Zabudovaný nesting",
+          "description": "Nesting algoritmy minimalizujú plytvanie materiálom pre laser, plazmu a vodný lúč — priamo prepojené s kalkuláciou zákaziek, takže odpad sa sleduje automaticky.",
+          "accent": true
+        },
+        {
+          "tag": "Kalkulácia",
+          "title": "Kalkulácia podľa zákaziek",
+          "description": "Presné náklady na zákazku: materiál, práca, režijné náklady a odpad. Porovnajte odhadované a skutočné náklady na každú expedovanú zákazku."
+        },
+        {
+          "tag": "Súlad",
+          "title": "Peppol e-fakturácia",
+          "description": "EÚ-kompatibilná elektronická fakturácia cez Peppol BIS Billing 3.0. Sadzby DPH spracované automaticky podľa typu produktu a regiónu zákazníka."
+        },
+        {
+          "tag": "Dielňa",
+          "title": "Dotykové rozhranie",
+          "description": "Navrhnuté pre operátorov pri stroji. Sledovanie zákaziek, záznam času, kontrola kvality — prijaté do dvoch týždňov v Skarda Nams."
+        },
+        {
+          "tag": "Dodávatelia",
+          "title": "Riadenie dodávateľov",
+          "description": "Nákupné objednávky, náklady na materiál a plány dodávok sledované v tom istom systéme ako výroba."
+        },
+        {
+          "tag": "AI",
+          "title": "AI-riadené poznatky",
+          "description": "Identifikujte výrobné úzke miesta a zlepšite presnosť kalkulácie zákaziek s AI-analýzou vašich skutočných výrobných údajov."
+        },
+        {
+          "tag": "Dáta",
+          "title": "Open source a GDPR",
+          "description": "Žiadne uzamknutie dodávateľom. Úplná prenosnosť údajov. GDPR-kompatibilné s rezidenčnosťou údajov v EÚ. Nasadenie na vlastnej infraštruktúre podľa potreby."
+        }
+      ]
+    },
+    "caseStudy": {
+      "label": "Skutočné výsledky",
+      "title": "Používané vo výrobe\nv Skarda Nams SIA",
+      "meta": "SPRACOVANIE KOVOV · LOTYŠSKO · 20 ZAMESTNANCOV · 2 CNC STROJE",
+      "challengeLabel": "Výzva",
+      "challengeText": "Skarda Nams kalkulovala manuálne naprieč viacerými typmi kovov, viedla zásoby na papieri a nebola schopná vytvoriť súladné faktúry bez obchádzok. Kalkulácia zákaziek bola nepresná. Viditeľnosť dielne bola nulová.",
+      "solutionLabel": "Riešenie",
+      "solutionText": "Implementované Kenzap Factory s integrovanými modulmi kalkulácie, výrobného smerovania a vykonávania v dielni. Peppol e-fakturácia nakonfigurovaná pre súlad s EÚ. Integrované s účtovným softvérom Moneo.",
+      "quote": "\"Operátori sa prispôsobili rozhraniu okamžite a naša kalkulácia zákaziek je teraz spoľahlivá. Daňové sadzby sa spracovávajú automaticky — len to nám ušetrí významný čas každý mesiac.\"",
+      "quoteAuthor": "— VEDÚCI PROJEKTU, SKARDA NAMS SIA",
+      "results": [
+        {
+          "value": "~30%",
+          "label": "Zníženie času kalkulácie"
+        },
+        {
+          "value": "2 týž",
+          "label": "Čas zaučenia operátorov"
+        },
+        {
+          "value": "100%",
+          "label": "Dosiahnutý súlad fakturácie"
+        },
+        {
+          "value": "100%",
+          "label": "Dosiahnutá presnosť odhadov"
+        },
+        {
+          "value": "Úplná viditeľnosť",
+          "label": "Do prevádzky dielne a výrobných etáp — od prvého dňa",
+          "fullWidth": true
+        }
+      ]
+    },
+    "deployment": {
+      "label": "Nasadenie",
+      "title": "Beží tam, kde to vaša\nprevádzka vyžaduje",
+      "options": [
+        {
+          "title": "Cloud riadený dodávateľom",
+          "description": "Úplne riadený hosting s automatickými aktualizáciami, zálohami a bezpečnostnými záplatami. Najlepšie pre tímy zamerané na prevádzku, nie IT."
+        },
+        {
+          "title": "Cloud riadený zákazníkom",
+          "description": "Nasadenie na vašej vlastnej infraštruktúre AWS, Azure alebo GCP. Úplná kontrola nad konfiguráciou, prístupom a údajmi. Vhodné pre organizácie s IT kapacitami."
+        },
+        {
+          "title": "Vlastný hosting na mieste",
+          "description": "Inštalácia na mieste pre maximálnu zvrchovanosť údajov. Vyžadované pre niektoré regulované odvetvia. Úplná parita funkcií s cloudovými možnosťami."
+        }
+      ]
+    },
+    "timeline": {
+      "label": "Typická časová os implementácie",
+      "phases": [
+        {
+          "phase": "Fáza 1",
+          "duration": "2–3 týž",
+          "label": "Zistenie a konfigurácia"
+        },
+        {
+          "phase": "Fáza 2",
+          "duration": "2–3 týž",
+          "label": "Migrácia údajov a testovanie"
+        },
+        {
+          "phase": "Fáza 3",
+          "duration": "1–2 týž",
+          "label": "Školenie a spustenie"
+        },
+        {
+          "phase": "Fáza 4",
+          "duration": "Priebežne",
+          "label": "Podpora po spustení"
+        }
+      ]
+    },
+    "nesting": {
+      "label": "Tiež od Kenzap",
+      "title": "Začnite s nestingom.\nPripojte zvyšok, keď budete pripravení.",
+      "description": "Kenzap Nesting je bezplatná samostatná desktopová aplikácia pre nesting plechov na základe DXF. Natívna na Windows a macOS. Žiadne predplatné, žiadny cloud, žiadna registrácia. Keď vaša prevádzka porastie, Kenzap Factory prepojí všetko.",
+      "primaryCta": "Preskúmať Kenzap Nesting →",
+      "href": "/nesting",
+      "cardLabel": "Kenzap Nesting — bezplatné stiahnutie",
+      "cardTitle": "Uložte viac. Plytvania menej. Režte rýchlejšie.",
+      "cardDescription": "Vložte DXF diely, nastavte množstvá, spustite nesting engine, exportujte hotové plechy na rezanie. Živý náhľad počas behu algoritmu.",
+      "platforms": [
+        "Windows",
+        "macOS"
+      ]
+    },
+    "contact": {
+      "label": "Kontakt",
+      "title": "Zistite, či Kenzap Factory\nvyhovuje vašej prevádzke",
+      "description": "Odpovedáme do jedného pracovného dňa. Žiadny predajný proces — len priamy rozhovor o tom, či to vyhovuje vašej prevádzke.",
+      "linkedinLabel": "LinkedIn",
+      "linkedinHref": "https://www.linkedin.com/in/pavel-lukasenko/",
+      "emailLabel": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com"
+    },
+    "footer": {
+      "nestingLabel": "Nesting aplikácia",
+      "nestingHref": "/nesting",
+      "emailLabel": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com",
+      "company": "© 2026 Kenzap Pte Ltd"
+    }
   },
-  "hero": {
-    "headline": "ERP systém vytvorený pre kovoobrábanie.",
-    "subheadline": "Výroba, kalkulácie a plánovanie navrhnuté pre zákazkové výrobné podniky.",
-    "intro": "Tento systém je navrhnutý špeciálne pre kovoobrábačské firmy. Podporuje reálne výrobné procesy, nie účtovné náhradné riešenia. Zameraný na zákazkové dielne, výrobu na objednávku a dodržiavanie predpisov.",
-    "primaryCta": "Kontaktujte nás",
-    "secondaryCta": "Zistite, či vám vyhovuje",
-    "watchDemo": "Pozrite si ako funguje"
-  },
-  "problem": {
-    "title": "Prečo univerzálne ERP systémy zlyhávajú u kovoobrábačov",
-    "intro": "Väčšina ERP systémov je navrhnutá okolo účtovníctva, nie výroby. V dôsledku toho sa kovoobrábači často spoliehajú na tabuľky a manuálne procesy pri riadení zákaziek a výrobných operácií.",
-    "items": [
-      "Nepresné kalkulácie zákaziek",
-      "Nesprávne sledovanie skladových zásob kovov",
-      "Slabá kontrola nad výrobnými operáciami",
-      "Chýba optimalizácia rezania plechu",
-      "Plánovanie výroby sa riadi mimo ERP systému",
-      "Premenlivé daňové sadzby produktov nie sú spracované automaticky"
-    ],
-    "conclusion": "Tieto problémy zvyšujú riziko nedodržania predpisov, znižujú efektivitu a zhoršujú kvalitu služieb."
-  },
-  "whoFor": {
-    "title": "Pre koho je tento systém navrhnutý",
-    "intro": "Tento ERP je navrhnutý pre kovoobrábačské spoločnosti s:",
-    "criteria": [
-      "Potrebou presných kalkulácií zákaziek a sledovania materiálov",
-      "Požiadavkami na riadenie skladov kovov a plechov",
-      "Potrebami optimalizácie rezania pre laser, plazmu alebo vodný lúč",
-      "Povinnosťami súladu s EU e-fakturáciou",
-      "Požiadavkami na integráciu s európskymi účtovnými systémami",
-      "Potrebami súladu s GDPR a ochranou údajov EÚ"
-    ],
-    "typical": "Typickí používatelia zahŕňajú:",
-    "users": [
-      "Zákazkové dielne",
-      "Subdodávateľské výroby",
-      "Výrobcovia na mieru alebo malých sérií",
-      "Plechárske dielne"
-    ],
-    "notFor": "Tento systém nie je navrhnutý pre:",
-    "excluded": [
-      "Čisto distribučné podniky",
-      "Procesné výroby",
-      "Vysoko štandardizovanú sériovú výrobu"
-    ]
-  },
-  "manufacturing": {
-    "title": "Dizajn orientovaný na výrobu",
-    "intro": "Systém je postavený na skutočných výrobných konceptoch používaných v kovoobrábaní a neustále sa prispôsobuje komplexným a vyvíjajúcim sa európskym požiadavkám na súlad s predpismi.",
-    "features": [
-      {
-        "name": "Sledovanie pracovných tokov",
-        "desc": "Sledujte každú zákazku od cennej ponuky po dodávku s úplným prehľadom a detailmi na úrovni operácií",
-        "icon": "cog"
+  "nestingHomepage": {
+    "meta": {
+      "title": "Kenzap Nesting — DXF Nesting plechov pre spracovateľov kovov",
+      "description": "Bezplatný natívny DXF nesting softvér pre spracovateľov kovov. Import DXF dielov, optimalizácia plechov, živý náhľad a export rozložení pripravených na rezanie."
+    },
+    "nav": {
+      "workflow": "Ako to funguje",
+      "features": "Funkcie",
+      "factory": "Factory ERP",
+      "factoryMobile": "Factory",
+      "cta": "Stiahnuť zdarma →",
+      "ctaHref": "https://github.com/kenzap/nesting-app"
+    },
+    "hero": {
+      "eyebrow": "DXF nesting softvér",
+      "headlineLine1": "Uložte viac.",
+      "headlineLine2Prefix": "Plytvania ",
+      "headlineLine2Accent": "menej",
+      "headlineLine3": "Režte rýchlejšie.",
+      "subheadline": "Natívna desktopová nesting aplikácia pre spracovateľov kovov. Vložte vaše DXF diely, nastavte množstvá, spustite engine — získajte úplne naplnený plech pripravený na rezanie.",
+      "primaryCta": "↓ Stiahnuť zdarma",
+      "primaryCtaHref": "https://github.com/kenzap/nesting-app/releases",
+      "secondaryCta": "Pozrieť vo výrobe →",
+      "secondaryCtaHref": "/#case-study",
+      "badges": {
+        "windows": "Windows x64",
+        "mac": "macOS Apple Silicon",
+        "openSource": "Open source"
       },
-      {
-        "name": "Plánovanie výroby",
-        "desc": "Riadenie výrobných kapacít a efektívne plánovanie operácií v celej dielni",
-        "icon": "factory"
-      },
-      {
-        "name": "Plánovanie materiálov",
-        "desc": "Presný MRP založený na sledovaní surovín, prehľade skladových zásob plechov a automatizovanom riadení skladu",
-        "icon": "format-list-checks"
-      },
-      {
-        "name": "Optimalizácia rezania",
-        "desc": "Vstavané algoritmy pre rozmiestňovanie minimalizujú odpad a maximalizujú využitie plechov pre laser, plazmu a vodný lúč",
-        "icon": "content-cut"
-      },
-      {
-        "name": "Výrobné hlásenia v reálnom čase",
-        "desc": "Rozhranie optimalizované pre dotykové panely na sledovanie zákaziek a hlásenie obsluhy strojov v reálnom čase",
-        "icon": "tablet"
-      },
-      {
-        "name": "Kalkulácie na základe zákaziek",
-        "desc": "Presný výpočet nákladov na zákazku so sledovaním materiálu, práce, réžie a odpadu",
-        "icon": "calculator"
-      },
-      {
-        "name": "Peppol e-fakturácia",
-        "desc": "Generovanie elektronických faktúr v súlade s EÚ podľa štandardu Peppol BIS Billing 3.0",
-        "icon": "file-document-outline"
-      },
-      {
-        "name": "DPH a súlad s predpismi",
-        "desc": "Lokálne kompatibilné spracovanie DPH s výnimkami a integráciou národných účtovných systémov",
-        "icon": "shield-check"
-      },
-      {
-        "name": "Riadenie dodávateľov",
-        "desc": "Sledovanie dodávateľov, nákupných objednávok, nákladov na materiály a harmonogramov dodávok",
-        "icon": "truck"
-      },
-      {
-        "name": "Open Source",
-        "desc": "Postavený na open source technológiách bez závislosti od dodávateľa, zaručujúci úplnú prenosnosť údajov a nezávislosť systému",
-        "icon": "code"
-      },
-      {
-        "name": "Európska ochrana údajov",
-        "desc": "GDPR kompatibilné spracovanie údajov s úplnou suverenitou údajov pre európske operácie",
-        "icon": "puzzle"
-      },
-      {
-        "name": "AI-riadené poznatky",
-        "desc": "AI poznatky na identifikáciu výrobných úzkych miest a zlepšenie presnosti kalkulácií zákaziek",
-        "icon": "brain"
+      "previewLabel": "Živý náhľad nestingu"
+    },
+    "workflow": {
+      "label": "Ako to funguje",
+      "titleLine1": "Od DXF po pripravené na rezanie",
+      "titleLine2": "v šiestich krokoch",
+      "steps": [
+        {
+          "title": "Pridajte DXF diely",
+          "description": "Pretiahnite jeden alebo viac DXF súborov. Engine automaticky deteguje všetky nesteľné tvary, včítane súborov s viacerými tvarmi."
+        },
+        {
+          "title": "Skontrolujte geometriu",
+          "description": "Nastavte množstvá na diel. Skontrolujte vnútorné rezy, gravírovaciu geometriu a priradenie vrstiev na tvar pred spustením."
+        },
+        {
+          "title": "Nakonfigurujte plech",
+          "description": "Nastavte rozmery plechu, správanie pásov, rozostupy, krok rotácie, okraj plechu a štýl gravirovanie."
+        },
+        {
+          "title": "Spustite engine",
+          "description": "Kliknite SPUSTIŤ. Natívny binárny súbor zvládne umiestnenie — žiadne nahrávanie do cloudu, žiadne čakanie. Výsledky sa streamujú naživo."
+        },
+        {
+          "title": "Živý náhľad",
+          "description": "Sledujte, ako sa plechy naplňajú počas práce algoritmu. Pozrite štatistiky využitia a počet plechov aktualizovaný v reálnom čase."
+        },
+        {
+          "title": "Export do DXF",
+          "description": "Exportujte finálne plechy so zachovanou pôvodnou štruktúrou vrstiev, rekonštrukciou geometrie a gravírovacou geometriou."
+        }
+      ]
+    },
+    "features": {
+      "label": "Kľúčové možnosti",
+      "titleLine1": "Všetko, čo vaša rezacia",
+      "titleLine2": "prevádzka skutočne potrebuje",
+      "cards": {
+        "performance": {
+          "tag": "Natívny výkon",
+          "title": "Žiadny cloud. Žiadny prehliadač. Len rýchlosť.",
+          "description": "Nesting engine beží ako natívny binárny súbor na vašom počítači. Veľké DXF súbory sa spracujú za sekundy, nie minúty. Funguje úplne offline — žiadne predplatné, žiadne nahrávanie, žiadna latencia."
+        },
+        "dxf": {
+          "tag": "DXF presnosť",
+          "title": "Úplná podpora geometrie",
+          "description": "Čiary, oblúky, kružnice, lomené čiary, elipsy a krivky všetko podporované. Geometria vnútorných rezov a gravírovacie vrstvy sú zachované oddelene cez export.",
+          "chips": [
+            "Čiary",
+            "Oblúky",
+            "Kružnice",
+            "Lomené čiary",
+            "Elipsy",
+            "Krivky"
+          ]
+        },
+        "engraving": {
+          "tag": "Gravírovanie",
+          "title": "Dva štýly gravirovanie zabudované",
+          "description": "Jednoduchý režim pre jednočiarové písmo na tenkých materiáloch. Obrysový režim pre obrysové písmo s vyplnenými obrysmi. Nastavené na zákazku, zachované v DXF exporte."
+        },
+        "sheet": {
+          "tag": "Inteligencia plechu",
+          "title": "Optimalizácia veľkosti plechu",
+          "description": "Engine nájde minimálny počet plechov potrebných pre vašu zákazku. Nakonfigurujte okraj plechu, rozostup dielov, krok orientácie a zarovnanie pásov nezávisle."
+        },
+        "workflow": {
+          "tag": "Workflow",
+          "title": "Živý náhľad počas behu algoritmu",
+          "description": "Nečakáte, kým sa engine skončí pred zobrazením výsledkov. Plechy sa naplňajú v reálnom čase, ako sa potvrzujú umiestnenia. Zmeňte množstvá alebo nastavenia a znovu spustite za sekundy.",
+          "chips": [
+            "Detekcia viac-tvarov DXF",
+            "Kontrola množstva na tvar",
+            "Náhľad s vedomím vrstiev",
+            "Export JSON polygónov"
+          ]
+        }
       }
-    ],
-    "outro": "Výrobné údaje prúdia od cenovej ponuky po expedíciu. Operačná realita sa odráža v plánovaní a kalkuláciách."
-  },
-  "workflow": {
-    "title": "Od cenovej ponuky po expedíciu",
-    "intro": "Systém spája kľúčové výrobné kroky v jednom pracovnom toku:",
-    "steps": [
-      {
-        "name": "Cenová ponuka a odhad",
-        "desc": "Presný výpočet nákladov s materiálom, prácou, strojovým časom a optimalizáciou rezania"
+    },
+    "bridge": {
+      "label": "Súčasť väčšieho obrazu",
+      "title": "Pripojte nesting k celej vašej prevádzke",
+      "copy": "Kenzap Nesting funguje ako samostatný desktopový nástroj už dnes. Keď budete pripravení, Kenzap Factory pripojí váš nesting výstup priamo k kalkulácii zákaziek, plánovaniu výroby a zásobám — takže odpad je sledovaný a kalkulovaný od prvého dňa.",
+      "cta": "Pozrieť Kenzap Factory ERP →",
+      "standaloneLabel": "SAMOSTATNÝ",
+      "standaloneTitle": "Kenzap Nesting",
+      "standaloneText": "DXF dnu → optimalizovaný plech von. Bezplatné, open source, natívny desktop.",
+      "connectsTo": "pripája sa k",
+      "platformLabel": "ÚPLNÁ PLATFORMA",
+      "platformTitle": "Kenzap Factory",
+      "platformText": "Kalkulácie, náklady zákaziek, sledovanie dielne, e-fakturácia. EÚ-pripravený ERP."
+    },
+    "download": {
+      "label": "Začnite ešte dnes",
+      "title": "Bezplatné. Natívne. Open source.",
+      "sub": "Stiahnite verziu pre vašu platformu. Žiadna registrácia, žiadny licenčný kľúč, žiadna závislosť od cloudu. Funguje od prvého dňa.",
+      "windows": {
+        "href": "https://github.com/kenzap/nesting-app/releases",
+        "os": "Windows",
+        "label": "Stiahnuť x64",
+        "note": ".exe inštalátor"
       },
-      {
-        "name": "Plánovanie výroby",
-        "desc": "Plánovanie operácií v pracovných centrách s kontrolou dostupnosti zásob a optimalizáciou rezania"
+      "mac": {
+        "href": "https://github.com/kenzap/nesting-app/releases",
+        "os": "macOS",
+        "label": "Apple Silicon",
+        "note": ".dmg — M1-M5"
       },
-      {
-        "name": "Výrobné operácie",
-        "desc": "Dotykové rozhranie pre sledovanie zákaziek, zaznamenávanie času a kontrolu kvality"
-      },
-      {
-        "name": "Fakturácia a súlad s predpismi",
-        "desc": "Generovanie Peppol kompatibilných e-faktúr a sprievodiek so správnymi DPH sadzbami"
-      },
-      {
-        "name": "Expedícia a dodávka",
-        "desc": "Balenie, odpisovanie súborov položiek a expedícia zákaziek zákazníkom"
-      },
-      {
-        "name": "Analytiky",
-        "desc": "Sledovanie skutočných vs. odhadovaných nákladov s úplnou transparentnosťou a účtovaním odpadu"
-      }
-    ],
-    "conclusion": "Cieľom je konzistentnosť a sledovateľnosť počas celého životného cyklu zákazky."
-  },
-  "caseStudy": {
-    "title": "Používa sa v skutočných výrobných prostrediach",
-    "company": "Skarda Nams SIA",
-    "industry": "Kovoobrábanie a výroba na mieru",
-    "region": "Východná Európa",
-    "employees": "20 zamestnancov, 2 CNC stroje",
-    "challenge": "Výzva",
-    "challengeText": "Skarda Nams mala problémy s presným ocenením pri použití rôznych typov kovov, aktualizáciou zásob v reálnom čase, možnosťami odpisovania kovov, plánovaním výroby, kompatibilnou fakturáciou, nepresnými kalkuláciami a papierovým sledovaním.",
-    "solution": "Riešenie",
-    "solutionText": "Implementácia Kenzap Factory s integrovanými modulmi pre cenovú ponuku, výrobné smerovanie a výrobné operácie. Obsluha strojov si osvojila dotykové rozhranie do dvoch týždňov od nasadenia. Peppol e-fakturácia bola nakonfigurovaná tak, aby spĺňala požiadavky EÚ na súlad s predpismi. Integrácia s účtovným softvérom Moneo pre zjednodušené daňové hlásenie.",
-    "results": "Výsledky",
-    "resultItems": [
-      "Skrátenie času na oceňovanie prostredníctvom automatizovaného výpočtu materiálov",
-      "Zlepšenie presnosti kalkulácií zákaziek",
-      "Úplný prehľad o výrobných operáciách a výrobných fázach",
-      "Dosiahnutý súlad s Peppol e-fakturáciou s integráciou do účtovného softvéru BMD",
-      "Zníženie odpadu materiálu prostredníctvom optimalizácie rezania",
-      "Rýchlejšie plánovanie výroby s kontrolami zásob v reálnom čase",
-      "GDPR súlad a rezidencia údajov EÚ udržiavaná počas celých operácií"
-    ],
-    "quote": "Máme systém, ktorý funguje tak, ako funguje naša dielňa. Obsluha sa prispôsobila rozhraniu okamžite a naše kalkulácie zákaziek sú teraz spoľahlivé. Daňové sadzby sa spracovávajú automaticky na základe typu produktu, čo nám šetrí čas a starosti pri fakturácii.",
-    "quoteAuthor": "Manažér klienta, Skarda Nams SIA",
-    "watchCase": "Pozrite si prípadovú štúdiu"
-  },
-  "implementation": {
-    "title": "Prístup k implementácii",
-    "intro": "Implementácia nasleduje štandardnú štruktúru navrhnutú na minimalizáciu narušenia.",
-    "principles": [
-      "Nastavenie hardvéru a inštalácia softvéru na firemné systémy",
-      "Konfigurácia katalógu produktov a databázy skladových zásob kovov",
-      "Priradenie používateľských rolí a definícia zodpovedností",
-      "Prispôsobenie šablón dokumentov (sprievodky, faktúry, hlásenia)",
-      "Komplexné školenie pre obsluhu a riadiace tímy",
-      "Integrácia systému a synchronizácia finančného výkazníctva"
-    ],
-    "timeline": "Typický časový harmonogram:",
-    "phases": [
-      "Objavovanie a konfigurácia: 2-3 týždne",
-      "Migrácia údajov a testovanie: 2-3 týždne",
-      "Školenie a spustenie: 1-2 týždne",
-      "Podpora po spustení: priebežne"
-    ],
-    "outro": "Implementáciu môžu vykonať konzultanti s výrobným a ERP pozadím alebo priamo inžinier Kenzap."
-  },
-  "deployment": {
-    "title": "Možnosti nasadenia",
-    "intro": "Systém podporuje viacero modelov nasadenia tak, aby vyhovovali prevádzkových, regulačným a suverenita údajov potrebám.",
-    "options": [
-      {
-        "name": "Cloud riadený dodávateľom",
-        "desc": "Plne spravovaný hosting v európskych dátových centrách s automatickými aktualizáciami, zálohami a bezpečnostnými záplatami. Ideálne pre spoločnosti zamerané na prevádzku.",
-        "icon": "cloud-check"
-      },
-      {
-        "name": "Cloud riadený zákazníkom",
-        "desc": "Nasadenie na vlastnej cloudovej infraštruktúre (AWS, Azure, GCP) s plnou kontrolou nad konfiguráciou a prístupom. Vhodné pre IT-schopné organizácie.",
-        "icon": "cloud-cog"
-      },
-      {
-        "name": "Vlastné nasadenie",
-        "desc": "On-premises inštalácia pre maximálnu suverenitu údajov a kontrolu. Požadované pre niektoré regulované odvetvia alebo vysoko citlivé operácie.",
-        "icon": "server"
-      }
-    ],
-    "outro": "Všetky možnosti nasadenia používajú rovnaký softvér, nasledujú rovnakú cestu upgradu a udržiavajú rovnaké funkcie. Údaje zostávajú v európskych jurisdikciách pre GDPR súlad."
-  },
-  "contact": {
-    "title": "Kontakt",
-    "intro": "Ak chcete pochopiť, či tento systém vyhovuje vašej prevádzke, kontaktujte nás na úvodnú diskusiu. Pracujeme v angličtine a ďalších európskych jazykoch.",
-    "namePlaceholder": "Vaše meno",
-    "emailPlaceholder": "E-mailová adresa",
-    "companyPlaceholder": "Názov spoločnosti",
-    "messagePlaceholder": "Povedzte nám o vašom výrobnom nastavení: počet strojov, typické veľkosti zákaziek, súčasné systémy...",
-    "submit": "Odoslať správu",
-    "sending": "Odosiela sa...",
-    "success": "Správa úspešne odoslaná. Kontaktujeme vás do 1-2 pracovných dní.",
-    "error": "Nepodarilo sa odoslať správu. Napíšte nám prosím priamo na support@kenzap.com",
-    "or": "alebo",
-    "linkedin": "Spojte sa na LinkedIn",
-    "email": "Napíšte nám priamo"
-  },
-  "footer": {
-    "tagline": "Softvér pre výrobné operácie",
-    "company": "© 2026 Kenzap. Všetky práva vyhradené.",
-    "note": "Informácie o produkte sa môžu zmeniť. Dostupnosť sa môže líšiť podľa regiónu.",
-    "languages": "Jazyky"
+      "openSourcePrefix": "Zdrojový kód a návod na zostavenie na",
+      "openSourceHref": "https://github.com/kenzap/nesting-app",
+      "openSourceLink": "GitHub",
+      "openSourceLicense": "Apache-2.0 licencia"
+    },
+    "footer": {
+      "factory": "Factory",
+      "email": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com",
+      "company": "© 2026 Kenzap Pte Ltd"
+    }
   }
 }

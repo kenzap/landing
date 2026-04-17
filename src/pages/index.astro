@@ -1,35 +1,14 @@
 ---
-import CaseStudy from '../components/CaseStudy.astro';
-import Contact from '../components/Contact.astro';
-import Deployment from '../components/Deployment.astro';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-import Hero from '../components/Hero.astro';
-import Implementation from '../components/Implementation.astro';
-import Manufacturing from '../components/Manufacturing.astro';
-import Problem from '../components/Problem.astro';
-import WhoFor from '../components/WhoFor.astro';
-import Workflow from '../components/Workflow.astro';
+import FactoryHomepage from '../components/FactoryHomepage.astro';
 import Layout from '../layouts/Layout.astro';
+import { getAvailableLocales, getLocaleGroups, getLocalizedMessages } from '../i18n/locales';
 
-import en from '../i18n/en.json';
-
-const translations = en;
+const translations = getLocalizedMessages('en').factoryHomepage;
+const locales = getAvailableLocales();
+const localeGroups = getLocaleGroups('factory');
 const lang = 'en';
 ---
 
-<Layout title="Kenzap Factory - ERP for Metal Fabrication" lang={lang}>
-  <Header lang={lang} translations={translations} />
-  <main>
-    <Hero translations={translations} />
-    <Problem translations={translations} />
-    <WhoFor translations={translations} />
-    <Manufacturing translations={translations} />
-    <Workflow translations={translations} />
-    <CaseStudy translations={translations} />
-    <Implementation translations={translations} />
-    <Deployment translations={translations} />
-    <Contact translations={translations} />
-  </main>
-  <Footer translations={translations} />
+<Layout title={translations.meta.title} description={translations.meta.description} lang={lang}>
+  <FactoryHomepage translations={translations} locales={locales} localeGroups={localeGroups} lang={lang} />
 </Layout>

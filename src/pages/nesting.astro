@@ -1,0 +1,14 @@
+---
+import NestingHomepage from '../components/NestingHomepage.astro';
+import Layout from '../layouts/Layout.astro';
+import { getAvailableLocales, getLocaleGroups, getLocalizedMessages } from '../i18n/locales';
+
+const translations = getLocalizedMessages('en').nestingHomepage;
+const locales = getAvailableLocales();
+const localeGroups = getLocaleGroups('nesting');
+const lang = 'en';
+---
+
+<Layout title={translations.meta.title} description={translations.meta.description} lang={lang}>
+  <NestingHomepage translations={translations} locales={locales} localeGroups={localeGroups} lang={lang} />
+</Layout>

@@ -1,240 +1,399 @@
 {
-  "nav": {
-    "problem": "Problema",
-    "solution": "Solución",
-    "features": "Características",
-    "customers": "Clientes",
-    "contact": "Contacto"
+  "factoryHomepage": {
+    "meta": {
+      "title": "Kenzap Factory — Gestión de Producción para Fabricantes Metálicos",
+      "description": "Software de producción, costes y cumplimiento normativo diseñado específicamente para fabricantes metálicos. Talleres, corte láser, facturación electrónica Peppol. Listo para la UE."
+    },
+    "nav": {
+      "problem": "Problema",
+      "features": "Funciones",
+      "caseStudy": "Caso de estudio",
+      "nesting": "App anidado",
+      "nestingHref": "/es/nesting",
+      "cta": "Contáctanos →"
+    },
+    "hero": {
+      "eyebrow": "Software de gestión de fábrica",
+      "headlineTop": "Diseñado para",
+      "strikeWord": "contables.",
+      "headlineAccent": "fabricantes.",
+      "subheadline": "Gestión de producción creada para fabricación metálica por trabajos — no adaptada de software contable genérico.",
+      "primaryCta": "Reservar demo →",
+      "secondaryCta": "Ver resultados reales ↓",
+      "interfaceLabel": "Interfaz Kenzap Factory",
+      "stats": [
+        {
+          "value": "~30%",
+          "label": "Presupuestos más rápidos"
+        },
+        {
+          "value": "2 sem",
+          "label": "Formación operarios"
+        },
+        {
+          "value": "fact-e",
+          "label": "Cumplimiento listo"
+        }
+      ]
+    },
+    "problem": {
+      "label": "El problema",
+      "title": "El software genérico se diseñó para\ncontables, no para fabricantes.",
+      "quote": "\"Tenemos un sistema que funciona como nuestro taller. Los operarios se adaptaron inmediatamente, y nuestro cálculo de costes por trabajo es ahora fiable.\"",
+      "quoteAuthor": "— DIRECTOR DE CLIENTE, SKARDA NAMS SIA · LETONIA",
+      "items": [
+        {
+          "title": "El cálculo de costes por trabajo es especulativo.",
+          "description": "Tipos de material, tiempo de corte, desperdicio — la mayoría de ERP no pueden modelarlo. Descubres que perdiste dinero después de enviar el trabajo."
+        },
+        {
+          "title": "El inventario de chapa metálica no se rastrea.",
+          "description": "Sabes cuántas piezas tienes, no cuántas chapas completas y parciales — así que pides de más o te quedas corto."
+        },
+        {
+          "title": "La planificación de producción vive en hojas de cálculo.",
+          "description": "Programación, comprobaciones de capacidad y optimización de corte ocurren fuera del sistema, en archivos que nadie más puede ver."
+        },
+        {
+          "title": "El cumplimiento normativo es manual.",
+          "description": "Facturación electrónica Peppol, tipos de IVA variables, RGPD — gestionados con soluciones temporales, no por el sistema."
+        },
+        {
+          "title": "El taller es invisible.",
+          "description": "Los gerentes se enteran de retrasos y problemas de calidad demasiado tarde, porque los operarios no tienen sistema donde reportar."
+        }
+      ]
+    },
+    "workflow": {
+      "label": "Cómo funciona",
+      "title": "De presupuesto a envío,\nen un flujo de trabajo conectado",
+      "steps": [
+        {
+          "title": "Presupuesto y estimación",
+          "description": "Calcula costes de trabajo con precisión — material, mano de obra, tiempo máquina, optimización de corte — antes de comprometerte con un precio."
+        },
+        {
+          "title": "Planificación de producción",
+          "description": "Programa operaciones en centros de trabajo con comprobaciones de inventario en tiempo real y optimización de anidado integrada."
+        },
+        {
+          "title": "Ejecución en taller",
+          "description": "Interfaz de panel táctil para operarios. Seguimiento de trabajos, registro de tiempos y control de calidad en la máquina."
+        },
+        {
+          "title": "Facturación y cumplimiento",
+          "description": "Facturas electrónicas y albaranes compatibles con Peppol generados automáticamente con tipos de IVA correctos por tipo de producto."
+        },
+        {
+          "title": "Envío y entrega",
+          "description": "Empaqueta trabajos, da de baja artículos agrupados y envía con documentación completa. El inventario se actualiza automáticamente."
+        },
+        {
+          "title": "Analíticas",
+          "description": "Comparación de costes reales vs. estimados por trabajo. Contabilidad completa de desperdicios y visibilidad de cuellos de botella de producción."
+        }
+      ]
+    },
+    "features": {
+      "label": "Capacidades principales",
+      "title": "Todo lo que un fabricante metálico\nnecesita en un sistema",
+      "items": [
+        {
+          "tag": "Producción",
+          "title": "Seguimiento de flujo de trabajo",
+          "description": "Rastrea cada trabajo desde presupuesto hasta entrega con detalle a nivel de operación. Sabe exactamente dónde está cada trabajo, en tiempo real."
+        },
+        {
+          "tag": "Inventario",
+          "title": "MRP para chapa metálica",
+          "description": "Rastrea stock por chapa, no solo por recuento de piezas. Chapas completas y parciales, múltiples tipos de metal, activadores de reorden automatizados."
+        },
+        {
+          "tag": "Corte",
+          "title": "Anidado integrado",
+          "description": "Los algoritmos de anidado minimizan el desperdicio de material para láser, plasma y chorro de agua — conectados directamente al cálculo de costes de trabajo para que el desperdicio se rastree automáticamente.",
+          "accent": true
+        },
+        {
+          "tag": "Costes",
+          "title": "Cálculo de costes por trabajo",
+          "description": "Coste preciso por trabajo: material, mano de obra, gastos generales y desperdicio. Compara estimado vs. real en cada trabajo que envías."
+        },
+        {
+          "tag": "Cumplimiento",
+          "title": "Facturación electrónica Peppol",
+          "description": "Facturación electrónica conforme a la UE vía Peppol BIS Billing 3.0. Tipos de IVA gestionados automáticamente por tipo de producto y región del cliente."
+        },
+        {
+          "tag": "Taller",
+          "title": "Interfaz de panel táctil",
+          "description": "Diseñada para operarios en la máquina. Seguimiento de trabajos, registro de tiempos, control de calidad — adoptada en dos semanas en Skarda Nams."
+        },
+        {
+          "tag": "Proveedores",
+          "title": "Gestión de proveedores",
+          "description": "Órdenes de compra, costes de material y programas de entrega rastreados en el mismo sistema que la producción."
+        },
+        {
+          "tag": "IA",
+          "title": "Insights impulsados por IA",
+          "description": "Identifica cuellos de botella de producción y mejora la precisión del cálculo de costes de trabajo con análisis impulsado por IA de tus datos reales de producción."
+        },
+        {
+          "tag": "Datos",
+          "title": "Código abierto y RGPD",
+          "description": "Sin dependencia del proveedor. Portabilidad completa de datos. Conforme al RGPD con residencia de datos en la UE. Despliega en tu propia infraestructura si es necesario."
+        }
+      ]
+    },
+    "caseStudy": {
+      "label": "Resultados reales",
+      "title": "Usado en producción\nen Skarda Nams SIA",
+      "meta": "FABRICACIÓN METÁLICA · LETONIA · 20 EMPLEADOS · 2 MÁQUINAS CNC",
+      "challengeLabel": "Desafío",
+      "challengeText": "Skarda Nams presupuestaba manualmente a través de múltiples tipos de metal, gestionaba inventario en papel, y no podía producir facturas conformes sin soluciones temporales. El cálculo de costes por trabajo era impreciso. La visibilidad del taller era nula.",
+      "solutionLabel": "Solución",
+      "solutionText": "Implementó Kenzap Factory con módulos integrados de presupuesto, enrutamiento de producción y ejecución en taller. Facturación electrónica Peppol configurada para cumplimiento UE. Integrado con software contable Moneo.",
+      "quote": "\"Los operarios se adaptaron a la interfaz inmediatamente, y nuestro cálculo de costes por trabajo es ahora fiable. Los tipos de impuestos se gestionan automáticamente — solo eso nos ahorra tiempo significativo cada mes.\"",
+      "quoteAuthor": "— DIRECTOR DE CLIENTE, SKARDA NAMS SIA",
+      "results": [
+        {
+          "value": "~30%",
+          "label": "Reducción en tiempo de presupuesto"
+        },
+        {
+          "value": "2 sem",
+          "label": "Tiempo de formación de operarios"
+        },
+        {
+          "value": "100%",
+          "label": "Cumplimiento de facturación logrado"
+        },
+        {
+          "value": "100%",
+          "label": "Precisión de estimación lograda"
+        },
+        {
+          "value": "Visibilidad completa",
+          "label": "En operaciones de taller y etapas de fabricación — desde el primer día",
+          "fullWidth": true
+        }
+      ]
+    },
+    "deployment": {
+      "label": "Despliegue",
+      "title": "Funciona donde tu\noperación lo requiere",
+      "options": [
+        {
+          "title": "Nube gestionada por proveedor",
+          "description": "Alojamiento completamente gestionado con actualizaciones automáticas, copias de seguridad y parches de seguridad. Ideal para equipos centrados en operaciones, no en TI."
+        },
+        {
+          "title": "Nube gestionada por cliente",
+          "description": "Despliega en tu propia infraestructura AWS, Azure o GCP. Control total sobre configuración, acceso y datos. Adecuado para organizaciones con capacidad TI."
+        },
+        {
+          "title": "Auto-alojado en instalaciones propias",
+          "description": "Instalación en instalaciones propias para máxima soberanía de datos. Requerido para algunas industrias reguladas. Paridad completa de funciones con opciones en la nube."
+        }
+      ]
+    },
+    "timeline": {
+      "label": "Cronograma típico de implementación",
+      "phases": [
+        {
+          "phase": "Fase 1",
+          "duration": "2–3 sem",
+          "label": "Descubrimiento y configuración"
+        },
+        {
+          "phase": "Fase 2",
+          "duration": "2–3 sem",
+          "label": "Migración de datos y pruebas"
+        },
+        {
+          "phase": "Fase 3",
+          "duration": "1–2 sem",
+          "label": "Formación y puesta en marcha"
+        },
+        {
+          "phase": "Fase 4",
+          "duration": "Continuo",
+          "label": "Soporte post-lanzamiento"
+        }
+      ]
+    },
+    "nesting": {
+      "label": "También de Kenzap",
+      "title": "Comienza con anidado.\nConecta el resto cuando estés listo.",
+      "description": "Kenzap Nesting es una aplicación de escritorio independiente y gratuita para anidado de chapas basado en DXF. Nativo en Windows y macOS. Sin suscripción, sin nube, sin registro. Cuando tu operación crezca, Kenzap Factory conecta todo.",
+      "primaryCta": "Explorar Kenzap Nesting →",
+      "href": "/es/nesting",
+      "cardLabel": "Kenzap Nesting — descarga gratuita",
+      "cardTitle": "Empaqueta más. Desperdicia menos. Corta más rápido.",
+      "cardDescription": "Arrastra piezas DXF, establece cantidades, ejecuta el motor de anidado, exporta chapas listas para corte. Vista previa en vivo mientras el algoritmo funciona.",
+      "platforms": [
+        "Windows",
+        "macOS"
+      ]
+    },
+    "contact": {
+      "label": "Ponte en contacto",
+      "title": "Descubre si Kenzap Factory\nse adapta a tu operación",
+      "description": "Respondemos en un día laborable. Sin proceso de ventas — solo una conversación directa sobre si esto se adapta a tu operación.",
+      "linkedinLabel": "LinkedIn",
+      "linkedinHref": "https://www.linkedin.com/in/pavel-lukasenko/",
+      "emailLabel": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com"
+    },
+    "footer": {
+      "nestingLabel": "App anidado",
+      "nestingHref": "/es/nesting",
+      "emailLabel": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com",
+      "company": "© 2026 Kenzap Pte Ltd"
+    }
   },
-  "hero": {
-    "headline": "ERP diseñado para fabricación metálica.",
-    "subheadline": "Producción, costes y planificación diseñados para manufactura por pedidos.",
-    "intro": "Este sistema está diseñado específicamente para fabricantes de metal. Soporta flujos de trabajo de producción reales, no soluciones alternativas basadas en contabilidad. Se enfoca en talleres por pedidos, producción bajo demanda y cumplimiento normativo.",
-    "primaryCta": "Contáctanos",
-    "secondaryCta": "Ver si encaja",
-    "watchDemo": "Ver cómo funciona"
-  },
-  "problem": {
-    "title": "Por qué los sistemas ERP genéricos fallan a los fabricantes de metal",
-    "intro": "La mayoría de sistemas ERP están diseñados en torno a la contabilidad, no a la producción. Como resultado, los fabricantes de metal a menudo dependen de hojas de cálculo y procesos manuales para gestionar trabajos y la ejecución en planta.",
-    "items": [
-      "Cálculo de costes por trabajo inexacto",
-      "Inventario de metal no rastreado correctamente",
-      "Pobre visibilidad de las operaciones en planta",
-      "Falta de optimización de corte para chapa metálica",
-      "Planificación de producción gestionada fuera del ERP",
-      "Tipos de IVA variables no manejados automáticamente"
-    ],
-    "conclusion": "Estos problemas incrementan el riesgo de cumplimiento, reducen la eficiencia y degradan la calidad del servicio."
-  },
-  "whoFor": {
-    "title": "Para quién está diseñado este sistema",
-    "intro": "Este ERP está diseñado para empresas de fabricación metálica con:",
-    "criteria": [
-      "Necesidad de cálculo preciso de costes por trabajo y seguimiento de materiales",
-      "Requisitos de gestión de inventario de stock metálico y chapas",
-      "Necesidades de optimización de corte para láser, plasma o chorro de agua",
-      "Obligaciones de cumplimiento de facturación electrónica UE",
-      "Requisitos de integración con sistemas contables europeos",
-      "Necesidades de cumplimiento RGPD y protección de datos UE"
-    ],
-    "typical": "Los usuarios típicos incluyen:",
-    "users": [
-      "Talleres por pedidos",
-      "Fabricantes por contrato",
-      "Fabricantes que producen piezas personalizadas o en lotes pequeños",
-      "Talleres de chapa metálica"
-    ],
-    "notFor": "Este sistema no está diseñado para:",
-    "excluded": [
-      "Empresas de distribución pura",
-      "Manufactura por procesos",
-      "Producción en masa altamente estandarizada"
-    ]
-  },
-  "manufacturing": {
-    "title": "Diseño centrado en la manufactura",
-    "intro": "El sistema está construido en torno a conceptos reales de manufactura utilizados en fabricación metálica, y se adapta continuamente a los requisitos complejos y cambiantes de cumplimiento europeo.",
-    "features": [
-      {
-        "name": "Seguimiento de Flujos de Trabajo",
-        "desc": "Rastrea cada trabajo desde la cotización hasta la entrega con visibilidad completa del flujo de trabajo y detalle a nivel de operación",
-        "icon": "cog"
+  "nestingHomepage": {
+    "meta": {
+      "title": "Kenzap Nesting — Anidado DXF para fabricantes metálicos",
+      "description": "Software nativo y gratuito de anidado DXF para fabricantes metálicos. Importa piezas DXF, optimiza chapas, previsualiza en vivo y exporta diseños listos para corte."
+    },
+    "nav": {
+      "workflow": "Cómo funciona",
+      "features": "Funciones",
+      "factory": "ERP Factory",
+      "factoryMobile": "Factory",
+      "cta": "Descargar gratis →",
+      "ctaHref": "https://github.com/kenzap/nesting-app"
+    },
+    "hero": {
+      "eyebrow": "Software de anidado DXF",
+      "headlineLine1": "Empaqueta más.",
+      "headlineLine2Prefix": "Desperdicia ",
+      "headlineLine2Accent": "menos",
+      "headlineLine3": "Corta más rápido.",
+      "subheadline": "Una app nativa de escritorio para anidado destinada a fabricantes metálicos. Añade tus piezas DXF, define cantidades, ejecuta el motor y obtén una chapa completamente optimizada lista para cortar.",
+      "primaryCta": "↓ Descargar gratis",
+      "primaryCtaHref": "https://github.com/kenzap/nesting-app/releases",
+      "secondaryCta": "Verlo en producción →",
+      "secondaryCtaHref": "/es#case-study",
+      "badges": {
+        "windows": "Windows x64",
+        "mac": "macOS Apple Silicon",
+        "openSource": "Código abierto"
       },
-      {
-        "name": "Planificación de Producción",
-        "desc": "Gestiona la capacidad de producción y programa operaciones de manera eficiente en toda tu planta",
-        "icon": "factory"
-      },
-      {
-        "name": "Planificación de Materiales",
-        "desc": "MRP preciso impulsado por seguimiento de materias primas, visibilidad del inventario de chapa metálica y gestión automatizada de stock",
-        "icon": "format-list-checks"
-      },
-      {
-        "name": "Optimización de Corte",
-        "desc": "Algoritmos de anidamiento integrados minimizan el desperdicio y maximizan la utilización de chapa para corte láser, plasma y chorro de agua",
-        "icon": "content-cut"
-      },
-      {
-        "name": "Reportes de Producción en Tiempo Real",
-        "desc": "Interfaz optimizada para panel táctil para seguimiento y reporte de trabajos en tiempo real por operadores de máquina",
-        "icon": "tablet"
-      },
-      {
-        "name": "Costeo por Trabajo",
-        "desc": "Cálculo preciso de costes por trabajo con seguimiento de material, mano de obra, gastos generales y desecho",
-        "icon": "calculator"
-      },
-      {
-        "name": "Facturación Electrónica Peppol",
-        "desc": "Genera facturas electrónicas conformes a la UE siguiendo el estándar Peppol BIS Billing 3.0",
-        "icon": "file-document-outline"
-      },
-      {
-        "name": "IVA y Cumplimiento",
-        "desc": "Manejo de IVA conforme a normativas locales con exenciones e integración con sistemas contables nacionales",
-        "icon": "shield-check"
-      },
-      {
-        "name": "Gestión de Proveedores",
-        "desc": "Rastrea proveedores, órdenes de compra, costes de materiales y horarios de entrega",
-        "icon": "truck"
-      },
-      {
-        "name": "Código Abierto",
-        "desc": "Construido con tecnologías de código abierto sin dependencia del proveedor, asegurando portabilidad completa de datos e independencia del sistema",
-        "icon": "code"
-      },
-      {
-        "name": "Protección de Datos Europea",
-        "desc": "Manejo de datos conforme al RGPD con soberanía completa de datos para operaciones europeas",
-        "icon": "puzzle"
-      },
-      {
-        "name": "Insights Impulsados por IA",
-        "desc": "Insights potenciados por IA para identificar cuellos de botella en producción y mejorar la precisión del costeo por trabajo",
-        "icon": "brain"
+      "previewLabel": "Vista previa de anidado en vivo"
+    },
+    "workflow": {
+      "label": "Cómo funciona",
+      "titleLine1": "De DXF a corte listo",
+      "titleLine2": "en seis pasos",
+      "steps": [
+        {
+          "title": "Añade piezas DXF",
+          "description": "Arrastra uno o varios archivos DXF. El motor detecta automáticamente todas las formas anidables, incluidos archivos con múltiples formas."
+        },
+        {
+          "title": "Revisa la geometría",
+          "description": "Define cantidades por pieza. Revisa cortes internos, geometría de grabado y asignaciones de capas por forma antes de ejecutar."
+        },
+        {
+          "title": "Configura la chapa",
+          "description": "Define dimensiones de la chapa, comportamiento de tiras, separación, paso de rotación, margen de chapa y estilo de grabado."
+        },
+        {
+          "title": "Ejecuta el motor",
+          "description": "Haz clic en RUN. Un binario nativo se encarga de la colocación: sin subir nada a la nube y sin esperas. Los resultados aparecen en vivo."
+        },
+        {
+          "title": "Previsualiza en vivo",
+          "description": "Observa cómo se rellenan las chapas mientras trabaja el algoritmo. Ve en tiempo real la utilización y la cantidad de chapas."
+        },
+        {
+          "title": "Exporta a DXF",
+          "description": "Exporta las chapas finales con la estructura original de capas, reconstrucción de geometría y geometría de grabado preservadas."
+        }
+      ]
+    },
+    "features": {
+      "label": "Capacidades principales",
+      "titleLine1": "Todo lo que tu operación de corte",
+      "titleLine2": "realmente necesita",
+      "cards": {
+        "performance": {
+          "tag": "Rendimiento nativo",
+          "title": "Sin nube. Sin navegador. Solo rapidez.",
+          "description": "El motor de anidado se ejecuta como binario nativo en tu equipo. Los DXF grandes se procesan en segundos, no en minutos. Funciona completamente offline, sin suscripción, sin cargas y sin latencia."
+        },
+        "dxf": {
+          "tag": "Fidelidad DXF",
+          "title": "Soporte completo de geometría",
+          "description": "Compatibilidad con líneas, arcos, círculos, polilíneas, elipses y splines. La geometría de corte interno y las capas de grabado se conservan por separado al exportar.",
+          "chips": ["Líneas", "Arcos", "Círculos", "Polilíneas", "Elipses", "Splines"]
+        },
+        "engraving": {
+          "tag": "Grabado",
+          "title": "Dos estilos de grabado integrados",
+          "description": "Modo simple para texto de una sola línea en materiales finos. Modo trazado para letras delineadas con contornos rellenos. Se configura por trabajo y se conserva en la exportación DXF."
+        },
+        "sheet": {
+          "tag": "Inteligencia de chapa",
+          "title": "Optimización del tamaño de chapa",
+          "description": "El motor encuentra la cantidad mínima de chapas necesaria para tu trabajo. Configura margen, separación entre piezas, paso de orientación y alineación de tiras de forma independiente."
+        },
+        "workflow": {
+          "tag": "Flujo de trabajo",
+          "title": "Vista previa en vivo mientras corre el algoritmo",
+          "description": "No esperas a que termine el motor para ver resultados. Las chapas se rellenan en tiempo real a medida que se confirman las colocaciones. Cambia cantidades o ajustes y vuelve a ejecutar en segundos.",
+          "chips": [
+            "Detección de DXF con múltiples formas",
+            "Control de cantidad por forma",
+            "Vista previa por capas",
+            "Exportación JSON de polígonos"
+          ]
+        }
       }
-    ],
-    "outro": "Los datos de producción fluyen desde la cotización hasta el despacho. La realidad operacional se refleja en la planificación y el costeo."
-  },
-  "workflow": {
-    "title": "Desde la cotización hasta el despacho",
-    "intro": "El sistema conecta los pasos clave de producción en un flujo de trabajo único:",
-    "steps": [
-      {
-        "name": "Cotización y Estimación",
-        "desc": "Calcula costes con precisión con material, mano de obra, tiempo de máquina y optimización de corte"
+    },
+    "bridge": {
+      "label": "Parte de algo más grande",
+      "title": "Conecta el anidado con toda tu operación",
+      "copy": "Kenzap Nesting funciona hoy como herramienta de escritorio independiente. Cuando estés listo, Kenzap Factory conecta tu salida de anidado directamente con cálculo de costes, planificación de producción e inventario, para que el desperdicio quede registrado y presupuestado desde el primer día.",
+      "cta": "Ver Kenzap Factory ERP →",
+      "standaloneLabel": "INDEPENDIENTE",
+      "standaloneTitle": "Kenzap Nesting",
+      "standaloneText": "DXF entra → chapa optimizada sale. Gratis, de código abierto y nativo de escritorio.",
+      "connectsTo": "se conecta con",
+      "platformLabel": "PLATAFORMA COMPLETA",
+      "platformTitle": "Kenzap Factory",
+      "platformText": "Presupuestos, cálculo de costes, seguimiento en taller y facturación electrónica. ERP listo para la UE."
+    },
+    "download": {
+      "label": "Empieza hoy",
+      "title": "Gratis. Nativo. Código abierto.",
+      "sub": "Descarga la versión para tu plataforma. Sin registro, sin licencia y sin dependencia de la nube. Funciona desde el primer día.",
+      "windows": {
+        "href": "https://github.com/kenzap/nesting-app/releases",
+        "os": "Windows",
+        "label": "Descargar x64",
+        "note": "instalador .exe"
       },
-      {
-        "name": "Planificación de Producción",
-        "desc": "Programa operaciones en centros de trabajo con verificaciones de disponibilidad de inventario y optimización de corte"
+      "mac": {
+        "href": "https://github.com/kenzap/nesting-app/releases",
+        "os": "macOS",
+        "label": "Apple Silicon",
+        "note": ".dmg — M1-M5"
       },
-      {
-        "name": "Ejecución en Planta",
-        "desc": "Interfaz de panel táctil para seguimiento de trabajos, registro de tiempo y control de calidad"
-      },
-      {
-        "name": "Facturación y Cumplimiento",
-        "desc": "Genera facturas electrónicas conformes a Peppol y albaranes con tipos de IVA correctos"
-      },
-      {
-        "name": "Despacho y Entrega",
-        "desc": "Empaca, da de baja artículos agrupados y despacha trabajos a clientes"
-      },
-      {
-        "name": "Analítica",
-        "desc": "Rastrea costes reales vs. estimados con transparencia completa y contabilidad de desecho"
-      }
-    ],
-    "conclusion": "El objetivo es consistencia y trazabilidad a través de todo el ciclo de vida del trabajo."
-  },
-  "caseStudy": {
-    "title": "Utilizado en entornos de producción reales",
-    "company": "Skarda Nams SIA",
-    "industry": "Fabricación Metálica y Piezas Personalizadas",
-    "region": "Europa del Este",
-    "employees": "20 empleados, 2 máquinas CNC",
-    "challenge": "Desafío",
-    "challengeText": "Skarda Nams tenía dificultades con cotizaciones precisas usando varios tipos de metal, actualizaciones de inventario en vivo, capacidades de baja de metal, planificación de producción, facturación conforme, costeo inexacto y seguimiento en papel.",
-    "solution": "Solución",
-    "solutionText": "Implementó Kenzap Factory con módulos integrados de cotización, enrutamiento de producción y ejecución en planta. Los operadores de máquina adoptaron la interfaz de panel táctil en dos semanas de despliegue. Se configuró la facturación electrónica Peppol para cumplir requisitos de la UE. Integración con software contable Moneo para reportes tributarios simplificados.",
-    "results": "Resultados",
-    "resultItems": [
-      "Reducción en tiempo de cotización mediante cálculo automatizado de materiales",
-      "Mejora en precisión de costeo por trabajo",
-      "Visibilidad completa de operaciones en planta y etapas de manufactura",
-      "Cumplimiento de facturación electrónica Peppol logrado, con integración a software contable BMD",
-      "Reducción de desperdicio de material mediante optimización de corte",
-      "Planificación de producción más rápida con verificaciones de inventario en tiempo real",
-      "Cumplimiento RGPD y residencia de datos UE mantenida en todas las operaciones"
-    ],
-    "quote": "Tenemos un sistema que funciona como funciona nuestra planta. Los operadores se adaptaron a la interfaz inmediatamente, y nuestro costeo por trabajo ahora es confiable. Los tipos de impuestos se manejan automáticamente según el tipo de producto, lo que nos ahorra tiempo y dolores de cabeza durante la facturación.",
-    "quoteAuthor": "Gerente de Cliente, Skarda Nams SIA",
-    "watchCase": "Ver caso de estudio"
-  },
-  "implementation": {
-    "title": "Enfoque de implementación",
-    "intro": "La implementación sigue una estructura estándar diseñada para minimizar la interrupción.",
-    "principles": [
-      "Configuración de hardware e instalación de software en sistemas de fábrica",
-      "Configuración de catálogo de productos y base de datos de inventario de metal",
-      "Asignación de roles de usuario y definición de responsabilidades",
-      "Personalización de plantillas de documentos (albaranes, facturas, reportes)",
-      "Capacitación integral para operadores y equipos de gestión",
-      "Integración de sistemas y sincronización de reportes financieros"
-    ],
-    "timeline": "Cronograma típico:",
-    "phases": [
-      "Descubrimiento y configuración: 2-3 semanas",
-      "Migración de datos y pruebas: 2-3 semanas",
-      "Capacitación y puesta en marcha: 1-2 semanas",
-      "Soporte post-lanzamiento: continuo"
-    ],
-    "outro": "La implementación puede ser entregada por consultores con antecedentes en manufactura y ERP o por un ingeniero de Kenzap directamente."
-  },
-  "deployment": {
-    "title": "Opciones de despliegue",
-    "intro": "El sistema soporta múltiples modelos de despliegue para coincidir con necesidades operacionales, regulatorias y de soberanía de datos.",
-    "options": [
-      {
-        "name": "Nube gestionada por proveedor",
-        "desc": "Alojamiento completamente gestionado en centros de datos europeos con actualizaciones automáticas, respaldos y parches de seguridad. Ideal para empresas enfocadas en operaciones.",
-        "icon": "cloud-check"
-      },
-      {
-        "name": "Nube gestionada por cliente",
-        "desc": "Despliega en tu propia infraestructura de nube (AWS, Azure, GCP) con control completo sobre configuración y acceso. Adecuado para organizaciones con capacidad IT.",
-        "icon": "cloud-cog"
-      },
-      {
-        "name": "Despliegue auto-alojado",
-        "desc": "Instalación en premisas para máxima soberanía de datos y control. Requerido para algunas industrias reguladas u operaciones altamente sensibles.",
-        "icon": "server"
-      }
-    ],
-    "outro": "Todas las opciones de despliegue usan el mismo software, siguen la misma ruta de actualización y mantienen paridad de características. Los datos permanecen en jurisdicciones europeas para cumplimiento RGPD."
-  },
-  "contact": {
-    "title": "Contacto",
-    "intro": "Si quieres entender si este sistema se ajusta a tu operación, contáctanos para una discusión inicial. Trabajamos en inglés y otros idiomas europeos.",
-    "namePlaceholder": "Tu nombre",
-    "emailPlaceholder": "Dirección de email",
-    "companyPlaceholder": "Nombre de la empresa",
-    "messagePlaceholder": "Cuéntanos sobre tu configuración de producción: número de máquinas, tamaños típicos de trabajo, sistemas actuales...",
-    "submit": "Enviar mensaje",
-    "sending": "Enviando...",
-    "success": "Mensaje enviado exitosamente. Te contactaremos en 1-2 días laborables.",
-    "error": "Falló el envío del mensaje. Por favor envíanos un email directamente a support@kenzap.com",
-    "or": "o",
-    "linkedin": "Conectar en LinkedIn",
-    "email": "Escríbenos directamente"
-  },
-  "footer": {
-    "tagline": "Software para operaciones de manufactura",
-    "company": "© 2026 Kenzap. Todos los derechos reservados.",
-    "note": "La información del producto puede cambiar. La disponibilidad puede variar por región.",
-    "languages": "Idiomas"
+      "openSourcePrefix": "Código fuente e instrucciones de compilación en",
+      "openSourceHref": "https://github.com/kenzap/nesting-app",
+      "openSourceLink": "GitHub",
+      "openSourceLicense": "licencia Apache-2.0"
+    },
+    "footer": {
+      "factory": "Factory",
+      "email": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com",
+      "company": "© 2026 Kenzap Pte Ltd"
+    }
   }
 }

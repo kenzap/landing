@@ -1,240 +1,406 @@
 {
-  "nav": {
-    "problem": "Problem",
-    "solution": "Rešitev",
-    "features": "Funkcionalnosti",
-    "customers": "Stranke",
-    "contact": "Kontakt"
+  "factoryHomepage": {
+    "meta": {
+      "title": "Kenzap Factory — Upravljanje proizvodnje za kovinske obdelave",
+      "description": "Programska oprema za proizvodnjo, kalkulacije in skladnost, posebej razvita za kovinske obdelave. Delavnice po naročilu, lasersko rezanje, Peppol e-fakturiranje. Pripravljena za EU."
+    },
+    "nav": {
+      "problem": "Izziv",
+      "features": "Funkcionalnosti",
+      "caseStudy": "Študija primera",
+      "nesting": "Nesting aplikacija",
+      "nestingHref": "/nesting",
+      "cta": "Kontaktirajte nas →"
+    },
+    "hero": {
+      "eyebrow": "Programska oprema za upravljanje tovarne",
+      "headlineTop": "Izdelana za",
+      "strikeWord": "računovodje.",
+      "headlineAccent": "obdelave kovin.",
+      "subheadline": "Upravljanje proizvodnje, prilagojeno kovinski obdelavi po naročilu — ne prirejeno iz splošne računovodske programske opreme.",
+      "primaryCta": "Rezerviraj predstavitev →",
+      "secondaryCta": "Poglej dejanske rezultate ↓",
+      "interfaceLabel": "Vmesnik Kenzap Factory",
+      "stats": [
+        {
+          "value": "~30%",
+          "label": "Hitrejše ponujanje"
+        },
+        {
+          "value": "2 tedna",
+          "label": "Uvajanje operaterjev"
+        },
+        {
+          "value": "e-fakt",
+          "label": "Pripravljeno za skladnost"
+        }
+      ]
+    },
+    "problem": {
+      "label": "Izziv",
+      "title": "Splošna programska oprema je bila izdelana za\nračunovodje, ne za obdelave kovin.",
+      "quote": "\"Imamo sistem, ki deluje tako, kot deluje naša proizvodnja. Operaterji so se prilagodili takoj, kalkulacija del pa je zdaj zanesljiva.\"",
+      "quoteAuthor": "— VODJA STRANK, SKARDA NAMS SIA · LATVIJA",
+      "items": [
+        {
+          "title": "Kalkulacija del je ugibanje.",
+          "description": "Vrste materialov, čas rezanja, odpadki — večina ERP sistemov tega ne zna modelirati. Ugotoviš, da si izgubil denar šele po odpošiljanju dela."
+        },
+        {
+          "title": "Zaloge pločevine niso sledljive.",
+          "description": "Veš, koliko kosov imaš, ne pa koliko celih in delnih plošč — zato naročiš preveč ali pa ti zmanjka."
+        },
+        {
+          "title": "Načrtovanje proizvodnje poteka v preglednicah.",
+          "description": "Razporejanje, preverjanje zmogljivosti in optimizacija rezanja se dogajajo zunaj sistema, v datotekah, ki jih nihče drug ne vidi."
+        },
+        {
+          "title": "Skladnost je ročna.",
+          "description": "Peppol e-fakturiranje, spremenljive DDV stopnje, GDPR — rešujejo se z obvozi, ne s sistemom."
+        },
+        {
+          "title": "Proizvodnja je nevidna.",
+          "description": "Vodje izvedo za zamude in težave s kakovostjo prepozno, ker operaterji nimajo sistema za poročanje."
+        }
+      ]
+    },
+    "workflow": {
+      "label": "Kako deluje",
+      "title": "Od ponudbe do odpreme,\nv enem povezanem poteku dela",
+      "steps": [
+        {
+          "title": "Ponudbe in ocenjevanje",
+          "description": "Natančno izračunaj stroške dela — material, delo, strojni čas, optimizacija rezanja — preden se zavežeš k ceni."
+        },
+        {
+          "title": "Načrtovanje proizvodnje",
+          "description": "Razporejaj operacije po delovnih centrih z neposrednim preverjanjem zalog in vgrajeno optimizacijo nesting-a."
+        },
+        {
+          "title": "Izvajanje na proizvodnji",
+          "description": "Vmesnik z dotičnim zaslonom za operaterje. Sledenje delom, beleženje časa in nadzor kakovosti pri stroju."
+        },
+        {
+          "title": "Fakturiranje in skladnost",
+          "description": "Peppol-skladni e-računi in tovorni listi, generirani samodejno s pravilnimi DDV stopnjami po vrsti proizvoda."
+        },
+        {
+          "title": "Odpema in dostava",
+          "description": "Pakiranje del, odpis paketnih postavk in odpema z vso dokumentacijo. Zaloge se posodobijo samodejno."
+        },
+        {
+          "title": "Analitika",
+          "description": "Primerjava dejanskih in ocenjenih stroškov po delih. Popolno beleženje odpadkov in preglednost ozkih grl proizvodnje."
+        }
+      ]
+    },
+    "features": {
+      "label": "Ključne zmogljivosti",
+      "title": "Vse, kar potrebuje obdelava kovin\nv enem sistemu",
+      "items": [
+        {
+          "tag": "Proizvodnja",
+          "title": "Sledenje poteka dela",
+          "description": "Sledi vsem delom od ponudbe do dostave s podrobnostjo na ravni operacij. Vedi natanko, kje je vsako delo, v realnem času."
+        },
+        {
+          "tag": "Zaloge",
+          "title": "MRP za pločevino",
+          "description": "Sledi zalogam po ploščah, ne le po številu kosov. Cele in delne plošče, različni tipi kovin, samodejni prožilci za ponovno naročanje."
+        },
+        {
+          "tag": "Rezanje",
+          "title": "Vgrajen nesting",
+          "description": "Algoritmi nesting-a minimizirajo odpadek materiala za laser, plazmo in vodometno rezanje — neposredno povezano s kalkulacijo, tako da se odpadki sledijo samodejno.",
+          "accent": true
+        },
+        {
+          "tag": "Kalkulacije",
+          "title": "Kalkulacije po delih",
+          "description": "Natančni stroški po delih: material, delo, splošni stroški in odpadki. Primerjaj ocenjene z dejanskimi pri vsakem odpošljem delu."
+        },
+        {
+          "tag": "Skladnost",
+          "title": "Peppol e-fakturiranje",
+          "description": "EU-skladno elektronsko fakturiranje preko Peppol BIS Billing 3.0. DDV stopnje se obravnavajo samodejno po vrsti proizvoda in regiji stranke."
+        },
+        {
+          "tag": "Proizvodnja",
+          "title": "Vmesnik z dotičnim zaslonom",
+          "description": "Zasnovan za operaterje pri stroju. Sledenje delom, beleženje časa, nadzor kakovosti — sprejet v dveh tednih pri Skarda Nams."
+        },
+        {
+          "tag": "Dobavitelji",
+          "title": "Upravljanje dobaviteljev",
+          "description": "Nabavni nalogi, stroški materialov in urniki dostav sledeni v istem sistemu kot proizvodnja."
+        },
+        {
+          "tag": "AI",
+          "title": "AI vpogledi",
+          "description": "Prepoznaj ozka grla proizvodnje in izboljšaj natančnost kalkulacij z AI-poganjeno analizo tvojih dejanskih proizvodnih podatkov."
+        },
+        {
+          "tag": "Podatki",
+          "title": "Odprtokodni in GDPR",
+          "description": "Brez vezave na prodajalca. Popolna prenosljivost podatkov. GDPR-skladno z rezidenca podatkov v EU. Po potrebi namesti na svojo infrastrukturo."
+        }
+      ]
+    },
+    "caseStudy": {
+      "label": "Dejanski rezultati",
+      "title": "V uporabi v proizvodnji\npri Skarda Nams SIA",
+      "meta": "OBDELAVA KOVIN · LATVIJA · 20 ZAPOSLENIH · 2 CNC STROJA",
+      "challengeLabel": "Izziv",
+      "challengeText": "Skarda Nams je ponujal ročno preko različnih vrst kovin, zaloge vodil na papirju in ni mogel izdelovati skladnih računov brez obvorov. Kalkulacija del je bila netočna. Preglednost proizvodnje je bila nična.",
+      "solutionLabel": "Rešitev",
+      "solutionText": "Implementiral Kenzap Factory z integriranimi moduli za ponudbe, proizvodni potek in izvajanje na proizvodnji. Peppol e-fakturiranje konfigurirano za EU skladnost. Integrirano z računovodsko programsko opremo Moneo.",
+      "quote": "\"Operaterji so se vmesniku prilagodili takoj, kalkulacija del pa je zdaj zanesljiva. Davčne stopnje se obravnavajo samodejno — samo to nam vsak mesec prihrani znatno količino časa.\"",
+      "quoteAuthor": "— VODJA STRANK, SKARDA NAMS SIA",
+      "results": [
+        {
+          "value": "~30%",
+          "label": "Skrajšanje časa ponujanja"
+        },
+        {
+          "value": "2 tedna",
+          "label": "Čas uvajanja operaterjev"
+        },
+        {
+          "value": "100%",
+          "label": "Dosežena skladnost fakturiranja"
+        },
+        {
+          "value": "100%",
+          "label": "Dosežena natančnost ocenjevanja"
+        },
+        {
+          "value": "Popolna preglednost",
+          "label": "V operacije proizvodnje in faze izdelave — od prvega dne",
+          "fullWidth": true
+        }
+      ]
+    },
+    "deployment": {
+      "label": "Namestitev",
+      "title": "Deluje tam, kjer\nvaše delovanje zahteva",
+      "options": [
+        {
+          "title": "Oblak v upravljanju prodajalca",
+          "description": "Popolnoma upravljana gostovanje z samodejnimi posodobitvami, varnostnimi kopijami in varnostnimi popravki. Najboljše za ekipe, osredotočene na operacije, ne IT."
+        },
+        {
+          "title": "Oblak v upravljanju stranke",
+          "description": "Namestitev na svojo AWS, Azure ali GCP infrastrukturo. Popoln nadzor nad konfiguracijo, dostopom in podatki. Primerno za organizacije z IT zmogljivostmi."
+        },
+        {
+          "title": "Lastno gostovanje na lokaciji",
+          "description": "Namestitev na lokaciji za največjo suverenost podatkov. Potrebno za nekatera regulirana področja. Popolna funkcijska enakovrednost z oblanimi možnostmi."
+        }
+      ]
+    },
+    "timeline": {
+      "label": "Tipični časovni načrt implementacije",
+      "phases": [
+        {
+          "phase": "Faza 1",
+          "duration": "2–3 ted",
+          "label": "Odkrivanje in konfiguracija"
+        },
+        {
+          "phase": "Faza 2",
+          "duration": "2–3 ted",
+          "label": "Migracija podatkov in testiranje"
+        },
+        {
+          "phase": "Faza 3",
+          "duration": "1–2 ted",
+          "label": "Usposabljanje in zagon"
+        },
+        {
+          "phase": "Faza 4",
+          "duration": "Stalno",
+          "label": "Podpora po zagonu"
+        }
+      ]
+    },
+    "nesting": {
+      "label": "Tudi od Kenzap",
+      "title": "Začni z nesting-om.\nPoveži ostalo, ko boš pripravljen.",
+      "description": "Kenzap Nesting je brezplačna samostojna namizna aplikacija za DXF-osnovano nesting plošč. Prvinska na Windows in macOS. Brez naročnine, brez oblaka, brez registracije. Ko se tvoje delovanje razširi, Kenzap Factory poveže vse skupaj.",
+      "primaryCta": "Raziskaj Kenzap Nesting →",
+      "href": "/nesting",
+      "cardLabel": "Kenzap Nesting — brezplačen prenos",
+      "cardTitle": "Pakuj več. Zapravlja manj. Reži hitreje.",
+      "cardDescription": "Spusti DXF kose, nastavi količine, zaženi nesting algoritem, izvozi pripravljene plošče za rezanje. Neposreden predogled med izvajanjem algoritma.",
+      "platforms": [
+        "Windows",
+        "macOS"
+      ]
+    },
+    "contact": {
+      "label": "Stopite v stik",
+      "title": "Preveri, ali Kenzap Factory\nudstreza vašemu delovanju",
+      "description": "Odgovorimo v enem delovnem dnevu. Brez prodajnega procesa — samo neposreden pogovor o tem, ali to ustreza vašemu delovanju.",
+      "linkedinLabel": "LinkedIn",
+      "linkedinHref": "https://www.linkedin.com/in/pavel-lukasenko/",
+      "emailLabel": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com"
+    },
+    "footer": {
+      "nestingLabel": "Nesting aplikacija",
+      "nestingHref": "/nesting",
+      "emailLabel": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com",
+      "company": "© 2026 Kenzap Pte Ltd"
+    }
   },
-  "hero": {
-    "headline": "ERP sistem za kovinsko predelavo.",
-    "subheadline": "Proizvodnja, kalkulacije in načrtovanje, zasnovano za projektno izdelavo.",
-    "intro": "Ta sistem je zasnovan posebej za kovinske predelovalce. Podpira dejanske proizvodne procese, ne računovodsko usmerjenih obhodov. Osredotočen je na projektno delo, izdelavo po naročilu in skladnost predpisov.",
-    "primaryCta": "Kontaktirajte nas",
-    "secondaryCta": "Preverite, ali ustreza",
-    "watchDemo": "Poglejte, kako deluje"
-  },
-  "problem": {
-    "title": "Zakaj splošni ERP sistemi ne ustrezajo kovinskim predelovalcem",
-    "intro": "Večina ERP sistemov je zasnovanih okoli računovodstva, ne proizvodnje. Posledično se kovinski predelovalci pogosto zanašajo na preglednice in ročne procese za upravljanje projektov in izvajanje v delavnici.",
-    "items": [
-      "Netočne projektne kalkulacije",
-      "Nepravilno sledenje kovinskim zalogam",
-      "Slaba preglednost nad delovanjem delavnice",
-      "Pomanjkanje optimizacije rezanja za pločevino",
-      "Načrtovanje proizvodnje izven ERP sistema",
-      "Spremenljive davčne stopnje izdelkov niso avtomatsko obravnavane"
-    ],
-    "conclusion": "Ti problemi povečujejo tveganje neskladnosti, zmanjšujejo učinkovitost in slabšajo kakovost storitev."
-  },
-  "whoFor": {
-    "title": "Za koga je ta sistem namenjen",
-    "intro": "Ta ERP je zasnovan za podjetja za kovinsko predelavo z:",
-    "criteria": [
-      "Potrebo po natančnih projektnih kalkulacijah in sledenju materiala",
-      "Zahtevami po upravljanju kovinskih zalog in inventarja pločevine",
-      "Potrebami po optimizaciji rezanja za laser, plazmo ali vodometno rezanje",
-      "Obveznostmi skladnosti EU e-fakturiranja",
-      "Zahtevami integracije z evropskimi računovodskimi sistemi",
-      "Potrebami skladnosti GDPR in EU varstva podatkov"
-    ],
-    "typical": "Tipični uporabniki vključujejo:",
-    "users": [
-      "Projektne delavnice",
-      "Pogodbene proizvajalce",
-      "Predelovalce, ki izdelujejo naročniške ali majhno-serijske dele",
-      "Pločevinarske delavnice"
-    ],
-    "notFor": "Ta sistem ni namenjen za:",
-    "excluded": [
-      "Čista distribucijska podjetja",
-      "Procesno proizvodnjo",
-      "Visoko standardizirano množično proizvodnjo"
-    ]
-  },
-  "manufacturing": {
-    "title": "Proizvodnja na prvem mestu",
-    "intro": "Sistem je zgrajen okoli dejanskih proizvodnih konceptov, uporabljenih v kovinski predelavi, in se nenehno prilagaja zapletenim in razvijajočim se evropskim zahtevam skladnosti.",
-    "features": [
-      {
-        "name": "Sledenje poteka dela",
-        "desc": "Sledite vsakemu projektu od ponudbe do dostave s popolno preglednostjo poteka dela in podrobnostmi na ravni operacij",
-        "icon": "cog"
+  "nestingHomepage": {
+    "meta": {
+      "title": "Kenzap Nesting — DXF nesting plošč za obdelave kovin",
+      "description": "Brezplačna prvinska DXF programska oprema za nesting plošč za obdelave kovin. Uvozi DXF kose, optimiziraj plošče, predoglej v živo in izvozi pripravljene razporeditve za rezanje."
+    },
+    "nav": {
+      "workflow": "Kako deluje",
+      "features": "Funkcionalnosti",
+      "factory": "Factory ERP",
+      "factoryMobile": "Factory",
+      "cta": "Prenesi brezplačno →",
+      "ctaHref": "https://github.com/kenzap/nesting-app"
+    },
+    "hero": {
+      "eyebrow": "DXF nesting programska oprema",
+      "headlineLine1": "Pakuj več.",
+      "headlineLine2Prefix": "Zapravlja ",
+      "headlineLine2Accent": "manj.",
+      "headlineLine3": "Reži hitreje.",
+      "subheadline": "Prvinska namizna nesting aplikacija za obdelave kovin. Spusti svoje DXF kose, nastavi količine, zaženi algoritem — dobi popolnoma pakirano ploščo pripravljeno za rezanje.",
+      "primaryCta": "↓ Prenesi brezplačno",
+      "primaryCtaHref": "https://github.com/kenzap/nesting-app/releases",
+      "secondaryCta": "Poglej v proizvodnji →",
+      "secondaryCtaHref": "/#case-study",
+      "badges": {
+        "windows": "Windows x64",
+        "mac": "macOS Apple Silicon",
+        "openSource": "Odprtokodni"
       },
-      {
-        "name": "Načrtovanje proizvodnje",
-        "desc": "Upravljajte proizvodno zmogljivost in učinkovito načrtujte operacije po vaši delavnici",
-        "icon": "factory"
-      },
-      {
-        "name": "Načrtovanje materialov",
-        "desc": "Natančno MRP, podprto s sledenjem surovih materialov, preglednostjo zalog pločevine in avtomatiziranim upravljanjem zalog",
-        "icon": "format-list-checks"
-      },
-      {
-        "name": "Optimizacija rezanja",
-        "desc": "Vgrajeni algoritmi gnezdenja minimizirajo odpadke in maksimizirajo izkoriščenost pločevine za lasersko, plazemsko in vodometno rezanje",
-        "icon": "content-cut"
-      },
-      {
-        "name": "Poročanje proizvodnje v realnem času",
-        "desc": "Za dotikalna zaslona optimiziran vmesnik za sledenje projektov v realnem času in poročanje operaterjev strojev",
-        "icon": "tablet"
-      },
-      {
-        "name": "Projektno kalkuliranje",
-        "desc": "Natančen izračun stroškov po projektih s sledenjem materiala, dela, režijskih stroškov in odpadkov",
-        "icon": "calculator"
-      },
-      {
-        "name": "Peppol e-fakturiranje",
-        "desc": "Generirajte z EU skladne elektronske račune po Peppol BIS Billing 3.0 standardu",
-        "icon": "file-document-outline"
-      },
-      {
-        "name": "DDV in skladnost",
-        "desc": "Lokalno skladno obravnavanje DDV z izjemami in integracijo nacionalnih računovodskih sistemov",
-        "icon": "shield-check"
-      },
-      {
-        "name": "Upravljanje dobaviteljev",
-        "desc": "Sledite dobaviteljem, nabavnim naročilom, stroškom materialov in rokom dostave",
-        "icon": "truck"
-      },
-      {
-        "name": "Odprtokodnost",
-        "desc": "Zgrajen na odprtokodnih tehnologijah brez vezave na prodajalca, kar zagotavlja popolno prenosljivost podatkov in neodvisnost sistema",
-        "icon": "code"
-      },
-      {
-        "name": "Evropsko varstvo podatkov",
-        "desc": "Z GDPR skladno rokovanje s podatki s popolno suverenostjo podatkov za evropske operacije",
-        "icon": "puzzle"
-      },
-      {
-        "name": "Z umetno inteligenco podprti vpogledi",
-        "desc": "Z UI podprti vpogledi za prepoznavanje proizvodnih ozkih grl in izboljšanje natančnosti projektnih kalkulacij",
-        "icon": "brain"
+      "previewLabel": "Neposreden predogled nesting-a"
+    },
+    "workflow": {
+      "label": "Kako deluje",
+      "titleLine1": "Od DXF do pripravljenega za rezanje",
+      "titleLine2": "v šestih korakih",
+      "steps": [
+        {
+          "title": "Dodaj DXF kose",
+          "description": "Povleci in spusti eno ali več DXF datotek. Algoritem samodejno zazna vse oblike, primerne za nesting, vključno z datotekami z več oblikami."
+        },
+        {
+          "title": "Preglej geometrijo",
+          "description": "Nastavi količine na kos. Preglej notranje reze, geometrijo gravure in dodelitve plasti na obliko pred zagonom."
+        },
+        {
+          "title": "Konfiguriraj ploščo",
+          "description": "Nastavi dimenzije plošče, obnašanje trakov, razmike, korak rotacije, rob plošče in slog gravure."
+        },
+        {
+          "title": "Zaženi algoritem",
+          "description": "Klikni ZAŽENI. Prvinska binarna datoteka obravnava postavitev — brez nalaganja v oblak, brez čakanja. Rezultati se pretakajo nazaj v živo."
+        },
+        {
+          "title": "Predogled v živo",
+          "description": "Opazuj, kako se plošče polnijo, medtem ko algoritem dela. Glej statistike izkoriščenosti in posodobitve števila plošč v realnem času."
+        },
+        {
+          "title": "Izvozi v DXF",
+          "description": "Izvozi končne plošče z vso prvotno strukturo plasti, rekonstrukcijo geometrije in ohranjeno geometrijo gravure."
+        }
+      ]
+    },
+    "features": {
+      "label": "Ključne zmogljivosti",
+      "titleLine1": "Vse, kar vaše rezanje",
+      "titleLine2": "dejansko potrebuje",
+      "cards": {
+        "performance": {
+          "tag": "Prvinska zmogljivost",
+          "title": "Brez oblaka. Brez brskalnika. Samo hitro.",
+          "description": "Nesting algoritem teče kot prvinska binarna datoteka na vašem stroju. Velike DXF datoteke se obdelajo v sekundah, ne minutah. Deluje popolnoma brez povezave — brez naročnine, brez nalaganja, brez zakasnitve."
+        },
+        "dxf": {
+          "tag": "DXF zanesljivost",
+          "title": "Popolna podpora geometrije",
+          "description": "Podprte so črtice, loki, krogi, polilinija, elipse in krivulje. Geometrija notranjih rezov in plasti gravure se ohranja ločeno skozi izvoz.",
+          "chips": [
+            "Črtice",
+            "Loki",
+            "Krogi",
+            "Polilinija",
+            "Elipse",
+            "Krivulje"
+          ]
+        },
+        "engraving": {
+          "tag": "Gravura",
+          "title": "Dva sloga gravure vgrajena",
+          "description": "Preprost način za enočrtno pisavo na tankih materialih. Orisni način za obrisano pisavo z zapolnjenimi obrisi. Konfiguriran na delo, ohranjen v DXF izvozu."
+        },
+        "sheet": {
+          "tag": "Inteligenca plošč",
+          "title": "Optimizacija velikosti plošče",
+          "description": "Algoritem najde minimalno potrebno število plošč za vaše delo. Konfiguriraj rob plošče, razmik kosov, korak usmeritve in poravnavo trakov neodvisno."
+        },
+        "workflow": {
+          "tag": "Potek dela",
+          "title": "Neposreden predogled med izvajanjem algoritma",
+          "description": "Ne čakaš, da se algoritem konča, preden vidiš rezultate. Plošče se polnijo v realnem času, ko se postavitve potrjujejo. Spremeni količine ali nastavitve in ponovno zaženi v sekundah.",
+          "chips": [
+            "Zaznavanje večobličnih DXF",
+            "Nadzor količine na obliko",
+            "Predogled z zavedanjem plasti",
+            "Izvoz JSON poligonov"
+          ]
+        }
       }
-    ],
-    "outro": "Proizvodni podatki tečejo od ponudbe do odpreme. Operativna resničnost se odraža v načrtovanju in kalkuliranju."
-  },
-  "workflow": {
-    "title": "Od ponudbe do odpreme",
-    "intro": "Sistem povezuje ključne proizvodne korake v enotnem poteku dela:",
-    "steps": [
-      {
-        "name": "Ponudbe in ocene",
-        "desc": "Natančno izračunajte stroške z materialom, delom, strojnim časom in optimizacijo rezanja"
+    },
+    "bridge": {
+      "label": "Del večje slike",
+      "title": "Poveži nesting z vašim celotnim delovanjem",
+      "copy": "Kenzap Nesting deluje kot samostojno namizno orodje danes. Ko boste pripravljeni, Kenzap Factory poveže vaš nesting izhod neposredno s kalkulacijo del, načrtovanjem proizvodnje in zalogami — tako se odpadki sledijo in ponujajo od prvega dne.",
+      "cta": "Poglej Kenzap Factory ERP →",
+      "standaloneLabel": "SAMOSTOJNO",
+      "standaloneTitle": "Kenzap Nesting",
+      "standaloneText": "DXF noter → optimizirana plošča ven. Brezplačno, odprtokodno, prvinska namizna.",
+      "connectsTo": "se poveže z",
+      "platformLabel": "CELOTNA PLATFORMA",
+      "platformTitle": "Kenzap Factory",
+      "platformText": "Ponujanje, kalkulacija del, sledenje proizvodnje, e-fakturiranje. EU-pripravljen ERP."
+    },
+    "download": {
+      "label": "Začni danes",
+      "title": "Brezplačno. Prvinska. Odprtokodno.",
+      "sub": "Prenesi gradnjo za svojo platformo. Brez registracije, brez licenčnega ključa, brez odvisnosti od oblaka. Deluje od prvega dne.",
+      "windows": {
+        "href": "https://github.com/kenzap/nesting-app/releases",
+        "os": "Windows",
+        "label": "Prenesi x64",
+        "note": ".exe namestitvena datoteka"
       },
-      {
-        "name": "Načrtovanje proizvodnje",
-        "desc": "Načrtujte operacije po delovnih centrih s preverjanjem razpoložljivosti zalog in optimizacijo rezanja"
+      "mac": {
+        "href": "https://github.com/kenzap/nesting-app/releases",
+        "os": "macOS",
+        "label": "Apple Silicon",
+        "note": ".dmg — M1-M5"
       },
-      {
-        "name": "Izvajanje v delavnici",
-        "desc": "Vmesnik za dotikalne zaslone za sledenje projektov, beleženje časa in nadzor kakovosti"
-      },
-      {
-        "name": "Fakturiranje in skladnost",
-        "desc": "Generirajte s Peppol skladne e-račune in tovorni listi s pravilnimi DDV stopnjami"
-      },
-      {
-        "name": "Odpošiljanje in dostava",
-        "desc": "Pakirajte, odpišite paketne izdelke in odpošljite projekte strankam"
-      },
-      {
-        "name": "Analitika",
-        "desc": "Sledite dejanskim nasproti ocenjenim stroškom s popolno preglednostjo in računovodstvom odpadkov"
-      }
-    ],
-    "conclusion": "Cilj je dosledno delovanje in sledljivost skozi celoten življenjski cikel projekta."
-  },
-  "caseStudy": {
-    "title": "Uporablja se v dejanskih proizvodnih okoljih",
-    "company": "Skarda Nams SIA",
-    "industry": "Kovinska predelava in izdelava po meri",
-    "region": "Vzhodna Evropa",
-    "employees": "20 zaposlenih, 2 CNC stroja",
-    "challenge": "Izziv",
-    "challengeText": "Skarda Nams se je spopadala z natančnim ponujanjem pri uporabi različnih vrst kovin, posodobitvami zalog v živo, zmožnostmi odpisa kovin, načrtovanjem proizvodnje, skladnim fakturiranjem, netočnim kalkuliranjem in sledenjem na papirju.",
-    "solution": "Rešitev",
-    "solutionText": "Implementacija Kenzap Factory z integriranimi moduli za ponudbe, proizvodno usmerjanje in izvajanje v delavnici. Operaterji strojev so se vmesniku za dotikalne zaslone prilagodili v dveh tednih po uvedbi. Peppol e-fakturiranje je bilo konfigurirano za izpolnjevanje zahtev EU skladnosti. Integracija z računovodsko programsko opremo Moneo za poenostavljeno davčno poročanje.",
-    "results": "Rezultati",
-    "resultItems": [
-      "Zmanjšanje časa ponujanja s pomočjo avtomatiziranega izračuna materiala",
-      "Izboljšanje natančnosti projektnih kalkulacij",
-      "Popolna preglednost nad delovanjem delavnice in proizvodnimi fazami",
-      "Dosežena skladnost Peppol e-fakturiranja z integracijo v računovodsko programsko opremo BMD",
-      "Zmanjšanje materialnih odpadkov s pomočjo optimizacije rezanja",
-      "Hitrejše načrtovanje proizvodnje s preverjanjem zalog v realnem času",
-      "Ohranjana skladnost GDPR in EU rezidentnost podatkov skozi vse operacije"
-    ],
-    "quote": "Imamo sistem, ki deluje tako, kot deluje naša delavnica. Operaterji so se vmesniku prilagodili takoj, in naše projektne kalkulacije so zdaj zanesljive. Davčne stopnje se obravnavajo avtomatsko glede na vrsto izdelka, kar nam prihrani čas in glavobole pri fakturiranju.",
-    "quoteAuthor": "Vodja strank, Skarda Nams SIA",
-    "watchCase": "Poglejte študijo primera"
-  },
-  "implementation": {
-    "title": "Pristop k implementaciji",
-    "intro": "Implementacija sledi standardni strukturi, zasnovani za minimalne motnje.",
-    "principles": [
-      "Nastavitev strojne opreme in namestitev programske opreme na tovarniške sisteme",
-      "Konfiguracija kataloga izdelkov in baze podatkov kovinskih zalog",
-      "Dodelitev uporabniških vlog in opredelitev odgovornosti",
-      "Prilagoditev predlog dokumentov (tovorni listi, računi, poročila)",
-      "Celovito usposabljanje za operaterje in vodstvene ekipe",
-      "Integracija sistemov in sinhronizacija finančnega poročanja"
-    ],
-    "timeline": "Tipičen časovni okvir:",
-    "phases": [
-      "Odkrivanje in konfiguracija: 2-3 tedni",
-      "Migracija podatkov in testiranje: 2-3 tedni",
-      "Usposabljanje in zagon: 1-2 tedna",
-      "Podpora po zagonu: tekoče"
-    ],
-    "outro": "Implementacijo lahko izvedejo svetovalci z izkušnjami v proizvodnji in ERP sistemih ali neposredno inženir Kenzap."
-  },
-  "deployment": {
-    "title": "Možnosti namestitve",
-    "intro": "Sistem podpira več modelov namestitve za ujemanje s potrebami delovanja, regulatornimi zahtevami in suverenostjo podatkov.",
-    "options": [
-      {
-        "name": "Oblak, upravljan s strani ponudnika",
-        "desc": "Popolnoma upravljano gostovanje v evropskih podatkovnih centrih z avtomatskimi posodobitvami, varnostnimi kopijami in varnostnimi popravki. Idealno za podjetja, osredotočena na delovanje.",
-        "icon": "cloud-check"
-      },
-      {
-        "name": "Oblak, upravljan s strani stranke",
-        "desc": "Namestitev na lastno infrastrukturo v oblaku (AWS, Azure, GCP) s popolnim nadzorom nad konfiguracijo in dostopom. Primerno za IT-zmožne organizacije.",
-        "icon": "cloud-cog"
-      },
-      {
-        "name": "Lastna namestitev",
-        "desc": "Namestitev na lastnih strežnikih za največ suverenosti podatkov in nadzora. Potrebna za nekatere regulirane industrije ali zelo občutljive operacije.",
-        "icon": "server"
-      }
-    ],
-    "outro": "Vse možnosti namestitve uporabljajo isto programsko opremo, sledijo isti poti nadgradnje in ohranjajo enakost funkcionalnosti. Podatki ostanejo v evropskih jurisdikcijah za skladnost GDPR."
-  },
-  "contact": {
-    "title": "Kontakt",
-    "intro": "Če želite razumeti, ali ta sistem ustreza vašemu delovanju, nas kontaktirajte za začetni pogovor. Delamo v angleščini in drugih evropskih jezikih.",
-    "namePlaceholder": "Vaše ime",
-    "emailPlaceholder": "E-poštni naslov",
-    "companyPlaceholder": "Ime podjetja",
-    "messagePlaceholder": "Povejte nam o vaši proizvodnji: število strojev, tipične velikosti projektov, trenutni sistemi...",
-    "submit": "Pošljite sporočilo",
-    "sending": "Pošiljanje...",
-    "success": "Sporočilo uspešno poslano. Kontaktirali vas bomo v 1-2 delovnih dneh.",
-    "error": "Pošiljanje sporočila neuspešno. Prosimo, nam pišite neposredno na support@kenzap.com",
-    "or": "ali",
-    "linkedin": "Povežite se na LinkedIn",
-    "email": "Pišite nam neposredno"
-  },
-  "footer": {
-    "tagline": "Programska oprema za proizvodne operacije",
-    "company": "© 2026 Kenzap. Vse pravice pridržane.",
-    "note": "Informacije o izdelku se lahko spremenijo. Razpoložljivost se lahko razlikuje po regijah.",
-    "languages": "Jeziki"
+      "openSourcePrefix": "Izvorna koda in navodila za gradnjo na",
+      "openSourceHref": "https://github.com/kenzap/nesting-app",
+      "openSourceLink": "GitHub",
+      "openSourceLicense": "Apache-2.0 licenca"
+    },
+    "footer": {
+      "factory": "Factory",
+      "email": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com",
+      "company": "© 2026 Kenzap Pte Ltd"
+    }
   }
 }

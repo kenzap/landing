@@ -4,20 +4,35 @@ import '../styles/global.css';
 interface Props {
   title: string;
   lang?: string;
+  description?: string;
 }
 
-const { title, lang = 'en' } = Astro.props;
+const {
+  title,
+  lang = 'en',
+  description = 'ERP built for metal fabrication. Production, costing, and planning designed for job-based manufacturing.',
+} = Astro.props;
 ---
 
 <!doctype html>
 <html lang={lang}>
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="ERP built for metal fabrication. Production, costing, and planning designed for job-based manufacturing." />
+    <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&family=Syne:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <slot name="head" />
 
     <!-- Inline critical CSS for above-the-fold content -->
     <style is:inline>

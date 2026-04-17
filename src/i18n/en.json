@@ -1,231 +1,355 @@
 {
-  "nav": {
-    "problem": "Problem",
-    "solution": "Solution",
-    "features": "Features",
-    "customers": "Customers",
-    "contact": "Contact"
+  "factoryHomepage": {
+    "meta": {
+      "title": "Kenzap Factory — Production Management for Metal Fabricators",
+      "description": "Production, costing, and compliance software built specifically for metal fabricators. Job shops, laser cutting, Peppol e-invoicing. EU-ready."
+    },
+    "nav": {
+      "problem": "Problem",
+      "features": "Features",
+      "caseStudy": "Case study",
+      "nesting": "Nesting app",
+      "nestingHref": "/nesting",
+      "cta": "Contact us →"
+    },
+    "hero": {
+      "eyebrow": "Factory management software",
+      "headlineTop": "Built for",
+      "strikeWord": "accountants.",
+      "headlineAccent": "fabricators.",
+      "subheadline": "Production management built for job-based metal fabrication — not adapted from generic accounting software.",
+      "primaryCta": "Book a demo →",
+      "secondaryCta": "See real results ↓",
+      "interfaceLabel": "Kenzap Factory interface",
+      "stats": [
+        { "value": "~30%", "label": "Faster quoting" },
+        { "value": "2 wks", "label": "Operator onboarding" },
+        { "value": "e-inv", "label": "Compliance ready" }
+      ]
+    },
+    "problem": {
+      "label": "The problem",
+      "title": "Generic software was built for\naccountants, not fabricators.",
+      "quote": "\"We have a system that works the way our shop floor works. The operators adapted immediately, and our job costing is now reliable.\"",
+      "quoteAuthor": "— CLIENT MANAGER, SKARDA NAMS SIA · LATVIA",
+      "items": [
+        {
+          "title": "Job costing is guesswork.",
+          "description": "Material types, cutting time, scrap — most ERPs can't model it. You find out you lost money after the job ships."
+        },
+        {
+          "title": "Sheet metal inventory is untracked.",
+          "description": "You know how many parts you have, not how many full and partial sheets — so you over-order or run short."
+        },
+        {
+          "title": "Production planning lives in spreadsheets.",
+          "description": "Scheduling, capacity checks and cutting optimization happen outside the system, in files nobody else can see."
+        },
+        {
+          "title": "Compliance is manual.",
+          "description": "Peppol e-invoicing, variable VAT rates, GDPR — handled by workarounds, not the system."
+        },
+        {
+          "title": "Shop floor is invisible.",
+          "description": "Managers find out about delays and quality issues too late, because operators have no system to report into."
+        }
+      ]
+    },
+    "workflow": {
+      "label": "How it works",
+      "title": "Quote to dispatch,\nin one connected workflow",
+      "steps": [
+        {
+          "title": "Quotation & estimation",
+          "description": "Calculate job costs accurately — material, labour, machine time, cutting optimization — before you commit to a price."
+        },
+        {
+          "title": "Production planning",
+          "description": "Schedule operations across work centres with live inventory checks and nesting optimization built in."
+        },
+        {
+          "title": "Shop-floor execution",
+          "description": "Touch-panel interface for operators. Job tracking, time recording, and quality control at the machine."
+        },
+        {
+          "title": "Invoicing & compliance",
+          "description": "Peppol-compliant e-invoices and waybills generated automatically with correct VAT rates per product type."
+        },
+        {
+          "title": "Dispatch & delivery",
+          "description": "Pack jobs, write off bundled items, and dispatch with full documentation. Inventory updates automatically."
+        },
+        {
+          "title": "Analytics",
+          "description": "Actual vs. estimated cost comparison per job. Full scrap accounting and production bottleneck visibility."
+        }
+      ]
+    },
+    "features": {
+      "label": "Core capabilities",
+      "title": "Everything a metal fabricator\nneeds in one system",
+      "items": [
+        {
+          "tag": "Production",
+          "title": "Workflow tracking",
+          "description": "Track every job from quote to delivery with operation-level detail. Know exactly where every job is, in real time."
+        },
+        {
+          "tag": "Inventory",
+          "title": "Sheet metal MRP",
+          "description": "Track stock by sheet, not just part count. Full and partial sheets, multiple metal types, automated reorder triggers."
+        },
+        {
+          "tag": "Cutting",
+          "title": "Built-in nesting",
+          "description": "Nesting algorithms minimize material waste for laser, plasma, and waterjet — connected directly to job costing so scrap is tracked automatically.",
+          "accent": true
+        },
+        {
+          "tag": "Costing",
+          "title": "Job-based costing",
+          "description": "Accurate cost per job: material, labour, overhead, and scrap. Compare estimated vs. actual on every job you ship."
+        },
+        {
+          "tag": "Compliance",
+          "title": "Peppol e-invoicing",
+          "description": "EU-compliant electronic invoicing via Peppol BIS Billing 3.0. VAT rates handled automatically by product type and customer region."
+        },
+        {
+          "tag": "Shop floor",
+          "title": "Touch-panel interface",
+          "description": "Designed for operators at the machine. Job tracking, time recording, quality control — adopted within two weeks at Skarda Nams."
+        },
+        {
+          "tag": "Suppliers",
+          "title": "Supplier management",
+          "description": "Purchase orders, material costs, and delivery schedules tracked in the same system as production."
+        },
+        {
+          "tag": "AI",
+          "title": "AI-driven insights",
+          "description": "Identify production bottlenecks and improve job costing accuracy with AI-powered analysis of your real production data."
+        },
+        {
+          "tag": "Data",
+          "title": "Open source & GDPR",
+          "description": "No vendor lock-in. Full data portability. GDPR-compliant with EU data residency. Deploy on your own infrastructure if needed."
+        }
+      ]
+    },
+    "caseStudy": {
+      "label": "Real results",
+      "title": "Used in production\nat Skarda Nams SIA",
+      "meta": "METAL FABRICATION · LATVIA · 20 EMPLOYEES · 2 CNC MACHINES",
+      "challengeLabel": "Challenge",
+      "challengeText": "Skarda Nams was quoting manually across multiple metal types, running inventory on paper, and unable to produce compliant invoices without workarounds. Job costing was inaccurate. Shop-floor visibility was zero.",
+      "solutionLabel": "Solution",
+      "solutionText": "Implemented Kenzap Factory with integrated quotation, production routing, and shop-floor execution modules. Peppol e-invoicing configured for EU compliance. Integrated with Moneo accounting software.",
+      "quote": "\"The operators adapted to the interface immediately, and our job costing is now reliable. Tax rates are handled automatically — that alone saves us significant time every month.\"",
+      "quoteAuthor": "— CLIENT MANAGER, SKARDA NAMS SIA",
+      "results": [
+        { "value": "~30%", "label": "Reduction in quoting time" },
+        { "value": "2 wks", "label": "Operator onboarding time" },
+        { "value": "100%", "label": "Invoicing compliance achieved" },
+        { "value": "100%", "label": "Estimating accuracy achieved" },
+        { "value": "Full visibility", "label": "Into shop-floor operations and manufacturing stages — from day one", "fullWidth": true }
+      ]
+    },
+    "deployment": {
+      "label": "Deployment",
+      "title": "Runs where your\noperation requires",
+      "options": [
+        {
+          "title": "Vendor-managed cloud",
+          "description": "Fully managed hosting with automatic updates, backups, and security patches. Best for teams focused on operations, not IT."
+        },
+        {
+          "title": "Customer-managed cloud",
+          "description": "Deploy on your own AWS, Azure, or GCP infrastructure. Full control over configuration, access, and data. Suitable for IT-capable organisations."
+        },
+        {
+          "title": "Self-hosted on-premises",
+          "description": "On-premises installation for maximum data sovereignty. Required for some regulated industries. Full feature parity with cloud options."
+        }
+      ]
+    },
+    "timeline": {
+      "label": "Typical implementation timeline",
+      "phases": [
+        { "phase": "Phase 1", "duration": "2–3 wks", "label": "Discovery & configuration" },
+        { "phase": "Phase 2", "duration": "2–3 wks", "label": "Data migration & testing" },
+        { "phase": "Phase 3", "duration": "1–2 wks", "label": "Training & go-live" },
+        { "phase": "Phase 4", "duration": "Ongoing", "label": "Post-launch support" }
+      ]
+    },
+    "nesting": {
+      "label": "Also from Kenzap",
+      "title": "Start with nesting.\nConnect the rest when you're ready.",
+      "description": "Kenzap Nesting is a free standalone desktop app for DXF-based sheet nesting. Native on Windows and macOS. No subscription, no cloud, no signup. When your operation grows, Kenzap Factory connects everything.",
+      "primaryCta": "Explore Kenzap Nesting →",
+      "href": "/nesting",
+      "cardLabel": "Kenzap Nesting — free download",
+      "cardTitle": "Pack more. Waste less. Cut faster.",
+      "cardDescription": "Drop DXF parts, set quantities, run the nesting engine, export cut-ready sheets. Live preview while the algorithm runs.",
+      "platforms": ["Windows", "macOS"]
+    },
+    "contact": {
+      "label": "Get in touch",
+      "title": "See if Kenzap Factory\nfits your operation",
+      "description": "We respond within one business day. No sales process — just a direct conversation about whether this fits your operation.",
+      "linkedinLabel": "LinkedIn",
+      "linkedinHref": "https://www.linkedin.com/in/pavel-lukasenko/",
+      "emailLabel": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com"
+    },
+    "footer": {
+      "nestingLabel": "Nesting app",
+      "nestingHref": "/nesting",
+      "emailLabel": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com",
+      "company": "© 2026 Kenzap Pte Ltd"
+    }
   },
-  "hero": {
-    "headline": "ERP built for metal fabrication.",
-    "subheadline": "Production, costing, and planning designed for job-based manufacturing.",
-    "intro": "This system is designed specifically for metal fabricators. It supports real production workflows, not accounting-driven workarounds. The focus is on job shops, make-to-order production, and compliance.",
-    "primaryCta": "Contact us",
-    "secondaryCta": "See if this fits",
-    "watchDemo": "Watch how it works"
-  },
-  "problem": {
-    "title": "Why generic ERP systems fail metal fabricators",
-    "intro": "Most ERP systems are designed around accounting, not production. As a result, metal fabricators often rely on spreadsheets and manual processes to manage jobs and shop-floor execution.",
-    "items": [
-      "Inaccurate job costing",
-      "Metal inventory not tracked properly",
-      "Poor visibility into shop-floor operations",
-      "Lack of cutting optimization for sheet metal",
-      "Production planning managed outside the ERP",
-      "Variable product tax rates not handled automatically"
-    ],
-    "conclusion": "These problems increase compliance risk, reduce efficiency, and degrade quality of service."
-  },
-  "whoFor": {
-    "title": "Who this system is designed for",
-    "intro": "This ERP is designed for metal fabrication companies with:",
-    "criteria": [
-      "A need for accurate job costing and material tracking",
-      "Metal stock and sheet inventory management requirements",
-      "Cutting optimization needs for laser, plasma, or waterjet",
-      "EU e-invoicing compliance obligations",
-      "European accounting system integration requirements",
-      "GDPR and EU data protection compliance needs"
-    ],
-    "typical": "Typical users include:",
-    "users": ["Job shops", "Contract manufacturers", "Fabricators producing custom or small-batch parts", "Sheet metal workshops"],
-    "notFor": "This system is not designed for:",
-    "excluded": ["Pure distribution businesses", "Process manufacturing", "Highly standardized mass production"]
-  },
-  "manufacturing": {
-    "title": "Manufacturing-first design",
-    "intro": "The system is built around real manufacturing concepts used in metal fabrication, and it continuously adapts to complex and evolving European compliance requirements.",
-    "features": [
-      {
-        "name": "Workflow Tracking",
-        "desc": "Track every job from quote to delivery with complete workflow visibility and operation-level detail",
-        "icon": "cog"
+  "nestingHomepage": {
+    "meta": {
+      "title": "Kenzap Nesting — DXF Sheet Nesting for Metal Fabricators",
+      "description": "Free native DXF sheet nesting software for metal fabricators. Import DXF parts, optimize sheets, preview live, and export cut-ready layouts."
+    },
+    "nav": {
+      "workflow": "How it works",
+      "features": "Features",
+      "factory": "Factory ERP",
+      "factoryMobile": "Factory",
+      "cta": "Download free →",
+      "ctaHref": "https://github.com/kenzap/nesting-app"
+    },
+    "hero": {
+      "eyebrow": "DXF nesting software",
+      "headlineLine1": "Pack more.",
+      "headlineLine2Prefix": "Waste ",
+      "headlineLine2Accent": "less",
+      "headlineLine3": "Cut faster.",
+      "subheadline": "A native desktop nesting app for metal fabricators. Drop your DXF parts, set quantities, run the engine — get a fully packed sheet ready to cut.",
+      "primaryCta": "↓ Download free",
+      "primaryCtaHref": "https://github.com/kenzap/nesting-app/releases",
+      "secondaryCta": "See it in production →",
+      "secondaryCtaHref": "/#case-study",
+      "badges": {
+        "windows": "Windows x64",
+        "mac": "macOS Apple Silicon",
+        "openSource": "Open source"
       },
-      {
-        "name": "Production Planning",
-        "desc": "Manage production capacity and schedule operations efficiently across your shop floor",
-        "icon": "factory"
-      },
-      {
-        "name": "Material Planning",
-        "desc": "Accurate MRP powered by raw material tracking, sheet metal inventory visibility, and automated stock management",
-        "icon": "format-list-checks"
-      },
-      {
-        "name": "Cutting Optimization",
-        "desc": "Built-in nesting algorithms minimize waste and maximize sheet utilization for laser, plasma, and waterjet cutting",
-        "icon": "content-cut"
-      },
-      {
-        "name": "Real-Time Production Reporting",
-        "desc": "Touch-panel-optimized interface for real-time job tracking and reporting by machine operators",
-        "icon": "tablet"
-      },
-      {
-        "name": "Job-Based Costing",
-        "desc": "Accurate cost calculation per job with material, labor, overhead, and scrap tracking",
-        "icon": "calculator"
-      },
-      {
-        "name": "Peppol E-Invoicing",
-        "desc": "Generate EU-compliant electronic invoices following Peppol BIS Billing 3.0 standard",
-        "icon": "file-document-outline"
-      },
-      {
-        "name": "VAT & Compliance",
-        "desc": "Locally compliant VAT handling with exemptions and national accounting system integration",
-        "icon": "shield-check"
-      },
-      {
-        "name": "Supplier Management",
-        "desc": "Track suppliers, purchase orders, material costs, and delivery schedules",
-        "icon": "truck"
-      },
-      {
-        "name": "Open Source",
-        "desc": "Built on open source technologies with no vendor lock-in, ensuring full data portability and system independence",
-        "icon": "code"
-      },
-      {
-        "name": "European Data Protection",
-        "desc": "GDPR-compliant data handling with full data sovereignty for European operations",
-        "icon": "puzzle"
-      },
-      {
-        "name": "AI-Driven Insights",
-        "desc": "AI-powered insights to identify production bottlenecks and improve job costing accuracy",
-        "icon": "brain"
+      "previewLabel": "Live nesting preview"
+    },
+    "workflow": {
+      "label": "How it works",
+      "titleLine1": "From DXF to cut-ready",
+      "titleLine2": "in six steps",
+      "steps": [
+        {
+          "title": "Add DXF parts",
+          "description": "Drag and drop one or more DXF files. The engine detects all nestable shapes automatically, including multi-shape files."
+        },
+        {
+          "title": "Review geometry",
+          "description": "Set quantities per part. Review internal cuts, engraving geometry, and layer assignments per shape before running."
+        },
+        {
+          "title": "Configure the sheet",
+          "description": "Set plate dimensions, strip behaviour, spacing, rotation step, sheet margin, and engraving style."
+        },
+        {
+          "title": "Run the engine",
+          "description": "Click RUN. A native binary handles placement — no cloud upload, no waiting. Results stream back live."
+        },
+        {
+          "title": "Preview live",
+          "description": "Watch sheets populate as the algorithm works. See utilisation stats and sheet count update in real time."
+        },
+        {
+          "title": "Export to DXF",
+          "description": "Export final sheets with all original layer structure, geometry reconstruction, and engraving geometry preserved."
+        }
+      ]
+    },
+    "features": {
+      "label": "Core capabilities",
+      "titleLine1": "Everything your cutting",
+      "titleLine2": "operation actually needs",
+      "cards": {
+        "performance": {
+          "tag": "Native performance",
+          "title": "No cloud. No browser. Just fast.",
+          "description": "The nesting engine runs as a native binary on your machine. Large DXF files process in seconds, not minutes. Works fully offline — no subscription, no upload, no latency."
+        },
+        "dxf": {
+          "tag": "DXF fidelity",
+          "title": "Full geometry support",
+          "description": "Lines, arcs, circles, polylines, ellipses, and splines all supported. Internal cut geometry and engraving layers are preserved separately through export.",
+          "chips": ["Lines", "Arcs", "Circles", "Polylines", "Ellipses", "Splines"]
+        },
+        "engraving": {
+          "tag": "Engraving",
+          "title": "Two engraving styles built in",
+          "description": "Simple mode for single-line lettering on thin materials. Stroked mode for outlined lettering with filled contours. Configured per job, preserved in DXF export."
+        },
+        "sheet": {
+          "tag": "Sheet intelligence",
+          "title": "Plate size optimisation",
+          "description": "The engine finds the minimum plate count needed for your job. Configure sheet margin, part spacing, orientation step, and strip alignment independently."
+        },
+        "workflow": {
+          "tag": "Workflow",
+          "title": "Live preview while the algorithm runs",
+          "description": "You don't wait for the engine to finish before seeing results. Sheets populate in real time as placements are confirmed. Change quantities or settings and rerun in seconds.",
+          "chips": [
+            "Multi-shape DXF detection",
+            "Per-shape quantity control",
+            "Layer-aware preview",
+            "Polygon JSON export"
+          ]
+        }
       }
-    ],
-    "outro": "Production data flows from quotation to dispatch. Operational reality is reflected in planning and costing."
-  },
-  "workflow": {
-    "title": "From quote to dispatch",
-    "intro": "The system connects key production steps in a single workflow:",
-    "steps": [
-      {
-        "name": "Quotation & Estimation",
-        "desc": "Calculate costs accurately with material, labor, machine time, and cutting optimization"
+    },
+    "bridge": {
+      "label": "Part of a bigger picture",
+      "title": "Connect nesting to your whole operation",
+      "copy": "Kenzap Nesting works as a standalone desktop tool today. When you're ready, Kenzap Factory connects your nesting output directly to job costing, production planning, and inventory — so scrap is tracked and quoted from day one.",
+      "cta": "See Kenzap Factory ERP →",
+      "standaloneLabel": "STANDALONE",
+      "standaloneTitle": "Kenzap Nesting",
+      "standaloneText": "DXF in → optimised sheet out. Free, open source, native desktop.",
+      "connectsTo": "connects to",
+      "platformLabel": "FULL PLATFORM",
+      "platformTitle": "Kenzap Factory",
+      "platformText": "Quoting, job costing, shop-floor tracking, e-invoicing. EU-ready ERP."
+    },
+    "download": {
+      "label": "Get started today",
+      "title": "Free. Native. Open source.",
+      "sub": "Download the build for your platform. No signup, no licence key, no cloud dependency. Works on day one.",
+      "windows": {
+        "href": "https://github.com/kenzap/nesting-app/releases",
+        "os": "Windows",
+        "label": "Download x64",
+        "note": ".exe installer"
       },
-      {
-        "name": "Production Planning",
-        "desc": "Schedule operations across work centers with inventory availability checks and cutting optimization"
+      "mac": {
+        "href": "https://github.com/kenzap/nesting-app/releases",
+        "os": "macOS",
+        "label": "Apple Silicon",
+        "note": ".dmg — M1-M5"
       },
-      {
-        "name": "Shop-Floor Execution",
-        "desc": "Touch-panel interface for job tracking, time recording, and quality control"
-      },
-      {
-        "name": "Invoicing & Compliance",
-        "desc": "Generate Peppol-compliant e-invoices and waybills with correct VAT rates"
-      },
-      {
-        "name": "Dispatch & Delivery",
-        "desc": "Pack, write off bundled items, and dispatch jobs to customers"
-      },
-      {
-        "name": "Analytics",
-        "desc": "Track actual vs. estimated costs with complete transparency and scrap accounting"
-      }
-    ],
-    "conclusion": "The goal is consistency and traceability across the entire job lifecycle."
-  },
-  "caseStudy": {
-    "title": "Used in real production environments",
-    "company": "Skarda Nams SIA",
-    "industry": "Metal Fabrication & Custom Parts",
-    "region": "Eastern Europe",
-    "employees": "20 employees, 2 CNC machines",
-    "challenge": "Challenge",
-    "challengeText": "Skarda Nams struggled with accurate quoting using various metal types, live inventory updates, metal write-off capabilities, production planning, compliant invoicing, inaccurate costing and paper-based tracking.",
-    "solution": "Solution",
-    "solutionText": "Implemented Kenzap Factory with integrated quotation, production routing, and shop-floor execution modules. Machine operators adopted the touch-panel interface within two weeks of deployment. Peppol e-invoicing was configured to meet EU compliance requirements. Integration with Moneo accounting software for simplified tax reporting.",
-    "results": "Results",
-    "resultItems": [
-      "Reduction in quoting time through automated material calculation",
-      "Improvement in job costing accuracy",
-      "Complete visibility into shop-floor operations and manufacturing stages",
-      "Peppol e-invoicing compliance achieved, with integration to BMD accounting software",
-      "Material waste reduction through cutting optimization",
-      "Faster production planning with real-time inventory checks",
-      "GDPR compliance and EU data residency maintained throughout operations"
-    ],
-    "quote": "We have a system that works the way our shop floor works. The operators adapted to the interface immediately, and our job costing is now reliable. Tax rates are handled automatically based on product type, which saves us time and headaches during invoicing.",
-    "quoteAuthor": "Client Manager, Skarda Nams SIA",
-    "watchCase": "Watch case study"
-  },
-  "implementation": {
-    "title": "Implementation approach",
-    "intro": "Implementation follow a standard structure designed to minimize disruption.",
-    "principles": [
-      "Hardware setup and software installation on factory systems",
-      "Product catalog and metal inventory database configuration",
-      "User role assignment and responsibility definition",
-      "Document template customization (waybills, invoices, reports)",
-      "Comprehensive training for operators and management teams",
-      "System integration and financial reporting synchronization"
-    ],
-    "timeline": "Typical timeline:",
-    "phases": [
-      "Discovery & configuration: 2-3 weeks",
-      "Data migration & testing: 2-3 weeks",
-      "Training & go-live: 1-2 weeks",
-      "Post-launch support: ongoing"
-    ],
-    "outro": "Implementation can be delivered by consultants with manufacturing and ERP backgrounds or by Kenzap engineer directly."
-  },
-  "deployment": {
-    "title": "Deployment options",
-    "intro": "The system supports multiple deployment models to match operational, regulatory, and data sovereignty needs.",
-    "options": [
-      {
-        "name": "Vendor-managed cloud",
-        "desc": "Fully managed hosting in European data centers with automatic updates, backups, and security patches. Ideal for companies focused on operations.",
-        "icon": "cloud-check"
-      },
-      {
-        "name": "Customer-managed cloud",
-        "desc": "Deploy on your own cloud infrastructure (AWS, Azure, GCP) with full control over configuration and access. Suitable for IT-capable organizations.",
-        "icon": "cloud-cog"
-      },
-      {
-        "name": "Self-hosted deployment",
-        "desc": "On-premises installation for maximum data sovereignty and control. Required for some regulated industries or highly sensitive operations.",
-        "icon": "server"
-      }
-    ],
-    "outro": "All deployment options use the same software, follow the same upgrade path, and maintain feature parity. Data remains in European jurisdictions for GDPR compliance."
-  },
-  "contact": {
-    "title": "Contact",
-    "intro": "If you want to understand whether this system fits your operation, contact us for an initial discussion. We work in English and other European languages.",
-    "namePlaceholder": "Your name",
-    "emailPlaceholder": "Email address",
-    "companyPlaceholder": "Company name",
-    "messagePlaceholder": "Tell us about your production setup: number of machines, typical job sizes, current systems...",
-    "submit": "Send message",
-    "sending": "Sending...",
-    "success": "Message sent successfully. We will contact you within 1-2 business days.",
-    "error": "Failed to send message. Please email us directly at support@kenzap.com",
-    "or": "or",
-    "linkedin": "Connect on LinkedIn",
-    "email": "Email us directly"
-  },
-  "footer": {
-    "tagline": "Software for manufacturing operations",
-    "company": "© 2026 Kenzap Pte Ltd. All rights reserved.",
-    "note": "Product information may change. Availability may vary by region.",
-    "languages": "Languages"
+      "openSourcePrefix": "Source code and build instructions on",
+      "openSourceHref": "https://github.com/kenzap/nesting-app",
+      "openSourceLink": "GitHub",
+      "openSourceLicense": "Apache-2.0 license"
+    },
+    "footer": {
+      "factory": "Factory",
+      "email": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com",
+      "company": "© 2026 Kenzap Pte Ltd"
+    }
   }
 }

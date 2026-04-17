@@ -1,240 +1,406 @@
 {
-  "nav": {
-    "problem": "Problema",
-    "solution": "Sprendimas",
-    "features": "Funkcijos",
-    "customers": "Klientai",
-    "contact": "Kontaktai"
+  "factoryHomepage": {
+    "meta": {
+      "title": "Kenzap Factory — gamybos valdymas metalo apdirbimo įmonėms",
+      "description": "Gamybos, kaštų apskaitos ir atitikties programinė įranga, sukurta specialiai metalo apdirbimo įmonėms. Užsakomoji gamyba, lazerinis pjovimas, Peppol e-sąskaitos. Paruošta ES reikalavimams."
+    },
+    "nav": {
+      "problem": "Problemos",
+      "features": "Funkcijos",
+      "caseStudy": "Praktinis pavyzdys",
+      "nesting": "Optimizacijos programa",
+      "nestingHref": "/nesting",
+      "cta": "Susisiekti →"
+    },
+    "hero": {
+      "eyebrow": "Gamyklos valdymo programa",
+      "headlineTop": "Sukurta",
+      "strikeWord": "buhalterams.",
+      "headlineAccent": "gamintojams.",
+      "subheadline": "Gamybos valdymas, pritaikytas užsakomajai metalo apdirbai — ne pritaikyta bendra apskaitos programa.",
+      "primaryCta": "Užsisakyti demonstraciją →",
+      "secondaryCta": "Pamatykite tikrus rezultatus ↓",
+      "interfaceLabel": "Kenzap Factory sąsaja",
+      "stats": [
+        {
+          "value": "~30%",
+          "label": "Greitesnis pasiūlymų rengimas"
+        },
+        {
+          "value": "2 sav.",
+          "label": "Darbuotojų apmokymas"
+        },
+        {
+          "value": "e-sąsk.",
+          "label": "Atitikties paruoštumas"
+        }
+      ]
+    },
+    "problem": {
+      "label": "Problema",
+      "title": "Bendrosios paskirties programos sukurtos\nbuhalterams, ne gamintojams.",
+      "quote": "\"Turime sistemą, kuri veikia taip, kaip dirba mūsų cechas. Operatoriai prisitaikė iš karto, o dabar mūsų užduočių išlaidų apskaita patikima.\"",
+      "quoteAuthor": "— KLIENTŲ VADYBININKAS, SKARDA NAMS SIA · LATVIJA",
+      "items": [
+        {
+          "title": "Užduočių kaštų skaičiavimas — spėliojimai.",
+          "description": "Medžiagų tipai, pjovimo laikas, atliekos — dauguma ERP sistemų negali šito modeliuoti. Sužinote, kad praradote pinigus tik po užduoties išsiuntimo."
+        },
+        {
+          "title": "Metalo lakštų atsargos nesekami.",
+          "description": "Žinote, kiek turite dalių, bet ne kiek pilnų ar dalinių lakštų — todėl užsisakote per daug arba pritrūkstate."
+        },
+        {
+          "title": "Gamybos planavimas — skaičiuoklės.",
+          "description": "Darbuotojų grafikas, pajėgumų tikrinimas ir pjovimo optimizavimas vyksta ne sistemoje, failuose, kurių niekas kitas negali pamatyti."
+        },
+        {
+          "title": "Atitiktis — rankiniu būdu.",
+          "description": "Peppol e-sąskaitos, kintantys PVM tarifai, BDAR — tvarkoma apeigos būdu, ne sistemos."
+        },
+        {
+          "title": "Ceche vyksta nematomos veiklos.",
+          "description": "Vadovai per vėlai sužino apie vėlavimus ir kokybės problemas, nes operatoriai neturi sistemos pranešti."
+        }
+      ]
+    },
+    "workflow": {
+      "label": "Kaip veikia",
+      "title": "Nuo pasiūlymo iki išsiuntimo\nviename sujungtame darbo procese",
+      "steps": [
+        {
+          "title": "Pasiūlymų rengimas ir skaičiavimas",
+          "description": "Tiksliai apskaičiuokite užduoties kaštus — medžiagos, darbo jėga, įrangos laikas, pjovimo optimizavimas — prieš įsipareigodami kainai."
+        },
+        {
+          "title": "Gamybos planavimas",
+          "description": "Suplanuokite operacijas visuose darbo centruose su tiesiogine atsargų patikra ir integruotu optimizavimu."
+        },
+        {
+          "title": "Cecho veikla",
+          "description": "Lietimui jautri sąsaja operatoriams. Užduočių sekimas, laiko apskaita ir kokybės kontrolė prie įrenginio."
+        },
+        {
+          "title": "Sąskaitos ir atitiktis",
+          "description": "Peppol reikalavimus atitinkančios e-sąskaitos ir važtaraščiai generuojami automatiškai su teisingais PVM tarifais pagal produktų tipus."
+        },
+        {
+          "title": "Išsiuntimas ir pristatymas",
+          "description": "Supakuokite užduotis, nurašykite sujungtas prekes ir išsiųskite su pilna dokumentacija. Atsargos atsinaujina automatiškai."
+        },
+        {
+          "title": "Analitika",
+          "description": "Faktinių ir planuotų išlaidų palyginimas pagal užduotis. Pilna atliekų apskaita ir gamybos kliūčių matomumas."
+        }
+      ]
+    },
+    "features": {
+      "label": "Pagrindiniai gebėjimai",
+      "title": "Viskas, ko reikia metalo apdirbimo\nįmonei vienoje sistemoje",
+      "items": [
+        {
+          "tag": "Gamyba",
+          "title": "Darbo eigų sekimas",
+          "description": "Sekite kiekvieną užduotį nuo pasiūlymo iki pristatymo su operacijų lygmens detalėmis. Žinokite tiksliai, kur yra kiekviena užduotis realiu laiku."
+        },
+        {
+          "tag": "Atsargos",
+          "title": "Metalo lakštų MRP",
+          "description": "Sekite atsargas pagal lakštus, ne tik dalių skaičių. Pilni ir daliniai lakštai, kelių metalo tipų, automatiniai papildymo signalai."
+        },
+        {
+          "tag": "Pjovimas",
+          "title": "Integruotas optimizavimas",
+          "description": "Optimizavimo algoritmai minimizuoja medžiagų atliekas lazerinio, plazmos ir vandens pjovimo metu — tiesiogiai sujungta su užduočių kainodara, todėl atliekos sekami automatiškai.",
+          "accent": true
+        },
+        {
+          "tag": "Kainodara",
+          "title": "Užduočių kainodara",
+          "description": "Tikslios išlaidos pagal užduotis: medžiagos, darbo jėga, pridėtinės išlaidos ir atliekos. Palyginkite planuotas ir faktines kiekvienos išsiųstos užduoties išlaidas."
+        },
+        {
+          "tag": "Atitiktis",
+          "title": "Peppol e-sąskaitos",
+          "description": "ES reikalavimus atitinkantis elektroninis sąskaitų išrašymas per Peppol BIS Billing 3.0. PVM tarifai tvarkomi automatiškai pagal produktų tipus ir klientų regionus."
+        },
+        {
+          "tag": "Cechas",
+          "title": "Lietimui jautri sąsaja",
+          "description": "Sukurta operatoriams prie įrenginio. Užduočių sekimas, laiko apskaita, kokybės kontrolė — pritaikyta per dvi savaites \"Skarda Nams\"."
+        },
+        {
+          "tag": "Tiekėjai",
+          "title": "Tiekėjų valdymas",
+          "description": "Pirkimo užsakymai, medžiagų išlaidos ir pristatymo grafikai sekami toje pačioje sistemoje kaip ir gamyba."
+        },
+        {
+          "tag": "DI",
+          "title": "Dirbtinio intelekto įžvalgos",
+          "description": "Nustatykite gamybos kliūtis ir pagerinkite užduočių kainodaros tikslumą naudodami DI analizę jūsų tikrų gamybos duomenų."
+        },
+        {
+          "tag": "Duomenys",
+          "title": "Atviras kodas ir BDAR",
+          "description": "Jokios priklausomybės nuo tiekėjo. Pilnas duomenų perkeliamumas. BDAR atitinka ES duomenų rezidencijos reikalavimus. Diekite savo infrastruktūroje, jei reikia."
+        }
+      ]
+    },
+    "caseStudy": {
+      "label": "Tikri rezultatai",
+      "title": "Naudojama gamyboje\n\"Skarda Nams SIA\"",
+      "meta": "METALO APDIRBIMAS · LATVIJA · 20 DARBUOTOJŲ · 2 CNC STAKLĖS",
+      "challengeLabel": "Iššūkis",
+      "challengeText": "\"Skarda Nams\" rengė pasiūlymus rankiniu būdu keliems metalo tipams, atsargas vedė popieriuje ir negalėjo išrašyti atitiktį užtikrinančių sąskaitų be apeigos būdų. Užduočių kainodara netiksli. Cecho matomumas — nulis.",
+      "solutionLabel": "Sprendimas",
+      "solutionText": "Įdiegtas Kenzap Factory su integruotais pasiūlymų rengimo, gamybos maršrutizavimo ir cecho valdymo moduliais. Peppol e-sąskaitos sukonfigūruotos ES atitikčiai. Integruota su Moneo apskaitos programa.",
+      "quote": "\"Operatoriai iš karto prisitaikė prie sąsajos, o dabar mūsų užduočių kainodara patikima. Mokesčių tarifai tvarkomi automatiškai — vien tai sutaupo daug laiko kiekvieną mėnesį.\"",
+      "quoteAuthor": "— KLIENTŲ VADYBININKAS, SKARDA NAMS SIA",
+      "results": [
+        {
+          "value": "~30%",
+          "label": "Pasiūlymų rengimo laiko sumažėjimas"
+        },
+        {
+          "value": "2 sav.",
+          "label": "Operatorių mokymo laikas"
+        },
+        {
+          "value": "100%",
+          "label": "Sąskaitų atitiktis pasiekta"
+        },
+        {
+          "value": "100%",
+          "label": "Skaičiavimo tikslumas pasiektas"
+        },
+        {
+          "value": "Pilnas matomumas",
+          "label": "Į cecho veiklą ir gamybos etapus — nuo pirmosios dienos",
+          "fullWidth": true
+        }
+      ]
+    },
+    "deployment": {
+      "label": "Diegimas",
+      "title": "Veikia ten, kur\nreikia jūsų veiklai",
+      "options": [
+        {
+          "title": "Tiekėjo valdomas debesis",
+          "description": "Pilnai valdomas hosting'as su automatiškais atnaujinimais, atsarginėmis kopijomis ir saugumo pataisymais. Geriausias komandoms, kurios orientuojasi į veiklą, o ne IT."
+        },
+        {
+          "title": "Kliento valdomas debesis",
+          "description": "Diekite savo AWS, Azure arba GCP infrastruktūroje. Pilna kontrolė konfigūracijai, prieigai ir duomenims. Tinka IT gebėjimus turinčioms organizacijoms."
+        },
+        {
+          "title": "Savarankiškas diegimas patalpose",
+          "description": "Diegimas patalpose maksimaliam duomenų suverenitetui. Reikalingas kai kurioms reguliuojamoms sritims. Pilnas funkcijų lygiavertiškumas su debesies variantais."
+        }
+      ]
+    },
+    "timeline": {
+      "label": "Įprasto diegimo grafika",
+      "phases": [
+        {
+          "phase": "1 etapas",
+          "duration": "2–3 sav.",
+          "label": "Tyrimas ir konfigūracija"
+        },
+        {
+          "phase": "2 etapas",
+          "duration": "2–3 sav.",
+          "label": "Duomenų perkėlimas ir testavimas"
+        },
+        {
+          "phase": "3 etapas",
+          "duration": "1–2 sav.",
+          "label": "Mokymai ir paleidimas"
+        },
+        {
+          "phase": "4 etapas",
+          "duration": "Nuolatinis",
+          "label": "Palaikymas po paleidimo"
+        }
+      ]
+    },
+    "nesting": {
+      "label": "Taip pat iš Kenzap",
+      "title": "Pradėkite nuo optimizacijos.\nJunkite likusią dalį, kai būsite pasirengę.",
+      "description": "Kenzap Nesting yra nemokama savarankiška darbalaukio programa DXF lakštų optimizacijai. Veikia Windows ir macOS sistemose. Jokių prenumeratų, debesies ar registracijos. Kai jūsų veikla išaugs, Kenzap Factory sujungs viską.",
+      "primaryCta": "Tyrinėti Kenzap Nesting →",
+      "href": "/nesting",
+      "cardLabel": "Kenzap Nesting — nemokamas atsisiuntimas",
+      "cardTitle": "Supakuokite daugiau. Švaistykite mažiau. Pjaukite greičiau.",
+      "cardDescription": "Įkelkite DXF dalis, nustatykite kiekius, paleiskite optimizacijos variklį, eksportuokite pjovimui paruoštus lakštus. Tiesioginis peržiūrimas algoritmo veikimo metu.",
+      "platforms": [
+        "Windows",
+        "macOS"
+      ]
+    },
+    "contact": {
+      "label": "Susisiekite",
+      "title": "Sužinokite, ar Kenzap Factory\ntinka jūsų veiklai",
+      "description": "Atsakome per vieną darbo dieną. Jokio pardavimo proceso — tik tiesioginis pokalbis apie tai, ar šis sprendimas tinka jūsų veiklai.",
+      "linkedinLabel": "LinkedIn",
+      "linkedinHref": "https://www.linkedin.com/in/pavel-lukasenko/",
+      "emailLabel": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com"
+    },
+    "footer": {
+      "nestingLabel": "Optimizacijos programa",
+      "nestingHref": "/nesting",
+      "emailLabel": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com",
+      "company": "© 2026 Kenzap Pte Ltd"
+    }
   },
-  "hero": {
-    "headline": "ERP sistema, sukurta metalo apdirbimo sektoriui.",
-    "subheadline": "Gamyba, kaštų apskaita ir planavimas, skirti užsakomosios gamybos verslui.",
-    "intro": "Ši sistema sukurta specialiai metalo apdirbimo įmonėms. Ji palaiko realius gamybos procesus, o ne apskaitos sprendimų kompromisus. Orientuota į individualius užsakymus, užsakomąją gamybą ir atitiktį reikalavimams.",
-    "primaryCta": "Susisiekite su mumis",
-    "secondaryCta": "Patikrinkite, ar tinka",
-    "watchDemo": "Žiūrėkite, kaip veikia"
-  },
-  "problem": {
-    "title": "Kodėl universalios ERP sistemos netinka metalo apdirbimo įmonėms",
-    "intro": "Dauguma ERP sistemų sukurtos apskaitos, o ne gamybos poreikiams. Dėl to metalo apdirbimo įmonės dažnai priversti naudoti skaičiuokles ir rankinius procesus užsakymų valdymui bei gamybos eigai kontroliuoti.",
-    "items": [
-      "Netikslūs užsakymų kaštai",
-      "Netinkamai sekamas metalo atsargų kiekis",
-      "Prastai matoma gamybos eiga ceche",
-      "Trūksta skardos pjovimo optimizavimo",
-      "Gamybos planavimas valdomas už ERP ribų",
-      "Kintantys produktų PVM tarifai netvarkom automatiškai"
-    ],
-    "conclusion": "Šios problemos didina atitikties riziką, mažina efektyvumą ir blogina paslaugų kokybę."
-  },
-  "whoFor": {
-    "title": "Kam skirta ši sistema",
-    "intro": "Ši ERP sistema sukurta metalo apdirbimo įmonėms, kurioms reikia:",
-    "criteria": [
-      "Tikslios užsakymų kaštų apskaitos ir medžiagų sekimo",
-      "Metalo žaliavų ir skardos atsargų valdymo",
-      "Pjovimo optimizavimo lazeriu, plazma ar vandens srove",
-      "ES el. sąskaitų faktūrų atitikties",
-      "Europos apskaitos sistemų integracijos",
-      "BDAR ir ES duomenų apsaugos atitikties"
-    ],
-    "typical": "Tipiški naudotojai:",
-    "users": [
-      "Individualių užsakymų cechai",
-      "Sutartiniai gamintojai",
-      "Individualių ar mažų serijų detalių gamintojai",
-      "Skardos apdirbimo dirbtuvės"
-    ],
-    "notFor": "Ši sistema netinka:",
-    "excluded": [
-      "Grynai prekybos verslui",
-      "Proceso pramonei",
-      "Labai standartizuotai masinei gamybai"
-    ]
-  },
-  "manufacturing": {
-    "title": "Gamybiškai orientuotas sprendimas",
-    "intro": "Sistema sukurta remiantis realiais metalo apdirbimo gamybos principais ir nuolat prisitaikoma prie sudėtingų bei kintančių Europos atitikties reikalavimų.",
-    "features": [
-      {
-        "name": "Darbo eigos sekimas",
-        "desc": "Sekite kiekvieną užsakymą nuo pasiūlymo iki pristatymo su pilna darbo eigos kontrole ir operacijų detalizavimu",
-        "icon": "cog"
+  "nestingHomepage": {
+    "meta": {
+      "title": "Kenzap Nesting — DXF lakštų optimizacija metalo apdirbimo įmonėms",
+      "description": "Nemokama DXF lakštų optimizacijos programa metalo apdirbimo įmonėms. Importuokite DXF dalis, optimizuokite lakštus, peržiūrėkite tiesiogiai ir eksportuokite pjovimui paruoštus maketus."
+    },
+    "nav": {
+      "workflow": "Kaip veikia",
+      "features": "Funkcijos",
+      "factory": "Factory ERP",
+      "factoryMobile": "Factory",
+      "cta": "Atsisiųsti nemokamai →",
+      "ctaHref": "https://github.com/kenzap/nesting-app"
+    },
+    "hero": {
+      "eyebrow": "DXF optimizacijos programa",
+      "headlineLine1": "Supakuokite daugiau.",
+      "headlineLine2Prefix": "Švaistykite ",
+      "headlineLine2Accent": "mažiau.",
+      "headlineLine3": "Pjaukite greičiau.",
+      "subheadline": "Darbalaukio optimizacijos programa metalo apdirbimo įmonėms. Įkelkite DXF dalis, nustatykite kiekius, paleiskite variklį — gaukite pilnai supakuotą lakštą, paruoštą pjovimui.",
+      "primaryCta": "↓ Atsisiųsti nemokamai",
+      "primaryCtaHref": "https://github.com/kenzap/nesting-app/releases",
+      "secondaryCta": "Pamatykite gamyboje →",
+      "secondaryCtaHref": "/#case-study",
+      "badges": {
+        "windows": "Windows x64",
+        "mac": "macOS Apple Silicon",
+        "openSource": "Atviras kodas"
       },
-      {
-        "name": "Gamybos planavimas",
-        "desc": "Valdykite gamybos pajėgumus ir planuokite operacijas efektyviai visame ceche",
-        "icon": "factory"
-      },
-      {
-        "name": "Medžiagų planavimas",
-        "desc": "Tikslus MRP, paremtas žaliavų sekimu, skardos atsargų kontrole ir automatizuotu atsargų valdymu",
-        "icon": "format-list-checks"
-      },
-      {
-        "name": "Pjovimo optimizavimas",
-        "desc": "Integruoti optimizavimo algoritmai mažina atliekas ir maksimaliai išnaudoja skardą lazerio, plazmos ir vandens srovės pjovimui",
-        "icon": "content-cut"
-      },
-      {
-        "name": "Realaus laiko gamybos ataskaitos",
-        "desc": "Lietimui optimizuota sąsaja realaus laiko užsakymų sekimui ir ataskaitoms",
-        "icon": "tablet"
-      },
-      {
-        "name": "Užsakymų kaštų apskaita",
-        "desc": "Tikslūs kaštų skaičiavimai kiekvienam užsakymui su medžiagų, darbo, pridėtinių ir atliekų sekimu",
-        "icon": "calculator"
-      },
-      {
-        "name": "Peppol el. sąskaitos",
-        "desc": "Generuokite ES reikalavimus atitinkančias elektronines sąskaitas pagal Peppol BIS Billing 3.0 standartą",
-        "icon": "file-document-outline"
-      },
-      {
-        "name": "PVM ir atitiktis",
-        "desc": "Vietiniams reikalavimams atitinkantis PVM tvarkymas su išimtimis ir nacionalinių apskaitos sistemų integracija",
-        "icon": "shield-check"
-      },
-      {
-        "name": "Tiekėjų valdymas",
-        "desc": "Sekite tiekėjus, pirkimo užsakymus, medžiagų kaštus ir pristatymo grafikus",
-        "icon": "truck"
-      },
-      {
-        "name": "Atviro kodo",
-        "desc": "Sukurta ant atviro kodo technologijų be tiekėjo pririšimo, užtikrinant pilną duomenų pernešamumą ir sistemos nepriklausomybę",
-        "icon": "code"
-      },
-      {
-        "name": "Europos duomenų apsauga",
-        "desc": "BDAR atitinkantis duomenų tvarkymas su pilnu duomenų suverenitetu Europos operacijoms",
-        "icon": "puzzle"
-      },
-      {
-        "name": "AI analitika",
-        "desc": "Dirbtinio intelekto sprendimai gamybos kliūčių identifikavimui ir kaštų apskaitos tikslumui gerinti",
-        "icon": "brain"
+      "previewLabel": "Tiesioginė optimizacijos peržiūra"
+    },
+    "workflow": {
+      "label": "Kaip veikia",
+      "titleLine1": "Nuo DXF iki pjovimui paruošto",
+      "titleLine2": "per šešis žingsnius",
+      "steps": [
+        {
+          "title": "Pridėkite DXF dalis",
+          "description": "Nuvilkite vieną ar kelis DXF failus. Variklis automatiškai aptinka visas optimizuojamas figūras, įskaitant kelių figūrų failus."
+        },
+        {
+          "title": "Peržiūrėkite geometriją",
+          "description": "Nustatykite kiekius kiekvienai daliai. Peržiūrėkite vidinių pjūvių, graviravimo geometrijos ir sluoksnių priskyrimą kiekvienai figūrai prieš paleidimą."
+        },
+        {
+          "title": "Sukonfigūruokite lakštą",
+          "description": "Nustatykite plokštės matmenis, juostų elgseną, tarpus, pasukimo žingsnį, lakšto kraštinę ir graviravimo stilių."
+        },
+        {
+          "title": "Paleiskite variklį",
+          "description": "Spauskite PALEISTI. Vietinė programa tvarko išdėstymą — jokio įkėlimo į debesį, jokio laukimo. Rezultatai grąžinami tiesiogiai."
+        },
+        {
+          "title": "Peržiūrėkite tiesiogiai",
+          "description": "Stebėkite, kaip pildosi lakštai algoritmo veikimo metu. Matykite panaudojimo statistiką ir lakštų skaičiaus atnaujinimą realiu laiku."
+        },
+        {
+          "title": "Eksportuokite į DXF",
+          "description": "Eksportuokite galutinius lakštus su visa originalia sluoksnių struktūra, geometrijos atkūrimu ir išsaugota graviravimo geometrija."
+        }
+      ]
+    },
+    "features": {
+      "label": "Pagrindiniai gebėjimai",
+      "titleLine1": "Viskas, ko tikrai reikia",
+      "titleLine2": "jūsų pjovimo veiklai",
+      "cards": {
+        "performance": {
+          "tag": "Vietinis našumas",
+          "title": "Jokio debesies. Jokios naršyklės. Tik greitis.",
+          "description": "Optimizacijos variklis veikia kaip vietinė programa jūsų kompiuteryje. Dideli DXF failai apdorojami per sekundes, ne minutes. Veikia pilnai neprisijungus — jokių prenumeratų, įkėlimų, vėlavimų."
+        },
+        "dxf": {
+          "tag": "DXF tikslumas",
+          "title": "Pilnas geometrijos palaikymas",
+          "description": "Palaikomos linijos, lankai, apskritimai, daugiakampės linijos, elipsės ir splainai. Vidinių pjūvių geometrija ir graviravimo sluoksniai atskirai išsaugomi eksportuojant.",
+          "chips": [
+            "Linijos",
+            "Lankai",
+            "Apskritimai",
+            "Daugiakampės linijos",
+            "Elipsės",
+            "Splainai"
+          ]
+        },
+        "engraving": {
+          "tag": "Graviravimas",
+          "title": "Du integruoti graviravimo stiliai",
+          "description": "Paprastas režimas vienos linijos raštui ant plonų medžiagų. Kontūrinis režimas kontūruotam raštui su užpildytais kontūrais. Konfigūruojama pagal užduotį, išsaugoma DXF eksporte."
+        },
+        "sheet": {
+          "tag": "Lakštų intelektas",
+          "title": "Plokščių dydžio optimizavimas",
+          "description": "Variklis randa mažiausią plokščių skaičių, reikalingą jūsų užduočiai. Konfigūruokite lakšto kraštinę, dalių tarpus, orientacijos žingsnį ir juostų lygiavimą atskirai."
+        },
+        "workflow": {
+          "tag": "Darbo eiga",
+          "title": "Tiesioginė peržiūra algoritmo veikimo metu",
+          "description": "Nelaukiate, kol variklis baigs, kad pamatytumėte rezultatus. Lakštai pildosi realiu laiku, kai išdėstymai patvirtinami. Keiskite kiekius ar nustatymus ir paleiskite iš naujo per sekundes.",
+          "chips": [
+            "Kelių figūrų DXF aptikimas",
+            "Kiekių kontrolė pagal figūrą",
+            "Sluoksnių peržiūra",
+            "Daugiakampių JSON eksportas"
+          ]
+        }
       }
-    ],
-    "outro": "Gamybos duomenys seka nuo pasiūlymo iki išsiuntimo. Operacinė tikrovė atsispindi planavime ir kaštų apskaitoje."
-  },
-  "workflow": {
-    "title": "Nuo pasiūlymo iki išsiuntimo",
-    "intro": "Sistema sujungia pagrindinius gamybos etapus vienoje darbo eigoje:",
-    "steps": [
-      {
-        "name": "Pasiūlymas ir įkainojimas",
-        "desc": "Tiksliai apskaičiuokite kaštus su medžiagomis, darbu, įrangos laiku ir pjovimo optimizavimu"
+    },
+    "bridge": {
+      "label": "Didesnio vaizdo dalis",
+      "title": "Sujunkite optimizaciją su visa veikla",
+      "copy": "Kenzap Nesting šiandien veikia kaip savarankiška darbalaukio programa. Kai būsite pasirengę, Kenzap Factory sujungs jūsų optimizacijos rezultatus tiesiogiai su užduočių kainodara, gamybos planavimu ir atsargomis — taigi atliekos sekamos ir įkainotos nuo pirmosios dienos.",
+      "cta": "Žiūrėti Kenzap Factory ERP →",
+      "standaloneLabel": "SAVARANKIŠKAS",
+      "standaloneTitle": "Kenzap Nesting",
+      "standaloneText": "DXF įėjimas → optimizuotas lakštas išėjime. Nemokamas, atviras kodas, vietinė darbalaukio programa.",
+      "connectsTo": "jungiasi su",
+      "platformLabel": "PILNA PLATFORMA",
+      "platformTitle": "Kenzap Factory",
+      "platformText": "Pasiūlymai, užduočių kainodara, cecho sekimas, e-sąskaitos. ES paruošta ERP sistema."
+    },
+    "download": {
+      "label": "Pradėkite šiandien",
+      "title": "Nemokamai. Vietinė programa. Atviras kodas.",
+      "sub": "Atsisiųskite versiją savo platformai. Jokios registracijos, licencijos rakto, priklausomybės nuo debesies. Veikia nuo pirmos dienos.",
+      "windows": {
+        "href": "https://github.com/kenzap/nesting-app/releases",
+        "os": "Windows",
+        "label": "Atsisiųsti x64",
+        "note": ".exe diegimo programa"
       },
-      {
-        "name": "Gamybos planavimas",
-        "desc": "Planuokite operacijas visuose darbo centruose su atsargų prieinamumo tikrinimais ir pjovimo optimizavimu"
+      "mac": {
+        "href": "https://github.com/kenzap/nesting-app/releases",
+        "os": "macOS",
+        "label": "Apple Silicon",
+        "note": ".dmg — M1-M5"
       },
-      {
-        "name": "Gamybos vykdymas",
-        "desc": "Lietimo sąsaja užsakymų sekimui, laiko registravimui ir kokybės kontrolei"
-      },
-      {
-        "name": "Sąskaitų išrašymas ir atitiktis",
-        "desc": "Generuokite Peppol reikalavimus atitinkančias el. sąskaitas ir važtaraščius su teisingais PVM tarifais"
-      },
-      {
-        "name": "Pakavimas ir pristatymas",
-        "desc": "Supakuokite, nurašykite sujungtus elementus ir išsiųskite užsakymus klientams"
-      },
-      {
-        "name": "Analitika",
-        "desc": "Sekite faktinius ir numatytus kaštus su pilnu skaidrumu ir atliekų apskaita"
-      }
-    ],
-    "conclusion": "Tikslas – nuoseklumas ir atsekamumas visame užsakymo gyvavimo cikle."
-  },
-  "caseStudy": {
-    "title": "Naudojama realiose gamybos aplinkose",
-    "company": "Skarda Nams SIA",
-    "industry": "Metalo apdirbimas ir individualūs sprendimai",
-    "region": "Rytų Europa",
-    "employees": "20 darbuotojų, 2 CNC staklės",
-    "challenge": "Iššūkis",
-    "challengeText": "Skarda Nams sunkiai sekėsi tiksliai įkainoti naudojant įvairius metalo tipus, atnaujinti atsargų duomenis realiu laiku, nurašyti metalą, planuoti gamybą, išrašyti atitinkančias sąskaitas bei tvarkyti netikslią kaštų apskaitą ir popierine dokumentų sistemą.",
-    "solution": "Sprendimas",
-    "solutionText": "Įdiegta Kenzap Factory su integruotais pasiūlymų, gamybos maršrutų ir gamybos vykdymo moduliais. Staklių operatoriai prisitaikė prie lietimo sąsajos per dvi savaites po diegimo. Sukonfigūruotas Peppol el. sąskaitų išrašymas ES atitikties reikalavimams. Integracija su Moneo apskaitos programine įranga supaprastintam mokesčių ataskaitų teikimui.",
-    "results": "Rezultatai",
-    "resultItems": [
-      "Pasiūlymų rengimo laiko sumažinimas dėl automatizuoto medžiagų skaičiavimo",
-      "Užsakymų kaštų apskaitos tikslumo pagerėjimas",
-      "Pilnas gamybos proceso ir etapų matomumas",
-      "Pasiekta Peppol el. sąskaitų atitiktis su BMD apskaitos sistemos integracija",
-      "Medžiagų atliekų sumažinimas dėl pjovimo optimizavimo",
-      "Greitesnis gamybos planavimas su realiu laiku tikrinant atsargas",
-      "BDAR atitiktis ir ES duomenų rezidavimas palaikomas visuose procesuose"
-    ],
-    "quote": "Turime sistemą, kuri veikia taip, kaip veikia mūsų cechas. Operatoriai iš karto prisitaikė prie sąsajos, o mūsų užsakymų kaštų apskaita dabar patikima. Mokesčių tarifai tvarkomi automatiškai pagal produkto tipą, kas taupo mūsų laiką ir bėdas išrašant sąskaitas.",
-    "quoteAuthor": "Klientų vadybininkas, Skarda Nams SIA",
-    "watchCase": "Žiūrėti atvejo studiją"
-  },
-  "implementation": {
-    "title": "Diegimo metodika",
-    "intro": "Diegimas vyksta pagal standartinę struktūrą, sukurtą minimaliam darbo trikdymui.",
-    "principles": [
-      "Aparatūros sąranka ir programinės įrangos diegimas gamyklos sistemose",
-      "Produktų katalogo ir metalo atsargų duomenų bazės konfigūracija",
-      "Vartotojų vaidmenų paskyrimas ir atsakomybių apibrėžimas",
-      "Dokumentų šablonų pritaikymas (važtaraščiai, sąskaitos, ataskaitos)",
-      "Išsami operatorių ir vadovų komandų mokymai",
-      "Sistemos integracija ir finansinių ataskaitų sinchronizacija"
-    ],
-    "timeline": "Tipinis grafitas:",
-    "phases": [
-      "Tyrimai ir konfigūracija: 2-3 savaitės",
-      "Duomenų perkėlimas ir testavimas: 2-3 savaitės",
-      "Mokymai ir paleidimas: 1-2 savaitės",
-      "Palaikymas po paleidimo: nuolatinis"
-    ],
-    "outro": "Diegimą gali atlikti konsultantai su gamybos ir ERP patirtimi arba Kenzap inžinieriai tiesiogiai."
-  },
-  "deployment": {
-    "title": "Diegimo variantai",
-    "intro": "Sistema palaiko kelis diegimo modelius, atitinkančius veiklos, reguliavimo ir duomenų suvereniteto poreikius.",
-    "options": [
-      {
-        "name": "Tiekėjo valdomas debesis",
-        "desc": "Pilnai valdomas hostingas Europos duomenų centruose su automatiškais atnaujinimais, atsarginėmis kopijomis ir saugos pataisymais. Idealus veiklai orientuotoms įmonėms.",
-        "icon": "cloud-check"
-      },
-      {
-        "name": "Kliento valdomas debesis",
-        "desc": "Diegimas jūsų debesų infrastruktūroje (AWS, Azure, GCP) su pilna konfigūracijos ir prieigos kontrole. Tinka IT pajėgumų turinčioms organizacijoms.",
-        "icon": "cloud-cog"
-      },
-      {
-        "name": "Savivaldis diegimas",
-        "desc": "Lokalus diegimas maksimaliam duomenų suverenitetui ir kontrolei. Reikalingas kai kurioms reguliuojamoms pramonės šakoms ar labai jautrioms operacijoms.",
-        "icon": "server"
-      }
-    ],
-    "outro": "Visi diegimo variantai naudoja tą pačią programinę įrangą, seka tą patį atnaujinimo kelią ir išlaiko funkcijų lygiavertiškumą. Duomenys lieka Europos jurisdikcijose BDAR atitikčiai."
-  },
-  "contact": {
-    "title": "Kontaktai",
-    "intro": "Jei norite suprasti, ar ši sistema tinka jūsų veiklai, susisiekite su mumis pradiniams pokalbiam. Dirbame anglų ir kitomis Europos kalbomis.",
-    "namePlaceholder": "Jūsų vardas",
-    "emailPlaceholder": "El. pašto adresas",
-    "companyPlaceholder": "Įmonės pavadinimas",
-    "messagePlaceholder": "Papasakokite apie savo gamybą: staklių skaičių, įprastus užsakymų dydžius, dabartines sistemas...",
-    "submit": "Siųsti žinutę",
-    "sending": "Siunčiama...",
-    "success": "Žinutė išsiųsta sėkmingai. Susisieksime per 1-2 darbo dienas.",
-    "error": "Nepavyko išsiųsti žinutės. Parašykite mums tiesiogiai: support@kenzap.com",
-    "or": "arba",
-    "linkedin": "Susisiekti LinkedIn",
-    "email": "Rašyti tiesiogiai"
-  },
-  "footer": {
-    "tagline": "Programinė įranga gamybos operacijoms",
-    "company": "© 2026 Kenzap. Visos teisės saugomos.",
-    "note": "Produkto informacija gali keistis. Prieinamumas gali skirtis pagal regioną.",
-    "languages": "Kalbos"
+      "openSourcePrefix": "Šaltinio kodas ir diegimo instrukcijos",
+      "openSourceHref": "https://github.com/kenzap/nesting-app",
+      "openSourceLink": "GitHub",
+      "openSourceLicense": "Apache-2.0 licencija"
+    },
+    "footer": {
+      "factory": "Factory",
+      "email": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com",
+      "company": "© 2026 Kenzap Pte Ltd"
+    }
   }
 }

@@ -1,240 +1,406 @@
 {
-  "nav": {
-    "problem": "Problem",
-    "solution": "Rozwiązanie",
-    "features": "Funkcje",
-    "customers": "Klienci",
-    "contact": "Kontakt"
+  "factoryHomepage": {
+    "meta": {
+      "title": "Kenzap Factory — Zarządzanie produkcją dla firm metalowych",
+      "description": "Oprogramowanie do zarządzania produkcją, kalkulacji kosztów i zgodności prawnej dedykowane firmom metalowym. Warsztaty skrawające, cięcie laserowe, e-fakturowanie Peppol. Gotowe na wymogi UE."
+    },
+    "nav": {
+      "problem": "Problem",
+      "features": "Funkcje",
+      "caseStudy": "Studium przypadku",
+      "nesting": "Aplikacja nestingu",
+      "nestingHref": "/nesting",
+      "cta": "Skontaktuj się z nami →"
+    },
+    "hero": {
+      "eyebrow": "Oprogramowanie do zarządzania produkcją",
+      "headlineTop": "Stworzone dla",
+      "strikeWord": "księgowych.",
+      "headlineAccent": "metalowców.",
+      "subheadline": "Zarządzanie produkcją dostosowane do obróbki metali w systemie zleceń — nie adaptowane z ogólnego oprogramowania księgowego.",
+      "primaryCta": "Umów demo →",
+      "secondaryCta": "Zobacz rzeczywiste efekty ↓",
+      "interfaceLabel": "Interfejs Kenzap Factory",
+      "stats": [
+        {
+          "value": "~30%",
+          "label": "Szybsze wycenianie"
+        },
+        {
+          "value": "2 tyg",
+          "label": "Szkolenie operatorów"
+        },
+        {
+          "value": "e-fakt",
+          "label": "Zgodność prawna"
+        }
+      ]
+    },
+    "problem": {
+      "label": "Problem",
+      "title": "Standardowe oprogramowanie było tworzone dla\nksięgowych, nie dla metalowców.",
+      "quote": "\"Mamy system, który działa tak, jak działa nasz warsztat. Operatorzy przystosowali się natychmiast, a kalkulacja kosztów zleceń jest teraz niezawodna.\"",
+      "quoteAuthor": "— KIEROWNIK KLIENTA, SKARDA NAMS SIA · ŁOTWA",
+      "items": [
+        {
+          "title": "Kalkulacja kosztów zleceń to zgadywanka.",
+          "description": "Rodzaje materiałów, czas cięcia, odpad — większość systemów ERP tego nie modeluje. Dowiadujesz się o stracie dopiero po wysłaniu zlecenia."
+        },
+        {
+          "title": "Magazyn blach nie jest śledzony.",
+          "description": "Wiesz ile masz części, ale nie ile pełnych i częściowych arkuszy — więc zamawiasz za dużo lub za mało."
+        },
+        {
+          "title": "Planowanie produkcji odbywa się w arkuszach.",
+          "description": "Harmonogramowanie, kontrola zdolności i optymalizacja cięcia dzieje się poza systemem, w plikach niedostępnych dla innych."
+        },
+        {
+          "title": "Zgodność prawna to procesy manualne.",
+          "description": "E-fakturowanie Peppol, zmienne stawki VAT, RODO — obsługiwane przez obejścia, nie przez system."
+        },
+        {
+          "title": "Warsztat jest niewidoczny.",
+          "description": "Kierownicy dowiadują się o opóźnieniach i problemach jakościowych za późno, bo operatorzy nie mają systemu do raportowania."
+        }
+      ]
+    },
+    "workflow": {
+      "label": "Jak to działa",
+      "title": "Od wyceny do wysyłki,\nw jednym spójnym procesie",
+      "steps": [
+        {
+          "title": "Wycenianie i szacowanie",
+          "description": "Oblicz koszty zlecenia dokładnie — materiał, robocizna, czas maszyn, optymalizacja cięcia — przed ustaleniem ceny."
+        },
+        {
+          "title": "Planowanie produkcji",
+          "description": "Planuj operacje w centrach roboczych z kontrolą magazynu na żywo i wbudowaną optymalizacją nestingu."
+        },
+        {
+          "title": "Realizacja na hali",
+          "description": "Interfejs dotykowy dla operatorów. Śledzenie zleceń, rejestrowanie czasu i kontrola jakości przy maszynie."
+        },
+        {
+          "title": "Fakturowanie i zgodność",
+          "description": "E-faktury i listy przewozowe zgodne z Peppol generowane automatycznie z prawidłowymi stawkami VAT na typ produktu."
+        },
+        {
+          "title": "Wysyłka i dostawa",
+          "description": "Pakuj zlecenia, rozliczaj elementy zestawów i wysyłaj z pełną dokumentacją. Magazyn aktualizuje się automatycznie."
+        },
+        {
+          "title": "Analityka",
+          "description": "Porównanie kosztów rzeczywistych z szacowanymi na zlecenie. Pełna ewidencja odpadów i widoczność wąskich gardeł produkcji."
+        }
+      ]
+    },
+    "features": {
+      "label": "Główne funkcje",
+      "title": "Wszystko czego potrzebuje firma metalowa\nw jednym systemie",
+      "items": [
+        {
+          "tag": "Produkcja",
+          "title": "Śledzenie przepływu pracy",
+          "description": "Śledź każde zlecenie od wyceny do dostawy ze szczegółami na poziomie operacji. Wiedz dokładnie gdzie jest każde zlecenie w czasie rzeczywistym."
+        },
+        {
+          "tag": "Magazyn",
+          "title": "MRP dla blach",
+          "description": "Śledź zapasy według arkuszy, nie tylko liczby części. Pełne i częściowe arkusze, różne rodzaje metali, automatyczne wyzwalacze zamówień."
+        },
+        {
+          "tag": "Cięcie",
+          "title": "Wbudowany nesting",
+          "description": "Algorytmy nestingu minimalizują marnotrawstwo materiału dla laserów, plazmy i waterjet — połączone bezpośrednio z kalkulacją kosztów więc odpad jest śledzony automatycznie.",
+          "accent": true
+        },
+        {
+          "tag": "Koszty",
+          "title": "Kalkulacja na zlecenia",
+          "description": "Dokładny koszt na zlecenie: materiał, robocizna, koszty ogólne i odpad. Porównuj szacowane z rzeczywistymi na każdym wysłanym zleceniu."
+        },
+        {
+          "tag": "Zgodność",
+          "title": "E-fakturowanie Peppol",
+          "description": "Elektroniczne fakturowanie zgodne z UE przez Peppol BIS Billing 3.0. Stawki VAT obsługiwane automatycznie według typu produktu i regionu klienta."
+        },
+        {
+          "tag": "Hala produkcyjna",
+          "title": "Interfejs dotykowy",
+          "description": "Zaprojektowany dla operatorów przy maszynie. Śledzenie zleceń, rejestrowanie czasu, kontrola jakości — wdrożony w dwa tygodnie w Skarda Nams."
+        },
+        {
+          "tag": "Dostawcy",
+          "title": "Zarządzanie dostawcami",
+          "description": "Zamówienia zakupu, koszty materiałów i harmonogramy dostaw śledzone w tym samym systemie co produkcja."
+        },
+        {
+          "tag": "AI",
+          "title": "Wglądy napędzane AI",
+          "description": "Identyfikuj wąskie gardła produkcji i popraw dokładność kalkulacji kosztów dzięki analizie rzeczywistych danych produkcyjnych napędzanej AI."
+        },
+        {
+          "tag": "Dane",
+          "title": "Open source i RODO",
+          "description": "Bez uzależnienia od dostawcy. Pełna przenośność danych. Zgodność z RODO z rezydencją danych w UE. Wdróż na własnej infrastrukturze jeśli trzeba."
+        }
+      ]
+    },
+    "caseStudy": {
+      "label": "Rzeczywiste wyniki",
+      "title": "Używane w produkcji\nw Skarda Nams SIA",
+      "meta": "OBRÓBKA METALI · ŁOTWA · 20 PRACOWNIKÓW · 2 MASZYNY CNC",
+      "challengeLabel": "Wyzwanie",
+      "challengeText": "Skarda Nams wyceniał ręcznie dla różnych typów metali, prowadził magazyn na papierze i nie mógł wystawiać zgodnych faktur bez obejść. Kalkulacja kosztów zleceń była nieprecyzyjna. Widoczność hali produkcyjnej była zerowa.",
+      "solutionLabel": "Rozwiązanie",
+      "solutionText": "Wdrożono Kenzap Factory ze zintegrowanymi modułami wyceny, trasowania produkcji i realizacji na hali. E-fakturowanie Peppol skonfigurowane dla zgodności z UE. Zintegrowane z oprogramowaniem księgowym Moneo.",
+      "quote": "\"Operatorzy przystosowali się do interfejsu natychmiast, a kalkulacja kosztów zleceń jest teraz niezawodna. Stawki podatkowe są obsługiwane automatycznie — samo to oszczędza nam znaczący czas każdego miesiąca.\"",
+      "quoteAuthor": "— KIEROWNIK KLIENTA, SKARDA NAMS SIA",
+      "results": [
+        {
+          "value": "~30%",
+          "label": "Skrócenie czasu wyceniania"
+        },
+        {
+          "value": "2 tyg",
+          "label": "Czas szkolenia operatorów"
+        },
+        {
+          "value": "100%",
+          "label": "Osiągnięta zgodność fakturowania"
+        },
+        {
+          "value": "100%",
+          "label": "Osiągnięta dokładność szacowania"
+        },
+        {
+          "value": "Pełna widoczność",
+          "label": "Operacji hali produkcyjnej i etapów wytwarzania — od pierwszego dnia",
+          "fullWidth": true
+        }
+      ]
+    },
+    "deployment": {
+      "label": "Wdrożenie",
+      "title": "Działa tam, gdzie\nwymaga Twoja firma",
+      "options": [
+        {
+          "title": "Chmura zarządzana przez dostawcę",
+          "description": "W pełni zarządzany hosting z automatycznymi aktualizacjami, kopiami zapasowymi i łatkami bezpieczeństwa. Najlepsze dla zespołów skupionych na operacjach, nie IT."
+        },
+        {
+          "title": "Chmura zarządzana przez klienta",
+          "description": "Wdróż na własnej infrastrukturze AWS, Azure lub GCP. Pełna kontrola nad konfiguracją, dostępem i danymi. Odpowiednie dla organizacji z kompetencjami IT."
+        },
+        {
+          "title": "Samoobsługowe na własnych serwerach",
+          "description": "Instalacja lokalna dla maksymalnej suwerenności danych. Wymagana w niektórych branżach regulowanych. Pełna zgodność funkcji z opcjami chmurowymi."
+        }
+      ]
+    },
+    "timeline": {
+      "label": "Typowy harmonogram wdrożenia",
+      "phases": [
+        {
+          "phase": "Faza 1",
+          "duration": "2–3 tyg",
+          "label": "Rozpoznanie i konfiguracja"
+        },
+        {
+          "phase": "Faza 2",
+          "duration": "2–3 tyg",
+          "label": "Migracja danych i testy"
+        },
+        {
+          "phase": "Faza 3",
+          "duration": "1–2 tyg",
+          "label": "Szkolenie i start"
+        },
+        {
+          "phase": "Faza 4",
+          "duration": "Ciągła",
+          "label": "Wsparcie po starcie"
+        }
+      ]
+    },
+    "nesting": {
+      "label": "Również od Kenzap",
+      "title": "Zacznij od nestingu.\nPołącz resztę gdy będziesz gotowy.",
+      "description": "Kenzap Nesting to darmowa aplikacja desktopowa do nestingu arkuszy DXF. Natywna na Windows i macOS. Bez subskrypcji, bez chmury, bez rejestracji. Gdy Twoja firma urośnie, Kenzap Factory połączy wszystko.",
+      "primaryCta": "Poznaj Kenzap Nesting →",
+      "href": "/nesting",
+      "cardLabel": "Kenzap Nesting — darmowe pobieranie",
+      "cardTitle": "Pakuj więcej. Marnuj mniej. Tnij szybciej.",
+      "cardDescription": "Upuść części DXF, ustaw ilości, uruchom silnik nestingu, eksportuj gotowe do cięcia arkusze. Podgląd na żywo podczas działania algorytmu.",
+      "platforms": [
+        "Windows",
+        "macOS"
+      ]
+    },
+    "contact": {
+      "label": "Skontaktuj się",
+      "title": "Zobacz czy Kenzap Factory\npasuje do Twojej firmy",
+      "description": "Odpowiadamy w ciągu jednego dnia roboczego. Bez procesu sprzedaży — po prostu bezpośrednia rozmowa o tym, czy to pasuje do Twojej firmy.",
+      "linkedinLabel": "LinkedIn",
+      "linkedinHref": "https://www.linkedin.com/in/pavel-lukasenko/",
+      "emailLabel": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com"
+    },
+    "footer": {
+      "nestingLabel": "Aplikacja nestingu",
+      "nestingHref": "/nesting",
+      "emailLabel": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com",
+      "company": "© 2026 Kenzap Pte Ltd"
+    }
   },
-  "hero": {
-    "headline": "ERP stworzony dla branży metalowej.",
-    "subheadline": "Produkcja, kalkulacja kosztów i planowanie zaprojektowane dla wytwarzania na zamówienie.",
-    "intro": "System zaprojektowany specjalnie dla firm obróbki metali. Wspiera rzeczywiste procesy produkcyjne, a nie obejścia zorientowane na księgowość. Skupia się na warsztatach, produkcji na zamówienie i zgodności z przepisami.",
-    "primaryCta": "Skontaktuj się z nami",
-    "secondaryCta": "Sprawdź czy to pasuje",
-    "watchDemo": "Zobacz jak to działa"
-  },
-  "problem": {
-    "title": "Dlaczego standardowe systemy ERP zawodzą firmy metalowe",
-    "intro": "Większość systemów ERP jest zaprojektowana wokół księgowości, a nie produkcji. W rezultacie firmy metalowe często polegają na arkuszach kalkulacyjnych i procesach manualnych do zarządzania zleceniami i wykonaniem na hali produkcyjnej.",
-    "items": [
-      "Niedokładna kalkulacja kosztów zleceń",
-      "Nieprawidłowe śledzenie zapasów metali",
-      "Słaba widoczność operacji na hali produkcyjnej",
-      "Brak optymalizacji cięcia dla blach",
-      "Planowanie produkcji zarządzane poza systemem ERP",
-      "Zmienne stawki podatkowe produktów nie są obsługiwane automatycznie"
-    ],
-    "conclusion": "Te problemy zwiększają ryzyko niezgodności, obniżają wydajność i pogarszają jakość obsługi."
-  },
-  "whoFor": {
-    "title": "Dla kogo przeznaczony jest ten system",
-    "intro": "Ten ERP jest przeznaczony dla firm obróbki metali z:",
-    "criteria": [
-      "Potrzebą dokładnej kalkulacji kosztów zleceń i śledzenia materiałów",
-      "Wymogami zarządzania zapasami metali i blach",
-      "Potrzebami optymalizacji cięcia dla lasera, plazmy lub strumieniem wodnym",
-      "Obowiązkami zgodności z e-fakturowaniem UE",
-      "Wymogami integracji z europejskimi systemami księgowymi",
-      "Potrzebą zgodności z RODO i ochroną danych UE"
-    ],
-    "typical": "Typowi użytkownicy to:",
-    "users": [
-      "Warsztaty produkcyjne",
-      "Producenci kontraktowi",
-      "Zakłady produkujące części na zamówienie lub w małych seriach",
-      "Warsztaty obróbki blach"
-    ],
-    "notFor": "Ten system nie jest przeznaczony dla:",
-    "excluded": [
-      "Przedsiębiorstw czysto dystrybucyjnych",
-      "Produkcji procesowej",
-      "Wysoce standaryzowanej produkcji masowej"
-    ]
-  },
-  "manufacturing": {
-    "title": "Projektowanie zorientowane na produkcję",
-    "intro": "System jest zbudowany wokół rzeczywistych koncepcji produkcyjnych używanych w obróbce metali i stale dostosowuje się do złożonych i rozwijających się europejskich wymogów zgodności.",
-    "features": [
-      {
-        "name": "Śledzenie przepływu pracy",
-        "desc": "Śledź każde zlecenie od oferty do dostawy z pełną widocznością przepływu pracy i szczegółami na poziomie operacji",
-        "icon": "cog"
+  "nestingHomepage": {
+    "meta": {
+      "title": "Kenzap Nesting — Nesting arkuszy DXF dla firm metalowych",
+      "description": "Darmowe natywne oprogramowanie do nestingu arkuszy DXF dla firm metalowych. Importuj części DXF, optymalizuj arkusze, podgląd na żywo i eksportuj gotowe układy do cięcia."
+    },
+    "nav": {
+      "workflow": "Jak to działa",
+      "features": "Funkcje",
+      "factory": "Factory ERP",
+      "factoryMobile": "Factory",
+      "cta": "Pobierz za darmo →",
+      "ctaHref": "https://github.com/kenzap/nesting-app"
+    },
+    "hero": {
+      "eyebrow": "Oprogramowanie do nestingu DXF",
+      "headlineLine1": "Pakuj więcej.",
+      "headlineLine2Prefix": "Marnuj ",
+      "headlineLine2Accent": "mniej",
+      "headlineLine3": "Tnij szybciej.",
+      "subheadline": "Natywna aplikacja desktopowa do nestingu dla firm metalowych. Upuść części DXF, ustaw ilości, uruchom silnik — otrzymaj w pełni zapakowany arkusz gotowy do cięcia.",
+      "primaryCta": "↓ Pobierz za darmo",
+      "primaryCtaHref": "https://github.com/kenzap/nesting-app/releases",
+      "secondaryCta": "Zobacz w produkcji →",
+      "secondaryCtaHref": "/#case-study",
+      "badges": {
+        "windows": "Windows x64",
+        "mac": "macOS Apple Silicon",
+        "openSource": "Open source"
       },
-      {
-        "name": "Planowanie produkcji",
-        "desc": "Zarządzaj zdolnościami produkcyjnymi i planuj operacje efektywnie na całej hali produkcyjnej",
-        "icon": "factory"
-      },
-      {
-        "name": "Planowanie materiałowe",
-        "desc": "Dokładny MRP wsparty śledzeniem surowców, widocznością zapasów blach i automatycznym zarządzaniem magazynem",
-        "icon": "format-list-checks"
-      },
-      {
-        "name": "Optymalizacja cięcia",
-        "desc": "Wbudowane algorytmy układania minimalizują odpady i maksymalizują wykorzystanie blach dla cięcia laserowego, plazmowego i wodnego",
-        "icon": "content-cut"
-      },
-      {
-        "name": "Raportowanie produkcji w czasie rzeczywistym",
-        "desc": "Interfejs zoptymalizowany pod panele dotykowe do śledzenia zleceń i raportowania przez operatorów maszyn w czasie rzeczywistym",
-        "icon": "tablet"
-      },
-      {
-        "name": "Kalkulacja kosztów na poziomie zleceń",
-        "desc": "Dokładne obliczanie kosztów na zlecenie ze śledzeniem materiałów, robocizny, kosztów ogólnych i braków",
-        "icon": "calculator"
-      },
-      {
-        "name": "E-fakturowanie Peppol",
-        "desc": "Generowanie faktur elektronicznych zgodnych z UE według standardu Peppol BIS Billing 3.0",
-        "icon": "file-document-outline"
-      },
-      {
-        "name": "VAT i zgodność",
-        "desc": "Lokalna obsługa VAT ze zwolnieniami i integracją z krajowymi systemami księgowymi",
-        "icon": "shield-check"
-      },
-      {
-        "name": "Zarządzanie dostawcami",
-        "desc": "Śledzenie dostawców, zamówień zakupu, kosztów materiałów i harmonogramów dostaw",
-        "icon": "truck"
-      },
-      {
-        "name": "Open Source",
-        "desc": "Zbudowany na technologiach open source bez uzależnienia od dostawcy, zapewniając pełną przenośność danych i niezależność systemu",
-        "icon": "code"
-      },
-      {
-        "name": "Europejska ochrona danych",
-        "desc": "Obsługa danych zgodna z RODO z pełną suwerennością danych dla operacji europejskich",
-        "icon": "puzzle"
-      },
-      {
-        "name": "Analizy napędzane AI",
-        "desc": "Wglądy napędzane AI do identyfikacji wąskich gardeł produkcyjnych i poprawy dokładności kalkulacji zleceń",
-        "icon": "brain"
+      "previewLabel": "Podgląd nestingu na żywo"
+    },
+    "workflow": {
+      "label": "Jak to działa",
+      "titleLine1": "Od DXF do gotowego do cięcia",
+      "titleLine2": "w sześciu krokach",
+      "steps": [
+        {
+          "title": "Dodaj części DXF",
+          "description": "Przeciągnij i upuść jeden lub więcej plików DXF. Silnik wykrywa wszystkie kształty możliwe do zagnieżdżenia automatycznie, włączając pliki wielokształtne."
+        },
+        {
+          "title": "Sprawdź geometrię",
+          "description": "Ustaw ilości dla każdej części. Sprawdź wycięcia wewnętrzne, geometrię grawerowania i przypisania warstw dla każdego kształtu przed uruchomieniem."
+        },
+        {
+          "title": "Skonfiguruj arkusz",
+          "description": "Ustaw wymiary blachy, zachowanie pasków, odstępy, krok obrotu, margines arkusza i styl grawerowania."
+        },
+        {
+          "title": "Uruchom silnik",
+          "description": "Kliknij URUCHOM. Natywny plik binarny obsługuje rozmieszczenie — bez przesyłania do chmury, bez czekania. Wyniki przychodzą na żywo."
+        },
+        {
+          "title": "Podgląd na żywo",
+          "description": "Oglądaj jak arkusze się wypełniają podczas pracy algorytmu. Zobacz statystyki wykorzystania i liczbę arkuszy aktualizowane w czasie rzeczywistym."
+        },
+        {
+          "title": "Eksportuj do DXF",
+          "description": "Eksportuj finalne arkusze z całą oryginalną strukturą warstw, rekonstrukcją geometrii i zachowaną geometrią grawerowania."
+        }
+      ]
+    },
+    "features": {
+      "label": "Główne możliwości",
+      "titleLine1": "Wszystko czego naprawdę potrzebuje",
+      "titleLine2": "Twoja operacja cięcia",
+      "cards": {
+        "performance": {
+          "tag": "Wydajność natywna",
+          "title": "Bez chmury. Bez przeglądarki. Po prostu szybko.",
+          "description": "Silnik nestingu działa jako natywny plik binarny na Twojej maszynie. Duże pliki DXF przetwarzane w sekundy, nie minuty. Działa w pełni offline — bez subskrypcji, bez przesyłania, bez opóźnień."
+        },
+        "dxf": {
+          "tag": "Wierność DXF",
+          "title": "Pełne wsparcie geometrii",
+          "description": "Linie, łuki, koła, polilinie, elipsy i krzywe wszystkie obsługiwane. Geometria wycięć wewnętrznych i warstwy grawerowania są zachowane osobno przez eksport.",
+          "chips": [
+            "Linie",
+            "Łuki",
+            "Koła",
+            "Polilinie",
+            "Elipsy",
+            "Krzywe"
+          ]
+        },
+        "engraving": {
+          "tag": "Grawerowanie",
+          "title": "Dwa wbudowane style grawerowania",
+          "description": "Tryb prosty dla jednoliniowego napisania na cienkich materiałach. Tryb obrysowany dla napisów z obrysem i wypełnionymi konturami. Konfigurowane na zlecenie, zachowane w eksporcie DXF."
+        },
+        "sheet": {
+          "tag": "Inteligencja arkuszy",
+          "title": "Optymalizacja rozmiaru blach",
+          "description": "Silnik znajduje minimalną liczbę blach potrzebną dla Twojego zlecenia. Konfiguruj margines arkusza, odstępy części, krok orientacji i wyrównanie pasków niezależnie."
+        },
+        "workflow": {
+          "tag": "Przepływ pracy",
+          "title": "Podgląd na żywo podczas działania algorytmu",
+          "description": "Nie czekasz na zakończenie silnika przed zobaczeniem wyników. Arkusze wypełniają się w czasie rzeczywistym gdy rozmieszczenia są potwierdzane. Zmień ilości lub ustawienia i uruchom ponownie w sekundy.",
+          "chips": [
+            "Wykrywanie wielokształtnych DXF",
+            "Kontrola ilości na kształt",
+            "Podgląd świadomy warstw",
+            "Eksport JSON wielokątów"
+          ]
+        }
       }
-    ],
-    "outro": "Dane produkcyjne płyną od oferty do wysyłki. Rzeczywistość operacyjna jest odzwierciedlona w planowaniu i kalkulacji kosztów."
-  },
-  "workflow": {
-    "title": "Od oferty do wysyłki",
-    "intro": "System łączy kluczowe kroki produkcyjne w jeden przepływ pracy:",
-    "steps": [
-      {
-        "name": "Wycena i oszacowanie",
-        "desc": "Dokładne obliczanie kosztów z materiałami, robocizną, czasem maszyn i optymalizacją cięcia"
+    },
+    "bridge": {
+      "label": "Część większej całości",
+      "title": "Połącz nesting z całą swoją operacją",
+      "copy": "Kenzap Nesting działa jako samodzielne narzędzie desktopowe już dziś. Gdy będziesz gotowy, Kenzap Factory łączy Twoje wyjście nestingu bezpośrednio z kalkulacją kosztów zleceń, planowaniem produkcji i magazynem — więc odpad jest śledzony i wyceniany od pierwszego dnia.",
+      "cta": "Zobacz Kenzap Factory ERP →",
+      "standaloneLabel": "SAMODZIELNE",
+      "standaloneTitle": "Kenzap Nesting",
+      "standaloneText": "DXF wchodzi → zoptymalizowany arkusz wychodzi. Darmowy, open source, natywny desktop.",
+      "connectsTo": "łączy się z",
+      "platformLabel": "PEŁNA PLATFORMA",
+      "platformTitle": "Kenzap Factory",
+      "platformText": "Wycenianie, kalkulacja kosztów zleceń, śledzenie hali produkcyjnej, e-fakturowanie. ERP gotowy na UE."
+    },
+    "download": {
+      "label": "Zacznij już dziś",
+      "title": "Darmowy. Natywny. Open source.",
+      "sub": "Pobierz wersję dla swojej platformy. Bez rejestracji, bez klucza licencyjnego, bez zależności od chmury. Działa od pierwszego dnia.",
+      "windows": {
+        "href": "https://github.com/kenzap/nesting-app/releases",
+        "os": "Windows",
+        "label": "Pobierz x64",
+        "note": "Instalator .exe"
       },
-      {
-        "name": "Planowanie produkcji",
-        "desc": "Planowanie operacji w centrach roboczych ze sprawdzaniem dostępności zapasów i optymalizacją cięcia"
+      "mac": {
+        "href": "https://github.com/kenzap/nesting-app/releases",
+        "os": "macOS",
+        "label": "Apple Silicon",
+        "note": ".dmg — M1-M5"
       },
-      {
-        "name": "Wykonanie na hali produkcyjnej",
-        "desc": "Interfejs panelu dotykowego do śledzenia zleceń, rejestracji czasu i kontroli jakości"
-      },
-      {
-        "name": "Fakturowanie i zgodność",
-        "desc": "Generowanie e-faktur zgodnych z Peppol i listów przewozowych z prawidłowymi stawkami VAT"
-      },
-      {
-        "name": "Wysyłka i dostawa",
-        "desc": "Pakowanie, rozchód pozycji zestawionych i wysyłka zleceń do klientów"
-      },
-      {
-        "name": "Analityka",
-        "desc": "Śledzenie kosztów rzeczywistych vs. szacowanych z pełną przejrzystością i rozliczaniem braków"
-      }
-    ],
-    "conclusion": "Celem jest spójność i możliwość śledzenia przez cały cykl życia zlecenia."
-  },
-  "caseStudy": {
-    "title": "Używany w rzeczywistych środowiskach produkcyjnych",
-    "company": "Skarda Nams SIA",
-    "industry": "Obróbka metali i części na zamówienie",
-    "region": "Europa Wschodnia",
-    "employees": "20 pracowników, 2 maszyny CNC",
-    "challenge": "Wyzwanie",
-    "challengeText": "Skarda Nams miała problemy z dokładną wyceną przy użyciu różnych typów metali, aktualizacją zapasów na żywo, możliwościami rozchodu metali, planowaniem produkcji, zgodnym fakturowaniem, niedokładną kalkulacją kosztów i śledzeniem papierowym.",
-    "solution": "Rozwiązanie",
-    "solutionText": "Wdrożono Kenzap Factory ze zintegrowanymi modułami wyceny, trasowania produkcji i wykonania na hali produkcyjnej. Operatorzy maszyn zaadoptowali interfejs panelu dotykowego w ciągu dwóch tygodni od wdrożenia. E-fakturowanie Peppol zostało skonfigurowane aby spełnić wymogi zgodności UE. Integracja z oprogramowaniem księgowym Moneo dla uproszczonego raportowania podatkowego.",
-    "results": "Rezultaty",
-    "resultItems": [
-      "Redukcja czasu wyceny dzięki automatycznej kalkulacji materiałów",
-      "Poprawa dokładności kalkulacji kosztów zleceń",
-      "Pełna widoczność operacji na hali produkcyjnej i etapów wytwarzania",
-      "Osiągnięto zgodność z e-fakturowaniem Peppol, z integracją z oprogramowaniem księgowym BMD",
-      "Redukcja odpadów materiałowych dzięki optymalizacji cięcia",
-      "Szybsze planowanie produkcji z kontrolą zapasów w czasie rzeczywistym",
-      "Zachowana zgodność z RODO i rezydencja danych UE podczas wszystkich operacji"
-    ],
-    "quote": "Mamy system, który działa tak jak nasza hala produkcyjna. Operatorzy natychmiast zaadoptowali interfejs, a nasza kalkulacja kosztów zleceń jest teraz wiarygodna. Stawki podatkowe są obsługiwane automatycznie na podstawie typu produktu, co oszczędza nam czas i problemy podczas fakturowania.",
-    "quoteAuthor": "Kierownik Klienta, Skarda Nams SIA",
-    "watchCase": "Zobacz studium przypadku"
-  },
-  "implementation": {
-    "title": "Podejście do wdrożenia",
-    "intro": "Wdrożenia następują według standardowej struktury zaprojektowanej aby zminimalizować zakłócenia.",
-    "principles": [
-      "Konfiguracja sprzętu i instalacja oprogramowania na systemach fabrycznych",
-      "Konfiguracja katalogu produktów i bazy danych zapasów metali",
-      "Przypisanie ról użytkowników i definicja odpowiedzialności",
-      "Dostosowanie szablonów dokumentów (listy przewozowe, faktury, raporty)",
-      "Kompleksowe szkolenie dla operatorów i zespołów zarządzających",
-      "Integracja systemu i synchronizacja raportowania finansowego"
-    ],
-    "timeline": "Typowy harmonogram:",
-    "phases": [
-      "Analiza i konfiguracja: 2-3 tygodnie",
-      "Migracja danych i testowanie: 2-3 tygodnie",
-      "Szkolenie i uruchomienie: 1-2 tygodnie",
-      "Wsparcie po uruchomieniu: ciągłe"
-    ],
-    "outro": "Wdrożenie może być realizowane przez konsultantów z doświadczeniem w produkcji i ERP lub bezpośrednio przez inżyniera Kenzap."
-  },
-  "deployment": {
-    "title": "Opcje wdrożenia",
-    "intro": "System wspiera wiele modeli wdrożenia aby dopasować się do potrzeb operacyjnych, regulacyjnych i suwerenności danych.",
-    "options": [
-      {
-        "name": "Chmura zarządzana przez dostawcę",
-        "desc": "W pełni zarządzany hosting w europejskich centrach danych z automatycznymi aktualizacjami, kopiami zapasowymi i łatkami bezpieczeństwa. Idealne dla firm skupionych na operacjach.",
-        "icon": "cloud-check"
-      },
-      {
-        "name": "Chmura zarządzana przez klienta",
-        "desc": "Wdrożenie na własnej infrastrukturze chmurowej (AWS, Azure, GCP) z pełną kontrolą nad konfiguracją i dostępem. Odpowiednie dla organizacji z możliwościami IT.",
-        "icon": "cloud-cog"
-      },
-      {
-        "name": "Wdrożenie własne",
-        "desc": "Instalacja lokalna dla maksymalnej suwerenności danych i kontroli. Wymagane w niektórych regulowanych branżach lub wysoce wrażliwych operacjach.",
-        "icon": "server"
-      }
-    ],
-    "outro": "Wszystkie opcje wdrożenia używają tego samego oprogramowania, podążają tą samą ścieżką aktualizacji i zachowują parzystość funkcji. Dane pozostają w jurysdykcjach europejskich dla zgodności z RODO."
-  },
-  "contact": {
-    "title": "Kontakt",
-    "intro": "Jeśli chcesz zrozumieć czy ten system pasuje do Twojej operacji, skontaktuj się z nami w celu wstępnej rozmowy. Pracujemy w języku angielskim i innych językach europejskich.",
-    "namePlaceholder": "Twoje imię",
-    "emailPlaceholder": "Adres email",
-    "companyPlaceholder": "Nazwa firmy",
-    "messagePlaceholder": "Opowiedz nam o swojej konfiguracji produkcyjnej: liczba maszyn, typowe rozmiary zleceń, obecne systemy...",
-    "submit": "Wyślij wiadomość",
-    "sending": "Wysyłanie...",
-    "success": "Wiadomość została wysłana pomyślnie. Skontaktujemy się z Tobą w ciągu 1-2 dni roboczych.",
-    "error": "Nie udało się wysłać wiadomości. Napisz do nas bezpośrednio na support@kenzap.com",
-    "or": "lub",
-    "linkedin": "Połącz się na LinkedIn",
-    "email": "Napisz do nas bezpośrednio"
-  },
-  "footer": {
-    "tagline": "Oprogramowanie dla operacji produkcyjnych",
-    "company": "© 2026 Kenzap. Wszystkie prawa zastrzeżone.",
-    "note": "Informacje o produkcie mogą ulec zmianie. Dostępność może różnić się w zależności od regionu.",
-    "languages": "Języki"
+      "openSourcePrefix": "Kod źródłowy i instrukcje budowania na",
+      "openSourceHref": "https://github.com/kenzap/nesting-app",
+      "openSourceLink": "GitHub",
+      "openSourceLicense": "Licencja Apache-2.0"
+    },
+    "footer": {
+      "factory": "Factory",
+      "email": "support@kenzap.com",
+      "emailHref": "mailto:support@kenzap.com",
+      "company": "© 2026 Kenzap Pte Ltd"
+    }
   }
 }

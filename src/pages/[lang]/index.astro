@@ -1,0 +1,18 @@
+---
+import FactoryHomepage from '../../components/FactoryHomepage.astro';
+import Layout from '../../layouts/Layout.astro';
+import { getAvailableLocales, getLocaleGroups, getLocalizedMessages, getStaticLocaleParams } from '../../i18n/locales';
+
+export function getStaticPaths() {
+  return getStaticLocaleParams();
+}
+
+const { lang } = Astro.params;
+const translations = getLocalizedMessages(lang!).factoryHomepage;
+const locales = getAvailableLocales();
+const localeGroups = getLocaleGroups('factory');
+---
+
+<Layout title={translations.meta.title} description={translations.meta.description} lang={lang}>
+  <FactoryHomepage translations={translations} locales={locales} localeGroups={localeGroups} lang={lang} />
+</Layout>
