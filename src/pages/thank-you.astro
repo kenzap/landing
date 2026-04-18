@@ -1,0 +1,123 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Thank You — Kenzap"
+  description="Thank you for contacting Kenzap support."
+  lang="en"
+>
+  <main class="thanks-page">
+    <section class="thanks-shell">
+      <div class="eyebrow">Thank you</div>
+      <h1>Your support request has been received.</h1>
+      <p class="intro">
+        Thanks for contacting Kenzap Nesting App support. We’ll review your message and reply to the
+        email address you provided as soon as possible.
+      </p>
+      <div class="actions">
+        <a href="/nesting-support" class="btn-secondary">Submit another request</a>
+        <a href="/nesting" class="btn-primary">Back to Kenzap Nesting</a>
+      </div>
+    </section>
+  </main>
+
+  <style>
+    :global(body) {
+      background: #f6f7fc;
+      color: #0a0a08;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.6;
+    }
+
+    .thanks-page {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    .thanks-shell {
+      max-width: 760px;
+      width: 100%;
+      padding: 48px;
+      border: 1px solid #dde1f0;
+      background: rgba(246, 247, 252, 0.94);
+    }
+
+    .eyebrow,
+    .btn-primary,
+    .btn-secondary {
+      font-family: 'DM Mono', monospace;
+    }
+
+    .eyebrow {
+      margin-bottom: 16px;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #1941df;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      font-family: 'Syne', sans-serif;
+      font-size: clamp(34px, 5vw, 54px);
+      line-height: 0.98;
+      letter-spacing: -0.02em;
+    }
+
+    .intro {
+      max-width: 620px;
+      margin: 0 0 32px;
+      font-size: 18px;
+      color: #4a4f5c;
+    }
+
+    .actions {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 28px;
+      border-radius: 2px;
+      text-decoration: none;
+      font-size: 13px;
+      letter-spacing: 0.04em;
+      transition: background 0.2s, color 0.2s, transform 0.15s, border-color 0.2s;
+    }
+
+    .btn-primary {
+      background: #0a0a08;
+      color: #f6f7fc;
+    }
+
+    .btn-primary:hover {
+      background: #1941df;
+      transform: translateY(-1px);
+    }
+
+    .btn-secondary {
+      border: 1px solid #dde1f0;
+      color: #4a4f5c;
+    }
+
+    .btn-secondary:hover {
+      border-color: #0a0a08;
+      color: #0a0a08;
+    }
+
+    @media (max-width: 720px) {
+      .thanks-shell {
+        padding: 32px 24px;
+      }
+    }
+  </style>
+</Layout>

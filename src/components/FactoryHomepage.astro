@@ -313,7 +313,11 @@ const footerIcons = {
       </svg>
     </a>
     <div class="footer-links">
+      <a href="/factory-support">Support</a>
+      <span class="separator">·</span>
       <a href={t.footer.nestingHref}>{t.footer.nestingLabel}</a>
+      <span class="separator">·</span>
+      <a href="/privacy-policy">Privacy Policy</a>
       <span class="separator">·</span>
       <a href={t.footer.emailHref}>{t.footer.emailLabel}</a>
     </div>
@@ -830,7 +834,7 @@ const footerIcons = {
 
   .light,
   .light-title {
-    color: rgba(255, 255, 255, 0.35);
+    color: rgba(255, 255, 255, 0.55);
   }
 
   .light-title,
@@ -1430,6 +1434,15 @@ const footerIcons = {
     .hero-left {
       padding-top: 48px;
       padding-bottom: 48px;
+      min-width: 0;
+    }
+
+    .hero-headline {
+      max-width: 100%;
+      font-size: clamp(30px, 8vw, 48px);
+      overflow-wrap: anywhere;
+      word-break: break-word;
+      hyphens: auto;
     }
 
     .hero-right {
@@ -1458,6 +1471,19 @@ const footerIcons = {
       flex-direction: column;
       align-items: flex-start;
       gap: 20px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .hero-headline {
+      font-size: clamp(26px, 9vw, 36px);
+      line-height: 0.98;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .hero-headline {
+      font-size: 32px;
     }
   }
 </style>

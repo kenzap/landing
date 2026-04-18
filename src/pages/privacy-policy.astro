@@ -1,0 +1,244 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Privacy Policy — Kenzap"
+  description="Privacy policy for the Kenzap website and Kenzap Nesting App."
+  lang="en"
+>
+  <main class="privacy-page">
+    <section class="privacy-shell">
+      <a class="back-link" href="/">Back to Kenzap</a>
+      <div class="eyebrow">Privacy Policy</div>
+      <h1>Privacy Policy for the Kenzap website and Kenzap Nesting App</h1>
+      <p class="intro">
+        This Privacy Policy explains what information may be processed when you use the Kenzap
+        website and the Kenzap Nesting App. As of April 18, 2026, Kenzap Nesting App does not
+        collect or transmit user data to Kenzap.
+      </p>
+
+      <div class="meta">Last updated: April 18, 2026</div>
+
+      <section>
+        <h2>1. Scope</h2>
+        <p>
+          This policy applies to:
+        </p>
+        <ul>
+          <li>the Kenzap marketing website and related localized pages,</li>
+          <li>the Kenzap Nesting App desktop application, and</li>
+          <li>direct contact with us through the email addresses or external profiles linked on the website.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>2. Website data</h2>
+        <p>
+          The website is primarily informational. We do not require account registration to browse it.
+        </p>
+        <p>
+          When you visit the website, standard technical information may be processed by the hosting
+          infrastructure or your browser, such as IP address, browser type, device information,
+          timestamps, requested pages, and basic request logs. This data is typically used for site
+          delivery, reliability, and security.
+        </p>
+        <p>
+          If you contact us by email, LinkedIn, GitHub, YouTube, or another linked third-party service,
+          we may receive the information you choose to share with us through those services.
+        </p>
+        <p>
+          If you use the support form on this website, the submission is processed through Netlify
+          Forms. In that case, the information you enter in the form, along with related technical
+          metadata required to deliver and protect the form submission, may be processed by Netlify.
+        </p>
+      </section>
+
+      <section>
+        <h2>3. Kenzap Nesting App data</h2>
+        <p>
+          Kenzap Nesting App is a desktop application intended to process nesting jobs locally on the
+          user’s machine.
+        </p>
+        <p>
+          At this time, the app does not intentionally collect analytics, telemetry, personal data,
+          uploaded files, DXF content, job history, or cloud account data for transmission to Kenzap.
+        </p>
+        <p>
+          DXF files and other working data are handled locally by the app on your device. If this
+          changes in a future release, this Privacy Policy should be updated before or at the time such
+          processing is introduced.
+        </p>
+      </section>
+
+      <section>
+        <h2>4. Cookies and tracking</h2>
+        <p>
+          The current website implementation is not intended to provide user accounts or in-app
+          behavioral tracking. However, basic browser, hosting, or third-party service behavior may
+          still involve technical storage or network logging necessary to load pages and external links.
+        </p>
+        <p>
+          The support form also uses spam-protection measures including Netlify reCAPTCHA. Depending on
+          how the service is delivered, Netlify and reCAPTCHA providers may process device, browser,
+          network, and interaction data to help distinguish legitimate submissions from automated abuse.
+        </p>
+      </section>
+
+      <section>
+        <h2>5. Third-party services</h2>
+        <p>
+          The website links to or relies on third-party services including Netlify, GitHub, LinkedIn,
+          YouTube, and reCAPTCHA-related providers. If you interact with those services, their own
+          privacy policies and terms apply.
+        </p>
+      </section>
+
+      <section>
+        <h2>6. Data retention</h2>
+        <p>
+          We only expect to retain information that you voluntarily send to us, or technical records
+          reasonably required for security, delivery, and support. Retention periods depend on the
+          nature of the communication or operational need.
+        </p>
+      </section>
+
+      <section>
+        <h2>7. Your rights</h2>
+        <p>
+          Depending on your jurisdiction, you may have rights to request access, correction, deletion,
+          or restriction regarding personal data that relates to you. If you want to make such a
+          request, contact us using the email below.
+        </p>
+      </section>
+
+      <section>
+        <h2>8. Contact</h2>
+        <p>
+          For privacy-related questions, contact:
+        </p>
+        <p>
+          <a href="mailto:support@kenzap.com">support@kenzap.com</a>
+        </p>
+      </section>
+    </section>
+  </main>
+
+  <style>
+    :global(body) {
+      background: #f6f7fc;
+      color: #0a0a08;
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.6;
+    }
+
+    .privacy-page {
+      min-height: 100vh;
+      padding: 48px 24px 96px;
+    }
+
+    .privacy-shell {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 48px;
+      background: rgba(246, 247, 252, 0.92);
+      border: 1px solid #dde1f0;
+    }
+
+    .back-link,
+    .eyebrow,
+    .meta {
+      font-family: 'DM Mono', monospace;
+    }
+
+    .back-link {
+      display: inline-flex;
+      margin-bottom: 28px;
+      color: #4a4f5c;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .back-link:hover {
+      color: #0a0a08;
+    }
+
+    .eyebrow {
+      margin-bottom: 16px;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #1941df;
+    }
+
+    h1,
+    h2 {
+      font-family: 'Syne', sans-serif;
+      letter-spacing: -0.02em;
+      color: #0a0a08;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: clamp(34px, 5vw, 56px);
+      line-height: 0.98;
+    }
+
+    .intro {
+      margin-bottom: 16px;
+      font-size: 18px;
+      color: #4a4f5c;
+    }
+
+    .meta {
+      margin-bottom: 40px;
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      color: #8a9099;
+    }
+
+    section + section {
+      margin-top: 32px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      font-size: 24px;
+      line-height: 1.1;
+    }
+
+    p,
+    li {
+      font-size: 15px;
+      color: #4a4f5c;
+    }
+
+    p + p {
+      margin-top: 12px;
+    }
+
+    ul {
+      margin: 12px 0 0 20px;
+      padding: 0;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    a {
+      color: #0a0a08;
+    }
+
+    @media (max-width: 720px) {
+      .privacy-page {
+        padding: 24px 16px 72px;
+      }
+
+      .privacy-shell {
+        padding: 32px 24px;
+      }
+    }
+  </style>
+</Layout>

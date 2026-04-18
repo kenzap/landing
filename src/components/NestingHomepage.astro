@@ -221,7 +221,11 @@ const mobileLanguages = languageGroups.flatMap((group) => group.items);
       </svg>
     </a>
     <div class="footer-links">
+      <a href="/nesting-support">Support</a>
+      <span class="separator">·</span>
       <a href={factoryHref}>{t.footer.factory}</a>
+      <span class="separator">·</span>
+      <a href="/privacy-policy">Privacy Policy</a>
       <span class="separator">·</span>
       <a href={t.footer.emailHref}>{t.footer.email}</a>
     </div>
@@ -1053,6 +1057,15 @@ const mobileLanguages = languageGroups.flatMap((group) => group.items);
 
     .hero-left {
       padding: 48px 24px;
+      min-width: 0;
+    }
+
+    .hero-headline {
+      max-width: 100%;
+      font-size: clamp(30px, 8vw, 48px);
+      overflow-wrap: anywhere;
+      word-break: break-word;
+      hyphens: auto;
     }
 
     .hero-right {
@@ -1177,6 +1190,11 @@ const mobileLanguages = languageGroups.flatMap((group) => group.items);
   }
 
   @media (max-width: 600px) {
+    .hero-headline {
+      font-size: clamp(26px, 9vw, 38px);
+      line-height: 0.98;
+    }
+
     .site-footer {
       flex-direction: column;
       align-items: flex-start;
@@ -1190,6 +1208,12 @@ const mobileLanguages = languageGroups.flatMap((group) => group.items);
 
     .footer-socials {
       gap: 10px;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .hero-headline {
+      font-size: 32px;
     }
   }
 </style>

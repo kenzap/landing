@@ -1,0 +1,439 @@
+<main class="support-page">
+  <section class="support-shell">
+    <a class="back-link" href="/">Back to Kenzap Factory</a>
+    <div class="eyebrow">Support</div>
+    <h1>Support and FAQ for Kenzap Factory</h1>
+    <p class="intro">
+      Use this page for Kenzap Factory questions, implementation planning, production workflow
+      support, integration requests, or bug reports.
+    </p>
+
+    <div class="hero-grid">
+      <div class="hero-card">
+        <div class="card-label">Best for direct help</div>
+        <div class="card-title">Email support</div>
+        <p>
+          Use the form below or email <a href="mailto:support@kenzap.com">support@kenzap.com</a>.
+          For Factory questions, include the module or workflow you’re working with and what outcome
+          you’re trying to achieve.
+        </p>
+      </div>
+      <div class="hero-card accent">
+        <div class="card-label">Operational context</div>
+        <div class="card-title">Factory support notes</div>
+        <p>
+          The most useful support requests include whether you are asking about quoting, inventory,
+          nesting integration, workshop execution, invoicing, or deployment. Clear context usually
+          shortens the time to a useful reply.
+        </p>
+      </div>
+    </div>
+
+    <section class="faq-section">
+      <div class="section-label">Frequently asked questions</div>
+      <div class="faq-list">
+        <details open>
+          <summary>What is the fastest way to get Factory support?</summary>
+          <p>
+            Send a short description of the problem, your workflow goal, and any screenshots or sample
+            outputs that explain the issue. Email is the best path for implementation and support
+            questions.
+          </p>
+        </details>
+        <details>
+          <summary>Can I ask about deployment or self-hosting here?</summary>
+          <p>
+            Yes. You can use this page for questions about managed deployment, customer-managed cloud,
+            or self-hosted setups.
+          </p>
+        </details>
+        <details>
+          <summary>Can I ask about integrations?</summary>
+          <p>
+            Yes. Include the system you want to connect, what data should move between systems, and
+            whether you need a one-way sync, two-way sync, or import/export workflow.
+          </p>
+        </details>
+        <details>
+          <summary>Do you publish user questions?</summary>
+          <p>
+            Only if you explicitly give permission. The support form includes an optional checkbox
+            that allows publication of your question in edited FAQ form without personal details.
+          </p>
+        </details>
+        <details>
+          <summary>What should I include in a bug report?</summary>
+          <p>
+            Include the page or module involved, the expected result, what happened instead, and the
+            steps needed to reproduce the issue. Screenshots are often helpful.
+          </p>
+        </details>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <div class="section-label">Ask a question</div>
+      <form
+        name="factory-support"
+        method="POST"
+        data-netlify="true"
+        data-netlify-recaptcha="true"
+        netlify-honeypot="bot-field"
+        action="/thank-you"
+        class="support-form"
+      >
+        <input type="hidden" name="form-name" value="factory-support" />
+        <input type="hidden" name="product" value="Kenzap Factory" />
+        <p class="honeypot">
+          <label>
+            Do not fill this out:
+            <input name="bot-field" />
+          </label>
+        </p>
+
+        <div class="field-grid">
+          <label>
+            <span>Name</span>
+            <input type="text" name="name" autocomplete="name" required />
+          </label>
+          <label>
+            <span>Email</span>
+            <input type="email" name="email" autocomplete="email" required />
+          </label>
+        </div>
+
+        <label>
+          <span>Company or environment</span>
+          <input
+            type="text"
+            name="environment"
+            placeholder="Example: sheet metal shop, self-hosted setup, managed cloud deployment..."
+          />
+        </label>
+
+        <label>
+          <span>Your question</span>
+          <textarea
+            name="message"
+            rows="8"
+            placeholder="Describe the issue, workflow, or request. Include enough context for us to understand what you are trying to achieve."
+            required
+          ></textarea>
+        </label>
+
+        <label class="checkbox-row">
+          <input type="checkbox" name="publishConsent" value="yes" />
+          <span>I give permission for Kenzap to publish this question in edited FAQ form without personal details.</span>
+        </label>
+
+        <div class="captcha-wrap" data-netlify-recaptcha="true"></div>
+
+        <div class="form-actions">
+          <button type="submit" class="submit-btn">Send request →</button>
+          <div class="form-note">
+            Your message is submitted through Netlify Forms. If the form is unavailable, email
+            <a href="mailto:support@kenzap.com">support@kenzap.com</a> directly.
+          </div>
+        </div>
+      </form>
+    </section>
+  </section>
+</main>
+
+<style>
+  :global(body) {
+    background: #f6f7fc;
+    color: #0a0a08;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+  }
+
+  .support-page {
+    min-height: 100vh;
+    padding: 48px 24px 96px;
+  }
+
+  .support-shell {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 48px;
+    border: 1px solid #dde1f0;
+    background: rgba(246, 247, 252, 0.94);
+  }
+
+  .back-link,
+  .eyebrow,
+  .section-label,
+  .card-label,
+  .form-note {
+    font-family: 'DM Mono', monospace;
+  }
+
+  .back-link {
+    display: inline-flex;
+    margin-bottom: 28px;
+    color: #4a4f5c;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .back-link:hover {
+    color: #0a0a08;
+  }
+
+  .eyebrow,
+  .section-label,
+  .card-label {
+    font-size: 11px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+  }
+
+  .eyebrow,
+  .section-label {
+    color: #1941df;
+  }
+
+  .eyebrow {
+    margin-bottom: 16px;
+  }
+
+  h1,
+  .card-title {
+    font-family: 'Syne', sans-serif;
+    letter-spacing: -0.02em;
+    color: #0a0a08;
+  }
+
+  h1 {
+    margin-bottom: 20px;
+    font-size: clamp(34px, 5vw, 56px);
+    line-height: 0.98;
+  }
+
+  .intro {
+    max-width: 760px;
+    margin-bottom: 36px;
+    font-size: 18px;
+    color: #4a4f5c;
+  }
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    margin-bottom: 48px;
+    border: 1px solid #dde1f0;
+    background: #dde1f0;
+  }
+
+  .hero-card {
+    padding: 28px;
+    background: #f6f7fc;
+  }
+
+  .hero-card.accent {
+    background: #0a0a08;
+    color: rgba(255, 255, 255, 0.82);
+  }
+
+  .hero-card.accent .card-label {
+    color: #7b9af5;
+  }
+
+  .hero-card.accent .card-title,
+  .hero-card.accent a {
+    color: #f6f7fc;
+  }
+
+  .card-label {
+    margin-bottom: 12px;
+    color: #8a9099;
+  }
+
+  .card-title {
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height: 1.05;
+  }
+
+  .faq-section,
+  .form-section {
+    margin-top: 40px;
+  }
+
+  .faq-list {
+    margin-top: 18px;
+    border: 1px solid #dde1f0;
+    background: #dde1f0;
+  }
+
+  details {
+    background: #f6f7fc;
+  }
+
+  details + details {
+    border-top: 1px solid #dde1f0;
+  }
+
+  summary {
+    cursor: pointer;
+    list-style: none;
+    padding: 20px 24px;
+    font-family: 'Syne', sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.15;
+  }
+
+  details p {
+    padding: 0 24px 20px;
+    color: #4a4f5c;
+    font-size: 15px;
+  }
+
+  .support-form {
+    margin-top: 18px;
+    padding: 28px;
+    border: 1px solid #dde1f0;
+    background: #f6f7fc;
+  }
+
+  .honeypot {
+    display: none;
+  }
+
+  .field-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+  }
+
+  label {
+    display: block;
+    margin-top: 18px;
+  }
+
+  label span {
+    display: block;
+    margin-bottom: 8px;
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #4a4f5c;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    border: 1px solid #dde1f0;
+    border-radius: 0;
+    background: #ffffff;
+    color: #0a0a08;
+    font: inherit;
+    padding: 14px 16px;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+
+  .checkbox-row {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    margin-top: 22px;
+  }
+
+  .checkbox-row input {
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    padding: 0;
+    flex: 0 0 auto;
+  }
+
+  .checkbox-row span {
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0;
+    text-transform: none;
+    color: #4a4f5c;
+  }
+
+  .captcha-wrap {
+    margin-top: 22px;
+  }
+
+  .form-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 28px;
+    flex-wrap: wrap;
+  }
+
+  .submit-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 28px;
+    border: 0;
+    border-radius: 2px;
+    background: #0a0a08;
+    color: #f6f7fc;
+    font-family: 'DM Mono', monospace;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.15s;
+  }
+
+  .submit-btn:hover {
+    background: #1941df;
+    transform: translateY(-1px);
+  }
+
+  .form-note {
+    max-width: 420px;
+    font-size: 11px;
+    letter-spacing: 0.04em;
+    color: #8a9099;
+  }
+
+  a {
+    color: #0a0a08;
+  }
+
+  @media (max-width: 900px) {
+    .hero-grid,
+    .field-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 720px) {
+    .support-page {
+      padding: 24px 16px 72px;
+    }
+
+    .support-shell,
+    .support-form {
+      padding: 32px 24px;
+    }
+
+    summary {
+      padding: 18px 20px;
+      font-size: 17px;
+    }
+
+    details p {
+      padding: 0 20px 18px;
+    }
+  }
+</style>
