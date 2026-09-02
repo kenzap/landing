@@ -71,7 +71,7 @@
       </div>
     </section>
 
-      <section class="form-section">
+      <section id="form" class="form-section">
         <div class="section-label">Ask a question</div>
       <form
         name="nesting-support"
@@ -101,14 +101,20 @@
           </label>
         </div>
 
-        <label>
-          <span>Environment or version</span>
-          <input
-            type="text"
-            name="environment"
-            placeholder="Example: Windows 11, Nesting App v0.4.2, Apple Silicon..."
-          />
-        </label>
+        <div class="field-grid">
+          <label>
+            <span>Environment</span>
+            <input
+              type="text"
+              name="environment"
+              placeholder="Example: Windows 11, macOS, Apple Silicon..."
+            />
+          </label>
+          <label>
+            <span>App version</span>
+            <input type="text" name="version" placeholder="Example: 0.4.2" />
+          </label>
+        </div>
 
         <label>
           <span>Your question</span>
@@ -138,6 +144,19 @@
       </section>
     </section>
   </main>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const setField = (name: string, keys: string[]) => {
+    const value = keys.map((key) => params.get(key)).find(Boolean);
+    const field = document.querySelector<HTMLInputElement>(`[name="${name}"]`);
+
+    if (field && value) field.value = value;
+  };
+
+  setField('environment', ['environment', 'platform', 'os']);
+  setField('version', ['version', '_version', 'appVersion']);
+</script>
 
 <style>
   :global(body) {
