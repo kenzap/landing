@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Crash Receiver — Kenzap"
+  description="Netlify crash report receiver for Kenzap desktop applications."
+  lang="en"
+>
+  <form
+    name="electron-crashes"
+    method="POST"
+    enctype="multipart/form-data"
+    data-netlify="true"
+    hidden
+  >
+    <input type="hidden" name="form-name" value="electron-crashes" />
+    <input type="file" name="upload_file_minidump" />
+    <input type="hidden" name="_version" />
+    <input type="hidden" name="platform" />
+    <input type="hidden" name="process_type" />
+  </form>
+</Layout>

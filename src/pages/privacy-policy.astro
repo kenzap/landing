@@ -14,11 +14,12 @@ import Layout from '../layouts/Layout.astro';
       <h1>Privacy Policy for the Kenzap website and Kenzap Nesting App</h1>
       <p class="intro">
         This Privacy Policy explains what information may be processed when you use the Kenzap
-        website and the Kenzap Nesting App. As of April 18, 2026, Kenzap Nesting App does not
-        collect or transmit user data to Kenzap.
+        website and the Kenzap Nesting App. The app processes DXF files and nesting jobs locally.
+        It may process limited technical information when you choose to send a crash report or
+        contact Kenzap for support.
       </p>
 
-      <div class="meta">Last updated: April 18, 2026</div>
+      <div class="meta">Last updated: September 2, 2026</div>
 
       <section>
         <h2>1. Scope</h2>
@@ -61,13 +62,31 @@ import Layout from '../layouts/Layout.astro';
           user’s machine.
         </p>
         <p>
-          At this time, the app does not intentionally collect analytics, telemetry, personal data,
-          uploaded files, DXF content, job history, or cloud account data for transmission to Kenzap.
+          DXF files, nesting projects, job history, and other working data are handled locally on
+          your device and are not intentionally transmitted to Kenzap as part of the app's core
+          functionality. The app does not require a Kenzap cloud account or use behavioral analytics.
         </p>
         <p>
-          DXF files and other working data are handled locally by the app on your device. If this
-          changes in a future release, this Privacy Policy should be updated before or at the time such
-          processing is introduced.
+          The app creates limited diagnostic session logs and crash dumps locally by default. These
+          records help identify startup failures, crashes, and problems with bundled helper processes.
+          They remain on your device unless you choose to send or otherwise share them with Kenzap.
+        </p>
+        <p>
+          Automatic transmission of crash reports is disabled by default. If the app detects that a
+          crash occurred, it may ask on the next launch whether you want to send the report. No report
+          is sent unless you choose to send it or have previously enabled automatic crash reporting.
+          You may decline without affecting the app's core functionality.
+        </p>
+        <p>
+          A crash report sent to Kenzap through Netlify may include a crash minidump, app and Electron
+          versions, operating system, processor architecture, process type, crash identifier, IP
+          address, and submission timestamp. This information is used only to diagnose crashes,
+          improve reliability, and investigate security issues.
+        </p>
+        <p>
+          Crash reports are not intended to include DXF files, nesting projects, or job history.
+          However, because a minidump records limited application memory at the time of a crash, it
+          may incidentally contain small fragments of information that were present in memory.
         </p>
       </section>
 
@@ -92,14 +111,23 @@ import Layout from '../layouts/Layout.astro';
           YouTube, and reCAPTCHA-related providers. If you interact with those services, their own
           privacy policies and terms apply.
         </p>
+        <p>
+          Netlify may process website support submissions and optional app crash reports on Kenzap's
+          behalf. Microsoft may separately process Windows crash and reliability information according
+          to your Windows privacy settings and Microsoft's applicable privacy terms.
+        </p>
       </section>
 
       <section>
         <h2>6. Data retention</h2>
         <p>
           We only expect to retain information that you voluntarily send to us, or technical records
-          reasonably required for security, delivery, and support. Retention periods depend on the
-          nature of the communication or operational need.
+          reasonably required for security, delivery, and support. Crash reports submitted to Kenzap,
+          whether individually or through optional automatic reporting, are retained for no longer
+          than 90 days, unless a longer period is reasonably needed to investigate an active reliability
+          or security issue or comply with a legal obligation.
+          Information you voluntarily submit for support is retained only as long as reasonably needed
+          to respond and maintain relevant support records.
         </p>
       </section>
 
@@ -108,7 +136,9 @@ import Layout from '../layouts/Layout.astro';
         <p>
           Depending on your jurisdiction, you may have rights to request access, correction, deletion,
           or restriction regarding personal data that relates to you. If you want to make such a
-          request, contact us using the email below.
+          request, withdraw consent to optional crash reporting, or ask a privacy-related question,
+          contact us using the email below. You may decline a crash-report request and, when automatic
+          reporting is available, disable it through the app settings.
         </p>
       </section>
 

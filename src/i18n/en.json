@@ -221,7 +221,7 @@
       "factory": "Factory ERP",
       "factoryMobile": "Factory",
       "cta": "Download free →",
-      "ctaHref": "https://github.com/kenzap/nesting-app"
+      "ctaHref": "#download"
     },
     "hero": {
       "eyebrow": "DXF nesting software",
@@ -231,7 +231,7 @@
       "headlineLine3": "Cut faster.",
       "subheadline": "A native desktop nesting app for metal fabricators. Drop your DXF parts, set quantities, run the engine — get a fully packed sheet ready to cut.",
       "primaryCta": "↓ Download free",
-      "primaryCtaHref": "https://github.com/kenzap/nesting-app/releases",
+      "primaryCtaHref": "#download",
       "secondaryCta": "See it in production →",
       "secondaryCtaHref": "/#case-study",
       "badges": {
@@ -329,16 +329,22 @@
       "title": "Free. Native. Open source.",
       "sub": "Download the build for your platform. No signup, no licence key, no cloud dependency. Works on day one.",
       "windows": {
-        "href": "https://github.com/kenzap/nesting-app/releases",
+        "href": "https://apps.microsoft.com/detail/9nbr7z0phs02?hl=en-US&gl=EN",
         "os": "Windows",
         "label": "Download x64",
-        "note": ".exe installer"
+        "note": "Microsoft Store"
       },
       "mac": {
-        "href": "https://github.com/kenzap/nesting-app/releases",
+        "href": "https://apps.apple.com/lv/app/kenzap-nesting/id6776196927?mt=12",
         "os": "macOS",
         "label": "Apple Silicon",
-        "note": ".dmg — M1-M5"
+        "note": "Mac App Store"
+      },
+      "linux": {
+        "href": "https://snapcraft.io/kenzap-nesting",
+        "os": "Linux",
+        "label": "Download Snap",
+        "note": "Snap Store"
       },
       "openSourcePrefix": "Source code and build instructions on",
       "openSourceHref": "https://github.com/kenzap/nesting-app",

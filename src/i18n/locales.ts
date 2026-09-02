@@ -99,6 +99,20 @@ function normalizeFactoryMessages(messages: Messages, lang: string) {
 function normalizeNestingMessages(messages: Messages, lang: string) {
   const normalized = structuredClone(messages);
 
+  normalized.nestingHomepage.nav.ctaHref = '#download';
+  normalized.nestingHomepage.hero.primaryCtaHref = '#download';
+  normalized.nestingHomepage.download.windows.href =
+    'https://apps.microsoft.com/detail/9nbr7z0phs02?hl=en-US&gl=EN';
+  normalized.nestingHomepage.download.mac.href =
+    'https://apps.apple.com/lv/app/kenzap-nesting/id6776196927?mt=12';
+  normalized.nestingHomepage.download.linux = {
+    href: 'https://snapcraft.io/kenzap-nesting',
+    os: 'Linux',
+    label: 'Download Snap',
+    note: 'Snap Store',
+    ...normalized.nestingHomepage.download.linux,
+  };
+
   if (normalized.nestingHomepage?.hero?.secondaryCtaHref) {
     normalized.nestingHomepage.hero.secondaryCtaHref =
       lang === 'en' ? '/#case-study' : `/${lang}#case-study`;
