@@ -1,0 +1,461 @@
+---
+import { readFileSync } from 'node:fs';
+import Layout from '../../layouts/Layout.astro';
+import data from '../../data/deepnest-benchmark.json';
+
+const base = '/articles/deepnest-vs-kenzap-nesting';
+const svg = (id: string) => readFileSync(new URL(`../../../public${base}/${id}.svg`, import.meta.url), 'utf8');
+const kenzap = data.results.find((result) => result.id === 'kenzap')!;
+const deepnest = data.results.find((result) => result.id === 'deepnest')!;
+const next = data.results.find((result) => result.id === 'deepnest-next')!;
+const shots = [
+  { id: '45s', label: '45 seconds', count: 43, file: 'deepnest-next-45s.webp' },
+  { id: '5m', label: '5 minutes', count: 46, file: 'deepnest-next-5m.webp' },
+  { id: '10m', label: '10 minutes', count: 46, file: 'deepnest-next-10m.webp' },
+];
+const percent = (value: number | null) => value === null ? 'Not reported' : `${value.toFixed(1)}%`;
+---
+
+<Layout title="Deepnest vs Kenzap Nesting: a 61-part DXF benchmark | Kenzap" description="An interactive, single-case comparison of Kenzap Nesting, Deepnest, and Deepnest-next. Inspect supplied DXFs, screenshot checkpoints, and geometry checks.">
+  <Fragment slot="head">
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="canonical" href="https://kenzap.com/articles/deepnest-vs-kenzap-nesting/" />
+  </Fragment>
+  <main class="benchmark">
+    <a class="skip-link" href="#results">Skip to benchmark results</a>
+    <header class="site-header">
+      <a class="brand" href="/nesting" aria-label="Kenzap Nesting home">
+        <svg width="72" height="22" viewBox="0 0 107 33" aria-hidden="true"><path fill="currentColor" d="M-.476 32.2V.2H4.69v13.486L11.264.2h5.166l-6.152 11.749 6.246 20.251h-5.401L6.756 17.937 4.69 22.006V32.2Zm19 0V.2h14v4.571h-8.867v8.457h6.867V17.8h-6.867v9.829h8.867V32.2Zm17 0V.2h6.4l4.962 19.154h.093V.2h4.545v32h-5.241L40.162 8.84h-.093V32.2Zm18 0v-4.48L63.027 4.771H53.99V.2h14.534v4.48l-9.503 22.949h9.503V32.2Zm17 0L75.665.2h6.718l5.141 32h-4.96l-.902-6.354v.091h-5.637l-.902 6.263Zm6-11h5l-2.475-16h-.101Zm14 11V.2h7.454c5.061 0 7.546 2.789 7.546 7.909v3.154c0 5.12-2.485 7.909-7.546 7.909h-2.393V32.2Zm5-18h2.453c1.651 0 2.547-.744 2.547-3.07V7.27c0-2.326-.896-3.07-2.547-3.07h-2.453Z" /></svg>
+        <span>Nesting</span>
+      </a>
+      <nav aria-label="Article navigation"><a href="#story">The story</a><a href="#comparison">Inspect the layouts</a><a href="#method">Method</a><a class="header-cta" href="/nesting#download">Try Kenzap <span aria-hidden="true">↗</span></a></nav>
+    </header>
+
+    <article>
+      <section class="hero shell">
+        <div class="eyebrow"><span>Field notes / 01</span><span>Deepnest vs Kenzap Nesting</span><span class="draft">Benchmark draft</span></div>
+        <div class="hero-grid">
+          <div>
+            <h1>Sixty-one snow guards,<br /><em>one steel sheet.</em></h1>
+            <p class="intro">We gave two nesting engines the same job at a Latvian roofing workshop. One placed every part within seconds. The other was still searching minutes later.</p>
+            <p class="hero-copy">A real part, a real plate size, and a laser cutter at the end of the line. Here is what happened, with every export available to download.</p>
+            <div class="byline"><span>By the Kenzap team</span><time datetime="2026-10-05">05 October 2026</time><span>7 min read</span><a href="#method">Single-case study</a></div>
+          </div>
+          <aside class="test-card" aria-label="Reported test conditions">
+            <div class="label">The job</div>
+            <div class="sheet-mark"><div class="mini-sheet"><span>61</span><small>required parts</small></div><span class="sheet-length">2500 mm</span><span class="sheet-width">1250 mm</span></div>
+            <dl><div><dt>Time target</dt><dd>45 seconds</dd></div><div><dt>Rotations</dt><dd>0° / 90° / 180° / 270°</dd></div><div><dt>Machine</dt><dd>Apple M5 Pro · macOS</dd></div></dl>
+            <p class="micro">Conditions reported by the operator. Extended Deepnest runs are shown separately.</p>
+          </aside>
+        </div>
+        <div class="disclosure"><span class="disclosure-dot" aria-hidden="true"></span><p>We develop Kenzap Nesting. This is not an independent review or a claim about every drawing. All supplied outputs are available below.</p></div>
+      </section>
+
+      <section id="story" class="story shell">
+        <div class="story-rail"><div class="label">The setup</div><p>Skarda Nams · roofing<br />Latvia</p></div>
+        <div class="prose">
+          <h2>Steel arrives in one size.</h2>
+          <p class="lede">At Skarda Nams, a roofing company in Latvia, steel plates arrive in exactly one format: 1250 mm wide, 2500 mm long, and either 2 or 4 mm thick. Every order, whatever it looks like, has to be carved out of those rectangles.</p>
+          <p>Whatever does not become a part becomes scrap: steel the company paid for and cannot sell. So the way parts are arranged on a plate is a quiet, constant decision. A few centimetres saved per sheet turns into real material over a season, and the layout also decides whether the cutting machine has an easy day or a hard one.</p>
+
+          <h2>The part on the table.</h2>
+          <p>The test piece is a snow guard element, one component of a roof's snow retention system. Rows of these hold snow on a pitched metal roof so it melts or slides off gradually instead of dropping on whoever is standing below.</p>
+          <p>Flat, the blank measures about 177 × 380 mm. It has an irregular outline with curved notches, two slots and ten holes, so twelve small cuts inside every part. It is an ordinary piece of production work, and the awkward shape makes it a fair test. For this order, the workshop needed 61 of them.</p>
+
+          <blockquote class="pullquote">A layout that looks full is not the same as a layout a laser can cut.</blockquote>
+
+          <h2>Old method, new method.</h2>
+          <p>Deepnest is the best-known free nesting tool. Its engine is built on the no-fit polygon (NFP) method, which slides one shape around another to find where they can touch without overlapping, and then uses an evolutionary search to improve the arrangement. It is a proven approach, and it is also why the search can take a long time.</p>
+          <p>Kenzap Nesting uses a newer algorithm. We wanted to find out how much faster it is on a capable machine, an Apple M5 Pro, and whether speed costs anything in quality. The brief was the same for everyone: 61 parts, one 1250 × 2500 mm plate, four rotations, and a 45-second time budget.</p>
+          <p>We judged each result on three questions.</p>
+          <ol class="questions">
+            <li><strong>How fast?</strong><span>How many of the 61 parts are placed, and when.</span></li>
+            <li><strong>How full?</strong><span>How much of the plate is used, and how much stays free.</span></li>
+            <li><strong>Can the laser cut it?</strong><span>Is the exported DXF made of clean, closed contours, without overlapping parts?</span></li>
+          </ol>
+          <p class="prose-note">One more thing before the numbers: we make Kenzap Nesting, so we have an interest in the outcome. That is why the original exports, screenshots and checks are all attached below.</p>
+        </div>
+      </section>
+
+      <section id="results" class="results shell">
+        <div class="section-heading"><div><div class="label">01 / The result</div><h2>Completion comes first.</h2></div><p>A high utilization number means little if parts are missing or intersecting.</p></div>
+        <div class="prose prose-wide">
+          <p>Kenzap Nesting placed all 61 parts in its first pass, within the first seconds of the run. Original Deepnest reached 51 parts in roughly the first minute, and 55 later on. Deepnest-next showed 43 at the 45-second mark and 46 at both five and ten minutes. These timings are the operator's observations and screenshot labels, not automated logs. For that reason we do not put a speedup multiple on them.</p>
+        </div>
+        <div class="stat-strip">
+          <div><span class="stat-value">61<span class="stat-denominator">/61</span></span><h3>Parts in Kenzap's export</h3><p>All required outer contours, with 732 internal cuts.</p></div>
+          <div><span class="stat-value">2304<span class="stat-unit"> mm</span></span><h3>Kenzap placement length</h3><p>Approximately 196 mm shorter than the 2500 mm stock length.</p></div>
+          <div><span class="stat-value">0</span><h3>Detected outer overlaps</h3><p>In Kenzap's export, above the 1 mm² analysis threshold.</p></div>
+        </div>
+        <div class="basis-control"><span class="label">Coverage basis</span><div class="segmented" role="group" aria-label="Coverage denominator"><button type="button" data-basis="full" aria-pressed="true">Full stock sheet</button><button type="button" data-basis="used" aria-pressed="false">Used bounding rectangle</button></div></div>
+        <p id="basis-note" class="table-note" aria-live="polite">Outer-envelope area ÷ 1250 × 2500 mm. The same denominator for both complete-geometry exports; internal cutouts are not subtracted.</p>
+        <div class="table-scroll" role="region" aria-label="Nesting results" tabindex="0">
+          <table>
+            <caption class="sr-only">Supplied export analysis and screenshot observations. Checkpoint times differ.</caption>
+            <thead><tr><th scope="col">What we checked</th><th scope="col" class="kenzap-col">Kenzap Nesting <span>Version unrecorded</span></th><th scope="col">Deepnest-next <span>v1.5.6 in screenshot</span></th><th scope="col">Deepnest <span>Version unrecorded</span></th></tr></thead>
+            <tbody>
+              <tr><th scope="row">45-second screenshot</th><td class="kenzap-col"><strong>61 / 61</strong><small>Complete</small></td><td><strong>43 / 61</strong><small>18 parts not placed</small></td><td>Not supplied<small>No exact 45-second capture</small></td></tr>
+              <tr><th scope="row">Supplied DXF</th><td class="kenzap-col">61 intact outer contours</td><td>43 intact outer contours</td><td><span class="warning-text">49 intact contours + 12 open fragments</span></td></tr>
+              <tr><th scope="row">Later screenshot</th><td class="kenzap-col">Not needed for this batch</td><td>46 / 61<small>At both 5 and 10 minutes</small></td><td>55 / 61<small>Elapsed time unrecorded</small></td></tr>
+              <tr><th scope="row">Part-envelope coverage</th><td class="kenzap-col"><span class="coverage-value" data-coverage data-full={percent(kenzap.grossCoveragePercent)} data-used={percent(kenzap.usedRectangleCoveragePercent)}>{percent(kenzap.grossCoveragePercent)}</span></td><td><span class="coverage-value" data-coverage data-full={percent(next.grossCoveragePercent)} data-used={percent(next.usedRectangleCoveragePercent)}>{percent(next.grossCoveragePercent)}</span></td><td>Not reported<small>Open geometry; incomplete area basis</small></td></tr>
+              <tr><th scope="row">Outer-contour intersections</th><td class="kenzap-col"><span class="pass-text">None detected</span></td><td><span class="pass-text">None detected</span></td><td><span class="warning-text">At least 5 intersecting pairs</span><small>Among the intact contours only</small></td></tr>
+              <tr><th scope="row">Exported internal cuts</th><td class="kenzap-col">732</td><td>516</td><td>660<small>72 do not belong to an intact outer contour</small></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="table-footnote">Counts come from DXF geometry unless explicitly labeled as a screenshot. Zero detected overlap is not a complete CAM or machine-safety certification.</p>
+      </section>
+
+      <section id="comparison" class="comparison-band">
+        <div class="shell">
+          <div class="section-heading"><div><div class="label">02 / Inspect the output</div><h2>Same stock. Same scale.</h2></div><p>These are rendered from the supplied DXFs, not recreated placements.</p></div>
+          <div class="viewer-toolbar">
+            <div class="segmented" role="group" aria-label="Compare Kenzap with"><button type="button" data-competitor="deepnest-next" aria-pressed="true">Deepnest-next</button><button type="button" data-competitor="deepnest" aria-pressed="false">Deepnest</button></div>
+            <div class="viewer-options"><label><input type="checkbox" id="outline-toggle" /> Outlines only</label><label><input type="checkbox" id="overlap-toggle" /> Highlight intersections</label></div>
+            <div class="zoom-buttons" role="group" aria-label="Zoom both layouts"><button type="button" id="zoom-out" aria-label="Zoom out">−</button><output id="zoom-level" aria-live="polite">100%</output><button type="button" id="zoom-in" aria-label="Zoom in">+</button><button type="button" id="zoom-reset">Fit</button></div>
+          </div>
+          <div class="viewer-grid">
+            <figure class="layout-panel">
+              <figcaption><span class="panel-name">Kenzap Nesting</span><span class="panel-count">61 / 61 <span class="status-dot" aria-hidden="true"></span></span></figcaption>
+              <div class="layout-stage" tabindex="0" aria-label="Kenzap layout. Use zoom buttons or plus and minus keys; drag to pan when zoomed."><div class="drawing" set:html={svg('kenzap')}></div></div>
+              <div class="panel-footer"><span>1250 × 2500 mm stock frame</span><span>~196 mm remaining length</span></div>
+            </figure>
+            <figure class="layout-panel" data-layout="deepnest-next">
+              <figcaption><span class="panel-name">Deepnest-next</span><span class="panel-count">43 / 61</span></figcaption>
+              <div class="layout-stage" tabindex="0" aria-label="Deepnest-next supplied export. Use zoom buttons or plus and minus keys; drag to pan when zoomed."><div class="drawing" set:html={svg('deepnest-next')}></div></div>
+              <div class="panel-footer"><span>1250 × 2500 mm stock frame</span><span>43-part export checkpoint</span></div>
+            </figure>
+            <figure class="layout-panel" data-layout="deepnest" hidden>
+              <figcaption><span class="panel-name">Deepnest</span><span class="panel-count warning-text">55 / 61 <small>UI-reported</small></span></figcaption>
+              <div class="layout-stage" tabindex="0" aria-label="Deepnest supplied export, including open fragments. Use zoom buttons or plus and minus keys; drag to pan when zoomed."><div class="drawing" set:html={svg('deepnest')}></div></div>
+              <div class="panel-footer"><span>49 intact contours; fragments left open</span><span class="warning-text">5+ intersecting pairs</span></div>
+            </figure>
+          </div>
+          <div class="viewer-caption"><p id="layout-note" aria-live="polite">Deepnest-next's supplied DXF contains 43 parts, matching the count in its 45-second screenshot. The exact export timestamp was not independently recorded.</p><span>Linked zoom · drag to pan · Ctrl/⌘ + wheel</span></div>
+          <p class="micro">Whole layouts are rotated where necessary to share a horizontal 2500 × 1250 mm frame. No individual placement is moved or scaled. Pale green marks Kenzap's unused end band. Intersections are checked against outer envelopes, including their cutout regions.</p>
+          <noscript><p class="no-script-note">Interactive controls require JavaScript. <a href={`${base}/deepnest.svg`}>View the original Deepnest layout</a> or download all three DXFs below.</p></noscript>
+        </div>
+      </section>
+
+      <section id="checkpoints" class="checkpoints shell">
+        <div class="section-heading"><div><div class="label">03 / The recorded checkpoints</div><h2>What happened with more time?</h2></div><p>Screenshot evidence, kept separate from the export analysis.</p></div>
+        <div class="checkpoint-grid">
+          <div class="checkpoint-rail"><h3>Deepnest-next</h3><p>Extending this run improved the count from 43 to 46, but the 10-minute capture still shows 15 parts unplaced.</p><div class="checkpoint-tabs" role="group" aria-label="Deepnest-next screenshot checkpoint">{shots.map((shot, i) => <button type="button" data-checkpoint={shot.id} aria-pressed={i === 0}><span>{shot.label}</span><strong>{shot.count}<small>/61</small></strong><span class="checkpoint-bar" style={`--progress:${shot.count/61*100}%`}></span></button>)}</div><p class="micro">Times are the operator's screenshot labels, not automated telemetry. The later 46-part layout has no corresponding DXF in this evidence set.</p></div>
+          <figure class="screenshot-panel"><button type="button" class="image-open" data-open-image={`${base}/deepnest-next-45s.webp`} data-image-caption="Deepnest-next: 45-second screenshot, 43 of 61 parts" aria-label="Open Deepnest-next screenshot at full size"><img id="checkpoint-image" src={`${base}/deepnest-next-45s.webp`} alt="Deepnest-next at the labeled 45-second checkpoint, reporting 43 of 61 parts." width="2240" height="1455" loading="lazy" /><span class="image-open-label">View original screenshot <span aria-hidden="true">↗</span></span></button><figcaption id="checkpoint-caption" aria-live="polite">45-second checkpoint · 43 of 61 parts</figcaption></figure>
+        </div>
+        <div class="other-shots">
+          <figure><button type="button" class="image-open" data-open-image={`${base}/kenzap-nesting-45s.webp`} data-image-caption="Kenzap Nesting: completed result in the 45-second capture" aria-label="Open Kenzap screenshot at full size"><img src={`${base}/kenzap-nesting-45s.webp`} alt="Kenzap's completed layout, reporting 61 parts and approximately 2304 mm length." width="2240" height="1455" loading="lazy" /><span class="image-open-label">View screenshot <span aria-hidden="true">↗</span></span></button><figcaption><strong>Kenzap Nesting</strong><span>61 / 61 in the 45-second capture. The operator observed a complete initial placement within the first seconds; no exact timing log was supplied.</span></figcaption></figure>
+          <figure><button type="button" class="image-open" data-open-image={`${base}/deepnest.webp`} data-image-caption="Original Deepnest: later screenshot, 55 of 61 parts; elapsed time unrecorded" aria-label="Open original Deepnest screenshot at full size"><img src={`${base}/deepnest.webp`} alt="Original Deepnest screenshot reporting 55 of 61 parts with intersecting outlines." width="2240" height="1455" loading="lazy" /><span class="image-open-label">View screenshot <span aria-hidden="true">↗</span></span></button><figcaption><strong>Original Deepnest</strong><span>55 / 61 in a later capture. The operator reported 51 within roughly the first minute. Neither checkpoint has an exact timing log.</span></figcaption></figure>
+        </div>
+      </section>
+
+      <section id="laser" class="laser shell">
+        <div class="section-heading"><div><div class="label">04 / The laser test</div><h2>Will the machine understand it?</h2></div><p>A nest is only useful once it becomes a cutting file.</p></div>
+        <div class="prose prose-wide">
+          <p>On the shop floor the DXF is what matters. A laser follows closed outlines, and it cuts wherever a line is drawn. If two parts overlap, the beam cuts through both. If an outline is broken into pieces, the machine cannot tell where the part ends. And if the nest holds only part of the order, someone has to start a second sheet for the rest.</p>
+        </div>
+        <div class="laser-grid">
+          <div class="laser-card kenzap-card"><span class="label">Kenzap Nesting</span><strong class="laser-value">61 <small>closed outlines</small></strong><ul><li>All 732 internal cuts sit inside a complete part</li><li>No overlaps detected</li><li>Holes are true circles and arcs; 234 KB file</li><li>Whole order on one plate, with about 196 mm to spare</li></ul></div>
+          <div class="laser-card"><span class="label">Deepnest-next</span><strong class="laser-value">43 <small>closed outlines</small></strong><ul><li>Clean geometry, no overlaps detected</li><li>18 parts still unplaced, so a second plate is needed</li><li>Later screenshots show 46, with no export supplied</li></ul></div>
+          <div class="laser-card warn-card"><span class="label">Original Deepnest</span><strong class="laser-value">49 <small>closed outlines + 12 open fragments</small></strong><ul><li>72 internal cuts do not belong to any complete part</li><li>At least 5 pairs of overlapping parts</li><li>Holes are saved as faceted polylines; 4 MB file</li></ul></div>
+        </div>
+        <p class="micro">Counts from the supplied DXFs; see the method section for tolerances. Zero detected overlap is not a complete CAM or machine-safety certification.</p>
+      </section>
+
+      <section class="takeaway shell"><div class="label">What this case shows</div><h2>A finished batch, not just a crowded sheet.</h2><p>Kenzap's supplied output contains all 61 parts without detected outer-envelope intersections, in about 2304 mm of length. Deepnest-next's supplied output contains 43; its later screenshots reach 46. Original Deepnest reports 55, but the supplied file has intersections and fragmented contours.</p><p class="takeaway-limit">That is a clear difference for this job. It does not establish that every Deepnest version, configuration, or input will behave the same way.</p></section>
+
+      <section id="method" class="method shell">
+        <div class="section-heading"><div><div class="label">05 / Method & limitations</div><h2>Keep the comparison honest.</h2></div><p>Measured geometry. Reported timing. No invented speedup ratio.</p></div>
+        <div class="method-grid"><div class="method-intro"><h3>One profile, repeated 61 times.</h3><p>The complete contours are approximately 177 × 380 mm before rotation, with 12 internal cutouts per part. Each supplied export was inspected locally using the same geometric checks.</p><p>This is one operator-run case, not a multi-run statistical benchmark. It has not been independently reproduced.</p><a class="text-link" href={`${base}/analysis.json`} download>Download the geometry analysis <span aria-hidden="true">↗</span></a></div>
+          <div class="method-details">
+            <details open><summary>How the DXFs were checked</summary><div><p>Curves were sampled with a 0.005 mm tolerance. Endpoints within 0.05 mm are treated as the same endpoint. The repeated profile's large outer contours are counted separately from its small internal cuts.</p><p>Original Deepnest's 12 unresolved open fragments are not forcibly closed or used for area calculations. Kenzap's 915 line entities on its secondary layer are annotations and are excluded from the nesting-area check.</p><p>Outer-envelope pair intersections above 1 mm² are flagged. Original Deepnest has at least five such pairs among its 49 intact contours. Fragmented parts are not included, so this is a lower bound, not a complete collision count.</p><p>The on-page SVGs simplify linework within 0.025 mm for display; the measurements use the higher-resolution geometry. Original DXFs are unchanged.</p></div></details>
+            <details><summary>Why the utilization percentages differ</summary><div><p>The default table uses the complete 1250 × 2500 mm stock area. It reports gross outer-envelope coverage, not net material remaining after holes are cut.</p><p>Kenzap's screenshot reports 84.4% against its shorter used rectangle. On the full stock sheet the same placement is 77.8%. Deepnest-next's on-screen 98.56% / 99.04% figures are not used as comparable material coverage because their calculation basis is not verified here.</p><p>A shorter used rectangle is not proof that a clean remnant can be recovered: margins, kerf, cut paths, and machine requirements still matter.</p></div></details>
+            <details><summary>What is still missing before publication</summary><div><p>Exact Kenzap and original Deepnest versions; macOS version; spacing and margin settings; curve settings; original source DXF and import options; confirmation of export checkpoint times; and repeated runs with comparable time budgets.</p><p>Only Deepnest-next v1.5.6 is visible in the screenshots. The 45-second target is operator-reported; longer Deepnest observations are explicitly separate. Original Deepnest's export has no recorded elapsed time.</p><p>This draft is marked noindex and is not linked from the main landing page. Confirm permission to distribute the source fixture before adding it to the download set.</p></div></details>
+          </div>
+        </div>
+      </section>
+
+      <section id="downloads" class="downloads shell">
+        <div class="section-heading"><div><div class="label">06 / The evidence</div><h2>Don't take our word for it.</h2></div><p>Open the actual exports in your preferred CAD viewer.</p></div>
+        <div class="download-grid">{[kenzap, next, deepnest].map((result) => <div class="download-card"><span class="label">Original DXF</span><h3>{result.name}</h3><p>{result.parts === null ? '49 intact outer contours + 12 open fragments' : `${result.parts} intact outer contours`}</p><a class="download-link" href={`${base}/${result.file}`} download>Download export <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 17v4h16v-4" /></svg></a><details class="checksum"><summary>SHA-256 · {(result.fileBytes/1024).toFixed(0)} KB</summary><code>{result.sha256}</code></details></div>)}</div>
+        <div class="evidence-links"><a href={`${base}/analysis.json`} download>Raw analysis JSON</a><a href={`${base}/README.md`} download>Method & test record</a><a href={`${base}/benchmark-exports.zip`} download>All exports + analysis (ZIP)</a></div>
+        <p class="micro">The original input DXF is not included. These files support checking the supplied outputs, not yet reproducing the original runs end to end.</p>
+      </section>
+      <section class="article-cta shell"><div><span class="label">Your geometry is the real test</span><h2>Try it with your own parts.</h2><p>Kenzap Nesting is free and open source. Have a drawing that tells a different story? We'd like to see it.</p></div><div class="cta-links"><a class="primary-button" href="/nesting#download">Download Kenzap Nesting <span aria-hidden="true">↗</span></a><a class="text-link" href="/nesting-support/#form">Share a test case</a></div></section>
+    </article>
+    <footer class="site-footer shell"><a class="brand" href="/nesting">Kenzap <span>Nesting / Field notes</span></a><div><a href="https://github.com/kenzap/nesting-app">Source code</a><a href="/privacy-policy">Privacy</a><a href="/nesting-support/#form">Feedback</a></div><span>© 2026 Kenzap</span></footer>
+    <dialog id="screenshot-dialog" aria-labelledby="dialog-caption"><div class="dialog-header"><p id="dialog-caption"></p><button type="button" id="dialog-close" aria-label="Close screenshot">Close <span aria-hidden="true">×</span></button></div><img id="dialog-image" alt="" /><p class="micro">Original, unedited screenshot.</p></dialog>
+  </main>
+</Layout>
+
+<script>
+  let zoom = 1;
+  let pan = { x: 0, y: 0 };
+  const drawings = [...document.querySelectorAll<HTMLElement>('.drawing')];
+  const stages = [...document.querySelectorAll<HTMLElement>('.layout-stage')];
+  const applyView = () => {
+    drawings.forEach((drawing) => { drawing.style.transform = `translate(${pan.x}px, ${pan.y}px) scale(${zoom})`; });
+    document.querySelector('#zoom-level')!.textContent = `${Math.round(zoom * 100)}%`;
+    document.querySelector<HTMLButtonElement>('#zoom-out')!.disabled = zoom <= 1;
+    document.querySelector<HTMLButtonElement>('#zoom-in')!.disabled = zoom >= 4;
+    stages.forEach((stage) => stage.classList.toggle('zoomed', zoom > 1));
+  };
+  const setZoom = (value: number) => { zoom = Math.max(1, Math.min(4, value)); if (zoom === 1) pan = { x: 0, y: 0 }; applyView(); };
+  document.querySelector('#zoom-in')?.addEventListener('click', () => setZoom(zoom + .25));
+  document.querySelector('#zoom-out')?.addEventListener('click', () => setZoom(zoom - .25));
+  document.querySelector('#zoom-reset')?.addEventListener('click', () => { pan = { x: 0, y: 0 }; setZoom(1); });
+  for (const stage of stages) {
+    let drag: { x: number; y: number; panX: number; panY: number } | null = null;
+    stage.addEventListener('pointerdown', (event) => {
+      if (zoom === 1 || event.button !== 0) return;
+      drag = { x: event.clientX, y: event.clientY, panX: pan.x, panY: pan.y };
+      stage.setPointerCapture(event.pointerId);
+    });
+    stage.addEventListener('pointermove', (event) => { if (drag) { pan = { x: drag.panX + event.clientX - drag.x, y: drag.panY + event.clientY - drag.y }; applyView(); } });
+    stage.addEventListener('pointerup', () => { drag = null; });
+    stage.addEventListener('pointercancel', () => { drag = null; });
+    stage.addEventListener('keydown', (event) => {
+      if (event.key === '+' || event.key === '=') { event.preventDefault(); setZoom(zoom + .25); }
+      if (event.key === '-') { event.preventDefault(); setZoom(zoom - .25); }
+      if (event.key === '0') { event.preventDefault(); pan = { x: 0, y: 0 }; setZoom(1); }
+      if (zoom > 1 && ['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown'].includes(event.key)) {
+        event.preventDefault(); pan.x += event.key === 'ArrowLeft' ? 30 : event.key === 'ArrowRight' ? -30 : 0;
+        pan.y += event.key === 'ArrowUp' ? 30 : event.key === 'ArrowDown' ? -30 : 0; applyView();
+      }
+    });
+    stage.addEventListener('wheel', (event) => { if (event.ctrlKey || event.metaKey) { event.preventDefault(); setZoom(zoom + (event.deltaY < 0 ? .1 : -.1)); } }, { passive: false });
+  }
+  for (const button of document.querySelectorAll<HTMLButtonElement>('[data-competitor]')) {
+    button.addEventListener('click', () => {
+      document.querySelectorAll<HTMLButtonElement>('[data-competitor]').forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
+      document.querySelectorAll<HTMLElement>('[data-layout]').forEach((panel) => { panel.hidden = panel.dataset.layout !== button.dataset.competitor; });
+      document.querySelector('#layout-note')!.textContent = button.dataset.competitor === 'deepnest'
+        ? 'Deepnest reports 55 in its later screenshot. Its export contains 49 intact outer contours and 12 unresolved open fragments. Red highlights show confirmed intersections; fragments are not forcibly closed.'
+        : "Deepnest-next's supplied DXF contains 43 parts, matching the count in its 45-second screenshot. The exact export timestamp was not independently recorded.";
+    });
+  }
+  for (const [id, attribute] of [['outline-toggle', 'data-outlines'], ['overlap-toggle', 'data-overlaps']]) {
+    const input = document.getElementById(id) as HTMLInputElement;
+    input.addEventListener('change', () => { document.querySelectorAll('.drawing svg').forEach((svg) => svg.setAttribute(attribute, String(input.checked))); });
+  }
+  for (const button of document.querySelectorAll<HTMLButtonElement>('[data-basis]')) {
+    button.addEventListener('click', () => {
+      const used = button.dataset.basis === 'used';
+      document.querySelectorAll<HTMLButtonElement>('[data-basis]').forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
+      document.querySelectorAll<HTMLElement>('[data-coverage]').forEach((cell) => { cell.textContent = (used ? cell.dataset.used : cell.dataset.full)!; });
+      document.querySelector('#basis-note')!.textContent = used
+        ? 'Outer-envelope area ÷ each export\'s occupied bounding rectangle. Different denominators: this describes local packing density, not full-stock material yield. Cutouts are not subtracted.'
+        : 'Outer-envelope area ÷ 1250 × 2500 mm. The same denominator for both complete-geometry exports; internal cutouts are not subtracted.';
+    });
+  }
+  const checkpoints: Record<string, { file: string; time: string; count: number }> = {
+    '45s': { file: 'deepnest-next-45s.webp', time: '45-second', count: 43 },
+    '5m': { file: 'deepnest-next-5m.webp', time: '5-minute', count: 46 },
+    '10m': { file: 'deepnest-next-10m.webp', time: '10-minute', count: 46 },
+  };
+  for (const button of document.querySelectorAll<HTMLButtonElement>('[data-checkpoint]')) {
+    button.addEventListener('click', () => {
+      const shot = checkpoints[button.dataset.checkpoint!];
+      document.querySelectorAll<HTMLButtonElement>('[data-checkpoint]').forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
+      const img = document.querySelector<HTMLImageElement>('#checkpoint-image')!;
+      img.src = `${base}/${shot.file}`;
+      img.alt = `Deepnest-next at the labeled ${shot.time} checkpoint, reporting ${shot.count} of 61 parts.`;
+      const opener = img.closest<HTMLButtonElement>('[data-open-image]')!;
+      opener.dataset.openImage = img.src;
+      opener.dataset.imageCaption = `Deepnest-next: ${shot.time} screenshot, ${shot.count} of 61 parts`;
+      document.querySelector('#checkpoint-caption')!.textContent = `${shot.time} checkpoint · ${shot.count} of 61 parts`;
+    });
+  }
+  const dialog = document.querySelector<HTMLDialogElement>('#screenshot-dialog')!;
+  document.querySelectorAll<HTMLButtonElement>('[data-open-image]').forEach((button) => button.addEventListener('click', () => {
+    const img = document.querySelector<HTMLImageElement>('#dialog-image')!;
+    img.src = button.dataset.openImage!; img.alt = button.dataset.imageCaption!;
+    document.querySelector('#dialog-caption')!.textContent = button.dataset.imageCaption!;
+    dialog.showModal();
+  }));
+  document.querySelector('#dialog-close')?.addEventListener('click', () => dialog.close());
+  dialog.addEventListener('click', (event) => { if (event.target === dialog) { const r = dialog.getBoundingClientRect(); if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) dialog.close(); } });
+  applyView();
+</script>
+
+<style>
+  :global(html:has(.benchmark)) { scroll-padding-top: 94px; }
+  .benchmark { --ink: #0a0a08; --muted: #4a4f5c; --line: #dde1f0; --blue: #1941df; --paper: #f6f7fc; --mono: 'DM Mono', monospace; --display: 'Syne', sans-serif; background: var(--paper); color: var(--ink); font-family: 'DM Sans', sans-serif; font-weight: 400; line-height: 1.65; min-height: 100vh; }
+  .shell { width: min(1320px, calc(100% - 96px)); margin-inline: auto; }
+  a { color: inherit; text-decoration: none; }
+  button, input { font: inherit; }
+  button { cursor: pointer; }
+  button:focus-visible, a:focus-visible, summary:focus-visible, input:focus-visible, .layout-stage:focus-visible, .table-scroll:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; }
+  [hidden] { display: none !important; }
+  .site-header { position: sticky; top: 0; z-index: 20; display: flex; justify-content: space-between; align-items: center; padding: 19px 48px; border-bottom: 1px solid var(--line); background: rgba(246,247,252,.96); backdrop-filter: blur(12px); }
+  .brand { display: flex; gap: 12px; align-items: center; font-family: var(--display); font-weight: 800; }
+  .brand span { border-left: 1px solid var(--line); padding-left: 12px; color: var(--blue); font: 11px var(--mono); text-transform: uppercase; letter-spacing: .07em; }
+  nav { display: flex; align-items: center; gap: 28px; font: 12px var(--mono); }
+  .header-cta { background: var(--ink); color: white; padding: 10px 16px; }
+  .header-cta span { margin-left: 15px; }
+  .hero { padding-top: 64px; }
+  .eyebrow, .label { font: 11px var(--mono); letter-spacing: .09em; text-transform: uppercase; color: var(--muted); }
+  .eyebrow { display: flex; align-items: center; gap: 20px; margin-bottom: 32px; }
+  .draft { padding: 4px 9px; background: #eceefa; color: var(--blue); }
+  .hero-grid { display: grid; grid-template-columns: 1.7fr 1fr; gap: 70px; align-items: start; }
+  h1, h2, h3 { font-family: var(--display); line-height: 1.15; font-weight: 600; }
+  h1 { font-size: clamp(44px, 5.5vw, 80px); letter-spacing: -.065em; }
+  h1 em { color: var(--blue); font-style: normal; }
+  .intro { font-size: 23px; margin-top: 25px; letter-spacing: -.025em; }
+  .hero-copy { color: var(--muted); font-size: 16px; max-width: 550px; margin-top: 13px; }
+  .byline { display: flex; flex-wrap: wrap; gap: 10px 18px; margin-top: 28px; font: 10px var(--mono); color: var(--muted); }
+  .byline a { text-decoration: underline; text-underline-offset: 3px; }
+  .test-card { border: 1px solid var(--line); background: #f0f2fa; padding: 25px 28px; }
+  .sheet-mark { position: relative; margin: 23px 25px 38px 0; }
+  .mini-sheet { aspect-ratio: 2; border: 1px solid var(--blue); display: flex; align-items: center; justify-content: center; flex-direction: column; background-image: linear-gradient(#dde1f0 1px, transparent 1px), linear-gradient(90deg, #dde1f0 1px, transparent 1px); background-size: 20px 20px; }
+  .mini-sheet span { font: 54px var(--display); font-weight: 700; letter-spacing: -.07em; }
+  .mini-sheet small { font: 10px var(--mono); color: var(--muted); }
+  .sheet-length, .sheet-width { position: absolute; font: 9px var(--mono); color: var(--muted); }
+  .sheet-length { bottom: -23px; left: 50%; transform: translateX(-50%); }
+  .sheet-width { right: -26px; top: 50%; transform: translate(50%,-50%) rotate(90deg); }
+  dl > div { display: flex; justify-content: space-between; gap: 10px; padding: 9px 0; border-bottom: 1px solid var(--line); font-size: 12px; }
+  dt { color: var(--muted); } dd { text-align: right; }
+  .micro { font-size: 11px; line-height: 1.6; color: var(--muted); }
+  .test-card .micro { margin-top: 14px; }
+  .disclosure { display: flex; align-items: baseline; gap: 10px; padding: 18px 0; margin-top: 36px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); font-size: 12px; color: var(--muted); }
+  .disclosure-dot { flex: 0 0 5px; width: 5px; height: 5px; background: var(--blue); border-radius: 50%; }
+  .results, .checkpoints, .method, .downloads, .laser { padding-block: 76px; }
+  .story { display: grid; grid-template-columns: 240px minmax(0, 700px); gap: 70px; padding-block: 72px 24px; }
+  .story-rail { position: sticky; top: 110px; align-self: start; padding-top: 10px; border-top: 2px solid var(--blue); }
+  .story-rail .label { margin-top: 12px; color: var(--blue); }
+  .story-rail p { font: 12px/1.7 var(--mono); color: var(--muted); margin-top: 10px; }
+  .prose h2 { font-size: clamp(26px, 2.6vw, 34px); margin: 52px 0 18px; }
+  .prose h2:first-child { margin-top: 0; }
+  .prose p { font-size: 18px; line-height: 1.78; margin-top: 18px; color: #1c1e26; }
+  .prose .lede { font-size: 22px; line-height: 1.55; letter-spacing: -.015em; color: var(--ink); }
+  .prose .prose-note { font-size: 14px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 18px; margin-top: 36px; }
+  .prose-wide { max-width: 760px; margin-bottom: 36px; }
+  .results > .prose-wide { margin-top: -6px; }
+  .pullquote { margin: 44px 0; padding: 4px 0 4px 26px; border-left: 3px solid var(--blue); font: 600 clamp(24px, 2.8vw, 34px)/1.25 var(--display); letter-spacing: -.04em; color: var(--blue); }
+  .questions { list-style: none; counter-reset: q; margin-top: 22px; border-top: 1px solid var(--line); }
+  .questions li { counter-increment: q; display: grid; grid-template-columns: 44px 150px 1fr; gap: 10px; align-items: baseline; padding: 16px 0; border-bottom: 1px solid var(--line); font-size: 14px; }
+  .questions li::before { content: counter(q, decimal-leading-zero); font: 11px var(--mono); color: var(--blue); }
+  .questions strong { font: 600 16px var(--display); letter-spacing: -.02em; }
+  .questions span { color: var(--muted); }
+  .laser-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .laser-card { padding: 25px; border: 1px solid var(--line); background: white; }
+  .laser-card.kenzap-card { background: #e8ecfc; border-color: #cbd1e3; }
+  .laser-card.warn-card { border-top: 3px solid #a43228; }
+  .laser-value { display: block; margin: 14px 0 16px; font: 600 52px var(--display); letter-spacing: -.06em; color: var(--blue); line-height: 1; }
+  .warn-card .laser-value { color: #a43228; }
+  .laser-value small { display: block; margin-top: 8px; font: 11px var(--mono); letter-spacing: 0; color: var(--muted); }
+  .laser-card ul { list-style: none; font-size: 13px; color: var(--muted); }
+  .laser-card li { padding: 9px 0; border-top: 1px solid var(--line); }
+  .laser .micro { margin-top: 16px; }
+  .section-heading { display: flex; justify-content: space-between; gap: 32px; align-items: end; margin-bottom: 30px; }
+  h2 { font-size: clamp(28px, 3vw, 40px); letter-spacing: -.04em; margin-top: 12px; }
+  .section-heading > p { color: var(--muted); font-size: 14px; max-width: 330px; }
+  .stat-strip { display: grid; grid-template-columns: repeat(3, 1fr); border-block: 1px solid var(--line); margin: 36px 0 30px; }
+  .stat-strip > div { padding: 26px 24px; border-left: 1px solid var(--line); }
+  .stat-strip > div:first-child { padding-left: 0; border: 0; }
+  .stat-value { font: 58px var(--display); font-weight: 600; letter-spacing: -.06em; color: var(--blue); }
+  .stat-denominator { color: #8a9099; font-size: 25px; letter-spacing: -.03em; }
+  .stat-unit { font: 13px var(--mono); letter-spacing: 0; }
+  .stat-strip h3 { font-size: 16px; margin-top: 6px; }
+  .stat-strip p { margin-top: 7px; font-size: 12px; color: var(--muted); max-width: 270px; }
+  .basis-control { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+  .segmented { display: inline-flex; border: 1px solid #cbd1e3; padding: 3px; background: #f6f7fc; gap: 3px; }
+  .segmented button { font: 11px var(--mono); border: none; padding: 9px 13px; background: transparent; color: var(--muted); white-space: nowrap; }
+  .segmented button[aria-pressed="true"] { background: var(--ink); color: white; }
+  .table-note { margin: 13px 0 20px; font-size: 12px; color: var(--muted); min-height: 20px; }
+  .table-scroll { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; min-width: 760px; font-size: 13px; text-align: left; }
+  th, td { border-bottom: 1px solid var(--line); padding: 17px 18px; vertical-align: top; width: 25%; }
+  thead th { border-top: 1px solid var(--line); font-weight: 600; font-size: 14px; }
+  th:first-child { padding-left: 0; }
+  tbody th { font-weight: 400; color: var(--muted); }
+  thead span, td small { display: block; font-size: 10px; color: var(--muted); font-weight: 400; margin-top: 5px; line-height: 1.6; }
+  td strong, .coverage-value { font-weight: 500; font-size: 22px; letter-spacing: -.04em; }
+  .kenzap-col { background: #e8ecfc; }
+  .warning-text { color: #a43228; } .pass-text { color: #35604a; }
+  .table-footnote { font-size: 11px; color: var(--muted); margin-top: 16px; }
+  .comparison-band { padding-block: 70px; background: #eceff8; border-block: 1px solid var(--line); }
+  .viewer-toolbar { display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap; margin-bottom: 20px; }
+  .viewer-options { display: flex; flex-wrap: wrap; gap: 16px; font-size: 11px; color: var(--muted); }
+  .viewer-options label { display: flex; gap: 7px; align-items: center; cursor: pointer; }
+  input { accent-color: var(--blue); width: 14px; height: 14px; }
+  .zoom-buttons { display: flex; align-items: center; gap: 3px; font: 10px var(--mono); }
+  .zoom-buttons button { border: 1px solid #cbd1e3; background: var(--paper); min-width: 30px; height: 30px; padding: 0 8px; }
+  .zoom-buttons button:disabled { opacity: .4; cursor: default; }
+  .zoom-buttons output { min-width: 50px; text-align: center; }
+  .viewer-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .layout-panel { border: 1px solid #cbd1e3; background: white; min-width: 0; }
+  .layout-panel figcaption { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 17px 20px; border-bottom: 1px solid var(--line); }
+  .panel-name { font-size: 14px; font-weight: 500; }
+  .panel-count { display: flex; gap: 8px; align-items: center; font: 13px var(--mono); }
+  .panel-count small { font-size: 9px; }
+  .status-dot { background: #438367; width: 6px; height: 6px; border-radius: 50%; }
+  .layout-stage { position: relative; overflow: hidden; padding: 14px; user-select: none; }
+  .layout-stage.zoomed { cursor: grab; touch-action: none; }
+  .layout-stage.zoomed:active { cursor: grabbing; }
+  .drawing { transform-origin: center; }
+  .drawing :global(svg) { width: 100%; height: auto; display: block; }
+  .panel-footer { padding: 12px 16px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 10px; flex-wrap: wrap; font: 9px var(--mono); color: var(--muted); }
+  .viewer-caption { display: flex; justify-content: space-between; align-items: baseline; gap: 20px; margin: 17px 0 12px; }
+  .viewer-caption p { font-size: 12px; max-width: 780px; color: var(--muted); }
+  .viewer-caption > span { font: 9px var(--mono); color: var(--muted); white-space: nowrap; }
+  .no-script-note { padding-top: 15px; font-size: 12px; }.no-script-note a { text-decoration: underline; }
+  .checkpoint-grid { display: grid; grid-template-columns: 300px 1fr; gap: 40px; align-items: start; }
+  .checkpoint-rail h3 { font-size: 21px; margin-bottom: 12px; }
+  .checkpoint-rail > p { font-size: 13px; color: var(--muted); }
+  .checkpoint-tabs { display: flex; flex-direction: column; gap: 12px; margin: 24px 0 19px; }
+  .checkpoint-tabs button { position: relative; padding: 15px 18px 20px; text-align: left; border: 1px solid var(--line); background: transparent; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .checkpoint-tabs button > span:first-child { font: 11px var(--mono); }
+  .checkpoint-tabs strong { font: 24px var(--display); font-weight: 600; }
+  .checkpoint-tabs small { font: 12px var(--mono); color: var(--muted); }
+  .checkpoint-tabs button[aria-pressed="true"] { border-color: var(--blue); background: #e8ecfc; }
+  .checkpoint-bar { position: absolute; height: 2px; width: var(--progress); background: var(--blue); bottom: 0; left: 0; }
+  .image-open { position: relative; display: block; width: 100%; padding: 0; border: 0; background: #dde1f0; overflow: hidden; cursor: zoom-in; }
+  .image-open img { display: block; width: 100%; height: auto; }
+  .image-open-label { display: flex; gap: 12px; align-items: center; position: absolute; bottom: 12px; right: 12px; background: rgba(246,247,252,.97); padding: 8px 12px; font: 10px var(--mono); }
+  .screenshot-panel figcaption { margin-top: 13px; font: 10px var(--mono); color: var(--muted); }
+  .other-shots { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 44px; }
+  .other-shots figcaption { display: flex; flex-direction: column; gap: 7px; margin-top: 15px; font-size: 12px; color: var(--muted); }
+  .other-shots strong { color: var(--ink); font-size: 15px; font-weight: 500; }
+  .takeaway { border-block: 1px solid var(--line); padding-block: 48px; }
+  .takeaway h2 { max-width: 700px; }
+  .takeaway > p { max-width: 810px; font-size: 16px; margin-top: 18px; }
+  .takeaway-limit { font-size: 13px !important; color: var(--muted); }
+  .method-grid { display: grid; grid-template-columns: 1fr 1.55fr; gap: 80px; }
+  .method-intro h3 { font-size: 23px; }
+  .method-intro p { font-size: 14px; color: var(--muted); margin-top: 17px; }
+  .text-link { display: inline-flex; align-items: center; gap: 20px; font-size: 12px; border-bottom: 1px solid var(--ink); padding-bottom: 4px; }
+  .method-intro .text-link { margin-top: 24px; }
+  .method-details details { border-top: 1px solid var(--line); }
+  .method-details details:last-child { border-bottom: 1px solid var(--line); }
+  summary { cursor: pointer; font-size: 14px; padding: 18px 0; }
+  .method-details details > div { padding: 0 0 20px; }
+  .method-details p { color: var(--muted); font-size: 12px; margin-top: 12px; }
+  .downloads { padding-top: 0; }
+  .download-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  .download-card { padding: 25px; border: 1px solid var(--line); background: white; }
+  .download-card h3 { font-size: 21px; margin: 15px 0 10px; }
+  .download-card p { font-size: 12px; color: var(--muted); min-height: 40px; }
+  .download-link { display: flex; align-items: center; justify-content: space-between; background: var(--ink); color: white; padding: 12px 15px; margin-top: 20px; font: 11px var(--mono); }
+  .checksum { margin-top: 16px; }.checksum summary { font: 9px var(--mono); padding: 0; color: var(--muted); }
+  .checksum code { display: block; overflow-wrap: anywhere; font: 10px var(--mono); margin-top: 12px; }
+  .evidence-links { display: flex; flex-wrap: wrap; gap: 15px 26px; margin: 24px 0 15px; font: 11px var(--mono); }
+  .evidence-links a { text-decoration: underline; text-underline-offset: 4px; }
+  .article-cta { border: 1px solid var(--line); background: #e8ecfc; padding: 40px; display: flex; gap: 40px; align-items: center; justify-content: space-between; }
+  .article-cta h2 { font-size: 31px; }.article-cta p { color: var(--muted); font-size: 13px; margin-top: 12px; max-width: 620px; }
+  .cta-links { display: flex; flex-direction: column; gap: 17px; align-items: start; }
+  .primary-button { background: var(--ink); color: white; padding: 15px 20px; font: 11px var(--mono); display: flex; gap: 18px; align-items: center; white-space: nowrap; }
+  .site-footer { display: flex; align-items: center; justify-content: space-between; gap: 25px; margin-block: 50px 30px; font: 10px var(--mono); color: var(--muted); }
+  .site-footer > div { display: flex; gap: 20px; }.site-footer .brand { color: var(--ink); font-size: 18px; }
+  dialog { position: fixed; inset: 0; margin: auto; width: min(1400px, 94vw); max-height: 94dvh; overflow-y: auto; padding: 18px; border: 1px solid var(--line); background: var(--paper); color: var(--ink); }
+  dialog::backdrop { background: rgba(10,10,8,.8); }
+  .dialog-header { display: flex; justify-content: space-between; align-items: center; gap: 16px; font: 11px var(--mono); margin-bottom: 14px; }
+  .dialog-header button { border: 1px solid var(--line); background: white; padding: 9px 14px; flex-shrink: 0; }
+  #dialog-image { display: block; width: 100%; height: auto; } dialog > .micro { margin-top: 12px; }
+  .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
+  .skip-link { position: fixed; z-index: 30; left: 15px; top: -60px; padding: 10px 15px; background: white; border: 1px solid var(--blue); }.skip-link:focus { top: 10px; }
+  @media (prefers-reduced-motion: no-preference) { .hero-grid { animation: arrive .5s ease-out both; } @keyframes arrive { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } } }
+  @media (prefers-reduced-motion: reduce) { :global(html:has(.benchmark)) { scroll-behavior: auto; } }
+  @media (max-width: 1100px) { .story { grid-template-columns: 1fr; gap: 24px; }.story-rail { position: static; }.laser-grid { grid-template-columns: 1fr; }.shell { width: calc(100% - 64px); }.hero-grid { gap: 35px; }.hero h1 { font-size: 58px; }.viewer-caption { flex-direction: column; gap: 10px; }.method-grid { gap: 40px; }.checkpoint-grid { grid-template-columns: 250px 1fr; gap: 25px; }.article-cta { padding: 30px; }.stat-value { font-size: 49px; } }
+  @media (max-width: 760px) { .prose p { font-size: 17px; }.prose .lede { font-size: 20px; }.questions li { grid-template-columns: 34px 1fr; }.questions span { grid-column: 2; }.story { padding-block: 40px 8px; }.laser { padding-block: 45px; }.shell { width: calc(100% - 36px); }.site-header { padding: 16px 18px; }nav { gap: 12px; }nav > a:not(.header-cta) { display: none; }.hero { padding-top: 36px; }.hero-grid { grid-template-columns: 1fr; gap: 30px; }.hero h1 { font-size: clamp(40px,9vw,64px); }.intro { font-size: 19px; }.test-card { padding: 22px; }.sheet-mark { max-width: 300px; }.section-heading { flex-direction: column; align-items: start; gap: 15px; }.section-heading > p { max-width: none; }.results,.checkpoints,.method { padding-block: 45px; }.stat-strip { grid-template-columns: 1fr; margin-top: 26px; }.stat-strip > div,.stat-strip > div:first-child { padding: 20px 0; border: 0; }.stat-strip > div + div { border-top: 1px solid var(--line); }.stat-value { font-size: 47px; }.stat-strip p { max-width: none; }.basis-control { flex-direction: column; align-items: start; gap: 12px; }.segmented button { padding-inline: 10px; font-size: 10px; }.comparison-band { padding-block: 40px; }.viewer-grid { grid-template-columns: 1fr; }.viewer-toolbar { gap: 13px; }.viewer-options { width: 100%; order: 3; }.viewer-caption > span { white-space: normal; }.checkpoint-grid { grid-template-columns: 1fr; }.checkpoint-tabs { flex-direction: row; gap: 7px; }.checkpoint-tabs button { padding: 12px 10px 17px; flex: 1; flex-direction: column; align-items: start; }.checkpoint-tabs button > span:first-child { font-size: 9px; }.other-shots { grid-template-columns: 1fr; gap: 28px; margin-top: 28px; }.method-grid { grid-template-columns: 1fr; gap: 30px; }.download-grid { grid-template-columns: 1fr; gap: 14px; }.download-card p { min-height: 0; }.article-cta { padding: 25px; flex-direction: column; align-items: start; gap: 25px; }.article-cta h2 { font-size: 28px; }.primary-button { white-space: normal; }.site-footer { flex-direction: column; align-items: start; }.disclosure { margin-top: 26px; }.table-scroll { margin-inline: -18px; padding-inline: 18px; }.dialog-header { font-size: 10px; } }
+</style>

@@ -1,0 +1,158 @@
+{
+  "date": "2026-10-05",
+  "targetParts": 61,
+  "sheet": {
+    "widthMm": 1250,
+    "lengthMm": 2500
+  },
+  "analysis": {
+    "ezdxf": "1.4.4",
+    "shapely": "2.1.2",
+    "curveToleranceMm": 0.005,
+    "joinToleranceMm": 0.05,
+    "overlapThresholdMm2": 1.0,
+    "displayToleranceMm": 0.025
+  },
+  "results": [
+    {
+      "id": "kenzap",
+      "name": "Kenzap Nesting",
+      "file": "export_kenzap_nesting.dxf",
+      "sha256": "4bc2af27612072d29d2d5685ecc02eff636fea905fef66321b26be97b34f2127",
+      "fileBytes": 234000,
+      "entityCounts": {
+        "LWPOLYLINE": 183,
+        "CIRCLE": 610,
+        "LINE": 915
+      },
+      "parts": 61,
+      "closedOuterContours": 61,
+      "openFragments": 0,
+      "holes": 732,
+      "orphanInternalContours": 0,
+      "joinedFragments": 0,
+      "annotationLinesExcluded": 915,
+      "invalidHoleRings": 0,
+      "lengthMm": 2303.6316,
+      "widthMm": 1249.9979,
+      "bounds": [
+        -0.0006,
+        -0.0006,
+        2303.631,
+        1249.9973
+      ],
+      "grossAreaMm2": 2429785.515,
+      "netAreaMm2": 2256522.126,
+      "grossCoveragePercent": 77.753,
+      "uniqueCoveragePercent": 77.753,
+      "usedRectangleCoveragePercent": 84.381,
+      "overlapPairs": 0,
+      "overlapAreaMm2": 0,
+      "intersections": []
+    },
+    {
+      "id": "deepnest",
+      "name": "Deepnest",
+      "file": "export_deepnest.dxf",
+      "sha256": "61f65e82aac0cec42c951dbf99460a6668a528f5a0b8175d1008b897468b4c29",
+      "fileBytes": 4039129,
+      "entityCounts": {
+        "POLYLINE": 721
+      },
+      "parts": null,
+      "closedOuterContours": 49,
+      "openFragments": 12,
+      "holes": 660,
+      "orphanInternalContours": 72,
+      "joinedFragments": 0,
+      "annotationLinesExcluded": 0,
+      "invalidHoleRings": 0,
+      "lengthMm": 2499.7672,
+      "widthMm": 1250.03,
+      "bounds": [
+        0.5128,
+        -0.53,
+        2500.28,
+        1249.5
+      ],
+      "grossAreaMm2": 1951658.468,
+      "netAreaMm2": 1812596.318,
+      "grossCoveragePercent": null,
+      "uniqueCoveragePercent": null,
+      "usedRectangleCoveragePercent": null,
+      "overlapPairs": 5,
+      "overlapAreaMm2": 50481.854,
+      "intersections": [
+        {
+          "parts": [
+            1,
+            36
+          ],
+          "areaMm2": 10634.113
+        },
+        {
+          "parts": [
+            2,
+            3
+          ],
+          "areaMm2": 9543.53
+        },
+        {
+          "parts": [
+            9,
+            39
+          ],
+          "areaMm2": 9541.718
+        },
+        {
+          "parts": [
+            11,
+            38
+          ],
+          "areaMm2": 11220.308
+        },
+        {
+          "parts": [
+            24,
+            33
+          ],
+          "areaMm2": 9541.594
+        }
+      ]
+    },
+    {
+      "id": "deepnest-next",
+      "name": "Deepnest-next",
+      "file": "export_deepnest_next.dxf",
+      "sha256": "01de789cd0ebf294c2ee6e0704b061b81104255878006d5fc1f9b81365a91266",
+      "fileBytes": 403316,
+      "entityCounts": {
+        "LWPOLYLINE": 559
+      },
+      "parts": 43,
+      "closedOuterContours": 43,
+      "openFragments": 0,
+      "holes": 516,
+      "orphanInternalContours": 0,
+      "joinedFragments": 0,
+      "annotationLinesExcluded": 0,
+      "invalidHoleRings": 0,
+      "lengthMm": 2445.6292,
+      "widthMm": 1204.7417,
+      "bounds": [
+        0.2101,
+        0.1765,
+        2445.8393,
+        1204.9183
+      ],
+      "grossAreaMm2": 1712799.699,
+      "netAreaMm2": 1590665.037,
+      "grossCoveragePercent": 54.81,
+      "uniqueCoveragePercent": 54.81,
+      "usedRectangleCoveragePercent": 58.133,
+      "overlapPairs": 0,
+      "overlapAreaMm2": 0.0,
+      "intersections": []
+    }
+  ]
+}

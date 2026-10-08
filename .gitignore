@@ -10,6 +10,7 @@ etc/
 
 # dependencies
 node_modules/
+.venv-benchmark/
 
 # logs
 npm-debug.log*

@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "test:benchmark": "node scripts/test-nesting-benchmark.mjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.6.1",
