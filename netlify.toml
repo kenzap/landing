@@ -18,6 +18,11 @@
     Cache-Control = "public, max-age=31536000, immutable"
 
 [[headers]]
+  for = "/app-onboarding/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+[[headers]]
   for = "/*"
   [headers.values]
     X-Frame-Options = "DENY"
@@ -34,6 +39,8 @@
 # Enable compression
 [[plugins]]
   package = "@netlify/plugin-sitemap"
+  [plugins.inputs]
+    exclude = ["**/app-onboarding/**"]
 
 [build.processing]
   skip_processing = false

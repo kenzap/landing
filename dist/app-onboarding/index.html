@@ -1,0 +1,21 @@
+<!DOCTYPE html><!--
+  Netlify Forms receiver for the Kenzap Nesting desktop setup assistant.
+  Netlify registers the "onboarding" form from this static markup at deploy
+  time; the app (nesting-app/main/ipc/feedback.js) POSTs urlencoded data to
+  this page's URL. Field names must match what the app sends: unknown
+  fields are dropped. No reCAPTCHA, since the app can't solve one; the
+  honeypot catches basic bots. Kept out of search via the robots meta here,
+  an X-Robots-Tag header and a sitemap exclude in netlify.toml.
+--><html lang="en"> <head><meta charset="UTF-8"><meta name="description" content="Netlify form receiver for the Kenzap Nesting setup assistant."><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta property="og:title" content="Onboarding Receiver — Kenzap"><meta property="og:description" content="Netlify form receiver for the Kenzap Nesting setup assistant."><meta property="og:type" content="website"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous"><link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet"><meta name="generator" content="Astro v4.16.19"><title>Onboarding Receiver — Kenzap</title><meta name="robots" content="noindex, nofollow"><!-- Inline critical CSS for above-the-fold content --><style>
+      /* Critical CSS - customize based on your above-the-fold content */
+      *{box-sizing:border-box;margin:0;padding:0}
+      body{font-family:system-ui,-apple-system,sans-serif;line-height:1.5;color:#111827}
+      .fixed{position:fixed}
+      .top-0{top:0}
+      .left-0{left:0}
+      .right-0{right:0}
+      .z-50{z-index:50}
+      .bg-white{background-color:#fff}
+      .border-b{border-bottom-width:1px}
+      .border-gray-200{border-color:#e5e7eb}
+    </style><link rel="stylesheet" href="/assets/style.szx0KtpY.css"></head> <body>   <form name="onboarding" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden> <input type="hidden" name="form-name" value="onboarding"> <input name="bot-field"> <input type="email" name="email"> <input name="optInFeedback"> <input name="optInUpdates"> <input name="materialType"> <input name="mode"> <input name="lengthOptimization"> <input name="sheetWidthMm"> <input name="sheetLengthMm"> <input name="partSpacingMm"> <input name="units"> <input name="language"> <input name="platform"> <input name="appVersion"> <input name="submittedAt"> </form>  </body></html>
