@@ -174,6 +174,11 @@ const softwareTiers = [
           These platforms are the legacy giants of the metal fabrication industry. They are designed to run massive, multi-machine factories and integrate deeply with enterprise resource planning (ERP) systems.
         </p>
 
+        <figure class="figure figure-wide">
+          <img src={`${base}/sigmanest.png`} alt="SigmaNEST industrial sheet nesting and machine setup interface" loading="lazy" />
+          <figcaption>SigmaNEST: Industrial-grade multi-sheet true-shape nesting and ERP machine management.</figcaption>
+        </figure>
+
         <div class="tier-card">
           <div class="tier-meta">
             <div><span class="label">Supported platforms</span><p>Strictly Windows. You will need a heavy-duty local PC with lots of CPU and RAM.</p></div>
@@ -196,6 +201,11 @@ const softwareTiers = [
           Unlike older desktop software, these tools run the nesting calculations on cloud servers, so you don't need a high-end workstation just to get the job done.
         </p>
 
+        <figure class="figure figure-wide">
+          <img src={`${base}/nest-and-cut.png`} alt="Nest&amp;Cut cloud web browser nesting interface" loading="lazy" />
+          <figcaption>Nest&amp;Cut: Cloud-based automatic part healing and browser-driven nesting.</figcaption>
+        </figure>
+
         <div class="tier-card">
           <div class="tier-meta">
             <div><span class="label">Supported platforms</span><p>OS-independent. They run entirely in a web browser (Chrome, Safari, Edge), so you can use them on Windows, Macs, or even tablets.</p></div>
@@ -217,6 +227,11 @@ const softwareTiers = [
         <p>
           These are the go-to free tools for makers and hobby laser engravers. They do a great job packing shapes tightly, but they lack the machine-level settings and precision you need in a commercial shop.
         </p>
+
+        <figure class="figure figure-wide">
+          <img src={`${base}/deepnest.png`} alt="Deepnest open source nesting layout interface" loading="lazy" />
+          <figcaption>Deepnest: Open-source geometric packing and cavity nesting for makers.</figcaption>
+        </figure>
 
         <div class="tier-card">
           <div class="tier-meta">
@@ -262,6 +277,11 @@ const softwareTiers = [
           These tools bridge the gap between expensive enterprise software and basic free tools, catering to small-to-medium businesses.
         </p>
 
+        <figure class="figure figure-wide">
+          <img src={`${base}/mynesting.png`} alt="MyNesting desktop nesting application interface" loading="lazy" />
+          <figcaption>MyNesting: Desktop nesting with cloud-assisted calculation and pay-per-export model.</figcaption>
+        </figure>
+
         <div class="tier-card">
           <div class="tier-meta">
             <div><span class="label">Supported platforms</span><p>Windows.</p></div>
@@ -283,6 +303,11 @@ const softwareTiers = [
         <p>
           Instead of exporting 2D files to a separate nesting program, these tools run directly inside your 3D CAD environment.
         </p>
+
+        <figure class="figure figure-wide">
+          <img src={`${base}/fusion-360-nesting.png`} alt="Autodesk Fusion 360 sheet metal nesting study interface" loading="lazy" />
+          <figcaption>Autodesk Fusion 360: Direct 3D CAD parametric link from component assembly to sheet metal nest.</figcaption>
+        </figure>
 
         <div class="tier-card">
           <div class="tier-meta">
@@ -467,11 +492,11 @@ const softwareTiers = [
   .pullquote { margin: 52px -30px; padding: 12px 0 12px 24px; border-left: 4px solid var(--blue); font: 600 clamp(24px, 3vw, 32px)/1.28 var(--display); letter-spacing: -.04em; color: var(--blue); }
 
   /* figures */
-  .figure { margin: 48px auto 0; }
+  .figure { margin: 36px auto 0; }
   .figure-wide { width: min(1040px, calc(100% - 40px)); }
   .hero-figure { margin-top: 40px; }
-  .hero-figure img { display: block; width: 100%; height: auto; border: 1px solid var(--line); background: white; border-radius: 4px; }
-  figcaption { margin-top: 14px; font-size: 13px; line-height: 1.6; color: var(--muted); text-align: center; }
+  figure img { display: block; width: 100%; height: auto; border: 1px solid var(--line); background: white; border-radius: 4px; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+  figcaption { margin-top: 12px; font-size: 13px; line-height: 1.6; color: var(--muted); text-align: center; }
 
   /* table */
   .table-scroll { overflow-x: auto; background: white; border: 1px solid var(--line); border-radius: 4px; }
