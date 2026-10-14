@@ -1,5 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import HeroNestFigure from '../../components/HeroNestFigure.astro';
+import RemnantGapFigure from '../../components/RemnantGapFigure.astro';
 
 const base = '/articles/best-nesting-software-for-laser-cutting';
 
@@ -111,15 +113,10 @@ const softwareTiers = [
         </div>
       </header>
 
-      <figure class="figure figure-wide hero-figure">
-        <img
-          src={`${base}/hero-nesting-software.svg`}
-          alt="Visual benchmark comparison of nesting software categories and true-shape nesting on stock plate"
-          width="1200"
-          height="630"
-        />
-        <figcaption>Evaluating 2026 nesting solutions across factory floors, cloud browsers, and CNC laser tables.</figcaption>
-      </figure>
+      <HeroNestFigure
+        categories={softwareTiers.map((t, i) => ({ ...t, href: `#category-${i + 1}` }))}
+        gapHref="#remnant-gap"
+      />
 
       <div class="body">
         <p class="lede">
@@ -169,7 +166,7 @@ const softwareTiers = [
       </div>
 
       <div class="body">
-        <h2>1. The Industrial Heavyweights (SigmaNEST, ProNest, Lantek)</h2>
+        <h2 id="category-1">1. The Industrial Heavyweights (SigmaNEST, ProNest, Lantek)</h2>
         <p>
           These platforms are the legacy giants of the metal fabrication industry. They are designed to run massive, multi-machine factories and integrate deeply with enterprise resource planning (ERP) systems.
         </p>
@@ -196,7 +193,7 @@ const softwareTiers = [
           <p>They trade speed and agility for enterprise control. Smaller shops end up paying thousands of dollars for a ton of features they will never touch.</p>
         </aside>
 
-        <h2>2. The Cloud &amp; Web Innovators (Nest&amp;Cut)</h2>
+        <h2 id="category-2">2. The Cloud &amp; Web Innovators (Nest&amp;Cut)</h2>
         <p>
           Unlike older desktop software, these tools run the nesting calculations on cloud servers, so you don't need a high-end workstation just to get the job done.
         </p>
@@ -223,7 +220,7 @@ const softwareTiers = [
           <p>Their biggest selling point is also a major risk: zero offline capability. If the shop's Wi-Fi drops or the connection gets spotty, production grinds to a halt because operators physically cannot nest new jobs without server access.</p>
         </aside>
 
-        <h2>3. The Maker &amp; Open-Source Tools (Deepnest, SVGnest)</h2>
+        <h2 id="category-3">3. The Maker &amp; Open-Source Tools (Deepnest, SVGnest)</h2>
         <p>
           These are the go-to free tools for makers and hobby laser engravers. They do a great job packing shapes tightly, but they lack the machine-level settings and precision you need in a commercial shop.
         </p>
@@ -241,7 +238,9 @@ const softwareTiers = [
           </div>
         </div>
 
-        <p><strong>Performance:</strong> The geometric packing is excellent. They are great at finding negative space and nesting small parts tightly together. But they lack machine-specific tuning.</p>
+        <p><strong>Performance:</strong> On simple shapes the packing is genuinely good: they find negative space and tuck small parts into gaps. Speed is the trade-off. Deepnest improves a layout by trying arrangement after arrangement, so on complex production parts it can take minutes to approach a nest that faster engines reach in seconds, and leaving it running longer doesn't always get you there. Of the tools in this guide, it is likely to be one of the slower ones, and its exports are worth checking before they go to the machine.</p>
+
+        <p class="bench-note">Want the numbers? Our <a href="/articles/deepnest-vs-kenzap-nesting/">Deepnest vs Kenzap Nesting case study</a> runs a real 61-part production job through Deepnest, Deepnest-next and Kenzap Nesting, with timings, screenshots and the exported DXFs. Kenzap builds Kenzap Nesting, so read it as one data point.</p>
 
         <p><strong>Usability:</strong> The interfaces are incredibly simple, but they force a fragmented workflow. Because they aren't true CAM software, you have to export the nested file and bring it into a secondary software to actually prep it for the machine.</p>
 
@@ -250,7 +249,7 @@ const softwareTiers = [
           <p>They don't generate machine code (G-code). More importantly, they lack critical industrial controls like kerf width compensation (offsetting for the laser beam width) and lead-ins/lead-outs to prevent pierce marks on the finished part.</p>
         </aside>
 
-        <h2>4. The Design-Native Plugins (e.g., eCut)</h2>
+        <h2 id="category-4">4. The Design-Native Plugins (e.g., eCut)</h2>
         <p>
           Instead of forcing users to learn a separate CAD/CAM environment, these tools plug directly into the graphic design software that sign-makers and acrylic cutters already use.
         </p>
@@ -272,7 +271,7 @@ const softwareTiers = [
           <p>These are highly niche. They don't have the industrial parameters required for heavy metal fabrication, plasma cutting, or automated sheet tracking.</p>
         </aside>
 
-        <h2>5. The Mid-Market &amp; Pay-Per-Use: MyNesting &amp; NestFab</h2>
+        <h2 id="category-5">5. The Mid-Market &amp; Pay-Per-Use: MyNesting &amp; NestFab</h2>
         <p>
           These tools bridge the gap between expensive enterprise software and basic free tools, catering to small-to-medium businesses.
         </p>
@@ -299,7 +298,7 @@ const softwareTiers = [
           <p>MyNesting's pay-per-export model is great for hobbyists, but if a shop's volume suddenly spikes, paying per file quickly becomes more expensive than just buying a flat-rate perpetual license.</p>
         </aside>
 
-        <h2>6. The CAD-Integrated Ecosystems: Autodesk Fusion 360 &amp; Inventor Nesting</h2>
+        <h2 id="category-6">6. The CAD-Integrated Ecosystems: Autodesk Fusion 360 &amp; Inventor Nesting</h2>
         <p>
           Instead of exporting 2D files to a separate nesting program, these tools run directly inside your 3D CAD environment.
         </p>
@@ -326,7 +325,7 @@ const softwareTiers = [
           <p>You are entirely locked into their specific ecosystem and subscription tiers. If you cancel your cloud subscription, you lose access to your nesting workflows.</p>
         </aside>
 
-        <h2>The Universal Gap: The Remnant Sheet Reality</h2>
+        <h2 id="remnant-gap">The Universal Gap: The Remnant Sheet Reality</h2>
         <p>
           Whether a shop is running a $15,000 enterprise suite or a free open-source tool, almost every nesting program makes the same flawed assumption: <em>that you are cutting on a perfect, brand-new rectangular sheet of material</em>.
         </p>
@@ -340,15 +339,7 @@ const softwareTiers = [
         </p>
       </div>
 
-      <figure class="figure figure-wide hero-figure">
-        <img
-          src={`${base}/remnant-gap.svg`}
-          alt="Diagram comparing ideal rectangular sheet assumptions with real shop floor remnant off-cuts and cutouts"
-          width="1100"
-          height="480"
-        />
-        <figcaption>The Remnant Problem: software assumes a rectangular blank, while actual workshops have piles of valuable irregular scrap skeletons.</figcaption>
-      </figure>
+      <RemnantGapFigure />
 
       <div class="body">
         <div class="tags">
@@ -508,6 +499,9 @@ const softwareTiers = [
   .table-category { display: block; font: 600 15px var(--display); color: var(--ink); margin-top: 4px; }
   td code { font: 12px var(--mono); color: var(--blue); background: var(--pale); padding: 2px 6px; border-radius: 3px; }
   .gap-text { font-size: 12.5px; color: var(--warn); line-height: 1.5; display: block; }
+
+  /* aside note */
+  .bench-note { font-size: 14px; line-height: 1.6; color: var(--muted); }
 
   /* tier cards */
   .tier-card { margin-top: 24px; border: 1px solid var(--line); background: white; padding: 22px 26px; border-radius: 4px; }

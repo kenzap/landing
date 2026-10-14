@@ -1,0 +1,391 @@
+---
+// Animated "remnant gap" figure for /articles/best-nesting-software-for-laser-cutting/.
+// Geometry comes from scripts/remnant-gap-nest.py (real, collision-checked nests).
+import nest from './remnant-gap-nest.json';
+
+const MM = 5; // 1 SVG unit = 5 mm, plate is 600 x 300 units = 3000 x 1500 mm
+const sheetM2 = (600 * MM * 300 * MM) / 1e6;
+const remnantM2 = sheetM2 * nest.stats.remnant_area_pct_of_plate;
+const [rx, ry, rw, rh] = nest.rect;
+const ignoredPct = Math.round((1 - nest.stats.rect_area_pct_of_remnant) * 100);
+const total = nest.stats.n_full;
+const usedM = (nest.stats.full_used_width_mm / 1000).toFixed(2);
+const ratio = (nest.stats.n_true / nest.stats.n_rect).toFixed(1).replace(/\.0$/, '');
+const pct = (v: number) => `${Math.round(v * 100)}%`;
+
+const steps = [
+  {
+    tab: 'The assumption',
+    text: `Every nesting engine starts here: a fresh ${600 * MM} × ${300 * MM} mm sheet. All ${total} parts fit in the first ${usedM} m.`,
+    parts: total,
+    stock: `${sheetM2.toFixed(2)} m²`,
+    stockNote: 'new sheet',
+    used: pct(nest.stats.full_util),
+    usedNote: 'of the sheet',
+  },
+  {
+    tab: 'The reality',
+    text: `What's actually on the rack: last week's leftover. Stepped edge, old cut-outs, a sheared corner, and still ${pct(nest.stats.remnant_area_pct_of_plate)} of a sheet of good metal.`,
+    parts: 0,
+    stock: `${remnantM2.toFixed(2)} m²`,
+    stockNote: 'remnant',
+    used: '—',
+    usedNote: 'not nested yet',
+  },
+  {
+    tab: 'Rectangle workaround',
+    text: `Most software only accepts a rectangle, so the operator measures the biggest clean one (${rw * MM} × ${rh * MM} mm). The other ${ignoredPct}% of the remnant is ignored.`,
+    parts: nest.stats.n_rect,
+    stock: `${remnantM2.toFixed(2)} m²`,
+    stockNote: `${ignoredPct}% ignored`,
+    used: pct(nest.stats.rect_util),
+    usedNote: 'of the remnant',
+  },
+  {
+    tab: 'True-shape remnant',
+    text: `Remnant-aware nesting reads the real outline and holes, then nests parts around them. ${ratio}× as many parts come off the same plate.`,
+    parts: nest.stats.n_true,
+    stock: `${remnantM2.toFixed(2)} m²`,
+    stockNote: 'whole remnant',
+    used: pct(nest.stats.true_util),
+    usedNote: 'of the remnant',
+  },
+];
+---
+
+<figure class="rg" data-step="0" aria-labelledby="rg-caption">
+  <div class="rg-card">
+    <div class="rg-tabs" role="tablist" aria-label="Remnant nesting walkthrough">
+      {steps.map((s, i) => (
+        <button class="rg-tab" type="button" role="tab" data-go={i} aria-selected={i === 0 ? 'true' : 'false'}>
+          <span class="rg-num">0{i + 1}</span>
+          <span class="rg-tab-label">{s.tab}</span>
+          <i class="rg-bar" aria-hidden="true"></i>
+        </button>
+      ))}
+    </div>
+
+    <div class="rg-stage">
+      <svg class="rg-svg" viewBox="-28 -34 664 372" role="img" aria-label="A 3000 by 1500 mm sheet nested with 38 parts, then the real irregular remnant: a rectangle-only workflow fits 12 parts, true-shape remnant nesting fits 26.">
+        <defs>
+          <pattern id="rg-hatch" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+            <rect width="7" height="7" fill="#fdf2f2" />
+            <line x1="0" y1="0" x2="0" y2="7" stroke="#a43228" stroke-width="1.6" stroke-opacity=".35" />
+          </pattern>
+          <pattern id="rg-skeleton" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
+            <rect width="6" height="6" fill="#eceef4" />
+            <line x1="0" y1="0" x2="0" y2="6" stroke="#b9c0cf" stroke-width="1" />
+          </pattern>
+          <mask id="rg-outside-rect">
+            <rect x="-10" y="-10" width="620" height="320" fill="white" />
+            <rect x={rx} y={ry} width={rw} height={rh} fill="black" />
+          </mask>
+          <clipPath id="rg-remnant-clip"><path d={nest.remnant} /></clipPath>
+        </defs>
+
+        <!-- dimensions -->
+        <g class="rg-dim">
+          <line x1="0" y1="-16" x2="600" y2="-16" />
+          <line x1="0" y1="-22" x2="0" y2="-10" />
+          <line x1="600" y1="-22" x2="600" y2="-10" />
+          <text x="300" y="-21" text-anchor="middle">{600 * MM} mm</text>
+          <line x1="-16" y1="0" x2="-16" y2="300" />
+          <line x1="-22" y1="0" x2="-10" y2="0" />
+          <line x1="-22" y1="300" x2="-10" y2="300" />
+          <text x="-21" y="150" text-anchor="middle" transform="rotate(-90 -21 150)">{300 * MM} mm</text>
+        </g>
+
+        <!-- the sheet -->
+        <rect class="rg-sheet" width="600" height="300" />
+        <path class="rg-remnant" d={nest.remnant} />
+
+        <!-- what the previous job took -->
+        <g class="rg-consumed">
+          {nest.consumed.map((d) => <path class="rg-consumed-area" d={d} />)}
+          {nest.ghost.map((d) => <path class="rg-ghost" d={d} />)}
+          <rect class="rg-pill" x="402" y="-3" width="136" height="17" rx="2" />
+          <text class="rg-note" x="470" y="9" text-anchor="middle">CUT BY PREVIOUS JOB</text>
+        </g>
+
+        <!-- rectangle workaround -->
+        <g class="rg-waste" clip-path="url(#rg-remnant-clip)">
+          <path d={nest.remnant} fill="url(#rg-hatch)" mask="url(#rg-outside-rect)" />
+          {nest.holes.map((d) => <path d={d} fill="#eceef4" />)}
+        </g>
+        <g class="rg-holes">
+          {nest.holes.map((d) => <path d={d} />)}
+        </g>
+        <rect class="rg-rect" x={rx} y={ry} width={rw} height={rh} pathLength="100" />
+        <g class="rg-rect-label">
+          <rect x={rx + rw / 2 - 104} y={ry - 23} width="208" height="18" rx="2" />
+          <text x={rx + rw / 2} y={ry - 10} text-anchor="middle">USABLE RECTANGLE {rw * MM} × {rh * MM}</text>
+        </g>
+        <text class="rg-note rg-waste-label" x="170" y="110" text-anchor="middle">IGNORED → SCRAP BIN</text>
+
+        <!-- nests -->
+        <g class="rg-parts rg-parts-full">
+          {nest.full.map((d, i) => <path class="rg-part" d={d} style={`--i:${i}`} />)}
+        </g>
+        <g class="rg-parts rg-parts-rect">
+          {nest.rectNest.map((d, i) => <path class="rg-part" d={d} style={`--i:${i}`} />)}
+        </g>
+        <g class="rg-parts rg-parts-true">
+          {nest.trueNest.map((d, i) => <path class="rg-part" d={d} style={`--i:${i}`} />)}
+        </g>
+      </svg>
+
+      <div class="rg-readout">
+        <div class="rg-texts" aria-live="polite">
+          {steps.map((s, i) => <p class="rg-text" data-for={i}>{s.text}</p>)}
+        </div>
+        <dl class="rg-stats">
+          <div>
+            <dt>Parts placed</dt>
+            <dd>
+              {steps.map((s, i) => <span class="rg-val" data-for={i}>{s.parts || '—'}<small> / {total}</small></span>)}
+            </dd>
+            <div class="rg-meter" aria-hidden="true">
+              {steps.map((s, i) => <i data-for={i} style={`--w:${s.parts / total}`}></i>)}
+            </div>
+          </div>
+          <div>
+            <dt>Stock on the table</dt>
+            <dd>
+              {steps.map((s, i) => <span class="rg-val" data-for={i}>{s.stock}<small>{s.stockNote}</small></span>)}
+            </dd>
+          </div>
+          <div>
+            <dt>Material utilization</dt>
+            <dd>
+              {steps.map((s, i) => <span class="rg-val" data-for={i}>{s.used}<small>{s.usedNote}</small></span>)}
+            </dd>
+          </div>
+        </dl>
+        <button class="rg-play" type="button" aria-pressed="false">
+          <span class="rg-play-on">Pause</span><span class="rg-play-off">Play</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <figcaption id="rg-caption">
+    The Remnant Problem: the same {total}-part job on the sheet software assumes, and on the remnant a shop actually has.
+    Measuring a rectangle inside the remnant fits {nest.stats.n_rect} parts; true-shape remnant nesting fits {nest.stats.n_true}.
+  </figcaption>
+</figure>
+
+<script>
+  const DWELL = [3800, 3800, 4600, 5200];
+
+  document.querySelectorAll<HTMLElement>('.rg').forEach((fig) => {
+    const tabs = [...fig.querySelectorAll<HTMLButtonElement>('.rg-tab')];
+    const play = fig.querySelector<HTMLButtonElement>('.rg-play')!;
+    const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    let step = 0;
+    let timer = 0;
+    let playing = !reduced;
+    let visible = false;
+
+    const show = (i: number) => {
+      step = i;
+      fig.dataset.step = String(i);
+      tabs.forEach((t, j) => t.setAttribute('aria-selected', String(j === i)));
+      // restart the progress bar animation on the active tab
+      fig.classList.remove('is-ticking');
+      void fig.offsetWidth;
+      if (playing && visible) {
+        fig.style.setProperty('--dwell', `${DWELL[i]}ms`);
+        fig.classList.add('is-ticking');
+      }
+    };
+
+    const schedule = () => {
+      clearTimeout(timer);
+      if (!playing || !visible) return;
+      timer = window.setTimeout(() => {
+        show((step + 1) % tabs.length);
+        schedule();
+      }, DWELL[step]);
+    };
+
+    const setPlaying = (on: boolean) => {
+      playing = on;
+      fig.classList.toggle('is-playing', on);
+      play.setAttribute('aria-pressed', String(on));
+      show(step);
+      schedule();
+    };
+
+    tabs.forEach((t, i) =>
+      t.addEventListener('click', () => {
+        playing = false;
+        fig.classList.remove('is-playing');
+        play.setAttribute('aria-pressed', 'false');
+        clearTimeout(timer);
+        show(i);
+      }),
+    );
+    play.addEventListener('click', () => setPlaying(!playing));
+
+    new IntersectionObserver(
+      ([entry]) => {
+        const was = visible;
+        visible = entry.isIntersecting;
+        if (visible && !was) {
+          if (playing && step === 0) show(0);
+          setPlaying(playing);
+        } else if (!visible) {
+          clearTimeout(timer);
+          fig.classList.remove('is-ticking');
+        }
+      },
+      { threshold: 0.45 },
+    ).observe(fig);
+
+    fig.classList.add('is-ready');
+    fig.classList.toggle('is-playing', playing);
+    play.setAttribute('aria-pressed', String(playing));
+  });
+</script>
+
+<style>
+  .rg {
+    --blue: #1941df;
+    --pale: #e8ecfc;
+    --ink: #0a0a08;
+    --muted: #4a4f5c;
+    --soft: #8a9099;
+    --line: #dde1f0;
+    --warn: #a43228;
+    --ease: cubic-bezier(.2, .8, .2, 1);
+    margin: 48px auto 0;
+    width: min(1040px, calc(100% - 40px));
+  }
+  .rg-card { background: white; border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
+
+  /* tabs */
+  .rg-tabs { display: grid; grid-template-columns: repeat(4, 1fr); border-bottom: 1px solid var(--line); }
+  .rg-tab {
+    position: relative; display: flex; align-items: baseline; gap: 10px; min-width: 0;
+    padding: 16px 18px 18px; background: none; border: 0; text-align: left;
+    font: 500 14px/1.3 'DM Sans', sans-serif; color: var(--soft); transition: color .3s, background .3s;
+  }
+  .rg-tab + .rg-tab { border-left: 1px solid var(--line); }
+  .rg-tab:hover { color: var(--ink); }
+  .rg-tab[aria-selected='true'] { color: var(--ink); background: #fafbff; }
+  .rg-num { font: 11px 'DM Mono', monospace; letter-spacing: .06em; color: inherit; }
+  .rg-tab[aria-selected='true'] .rg-num { color: var(--blue); }
+  .rg-bar { position: absolute; left: 0; right: 0; bottom: -1px; height: 2px; background: var(--blue); transform: scaleX(0); transform-origin: left; }
+  .rg-tab[aria-selected='true'] .rg-bar { transform: scaleX(1); }
+  .rg.is-ticking .rg-tab[aria-selected='true'] .rg-bar { animation: rg-tick var(--dwell, 4s) linear both; }
+  @keyframes rg-tick { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+
+  /* stage */
+  .rg-stage { display: grid; grid-template-columns: minmax(0, 1fr) 270px; }
+  .rg-svg { display: block; width: 100%; height: auto; padding: 26px 18px 22px 26px; overflow: visible; }
+  .rg-readout { display: flex; flex-direction: column; gap: 22px; padding: 26px 26px 24px; border-left: 1px solid var(--line); background: #fafbff; }
+
+  /* svg base */
+  .rg-dim line { stroke: var(--soft); stroke-width: 1; }
+  .rg-dim text { font: 11px 'DM Mono', monospace; fill: var(--soft); }
+  .rg-sheet { fill: #f4f6fb; stroke: #9aa3b5; stroke-width: 1.5; transition: fill .6s, stroke .6s, opacity .6s; }
+  .rg-remnant { fill: #f4f6fb; stroke: var(--ink); stroke-width: 2; stroke-linejoin: round; opacity: 0; transition: opacity .6s; }
+  .rg-consumed { opacity: 0; transition: opacity .7s, transform .9s var(--ease); }
+  .rg-consumed-area { fill: url(#rg-skeleton); stroke: #b9c0cf; stroke-width: 1; stroke-dasharray: 4 4; }
+  .rg-ghost { fill: white; stroke: #b9c0cf; stroke-width: 1; }
+  .rg-pill { fill: white; stroke: #b9c0cf; stroke-width: 1; }
+  .rg-note { font: 500 11px 'DM Mono', monospace; letter-spacing: .08em; fill: var(--soft); }
+  .rg-holes path { fill: white; stroke: var(--ink); stroke-width: 1.5; opacity: 0; transform-box: fill-box; transform-origin: center; transform: scale(.4); transition: opacity .5s .35s, transform .7s .35s var(--ease); }
+
+  .rg-waste { opacity: 0; transition: opacity .6s .25s; }
+  .rg-waste-label { fill: var(--warn); opacity: 0; transition: opacity .5s .6s; }
+  .rg-rect { fill: none; stroke: var(--blue); stroke-width: 2; stroke-dasharray: 100; stroke-dashoffset: 100; opacity: 0; transition: stroke-dashoffset 1s var(--ease), opacity .3s; }
+  .rg[data-step='2'] .rg-rect { stroke-dashoffset: 0; transition: stroke-dashoffset 1s .15s var(--ease), opacity .2s; }
+  .rg-rect-label { opacity: 0; transition: opacity .4s .5s; }
+  .rg-rect-label rect { fill: var(--blue); }
+  .rg-rect-label text { font: 500 10px 'DM Mono', monospace; letter-spacing: .05em; fill: white; }
+
+  .rg-part {
+    fill: var(--pale); fill-rule: evenodd; stroke: var(--blue); stroke-width: .9; stroke-linejoin: round;
+    transform-box: fill-box; transform-origin: center;
+    opacity: 0; transform: translateY(-10px) scale(.85);
+    transition: opacity .25s, transform .25s;
+  }
+
+  /* step 0: full sheet */
+  .rg[data-step='0'] .rg-parts-full .rg-part { opacity: 1; transform: none; transition: opacity .45s calc(var(--i) * 14ms), transform .6s calc(var(--i) * 14ms) var(--ease); }
+
+  /* step 1+: the real remnant */
+  .rg:not([data-step='0']) .rg-sheet { fill: transparent; stroke: #c5cad6; stroke-dasharray: 5 5; }
+  .rg:not([data-step='0']) .rg-remnant { opacity: 1; }
+  .rg:not([data-step='0']) .rg-consumed { opacity: 1; }
+  .rg[data-step='1'] .rg-consumed { transform: translate(10px, -10px); }
+  .rg:not([data-step='0']) .rg-holes path { opacity: 1; transform: none; }
+  .rg:not([data-step='0']) .rg-dim { opacity: .45; }
+  .rg-dim { transition: opacity .6s; }
+
+  /* step 2: rectangle workaround */
+  .rg[data-step='2'] .rg-waste,
+  .rg[data-step='2'] .rg-waste-label,
+  .rg[data-step='2'] .rg-rect,
+  .rg[data-step='2'] .rg-rect-label { opacity: 1; }
+  .rg[data-step='2'] .rg-parts-rect .rg-part { opacity: 1; transform: none; transition: opacity .4s calc(.7s + var(--i) * 45ms), transform .55s calc(.7s + var(--i) * 45ms) var(--ease); }
+
+  /* step 3: true shape */
+  .rg[data-step='3'] .rg-parts-true .rg-part { opacity: 1; transform: none; transition: opacity .4s calc(.2s + var(--i) * 24ms), transform .55s calc(.2s + var(--i) * 24ms) var(--ease); }
+  .rg[data-step='3'] .rg-remnant { stroke: var(--blue); }
+
+  /* readout */
+  .rg-texts { display: grid; }
+  .rg-text { grid-area: 1 / 1; margin: 0; font-size: 15px; line-height: 1.55; color: var(--ink); opacity: 0; transform: translateY(6px); transition: opacity .35s, transform .35s; visibility: hidden; }
+  .rg-stats { display: grid; gap: 16px; margin: 0; border-top: 1px solid var(--line); padding-top: 18px; }
+  .rg-stats dt { font: 11px 'DM Mono', monospace; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+  .rg-stats dd { display: grid; margin: 4px 0 0; }
+  .rg-val { grid-area: 1 / 1; display: flex; align-items: baseline; flex-wrap: wrap; gap: 0 8px; white-space: nowrap; font: 700 26px/1.1 'Syne', sans-serif; letter-spacing: -.03em; color: var(--ink); opacity: 0; visibility: hidden; transition: opacity .35s; }
+  .rg-val small { font: 12px 'DM Mono', monospace; letter-spacing: 0; color: var(--soft); }
+  .rg-meter { position: relative; height: 4px; margin-top: 8px; background: var(--line); border-radius: 2px; overflow: hidden; }
+  .rg-meter i { position: absolute; inset: 0; background: var(--blue); transform-origin: left; transform: scaleX(0); transition: transform .9s var(--ease), opacity .3s; opacity: 0; }
+
+  .rg[data-step='2'] .rg-meter i[data-for='2'] { background: var(--warn); }
+
+  .rg[data-step='0'] [data-for='0'],
+  .rg[data-step='1'] [data-for='1'],
+  .rg[data-step='2'] [data-for='2'],
+  .rg[data-step='3'] [data-for='3'] { opacity: 1; visibility: visible; transform: none; }
+  .rg[data-step='0'] .rg-meter i[data-for='0'],
+  .rg[data-step='1'] .rg-meter i[data-for='1'],
+  .rg[data-step='2'] .rg-meter i[data-for='2'],
+  .rg[data-step='3'] .rg-meter i[data-for='3'] { transform: scaleX(var(--w)); }
+
+  .rg-play { align-self: flex-start; margin-top: auto; padding: 7px 12px; background: none; border: 1px solid var(--line); border-radius: 2px; font: 11px 'DM Mono', monospace; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); display: none; }
+  .rg.is-ready .rg-play { display: inline-block; }
+  .rg-play:hover { color: var(--ink); border-color: var(--muted); }
+  .rg-play-off, .rg.is-playing .rg-play-on { display: inline; }
+  .rg-play-on, .rg.is-playing .rg-play-off { display: none; }
+
+  .rg figcaption { margin-top: 14px; font-size: 13px; line-height: 1.6; color: var(--muted); text-align: center; }
+  .rg :is(button):focus-visible { outline: 2px solid var(--blue); outline-offset: -2px; }
+
+  @media (max-width: 860px) {
+    .rg-stage { grid-template-columns: minmax(0, 1fr); }
+    .rg-readout { border-left: 0; border-top: 1px solid var(--line); }
+    .rg-stats { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .rg-play { position: absolute; }
+    .rg-readout { position: relative; }
+    .rg-play { top: 22px; right: 20px; margin: 0; }
+    .rg-texts { padding-right: 70px; }
+  }
+  @media (max-width: 640px) {
+    .rg-tabs { grid-template-columns: repeat(2, 1fr); }
+    .rg-tab:nth-child(3) { border-left: 0; }
+    .rg-tab:nth-child(n + 3) { border-top: 1px solid var(--line); }
+    .rg-tab { padding: 12px 14px 14px; font-size: 13px; }
+    .rg-svg { padding: 22px 10px 14px 18px; }
+    .rg-readout { padding: 20px 18px; }
+    .rg-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .rg-stats > div:first-child { grid-column: 1 / -1; }
+    .rg-val { font-size: 22px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .rg *, .rg *::before { transition: none !important; animation: none !important; }
+  }
+</style>
