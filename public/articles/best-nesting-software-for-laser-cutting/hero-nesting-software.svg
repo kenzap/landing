@@ -1,0 +1,204 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <style>
+      .bg { fill: #f6f7fc; }
+      .sheet { fill: #ffffff; stroke: #dde1f0; stroke-width: 2; }
+      .grid { stroke: #edf0f8; stroke-width: 1; }
+      .part-prime { fill: #e8ecfc; stroke: #1941df; stroke-width: 1.8; }
+      .part-accent { fill: #dbe4fd; stroke: #1941df; stroke-width: 2; }
+      .part-hole { fill: #ffffff; stroke: #1941df; stroke-width: 1.4; }
+      .cut-path { stroke: #a43228; stroke-width: 1.5; stroke-dasharray: 4, 3; }
+      .text-title { font-family: 'Syne', system-ui, sans-serif; font-size: 26px; font-weight: 700; fill: #0a0a08; }
+      .text-meta { font-family: 'DM Mono', monospace; font-size: 13px; fill: #4a4f5c; }
+      .text-badge { font-family: 'DM Mono', monospace; font-size: 11px; font-weight: 500; fill: #1941df; }
+      .badge-bg { fill: #e8ecfc; rx: 4px; }
+      .dim-line { stroke: #8a9099; stroke-width: 1; stroke-dasharray: 2, 2; }
+      .dim-text { font-family: 'DM Mono', monospace; font-size: 11px; fill: #8a9099; text-anchor: middle; }
+      .laser-point { fill: #a43228; }
+      .laser-glow { fill: rgba(164, 50, 40, 0.2); }
+    </style>
+    <linearGradient id="laserGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1941df" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#1941df" stop-opacity="0.02" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="1200" height="630" />
+
+  <!-- Sheet Canvas Container -->
+  <g transform="translate(60, 45)">
+    <!-- Header Banner Inside Card -->
+    <rect x="0" y="0" width="1080" height="70" rx="8" fill="#ffffff" stroke="#dde1f0" stroke-width="1.5" />
+    <text x="32" y="42" class="text-title">NESTING BENCHMARK &amp; SOFTWARE ARCHITECTURE</text>
+    <rect x="860" y="22" width="188" height="26" class="badge-bg" />
+    <text x="874" y="39" class="text-badge">2026 FABRICATION GUIDE</text>
+
+    <!-- Main Stock Sheet (1250 x 2500 representation) -->
+    <g transform="translate(0, 95)">
+      <rect class="sheet" x="0" y="0" width="760" height="440" rx="6" />
+
+      <!-- Coordinate Grid -->
+      <line class="grid" x1="190" y1="0" x2="190" y2="440" />
+      <line class="grid" x1="380" y1="0" x2="380" y2="440" />
+      <line class="grid" x1="570" y1="0" x2="570" y2="440" />
+      <line class="grid" x1="0" y1="110" x2="760" y2="110" />
+      <line class="grid" x1="0" y1="220" x2="760" y2="220" />
+      <line class="grid" x1="0" y1="330" x2="760" y2="330" />
+
+      <!-- Nested Parts - True Shape Laser Profiles -->
+      <!-- Row 1 -->
+      <g transform="translate(25, 25)">
+        <polygon class="part-prime" points="0,0 150,0 180,60 140,85 40,85 0,45" />
+        <circle class="part-hole" cx="45" cy="40" r="10" />
+        <circle class="part-hole" cx="120" cy="40" r="10" />
+        <rect class="part-hole" x="65" y="32" width="35" height="15" rx="3" />
+      </g>
+      <g transform="translate(215, 25)">
+        <polygon class="part-prime" points="180,85 30,85 0,25 40,0 140,0 180,40" />
+        <circle class="part-hole" cx="135" cy="45" r="10" />
+        <circle class="part-hole" cx="60" cy="45" r="10" />
+        <rect class="part-hole" x="80" y="38" width="35" height="15" rx="3" />
+      </g>
+      <g transform="translate(405, 25)">
+        <polygon class="part-prime" points="0,0 150,0 180,60 140,85 40,85 0,45" />
+        <circle class="part-hole" cx="45" cy="40" r="10" />
+        <circle class="part-hole" cx="120" cy="40" r="10" />
+        <rect class="part-hole" x="65" y="32" width="35" height="15" rx="3" />
+      </g>
+      <g transform="translate(595, 25)">
+        <polygon class="part-prime" points="150,85 10,85 0,35 30,0 120,0 150,45" />
+        <circle class="part-hole" cx="105" cy="45" r="9" />
+        <circle class="part-hole" cx="45" cy="45" r="9" />
+      </g>
+
+      <!-- Row 2 -->
+      <g transform="translate(25, 125)">
+        <polygon class="part-prime" points="180,85 30,85 0,25 40,0 140,0 180,40" />
+        <circle class="part-hole" cx="135" cy="45" r="10" />
+        <circle class="part-hole" cx="60" cy="45" r="10" />
+        <rect class="part-hole" x="80" y="38" width="35" height="15" rx="3" />
+      </g>
+      <g transform="translate(215, 125)">
+        <polygon class="part-prime" points="0,0 150,0 180,60 140,85 40,85 0,45" />
+        <circle class="part-hole" cx="45" cy="40" r="10" />
+        <circle class="part-hole" cx="120" cy="40" r="10" />
+        <rect class="part-hole" x="65" y="32" width="35" height="15" rx="3" />
+      </g>
+      <g transform="translate(405, 125)">
+        <polygon class="part-prime" points="180,85 30,85 0,25 40,0 140,0 180,40" />
+        <circle class="part-hole" cx="135" cy="45" r="10" />
+        <circle class="part-hole" cx="60" cy="45" r="10" />
+        <rect class="part-hole" x="80" y="38" width="35" height="15" rx="3" />
+      </g>
+      <g transform="translate(595, 125)">
+        <polygon class="part-prime" points="0,0 120,0 150,55 120,85 20,85 0,45" />
+        <circle class="part-hole" cx="45" cy="40" r="9" />
+        <circle class="part-hole" cx="100" cy="40" r="9" />
+      </g>
+
+      <!-- Row 3 - High Density / Nested Inside Scrap -->
+      <g transform="translate(25, 225)">
+        <polygon class="part-accent" points="0,0 150,0 180,60 140,85 40,85 0,45" />
+        <circle class="part-hole" cx="45" cy="40" r="10" />
+        <circle class="part-hole" cx="120" cy="40" r="10" />
+        <!-- Micro nested bracket in center slot -->
+        <polygon class="part-prime" points="66,33 98,33 94,46 70,46" />
+      </g>
+      <g transform="translate(215, 225)">
+        <polygon class="part-prime" points="180,85 30,85 0,25 40,0 140,0 180,40" />
+        <circle class="part-hole" cx="135" cy="45" r="10" />
+        <circle class="part-hole" cx="60" cy="45" r="10" />
+        <rect class="part-hole" x="80" y="38" width="35" height="15" rx="3" />
+      </g>
+      <g transform="translate(405, 225)">
+        <polygon class="part-prime" points="0,0 150,0 180,60 140,85 40,85 0,45" />
+        <circle class="part-hole" cx="45" cy="40" r="10" />
+        <circle class="part-hole" cx="120" cy="40" r="10" />
+        <rect class="part-hole" x="65" y="32" width="35" height="15" rx="3" />
+      </g>
+      <g transform="translate(595, 225)">
+        <polygon class="part-prime" points="150,85 10,85 0,35 30,0 120,0 150,45" />
+        <circle class="part-hole" cx="105" cy="45" r="9" />
+        <circle class="part-hole" cx="45" cy="45" r="9" />
+      </g>
+
+      <!-- Row 4 -->
+      <g transform="translate(25, 325)">
+        <polygon class="part-prime" points="180,85 30,85 0,25 40,0 140,0 180,40" />
+        <circle class="part-hole" cx="135" cy="45" r="10" />
+        <circle class="part-hole" cx="60" cy="45" r="10" />
+        <rect class="part-hole" x="80" y="38" width="35" height="15" rx="3" />
+      </g>
+      <g transform="translate(215, 325)">
+        <polygon class="part-prime" points="0,0 150,0 180,60 140,85 40,85 0,45" />
+        <circle class="part-hole" cx="45" cy="40" r="10" />
+        <circle class="part-hole" cx="120" cy="40" r="10" />
+        <rect class="part-hole" x="65" y="32" width="35" height="15" rx="3" />
+      </g>
+      <g transform="translate(405, 325)">
+        <polygon class="part-prime" points="180,85 30,85 0,25 40,0 140,0 180,40" />
+        <circle class="part-hole" cx="135" cy="45" r="10" />
+        <circle class="part-hole" cx="60" cy="45" r="10" />
+        <rect class="part-hole" x="80" y="38" width="35" height="15" rx="3" />
+      </g>
+
+      <!-- Active Laser Simulation -->
+      <g transform="translate(595, 325)">
+        <polygon class="part-prime" points="0,0 120,0 150,55 120,85 20,85 0,45" />
+        <path class="cut-path" d="M 0,0 L 120,0 L 150,55" />
+        <circle class="laser-glow" cx="150" cy="55" r="14" />
+        <circle class="laser-point" cx="150" cy="55" r="4" />
+      </g>
+
+      <!-- Dimensions indicators -->
+      <line class="dim-line" x1="0" y1="428" x2="760" y2="428" />
+      <text class="dim-text" x="380" y="423">PLATE LENGTH: 2500 mm</text>
+    </g>
+
+    <!-- Side Analysis Card -->
+    <g transform="translate(780, 95)">
+      <rect x="0" y="0" width="300" height="440" rx="6" fill="#ffffff" stroke="#dde1f0" stroke-width="1.5" />
+      <text x="22" y="36" font-family="'Syne', sans-serif" font-size="16px" font-weight="700" fill="#0a0a08">CATEGORIES EVALUATED</text>
+
+      <g transform="translate(22, 58)">
+        <!-- 1 -->
+        <circle cx="8" cy="14" r="3" fill="#1941df" />
+        <text x="20" y="18" font-family="'DM Sans', sans-serif" font-size="13px" font-weight="600" fill="#0a0a08">Industrial Heavyweights</text>
+        <text x="20" y="34" font-family="'DM Mono', monospace" font-size="11px" fill="#8a9099">SigmaNEST, ProNest, Lantek</text>
+
+        <!-- 2 -->
+        <circle cx="8" cy="64" r="3" fill="#1941df" />
+        <text x="20" y="68" font-family="'DM Sans', sans-serif" font-size="13px" font-weight="600" fill="#0a0a08">Cloud &amp; Web Innovators</text>
+        <text x="20" y="84" font-family="'DM Mono', monospace" font-size="11px" fill="#8a9099">Nest&amp;Cut (Pure SaaS)</text>
+
+        <!-- 3 -->
+        <circle cx="8" cy="114" r="3" fill="#1941df" />
+        <text x="20" y="118" font-family="'DM Sans', sans-serif" font-size="13px" font-weight="600" fill="#0a0a08">Maker &amp; Open-Source</text>
+        <text x="20" y="134" font-family="'DM Mono', monospace" font-size="11px" fill="#8a9099">Deepnest, SVGnest</text>
+
+        <!-- 4 -->
+        <circle cx="8" cy="164" r="3" fill="#1941df" />
+        <text x="20" y="168" font-family="'DM Sans', sans-serif" font-size="13px" font-weight="600" fill="#0a0a08">Design-Native Plugins</text>
+        <text x="20" y="184" font-family="'DM Mono', monospace" font-size="11px" fill="#8a9099">eCut (Corel / Illustrator)</text>
+
+        <!-- 5 -->
+        <circle cx="8" cy="214" r="3" fill="#1941df" />
+        <text x="20" y="218" font-family="'DM Sans', sans-serif" font-size="13px" font-weight="600" fill="#0a0a08">Mid-Market Pay-Per-Use</text>
+        <text x="20" y="234" font-family="'DM Mono', monospace" font-size="11px" fill="#8a9099">MyNesting, NestFab</text>
+
+        <!-- 6 -->
+        <circle cx="8" cy="264" r="3" fill="#1941df" />
+        <text x="20" y="268" font-family="'DM Sans', sans-serif" font-size="13px" font-weight="600" fill="#0a0a08">CAD Ecosystems</text>
+        <text x="20" y="284" font-family="'DM Mono', monospace" font-size="11px" fill="#8a9099">Autodesk Fusion &amp; Inventor</text>
+      </g>
+
+      <!-- Bottom Highlight Box -->
+      <g transform="translate(18, 360)">
+        <rect x="0" y="0" width="264" height="60" rx="4" fill="#e8ecfc" stroke="#1941df" stroke-width="1" />
+        <text x="14" y="24" font-family="'DM Mono', monospace" font-size="11px" font-weight="600" fill="#1941df">THE UNIVERSAL GAP</text>
+        <text x="14" y="44" font-family="'DM Sans', sans-serif" font-size="12px" fill="#4a4f5c">Irregular remnant sheet nesting</text>
+      </g>
+    </g>
+  </g>
+</svg>
